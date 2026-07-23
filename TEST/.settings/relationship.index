@@ -66,4 +66,15 @@
     "version" : "Latest",
     "type" : "routine"
   } ]
+}, {
+  "baseItem" : {
+    "id" : "_w1HkcIP7EfGE_b3nUrzfvQ",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_5Z8VQIAWEfG3U-a4dM_Wyw - Sandbox_Insert_Test",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
 } ]
