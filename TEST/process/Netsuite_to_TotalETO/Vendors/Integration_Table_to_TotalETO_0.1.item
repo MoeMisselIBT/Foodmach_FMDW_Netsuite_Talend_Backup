@@ -3477,7 +3477,7 @@
       </column>
     </metadata>
   </node>
-  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="600">
+  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1520" posY="480">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_4" show="false"/>
     <elementParameter field="TEXT" name="COMPONENT_NAME" value="tMSSqlOutput" show="false"/>
     <elementParameter field="TEXT" name="VERSION" value="0.102 (ALPHA)" show="false"/>
@@ -3661,7 +3661,11 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
   </connection>
-  <note opaque="false" posX="1120" posY="-320" sizeHeight="121" sizeWidth="201" text="Insert into&#xD;&#xA;integration table and set&#xD;&#xA;loaded flag to true">
+  <note opaque="false" posX="1120" posY="-320" sizeHeight="121" sizeWidth="201" text="Insert vendor into&#xD;&#xA;tblComany&#xD;&#xA;from integration&#xD;&#xA;table">
+    <elementParameter field="TEXT" name="NOTE_FONT" value="Arial"/>
+  </note>
+  <note opaque="true" posX="1160" posY="200" sizeHeight="120" sizeWidth="201" text="insert vendor into &#xD;&#xA;tblCompanyTypes&#xD;&#xA;"/>
+  <note opaque="false" posX="120" posY="-200" sizeHeight="121" sizeWidth="201" text="Count unprocessed&#xD;&#xA;records in integration &#xD;&#xA;table">
     <elementParameter field="TEXT" name="NOTE_FONT" value="Arial"/>
   </note>
   <subjob>
