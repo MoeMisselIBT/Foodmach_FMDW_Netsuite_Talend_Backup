@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
-  <context confirmationNeeded="false" hide="false" name="Default"/>
+  <context confirmationNeeded="false" hide="false" name="Default">
+    <contextParameter comment="" name="supplier_currency" prompt="supplier_currency?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_bLdRkJB2EfGuCZ_y0rqpww"/>
+  </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
@@ -518,6 +520,10 @@
       <elementValue elementRef="QUERY" value="" id="217"/>
       <elementValue elementRef="NODECHECK" value="false" id="218"/>
       <elementValue elementRef="ISARRAY" value="false" id="219"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="tblSupplier_currency" id="220"/>
+      <elementValue elementRef="QUERY" value="" id="221"/>
+      <elementValue elementRef="NODECHECK" value="false" id="222"/>
+      <elementValue elementRef="ISARRAY" value="false" id="223"/>
     </elementParameter>
     <elementParameter field="TABLE" name="MAPPING_4_JSONPATH">
       <elementValue elementRef="SCHEMA_COLUMN" value="CName" id="0"/>
@@ -630,6 +636,8 @@
       <elementValue elementRef="QUERY" value="" id="107"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="TimeLoadedIntoTotalETOUTC" id="108"/>
       <elementValue elementRef="QUERY" value="" id="109"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="tblSupplier_currency" id="110"/>
+      <elementValue elementRef="QUERY" value="&quot;currency&quot;" id="111"/>
     </elementParameter>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
@@ -805,6 +813,7 @@
       <column comment="" key="false" length="23" name="TimeLoadedIntoTotalETOUTC" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME2" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
+      <column comment="" key="false" length="-1" name="tblSupplier_currency" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" label="tblCompany_integration" name="REJECT">
       <column comment="" key="false" length="100" name="CName" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
@@ -930,7 +939,7 @@
       <column comment="" key="false" length="20" name="CompanyCustom3" nullable="true" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="20" name="CompanyCustom4" nullable="true" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" defaultValue="" key="false" length="20" name="CompanyCustom4" nullable="true" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="23" name="CompanyCustom5" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
@@ -963,6 +972,16 @@
       <column comment="" key="false" length="10" name="ARTaxCategoryID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
+      <column comment="" defaultValue="'sysutcdatetime()'" key="false" length="23" name="DateTimeLoadedIntoIntegrationTableUTC" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME2" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(0)'" key="false" length="1" name="LoadedIntoTotalETO" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="TimeLoadedIntoTotalETOUTC" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME2" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="-1" name="tblSupplier_currency" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorJSONField" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -970,7 +989,7 @@
   </node>
   <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="880">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_2" show="false"/>
-    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="output_row.CName = input_row.CName;&#xD;&#xA;output_row.CAddress1 = &quot;1-9 Darling St&quot;;&#xD;&#xA;output_row.CAddress2 = null;&#xD;&#xA;output_row.CCity = &quot;Echuca&quot;;&#xD;&#xA;output_row.CState = &quot;Victoria&quot;;&#xD;&#xA;output_row.CZip = &quot;3564&quot;;&#xD;&#xA;output_row.CCountry = &quot;Australia&quot;;&#xD;&#xA;output_row.CPhone = input_row.CPhone;&#xD;&#xA;output_row.CFax = null;&#xD;&#xA;output_row.CDate = TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, &quot;2000-03-08 00:00:00.000&quot;);&#xD;&#xA;output_row.BAddress1 = &quot;1-9 Darling St&quot;;&#xD;&#xA;output_row.BAddress2 = null;&#xD;&#xA;output_row.BCity = &quot;Echuca&quot;;&#xD;&#xA;output_row.BState = &quot;Victoria&quot;;&#xD;&#xA;output_row.BZip = &quot;3564&quot;;&#xD;&#xA;output_row.BCountry = &quot;Australia&quot;;&#xD;&#xA;output_row.SAddress1 = &quot;1-9 Darling St&quot;;&#xD;&#xA;output_row.SAddress2 = null;&#xD;&#xA;output_row.SCity = &quot;Echuca&quot;;&#xD;&#xA;output_row.SState = &quot;Victoria&quot;;&#xD;&#xA;output_row.SZip = &quot;3564&quot;;&#xD;&#xA;output_row.SCountry = &quot;Australia&quot;;&#xD;&#xA;output_row.CWWWAddress = &quot;https://foodmach.com&quot;;&#xD;&#xA;output_row.CTollFree = null;&#xD;&#xA;output_row.BSameAsMailing = false;&#xD;&#xA;output_row.SSameAsMailing = false;&#xD;&#xA;output_row.CHasAgent = false;&#xD;&#xA;output_row.CAccountingHoldCode = null;&#xD;&#xA;output_row.CCompanyParent = null;&#xD;&#xA;output_row.CDefaultShipVia = null;&#xD;&#xA;output_row.CDefaultPartDiscount = null;&#xD;&#xA;output_row.CDefaultPartMargin = null;&#xD;&#xA;output_row.CDefaultTerms = null;&#xD;&#xA;output_row.CAccVendorID = null;&#xD;&#xA;output_row.CAccCustomerID = null;&#xD;&#xA;output_row.CAccVendorTaxClass1 = null;&#xD;&#xA;output_row.CAccCustomerGroupCode = null;&#xD;&#xA;output_row.CAccCustomerDisc = new BigDecimal(&quot;0.00000000&quot;);&#xD;&#xA;output_row.CompanyCustom1 = &quot;&quot;;&#xD;&#xA;output_row.CompanyCustom2 = &quot;&quot;;&#xD;&#xA;output_row.CompanyCustom3 = input_row.CompanyCustom3;&#xD;&#xA;output_row.CompanyCustom4 = null;&#xD;&#xA;output_row.CompanyCustom5 = null;&#xD;&#xA;output_row.CompanyCustom6 = null;&#xD;&#xA;output_row.CompanyCustom7 = false;&#xD;&#xA;output_row.CompanyCustom8 = false;&#xD;&#xA;output_row.Legacy_CCountry = null;&#xD;&#xA;output_row.Legacy_BCountry = null;&#xD;&#xA;output_row.Legacy_SCountry = null;&#xD;&#xA;output_row.CActive = true;&#xD;&#xA;output_row.DefaultEmailAddress = input_row.DefaultEmailAddress;&#xD;&#xA;output_row.ARTaxCategoryID = 1;&#xD;&#xA;//output_row.DateTimeLoadedIntoIntegrationTableUTC = null; // TODO: no CSV source&#xD;&#xA;//output_row.LoadedIntoTotalETO = null; // TODO: no CSV source&#xD;&#xA;//output_row.TimeLoadedIntoTotalETOUTC = null; // TODO: no CSV source"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="output_row.CName = input_row.CName;&#xD;&#xA;output_row.CAddress1 = &quot;1-9 Darling St&quot;;&#xD;&#xA;output_row.CAddress2 = null;&#xD;&#xA;output_row.CCity = &quot;Echuca&quot;;&#xD;&#xA;output_row.CState = &quot;Victoria&quot;;&#xD;&#xA;output_row.CZip = &quot;3564&quot;;&#xD;&#xA;output_row.CCountry = &quot;Australia&quot;;&#xD;&#xA;output_row.CPhone = input_row.CPhone;&#xD;&#xA;output_row.CFax = null;&#xD;&#xA;output_row.CDate = TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, &quot;2000-03-08 00:00:00.000&quot;);&#xD;&#xA;output_row.BAddress1 = &quot;1-9 Darling St&quot;;&#xD;&#xA;output_row.BAddress2 = null;&#xD;&#xA;output_row.BCity = &quot;Echuca&quot;;&#xD;&#xA;output_row.BState = &quot;Victoria&quot;;&#xD;&#xA;output_row.BZip = &quot;3564&quot;;&#xD;&#xA;output_row.BCountry = &quot;Australia&quot;;&#xD;&#xA;output_row.SAddress1 = &quot;1-9 Darling St&quot;;&#xD;&#xA;output_row.SAddress2 = null;&#xD;&#xA;output_row.SCity = &quot;Echuca&quot;;&#xD;&#xA;output_row.SState = &quot;Victoria&quot;;&#xD;&#xA;output_row.SZip = &quot;3564&quot;;&#xD;&#xA;output_row.SCountry = &quot;Australia&quot;;&#xD;&#xA;output_row.CWWWAddress = &quot;https://foodmach.com&quot;;&#xD;&#xA;output_row.CTollFree = null;&#xD;&#xA;output_row.BSameAsMailing = false;&#xD;&#xA;output_row.SSameAsMailing = false;&#xD;&#xA;output_row.CHasAgent = false;&#xD;&#xA;output_row.CAccountingHoldCode = null;&#xD;&#xA;output_row.CCompanyParent = null;&#xD;&#xA;output_row.CDefaultShipVia = null;&#xD;&#xA;output_row.CDefaultPartDiscount = null;&#xD;&#xA;output_row.CDefaultPartMargin = null;&#xD;&#xA;output_row.CDefaultTerms = null;&#xD;&#xA;output_row.CAccVendorID = null;&#xD;&#xA;output_row.CAccCustomerID = null;&#xD;&#xA;output_row.CAccVendorTaxClass1 = null;&#xD;&#xA;output_row.CAccCustomerGroupCode = null;&#xD;&#xA;output_row.CAccCustomerDisc = new BigDecimal(&quot;0.00000000&quot;);&#xD;&#xA;output_row.CompanyCustom1 = &quot;&quot;;&#xD;&#xA;output_row.CompanyCustom2 = &quot;&quot;;&#xD;&#xA;output_row.CompanyCustom3 = input_row.CompanyCustom3;&#xD;&#xA;output_row.CompanyCustom4 = null;&#xD;&#xA;output_row.CompanyCustom5 = null;&#xD;&#xA;output_row.CompanyCustom6 = null;&#xD;&#xA;output_row.CompanyCustom7 = false;&#xD;&#xA;output_row.CompanyCustom8 = false;&#xD;&#xA;output_row.Legacy_CCountry = null;&#xD;&#xA;output_row.Legacy_BCountry = null;&#xD;&#xA;output_row.Legacy_SCountry = null;&#xD;&#xA;output_row.CActive = true;&#xD;&#xA;output_row.DefaultEmailAddress = input_row.DefaultEmailAddress;&#xD;&#xA;output_row.ARTaxCategoryID = 1;&#xD;&#xA;//output_row.DateTimeLoadedIntoIntegrationTableUTC = null; // TODO: no CSV source&#xD;&#xA;//output_row.LoadedIntoTotalETO = null; // TODO: no CSV source&#xD;&#xA;//output_row.TimeLoadedIntoTotalETOUTC = null; // TODO: no CSV source&#xD;&#xA;// supplier is sent but isn't apart of the tblCompanyTable so it is excluded and set as a context variable&#xD;&#xA;out_row.tblSupplier_currency = input_row.tblSupplier_currency;"/>
     <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="LABEL" value="format_data"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -1131,6 +1150,7 @@
       <column comment="" key="false" length="10" name="ARTaxCategoryID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
+      <column comment="" key="false" length="-1" name="tblSupplier_currency" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="880">
@@ -1435,6 +1455,11 @@
       <elementValue elementRef="DELETE_KEY" value="false" id="257"/>
       <elementValue elementRef="UPDATABLE" value="true" id="258"/>
       <elementValue elementRef="INSERTABLE" value="true" id="259"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="tblSupplier_currency" id="260"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="261"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="262"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="263"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="264"/>
     </elementParameter>
     <elementParameter field="CHECK" name="IGNORE_DATE_OUTOF_RANGE" value="false"/>
     <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
@@ -1602,6 +1627,7 @@
       <column comment="" key="false" length="10" name="ARTaxCategoryID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
+      <column comment="" key="false" length="-1" name="tblSupplier_currency" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" label="tblCompany_integration" name="REJECT">
       <column comment="" key="false" length="100" name="CName" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
@@ -1760,6 +1786,7 @@
       <column comment="" key="false" length="10" name="ARTaxCategoryID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
+      <column comment="" key="false" length="-1" name="tblSupplier_currency" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
@@ -1801,7 +1828,10 @@
     <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
     <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
     <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
-    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS">
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="supplier_currency" id="0"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.supplier_currency" id="1"/>
+    </elementParameter>
     <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
     <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
     <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
@@ -1869,10 +1899,20 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row5" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="extracted_json_fields" lineStyle="0" metaname="tExtractJSONFields_2" offsetLabelX="0" offsetLabelY="0" source="tExtractJSONFields_2" target="tJavaRow_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="tblSupplier_currency" id="0"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="extracted_json_fields" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="formatted_data_to_be_inserted" lineStyle="0" metaname="tJavaRow_2" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_2" target="tDBOutput_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="tblSupplier_currency" id="0"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="formatted_data_to_be_inserted" show="false"/>
   </connection>
@@ -1898,6 +1938,7 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
   </subjob>
   <subjob>
+    <elementParameter field="CHECK" name="COLLAPSED" value="true" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>

@@ -298,6 +298,11 @@
           <initialValue xsi:type="relational:TdExpression" xmi:id="_HAcdMYsNEfG9C7e242mTTA" language="COLUMN_DEF"/>
           <sqlDataType xmi:id="_HAcdMosNEfG9C7e242mTTA" name="INT IDENTITY" numericPrecisionRadix="10" javaDataType="4"/>
         </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_s83mIZCYEfGuCZ_y0rqpww" name="tblSupplier_currency" label="tblSupplier_currency" length="10" sourceType="VARCHAR" talendType="id_String">
+          <taggedValue xmi:id="_s83mIpCYEfGuCZ_y0rqpww" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_s83mI5CYEfGuCZ_y0rqpww" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_s83mJJCYEfGuCZ_y0rqpww" name="VARCHAR" javaDataType="12" nullable="columnNullable"/>
+        </feature>
       </ownedElement>
     </ownedElement>
   </orgomg.cwm.resource.relational:Catalog>
