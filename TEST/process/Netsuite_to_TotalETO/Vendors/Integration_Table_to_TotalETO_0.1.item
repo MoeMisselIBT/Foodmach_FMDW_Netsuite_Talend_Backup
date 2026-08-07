@@ -1183,7 +1183,7 @@
       <elementValue elementRef="PARAMETER_TYPE" value="String" id="25"/>
       <elementValue elementRef="PARAMETER_VALUE" value="row5.CFax" id="26"/>
       <elementValue elementRef="PARAMETER_INDEX" value="10" id="27"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="String" id="28"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="Date" id="28"/>
       <elementValue elementRef="PARAMETER_VALUE" value="row5.CDate" id="29"/>
       <elementValue elementRef="PARAMETER_INDEX" value="11" id="30"/>
       <elementValue elementRef="PARAMETER_TYPE" value="String" id="31"/>
@@ -1228,31 +1228,31 @@
       <elementValue elementRef="PARAMETER_TYPE" value="String" id="70"/>
       <elementValue elementRef="PARAMETER_VALUE" value="row5.CTollFree" id="71"/>
       <elementValue elementRef="PARAMETER_INDEX" value="25" id="72"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="String" id="73"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="Boolean" id="73"/>
       <elementValue elementRef="PARAMETER_VALUE" value="row5.BSameAsMailing" id="74"/>
       <elementValue elementRef="PARAMETER_INDEX" value="26" id="75"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="String" id="76"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="Boolean" id="76"/>
       <elementValue elementRef="PARAMETER_VALUE" value="row5.SSameAsMailing" id="77"/>
       <elementValue elementRef="PARAMETER_INDEX" value="27" id="78"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="String" id="79"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="Boolean" id="79"/>
       <elementValue elementRef="PARAMETER_VALUE" value="row5.CHasAgent" id="80"/>
       <elementValue elementRef="PARAMETER_INDEX" value="28" id="81"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="String" id="82"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="Int" id="82"/>
       <elementValue elementRef="PARAMETER_VALUE" value="row5.CAccountingHoldCode" id="83"/>
       <elementValue elementRef="PARAMETER_INDEX" value="29" id="84"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="String" id="85"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="Int" id="85"/>
       <elementValue elementRef="PARAMETER_VALUE" value="row5.CCompanyParent" id="86"/>
       <elementValue elementRef="PARAMETER_INDEX" value="30" id="87"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="String" id="88"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="Int" id="88"/>
       <elementValue elementRef="PARAMETER_VALUE" value="row5.CDefaultShipVia" id="89"/>
       <elementValue elementRef="PARAMETER_INDEX" value="31" id="90"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="String" id="91"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="BigDecimal" id="91"/>
       <elementValue elementRef="PARAMETER_VALUE" value="row5.CDefaultPartDiscount" id="92"/>
       <elementValue elementRef="PARAMETER_INDEX" value="32" id="93"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="String" id="94"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="BigDecimal" id="94"/>
       <elementValue elementRef="PARAMETER_VALUE" value="row5.CDefaultPartMargin" id="95"/>
       <elementValue elementRef="PARAMETER_INDEX" value="33" id="96"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="String" id="97"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="Int" id="97"/>
       <elementValue elementRef="PARAMETER_VALUE" value="row5.CDefaultTerms" id="98"/>
       <elementValue elementRef="PARAMETER_INDEX" value="34" id="99"/>
       <elementValue elementRef="PARAMETER_TYPE" value="String" id="100"/>
@@ -1261,13 +1261,13 @@
       <elementValue elementRef="PARAMETER_TYPE" value="String" id="103"/>
       <elementValue elementRef="PARAMETER_VALUE" value="row5.CAccCustomerID" id="104"/>
       <elementValue elementRef="PARAMETER_INDEX" value="36" id="105"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="String" id="106"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="Int" id="106"/>
       <elementValue elementRef="PARAMETER_VALUE" value="row5.CAccVendorTaxClass1" id="107"/>
       <elementValue elementRef="PARAMETER_INDEX" value="37" id="108"/>
       <elementValue elementRef="PARAMETER_TYPE" value="String" id="109"/>
       <elementValue elementRef="PARAMETER_VALUE" value="row5.CAccCustomerGroupCode" id="110"/>
       <elementValue elementRef="PARAMETER_INDEX" value="38" id="111"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="String" id="112"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="BigDecimal" id="112"/>
       <elementValue elementRef="PARAMETER_VALUE" value="row5.CAccCustomerDisc" id="113"/>
       <elementValue elementRef="PARAMETER_INDEX" value="39" id="114"/>
       <elementValue elementRef="PARAMETER_TYPE" value="String" id="115"/>
@@ -1276,22 +1276,22 @@
       <elementValue elementRef="PARAMETER_TYPE" value="String" id="118"/>
       <elementValue elementRef="PARAMETER_VALUE" value="row5.CompanyCustom2" id="119"/>
       <elementValue elementRef="PARAMETER_INDEX" value="41" id="120"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="String" id="121"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="BigDecimal" id="121"/>
       <elementValue elementRef="PARAMETER_VALUE" value="row5.CompanyCustom3" id="122"/>
       <elementValue elementRef="PARAMETER_INDEX" value="42" id="123"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="String" id="124"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="BigDecimal" id="124"/>
       <elementValue elementRef="PARAMETER_VALUE" value="row5.CompanyCustom4" id="125"/>
       <elementValue elementRef="PARAMETER_INDEX" value="43" id="126"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="String" id="127"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="Date" id="127"/>
       <elementValue elementRef="PARAMETER_VALUE" value="row5.CompanyCustom5" id="128"/>
       <elementValue elementRef="PARAMETER_INDEX" value="44" id="129"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="String" id="130"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="Date" id="130"/>
       <elementValue elementRef="PARAMETER_VALUE" value="row5.CompanyCustom6" id="131"/>
       <elementValue elementRef="PARAMETER_INDEX" value="45" id="132"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="String" id="133"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="Boolean" id="133"/>
       <elementValue elementRef="PARAMETER_VALUE" value="row5.CompanyCustom7" id="134"/>
       <elementValue elementRef="PARAMETER_INDEX" value="46" id="135"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="String" id="136"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="Boolean" id="136"/>
       <elementValue elementRef="PARAMETER_VALUE" value="row5.CompanyCustom8" id="137"/>
       <elementValue elementRef="PARAMETER_INDEX" value="47" id="138"/>
       <elementValue elementRef="PARAMETER_TYPE" value="String" id="139"/>
@@ -1303,13 +1303,13 @@
       <elementValue elementRef="PARAMETER_TYPE" value="String" id="145"/>
       <elementValue elementRef="PARAMETER_VALUE" value="row5.Legacy_SCountry" id="146"/>
       <elementValue elementRef="PARAMETER_INDEX" value="50" id="147"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="String" id="148"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="Boolean" id="148"/>
       <elementValue elementRef="PARAMETER_VALUE" value="row5.CActive" id="149"/>
       <elementValue elementRef="PARAMETER_INDEX" value="51" id="150"/>
       <elementValue elementRef="PARAMETER_TYPE" value="String" id="151"/>
       <elementValue elementRef="PARAMETER_VALUE" value="row5.DefaultEmailAddress" id="152"/>
       <elementValue elementRef="PARAMETER_INDEX" value="52" id="153"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="String" id="154"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="Int" id="154"/>
       <elementValue elementRef="PARAMETER_VALUE" value="row5.ARTaxCategoryID" id="155"/>
     </elementParameter>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
