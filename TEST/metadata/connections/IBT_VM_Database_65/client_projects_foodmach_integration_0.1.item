@@ -304,6 +304,18 @@
           <sqlDataType xmi:id="_s83mJJCYEfGuCZ_y0rqpww" name="VARCHAR" javaDataType="12" nullable="columnNullable"/>
         </feature>
       </ownedElement>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_CF-JEJFhEfGuCZ_y0rqpww" name="sandbox_table" id="_CF9iAJFhEfGuCZ_y0rqpww" label="sandbox_table" tableType="TABLE">
+        <feature xsi:type="relational:TdColumn" xmi:id="_CF-JEZFhEfGuCZ_y0rqpww" name="sandbox_table_id" label="sandbox_table_id" length="10" sourceType="INT IDENTITY" talendType="id_Integer" key="true" nullable="false">
+          <taggedValue xmi:id="_CF-JEpFhEfGuCZ_y0rqpww" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_CF-JE5FhEfGuCZ_y0rqpww" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_CF-JFJFhEfGuCZ_y0rqpww" name="INT IDENTITY" numericPrecisionRadix="10" javaDataType="4"/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_CF-JFZFhEfGuCZ_y0rqpww" name="description" label="description" length="255" sourceType="NVARCHAR" talendType="id_String">
+          <taggedValue xmi:id="_CF-JFpFhEfGuCZ_y0rqpww" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_CF-JF5FhEfGuCZ_y0rqpww" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_CF-JGJFhEfGuCZ_y0rqpww" name="NVARCHAR" javaDataType="-9" nullable="columnNullable"/>
+        </feature>
+      </ownedElement>
     </ownedElement>
   </orgomg.cwm.resource.relational:Catalog>
 </xmi:XMI>
