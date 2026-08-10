@@ -63,7 +63,7 @@
           <initialValue xsi:type="relational:TdExpression" xmi:id="_4Tkl14lvEfG9C7e242mTTA" language="COLUMN_DEF"/>
           <sqlDataType xmi:id="_4Tkl2IlvEfG9C7e242mTTA" name="NVARCHAR" javaDataType="-9" nullable="columnNullable"/>
         </feature>
-        <feature xsi:type="relational:TdColumn" xmi:id="_4Tkl2YlvEfG9C7e242mTTA" name="CDate" label="CDate" length="23" precision="3" sourceType="DATETIME" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
+        <feature xsi:type="relational:TdColumn" xmi:id="_4Tkl2YlvEfG9C7e242mTTA" name="CDate" label="CDate" length="23" precision="3" sourceType="DATETIME" talendType="id_Date" pattern="&quot;yyyy-MM-dd&quot;">
           <taggedValue xmi:id="_4Tkl2olvEfG9C7e242mTTA" tag="Comment" value=""/>
           <initialValue xsi:type="relational:TdExpression" xmi:id="_4Tkl24lvEfG9C7e242mTTA" language="COLUMN_DEF"/>
           <sqlDataType xmi:id="_4Tkl3IlvEfG9C7e242mTTA" name="DATETIME" numericPrecision="3" javaDataType="93" nullable="columnNullable"/>
@@ -228,12 +228,12 @@
           <initialValue xsi:type="relational:TdExpression" xmi:id="_4TkmW4lvEfG9C7e242mTTA" language="COLUMN_DEF"/>
           <sqlDataType xmi:id="_4TkmXIlvEfG9C7e242mTTA" name="DECIMAL" numericPrecision="6" numericPrecisionRadix="10" javaDataType="3" nullable="columnNullable"/>
         </feature>
-        <feature xsi:type="relational:TdColumn" xmi:id="_4TkmXYlvEfG9C7e242mTTA" name="CompanyCustom5" label="CompanyCustom5" length="23" precision="3" sourceType="DATETIME" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
+        <feature xsi:type="relational:TdColumn" xmi:id="_4TkmXYlvEfG9C7e242mTTA" name="CompanyCustom5" label="CompanyCustom5" length="23" precision="3" sourceType="DATETIME" talendType="id_Date" pattern="&quot;yyyy-MM-dd&quot;">
           <taggedValue xmi:id="_4TkmXolvEfG9C7e242mTTA" tag="Comment" value=""/>
           <initialValue xsi:type="relational:TdExpression" xmi:id="_4TkmX4lvEfG9C7e242mTTA" language="COLUMN_DEF"/>
           <sqlDataType xmi:id="_4TkmYIlvEfG9C7e242mTTA" name="DATETIME" numericPrecision="3" javaDataType="93" nullable="columnNullable"/>
         </feature>
-        <feature xsi:type="relational:TdColumn" xmi:id="_4TkmYYlvEfG9C7e242mTTA" name="CompanyCustom6" label="CompanyCustom6" length="23" precision="3" sourceType="DATETIME" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
+        <feature xsi:type="relational:TdColumn" xmi:id="_4TkmYYlvEfG9C7e242mTTA" name="CompanyCustom6" label="CompanyCustom6" length="23" precision="3" sourceType="DATETIME" talendType="id_Date" pattern="&quot;yyyy-MM-dd&quot;">
           <taggedValue xmi:id="_4TkmYolvEfG9C7e242mTTA" tag="Comment" value=""/>
           <initialValue xsi:type="relational:TdExpression" xmi:id="_4TkmY4lvEfG9C7e242mTTA" language="COLUMN_DEF"/>
           <sqlDataType xmi:id="_4TkmZIlvEfG9C7e242mTTA" name="DATETIME" numericPrecision="3" javaDataType="93" nullable="columnNullable"/>
@@ -278,7 +278,7 @@
           <initialValue xsi:type="relational:TdExpression" xmi:id="_4Tkmg4lvEfG9C7e242mTTA" language="COLUMN_DEF"/>
           <sqlDataType xmi:id="_4TkmhIlvEfG9C7e242mTTA" name="INT" numericPrecisionRadix="10" javaDataType="4"/>
         </feature>
-        <feature xsi:type="relational:TdColumn" xmi:id="_4TkmhYlvEfG9C7e242mTTA" name="DateTimeLoadedIntoIntegrationTableUTC" label="DateTimeLoadedIntoIntegrationTableUTC" length="23" precision="3" sourceType="DATETIME2" talendType="id_Date" nullable="false" pattern="&quot;dd-MM-yyyy&quot;">
+        <feature xsi:type="relational:TdColumn" xmi:id="_4TkmhYlvEfG9C7e242mTTA" name="DateTimeLoadedIntoIntegrationTableUTC" label="DateTimeLoadedIntoIntegrationTableUTC" length="23" precision="3" sourceType="DATETIME2" talendType="id_Date" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;">
           <taggedValue xmi:id="_4TkmholvEfG9C7e242mTTA" tag="Comment" value=""/>
           <initialValue xsi:type="relational:TdExpression" xmi:id="_4Tkmh4lvEfG9C7e242mTTA" body="'sysutcdatetime()'" language="COLUMN_DEF"/>
           <sqlDataType xmi:id="_4TkmiIlvEfG9C7e242mTTA" name="DATETIME2" numericPrecision="3" javaDataType="93"/>
@@ -288,7 +288,7 @@
           <initialValue xsi:type="relational:TdExpression" xmi:id="_4Tkmi4lvEfG9C7e242mTTA" body="'(0)'" language="COLUMN_DEF"/>
           <sqlDataType xmi:id="_4TkmjIlvEfG9C7e242mTTA" name="BIT" javaDataType="-7"/>
         </feature>
-        <feature xsi:type="relational:TdColumn" xmi:id="_4TkmjYlvEfG9C7e242mTTA" name="TimeLoadedIntoTotalETOUTC" label="TimeLoadedIntoTotalETOUTC" length="23" precision="3" sourceType="DATETIME2" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
+        <feature xsi:type="relational:TdColumn" xmi:id="_4TkmjYlvEfG9C7e242mTTA" name="TimeLoadedIntoTotalETOUTC" label="TimeLoadedIntoTotalETOUTC" length="23" precision="3" sourceType="DATETIME2" talendType="id_Date" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;">
           <taggedValue xmi:id="_4TkmjolvEfG9C7e242mTTA" tag="Comment" value=""/>
           <initialValue xsi:type="relational:TdExpression" xmi:id="_4Tkmj4lvEfG9C7e242mTTA" language="COLUMN_DEF"/>
           <sqlDataType xmi:id="_4TkmkIlvEfG9C7e242mTTA" name="DATETIME2" numericPrecision="3" javaDataType="93" nullable="columnNullable"/>

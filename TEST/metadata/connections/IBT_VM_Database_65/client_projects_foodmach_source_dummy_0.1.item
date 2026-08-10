@@ -172,7 +172,7 @@
           <initialValue xsi:type="relational:TdExpression" xmi:id="_an-ud4sWEfG9C7e242mTTA" language="COLUMN_DEF"/>
           <sqlDataType xmi:id="_an-ueIsWEfG9C7e242mTTA" name="NVARCHAR" javaDataType="-9" nullable="columnNullable"/>
         </feature>
-        <feature xsi:type="relational:TdColumn" xmi:id="_an-ueYsWEfG9C7e242mTTA" name="CDate" label="CDate" length="23" precision="3" sourceType="DATETIME" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
+        <feature xsi:type="relational:TdColumn" xmi:id="_an-ueYsWEfG9C7e242mTTA" name="CDate" label="CDate" length="23" precision="3" sourceType="DATETIME" talendType="id_Date" pattern="&quot;yyyy-MM-dd&quot;">
           <taggedValue xmi:id="_an-ueosWEfG9C7e242mTTA" tag="Comment" value=""/>
           <initialValue xsi:type="relational:TdExpression" xmi:id="_an-ue4sWEfG9C7e242mTTA" language="COLUMN_DEF"/>
           <sqlDataType xmi:id="_an-ufIsWEfG9C7e242mTTA" name="DATETIME" numericPrecision="3" javaDataType="93" nullable="columnNullable"/>
@@ -319,12 +319,12 @@
         </feature>
         <feature xsi:type="relational:TdColumn" xmi:id="_an-u7YsWEfG9C7e242mTTA" name="CompanyCustom1" label="CompanyCustom1" length="2147483647" sourceType="NVARCHAR" talendType="id_String" nullable="false">
           <taggedValue xmi:id="_an-u7osWEfG9C7e242mTTA" tag="Comment" value=""/>
-          <initialValue xsi:type="relational:TdExpression" xmi:id="_an-u74sWEfG9C7e242mTTA" body="" language="COLUMN_DEF"/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_an-u74sWEfG9C7e242mTTA" language="COLUMN_DEF"/>
           <sqlDataType xmi:id="_an-u8IsWEfG9C7e242mTTA" name="NVARCHAR" javaDataType="-9"/>
         </feature>
         <feature xsi:type="relational:TdColumn" xmi:id="_an-u8YsWEfG9C7e242mTTA" name="CompanyCustom2" label="CompanyCustom2" length="2147483647" sourceType="NVARCHAR" talendType="id_String" nullable="false">
           <taggedValue xmi:id="_an-u8osWEfG9C7e242mTTA" tag="Comment" value=""/>
-          <initialValue xsi:type="relational:TdExpression" xmi:id="_an-u84sWEfG9C7e242mTTA" body="" language="COLUMN_DEF"/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_an-u84sWEfG9C7e242mTTA" language="COLUMN_DEF"/>
           <sqlDataType xmi:id="_an-u9IsWEfG9C7e242mTTA" name="NVARCHAR" javaDataType="-9"/>
         </feature>
         <feature xsi:type="relational:TdColumn" xmi:id="_an-u9YsWEfG9C7e242mTTA" name="CompanyCustom3" label="CompanyCustom3" length="20" precision="6" sourceType="DECIMAL" talendType="id_BigDecimal">
@@ -337,12 +337,12 @@
           <initialValue xsi:type="relational:TdExpression" xmi:id="_an-u-4sWEfG9C7e242mTTA" language="COLUMN_DEF"/>
           <sqlDataType xmi:id="_an-u_IsWEfG9C7e242mTTA" name="DECIMAL" numericPrecision="6" numericPrecisionRadix="10" javaDataType="3" nullable="columnNullable"/>
         </feature>
-        <feature xsi:type="relational:TdColumn" xmi:id="_an-u_YsWEfG9C7e242mTTA" name="CompanyCustom5" label="CompanyCustom5" length="23" precision="3" sourceType="DATETIME" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
+        <feature xsi:type="relational:TdColumn" xmi:id="_an-u_YsWEfG9C7e242mTTA" name="CompanyCustom5" label="CompanyCustom5" length="23" precision="3" sourceType="DATETIME" talendType="id_Date" pattern="&quot;yyyy-MM-dd&quot;">
           <taggedValue xmi:id="_an-u_osWEfG9C7e242mTTA" tag="Comment" value=""/>
           <initialValue xsi:type="relational:TdExpression" xmi:id="_an-u_4sWEfG9C7e242mTTA" language="COLUMN_DEF"/>
           <sqlDataType xmi:id="_an-vAIsWEfG9C7e242mTTA" name="DATETIME" numericPrecision="3" javaDataType="93" nullable="columnNullable"/>
         </feature>
-        <feature xsi:type="relational:TdColumn" xmi:id="_an-vAYsWEfG9C7e242mTTA" name="CompanyCustom6" label="CompanyCustom6" length="23" precision="3" sourceType="DATETIME" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
+        <feature xsi:type="relational:TdColumn" xmi:id="_an-vAYsWEfG9C7e242mTTA" name="CompanyCustom6" label="CompanyCustom6" length="23" precision="3" sourceType="DATETIME" talendType="id_Date" pattern="&quot;yyyy-MM-dd&quot;">
           <taggedValue xmi:id="_an-vAosWEfG9C7e242mTTA" tag="Comment" value=""/>
           <initialValue xsi:type="relational:TdExpression" xmi:id="_an-vA4sWEfG9C7e242mTTA" language="COLUMN_DEF"/>
           <sqlDataType xmi:id="_an-vBIsWEfG9C7e242mTTA" name="DATETIME" numericPrecision="3" javaDataType="93" nullable="columnNullable"/>
@@ -379,7 +379,7 @@
         </feature>
         <feature xsi:type="relational:TdColumn" xmi:id="_an-vHYsWEfG9C7e242mTTA" name="DefaultEmailAddress" label="DefaultEmailAddress" length="255" sourceType="NVARCHAR" talendType="id_String" nullable="false">
           <taggedValue xmi:id="_an-vHosWEfG9C7e242mTTA" tag="Comment" value=""/>
-          <initialValue xsi:type="relational:TdExpression" xmi:id="_an-vH4sWEfG9C7e242mTTA" body="" language="COLUMN_DEF"/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_an-vH4sWEfG9C7e242mTTA" language="COLUMN_DEF"/>
           <sqlDataType xmi:id="_an-vIIsWEfG9C7e242mTTA" name="NVARCHAR" javaDataType="-9"/>
         </feature>
         <feature xsi:type="relational:TdColumn" xmi:id="_an-vIYsWEfG9C7e242mTTA" name="ARTaxCategoryID" label="ARTaxCategoryID" length="10" sourceType="INT" talendType="id_Integer" nullable="false">
