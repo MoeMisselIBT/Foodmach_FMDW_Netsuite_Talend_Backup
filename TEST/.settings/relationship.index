@@ -119,14 +119,6 @@
     "version" : "Latest",
     "type" : "schema"
   }, {
-    "id" : "_XsKOgIr3EfG9C7e242mTTA - tblCompany",
-    "version" : "Latest",
-    "type" : "schema"
-  }, {
-    "id" : "_XsKOgIr3EfG9C7e242mTTA - tblCompanyTypes",
-    "version" : "Latest",
-    "type" : "schema"
-  }, {
     "id" : "_XsKOgIr3EfG9C7e242mTTA - tblSupplier",
     "version" : "Latest",
     "type" : "schema"
