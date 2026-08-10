@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_WftGcJSPEfGuCZ_y0rqpww" comment="connectionComment" label="connectionLabel" dataPackage="_WftGcZSPEfGuCZ_y0rqpww" mappingTypeUsed="true" mappingTypeId="id_MSSQL"/>
+  <TalendMetadata:GenericPackage xmi:id="_WftGcZSPEfGuCZ_y0rqpww" dataManager="_WftGcJSPEfGuCZ_y0rqpww">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_WftGcpSPEfGuCZ_y0rqpww" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WftGc5SPEfGuCZ_y0rqpww" name="CompanyID" id="413833" label="CompanyID" length="-1" precision="-1" sourceType="INT" talendType="id_Integer">
+        <initialValue xmi:id="_WftGdJSPEfGuCZ_y0rqpww"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WftGdZSPEfGuCZ_y0rqpww" name="IntegrationID" id="383905" label="IntegrationID" length="10" sourceType="INT IDENTITY" talendType="id_Integer" nullable="false">
+        <initialValue xmi:id="_WftGdpSPEfGuCZ_y0rqpww"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WftGd5SPEfGuCZ_y0rqpww" name="LoadedIntoTotalETO" id="390099" label="LoadedIntoTotalETO" length="1" sourceType="BIT" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_WftGeJSPEfGuCZ_y0rqpww" body="'(0)'"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WftGeZSPEfGuCZ_y0rqpww" name="TimeLoadedIntoTotalETOUTC" id="390101" label="TimeLoadedIntoTotalETOUTC" length="23" precision="3" sourceType="DATETIME2" talendType="id_Date" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;">
+        <initialValue xmi:id="_WftGepSPEfGuCZ_y0rqpww"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WftGe5SPEfGuCZ_y0rqpww" name="tblSupplier_currency" id="416229" label="tblSupplier_currency" length="-1" precision="-1" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_WftGfJSPEfGuCZ_y0rqpww"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

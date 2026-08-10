@@ -118,10 +118,6 @@
     "id" : "_QQIh8IlvEfG9C7e242mTTA - tblCompany_integration",
     "version" : "Latest",
     "type" : "schema"
-  }, {
-    "id" : "_XsKOgIr3EfG9C7e242mTTA - tblSupplier",
-    "version" : "Latest",
-    "type" : "schema"
   } ]
 }, {
   "baseItem" : {
