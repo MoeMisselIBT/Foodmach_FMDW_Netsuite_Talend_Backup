@@ -1112,7 +1112,7 @@
     </metadata>
   </node>
   <node componentName="tMSSqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1000" posY="-40">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBRow_4" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBRow_2" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
@@ -1124,13 +1124,13 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;client_projects&quot;"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:cL083pyswS6QQ+qeAnBKmjRJFROfHYawm+ZbEBxAoYA59bWR0Nsp"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:csnbs7jBdvBV5huRNyC9uwSlVK3bp1QHzKIsjUBRmxNWdwmWL6Gy"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;tblCompany&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;INSERT INTO client_projects.foodmach_source_dummy.tblCompany (&#xD;&#xA;    CName, ARTaxCategoryID&#xD;&#xA;)&#xD;&#xA;OUTPUT inserted.CompanyID, inserted.CName, inserted.ARTaxCategoryID&#xD;&#xA;VALUES ( ?, 1 )&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;INSERT INTO client_projects.foodmach_source_dummy.tblCompany (&#xD;&#xA;    CName, CAddress1, CAddress2, CCity, CState, CZip, CCountry, CPhone, CFax,&#xD;&#xA;    CDate, BAddress1, BAddress2, BCity, BState, BZip, BCountry, SAddress1,&#xD;&#xA;    SAddress2, SCity, SState, SZip, SCountry, CWWWAddress, CTollFree,&#xD;&#xA;    BSameAsMailing, SSameAsMailing, CHasAgent, CAccountingHoldCode,&#xD;&#xA;    CCompanyParent, CDefaultShipVia, CDefaultPartDiscount, CDefaultPartMargin,&#xD;&#xA;    CDefaultTerms, CAccVendorID, CAccCustomerID, CAccVendorTaxClass1,&#xD;&#xA;    CAccCustomerGroupCode, CAccCustomerDisc, CompanyCustom1, CompanyCustom2,&#xD;&#xA;    CompanyCustom3, CompanyCustom4, CompanyCustom5, CompanyCustom6,&#xD;&#xA;    CompanyCustom7, CompanyCustom8, Legacy_CCountry, Legacy_BCountry,&#xD;&#xA;    Legacy_SCountry, CActive, DefaultEmailAddress, ARTaxCategoryID&#xD;&#xA;)&#xD;&#xA;OUTPUT inserted.*&#xD;&#xA;VALUES (&#xD;&#xA;    ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,&#xD;&#xA;    ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,&#xD;&#xA;    ?, ?, ?, 1&#xD;&#xA;);&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -1142,41 +1142,527 @@
     <elementParameter field="TEXT" name="KEYSTORE_PRINCIPAL_ID" value="" show="false"/>
     <elementParameter field="PASSWORD" name="KEYSTORE_SECRET" value="" show="false"/>
     <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="true"/>
-    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" value="record_set"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" value="record_set_column"/>
     <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="true"/>
     <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS">
       <elementValue elementRef="PARAMETER_INDEX" value="1" id="0"/>
       <elementValue elementRef="PARAMETER_TYPE" value="String" id="1"/>
       <elementValue elementRef="PARAMETER_VALUE" value="row5.CName" id="2"/>
+      <elementValue elementRef="PARAMETER_INDEX" value="2" id="3"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="String" id="4"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="row5.CAddress1" id="5"/>
+      <elementValue elementRef="PARAMETER_INDEX" value="3" id="6"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="String" id="7"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="row5.CAddress2" id="8"/>
+      <elementValue elementRef="PARAMETER_INDEX" value="4" id="9"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="String" id="10"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="row5.CCity" id="11"/>
+      <elementValue elementRef="PARAMETER_INDEX" value="5" id="12"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="String" id="13"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="row5.CState" id="14"/>
+      <elementValue elementRef="PARAMETER_INDEX" value="6" id="15"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="String" id="16"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="row5.CZip" id="17"/>
+      <elementValue elementRef="PARAMETER_INDEX" value="7" id="18"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="String" id="19"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="row5.CCountry" id="20"/>
+      <elementValue elementRef="PARAMETER_INDEX" value="8" id="21"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="String" id="22"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="row5.CPhone" id="23"/>
+      <elementValue elementRef="PARAMETER_INDEX" value="9" id="24"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="String" id="25"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="row5.CFax" id="26"/>
+      <elementValue elementRef="PARAMETER_INDEX" value="10" id="27"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="Date" id="28"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="row5.CDate" id="29"/>
+      <elementValue elementRef="PARAMETER_INDEX" value="11" id="30"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="String" id="31"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="row5.BAddress1" id="32"/>
+      <elementValue elementRef="PARAMETER_INDEX" value="12" id="33"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="String" id="34"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="row5.BAddress2" id="35"/>
+      <elementValue elementRef="PARAMETER_INDEX" value="13" id="36"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="String" id="37"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="row5.BCity" id="38"/>
+      <elementValue elementRef="PARAMETER_INDEX" value="14" id="39"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="String" id="40"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="row5.BState" id="41"/>
+      <elementValue elementRef="PARAMETER_INDEX" value="15" id="42"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="String" id="43"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="row5.BZip" id="44"/>
+      <elementValue elementRef="PARAMETER_INDEX" value="16" id="45"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="String" id="46"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="row5.BCountry" id="47"/>
+      <elementValue elementRef="PARAMETER_INDEX" value="17" id="48"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="String" id="49"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="row5.SAddress1" id="50"/>
+      <elementValue elementRef="PARAMETER_INDEX" value="18" id="51"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="String" id="52"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="row5.SAddress2" id="53"/>
+      <elementValue elementRef="PARAMETER_INDEX" value="19" id="54"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="String" id="55"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="row5.SCity" id="56"/>
+      <elementValue elementRef="PARAMETER_INDEX" value="20" id="57"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="String" id="58"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="row5.SState" id="59"/>
+      <elementValue elementRef="PARAMETER_INDEX" value="21" id="60"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="String" id="61"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="row5.SZip" id="62"/>
+      <elementValue elementRef="PARAMETER_INDEX" value="22" id="63"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="String" id="64"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="row5.SCountry" id="65"/>
+      <elementValue elementRef="PARAMETER_INDEX" value="23" id="66"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="String" id="67"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="row5.CWWWAddress" id="68"/>
+      <elementValue elementRef="PARAMETER_INDEX" value="24" id="69"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="String" id="70"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="row5.CTollFree" id="71"/>
+      <elementValue elementRef="PARAMETER_INDEX" value="25" id="72"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="Boolean" id="73"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="row5.BSameAsMailing" id="74"/>
+      <elementValue elementRef="PARAMETER_INDEX" value="26" id="75"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="Boolean" id="76"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="row5.SSameAsMailing" id="77"/>
+      <elementValue elementRef="PARAMETER_INDEX" value="27" id="78"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="Boolean" id="79"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="row5.CHasAgent" id="80"/>
+      <elementValue elementRef="PARAMETER_INDEX" value="28" id="81"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="Int" id="82"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="row5.CAccountingHoldCode" id="83"/>
+      <elementValue elementRef="PARAMETER_INDEX" value="29" id="84"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="Int" id="85"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="row5.CCompanyParent" id="86"/>
+      <elementValue elementRef="PARAMETER_INDEX" value="30" id="87"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="Int" id="88"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="row5.CDefaultShipVia" id="89"/>
+      <elementValue elementRef="PARAMETER_INDEX" value="31" id="90"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="BigDecimal" id="91"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="row5.CDefaultPartDiscount" id="92"/>
+      <elementValue elementRef="PARAMETER_INDEX" value="32" id="93"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="BigDecimal" id="94"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="row5.CDefaultPartMargin" id="95"/>
+      <elementValue elementRef="PARAMETER_INDEX" value="33" id="96"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="Int" id="97"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="row5.CDefaultTerms" id="98"/>
+      <elementValue elementRef="PARAMETER_INDEX" value="34" id="99"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="String" id="100"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="row5.CAccVendorID" id="101"/>
+      <elementValue elementRef="PARAMETER_INDEX" value="35" id="102"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="String" id="103"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="row5.CAccCustomerID" id="104"/>
+      <elementValue elementRef="PARAMETER_INDEX" value="36" id="105"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="Int" id="106"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="row5.CAccVendorTaxClass1" id="107"/>
+      <elementValue elementRef="PARAMETER_INDEX" value="37" id="108"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="String" id="109"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="row5.CAccCustomerGroupCode" id="110"/>
+      <elementValue elementRef="PARAMETER_INDEX" value="38" id="111"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="BigDecimal" id="112"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="row5.CAccCustomerDisc" id="113"/>
+      <elementValue elementRef="PARAMETER_INDEX" value="39" id="114"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="String" id="115"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="row5.CompanyCustom1" id="116"/>
+      <elementValue elementRef="PARAMETER_INDEX" value="40" id="117"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="String" id="118"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="row5.CompanyCustom2" id="119"/>
+      <elementValue elementRef="PARAMETER_INDEX" value="41" id="120"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="BigDecimal" id="121"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="row5.CompanyCustom3" id="122"/>
+      <elementValue elementRef="PARAMETER_INDEX" value="42" id="123"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="BigDecimal" id="124"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="row5.CompanyCustom4" id="125"/>
+      <elementValue elementRef="PARAMETER_INDEX" value="43" id="126"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="Date" id="127"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="row5.CompanyCustom5" id="128"/>
+      <elementValue elementRef="PARAMETER_INDEX" value="44" id="129"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="Date" id="130"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="row5.CompanyCustom6" id="131"/>
+      <elementValue elementRef="PARAMETER_INDEX" value="45" id="132"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="Boolean" id="133"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="row5.CompanyCustom7" id="134"/>
+      <elementValue elementRef="PARAMETER_INDEX" value="46" id="135"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="Boolean" id="136"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="row5.CompanyCustom8" id="137"/>
+      <elementValue elementRef="PARAMETER_INDEX" value="47" id="138"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="String" id="139"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="row5.Legacy_CCountry" id="140"/>
+      <elementValue elementRef="PARAMETER_INDEX" value="48" id="141"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="String" id="142"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="row5.Legacy_BCountry" id="143"/>
+      <elementValue elementRef="PARAMETER_INDEX" value="49" id="144"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="String" id="145"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="row5.Legacy_SCountry" id="146"/>
+      <elementValue elementRef="PARAMETER_INDEX" value="50" id="147"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="Boolean" id="148"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="row5.CActive" id="149"/>
+      <elementValue elementRef="PARAMETER_INDEX" value="51" id="150"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="String" id="151"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="row5.DefaultEmailAddress" id="152"/>
+      <elementValue elementRef="PARAMETER_INDEX" value="52" id="153"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="Int" id="154"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="row5.ARTaxCategoryID" id="155"/>
     </elementParameter>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
     <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
     <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" value="30" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="tdbrow_all_columns"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="tblCompany" name="tDBRow_4">
-      <column comment="" key="false" length="10" name="record_set" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Object" usefulColumn="true">
+    <metadata connector="FLOW" label="tblCompany" name="tDBRow_2">
+      <column comment="" key="false" length="10" name="record_set_column" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Object" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="100" name="CName" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
+      <column comment="" key="false" length="255" name="CAddress1" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="CAddress2" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="CCity" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="CState" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="CZip" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="CCountry" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="CPhone" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="CFax" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="CDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="BAddress1" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="BAddress2" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="BCity" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="BState" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="BZip" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="BCountry" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="SAddress1" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="SAddress2" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="SCity" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="SState" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="SZip" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="SCountry" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="CWWWAddress" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="CTollFree" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(0)'" key="false" length="1" name="BSameAsMailing" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(0)'" key="false" length="1" name="SSameAsMailing" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(0)'" key="false" length="1" name="CHasAgent" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="CAccountingHoldCode" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="CCompanyParent" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="CDefaultShipVia" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="9" name="CDefaultPartDiscount" nullable="true" pattern="" precision="8" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="CDefaultPartMargin" nullable="true" pattern="" precision="10" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="CDefaultTerms" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="CAccVendorID" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="CAccCustomerID" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="CAccVendorTaxClass1" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="CAccCustomerGroupCode" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="((0))" key="false" length="9" name="CAccCustomerDisc" nullable="false" pattern="" precision="8" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="CompanyCustom1" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="CompanyCustom2" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="CompanyCustom3" nullable="true" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="CompanyCustom4" nullable="true" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="CompanyCustom5" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="CompanyCustom6" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(0)'" key="false" length="1" name="CompanyCustom7" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(0)'" key="false" length="1" name="CompanyCustom8" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="Legacy_CCountry" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="Legacy_BCountry" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="Legacy_SCountry" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(1)'" key="false" length="1" name="CActive" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="DefaultEmailAddress" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ARTaxCategoryID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'sysutcdatetime()'" key="false" length="23" name="DateTimeLoadedIntoIntegrationTableUTC" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME2" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(0)'" key="false" length="1" name="LoadedIntoTotalETO" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="TimeLoadedIntoTotalETOUTC" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME2" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="IntegrationID" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="-1" name="tblSupplier_currency" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" label="tblCompany" name="REJECT">
-      <column comment="" key="false" length="10" name="record_set" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Object" usefulColumn="true">
+      <column comment="" key="false" length="10" name="record_set_column" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Object" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="100" name="CName" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
+      <column comment="" key="false" length="255" name="CAddress1" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="CAddress2" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="CCity" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="CState" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="CZip" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="CCountry" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="CPhone" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="CFax" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="CDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="BAddress1" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="BAddress2" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="BCity" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="BState" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="BZip" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="BCountry" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="SAddress1" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="SAddress2" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="SCity" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="SState" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="SZip" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="SCountry" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="CWWWAddress" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="CTollFree" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(0)'" key="false" length="1" name="BSameAsMailing" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(0)'" key="false" length="1" name="SSameAsMailing" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(0)'" key="false" length="1" name="CHasAgent" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="CAccountingHoldCode" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="CCompanyParent" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="CDefaultShipVia" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="9" name="CDefaultPartDiscount" nullable="true" pattern="" precision="8" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="CDefaultPartMargin" nullable="true" pattern="" precision="10" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="CDefaultTerms" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="CAccVendorID" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="CAccCustomerID" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="CAccVendorTaxClass1" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="CAccCustomerGroupCode" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="((0))" key="false" length="9" name="CAccCustomerDisc" nullable="false" pattern="" precision="8" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="CompanyCustom1" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="CompanyCustom2" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="CompanyCustom3" nullable="true" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="CompanyCustom4" nullable="true" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="CompanyCustom5" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="CompanyCustom6" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(0)'" key="false" length="1" name="CompanyCustom7" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(0)'" key="false" length="1" name="CompanyCustom8" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="Legacy_CCountry" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="Legacy_BCountry" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="Legacy_SCountry" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(1)'" key="false" length="1" name="CActive" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="DefaultEmailAddress" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ARTaxCategoryID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'sysutcdatetime()'" key="false" length="23" name="DateTimeLoadedIntoIntegrationTableUTC" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME2" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(0)'" key="false" length="1" name="LoadedIntoTotalETO" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="TimeLoadedIntoTotalETOUTC" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME2" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="IntegrationID" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="-1" name="tblSupplier_currency" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tParseRecordSet" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1320" posY="-40">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tParseRecordSet_2" show="false"/>
-    <elementParameter field="PREV_COLUMN_LIST" name="RECORDSET_FIELD" value="record_set"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="RECORDSET_FIELD" value="record_set_column"/>
     <elementParameter field="TABLE" name="ATTRIBUTE_TABLE">
       <elementValue elementRef="SCHEMA_COLUMN" value="CompanyID" id="0"/>
       <elementValue elementRef="VALUE" value="&quot;CompanyID&quot;" id="1"/>
@@ -4003,556 +4489,6 @@
       </column>
     </metadata>
   </node>
-  <node componentName="tMSSqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="0">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBRow_2" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_XsKOgIr3EfG9C7e242mTTA" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;192.168.2.65&quot;"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;foodmach_source_dummy&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;client_projects&quot;"/>
-    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:csnbs7jBdvBV5huRNyC9uwSlVK3bp1QHzKIsjUBRmxNWdwmWL6Gy"/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;tblCompany&quot;"/>
-    <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
-    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
-    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
-    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;INSERT INTO client_projects.foodmach_source_dummy.tblCompany (&#xD;&#xA;    CName, CAddress1, CAddress2, CCity, CState, CZip, CCountry, CPhone, CFax,&#xD;&#xA;    CDate, BAddress1, BAddress2, BCity, BState, BZip, BCountry, SAddress1,&#xD;&#xA;    SAddress2, SCity, SState, SZip, SCountry, CWWWAddress, CTollFree,&#xD;&#xA;    BSameAsMailing, SSameAsMailing, CHasAgent, CAccountingHoldCode,&#xD;&#xA;    CCompanyParent, CDefaultShipVia, CDefaultPartDiscount, CDefaultPartMargin,&#xD;&#xA;    CDefaultTerms, CAccVendorID, CAccCustomerID, CAccVendorTaxClass1,&#xD;&#xA;    CAccCustomerGroupCode, CAccCustomerDisc, CompanyCustom1, CompanyCustom2,&#xD;&#xA;    CompanyCustom3, CompanyCustom4, CompanyCustom5, CompanyCustom6,&#xD;&#xA;    CompanyCustom7, CompanyCustom8, Legacy_CCountry, Legacy_BCountry,&#xD;&#xA;    Legacy_SCountry, CActive, DefaultEmailAddress, ARTaxCategoryID&#xD;&#xA;)&#xD;&#xA;OUTPUT inserted.*&#xD;&#xA;VALUES (&#xD;&#xA;    ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,&#xD;&#xA;    ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,&#xD;&#xA;    ?, ?, ?, ?&#xD;&#xA;);&quot;"/>
-    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
-    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
-    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;encrypt=true;trustServerCertificate=true&quot;"/>
-    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false"/>
-    <elementParameter field="CLOSED_LIST" name="ACTIVE_DIR_AUTH_MODE" value="PASSWORD" show="false"/>
-    <elementParameter field="CHECK" name="ENABLE_ALWAYS_ENCRYPTED" value="false"/>
-    <elementParameter field="TEXT" name="KEYSTORE_PRINCIPAL_ID" value="" show="false"/>
-    <elementParameter field="PASSWORD" name="KEYSTORE_SECRET" value="" show="false"/>
-    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="true"/>
-    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" value="CompanyID"/>
-    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="true"/>
-    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS">
-      <elementValue elementRef="PARAMETER_INDEX" value="1" id="0"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="String" id="1"/>
-      <elementValue elementRef="PARAMETER_VALUE" value="row5.CName" id="2"/>
-      <elementValue elementRef="PARAMETER_INDEX" value="2" id="3"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="String" id="4"/>
-      <elementValue elementRef="PARAMETER_VALUE" value="row5.CAddress1" id="5"/>
-      <elementValue elementRef="PARAMETER_INDEX" value="3" id="6"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="String" id="7"/>
-      <elementValue elementRef="PARAMETER_VALUE" value="row5.CAddress2" id="8"/>
-      <elementValue elementRef="PARAMETER_INDEX" value="4" id="9"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="String" id="10"/>
-      <elementValue elementRef="PARAMETER_VALUE" value="row5.CCity" id="11"/>
-      <elementValue elementRef="PARAMETER_INDEX" value="5" id="12"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="String" id="13"/>
-      <elementValue elementRef="PARAMETER_VALUE" value="row5.CState" id="14"/>
-      <elementValue elementRef="PARAMETER_INDEX" value="6" id="15"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="String" id="16"/>
-      <elementValue elementRef="PARAMETER_VALUE" value="row5.CZip" id="17"/>
-      <elementValue elementRef="PARAMETER_INDEX" value="7" id="18"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="String" id="19"/>
-      <elementValue elementRef="PARAMETER_VALUE" value="row5.CCountry" id="20"/>
-      <elementValue elementRef="PARAMETER_INDEX" value="8" id="21"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="String" id="22"/>
-      <elementValue elementRef="PARAMETER_VALUE" value="row5.CPhone" id="23"/>
-      <elementValue elementRef="PARAMETER_INDEX" value="9" id="24"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="String" id="25"/>
-      <elementValue elementRef="PARAMETER_VALUE" value="row5.CFax" id="26"/>
-      <elementValue elementRef="PARAMETER_INDEX" value="10" id="27"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="Date" id="28"/>
-      <elementValue elementRef="PARAMETER_VALUE" value="row5.CDate" id="29"/>
-      <elementValue elementRef="PARAMETER_INDEX" value="11" id="30"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="String" id="31"/>
-      <elementValue elementRef="PARAMETER_VALUE" value="row5.BAddress1" id="32"/>
-      <elementValue elementRef="PARAMETER_INDEX" value="12" id="33"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="String" id="34"/>
-      <elementValue elementRef="PARAMETER_VALUE" value="row5.BAddress2" id="35"/>
-      <elementValue elementRef="PARAMETER_INDEX" value="13" id="36"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="String" id="37"/>
-      <elementValue elementRef="PARAMETER_VALUE" value="row5.BCity" id="38"/>
-      <elementValue elementRef="PARAMETER_INDEX" value="14" id="39"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="String" id="40"/>
-      <elementValue elementRef="PARAMETER_VALUE" value="row5.BState" id="41"/>
-      <elementValue elementRef="PARAMETER_INDEX" value="15" id="42"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="String" id="43"/>
-      <elementValue elementRef="PARAMETER_VALUE" value="row5.BZip" id="44"/>
-      <elementValue elementRef="PARAMETER_INDEX" value="16" id="45"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="String" id="46"/>
-      <elementValue elementRef="PARAMETER_VALUE" value="row5.BCountry" id="47"/>
-      <elementValue elementRef="PARAMETER_INDEX" value="17" id="48"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="String" id="49"/>
-      <elementValue elementRef="PARAMETER_VALUE" value="row5.SAddress1" id="50"/>
-      <elementValue elementRef="PARAMETER_INDEX" value="18" id="51"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="String" id="52"/>
-      <elementValue elementRef="PARAMETER_VALUE" value="row5.SAddress2" id="53"/>
-      <elementValue elementRef="PARAMETER_INDEX" value="19" id="54"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="String" id="55"/>
-      <elementValue elementRef="PARAMETER_VALUE" value="row5.SCity" id="56"/>
-      <elementValue elementRef="PARAMETER_INDEX" value="20" id="57"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="String" id="58"/>
-      <elementValue elementRef="PARAMETER_VALUE" value="row5.SState" id="59"/>
-      <elementValue elementRef="PARAMETER_INDEX" value="21" id="60"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="String" id="61"/>
-      <elementValue elementRef="PARAMETER_VALUE" value="row5.SZip" id="62"/>
-      <elementValue elementRef="PARAMETER_INDEX" value="22" id="63"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="String" id="64"/>
-      <elementValue elementRef="PARAMETER_VALUE" value="row5.SCountry" id="65"/>
-      <elementValue elementRef="PARAMETER_INDEX" value="23" id="66"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="String" id="67"/>
-      <elementValue elementRef="PARAMETER_VALUE" value="row5.CWWWAddress" id="68"/>
-      <elementValue elementRef="PARAMETER_INDEX" value="24" id="69"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="String" id="70"/>
-      <elementValue elementRef="PARAMETER_VALUE" value="row5.CTollFree" id="71"/>
-      <elementValue elementRef="PARAMETER_INDEX" value="25" id="72"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="Boolean" id="73"/>
-      <elementValue elementRef="PARAMETER_VALUE" value="row5.BSameAsMailing" id="74"/>
-      <elementValue elementRef="PARAMETER_INDEX" value="26" id="75"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="Boolean" id="76"/>
-      <elementValue elementRef="PARAMETER_VALUE" value="row5.SSameAsMailing" id="77"/>
-      <elementValue elementRef="PARAMETER_INDEX" value="27" id="78"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="Boolean" id="79"/>
-      <elementValue elementRef="PARAMETER_VALUE" value="row5.CHasAgent" id="80"/>
-      <elementValue elementRef="PARAMETER_INDEX" value="28" id="81"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="Int" id="82"/>
-      <elementValue elementRef="PARAMETER_VALUE" value="row5.CAccountingHoldCode" id="83"/>
-      <elementValue elementRef="PARAMETER_INDEX" value="29" id="84"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="Int" id="85"/>
-      <elementValue elementRef="PARAMETER_VALUE" value="row5.CCompanyParent" id="86"/>
-      <elementValue elementRef="PARAMETER_INDEX" value="30" id="87"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="Int" id="88"/>
-      <elementValue elementRef="PARAMETER_VALUE" value="row5.CDefaultShipVia" id="89"/>
-      <elementValue elementRef="PARAMETER_INDEX" value="31" id="90"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="BigDecimal" id="91"/>
-      <elementValue elementRef="PARAMETER_VALUE" value="row5.CDefaultPartDiscount" id="92"/>
-      <elementValue elementRef="PARAMETER_INDEX" value="32" id="93"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="BigDecimal" id="94"/>
-      <elementValue elementRef="PARAMETER_VALUE" value="row5.CDefaultPartMargin" id="95"/>
-      <elementValue elementRef="PARAMETER_INDEX" value="33" id="96"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="Int" id="97"/>
-      <elementValue elementRef="PARAMETER_VALUE" value="row5.CDefaultTerms" id="98"/>
-      <elementValue elementRef="PARAMETER_INDEX" value="34" id="99"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="String" id="100"/>
-      <elementValue elementRef="PARAMETER_VALUE" value="row5.CAccVendorID" id="101"/>
-      <elementValue elementRef="PARAMETER_INDEX" value="35" id="102"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="String" id="103"/>
-      <elementValue elementRef="PARAMETER_VALUE" value="row5.CAccCustomerID" id="104"/>
-      <elementValue elementRef="PARAMETER_INDEX" value="36" id="105"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="Int" id="106"/>
-      <elementValue elementRef="PARAMETER_VALUE" value="row5.CAccVendorTaxClass1" id="107"/>
-      <elementValue elementRef="PARAMETER_INDEX" value="37" id="108"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="String" id="109"/>
-      <elementValue elementRef="PARAMETER_VALUE" value="row5.CAccCustomerGroupCode" id="110"/>
-      <elementValue elementRef="PARAMETER_INDEX" value="38" id="111"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="BigDecimal" id="112"/>
-      <elementValue elementRef="PARAMETER_VALUE" value="row5.CAccCustomerDisc" id="113"/>
-      <elementValue elementRef="PARAMETER_INDEX" value="39" id="114"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="String" id="115"/>
-      <elementValue elementRef="PARAMETER_VALUE" value="row5.CompanyCustom1" id="116"/>
-      <elementValue elementRef="PARAMETER_INDEX" value="40" id="117"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="String" id="118"/>
-      <elementValue elementRef="PARAMETER_VALUE" value="row5.CompanyCustom2" id="119"/>
-      <elementValue elementRef="PARAMETER_INDEX" value="41" id="120"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="BigDecimal" id="121"/>
-      <elementValue elementRef="PARAMETER_VALUE" value="row5.CompanyCustom3" id="122"/>
-      <elementValue elementRef="PARAMETER_INDEX" value="42" id="123"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="BigDecimal" id="124"/>
-      <elementValue elementRef="PARAMETER_VALUE" value="row5.CompanyCustom4" id="125"/>
-      <elementValue elementRef="PARAMETER_INDEX" value="43" id="126"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="Date" id="127"/>
-      <elementValue elementRef="PARAMETER_VALUE" value="row5.CompanyCustom5" id="128"/>
-      <elementValue elementRef="PARAMETER_INDEX" value="44" id="129"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="Date" id="130"/>
-      <elementValue elementRef="PARAMETER_VALUE" value="row5.CompanyCustom6" id="131"/>
-      <elementValue elementRef="PARAMETER_INDEX" value="45" id="132"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="Boolean" id="133"/>
-      <elementValue elementRef="PARAMETER_VALUE" value="row5.CompanyCustom7" id="134"/>
-      <elementValue elementRef="PARAMETER_INDEX" value="46" id="135"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="Boolean" id="136"/>
-      <elementValue elementRef="PARAMETER_VALUE" value="row5.CompanyCustom8" id="137"/>
-      <elementValue elementRef="PARAMETER_INDEX" value="47" id="138"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="String" id="139"/>
-      <elementValue elementRef="PARAMETER_VALUE" value="row5.Legacy_CCountry" id="140"/>
-      <elementValue elementRef="PARAMETER_INDEX" value="48" id="141"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="String" id="142"/>
-      <elementValue elementRef="PARAMETER_VALUE" value="row5.Legacy_BCountry" id="143"/>
-      <elementValue elementRef="PARAMETER_INDEX" value="49" id="144"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="String" id="145"/>
-      <elementValue elementRef="PARAMETER_VALUE" value="row5.Legacy_SCountry" id="146"/>
-      <elementValue elementRef="PARAMETER_INDEX" value="50" id="147"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="Boolean" id="148"/>
-      <elementValue elementRef="PARAMETER_VALUE" value="row5.CActive" id="149"/>
-      <elementValue elementRef="PARAMETER_INDEX" value="51" id="150"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="String" id="151"/>
-      <elementValue elementRef="PARAMETER_VALUE" value="row5.DefaultEmailAddress" id="152"/>
-      <elementValue elementRef="PARAMETER_INDEX" value="52" id="153"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="Int" id="154"/>
-      <elementValue elementRef="PARAMETER_VALUE" value="row5.ARTaxCategoryID" id="155"/>
-    </elementParameter>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
-    <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
-    <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" value="30" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="tdbrow_all_columns"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="tblCompany" name="tDBRow_2">
-      <column comment="" key="true" length="10" name="CompanyID" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Object" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="100" name="CName" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="255" name="CAddress1" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="255" name="CAddress2" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="CCity" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="CState" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="CZip" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="CCountry" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="CPhone" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="CFax" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="CDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="255" name="BAddress1" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="255" name="BAddress2" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="BCity" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="BState" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="BZip" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="BCountry" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="255" name="SAddress1" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="255" name="SAddress2" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="SCity" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="SState" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="SZip" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="SCountry" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="255" name="CWWWAddress" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="CTollFree" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" defaultValue="'(0)'" key="false" length="1" name="BSameAsMailing" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" defaultValue="'(0)'" key="false" length="1" name="SSameAsMailing" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" defaultValue="'(0)'" key="false" length="1" name="CHasAgent" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="CAccountingHoldCode" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="CCompanyParent" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="CDefaultShipVia" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="9" name="CDefaultPartDiscount" nullable="true" pattern="" precision="8" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="20" name="CDefaultPartMargin" nullable="true" pattern="" precision="10" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="CDefaultTerms" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="CAccVendorID" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="CAccCustomerID" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="CAccVendorTaxClass1" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="CAccCustomerGroupCode" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" defaultValue="((0))" key="false" length="9" name="CAccCustomerDisc" nullable="false" pattern="" precision="8" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="2147483647" name="CompanyCustom1" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="2147483647" name="CompanyCustom2" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="20" name="CompanyCustom3" nullable="true" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="20" name="CompanyCustom4" nullable="true" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="CompanyCustom5" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="CompanyCustom6" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" defaultValue="'(0)'" key="false" length="1" name="CompanyCustom7" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" defaultValue="'(0)'" key="false" length="1" name="CompanyCustom8" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="Legacy_CCountry" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="Legacy_BCountry" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="Legacy_SCountry" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" defaultValue="'(1)'" key="false" length="1" name="CActive" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="255" name="DefaultEmailAddress" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="ARTaxCategoryID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" defaultValue="'sysutcdatetime()'" key="false" length="23" name="DateTimeLoadedIntoIntegrationTableUTC" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME2" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" defaultValue="'(0)'" key="false" length="1" name="LoadedIntoTotalETO" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="TimeLoadedIntoTotalETOUTC" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME2" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="IntegrationID" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="-1" name="tblSupplier_currency" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-    <metadata connector="REJECT" label="tblCompany" name="REJECT">
-      <column comment="" key="true" length="10" name="CompanyID" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Object" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="100" name="CName" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="255" name="CAddress1" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="255" name="CAddress2" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="CCity" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="CState" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="CZip" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="CCountry" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="CPhone" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="CFax" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="CDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="255" name="BAddress1" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="255" name="BAddress2" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="BCity" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="BState" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="BZip" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="BCountry" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="255" name="SAddress1" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="255" name="SAddress2" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="SCity" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="SState" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="SZip" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="SCountry" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="255" name="CWWWAddress" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="CTollFree" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" defaultValue="'(0)'" key="false" length="1" name="BSameAsMailing" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" defaultValue="'(0)'" key="false" length="1" name="SSameAsMailing" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" defaultValue="'(0)'" key="false" length="1" name="CHasAgent" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="CAccountingHoldCode" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="CCompanyParent" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="CDefaultShipVia" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="9" name="CDefaultPartDiscount" nullable="true" pattern="" precision="8" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="20" name="CDefaultPartMargin" nullable="true" pattern="" precision="10" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="CDefaultTerms" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="CAccVendorID" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="CAccCustomerID" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="CAccVendorTaxClass1" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="CAccCustomerGroupCode" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" defaultValue="((0))" key="false" length="9" name="CAccCustomerDisc" nullable="false" pattern="" precision="8" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="2147483647" name="CompanyCustom1" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="2147483647" name="CompanyCustom2" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="20" name="CompanyCustom3" nullable="true" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="20" name="CompanyCustom4" nullable="true" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="CompanyCustom5" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="CompanyCustom6" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" defaultValue="'(0)'" key="false" length="1" name="CompanyCustom7" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" defaultValue="'(0)'" key="false" length="1" name="CompanyCustom8" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="Legacy_CCountry" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="Legacy_BCountry" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="Legacy_SCountry" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" defaultValue="'(1)'" key="false" length="1" name="CActive" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="255" name="DefaultEmailAddress" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="ARTaxCategoryID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" defaultValue="'sysutcdatetime()'" key="false" length="23" name="DateTimeLoadedIntoIntegrationTableUTC" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME2" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" defaultValue="'(0)'" key="false" length="1" name="LoadedIntoTotalETO" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="TimeLoadedIntoTotalETOUTC" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME2" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="IntegrationID" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="-1" name="tblSupplier_currency" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-  </node>
   <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1760" posY="-280">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_5" show="false"/>
     <elementParameter field="TEXT" name="COMPONENT_NAME" value="tMSSqlInput" show="false"/>
@@ -4734,6 +4670,71 @@
       </column>
     </metadata>
   </node>
+  <node componentName="tMSSqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="840" posY="-40">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBRow_4" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_XsKOgIr3EfG9C7e242mTTA" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;192.168.2.65&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;foodmach_source_dummy&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;client_projects&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:cL083pyswS6QQ+qeAnBKmjRJFROfHYawm+ZbEBxAoYA59bWR0Nsp"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;tblCompany&quot;"/>
+    <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;INSERT INTO client_projects.foodmach_source_dummy.tblCompany (&#xD;&#xA;    CName, ARTaxCategoryID&#xD;&#xA;)&#xD;&#xA;OUTPUT inserted.CompanyID, inserted.CName, inserted.ARTaxCategoryID&#xD;&#xA;VALUES ( ?, 1 )&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;encrypt=true;trustServerCertificate=true&quot;"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="ACTIVE_DIR_AUTH_MODE" value="PASSWORD" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_ALWAYS_ENCRYPTED" value="false"/>
+    <elementParameter field="TEXT" name="KEYSTORE_PRINCIPAL_ID" value="" show="false"/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_SECRET" value="" show="false"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="true"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" value="record_set"/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="true"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS">
+      <elementValue elementRef="PARAMETER_INDEX" value="1" id="0"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="String" id="1"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="row5.CName" id="2"/>
+    </elementParameter>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
+    <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" value="30" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="tdbrow_working"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="tblCompany" name="tDBRow_4">
+      <column comment="" key="false" length="10" name="record_set" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Object" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="CName" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <metadata connector="REJECT" label="tblCompany" name="REJECT">
+      <column comment="" key="false" length="10" name="record_set" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Object" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="CName" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
   <connection connectorName="FLOW" label="row_count" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tJavaRow_1">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
       <elementValue elementRef="TRACE_COLUMN" value="row_count" id="0"/>
@@ -4767,16 +4768,11 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="formatted_rows" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tLogRow_1" offsetLabelX="0" offsetLabelY="0" source="tLogRow_1" target="tDBRow_4">
+  <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tLogRow_1" offsetLabelX="0" offsetLabelY="0" source="tLogRow_1" target="tDBRow_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row5" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row8" lineStyle="0" metaname="tDBRow_4" offsetLabelX="0" offsetLabelY="0" source="tDBRow_4" target="tParseRecordSet_2">
-    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="CName" id="0"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
-    </elementParameter>
+  <connection connectorName="FLOW" label="row8" lineStyle="0" metaname="tDBRow_2" offsetLabelX="0" offsetLabelY="0" source="tDBRow_2" target="tParseRecordSet_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row8" show="false"/>
   </connection>
@@ -4987,12 +4983,12 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
   </subjob>
   <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBRow_2" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_5" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
   </subjob>
   <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_5" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBRow_4" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
   </subjob>
