@@ -101,7 +101,7 @@
     <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
     <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
   </parameters>
-  <node componentName="tRESTRequest" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="440">
+  <node componentName="tRESTRequest" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="280" posY="400">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTRequest_1" show="false"/>
     <elementParameter field="TEXT" name="API_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="REST_ENDPOINT" value="&quot;http://localhost:8090/API&quot;"/>
@@ -174,7 +174,7 @@
       <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="720" posY="520">
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="520" posY="480">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_1" show="false"/>
     <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="// code sample:&#xA;//&#xA;// multiply by 2 the row identifier&#xA;// output_row.id = input_row.id * 2;&#xA;//&#xA;// lowercase the name&#xA;// output_row.name = input_row.name.toLowerCase();&#xA;&#xA;output_row.body = &quot;pong&quot;; "/>
     <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
@@ -183,7 +183,7 @@
       <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1080" posY="520">
+  <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="880" posY="480">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTResponse_1" show="false"/>
     <elementParameter field="REST_RESPONSE_SCHEMA_TYPE" name="RESPONSE_TYPE" value="id_String"/>
     <elementParameter field="CLOSED_LIST" name="STATUS_CODE" value="200"/>
@@ -196,7 +196,7 @@
       <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="720" posY="320">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="520" posY="280">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_2" show="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
@@ -220,7 +220,7 @@
       <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileOutputRaw" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="880" posY="320">
+  <node componentName="tFileOutputRaw" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="680" posY="280">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputRaw_2" show="false"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;C:/TalendAPI_Netsuite_Update.txt&quot;"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
@@ -231,7 +231,7 @@
       <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1080" posY="320">
+  <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="880" posY="280">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTResponse_4" show="false"/>
     <elementParameter field="REST_RESPONSE_SCHEMA_TYPE" name="RESPONSE_TYPE" value="id_Document"/>
     <elementParameter field="CLOSED_LIST" name="STATUS_CODE" value="200"/>
@@ -244,7 +244,7 @@
       <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="280">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="280" posY="240">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
@@ -268,7 +268,7 @@
       <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileOutputRaw" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="80">
+  <node componentName="tFileOutputRaw" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="280" posY="40">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputRaw_1" show="false"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;C:/TalendAPI_Netsuite_Insert.txt&quot;"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
@@ -279,7 +279,7 @@
       <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1080" posY="80">
+  <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="880" posY="40">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTResponse_3" show="false"/>
     <elementParameter field="REST_RESPONSE_SCHEMA_TYPE" name="RESPONSE_TYPE" value="id_Document"/>
     <elementParameter field="CLOSED_LIST" name="STATUS_CODE" value="200"/>
@@ -292,7 +292,7 @@
       <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tExtractJSONFields" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="680">
+  <node componentName="tExtractJSONFields" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="280" posY="640">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tExtractJSONFields_2" show="false"/>
     <elementParameter field="CLOSED_LIST" name="READ_BY" value="JSONPATH"/>
     <elementParameter field="CLOSED_LIST" name="JSON_PATH_VERSION" value="2_1_0"/>
@@ -978,7 +978,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="880">
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="280" posY="840">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_2" show="false"/>
     <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="output_row.CName = input_row.CName;&#xD;&#xA;output_row.CAddress1 = input_row.CAddress1;&#xD;&#xA;output_row.CAddress2 = null;&#xD;&#xA;output_row.CCity = &quot;Echuca&quot;;&#xD;&#xA;output_row.CState = &quot;Victoria&quot;;&#xD;&#xA;output_row.CZip = &quot;3564&quot;;&#xD;&#xA;output_row.CCountry = &quot;Australia&quot;;&#xD;&#xA;output_row.CPhone = input_row.CPhone;&#xD;&#xA;output_row.CFax = input_row.CFax;&#xD;&#xA;output_row.CDate = input_row.CDate;&#xD;&#xA;output_row.BAddress1 = &quot;1-9 Darling St&quot;;&#xD;&#xA;output_row.BAddress2 = null;&#xD;&#xA;output_row.BCity = &quot;Echuca&quot;;&#xD;&#xA;output_row.BState = &quot;Victoria&quot;;&#xD;&#xA;output_row.BZip = &quot;3564&quot;;&#xD;&#xA;output_row.BCountry = &quot;Australia&quot;;&#xD;&#xA;output_row.SAddress1 = input_row.SAddress1;&#xD;&#xA;output_row.SAddress2 = null;&#xD;&#xA;output_row.SCity = &quot;Echuca&quot;;&#xD;&#xA;output_row.SState = &quot;Victoria&quot;;&#xD;&#xA;output_row.SZip = &quot;3564&quot;;&#xD;&#xA;output_row.SCountry = &quot;Australia&quot;;&#xD;&#xA;output_row.CWWWAddress = input_row.CWWWAddress;&#xD;&#xA;output_row.CTollFree = null;&#xD;&#xA;output_row.BSameAsMailing = false;&#xD;&#xA;output_row.SSameAsMailing = false;&#xD;&#xA;output_row.CHasAgent = false;&#xD;&#xA;output_row.CAccountingHoldCode = null;&#xD;&#xA;output_row.CCompanyParent = null;&#xD;&#xA;output_row.CDefaultShipVia = null;&#xD;&#xA;output_row.CDefaultPartDiscount = null;&#xD;&#xA;output_row.CDefaultPartMargin = null;&#xD;&#xA;output_row.CDefaultTerms = null;&#xD;&#xA;output_row.CAccVendorID = null;&#xD;&#xA;output_row.CAccCustomerID = null;&#xD;&#xA;output_row.CAccVendorTaxClass1 = null;&#xD;&#xA;output_row.CAccCustomerGroupCode = null;&#xD;&#xA;output_row.CAccCustomerDisc = new BigDecimal(&quot;0.00000000&quot;);&#xD;&#xA;output_row.CompanyCustom1 = &quot;&quot;;&#xD;&#xA;output_row.CompanyCustom2 = &quot;&quot;;&#xD;&#xA;output_row.CompanyCustom3 = input_row.CompanyCustom3;&#xD;&#xA;output_row.CompanyCustom4 = null;&#xD;&#xA;output_row.CompanyCustom5 = null;&#xD;&#xA;output_row.CompanyCustom6 = null;&#xD;&#xA;output_row.CompanyCustom7 = false;&#xD;&#xA;output_row.CompanyCustom8 = false;&#xD;&#xA;output_row.Legacy_CCountry = null;&#xD;&#xA;output_row.Legacy_BCountry = null;&#xD;&#xA;output_row.Legacy_SCountry = null;&#xD;&#xA;output_row.CActive = true;&#xD;&#xA;output_row.DefaultEmailAddress = input_row.DefaultEmailAddress;&#xD;&#xA;output_row.ARTaxCategoryID = 1;&#xD;&#xA;//output_row.DateTimeLoadedIntoIntegrationTableUTC = null; // TODO: no CSV source&#xD;&#xA;//output_row.LoadedIntoTotalETO = null; // TODO: no CSV source&#xD;&#xA;//output_row.TimeLoadedIntoTotalETOUTC = null; // TODO: no CSV source&#xD;&#xA;// supplier is sent but isn't apart of the tblCompanyTable so it is excluded and set as a context variable&#xD;&#xA;output_row.tblSupplier_currency = input_row.tblSupplier_currency;"/>
     <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
@@ -1144,7 +1144,7 @@
       <column comment="" key="false" length="-1" name="tblSupplier_currency" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="880">
+  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="600" posY="840">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_1" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_QQIh8IlvEfG9C7e242mTTA" show="false"/>
@@ -1782,7 +1782,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="960" posY="1000">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="840" posY="840">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_3" show="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
@@ -1905,6 +1905,7 @@
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="integration_table_vendor_row"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="tblCompany_integration" name="tLogRow_3">
       <column comment="" key="false" length="100" name="CName" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
@@ -2066,7 +2067,7 @@
       <column comment="" key="false" length="-1" name="tblSupplier_currency" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="880">
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1040" posY="840">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_3" show="false"/>
     <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="// code sample:&#xA;//&#xA;// multiply by 2 the row identifier&#xA;// output_row.id = input_row.id * 2;&#xA;//&#xA;// lowercase the name&#xA;// output_row.name = input_row.name.toLowerCase();&#xA;&#xA;output_row.body = &quot;insert performed&quot;;"/>
     <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
@@ -2076,7 +2077,7 @@
       <column key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1440" posY="880">
+  <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1240" posY="840">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTResponse_2" show="false"/>
     <elementParameter field="REST_RESPONSE_SCHEMA_TYPE" name="RESPONSE_TYPE" value="id_String"/>
     <elementParameter field="CLOSED_LIST" name="STATUS_CODE" value="200"/>
@@ -2207,10 +2208,6 @@
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
   </connection>
-  <note opaque="true" posX="600" posY="680" sizeHeight="161" sizeWidth="361" text="This flow is ready to be completed. &#xD;&#xA;It is just waiting on the full schema from Netsuite">
-    <elementParameter field="RADIO" name="NOTETXT_LEFT" value="true"/>
-    <elementParameter field="RADIO" name="NOTETXT_CENTER" value="false"/>
-  </note>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTRequest_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
