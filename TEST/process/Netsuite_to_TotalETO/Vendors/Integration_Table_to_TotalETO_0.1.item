@@ -191,7 +191,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xD;&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CName,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CAddress1,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CAddress2,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CCity,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CState,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CZip,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CCountry,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CPhone,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CFax,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CDate,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.BAddress1,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.BAddress2,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.BCity,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.BState,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.BZip,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.BCountry,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.SAddress1,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.SAddress2,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.SCity,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.SState,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.SZip,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.SCountry,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CWWWAddress,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CTollFree,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.BSameAsMailing,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.SSameAsMailing,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CHasAgent,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CAccountingHoldCode,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CCompanyParent,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CDefaultShipVia,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CDefaultPartDiscount,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CDefaultPartMargin,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CDefaultTerms,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CAccVendorID,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CAccCustomerID,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CAccVendorTaxClass1,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CAccCustomerGroupCode,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CAccCustomerDisc,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CompanyCustom1,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CompanyCustom2,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CompanyCustom3,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CompanyCustom4,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CompanyCustom5,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CompanyCustom6,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CompanyCustom7,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CompanyCustom8,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.Legacy_CCountry,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.Legacy_BCountry,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.Legacy_SCountry,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CActive,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.DefaultEmailAddress,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.ARTaxCategoryID,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.DateTimeLoadedIntoIntegrationTableUTC,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.LoadedIntoTotalETO,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.TimeLoadedIntoTotalETOUTC,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.IntegrationID,&#xD;&#xA;&#x9;&#x9;foodmach.tblCompany_integration.tblSupplier_currency&#xA;FROM&#x9;foodmach.tblCompany_integration&#xD;&#xA;WHERE LoadedIntoTotalETO = 0;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xD;&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CName,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CAddress1,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CAddress2,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CCity,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CState,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CZip,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CCountry,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CPhone,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CFax,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CDate,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.BAddress1,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.BAddress2,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.BCity,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.BState,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.BZip,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.BCountry,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.SAddress1,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.SAddress2,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.SCity,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.SState,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.SZip,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.SCountry,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CWWWAddress,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CTollFree,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.BSameAsMailing,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.SSameAsMailing,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CHasAgent,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CAccountingHoldCode,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CCompanyParent,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CDefaultShipVia,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CDefaultPartDiscount,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CDefaultPartMargin,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CDefaultTerms,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CAccVendorID,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CAccCustomerID,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CAccVendorTaxClass1,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CAccCustomerGroupCode,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CAccCustomerDisc,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CompanyCustom1,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CompanyCustom2,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CompanyCustom3,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CompanyCustom4,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CompanyCustom5,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CompanyCustom6,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CompanyCustom7,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CompanyCustom8,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.Legacy_CCountry,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.Legacy_BCountry,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.Legacy_SCountry,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CActive,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.DefaultEmailAddress,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.ARTaxCategoryID,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.DateTimeLoadedIntoIntegrationTableUTC,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.LoadedIntoTotalETO,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.TimeLoadedIntoTotalETOUTC,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.IntegrationID,&#xD;&#xA;&#x9;&#x9;foodmach.tblCompany_integration.tblSupplier_currency,&#xD;&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CDefaultTermsText&#xA;FROM&#x9;foodmach.tblCompany_integration&#xD;&#xA;WHERE LoadedIntoTotalETO = 0;&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -320,6 +320,8 @@
       <elementValue elementRef="TRIM" value="false" id="111"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="tblSupplier_currency" id="112"/>
       <elementValue elementRef="TRIM" value="false" id="113"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CDefaultTermsText" id="114"/>
+      <elementValue elementRef="TRIM" value="false" id="115"/>
     </elementParameter>
     <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
     <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" value="30" show="false"/>
@@ -495,6 +497,7 @@
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="-1" name="tblSupplier_currency" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="CDefaultTermsText" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="50" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="1320" posY="-240">
@@ -682,9 +685,10 @@
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="-1" name="tblSupplier_currency" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="CDefaultTermsText" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="50" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="formatted_rows">
         <mapperTableEntries name="CName" expression="unprocessed_rows1.CName " type="id_String"/>
@@ -744,6 +748,7 @@
         <mapperTableEntries name="TimeLoadedIntoTotalETOUTC" expression="unprocessed_rows1.TimeLoadedIntoTotalETOUTC " type="id_Date" nullable="true"/>
         <mapperTableEntries name="IntegrationID" expression="unprocessed_rows1.IntegrationID " type="id_Integer"/>
         <mapperTableEntries name="tblSupplier_currency" expression="unprocessed_rows1.tblSupplier_currency " type="id_String" nullable="true"/>
+        <mapperTableEntries name="CDefaultTermsText" expression="unprocessed_rows1.CDefaultTermsText " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="unprocessed_rows1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="CName" type="id_String"/>
@@ -803,6 +808,7 @@
         <mapperTableEntries name="TimeLoadedIntoTotalETOUTC" type="id_Date" nullable="true"/>
         <mapperTableEntries name="IntegrationID" type="id_Integer"/>
         <mapperTableEntries name="tblSupplier_currency" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CDefaultTermsText" type="id_String" nullable="true"/>
       </inputTables>
     </nodeData>
   </node>
@@ -934,6 +940,8 @@
       <elementValue elementRef="LENGTH" value="10" id="111"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="tblSupplier_currency" id="112"/>
       <elementValue elementRef="LENGTH" value="10" id="113"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CDefaultTermsText" id="114"/>
+      <elementValue elementRef="LENGTH" value="10" id="115"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
@@ -967,7 +975,7 @@
       <column comment="" key="false" length="50" name="CFax" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="23" name="CDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+      <column comment="" key="false" length="23" name="CDate" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="255" name="BAddress1" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
@@ -1066,10 +1074,10 @@
       <column comment="" key="false" length="20" name="CompanyCustom4" nullable="true" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="23" name="CompanyCustom5" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+      <column comment="" key="false" length="23" name="CompanyCustom5" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="23" name="CompanyCustom6" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+      <column comment="" key="false" length="23" name="CompanyCustom6" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" defaultValue="'(0)'" key="false" length="1" name="CompanyCustom7" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
@@ -1096,19 +1104,20 @@
       <column comment="" key="false" length="10" name="ARTaxCategoryID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="'sysutcdatetime()'" key="false" length="23" name="DateTimeLoadedIntoIntegrationTableUTC" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="3" sourceType="DATETIME2" type="id_Date" usefulColumn="true">
+      <column comment="" defaultValue="'sysutcdatetime()'" key="false" length="23" name="DateTimeLoadedIntoIntegrationTableUTC" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME2" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" defaultValue="'(0)'" key="false" length="1" name="LoadedIntoTotalETO" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="23" name="TimeLoadedIntoTotalETOUTC" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="3" sourceType="DATETIME2" type="id_Date" usefulColumn="true">
+      <column comment="" key="false" length="23" name="TimeLoadedIntoTotalETOUTC" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME2" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="10" name="IntegrationID" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="-1" name="tblSupplier_currency" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="CDefaultTermsText" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="50" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMSSqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="-120">
@@ -2938,11 +2947,19 @@
       <elementValue elementRef="TRACE_COLUMN" value="tblSupplier_currency" id="0"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+      <elementValue elementRef="TRACE_COLUMN" value="CDefaultTermsText" id="3"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="4"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="5"/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="unprocessed_rows1" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="formatted_rows" lineStyle="0" metaname="formatted_rows" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tLogRow_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="CDefaultTermsText" id="0"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="formatted_rows" show="false"/>
   </connection>

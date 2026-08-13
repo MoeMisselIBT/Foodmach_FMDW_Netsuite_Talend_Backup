@@ -1327,7 +1327,7 @@
       <elementValue elementRef="UPDATE_KEY" value="false" id="186"/>
       <elementValue elementRef="DELETE_KEY" value="false" id="187"/>
       <elementValue elementRef="UPDATABLE" value="false" id="188"/>
-      <elementValue elementRef="INSERTABLE" value="true" id="189"/>
+      <elementValue elementRef="INSERTABLE" value="false" id="189"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="CompanyCustom1" id="190"/>
       <elementValue elementRef="UPDATE_KEY" value="false" id="191"/>
       <elementValue elementRef="DELETE_KEY" value="false" id="192"/>
