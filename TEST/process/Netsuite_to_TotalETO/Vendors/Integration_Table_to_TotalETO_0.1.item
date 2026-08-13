@@ -1130,7 +1130,7 @@
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;INSERT INTO client_projects.foodmach_source_dummy.tblCompany (&#xD;&#xA;    CName, CAddress1, CCity, CState, CZip, CCountry, CPhone, CFax, CDate,&#xD;&#xA;    BAddress1, BCity, BState, BZip, BCountry, SAddress1, SCity, SState, SZip,&#xD;&#xA;    SCountry, CWWWAddress, BSameAsMailing, SSameAsMailing, CHasAgent,&#xD;&#xA;    CAccCustomerDisc, CompanyCustom1, CompanyCustom2, CompanyCustom3,&#xD;&#xA;    CompanyCustom7, CompanyCustom8, CActive, DefaultEmailAddress, ARTaxCategoryID&#xD;&#xA;)&#xD;&#xA;OUTPUT inserted.*&#xD;&#xA;VALUES (&#xD;&#xA;    ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,&#xD;&#xA;    ?, ?, ?, ?, ?, ?, ?, 1&#xD;&#xA;)&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="INSERT INTO client_projects.foodmach_source_dummy.tblCompany (&#xD;&#xA;    CName, CAddress1, CCity, CState, CZip, CCountry, CPhone, CFax, CDate,&#xD;&#xA;    BAddress1, BCity, BState, BZip, BCountry, SAddress1, SCity, SState, SZip,&#xD;&#xA;    SCountry, CWWWAddress, CDefaultTerms, CompanyCustom3,&#xD;&#xA;    DefaultEmailAddress, ARTaxCategoryID, CActive&#xD;&#xA;)&#xD;&#xA;OUTPUT inserted.*&#xD;&#xA;VALUES (&#xD;&#xA;    ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,&#xD;&#xA;    1, 1&#xD;&#xA;)"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -1207,37 +1207,13 @@
       <elementValue elementRef="PARAMETER_VALUE" value="row5.CWWWAddress" id="59"/>
       <elementValue elementRef="PARAMETER_INDEX" value="21" id="60"/>
       <elementValue elementRef="PARAMETER_TYPE" value="Boolean" id="61"/>
-      <elementValue elementRef="PARAMETER_VALUE" value="row5.BSameAsMailing" id="62"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="row5.CHasAgent" id="62"/>
       <elementValue elementRef="PARAMETER_INDEX" value="22" id="63"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="Boolean" id="64"/>
-      <elementValue elementRef="PARAMETER_VALUE" value="row5.SSameAsMailing" id="65"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="BigDecimal" id="64"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="row5.CompanyCustom3" id="65"/>
       <elementValue elementRef="PARAMETER_INDEX" value="23" id="66"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="Boolean" id="67"/>
-      <elementValue elementRef="PARAMETER_VALUE" value="row5.CHasAgent" id="68"/>
-      <elementValue elementRef="PARAMETER_INDEX" value="24" id="69"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="BigDecimal" id="70"/>
-      <elementValue elementRef="PARAMETER_VALUE" value="row5.CAccCustomerDisc" id="71"/>
-      <elementValue elementRef="PARAMETER_INDEX" value="25" id="72"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="String" id="73"/>
-      <elementValue elementRef="PARAMETER_VALUE" value="row5.CompanyCustom1" id="74"/>
-      <elementValue elementRef="PARAMETER_INDEX" value="26" id="75"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="String" id="76"/>
-      <elementValue elementRef="PARAMETER_VALUE" value="row5.CompanyCustom2" id="77"/>
-      <elementValue elementRef="PARAMETER_INDEX" value="27" id="78"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="BigDecimal" id="79"/>
-      <elementValue elementRef="PARAMETER_VALUE" value="row5.CompanyCustom3" id="80"/>
-      <elementValue elementRef="PARAMETER_INDEX" value="28" id="81"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="Boolean" id="82"/>
-      <elementValue elementRef="PARAMETER_VALUE" value="row5.CompanyCustom7" id="83"/>
-      <elementValue elementRef="PARAMETER_INDEX" value="29" id="84"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="Boolean" id="85"/>
-      <elementValue elementRef="PARAMETER_VALUE" value="row5.CompanyCustom8" id="86"/>
-      <elementValue elementRef="PARAMETER_INDEX" value="30" id="87"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="Boolean" id="88"/>
-      <elementValue elementRef="PARAMETER_VALUE" value="row5.CActive" id="89"/>
-      <elementValue elementRef="PARAMETER_INDEX" value="31" id="90"/>
-      <elementValue elementRef="PARAMETER_TYPE" value="String" id="91"/>
-      <elementValue elementRef="PARAMETER_VALUE" value="row5.DefaultEmailAddress" id="92"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="String" id="67"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="row5.DefaultEmailAddress" id="68"/>
     </elementParameter>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
