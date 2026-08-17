@@ -133,13 +133,13 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" value="context.database_schema_name"/>
     <elementParameter field="TEXT" name="DBNAME" value="context.database_name"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:s3otxV4sufDDXp52c15Ds3IKMcpTjDDsfAGLs0LKjYx7/nTzBJe5"/>
+    <elementParameter field="PASSWORD" name="PASS" value="context.database_password"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;tblCompany_integration&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT count(*)&#xA;FROM&#x9;foodmach.tblCompany_integration&#xD;&#xA;WHERE LoadedIntoTotalETO = 0&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT count(*) FROM &quot; + context.database_schema_name + &quot;.tblCompany_integration WHERE LoadedIntoTotalETO = 0&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -194,22 +194,20 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_2" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_QQIh8IlvEfG9C7e242mTTA" show="false"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;192.168.2.65&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="context.database_server_ip"/>
     <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;foodmach&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;client_projects&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="context.database_port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.database_schema_name"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.database_name"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:szkRS86DPL2UFL0Q52X8avZwHm8jsgfujVuCKCW8Et86pA1fYrT5"/>
+    <elementParameter field="PASSWORD" name="PASS" value="context.database_password"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;tblCompany_integration&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xD;&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CName,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CAddress1,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CAddress2,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CCity,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CState,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CZip,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CCountry,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CPhone,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CFax,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CDate,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.BAddress1,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.BAddress2,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.BCity,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.BState,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.BZip,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.BCountry,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.SAddress1,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.SAddress2,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.SCity,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.SState,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.SZip,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.SCountry,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CWWWAddress,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CTollFree,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.BSameAsMailing,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.SSameAsMailing,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CHasAgent,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CAccountingHoldCode,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CCompanyParent,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CDefaultShipVia,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CDefaultPartDiscount,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CDefaultPartMargin,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CDefaultTerms,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CAccVendorID,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CAccCustomerID,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CAccVendorTaxClass1,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CAccCustomerGroupCode,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CAccCustomerDisc,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CompanyCustom1,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CompanyCustom2,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CompanyCustom3,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CompanyCustom4,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CompanyCustom5,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CompanyCustom6,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CompanyCustom7,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CompanyCustom8,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.Legacy_CCountry,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.Legacy_BCountry,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.Legacy_SCountry,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CActive,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.DefaultEmailAddress,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.ARTaxCategoryID,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.DateTimeLoadedIntoIntegrationTableUTC,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.LoadedIntoTotalETO,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.TimeLoadedIntoTotalETOUTC,&#xA;&#x9;&#x9;foodmach.tblCompany_integration.IntegrationID,&#xD;&#xA;&#x9;&#x9;foodmach.tblCompany_integration.tblSupplier_currency,&#xD;&#xA;&#x9;&#x9;foodmach.tblCompany_integration.CDefaultTermsText&#xA;FROM&#x9;foodmach.tblCompany_integration&#xD;&#xA;WHERE LoadedIntoTotalETO = 0;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &quot;&#xD;&#xA;+ &quot;  ci.CName,&quot;&#xD;&#xA;+ &quot;  ci.CAddress1,&quot;&#xD;&#xA;+ &quot;  ci.CAddress2,&quot;&#xD;&#xA;+ &quot;  ci.CCity,&quot;&#xD;&#xA;+ &quot;  ci.CState,&quot;&#xD;&#xA;+ &quot;  ci.CZip,&quot;&#xD;&#xA;+ &quot;  ci.CCountry,&quot;&#xD;&#xA;+ &quot;  ci.CPhone,&quot;&#xD;&#xA;+ &quot;  ci.CFax,&quot;&#xD;&#xA;+ &quot;  ci.CDate,&quot;&#xD;&#xA;+ &quot;  ci.BAddress1,&quot;&#xD;&#xA;+ &quot;  ci.BAddress2,&quot;&#xD;&#xA;+ &quot;  ci.BCity,&quot;&#xD;&#xA;+ &quot;  ci.BState,&quot;&#xD;&#xA;+ &quot;  ci.BZip,&quot;&#xD;&#xA;+ &quot;  ci.BCountry,&quot;&#xD;&#xA;+ &quot;  ci.SAddress1,&quot;&#xD;&#xA;+ &quot;  ci.SAddress2,&quot;&#xD;&#xA;+ &quot;  ci.SCity,&quot;&#xD;&#xA;+ &quot;  ci.SState,&quot;&#xD;&#xA;+ &quot;  ci.SZip,&quot;&#xD;&#xA;+ &quot;  ci.SCountry,&quot;&#xD;&#xA;+ &quot;  ci.CWWWAddress,&quot;&#xD;&#xA;+ &quot;  ci.CTollFree,&quot;&#xD;&#xA;+ &quot;  ci.BSameAsMailing,&quot;&#xD;&#xA;+ &quot;  ci.SSameAsMailing,&quot;&#xD;&#xA;+ &quot;  ci.CHasAgent,&quot;&#xD;&#xA;+ &quot;  ci.CAccountingHoldCode,&quot;&#xD;&#xA;+ &quot;  ci.CCompanyParent,&quot;&#xD;&#xA;+ &quot;  ci.CDefaultShipVia,&quot;&#xD;&#xA;+ &quot;  ci.CDefaultPartDiscount,&quot;&#xD;&#xA;+ &quot;  ci.CDefaultPartMargin,&quot;&#xD;&#xA;+ &quot;  ci.CDefaultTerms,&quot;&#xD;&#xA;+ &quot;  ci.CAccVendorID,&quot;&#xD;&#xA;+ &quot;  ci.CAccCustomerID,&quot;&#xD;&#xA;+ &quot;  ci.CAccVendorTaxClass1,&quot;&#xD;&#xA;+ &quot;  ci.CAccCustomerGroupCode,&quot;&#xD;&#xA;+ &quot;  ci.CAccCustomerDisc,&quot;&#xD;&#xA;+ &quot;  ci.CompanyCustom1,&quot;&#xD;&#xA;+ &quot;  ci.CompanyCustom2,&quot;&#xD;&#xA;+ &quot;  ci.CompanyCustom3,&quot;&#xD;&#xA;+ &quot;  ci.CompanyCustom4,&quot;&#xD;&#xA;+ &quot;  ci.CompanyCustom5,&quot;&#xD;&#xA;+ &quot;  ci.CompanyCustom6,&quot;&#xD;&#xA;+ &quot;  ci.CompanyCustom7,&quot;&#xD;&#xA;+ &quot;  ci.CompanyCustom8,&quot;&#xD;&#xA;+ &quot;  ci.Legacy_CCountry,&quot;&#xD;&#xA;+ &quot;  ci.Legacy_BCountry,&quot;&#xD;&#xA;+ &quot;  ci.Legacy_SCountry,&quot;&#xD;&#xA;+ &quot;  ci.CActive,&quot;&#xD;&#xA;+ &quot;  ci.DefaultEmailAddress,&quot;&#xD;&#xA;+ &quot;  ci.ARTaxCategoryID,&quot;&#xD;&#xA;+ &quot;  ci.DateTimeLoadedIntoIntegrationTableUTC,&quot;&#xD;&#xA;+ &quot;  ci.LoadedIntoTotalETO,&quot;&#xD;&#xA;+ &quot;  ci.TimeLoadedIntoTotalETOUTC,&quot;&#xD;&#xA;+ &quot;  ci.IntegrationID,&quot;&#xD;&#xA;+ &quot;  ci.tblSupplier_currency,&quot;&#xD;&#xA;+ &quot;  ci.CDefaultTermsText &quot;&#xD;&#xA;+ &quot;FROM &quot; + context.database_schema_name + &quot;.tblCompany_integration ci &quot;&#xD;&#xA;+ &quot;WHERE ci.LoadedIntoTotalETO = 0&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -3094,6 +3092,7 @@
   </node>
   <node componentName="tHashInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="400">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashInput_2" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="LINK_WITH" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="LIST" value="tHashOutput_2"/>
     <elementParameter field="FILE" name="BASE_FILE_PATH" value="&quot;C:/Talend/8.0.1/studio/workspace/in.hash&quot;" show="false"/>
@@ -3105,6 +3104,7 @@
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1360" posY="400">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_3" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
     <elementParameter field="RADIO" name="VERTICAL" value="false"/>
@@ -3130,6 +3130,7 @@
   </node>
   <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1560" posY="400">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_3" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="output_row.CompanyID = input_row.CompanyID;&#xD;&#xA;output_row.CompanyType = &quot;Supplier&quot;;"/>
     <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="LABEL" value="format_records"/>
@@ -3145,6 +3146,7 @@
   </node>
   <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1760" posY="400">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_4" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_XsKOgIr3EfG9C7e242mTTA" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
@@ -3226,6 +3228,7 @@
   </node>
   <node componentName="tHashInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="720">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashInput_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="LINK_WITH" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="LIST" value="tHashOutput_2"/>
     <elementParameter field="FILE" name="BASE_FILE_PATH" value="&quot;C:/Talend/8.0.1/studio/workspace/in.hash&quot;" show="false"/>
@@ -3242,6 +3245,7 @@
   </node>
   <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1440" posY="720">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_2" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="//Code generated according to input schema and output schema&#xD;&#xA;output_row.CompanyID = input_row.CompanyID;&#xD;&#xA;output_row.DefaultCurrName = input_row.tblSupplier_currency;&#xD;&#xA;output_row.APTaxCategoryID = 1;&#xD;&#xA;output_row.CDefaultTerms = input_row.CDefaultTerms;"/>
     <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="LABEL" value="format_supplier_records"/>
@@ -3255,6 +3259,7 @@
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="1600" posY="720">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_4" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
@@ -3297,6 +3302,7 @@
   </node>
   <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1600" posY="880">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_2" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
     <elementParameter field="RADIO" name="USE_SINGLEMODE" value="false"/>
     <elementParameter field="TABLE" name="VALUES" show="false">
@@ -3333,6 +3339,7 @@
   </node>
   <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1760" posY="720">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_3" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_XsKOgIr3EfG9C7e242mTTA" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
@@ -3420,6 +3427,7 @@
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="2080" posY="720">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_5" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
     <elementParameter field="RADIO" name="VERTICAL" value="false"/>
@@ -3573,6 +3581,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row13" show="false"/>
   </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tHashOutput_2" offsetLabelX="0" offsetLabelY="0" source="tHashOutput_2" target="tHashInput_2">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2" show="false"/>
   </connection>
   <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tJavaRow_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tJavaRow_1" target="tJava_2">
@@ -3597,17 +3606,21 @@
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="5"/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row14" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tHashInput_2" offsetLabelX="0" offsetLabelY="0" source="tHashInput_2" target="tHashInput_1">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row15" lineStyle="0" metaname="tLogRow_3" offsetLabelX="0" offsetLabelY="0" source="tLogRow_3" target="tJavaRow_3">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row15" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tJavaRow_3" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_3" target="tDBOutput_4">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tHashInput_1" offsetLabelX="0" offsetLabelY="0" source="tHashInput_1" target="tJavaRow_2">
@@ -3617,6 +3630,7 @@
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tJavaRow_2" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_2" target="tMap_4">
@@ -3626,18 +3640,22 @@
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="suppliers" lineStyle="0" metaname="suppliers" offsetLabelX="0" offsetLabelY="0" source="tMap_4" target="tDBOutput_3">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="suppliers" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row6" lineStyle="8" metaname="tFixedFlowInput_2" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_2" target="tMap_4">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row6" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tDBOutput_3" offsetLabelX="0" offsetLabelY="0" source="tDBOutput_3" target="tLogRow_5">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
   </connection>
   <note opaque="false" posX="760" posY="-400" sizeHeight="121" sizeWidth="201" text="Insert vendor into&#xD;&#xA;tblComany&#xD;&#xA;from integration&#xD;&#xA;table">
