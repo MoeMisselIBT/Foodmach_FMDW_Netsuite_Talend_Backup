@@ -1,0 +1,61 @@
+{
+  "itemId" : "_VEaloIr2EfG9C7e242mTTA",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_XkWa4JngEfGdaILNokaaHA",
+    "parameterList" : [ {
+      "id" : "_XkiBEpngEfGdaILNokaaHA",
+      "name" : "database_name"
+    }, {
+      "id" : "_XkiBEZngEfGdaILNokaaHA",
+      "name" : "database_server_ip"
+    }, {
+      "id" : "_XkiBFJngEfGdaILNokaaHA",
+      "name" : "database_port"
+    }, {
+      "id" : "_XkiBFZngEfGdaILNokaaHA",
+      "name" : "database_password"
+    }, {
+      "id" : "_XkiBE5ngEfGdaILNokaaHA",
+      "name" : "database_schema_name"
+    } ]
+  }, {
+    "contextName" : "Foodmach_Dev",
+    "repoId" : "_XkWa4JngEfGdaILNokaaHA",
+    "parameterList" : [ {
+      "id" : "_XkiBGJngEfGdaILNokaaHA",
+      "name" : "database_name"
+    }, {
+      "id" : "_XkiBF5ngEfGdaILNokaaHA",
+      "name" : "database_server_ip"
+    }, {
+      "id" : "_XkiBGpngEfGdaILNokaaHA",
+      "name" : "database_port"
+    }, {
+      "id" : "_XkiBG5ngEfGdaILNokaaHA",
+      "name" : "database_password"
+    }, {
+      "id" : "_XkiBGZngEfGdaILNokaaHA",
+      "name" : "database_schema_name"
+    } ]
+  }, {
+    "contextName" : "IBT_Dev",
+    "repoId" : "_XkWa4JngEfGdaILNokaaHA",
+    "parameterList" : [ {
+      "id" : "_XkiBHpngEfGdaILNokaaHA",
+      "name" : "database_name"
+    }, {
+      "id" : "_XkiBHZngEfGdaILNokaaHA",
+      "name" : "database_server_ip"
+    }, {
+      "id" : "_XkiBIJngEfGdaILNokaaHA",
+      "name" : "database_port"
+    }, {
+      "id" : "_XkiBIZngEfGdaILNokaaHA",
+      "name" : "database_password"
+    }, {
+      "id" : "_XkiBH5ngEfGdaILNokaaHA",
+      "name" : "database_schema_name"
+    } ]
+  } ]
+}
