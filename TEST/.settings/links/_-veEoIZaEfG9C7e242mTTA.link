@@ -1,0 +1,61 @@
+{
+  "itemId" : "_-veEoIZaEfG9C7e242mTTA",
+  "contextList" : [ {
+    "contextName" : "IBT_Dev",
+    "repoId" : "_XkWa4JngEfGdaILNokaaHA",
+    "parameterList" : [ {
+      "id" : "_XkiBHZngEfGdaILNokaaHA",
+      "name" : "database_server_ip"
+    }, {
+      "id" : "_XkiBHpngEfGdaILNokaaHA",
+      "name" : "database_name"
+    }, {
+      "id" : "_XkiBH5ngEfGdaILNokaaHA",
+      "name" : "database_schema_name"
+    }, {
+      "id" : "_XkiBIJngEfGdaILNokaaHA",
+      "name" : "database_port"
+    }, {
+      "id" : "_XkiBIZngEfGdaILNokaaHA",
+      "name" : "database_password"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_XkWa4JngEfGdaILNokaaHA",
+    "parameterList" : [ {
+      "id" : "_XkiBEZngEfGdaILNokaaHA",
+      "name" : "database_server_ip"
+    }, {
+      "id" : "_XkiBEpngEfGdaILNokaaHA",
+      "name" : "database_name"
+    }, {
+      "id" : "_XkiBE5ngEfGdaILNokaaHA",
+      "name" : "database_schema_name"
+    }, {
+      "id" : "_XkiBFJngEfGdaILNokaaHA",
+      "name" : "database_port"
+    }, {
+      "id" : "_XkiBFZngEfGdaILNokaaHA",
+      "name" : "database_password"
+    } ]
+  }, {
+    "contextName" : "Foodmach_Dev",
+    "repoId" : "_XkWa4JngEfGdaILNokaaHA",
+    "parameterList" : [ {
+      "id" : "_XkiBF5ngEfGdaILNokaaHA",
+      "name" : "database_server_ip"
+    }, {
+      "id" : "_XkiBGJngEfGdaILNokaaHA",
+      "name" : "database_name"
+    }, {
+      "id" : "_XkiBGZngEfGdaILNokaaHA",
+      "name" : "database_schema_name"
+    }, {
+      "id" : "_XkiBGpngEfGdaILNokaaHA",
+      "name" : "database_port"
+    }, {
+      "id" : "_XkiBG5ngEfGdaILNokaaHA",
+      "name" : "database_password"
+    } ]
+  } ]
+}
