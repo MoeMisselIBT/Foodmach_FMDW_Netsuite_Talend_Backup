@@ -570,7 +570,7 @@
       <elementValue elementRef="SCHEMA_COLUMN" value="CompanyCustom1" id="76"/>
       <elementValue elementRef="QUERY" value="" id="77"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="CompanyCustom2" id="78"/>
-      <elementValue elementRef="QUERY" value="" id="79"/>
+      <elementValue elementRef="QUERY" value="&quot;abn&quot;" id="79"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="CompanyCustom3" id="80"/>
       <elementValue elementRef="QUERY" value="&quot;internalId&quot;" id="81"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="CompanyCustom4" id="82"/>
