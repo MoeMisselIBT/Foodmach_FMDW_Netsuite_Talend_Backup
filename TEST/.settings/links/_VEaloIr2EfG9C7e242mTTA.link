@@ -5,19 +5,19 @@
     "repoId" : "_XkWa4JngEfGdaILNokaaHA",
     "parameterList" : [ {
       "id" : "_XkiBEpngEfGdaILNokaaHA",
-      "name" : "database_name"
+      "name" : "integration_database_name"
     }, {
       "id" : "_XkiBEZngEfGdaILNokaaHA",
-      "name" : "database_server_ip"
+      "name" : "integration_database_server_ip"
     }, {
       "id" : "_XkiBFJngEfGdaILNokaaHA",
-      "name" : "database_port"
+      "name" : "integration_database_port"
     }, {
       "id" : "_XkiBFZngEfGdaILNokaaHA",
-      "name" : "database_password"
+      "name" : "integration_database_password"
     }, {
       "id" : "_XkiBE5ngEfGdaILNokaaHA",
-      "name" : "database_schema_name"
+      "name" : "integration_database_schema_name"
     }, {
       "id" : "_bDi6RJoPEfGdaILNokaaHA",
       "name" : "foodmach_tblCompany_table_name"
@@ -32,7 +32,7 @@
       "name" : "foodmach_tblSupplier_table_name"
     }, {
       "id" : "_6BvU8JoIEfGdaILNokaaHA",
-      "name" : "integration_table_name"
+      "name" : "integration_database_table_name"
     }, {
       "id" : "_bDi6QZoPEfGdaILNokaaHA",
       "name" : "foodmach_database_name"
@@ -51,19 +51,19 @@
     "repoId" : "_XkWa4JngEfGdaILNokaaHA",
     "parameterList" : [ {
       "id" : "_XkiBGJngEfGdaILNokaaHA",
-      "name" : "database_name"
+      "name" : "integration_database_name"
     }, {
       "id" : "_XkiBF5ngEfGdaILNokaaHA",
-      "name" : "database_server_ip"
+      "name" : "integration_database_server_ip"
     }, {
       "id" : "_XkiBGpngEfGdaILNokaaHA",
-      "name" : "database_port"
+      "name" : "integration_database_port"
     }, {
       "id" : "_XkiBG5ngEfGdaILNokaaHA",
-      "name" : "database_password"
+      "name" : "integration_database_password"
     }, {
       "id" : "_XkiBGZngEfGdaILNokaaHA",
-      "name" : "database_schema_name"
+      "name" : "integration_database_schema_name"
     }, {
       "id" : "_bDi6S5oPEfGdaILNokaaHA",
       "name" : "foodmach_tblCompany_table_name"
@@ -78,7 +78,7 @@
       "name" : "foodmach_tblSupplier_table_name"
     }, {
       "id" : "_6BvU8ZoIEfGdaILNokaaHA",
-      "name" : "integration_table_name"
+      "name" : "integration_database_table_name"
     }, {
       "id" : "_bDi6SJoPEfGdaILNokaaHA",
       "name" : "foodmach_database_name"
@@ -97,19 +97,19 @@
     "repoId" : "_XkWa4JngEfGdaILNokaaHA",
     "parameterList" : [ {
       "id" : "_XkiBHpngEfGdaILNokaaHA",
-      "name" : "database_name"
+      "name" : "integration_database_name"
     }, {
       "id" : "_XkiBHZngEfGdaILNokaaHA",
-      "name" : "database_server_ip"
+      "name" : "integration_database_server_ip"
     }, {
       "id" : "_XkiBIJngEfGdaILNokaaHA",
-      "name" : "database_port"
+      "name" : "integration_database_port"
     }, {
       "id" : "_XkiBIZngEfGdaILNokaaHA",
-      "name" : "database_password"
+      "name" : "integration_database_password"
     }, {
       "id" : "_XkiBH5ngEfGdaILNokaaHA",
-      "name" : "database_schema_name"
+      "name" : "integration_database_schema_name"
     }, {
       "id" : "_bDi6UpoPEfGdaILNokaaHA",
       "name" : "foodmach_tblCompany_table_name"
@@ -124,7 +124,7 @@
       "name" : "foodmach_tblSupplier_table_name"
     }, {
       "id" : "_6BvU8poIEfGdaILNokaaHA",
-      "name" : "integration_table_name"
+      "name" : "integration_database_table_name"
     }, {
       "id" : "_bDi6T5oPEfGdaILNokaaHA",
       "name" : "foodmach_database_name"

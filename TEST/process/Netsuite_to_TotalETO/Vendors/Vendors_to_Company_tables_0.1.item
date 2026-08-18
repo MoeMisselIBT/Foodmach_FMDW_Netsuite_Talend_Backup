@@ -2,16 +2,16 @@
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
   <context confirmationNeeded="false" hide="false" name="Default">
     <contextParameter comment="" name="row_count" prompt="row_count?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0" internalId="_BXzGsIsaEfG9C7e242mTTA"/>
-    <contextParameter comment="" name="database_name" prompt="database_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_BvT6EJoIEfGdaILNokaaHA"/>
-    <contextParameter comment="" name="database_server_ip" prompt="database_server_ip?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_BvT6EZoIEfGdaILNokaaHA"/>
-    <contextParameter comment="" name="database_port" prompt="database_port?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_BvT6EpoIEfGdaILNokaaHA"/>
-    <contextParameter comment="" name="database_password" prompt="database_password?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Password" value="" internalId="_BvT6E5oIEfGdaILNokaaHA"/>
-    <contextParameter comment="" name="database_schema_name" prompt="database_schema_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_BvT6FJoIEfGdaILNokaaHA"/>
+    <contextParameter comment="" name="integration_database_name" prompt="integration_database_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_BvT6EJoIEfGdaILNokaaHA"/>
+    <contextParameter comment="" name="integration_database_server_ip" prompt="integration_database_server_ip?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_BvT6EZoIEfGdaILNokaaHA"/>
+    <contextParameter comment="" name="integration_database_port" prompt="integration_database_port?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_BvT6EpoIEfGdaILNokaaHA"/>
+    <contextParameter comment="" name="integration_database_password" prompt="integration_database_password?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Password" value="" internalId="_BvT6E5oIEfGdaILNokaaHA"/>
+    <contextParameter comment="" name="integration_database_schema_name" prompt="integration_database_schema_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_BvT6FJoIEfGdaILNokaaHA"/>
     <contextParameter comment="" name="foodmach_tblCompany_table_name" prompt="foodmach_tblCompany_table_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_y2vCoJoPEfGdaILNokaaHA"/>
     <contextParameter comment="" name="foodmach_database_server_ip" prompt="foodmach_database_server_ip?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_y2vCoZoPEfGdaILNokaaHA"/>
     <contextParameter comment="" name="foodmach_tblCompanyTypes_table_name" prompt="foodmach_tblCompanyTypes_table_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_y2vCopoPEfGdaILNokaaHA"/>
     <contextParameter comment="" name="foodmach_tblSupplier_table_name" prompt="foodmach_tblSupplier_table_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_y2vCo5oPEfGdaILNokaaHA"/>
-    <contextParameter comment="" name="integration_table_name" prompt="integration_table_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_y2vCpJoPEfGdaILNokaaHA"/>
+    <contextParameter comment="" name="integration_database_table_name" prompt="integration_database_table_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_y2vCpJoPEfGdaILNokaaHA"/>
     <contextParameter comment="" name="foodmach_database_name" prompt="foodmach_database_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_y2vCpZoPEfGdaILNokaaHA"/>
     <contextParameter comment="" name="foodmach_database_password" prompt="foodmach_database_password?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Password" value="" internalId="_y2vCppoPEfGdaILNokaaHA"/>
     <contextParameter comment="" name="foodmach_database_port" prompt="foodmach_database_port?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_y2vCp5oPEfGdaILNokaaHA"/>
@@ -19,16 +19,16 @@
   </context>
   <context confirmationNeeded="false" hide="false" name="Foodmach_Dev">
     <contextParameter comment="" name="row_count" prompt="row_count?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0" internalId="_BXzGsIsaEfG9C7e242mTTA"/>
-    <contextParameter comment="" name="database_name" prompt="database_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="integration_database" internalId="_BvT6EJoIEfGdaILNokaaHA"/>
-    <contextParameter comment="" name="database_server_ip" prompt="database_server_ip?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="192.168.2.46" internalId="_BvT6EZoIEfGdaILNokaaHA"/>
-    <contextParameter comment="" name="database_port" prompt="database_port?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="51980" internalId="_BvT6EpoIEfGdaILNokaaHA"/>
-    <contextParameter comment="" name="database_password" prompt="database_password?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Password" value="enc:system.encryption.key.v1:V74zii7Z0fPWNEVK9j6W7muJNoAMFP0mcXiP8Pw728nenNuQnCJcIAA=" internalId="_BvT6E5oIEfGdaILNokaaHA"/>
-    <contextParameter comment="" name="database_schema_name" prompt="database_schema_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="integration" internalId="_BvT6FJoIEfGdaILNokaaHA"/>
+    <contextParameter comment="" name="integration_database_name" prompt="integration_database_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="integration_database" internalId="_BvT6EJoIEfGdaILNokaaHA"/>
+    <contextParameter comment="" name="integration_database_server_ip" prompt="integration_database_server_ip?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="192.168.2.46" internalId="_BvT6EZoIEfGdaILNokaaHA"/>
+    <contextParameter comment="" name="integration_database_port" prompt="integration_database_port?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="51980" internalId="_BvT6EpoIEfGdaILNokaaHA"/>
+    <contextParameter comment="" name="integration_database_password" prompt="integration_database_password?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Password" value="enc:system.encryption.key.v1:V74zii7Z0fPWNEVK9j6W7muJNoAMFP0mcXiP8Pw728nenNuQnCJcIAA=" internalId="_BvT6E5oIEfGdaILNokaaHA"/>
+    <contextParameter comment="" name="integration_database_schema_name" prompt="integration_database_schema_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="integration" internalId="_BvT6FJoIEfGdaILNokaaHA"/>
     <contextParameter comment="" name="foodmach_tblCompany_table_name" prompt="foodmach_tblCompany_table_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="tblCompany" internalId="_y2vCqZoPEfGdaILNokaaHA"/>
     <contextParameter comment="" name="foodmach_database_server_ip" prompt="foodmach_database_server_ip?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="192.168.2.4" internalId="_y2vCqpoPEfGdaILNokaaHA"/>
     <contextParameter comment="" name="foodmach_tblCompanyTypes_table_name" prompt="foodmach_tblCompanyTypes_table_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="tblCompanyTypes" internalId="_y2vCq5oPEfGdaILNokaaHA"/>
     <contextParameter comment="" name="foodmach_tblSupplier_table_name" prompt="foodmach_tblSupplier_table_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="tblSupplier" internalId="_y2vCrJoPEfGdaILNokaaHA"/>
-    <contextParameter comment="" name="integration_table_name" prompt="integration_table_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="tblCompany_integration" internalId="_y2vCrZoPEfGdaILNokaaHA"/>
+    <contextParameter comment="" name="integration_database_table_name" prompt="integration_database_table_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="tblCompany_integration" internalId="_y2vCrZoPEfGdaILNokaaHA"/>
     <contextParameter comment="" name="foodmach_database_name" prompt="foodmach_database_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="Foodmach_training" internalId="_y2vCrpoPEfGdaILNokaaHA"/>
     <contextParameter comment="" name="foodmach_database_password" prompt="foodmach_database_password?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Password" value="enc:system.encryption.key.v1:kj/SDcoQzKpo4hcfgQppYSXfcdlU8yl1hJqSa0HMqXY2xwE0" internalId="_y2vCr5oPEfGdaILNokaaHA"/>
     <contextParameter comment="" name="foodmach_database_port" prompt="foodmach_database_port?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="1433" internalId="_y2vCsJoPEfGdaILNokaaHA"/>
@@ -36,16 +36,16 @@
   </context>
   <context confirmationNeeded="false" hide="false" name="IBT_Dev">
     <contextParameter comment="" name="row_count" prompt="row_count?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0" internalId="_BXzGsIsaEfG9C7e242mTTA"/>
-    <contextParameter comment="" name="database_name" prompt="database_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="client_projects" internalId="_BvT6EJoIEfGdaILNokaaHA"/>
-    <contextParameter comment="" name="database_server_ip" prompt="database_server_ip?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="192.168.2.65" internalId="_BvT6EZoIEfGdaILNokaaHA"/>
-    <contextParameter comment="" name="database_port" prompt="database_port?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="1433" internalId="_BvT6EpoIEfGdaILNokaaHA"/>
-    <contextParameter comment="" name="database_password" prompt="database_password?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Password" value="enc:system.encryption.key.v1:nOgR35Lz+HH/8g/srsYyolbyYbiRkAGErz5Lw5qmCk7WrFwLsQ==" internalId="_BvT6E5oIEfGdaILNokaaHA"/>
-    <contextParameter comment="" name="database_schema_name" prompt="database_schema_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="foodmach" internalId="_BvT6FJoIEfGdaILNokaaHA"/>
+    <contextParameter comment="" name="integration_database_name" prompt="integration_database_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="client_projects" internalId="_BvT6EJoIEfGdaILNokaaHA"/>
+    <contextParameter comment="" name="integration_database_server_ip" prompt="integration_database_server_ip?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="192.168.2.65" internalId="_BvT6EZoIEfGdaILNokaaHA"/>
+    <contextParameter comment="" name="integration_database_port" prompt="integration_database_port?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="1433" internalId="_BvT6EpoIEfGdaILNokaaHA"/>
+    <contextParameter comment="" name="integration_database_password" prompt="integration_database_password?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Password" value="enc:system.encryption.key.v1:nOgR35Lz+HH/8g/srsYyolbyYbiRkAGErz5Lw5qmCk7WrFwLsQ==" internalId="_BvT6E5oIEfGdaILNokaaHA"/>
+    <contextParameter comment="" name="integration_database_schema_name" prompt="integration_database_schema_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="foodmach" internalId="_BvT6FJoIEfGdaILNokaaHA"/>
     <contextParameter comment="" name="foodmach_tblCompany_table_name" prompt="foodmach_tblCompany_table_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_y2vCspoPEfGdaILNokaaHA"/>
     <contextParameter comment="" name="foodmach_database_server_ip" prompt="foodmach_database_server_ip?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_y2vCs5oPEfGdaILNokaaHA"/>
     <contextParameter comment="" name="foodmach_tblCompanyTypes_table_name" prompt="foodmach_tblCompanyTypes_table_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_y2vCtJoPEfGdaILNokaaHA"/>
     <contextParameter comment="" name="foodmach_tblSupplier_table_name" prompt="foodmach_tblSupplier_table_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_y2vCtZoPEfGdaILNokaaHA"/>
-    <contextParameter comment="" name="integration_table_name" prompt="integration_table_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="tblCompany_integration" internalId="_y2vCtpoPEfGdaILNokaaHA"/>
+    <contextParameter comment="" name="integration_database_table_name" prompt="integration_database_table_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="tblCompany_integration" internalId="_y2vCtpoPEfGdaILNokaaHA"/>
     <contextParameter comment="" name="foodmach_database_name" prompt="foodmach_database_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_y2vCt5oPEfGdaILNokaaHA"/>
     <contextParameter comment="" name="foodmach_database_password" prompt="foodmach_database_password?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Password" value="" internalId="_y2vCuJoPEfGdaILNokaaHA"/>
     <contextParameter comment="" name="foodmach_database_port" prompt="foodmach_database_port?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="1433" internalId="_y2vCuZoPEfGdaILNokaaHA"/>
@@ -153,20 +153,20 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
-    <elementParameter field="TEXT" name="HOST" value="context.database_server_ip"/>
+    <elementParameter field="TEXT" name="HOST" value="context.integration_database_server_ip"/>
     <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
-    <elementParameter field="TEXT" name="PORT" value="context.database_port"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.database_schema_name"/>
-    <elementParameter field="TEXT" name="DBNAME" value="context.database_name"/>
+    <elementParameter field="TEXT" name="PORT" value="context.integration_database_port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.integration_database_schema_name"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.integration_database_name"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="context.database_password"/>
+    <elementParameter field="PASSWORD" name="PASS" value="context.integration_database_password"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;tblCompany_integration&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT count(*) FROM &quot; + context.database_schema_name + &quot;.tblCompany_integration WHERE LoadedIntoTotalETO = 0&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT count(*) FROM &quot; + context.integration_database_schema_name + &quot;.tblCompany_integration WHERE LoadedIntoTotalETO = 0&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -221,20 +221,20 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_2" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
-    <elementParameter field="TEXT" name="HOST" value="context.database_server_ip"/>
+    <elementParameter field="TEXT" name="HOST" value="context.integration_database_server_ip"/>
     <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
-    <elementParameter field="TEXT" name="PORT" value="context.database_port"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.database_schema_name"/>
-    <elementParameter field="TEXT" name="DBNAME" value="context.database_name"/>
+    <elementParameter field="TEXT" name="PORT" value="context.integration_database_port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.integration_database_schema_name"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.integration_database_name"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="context.database_password"/>
+    <elementParameter field="PASSWORD" name="PASS" value="context.integration_database_password"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;tblCompany_integration&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &quot;&#xD;&#xA;+ &quot;  ci.CName,&quot;&#xD;&#xA;+ &quot;  ci.CAddress1,&quot;&#xD;&#xA;+ &quot;  ci.CAddress2,&quot;&#xD;&#xA;+ &quot;  ci.CCity,&quot;&#xD;&#xA;+ &quot;  ci.CState,&quot;&#xD;&#xA;+ &quot;  ci.CZip,&quot;&#xD;&#xA;+ &quot;  ci.CCountry,&quot;&#xD;&#xA;+ &quot;  ci.CPhone,&quot;&#xD;&#xA;+ &quot;  ci.CFax,&quot;&#xD;&#xA;+ &quot;  ci.CDate,&quot;&#xD;&#xA;+ &quot;  ci.BAddress1,&quot;&#xD;&#xA;+ &quot;  ci.BAddress2,&quot;&#xD;&#xA;+ &quot;  ci.BCity,&quot;&#xD;&#xA;+ &quot;  ci.BState,&quot;&#xD;&#xA;+ &quot;  ci.BZip,&quot;&#xD;&#xA;+ &quot;  ci.BCountry,&quot;&#xD;&#xA;+ &quot;  ci.SAddress1,&quot;&#xD;&#xA;+ &quot;  ci.SAddress2,&quot;&#xD;&#xA;+ &quot;  ci.SCity,&quot;&#xD;&#xA;+ &quot;  ci.SState,&quot;&#xD;&#xA;+ &quot;  ci.SZip,&quot;&#xD;&#xA;+ &quot;  ci.SCountry,&quot;&#xD;&#xA;+ &quot;  ci.CWWWAddress,&quot;&#xD;&#xA;+ &quot;  ci.CTollFree,&quot;&#xD;&#xA;+ &quot;  ci.BSameAsMailing,&quot;&#xD;&#xA;+ &quot;  ci.SSameAsMailing,&quot;&#xD;&#xA;+ &quot;  ci.CHasAgent,&quot;&#xD;&#xA;+ &quot;  ci.CAccountingHoldCode,&quot;&#xD;&#xA;+ &quot;  ci.CCompanyParent,&quot;&#xD;&#xA;+ &quot;  ci.CDefaultShipVia,&quot;&#xD;&#xA;+ &quot;  ci.CDefaultPartDiscount,&quot;&#xD;&#xA;+ &quot;  ci.CDefaultPartMargin,&quot;&#xD;&#xA;+ &quot;  ci.CDefaultTerms,&quot;&#xD;&#xA;+ &quot;  ci.CAccVendorID,&quot;&#xD;&#xA;+ &quot;  ci.CAccCustomerID,&quot;&#xD;&#xA;+ &quot;  ci.CAccVendorTaxClass1,&quot;&#xD;&#xA;+ &quot;  ci.CAccCustomerGroupCode,&quot;&#xD;&#xA;+ &quot;  ci.CAccCustomerDisc,&quot;&#xD;&#xA;+ &quot;  ci.CompanyCustom1,&quot;&#xD;&#xA;+ &quot;  ci.CompanyCustom2,&quot;&#xD;&#xA;+ &quot;  ci.CompanyCustom3,&quot;&#xD;&#xA;+ &quot;  ci.CompanyCustom4,&quot;&#xD;&#xA;+ &quot;  ci.CompanyCustom5,&quot;&#xD;&#xA;+ &quot;  ci.CompanyCustom6,&quot;&#xD;&#xA;+ &quot;  ci.CompanyCustom7,&quot;&#xD;&#xA;+ &quot;  ci.CompanyCustom8,&quot;&#xD;&#xA;+ &quot;  ci.Legacy_CCountry,&quot;&#xD;&#xA;+ &quot;  ci.Legacy_BCountry,&quot;&#xD;&#xA;+ &quot;  ci.Legacy_SCountry,&quot;&#xD;&#xA;+ &quot;  ci.CActive,&quot;&#xD;&#xA;+ &quot;  ci.DefaultEmailAddress,&quot;&#xD;&#xA;+ &quot;  ci.ARTaxCategoryID,&quot;&#xD;&#xA;+ &quot;  ci.DateTimeLoadedIntoIntegrationTableUTC,&quot;&#xD;&#xA;+ &quot;  ci.LoadedIntoTotalETO,&quot;&#xD;&#xA;+ &quot;  ci.TimeLoadedIntoTotalETOUTC,&quot;&#xD;&#xA;+ &quot;  ci.IntegrationID,&quot;&#xD;&#xA;+ &quot;  ci.tblSupplier_currency,&quot;&#xD;&#xA;+ &quot;  ci.CDefaultTermsText &quot;&#xD;&#xA;+ &quot;FROM &quot; + context.database_schema_name + &quot;.tblCompany_integration ci &quot;&#xD;&#xA;+ &quot;WHERE ci.LoadedIntoTotalETO = 0&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &quot;&#xD;&#xA;+ &quot;  ci.CName,&quot;&#xD;&#xA;+ &quot;  ci.CAddress1,&quot;&#xD;&#xA;+ &quot;  ci.CAddress2,&quot;&#xD;&#xA;+ &quot;  ci.CCity,&quot;&#xD;&#xA;+ &quot;  ci.CState,&quot;&#xD;&#xA;+ &quot;  ci.CZip,&quot;&#xD;&#xA;+ &quot;  ci.CCountry,&quot;&#xD;&#xA;+ &quot;  ci.CPhone,&quot;&#xD;&#xA;+ &quot;  ci.CFax,&quot;&#xD;&#xA;+ &quot;  ci.CDate,&quot;&#xD;&#xA;+ &quot;  ci.BAddress1,&quot;&#xD;&#xA;+ &quot;  ci.BAddress2,&quot;&#xD;&#xA;+ &quot;  ci.BCity,&quot;&#xD;&#xA;+ &quot;  ci.BState,&quot;&#xD;&#xA;+ &quot;  ci.BZip,&quot;&#xD;&#xA;+ &quot;  ci.BCountry,&quot;&#xD;&#xA;+ &quot;  ci.SAddress1,&quot;&#xD;&#xA;+ &quot;  ci.SAddress2,&quot;&#xD;&#xA;+ &quot;  ci.SCity,&quot;&#xD;&#xA;+ &quot;  ci.SState,&quot;&#xD;&#xA;+ &quot;  ci.SZip,&quot;&#xD;&#xA;+ &quot;  ci.SCountry,&quot;&#xD;&#xA;+ &quot;  ci.CWWWAddress,&quot;&#xD;&#xA;+ &quot;  ci.CTollFree,&quot;&#xD;&#xA;+ &quot;  ci.BSameAsMailing,&quot;&#xD;&#xA;+ &quot;  ci.SSameAsMailing,&quot;&#xD;&#xA;+ &quot;  ci.CHasAgent,&quot;&#xD;&#xA;+ &quot;  ci.CAccountingHoldCode,&quot;&#xD;&#xA;+ &quot;  ci.CCompanyParent,&quot;&#xD;&#xA;+ &quot;  ci.CDefaultShipVia,&quot;&#xD;&#xA;+ &quot;  ci.CDefaultPartDiscount,&quot;&#xD;&#xA;+ &quot;  ci.CDefaultPartMargin,&quot;&#xD;&#xA;+ &quot;  ci.CDefaultTerms,&quot;&#xD;&#xA;+ &quot;  ci.CAccVendorID,&quot;&#xD;&#xA;+ &quot;  ci.CAccCustomerID,&quot;&#xD;&#xA;+ &quot;  ci.CAccVendorTaxClass1,&quot;&#xD;&#xA;+ &quot;  ci.CAccCustomerGroupCode,&quot;&#xD;&#xA;+ &quot;  ci.CAccCustomerDisc,&quot;&#xD;&#xA;+ &quot;  ci.CompanyCustom1,&quot;&#xD;&#xA;+ &quot;  ci.CompanyCustom2,&quot;&#xD;&#xA;+ &quot;  ci.CompanyCustom3,&quot;&#xD;&#xA;+ &quot;  ci.CompanyCustom4,&quot;&#xD;&#xA;+ &quot;  ci.CompanyCustom5,&quot;&#xD;&#xA;+ &quot;  ci.CompanyCustom6,&quot;&#xD;&#xA;+ &quot;  ci.CompanyCustom7,&quot;&#xD;&#xA;+ &quot;  ci.CompanyCustom8,&quot;&#xD;&#xA;+ &quot;  ci.Legacy_CCountry,&quot;&#xD;&#xA;+ &quot;  ci.Legacy_BCountry,&quot;&#xD;&#xA;+ &quot;  ci.Legacy_SCountry,&quot;&#xD;&#xA;+ &quot;  ci.CActive,&quot;&#xD;&#xA;+ &quot;  ci.DefaultEmailAddress,&quot;&#xD;&#xA;+ &quot;  ci.ARTaxCategoryID,&quot;&#xD;&#xA;+ &quot;  ci.DateTimeLoadedIntoIntegrationTableUTC,&quot;&#xD;&#xA;+ &quot;  ci.LoadedIntoTotalETO,&quot;&#xD;&#xA;+ &quot;  ci.TimeLoadedIntoTotalETOUTC,&quot;&#xD;&#xA;+ &quot;  ci.IntegrationID,&quot;&#xD;&#xA;+ &quot;  ci.tblSupplier_currency,&quot;&#xD;&#xA;+ &quot;  ci.CDefaultTermsText &quot;&#xD;&#xA;+ &quot;FROM &quot; + context.integration_database_schema_name + &quot;.tblCompany_integration ci &quot;&#xD;&#xA;+ &quot;WHERE ci.LoadedIntoTotalETO = 0&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -1913,20 +1913,20 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_6" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
-    <elementParameter field="TEXT" name="HOST" value="context.database_server_ip"/>
+    <elementParameter field="TEXT" name="HOST" value="context.integration_database_server_ip"/>
     <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
-    <elementParameter field="TEXT" name="PORT" value="context.database_port"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.database_schema_name"/>
-    <elementParameter field="TEXT" name="DBNAME" value="context.database_name"/>
+    <elementParameter field="TEXT" name="PORT" value="context.integration_database_port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.integration_database_schema_name"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.integration_database_name"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="context.database_password"/>
+    <elementParameter field="PASSWORD" name="PASS" value="context.integration_database_password"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;tblCompany_integration&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xD;&#xA;&#x9;&#x9;&quot; + context.database_schema_name + &quot;.tblCompany_integration.CName,&#xD;&#xA;&#x9;&#x9;&quot; + context.database_schema_name + &quot;.tblCompany_integration.CAddress1,&#xD;&#xA;&#x9;&#x9;&quot; + context.database_schema_name + &quot;.tblCompany_integration.CAddress2,&#xD;&#xA;&#x9;&#x9;&quot; + context.database_schema_name + &quot;.tblCompany_integration.CCity,&#xD;&#xA;&#x9;&#x9;&quot; + context.database_schema_name + &quot;.tblCompany_integration.CState,&#xD;&#xA;&#x9;&#x9;&quot; + context.database_schema_name + &quot;.tblCompany_integration.CZip,&#xD;&#xA;&#x9;&#x9;&quot; + context.database_schema_name + &quot;.tblCompany_integration.CCountry,&#xD;&#xA;&#x9;&#x9;&quot; + context.database_schema_name + &quot;.tblCompany_integration.CPhone,&#xD;&#xA;&#x9;&#x9;&quot; + context.database_schema_name + &quot;.tblCompany_integration.CFax,&#xD;&#xA;&#x9;&#x9;&quot; + context.database_schema_name + &quot;.tblCompany_integration.CDate,&#xD;&#xA;&#x9;&#x9;&quot; + context.database_schema_name + &quot;.tblCompany_integration.BAddress1,&#xD;&#xA;&#x9;&#x9;&quot; + context.database_schema_name + &quot;.tblCompany_integration.BAddress2,&#xD;&#xA;&#x9;&#x9;&quot; + context.database_schema_name + &quot;.tblCompany_integration.BCity,&#xD;&#xA;&#x9;&#x9;&quot; + context.database_schema_name + &quot;.tblCompany_integration.BState,&#xD;&#xA;&#x9;&#x9;&quot; + context.database_schema_name + &quot;.tblCompany_integration.BZip,&#xD;&#xA;&#x9;&#x9;&quot; + context.database_schema_name + &quot;.tblCompany_integration.BCountry,&#xD;&#xA;&#x9;&#x9;&quot; + context.database_schema_name + &quot;.tblCompany_integration.SAddress1,&#xD;&#xA;&#x9;&#x9;&quot; + context.database_schema_name + &quot;.tblCompany_integration.SAddress2,&#xD;&#xA;&#x9;&#x9;&quot; + context.database_schema_name + &quot;.tblCompany_integration.SCity,&#xD;&#xA;&#x9;&#x9;&quot; + context.database_schema_name + &quot;.tblCompany_integration.SState,&#xD;&#xA;&#x9;&#x9;&quot; + context.database_schema_name + &quot;.tblCompany_integration.SZip,&#xD;&#xA;&#x9;&#x9;&quot; + context.database_schema_name + &quot;.tblCompany_integration.SCountry,&#xD;&#xA;&#x9;&#x9;&quot; + context.database_schema_name + &quot;.tblCompany_integration.CWWWAddress,&#xD;&#xA;&#x9;&#x9;&quot; + context.database_schema_name + &quot;.tblCompany_integration.CTollFree,&#xD;&#xA;&#x9;&#x9;&quot; + context.database_schema_name + &quot;.tblCompany_integration.BSameAsMailing,&#xD;&#xA;&#x9;&#x9;&quot; + context.database_schema_name + &quot;.tblCompany_integration.SSameAsMailing,&#xD;&#xA;&#x9;&#x9;&quot; + context.database_schema_name + &quot;.tblCompany_integration.CHasAgent,&#xD;&#xA;&#x9;&#x9;&quot; + context.database_schema_name + &quot;.tblCompany_integration.CAccountingHoldCode,&#xD;&#xA;&#x9;&#x9;&quot; + context.database_schema_name + &quot;.tblCompany_integration.CCompanyParent,&#xD;&#xA;&#x9;&#x9;&quot; + context.database_schema_name + &quot;.tblCompany_integration.CDefaultShipVia,&#xD;&#xA;&#x9;&#x9;&quot; + context.database_schema_name + &quot;.tblCompany_integration.CDefaultPartDiscount,&#xD;&#xA;&#x9;&#x9;&quot; + context.database_schema_name + &quot;.tblCompany_integration.CDefaultPartMargin,&#xD;&#xA;&#x9;&#x9;&quot; + context.database_schema_name + &quot;.tblCompany_integration.CDefaultTerms,&#xD;&#xA;&#x9;&#x9;&quot; + context.database_schema_name + &quot;.tblCompany_integration.CAccVendorID,&#xD;&#xA;&#x9;&#x9;&quot; + context.database_schema_name + &quot;.tblCompany_integration.CAccCustomerID,&#xD;&#xA;&#x9;&#x9;&quot; + context.database_schema_name + &quot;.tblCompany_integration.CAccVendorTaxClass1,&#xD;&#xA;&#x9;&#x9;&quot; + context.database_schema_name + &quot;.tblCompany_integration.CAccCustomerGroupCode,&#xD;&#xA;&#x9;&#x9;&quot; + context.database_schema_name + &quot;.tblCompany_integration.CAccCustomerDisc,&#xD;&#xA;&#x9;&#x9;&quot; + context.database_schema_name + &quot;.tblCompany_integration.CompanyCustom1,&#xD;&#xA;&#x9;&#x9;&quot; + context.database_schema_name + &quot;.tblCompany_integration.CompanyCustom2,&#xD;&#xA;&#x9;&#x9;&quot; + context.database_schema_name + &quot;.tblCompany_integration.CompanyCustom3,&#xD;&#xA;&#x9;&#x9;&quot; + context.database_schema_name + &quot;.tblCompany_integration.CompanyCustom4,&#xD;&#xA;&#x9;&#x9;&quot; + context.database_schema_name + &quot;.tblCompany_integration.CompanyCustom5,&#xD;&#xA;&#x9;&#x9;&quot; + context.database_schema_name + &quot;.tblCompany_integration.CompanyCustom6,&#xD;&#xA;&#x9;&#x9;&quot; + context.database_schema_name + &quot;.tblCompany_integration.CompanyCustom7,&#xD;&#xA;&#x9;&#x9;&quot; + context.database_schema_name + &quot;.tblCompany_integration.CompanyCustom8,&#xD;&#xA;&#x9;&#x9;&quot; + context.database_schema_name + &quot;.tblCompany_integration.Legacy_CCountry,&#xD;&#xA;&#x9;&#x9;&quot; + context.database_schema_name + &quot;.tblCompany_integration.Legacy_BCountry,&#xD;&#xA;&#x9;&#x9;&quot; + context.database_schema_name + &quot;.tblCompany_integration.Legacy_SCountry,&#xD;&#xA;&#x9;&#x9;&quot; + context.database_schema_name + &quot;.tblCompany_integration.CActive,&#xD;&#xA;&#x9;&#x9;&quot; + context.database_schema_name + &quot;.tblCompany_integration.DefaultEmailAddress,&#xD;&#xA;&#x9;&#x9;&quot; + context.database_schema_name + &quot;.tblCompany_integration.ARTaxCategoryID,&#xD;&#xA;&#x9;&#x9;&quot; + context.database_schema_name + &quot;.tblCompany_integration.DateTimeLoadedIntoIntegrationTableUTC,&#xD;&#xA;&#x9;&#x9;&quot; + context.database_schema_name + &quot;.tblCompany_integration.LoadedIntoTotalETO,&#xD;&#xA;&#x9;&#x9;&quot; + context.database_schema_name + &quot;.tblCompany_integration.TimeLoadedIntoTotalETOUTC,&#xD;&#xA;&#x9;&#x9;&quot; + context.database_schema_name + &quot;.tblCompany_integration.IntegrationID,&#xD;&#xA;&#x9;&#x9;&quot; + context.database_schema_name + &quot;.tblCompany_integration.tblSupplier_currency&#xD;&#xA;FROM&#x9;&quot; + context.database_schema_name + &quot;.tblCompany_integration&#xD;&#xA;WHERE LoadedIntoTotalETO = 0;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xD;&#xA;&#x9;&#x9;&quot; + context.integration_database_schema_name + &quot;.tblCompany_integration.CName,&#xD;&#xA;&#x9;&#x9;&quot; + context.integration_database_schema_name + &quot;.tblCompany_integration.CAddress1,&#xD;&#xA;&#x9;&#x9;&quot; + context.integration_database_schema_name + &quot;.tblCompany_integration.CAddress2,&#xD;&#xA;&#x9;&#x9;&quot; + context.integration_database_schema_name + &quot;.tblCompany_integration.CCity,&#xD;&#xA;&#x9;&#x9;&quot; + context.integration_database_schema_name + &quot;.tblCompany_integration.CState,&#xD;&#xA;&#x9;&#x9;&quot; + context.integration_database_schema_name + &quot;.tblCompany_integration.CZip,&#xD;&#xA;&#x9;&#x9;&quot; + context.integration_database_schema_name + &quot;.tblCompany_integration.CCountry,&#xD;&#xA;&#x9;&#x9;&quot; + context.integration_database_schema_name + &quot;.tblCompany_integration.CPhone,&#xD;&#xA;&#x9;&#x9;&quot; + context.integration_database_schema_name + &quot;.tblCompany_integration.CFax,&#xD;&#xA;&#x9;&#x9;&quot; + context.integration_database_schema_name + &quot;.tblCompany_integration.CDate,&#xD;&#xA;&#x9;&#x9;&quot; + context.integration_database_schema_name + &quot;.tblCompany_integration.BAddress1,&#xD;&#xA;&#x9;&#x9;&quot; + context.integration_database_schema_name + &quot;.tblCompany_integration.BAddress2,&#xD;&#xA;&#x9;&#x9;&quot; + context.integration_database_schema_name + &quot;.tblCompany_integration.BCity,&#xD;&#xA;&#x9;&#x9;&quot; + context.integration_database_schema_name + &quot;.tblCompany_integration.BState,&#xD;&#xA;&#x9;&#x9;&quot; + context.integration_database_schema_name + &quot;.tblCompany_integration.BZip,&#xD;&#xA;&#x9;&#x9;&quot; + context.integration_database_schema_name + &quot;.tblCompany_integration.BCountry,&#xD;&#xA;&#x9;&#x9;&quot; + context.integration_database_schema_name + &quot;.tblCompany_integration.SAddress1,&#xD;&#xA;&#x9;&#x9;&quot; + context.integration_database_schema_name + &quot;.tblCompany_integration.SAddress2,&#xD;&#xA;&#x9;&#x9;&quot; + context.integration_database_schema_name + &quot;.tblCompany_integration.SCity,&#xD;&#xA;&#x9;&#x9;&quot; + context.integration_database_schema_name + &quot;.tblCompany_integration.SState,&#xD;&#xA;&#x9;&#x9;&quot; + context.integration_database_schema_name + &quot;.tblCompany_integration.SZip,&#xD;&#xA;&#x9;&#x9;&quot; + context.integration_database_schema_name + &quot;.tblCompany_integration.SCountry,&#xD;&#xA;&#x9;&#x9;&quot; + context.integration_database_schema_name + &quot;.tblCompany_integration.CWWWAddress,&#xD;&#xA;&#x9;&#x9;&quot; + context.integration_database_schema_name + &quot;.tblCompany_integration.CTollFree,&#xD;&#xA;&#x9;&#x9;&quot; + context.integration_database_schema_name + &quot;.tblCompany_integration.BSameAsMailing,&#xD;&#xA;&#x9;&#x9;&quot; + context.integration_database_schema_name + &quot;.tblCompany_integration.SSameAsMailing,&#xD;&#xA;&#x9;&#x9;&quot; + context.integration_database_schema_name + &quot;.tblCompany_integration.CHasAgent,&#xD;&#xA;&#x9;&#x9;&quot; + context.integration_database_schema_name + &quot;.tblCompany_integration.CAccountingHoldCode,&#xD;&#xA;&#x9;&#x9;&quot; + context.integration_database_schema_name + &quot;.tblCompany_integration.CCompanyParent,&#xD;&#xA;&#x9;&#x9;&quot; + context.integration_database_schema_name + &quot;.tblCompany_integration.CDefaultShipVia,&#xD;&#xA;&#x9;&#x9;&quot; + context.integration_database_schema_name + &quot;.tblCompany_integration.CDefaultPartDiscount,&#xD;&#xA;&#x9;&#x9;&quot; + context.integration_database_schema_name + &quot;.tblCompany_integration.CDefaultPartMargin,&#xD;&#xA;&#x9;&#x9;&quot; + context.integration_database_schema_name + &quot;.tblCompany_integration.CDefaultTerms,&#xD;&#xA;&#x9;&#x9;&quot; + context.integration_database_schema_name + &quot;.tblCompany_integration.CAccVendorID,&#xD;&#xA;&#x9;&#x9;&quot; + context.integration_database_schema_name + &quot;.tblCompany_integration.CAccCustomerID,&#xD;&#xA;&#x9;&#x9;&quot; + context.integration_database_schema_name + &quot;.tblCompany_integration.CAccVendorTaxClass1,&#xD;&#xA;&#x9;&#x9;&quot; + context.integration_database_schema_name + &quot;.tblCompany_integration.CAccCustomerGroupCode,&#xD;&#xA;&#x9;&#x9;&quot; + context.integration_database_schema_name + &quot;.tblCompany_integration.CAccCustomerDisc,&#xD;&#xA;&#x9;&#x9;&quot; + context.integration_database_schema_name + &quot;.tblCompany_integration.CompanyCustom1,&#xD;&#xA;&#x9;&#x9;&quot; + context.integration_database_schema_name + &quot;.tblCompany_integration.CompanyCustom2,&#xD;&#xA;&#x9;&#x9;&quot; + context.integration_database_schema_name + &quot;.tblCompany_integration.CompanyCustom3,&#xD;&#xA;&#x9;&#x9;&quot; + context.integration_database_schema_name + &quot;.tblCompany_integration.CompanyCustom4,&#xD;&#xA;&#x9;&#x9;&quot; + context.integration_database_schema_name + &quot;.tblCompany_integration.CompanyCustom5,&#xD;&#xA;&#x9;&#x9;&quot; + context.integration_database_schema_name + &quot;.tblCompany_integration.CompanyCustom6,&#xD;&#xA;&#x9;&#x9;&quot; + context.integration_database_schema_name + &quot;.tblCompany_integration.CompanyCustom7,&#xD;&#xA;&#x9;&#x9;&quot; + context.integration_database_schema_name + &quot;.tblCompany_integration.CompanyCustom8,&#xD;&#xA;&#x9;&#x9;&quot; + context.integration_database_schema_name + &quot;.tblCompany_integration.Legacy_CCountry,&#xD;&#xA;&#x9;&#x9;&quot; + context.integration_database_schema_name + &quot;.tblCompany_integration.Legacy_BCountry,&#xD;&#xA;&#x9;&#x9;&quot; + context.integration_database_schema_name + &quot;.tblCompany_integration.Legacy_SCountry,&#xD;&#xA;&#x9;&#x9;&quot; + context.integration_database_schema_name + &quot;.tblCompany_integration.CActive,&#xD;&#xA;&#x9;&#x9;&quot; + context.integration_database_schema_name + &quot;.tblCompany_integration.DefaultEmailAddress,&#xD;&#xA;&#x9;&#x9;&quot; + context.integration_database_schema_name + &quot;.tblCompany_integration.ARTaxCategoryID,&#xD;&#xA;&#x9;&#x9;&quot; + context.integration_database_schema_name + &quot;.tblCompany_integration.DateTimeLoadedIntoIntegrationTableUTC,&#xD;&#xA;&#x9;&#x9;&quot; + context.integration_database_schema_name + &quot;.tblCompany_integration.LoadedIntoTotalETO,&#xD;&#xA;&#x9;&#x9;&quot; + context.integration_database_schema_name + &quot;.tblCompany_integration.TimeLoadedIntoTotalETOUTC,&#xD;&#xA;&#x9;&#x9;&quot; + context.integration_database_schema_name + &quot;.tblCompany_integration.IntegrationID,&#xD;&#xA;&#x9;&#x9;&quot; + context.integration_database_schema_name + &quot;.tblCompany_integration.tblSupplier_currency&#xD;&#xA;FROM&#x9;&quot; + context.integration_database_schema_name + &quot;.tblCompany_integration&#xD;&#xA;WHERE LoadedIntoTotalETO = 0;&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -2301,6 +2301,123 @@
       <column comment="" key="false" length="10" name="CDefaultTerms" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1880" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_2" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
+    <elementParameter field="TEXT" name="HOST" value="context.integration_database_server_ip"/>
+    <elementParameter field="TEXT" name="PORT" value="context.integration_database_port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.integration_database_schema_name"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.integration_database_name"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="context.integration_database_password"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;tblCompany_integration&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+    <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="UPDATE"/>
+    <elementParameter field="LABEL" name="NOTE" value="NOTE: batch size must be less than or equal to total number of parameter markers divided by number of columns" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_IDENTITY_FIELD" value="false" show="false"/>
+    <elementParameter field="COLUMN_LIST" name="IDENTITY_FIELD" value="IntegrationID" show="false"/>
+    <elementParameter field="TEXT" name="START_VALUE" value="1" show="false"/>
+    <elementParameter field="TEXT" name="STEP" value="1" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_QQIh8IlvEfG9C7e242mTTA - tblCompany_integration" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;encrypt=true;trustServerCertificate=true&quot;"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="ACTIVE_DIR_AUTH_MODE" value="PASSWORD" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_ALWAYS_ENCRYPTED" value="false"/>
+    <elementParameter field="TEXT" name="KEYSTORE_PRINCIPAL_ID" value="" show="false"/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_SECRET" value="" show="false"/>
+    <elementParameter field="CHECK" name="USE_ALTERNATE_SCHEMA" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ALTERNATE_SCHEMA" value="&quot;&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="true"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS">
+      <elementValue elementRef="SCHEMA_COLUMN" value="CompanyID" id="0"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="1"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="2"/>
+      <elementValue elementRef="UPDATABLE" value="false" id="3"/>
+      <elementValue elementRef="INSERTABLE" value="false" id="4"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IntegrationID" id="5"/>
+      <elementValue elementRef="UPDATE_KEY" value="true" id="6"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="7"/>
+      <elementValue elementRef="UPDATABLE" value="false" id="8"/>
+      <elementValue elementRef="INSERTABLE" value="false" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LoadedIntoTotalETO" id="10"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="11"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="12"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="13"/>
+      <elementValue elementRef="INSERTABLE" value="false" id="14"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TimeLoadedIntoTotalETOUTC" id="15"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="16"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="17"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="18"/>
+      <elementValue elementRef="INSERTABLE" value="false" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="tblSupplier_currency" id="20"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="21"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="22"/>
+      <elementValue elementRef="UPDATABLE" value="false" id="23"/>
+      <elementValue elementRef="INSERTABLE" value="false" id="24"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CDefaultTerms" id="25"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="26"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="27"/>
+      <elementValue elementRef="UPDATABLE" value="false" id="28"/>
+      <elementValue elementRef="INSERTABLE" value="false" id="29"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="IGNORE_DATE_OUTOF_RANGE" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
+    <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" value="30" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="update integration table"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="tblCompany" name="tDBOutput_2">
+      <column comment="" key="false" length="-1" name="CompanyID" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="IntegrationID" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(0)'" key="false" length="1" name="LoadedIntoTotalETO" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="TimeLoadedIntoTotalETOUTC" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="3" sourceType="DATETIME2" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="-1" name="tblSupplier_currency" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="CDefaultTerms" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <metadata connector="REJECT" label="tblCompany" name="REJECT">
+      <column comment="" key="false" length="-1" name="CompanyID" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="IntegrationID" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(0)'" key="false" length="1" name="LoadedIntoTotalETO" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="TimeLoadedIntoTotalETOUTC" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="3" sourceType="DATETIME2" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="-1" name="tblSupplier_currency" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="CDefaultTerms" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="360" posY="200">
@@ -3338,126 +3455,6 @@
       <column comment="" key="false" length="-1" name="SupNetTerms" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1880" posY="160">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_2" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_QQIh8IlvEfG9C7e242mTTA" show="false"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;192.168.2.65&quot;"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;foodmach&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;client_projects&quot;"/>
-    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:9DLYPtklWBhLb7SJsLhHeSo4MtoT9wqA5roTPJFOcKRt6zdKwiXi"/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;tblCompany_integration&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
-    <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
-    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="UPDATE"/>
-    <elementParameter field="LABEL" name="NOTE" value="NOTE: batch size must be less than or equal to total number of parameter markers divided by number of columns" show="false"/>
-    <elementParameter field="CHECK" name="SPECIFY_IDENTITY_FIELD" value="false" show="false"/>
-    <elementParameter field="COLUMN_LIST" name="IDENTITY_FIELD" value="IntegrationID" show="false"/>
-    <elementParameter field="TEXT" name="START_VALUE" value="1" show="false"/>
-    <elementParameter field="TEXT" name="STEP" value="1" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_QQIh8IlvEfG9C7e242mTTA - tblCompany_integration" show="false"/>
-    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
-    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
-    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
-    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;encrypt=true;trustServerCertificate=true&quot;"/>
-    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false"/>
-    <elementParameter field="CLOSED_LIST" name="ACTIVE_DIR_AUTH_MODE" value="PASSWORD" show="false"/>
-    <elementParameter field="CHECK" name="ENABLE_ALWAYS_ENCRYPTED" value="false"/>
-    <elementParameter field="TEXT" name="KEYSTORE_PRINCIPAL_ID" value="" show="false"/>
-    <elementParameter field="PASSWORD" name="KEYSTORE_SECRET" value="" show="false"/>
-    <elementParameter field="CHECK" name="USE_ALTERNATE_SCHEMA" value="false" show="false"/>
-    <elementParameter field="TEXT" name="ALTERNATE_SCHEMA" value="&quot;&quot;" show="false"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
-    <elementParameter field="TABLE" name="ADD_COLS"/>
-    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="true"/>
-    <elementParameter field="TABLE" name="FIELD_OPTIONS">
-      <elementValue elementRef="SCHEMA_COLUMN" value="CompanyID" id="0"/>
-      <elementValue elementRef="UPDATE_KEY" value="false" id="1"/>
-      <elementValue elementRef="DELETE_KEY" value="false" id="2"/>
-      <elementValue elementRef="UPDATABLE" value="false" id="3"/>
-      <elementValue elementRef="INSERTABLE" value="false" id="4"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="IntegrationID" id="5"/>
-      <elementValue elementRef="UPDATE_KEY" value="true" id="6"/>
-      <elementValue elementRef="DELETE_KEY" value="false" id="7"/>
-      <elementValue elementRef="UPDATABLE" value="false" id="8"/>
-      <elementValue elementRef="INSERTABLE" value="false" id="9"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LoadedIntoTotalETO" id="10"/>
-      <elementValue elementRef="UPDATE_KEY" value="false" id="11"/>
-      <elementValue elementRef="DELETE_KEY" value="false" id="12"/>
-      <elementValue elementRef="UPDATABLE" value="true" id="13"/>
-      <elementValue elementRef="INSERTABLE" value="false" id="14"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="TimeLoadedIntoTotalETOUTC" id="15"/>
-      <elementValue elementRef="UPDATE_KEY" value="false" id="16"/>
-      <elementValue elementRef="DELETE_KEY" value="false" id="17"/>
-      <elementValue elementRef="UPDATABLE" value="true" id="18"/>
-      <elementValue elementRef="INSERTABLE" value="false" id="19"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="tblSupplier_currency" id="20"/>
-      <elementValue elementRef="UPDATE_KEY" value="false" id="21"/>
-      <elementValue elementRef="DELETE_KEY" value="false" id="22"/>
-      <elementValue elementRef="UPDATABLE" value="false" id="23"/>
-      <elementValue elementRef="INSERTABLE" value="false" id="24"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CDefaultTerms" id="25"/>
-      <elementValue elementRef="UPDATE_KEY" value="false" id="26"/>
-      <elementValue elementRef="DELETE_KEY" value="false" id="27"/>
-      <elementValue elementRef="UPDATABLE" value="false" id="28"/>
-      <elementValue elementRef="INSERTABLE" value="false" id="29"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="IGNORE_DATE_OUTOF_RANGE" value="false"/>
-    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
-    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
-    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
-    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
-    <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
-    <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" value="30" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="update integration table"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="tblCompany" name="tDBOutput_2">
-      <column comment="" key="false" length="-1" name="CompanyID" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="IntegrationID" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" defaultValue="'(0)'" key="false" length="1" name="LoadedIntoTotalETO" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="TimeLoadedIntoTotalETOUTC" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="3" sourceType="DATETIME2" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="-1" name="tblSupplier_currency" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="CDefaultTerms" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-    </metadata>
-    <metadata connector="REJECT" label="tblCompany" name="REJECT">
-      <column comment="" key="false" length="-1" name="CompanyID" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="IntegrationID" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" defaultValue="'(0)'" key="false" length="1" name="LoadedIntoTotalETO" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="TimeLoadedIntoTotalETOUTC" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="3" sourceType="DATETIME2" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="-1" name="tblSupplier_currency" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="CDefaultTerms" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-  </node>
   <node componentName="tHashOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashOutput_2" show="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
@@ -3602,8 +3599,12 @@
   </connection>
   <connection connectorName="FLOW" label="row11" lineStyle="0" metaname="tLogRow_2" offsetLabelX="0" offsetLabelY="0" source="tLogRow_2" target="tDBOutput_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row11" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row13" lineStyle="0" metaname="tDBOutput_2" offsetLabelX="0" offsetLabelY="0" source="tDBOutput_2" target="tHashOutput_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row13" show="false"/>
   </connection>
   <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tJavaRow_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tJavaRow_1" target="tJava_2">
     <elementParameter field="MEMO_JAVA" name="CONDITION" value="context.row_count > 0"/>
@@ -3678,11 +3679,6 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="row13" lineStyle="0" metaname="tDBOutput_2" offsetLabelX="0" offsetLabelY="0" source="tDBOutput_2" target="tHashOutput_2">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row13" show="false"/>
   </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tHashOutput_2" offsetLabelX="0" offsetLabelY="0" source="tHashOutput_2" target="tHashInput_2">
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
@@ -3767,7 +3763,7 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
   </subjob>
   <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_2" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashOutput_2" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
   </subjob>

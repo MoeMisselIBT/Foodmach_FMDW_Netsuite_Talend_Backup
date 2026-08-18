@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
   <talendfile:ContextType xmi:id="_XkiBEJngEfGdaILNokaaHA" confirmationNeeded="false" hide="false" name="Default">
-    <contextParameter xmi:id="_XkiBEZngEfGdaILNokaaHA" comment="" name="database_server_ip" prompt="database_server_ip?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
-    <contextParameter xmi:id="_XkiBEpngEfGdaILNokaaHA" comment="" name="database_name" prompt="database_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
-    <contextParameter xmi:id="_XkiBE5ngEfGdaILNokaaHA" comment="" name="database_schema_name" prompt="database_schema_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
-    <contextParameter xmi:id="_XkiBFJngEfGdaILNokaaHA" comment="" name="database_port" prompt="database_port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
-    <contextParameter xmi:id="_XkiBFZngEfGdaILNokaaHA" comment="" name="database_password" prompt="database_password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value=""/>
-    <contextParameter xmi:id="_6BvU8JoIEfGdaILNokaaHA" comment="" name="integration_table_name" prompt="integration_table_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_XkiBEZngEfGdaILNokaaHA" comment="" name="integration_database_server_ip" prompt="integration_database_server_ip?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_XkiBEpngEfGdaILNokaaHA" comment="" name="integration_database_name" prompt="integration_database_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_XkiBE5ngEfGdaILNokaaHA" comment="" name="integration_database_schema_name" prompt="integration_database_schema_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_XkiBFJngEfGdaILNokaaHA" comment="" name="integration_database_port" prompt="integration_database_port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_XkiBFZngEfGdaILNokaaHA" comment="" name="integration_database_password" prompt="integration_database_password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value=""/>
+    <contextParameter xmi:id="_6BvU8JoIEfGdaILNokaaHA" comment="" name="integration_database_table_name" prompt="integration_database_table_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
     <contextParameter xmi:id="_bDi6QJoPEfGdaILNokaaHA" comment="" name="foodmach_database_server_ip" prompt="foodmach_database_server_ip?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
     <contextParameter xmi:id="_bDi6QZoPEfGdaILNokaaHA" comment="" name="foodmach_database_name" prompt="foodmach_database_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
     <contextParameter xmi:id="_bDi6QpoPEfGdaILNokaaHA" comment="" name="foodmach_database_port" prompt="foodmach_database_port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
@@ -17,12 +17,12 @@
     <contextParameter xmi:id="_wBjlQJoPEfGdaILNokaaHA" comment="" name="foodmach_schema_name" prompt="foodmach_schema_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
   </talendfile:ContextType>
   <talendfile:ContextType xmi:id="_XkiBFpngEfGdaILNokaaHA" confirmationNeeded="false" hide="false" name="Foodmach_Dev">
-    <contextParameter xmi:id="_XkiBF5ngEfGdaILNokaaHA" comment="" name="database_server_ip" prompt="database_server_ip?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="192.168.2.46"/>
-    <contextParameter xmi:id="_XkiBGJngEfGdaILNokaaHA" comment="" name="database_name" prompt="database_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="integration_database"/>
-    <contextParameter xmi:id="_XkiBGZngEfGdaILNokaaHA" comment="" name="database_schema_name" prompt="database_schema_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="integration"/>
-    <contextParameter xmi:id="_XkiBGpngEfGdaILNokaaHA" comment="" name="database_port" prompt="database_port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="51980"/>
-    <contextParameter xmi:id="_XkiBG5ngEfGdaILNokaaHA" comment="" name="database_password" prompt="database_password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:Y42lxbIcLYqR7Bu9662kjown+EdkPEmXOSUaFKqikQIAkVEtduCtFL8="/>
-    <contextParameter xmi:id="_6BvU8ZoIEfGdaILNokaaHA" comment="" name="integration_table_name" prompt="integration_table_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="tblCompany_integration"/>
+    <contextParameter xmi:id="_XkiBF5ngEfGdaILNokaaHA" comment="" name="integration_database_server_ip" prompt="integration_database_server_ip?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="192.168.2.46"/>
+    <contextParameter xmi:id="_XkiBGJngEfGdaILNokaaHA" comment="" name="integration_database_name" prompt="integration_database_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="integration_database"/>
+    <contextParameter xmi:id="_XkiBGZngEfGdaILNokaaHA" comment="" name="integration_database_schema_name" prompt="integration_database_schema_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="integration"/>
+    <contextParameter xmi:id="_XkiBGpngEfGdaILNokaaHA" comment="" name="integration_database_port" prompt="integration_database_port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="51980"/>
+    <contextParameter xmi:id="_XkiBG5ngEfGdaILNokaaHA" comment="" name="integration_database_password" prompt="integration_database_password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:Y42lxbIcLYqR7Bu9662kjown+EdkPEmXOSUaFKqikQIAkVEtduCtFL8="/>
+    <contextParameter xmi:id="_6BvU8ZoIEfGdaILNokaaHA" comment="" name="integration_database_table_name" prompt="integration_database_table_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="tblCompany_integration"/>
     <contextParameter xmi:id="_bDi6R5oPEfGdaILNokaaHA" comment="" name="foodmach_database_server_ip" prompt="foodmach_database_server_ip?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="192.168.2.4"/>
     <contextParameter xmi:id="_bDi6SJoPEfGdaILNokaaHA" comment="" name="foodmach_database_name" prompt="foodmach_database_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="Foodmach_training"/>
     <contextParameter xmi:id="_bDi6SZoPEfGdaILNokaaHA" comment="" name="foodmach_database_port" prompt="foodmach_database_port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433"/>
@@ -33,12 +33,12 @@
     <contextParameter xmi:id="_wBjlQZoPEfGdaILNokaaHA" comment="" name="foodmach_schema_name" prompt="foodmach_schema_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="dbo"/>
   </talendfile:ContextType>
   <talendfile:ContextType xmi:id="_XkiBHJngEfGdaILNokaaHA" confirmationNeeded="false" hide="false" name="IBT_Dev">
-    <contextParameter xmi:id="_XkiBHZngEfGdaILNokaaHA" comment="" name="database_server_ip" prompt="database_server_ip?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="192.168.2.65"/>
-    <contextParameter xmi:id="_XkiBHpngEfGdaILNokaaHA" comment="" name="database_name" prompt="database_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="client_projects"/>
-    <contextParameter xmi:id="_XkiBH5ngEfGdaILNokaaHA" comment="" name="database_schema_name" prompt="database_schema_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="foodmach"/>
-    <contextParameter xmi:id="_XkiBIJngEfGdaILNokaaHA" comment="" name="database_port" prompt="database_port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433"/>
-    <contextParameter xmi:id="_XkiBIZngEfGdaILNokaaHA" comment="" name="database_password" prompt="database_password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:jAfGEv7J+AYZqqpQhFSUAF9QbrvH+RiI4AcoGvkWiT22mPiC4Q=="/>
-    <contextParameter xmi:id="_6BvU8poIEfGdaILNokaaHA" comment="" name="integration_table_name" prompt="integration_table_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="tblCompany_integration"/>
+    <contextParameter xmi:id="_XkiBHZngEfGdaILNokaaHA" comment="" name="integration_database_server_ip" prompt="integration_database_server_ip?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="192.168.2.65"/>
+    <contextParameter xmi:id="_XkiBHpngEfGdaILNokaaHA" comment="" name="integration_database_name" prompt="integration_database_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="client_projects"/>
+    <contextParameter xmi:id="_XkiBH5ngEfGdaILNokaaHA" comment="" name="integration_database_schema_name" prompt="integration_database_schema_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="foodmach"/>
+    <contextParameter xmi:id="_XkiBIJngEfGdaILNokaaHA" comment="" name="integration_database_port" prompt="integration_database_port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433"/>
+    <contextParameter xmi:id="_XkiBIZngEfGdaILNokaaHA" comment="" name="integration_database_password" prompt="integration_database_password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:jAfGEv7J+AYZqqpQhFSUAF9QbrvH+RiI4AcoGvkWiT22mPiC4Q=="/>
+    <contextParameter xmi:id="_6BvU8poIEfGdaILNokaaHA" comment="" name="integration_database_table_name" prompt="integration_database_table_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="tblCompany_integration"/>
     <contextParameter xmi:id="_bDi6TpoPEfGdaILNokaaHA" comment="" name="foodmach_database_server_ip" prompt="foodmach_database_server_ip?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
     <contextParameter xmi:id="_bDi6T5oPEfGdaILNokaaHA" comment="" name="foodmach_database_name" prompt="foodmach_database_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
     <contextParameter xmi:id="_bDi6UJoPEfGdaILNokaaHA" comment="" name="foodmach_database_port" prompt="foodmach_database_port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433"/>
