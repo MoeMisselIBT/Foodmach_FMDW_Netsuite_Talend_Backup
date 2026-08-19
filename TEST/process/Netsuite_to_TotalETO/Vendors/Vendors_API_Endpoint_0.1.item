@@ -602,7 +602,7 @@
       <elementValue elementRef="SCHEMA_COLUMN" value="TimeLoadedIntoTotalETOUTC" id="108"/>
       <elementValue elementRef="QUERY" value="" id="109"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="tblSupplier_currency" id="110"/>
-      <elementValue elementRef="QUERY" value="&quot;currency&quot;" id="111"/>
+      <elementValue elementRef="QUERY" value="&quot;primarycurrency&quot;" id="111"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="CDefaultTermsText" id="112"/>
       <elementValue elementRef="QUERY" value="&quot;terms&quot;" id="113"/>
     </elementParameter>
@@ -2074,7 +2074,7 @@
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
     <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
-    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="Vendors_to_TotalETO_tables"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="Vendors_to_Company_tables"/>
     <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
     <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="TEST:_VEaloIr2EfG9C7e242mTTA"/>
     <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
