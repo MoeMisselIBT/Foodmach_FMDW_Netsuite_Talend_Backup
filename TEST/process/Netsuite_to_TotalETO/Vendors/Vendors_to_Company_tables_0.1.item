@@ -1361,7 +1361,7 @@
         <mapperTableEntries name="CCountry" expression="integration_table_rows.CCountry == null || integration_table_rows.CCountry.isEmpty() ? &quot;N/A&quot; : integration_table_rows.CCountry " type="id_String" nullable="true"/>
         <mapperTableEntries name="CPhone" expression="integration_table_rows.CPhone == null || integration_table_rows.CPhone.isEmpty() ? &quot;N/A&quot; : integration_table_rows.CPhone " type="id_String" nullable="true"/>
         <mapperTableEntries name="CFax" expression="integration_table_rows.CFax == null || integration_table_rows.CFax.isEmpty() ? &quot;N/A&quot; : integration_table_rows.CFax " type="id_String" nullable="true"/>
-        <mapperTableEntries name="CDate" expression="integration_table_rows.CDate == null ? TalendDate.getDate(&quot;yyyy-MM-dd&quot;) : TalendDate.parseDate(&quot;yyyy-MM-dd&quot;, integration_table_rows.CDate) " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CDate" expression="integration_table_rows.CDate == null ? TalendDate.getCurrentDate() : integration_table_rows.CDate " type="id_Date" nullable="true"/>
         <mapperTableEntries name="BAddress1" expression="integration_table_rows.BAddress1 == null || integration_table_rows.BAddress1.isEmpty() ? &quot;N/A&quot; : integration_table_rows.BAddress1 " type="id_String" nullable="true"/>
         <mapperTableEntries name="BAddress2" expression="integration_table_rows.BAddress2 " type="id_String" nullable="true"/>
         <mapperTableEntries name="BCity" expression="integration_table_rows.BCity == null || integration_table_rows.BCity.isEmpty() ? &quot;N/A&quot; : integration_table_rows.BCity " type="id_String" nullable="true"/>
@@ -1384,7 +1384,7 @@
         <mapperTableEntries name="CDefaultShipVia" expression="integration_table_rows.CDefaultShipVia " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="CDefaultPartDiscount" expression="integration_table_rows.CDefaultPartDiscount " type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="CDefaultPartMargin" expression="integration_table_rows.CDefaultPartMargin " type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="CDefaultTerms" expression="terms.TermsInteger  == null ? 3 : terms.TermsInteger " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="CDefaultTerms" expression="terms.TermsInteger == null || terms.TermsInteger > 6 || terms.TermsInteger &lt; 1 ? 3 : terms.TermsInteger " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="CAccVendorID" expression="integration_table_rows.CAccVendorID " type="id_String" nullable="true"/>
         <mapperTableEntries name="CAccCustomerID" expression="integration_table_rows.CAccCustomerID " type="id_String" nullable="true"/>
         <mapperTableEntries name="CAccVendorTaxClass1" expression="integration_table_rows.CAccVendorTaxClass1 " type="id_Integer" nullable="true"/>
@@ -1408,7 +1408,7 @@
         <mapperTableEntries name="LoadedIntoTotalETO" expression="integration_table_rows.LoadedIntoTotalETO " type="id_Boolean"/>
         <mapperTableEntries name="TimeLoadedIntoTotalETOUTC" expression="integration_table_rows.TimeLoadedIntoTotalETOUTC " type="id_Date" nullable="true"/>
         <mapperTableEntries name="IntegrationID" expression="integration_table_rows.IntegrationID " type="id_Integer"/>
-        <mapperTableEntries name="tblSupplier_currency" expression="integration_table_rows.tblSupplier_currency " type="id_String" nullable="true"/>
+        <mapperTableEntries name="tblSupplier_currency" expression="integration_table_rows.tblSupplier_currency == null || integration_table_rows.tblSupplier_currency.isEmpty() ? &quot;AUD&quot; : integration_table_rows.tblSupplier_currency " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="integration_table_rows" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="CName" type="id_String"/>
