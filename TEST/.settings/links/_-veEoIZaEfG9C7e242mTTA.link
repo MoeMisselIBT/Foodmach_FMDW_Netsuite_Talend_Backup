@@ -57,5 +57,24 @@
       "id" : "_XkiBG5ngEfGdaILNokaaHA",
       "name" : "integration_database_password"
     } ]
+  }, {
+    "contextName" : "Foodmach_Dev_2",
+    "repoId" : "_XkWa4JngEfGdaILNokaaHA",
+    "parameterList" : [ {
+      "id" : "_Dy20waAfEfGq3IYnFJCINg",
+      "name" : "integration_database_server_ip"
+    }, {
+      "id" : "_Dy20wqAfEfGq3IYnFJCINg",
+      "name" : "integration_database_name"
+    }, {
+      "id" : "_Dy20w6AfEfGq3IYnFJCINg",
+      "name" : "integration_database_schema_name"
+    }, {
+      "id" : "_Dy20xKAfEfGq3IYnFJCINg",
+      "name" : "integration_database_port"
+    }, {
+      "id" : "_Dy20xaAfEfGq3IYnFJCINg",
+      "name" : "integration_database_password"
+    } ]
   } ]
 }
