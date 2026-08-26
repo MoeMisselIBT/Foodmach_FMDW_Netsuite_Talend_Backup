@@ -156,10 +156,6 @@
     "id" : "_j9yssJxlEfG0fNycJkJoag - tblPurchaseOrderHeader",
     "version" : "Latest",
     "type" : "schema"
-  }, {
-    "id" : "_j9yssJxlEfG0fNycJkJoag - tblPurchaseOrderHeader__ct",
-    "version" : "Latest",
-    "type" : "schema"
   } ]
 }, {
   "baseItem" : {
