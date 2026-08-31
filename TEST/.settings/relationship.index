@@ -153,11 +153,11 @@
     "version" : "Latest",
     "type" : "schema"
   }, {
-    "id" : "_gDwS0KJ1EfGq3IYnFJCINg - tblPurchaseOrderHeader",
+    "id" : "_gDwS0KJ1EfGq3IYnFJCINg - tblPurchaseOrderDetails",
     "version" : "Latest",
     "type" : "schema"
   }, {
-    "id" : "_j9yssJxlEfG0fNycJkJoag - tblPurchaseOrderDetails",
+    "id" : "_gDwS0KJ1EfGq3IYnFJCINg - tblPurchaseOrderHeader",
     "version" : "Latest",
     "type" : "schema"
   }, {

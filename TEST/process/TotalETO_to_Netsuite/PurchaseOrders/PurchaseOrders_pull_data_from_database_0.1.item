@@ -5,7 +5,7 @@
   </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="40" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
@@ -545,354 +545,6 @@
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="10" name="PurchaseTax2GLAccountID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-    </metadata>
-  </node>
-  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="40">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_3" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_j9yssJxlEfG0fNycJkJoag" show="false"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;192.168.2.46&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
-    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;51980&quot;"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;teto_landing&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;fmdw&quot;"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:FMUGBHvIu1VH/bUSvhP8m8jBpzbQkbn+c2DQ9FgAdgXylM1Yxt/1y6V5Tg=="/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_j9yssJxlEfG0fNycJkJoag - tblPurchaseOrderDetails" show="false"/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;tblPurchaseOrderDetails&quot;"/>
-    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
-    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
-    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
-    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT teto_landing.tblPurchaseOrderDetails.PurchaseDetailID,&#xA;&#x9;&#x9;teto_landing.tblPurchaseOrderDetails.PurchaseOrderID,&#xA;&#x9;&#x9;teto_landing.tblPurchaseOrderDetails.ProjectID,&#xA;&#x9;&#x9;teto_landing.tblPurchaseOrderDetails.SpecID,&#xA;&#x9;&#x9;teto_landing.tblPurchaseOrderDetails.ItemID,&#xA;&#x9;&#x9;teto_landing.tblPurchaseOrderDetails.PurchaseQty,&#xA;&#x9;&#x9;teto_landing.tblPurchaseOrderDetails.PurchasePrice,&#xA;&#x9;&#x9;teto_landing.tblPurchaseOrderDetails.DateRequired,&#xA;&#x9;&#x9;teto_landing.tblPurchaseOrderDetails.PurchaseSupplierItem,&#xA;&#x9;&#x9;teto_landing.tblPurchaseOrderDetails.PurchaseSupplierDescription,&#xA;&#x9;&#x9;teto_landing.tblPurchaseOrderDetails.PurchaseUOM,&#xA;&#x9;&#x9;teto_landing.tblPurchaseOrderDetails.DateRevised,&#xA;&#x9;&#x9;teto_landing.tblPurchaseOrderDetails.OrderNumber,&#xA;&#x9;&#x9;teto_landing.tblPurchaseOrderDetails.DestInventoryLoc,&#xA;&#x9;&#x9;teto_landing.tblPurchaseOrderDetails.Archived,&#xA;&#x9;&#x9;teto_landing.tblPurchaseOrderDetails.NonConformanceID,&#xA;&#x9;&#x9;teto_landing.tblPurchaseOrderDetails.PurchaseOrderDetailCustom1,&#xA;&#x9;&#x9;teto_landing.tblPurchaseOrderDetails.PurchaseOrderDetailCustom2,&#xA;&#x9;&#x9;teto_landing.tblPurchaseOrderDetails.PurchaseOrderDetailCustom3,&#xA;&#x9;&#x9;teto_landing.tblPurchaseOrderDetails.PurchaseOrderDetailCustom4,&#xA;&#x9;&#x9;teto_landing.tblPurchaseOrderDetails.PurchaseOrderDetailCustom5,&#xA;&#x9;&#x9;teto_landing.tblPurchaseOrderDetails.PurchaseOrderDetailCustom6,&#xA;&#x9;&#x9;teto_landing.tblPurchaseOrderDetails.PurchaseOrderDetailCustom7,&#xA;&#x9;&#x9;teto_landing.tblPurchaseOrderDetails.PurchaseOrderDetailCustom8,&#xA;&#x9;&#x9;teto_landing.tblPurchaseOrderDetails.ProcessScheduleID,&#xA;&#x9;&#x9;teto_landing.tblPurchaseOrderDetails.ProcessScheduleDetailID,&#xA;&#x9;&#x9;teto_landing.tblPurchaseOrderDetails.ExternalUOM,&#xA;&#x9;&#x9;teto_landing.tblPurchaseOrderDetails.ExternalQty&#xA;FROM&#x9;teto_landing.tblPurchaseOrderDetails&quot;"/>
-    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
-    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
-    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
-    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;trustServerCertificate=true;&quot;"/>
-    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false"/>
-    <elementParameter field="CLOSED_LIST" name="ACTIVE_DIR_AUTH_MODE" value="PASSWORD" show="false"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="CHECK" name="ENABLE_ALWAYS_ENCRYPTED" value="false"/>
-    <elementParameter field="TEXT" name="KEYSTORE_PRINCIPAL_ID" value="" show="false"/>
-    <elementParameter field="PASSWORD" name="KEYSTORE_SECRET" value="" show="false"/>
-    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
-    <elementParameter field="TABLE" name="TRIM_COLUMN">
-      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseDetailID" id="0"/>
-      <elementValue elementRef="TRIM" value="false" id="1"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseOrderID" id="2"/>
-      <elementValue elementRef="TRIM" value="false" id="3"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ProjectID" id="4"/>
-      <elementValue elementRef="TRIM" value="false" id="5"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="SpecID" id="6"/>
-      <elementValue elementRef="TRIM" value="false" id="7"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ItemID" id="8"/>
-      <elementValue elementRef="TRIM" value="false" id="9"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseQty" id="10"/>
-      <elementValue elementRef="TRIM" value="false" id="11"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PurchasePrice" id="12"/>
-      <elementValue elementRef="TRIM" value="false" id="13"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DateRequired" id="14"/>
-      <elementValue elementRef="TRIM" value="false" id="15"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseSupplierItem" id="16"/>
-      <elementValue elementRef="TRIM" value="false" id="17"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseSupplierDescription" id="18"/>
-      <elementValue elementRef="TRIM" value="false" id="19"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseUOM" id="20"/>
-      <elementValue elementRef="TRIM" value="false" id="21"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DateRevised" id="22"/>
-      <elementValue elementRef="TRIM" value="false" id="23"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="OrderNumber" id="24"/>
-      <elementValue elementRef="TRIM" value="false" id="25"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DestInventoryLoc" id="26"/>
-      <elementValue elementRef="TRIM" value="false" id="27"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Archived" id="28"/>
-      <elementValue elementRef="TRIM" value="false" id="29"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="NonConformanceID" id="30"/>
-      <elementValue elementRef="TRIM" value="false" id="31"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseOrderDetailCustom1" id="32"/>
-      <elementValue elementRef="TRIM" value="false" id="33"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseOrderDetailCustom2" id="34"/>
-      <elementValue elementRef="TRIM" value="false" id="35"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseOrderDetailCustom3" id="36"/>
-      <elementValue elementRef="TRIM" value="false" id="37"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseOrderDetailCustom4" id="38"/>
-      <elementValue elementRef="TRIM" value="false" id="39"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseOrderDetailCustom5" id="40"/>
-      <elementValue elementRef="TRIM" value="false" id="41"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseOrderDetailCustom6" id="42"/>
-      <elementValue elementRef="TRIM" value="false" id="43"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseOrderDetailCustom7" id="44"/>
-      <elementValue elementRef="TRIM" value="false" id="45"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseOrderDetailCustom8" id="46"/>
-      <elementValue elementRef="TRIM" value="false" id="47"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ProcessScheduleID" id="48"/>
-      <elementValue elementRef="TRIM" value="false" id="49"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ProcessScheduleDetailID" id="50"/>
-      <elementValue elementRef="TRIM" value="false" id="51"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ExternalUOM" id="52"/>
-      <elementValue elementRef="TRIM" value="false" id="53"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ExternalQty" id="54"/>
-      <elementValue elementRef="TRIM" value="false" id="55"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
-    <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" value="30" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="tblPurchaseOrderDetails" name="tDBInput_3">
-      <column comment="" key="true" length="10" name="PurchaseDetailID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="PurchaseOrderID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="ProjectID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="53" name="SpecID" nullable="false" pattern="" precision="0" sourceType="FLOAT" type="id_Double" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="ItemID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="20" name="PurchaseQty" nullable="false" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="20" name="PurchasePrice" nullable="false" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="DateRequired" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="255" name="PurchaseSupplierItem" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1000" name="PurchaseSupplierDescription" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="PurchaseUOM" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="DateRevised" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="20" name="OrderNumber" nullable="true" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="DestInventoryLoc" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="Archived" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="NonConformanceID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="2147483647" name="PurchaseOrderDetailCustom1" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="2147483647" name="PurchaseOrderDetailCustom2" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="20" name="PurchaseOrderDetailCustom3" nullable="true" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="20" name="PurchaseOrderDetailCustom4" nullable="true" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="PurchaseOrderDetailCustom5" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="PurchaseOrderDetailCustom6" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="PurchaseOrderDetailCustom7" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="PurchaseOrderDetailCustom8" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="ProcessScheduleID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="ProcessScheduleDetailID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="ExternalUOM" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="20" name="ExternalQty" nullable="false" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-    </metadata>
-  </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1200" posY="40">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_3" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
-    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
-    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
-    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
-    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
-    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
-    <elementParameter field="TABLE" name="LENGTHS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseDetailID" id="0"/>
-      <elementValue elementRef="LENGTH" value="10" id="1"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseOrderID" id="2"/>
-      <elementValue elementRef="LENGTH" value="10" id="3"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ProjectID" id="4"/>
-      <elementValue elementRef="LENGTH" value="10" id="5"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="SpecID" id="6"/>
-      <elementValue elementRef="LENGTH" value="10" id="7"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ItemID" id="8"/>
-      <elementValue elementRef="LENGTH" value="10" id="9"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseQty" id="10"/>
-      <elementValue elementRef="LENGTH" value="10" id="11"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PurchasePrice" id="12"/>
-      <elementValue elementRef="LENGTH" value="10" id="13"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DateRequired" id="14"/>
-      <elementValue elementRef="LENGTH" value="10" id="15"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseSupplierItem" id="16"/>
-      <elementValue elementRef="LENGTH" value="10" id="17"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseSupplierDescription" id="18"/>
-      <elementValue elementRef="LENGTH" value="10" id="19"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseUOM" id="20"/>
-      <elementValue elementRef="LENGTH" value="10" id="21"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DateRevised" id="22"/>
-      <elementValue elementRef="LENGTH" value="10" id="23"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="OrderNumber" id="24"/>
-      <elementValue elementRef="LENGTH" value="10" id="25"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DestInventoryLoc" id="26"/>
-      <elementValue elementRef="LENGTH" value="10" id="27"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Archived" id="28"/>
-      <elementValue elementRef="LENGTH" value="10" id="29"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="NonConformanceID" id="30"/>
-      <elementValue elementRef="LENGTH" value="10" id="31"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseOrderDetailCustom1" id="32"/>
-      <elementValue elementRef="LENGTH" value="10" id="33"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseOrderDetailCustom2" id="34"/>
-      <elementValue elementRef="LENGTH" value="10" id="35"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseOrderDetailCustom3" id="36"/>
-      <elementValue elementRef="LENGTH" value="10" id="37"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseOrderDetailCustom4" id="38"/>
-      <elementValue elementRef="LENGTH" value="10" id="39"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseOrderDetailCustom5" id="40"/>
-      <elementValue elementRef="LENGTH" value="10" id="41"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseOrderDetailCustom6" id="42"/>
-      <elementValue elementRef="LENGTH" value="10" id="43"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseOrderDetailCustom7" id="44"/>
-      <elementValue elementRef="LENGTH" value="10" id="45"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseOrderDetailCustom8" id="46"/>
-      <elementValue elementRef="LENGTH" value="10" id="47"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ProcessScheduleID" id="48"/>
-      <elementValue elementRef="LENGTH" value="10" id="49"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ProcessScheduleDetailID" id="50"/>
-      <elementValue elementRef="LENGTH" value="10" id="51"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ExternalUOM" id="52"/>
-      <elementValue elementRef="LENGTH" value="10" id="53"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ExternalQty" id="54"/>
-      <elementValue elementRef="LENGTH" value="10" id="55"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
-    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="purchaseOrderDetails initial load"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="tblPurchaseOrderDetails" name="tLogRow_3">
-      <column comment="" key="true" length="10" name="PurchaseDetailID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="PurchaseOrderID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="ProjectID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="53" name="SpecID" nullable="false" pattern="" precision="0" sourceType="FLOAT" type="id_Double" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="ItemID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="20" name="PurchaseQty" nullable="false" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="20" name="PurchasePrice" nullable="false" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="DateRequired" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="255" name="PurchaseSupplierItem" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1000" name="PurchaseSupplierDescription" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="PurchaseUOM" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="DateRevised" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="20" name="OrderNumber" nullable="true" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="DestInventoryLoc" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="Archived" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="NonConformanceID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="2147483647" name="PurchaseOrderDetailCustom1" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="2147483647" name="PurchaseOrderDetailCustom2" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="20" name="PurchaseOrderDetailCustom3" nullable="true" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="20" name="PurchaseOrderDetailCustom4" nullable="true" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="PurchaseOrderDetailCustom5" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="PurchaseOrderDetailCustom6" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="PurchaseOrderDetailCustom7" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="PurchaseOrderDetailCustom8" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="ProcessScheduleID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="ProcessScheduleDetailID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="ExternalUOM" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="20" name="ExternalQty" nullable="false" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
     </metadata>
@@ -2315,7 +1967,7 @@
       </column>
     </metadata>
   </node>
-  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1240" posY="720">
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="280" posY="800">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_4" show="false"/>
     <elementParameter field="TEXT" name="COMPONENT_NAME" value="tMSSqlInput" show="false"/>
     <elementParameter field="TEXT" name="VERSION" value="0.102 (ALPHA)" show="false"/>
@@ -2324,6 +1976,7 @@
     <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
     <elementParameter field="CHECK" name="SUBTREE_START" value="true" show="false"/>
     <elementParameter field="CHECK" name="END_OF_FLOW" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TEXT" name="HELP" value="org.talend.help.tMSSqlInput" show="false"/>
     <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
     <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend-Studio-20260708_1430-V8.0.1\Talend-Studio-20260708_1430-V8.0.1\configuration\lib\java" show="false"/>
@@ -2346,7 +1999,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT dbo.tblPurchaseOrderHeader.PurchaseOrderID,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.PurchaseRev,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.PurchaseSupplierID,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.PurchaseDate,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.PurchaseTerms,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.PurchaseShip,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.PurchaseFOB,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.PurchaseNotes,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.PurchaseMisc,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.PurchaseShipTo,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.PurchaseActive,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.PurchaseDateRequired,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.PurchaseNotes2,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.PurchasePrinted,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.PurchaseNotes3,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.PurchaseCurr,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.PurchaseCurrRate,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.PurchaseTax1,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.PurchaseTax2,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.Port,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.FOBNotes,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.ReportAlternateID,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.PurchaseOrderHeaderCustom1,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.PurchaseOrderHeaderCustom2,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.PurchaseOrderHeaderCustom3,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.PurchaseOrderHeaderCustom4,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.PurchaseOrderHeaderCustom5,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.PurchaseOrderHeaderCustom6,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.PurchaseOrderHeaderCustom7,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.PurchaseOrderHeaderCustom8,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.PurchaseDateRevised,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.BuyerID,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.PurchaseEmailed,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.CompoundTax,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.PurchaseTax1Name,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.PurchaseTax2Name,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.PurchaseTax1GLAccountID,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.PurchaseTax2GLAccountID&#xA;FROM&#x9;dbo.tblPurchaseOrderHeader&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT dbo.tblPurchaseOrderHeader.PurchaseOrderID,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.PurchaseRev,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.PurchaseSupplierID,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.PurchaseDate,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.PurchaseTerms,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.PurchaseShip,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.PurchaseFOB,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.PurchaseNotes,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.PurchaseMisc,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.PurchaseShipTo,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.PurchaseActive,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.PurchaseDateRequired,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.PurchaseNotes2,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.PurchasePrinted,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.PurchaseNotes3,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.PurchaseCurr,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.PurchaseCurrRate,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.PurchaseTax1,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.PurchaseTax2,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.Port,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.FOBNotes,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.ReportAlternateID,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.PurchaseOrderHeaderCustom1,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.PurchaseOrderHeaderCustom2,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.PurchaseOrderHeaderCustom3,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.PurchaseOrderHeaderCustom4,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.PurchaseOrderHeaderCustom5,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.PurchaseOrderHeaderCustom6,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.PurchaseOrderHeaderCustom7,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.PurchaseOrderHeaderCustom8,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.PurchaseDateRevised,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.BuyerID,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.PurchaseEmailed,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.CompoundTax,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.PurchaseTax1Name,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.PurchaseTax2Name,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.PurchaseTax1GLAccountID,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderHeader.PurchaseTax2GLAccountID&#xA;FROM&#x9;dbo.tblPurchaseOrderHeader&#xD;&#xA;WHERE&#x9;dbo.tblPurchaseOrderHeader.PurchaseOrderID IN (&quot; + context.PO_ID_List + &quot;)&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -2559,14 +2212,15 @@
       </column>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1520" posY="720">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="680" posY="800">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_4" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
-    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
-    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
-    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false"/>
     <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
     <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
     <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
@@ -2771,7 +2425,7 @@
       </column>
     </metadata>
   </node>
-  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="120" posY="520">
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="80" posY="440">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_5" show="false"/>
     <elementParameter field="TEXT" name="COMPONENT_NAME" value="tMSSqlInput" show="false"/>
     <elementParameter field="TEXT" name="VERSION" value="0.102 (ALPHA)" show="false"/>
@@ -2860,7 +2514,7 @@
       </column>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="520">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="280" posY="440">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_9" show="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
@@ -2917,7 +2571,7 @@
       </column>
     </metadata>
   </node>
-  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="520">
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="520" posY="440">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_2" show="false"/>
     <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="output_row.PurchaseOrderID = String.valueOf(input_row.PurchaseOrderID);"/>
     <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
@@ -2927,7 +2581,7 @@
       <column comment="" key="false" length="-1" name="PurchaseOrderID" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tDenormalize" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="800" posY="520">
+  <node componentName="tDenormalize" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="760" posY="440">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDenormalize_1" show="false"/>
     <elementParameter field="TABLE" name="DENORMALIZE_COLUMNS">
       <elementValue elementRef="INPUT_COLUMN" value="PurchaseOrderID" id="0"/>
@@ -2942,7 +2596,7 @@
       <column comment="" key="false" length="-1" name="PurchaseOrderID" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1000" posY="520">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="960" posY="440">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_10" show="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
@@ -2967,7 +2621,7 @@
       <column comment="" key="false" length="-1" name="PurchaseOrderID" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1000" posY="720">
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="80" posY="680">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_1" show="false"/>
     <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="context.PO_ID_List = input_row.PurchaseOrderID;&#xD;&#xA;System.out.println(&quot;value: [&quot; + context.PO_ID_List + &quot;]&quot;);"/>
     <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
@@ -2975,15 +2629,386 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJavaRow_1"/>
   </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="960" posY="880">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_iyx4sJuBEfGuCZ_y0rqpww-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+    </nodeData>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="280" posY="920">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_3" show="false"/>
+    <elementParameter field="TEXT" name="COMPONENT_NAME" value="tMSSqlInput" show="false"/>
+    <elementParameter field="TEXT" name="VERSION" value="0.102 (ALPHA)" show="false"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Databases/DB Specifics/MS_SQL_Server" show="false"/>
+    <elementParameter field="CHECK" name="START" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="SUBTREE_START" value="true" show="false"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HELP" value="org.talend.help.tMSSqlInput" show="false"/>
+    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend-Studio-20260708_1430-V8.0.1\Talend-Studio-20260708_1430-V8.0.1\configuration\lib\java" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_gDwS0KJ1EfGq3IYnFJCINg" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;192.168.2.4&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;dbo&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;Foodmach_Training&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:sKqKOGNFQdPafBCKCWlGV68HaLo1bt/cfUF2Oko/NMnxQUOHhmM="/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_gDwS0KJ1EfGq3IYnFJCINg - tblPurchaseOrderDetails" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;tblPurchaseOrderDetails&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT dbo.tblPurchaseOrderDetails.PurchaseDetailID,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderDetails.PurchaseOrderID,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderDetails.ProjectID,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderDetails.SpecID,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderDetails.ItemID,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderDetails.PurchaseQty,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderDetails.PurchasePrice,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderDetails.DateRequired,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderDetails.PurchaseSupplierItem,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderDetails.PurchaseSupplierDescription,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderDetails.PurchaseUOM,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderDetails.DateRevised,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderDetails.OrderNumber,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderDetails.DestInventoryLoc,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderDetails.Archived,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderDetails.NonConformanceID,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderDetails.PurchaseOrderDetailCustom1,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderDetails.PurchaseOrderDetailCustom2,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderDetails.PurchaseOrderDetailCustom3,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderDetails.PurchaseOrderDetailCustom4,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderDetails.PurchaseOrderDetailCustom5,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderDetails.PurchaseOrderDetailCustom6,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderDetails.PurchaseOrderDetailCustom7,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderDetails.PurchaseOrderDetailCustom8,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderDetails.ProcessScheduleID,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderDetails.ProcessScheduleDetailID,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderDetails.ExternalUOM,&#xA;&#x9;&#x9;dbo.tblPurchaseOrderDetails.ExternalQty&#xA;FROM&#x9;dbo.tblPurchaseOrderDetails&#xD;&#xA;WHERE&#x9;dbo.tblPurchaseOrderDetails.PurchaseOrderID IN (&quot; + context.PO_ID_List + &quot;)&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;TrustServerCertificate=true;&quot;"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="ACTIVE_DIR_AUTH_MODE" value="PASSWORD" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ENABLE_ALWAYS_ENCRYPTED" value="false"/>
+    <elementParameter field="TEXT" name="KEYSTORE_PRINCIPAL_ID" value="" show="false"/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_SECRET" value="" show="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseDetailID" id="0"/>
+      <elementValue elementRef="TRIM" value="false" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseOrderID" id="2"/>
+      <elementValue elementRef="TRIM" value="false" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ProjectID" id="4"/>
+      <elementValue elementRef="TRIM" value="false" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SpecID" id="6"/>
+      <elementValue elementRef="TRIM" value="false" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ItemID" id="8"/>
+      <elementValue elementRef="TRIM" value="false" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseQty" id="10"/>
+      <elementValue elementRef="TRIM" value="false" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchasePrice" id="12"/>
+      <elementValue elementRef="TRIM" value="false" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DateRequired" id="14"/>
+      <elementValue elementRef="TRIM" value="false" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseSupplierItem" id="16"/>
+      <elementValue elementRef="TRIM" value="false" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseSupplierDescription" id="18"/>
+      <elementValue elementRef="TRIM" value="false" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseUOM" id="20"/>
+      <elementValue elementRef="TRIM" value="false" id="21"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DateRevised" id="22"/>
+      <elementValue elementRef="TRIM" value="false" id="23"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OrderNumber" id="24"/>
+      <elementValue elementRef="TRIM" value="false" id="25"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DestInventoryLoc" id="26"/>
+      <elementValue elementRef="TRIM" value="false" id="27"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Archived" id="28"/>
+      <elementValue elementRef="TRIM" value="false" id="29"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NonConformanceID" id="30"/>
+      <elementValue elementRef="TRIM" value="false" id="31"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseOrderDetailCustom1" id="32"/>
+      <elementValue elementRef="TRIM" value="false" id="33"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseOrderDetailCustom2" id="34"/>
+      <elementValue elementRef="TRIM" value="false" id="35"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseOrderDetailCustom3" id="36"/>
+      <elementValue elementRef="TRIM" value="false" id="37"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseOrderDetailCustom4" id="38"/>
+      <elementValue elementRef="TRIM" value="false" id="39"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseOrderDetailCustom5" id="40"/>
+      <elementValue elementRef="TRIM" value="false" id="41"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseOrderDetailCustom6" id="42"/>
+      <elementValue elementRef="TRIM" value="false" id="43"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseOrderDetailCustom7" id="44"/>
+      <elementValue elementRef="TRIM" value="false" id="45"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseOrderDetailCustom8" id="46"/>
+      <elementValue elementRef="TRIM" value="false" id="47"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ProcessScheduleID" id="48"/>
+      <elementValue elementRef="TRIM" value="false" id="49"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ProcessScheduleDetailID" id="50"/>
+      <elementValue elementRef="TRIM" value="false" id="51"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ExternalUOM" id="52"/>
+      <elementValue elementRef="TRIM" value="false" id="53"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ExternalQty" id="54"/>
+      <elementValue elementRef="TRIM" value="false" id="55"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
+    <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" value="30" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="tblPurchaseOrderDetails" name="tDBInput_3">
+      <column comment="" key="true" length="10" name="PurchaseDetailID" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="PurchaseOrderID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ProjectID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="53" name="SpecID" nullable="false" pattern="" precision="0" sourceType="FLOAT" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ItemID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="((0))" key="false" length="20" name="PurchaseQty" nullable="false" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="PurchasePrice" nullable="false" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="DateRequired" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="PurchaseSupplierItem" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="PurchaseSupplierDescription" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="PurchaseUOM" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="DateRevised" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="OrderNumber" nullable="true" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="DestInventoryLoc" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(0)'" key="false" length="1" name="Archived" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="NonConformanceID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="''" key="false" length="2147483647" name="PurchaseOrderDetailCustom1" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="''" key="false" length="2147483647" name="PurchaseOrderDetailCustom2" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="PurchaseOrderDetailCustom3" nullable="true" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="PurchaseOrderDetailCustom4" nullable="true" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="PurchaseOrderDetailCustom5" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="PurchaseOrderDetailCustom6" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(0)'" key="false" length="1" name="PurchaseOrderDetailCustom7" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(0)'" key="false" length="1" name="PurchaseOrderDetailCustom8" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ProcessScheduleID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ProcessScheduleDetailID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="((0))" key="false" length="10" name="ExternalUOM" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="((1))" key="false" length="20" name="ExternalQty" nullable="false" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="920">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_3" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseDetailID" id="0"/>
+      <elementValue elementRef="LENGTH" value="10" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseOrderID" id="2"/>
+      <elementValue elementRef="LENGTH" value="10" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ProjectID" id="4"/>
+      <elementValue elementRef="LENGTH" value="10" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SpecID" id="6"/>
+      <elementValue elementRef="LENGTH" value="10" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ItemID" id="8"/>
+      <elementValue elementRef="LENGTH" value="10" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseQty" id="10"/>
+      <elementValue elementRef="LENGTH" value="10" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchasePrice" id="12"/>
+      <elementValue elementRef="LENGTH" value="10" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DateRequired" id="14"/>
+      <elementValue elementRef="LENGTH" value="10" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseSupplierItem" id="16"/>
+      <elementValue elementRef="LENGTH" value="10" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseSupplierDescription" id="18"/>
+      <elementValue elementRef="LENGTH" value="10" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseUOM" id="20"/>
+      <elementValue elementRef="LENGTH" value="10" id="21"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DateRevised" id="22"/>
+      <elementValue elementRef="LENGTH" value="10" id="23"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OrderNumber" id="24"/>
+      <elementValue elementRef="LENGTH" value="10" id="25"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DestInventoryLoc" id="26"/>
+      <elementValue elementRef="LENGTH" value="10" id="27"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Archived" id="28"/>
+      <elementValue elementRef="LENGTH" value="10" id="29"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NonConformanceID" id="30"/>
+      <elementValue elementRef="LENGTH" value="10" id="31"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseOrderDetailCustom1" id="32"/>
+      <elementValue elementRef="LENGTH" value="10" id="33"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseOrderDetailCustom2" id="34"/>
+      <elementValue elementRef="LENGTH" value="10" id="35"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseOrderDetailCustom3" id="36"/>
+      <elementValue elementRef="LENGTH" value="10" id="37"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseOrderDetailCustom4" id="38"/>
+      <elementValue elementRef="LENGTH" value="10" id="39"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseOrderDetailCustom5" id="40"/>
+      <elementValue elementRef="LENGTH" value="10" id="41"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseOrderDetailCustom6" id="42"/>
+      <elementValue elementRef="LENGTH" value="10" id="43"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseOrderDetailCustom7" id="44"/>
+      <elementValue elementRef="LENGTH" value="10" id="45"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseOrderDetailCustom8" id="46"/>
+      <elementValue elementRef="LENGTH" value="10" id="47"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ProcessScheduleID" id="48"/>
+      <elementValue elementRef="LENGTH" value="10" id="49"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ProcessScheduleDetailID" id="50"/>
+      <elementValue elementRef="LENGTH" value="10" id="51"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ExternalUOM" id="52"/>
+      <elementValue elementRef="LENGTH" value="10" id="53"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ExternalQty" id="54"/>
+      <elementValue elementRef="LENGTH" value="10" id="55"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="POD Preview"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="tblPurchaseOrderDetails" name="tLogRow_3">
+      <column comment="" key="true" length="10" name="PurchaseDetailID" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="PurchaseOrderID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ProjectID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="53" name="SpecID" nullable="false" pattern="" precision="0" sourceType="FLOAT" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ItemID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="((0))" key="false" length="20" name="PurchaseQty" nullable="false" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="PurchasePrice" nullable="false" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="DateRequired" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="PurchaseSupplierItem" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="PurchaseSupplierDescription" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="PurchaseUOM" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="DateRevised" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="OrderNumber" nullable="true" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="DestInventoryLoc" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(0)'" key="false" length="1" name="Archived" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="NonConformanceID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="''" key="false" length="2147483647" name="PurchaseOrderDetailCustom1" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="''" key="false" length="2147483647" name="PurchaseOrderDetailCustom2" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="PurchaseOrderDetailCustom3" nullable="true" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="PurchaseOrderDetailCustom4" nullable="true" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="PurchaseOrderDetailCustom5" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="PurchaseOrderDetailCustom6" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(0)'" key="false" length="1" name="PurchaseOrderDetailCustom7" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(0)'" key="false" length="1" name="PurchaseOrderDetailCustom8" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ProcessScheduleID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ProcessScheduleDetailID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="((0))" key="false" length="10" name="ExternalUOM" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="((1))" key="false" length="20" name="ExternalQty" nullable="false" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tLogRow_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tDBInput_3" offsetLabelX="0" offsetLabelY="0" source="tDBInput_3" target="tLogRow_3">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tLogRow_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
@@ -3138,6 +3163,7 @@
   </connection>
   <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tDBInput_4" offsetLabelX="0" offsetLabelY="0" source="tDBInput_4" target="tLogRow_4">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tDBInput_5" offsetLabelX="0" offsetLabelY="0" source="tDBInput_5" target="tLogRow_9">
@@ -3160,16 +3186,20 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row7" show="false"/>
   </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJavaRow_1" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_1" target="tDBInput_4">
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJavaRow_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tJavaRow_1" target="tDBInput_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJavaRow_1" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tJavaRow_1" target="tDBInput_4">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
   </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tDBInput_3" offsetLabelX="0" offsetLabelY="0" source="tDBInput_3" target="tLogRow_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+  </connection>
+  <note opaque="true" posX="1120" posY="480" sizeHeight="80" sizeWidth="120" text="subjob grabs&#xD;&#xA;latest POH&#xD;&#xA;data "/>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_3" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
   </subjob>
@@ -3195,6 +3225,16 @@
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_5" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_3" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
   </subjob>
