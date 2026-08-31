@@ -160,10 +160,6 @@
     "id" : "_gDwS0KJ1EfGq3IYnFJCINg - tblPurchaseOrderHeader",
     "version" : "Latest",
     "type" : "schema"
-  }, {
-    "id" : "_j9yssJxlEfG0fNycJkJoag - tblPurchaseOrderHeader",
-    "version" : "Latest",
-    "type" : "schema"
   } ]
 }, {
   "baseItem" : {
