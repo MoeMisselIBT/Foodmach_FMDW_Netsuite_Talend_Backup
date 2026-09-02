@@ -1447,73 +1447,73 @@
     <elementParameter field="TEXT" name="LABEL" value="Join POD and POH"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="PurchaseOrder_Payload">
-      <column comment="" key="false" length="10" name="PurchaseSupplierID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="PurchaseSupplierID_POH" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="true" length="10" name="PurchaseOrderID_POH" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="'CONVERT([datetime],CONVERT([char](8),getdate(),(112)),(0))'" key="false" length="23" name="PurchaseDate" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+      <column comment="" defaultValue="'CONVERT([datetime],CONVERT([char](8),getdate(),(112)),(0))'" key="false" length="23" name="PurchaseDate_POH" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="255" name="PurchaseTerms" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="255" name="PurchaseTerms_POH" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="''" key="false" length="2147483647" name="PurchaseNotes" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" defaultValue="''" key="false" length="2147483647" name="PurchaseNotes_POH" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="PurchaseShipTo" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="PurchaseShipTo_POH" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="23" name="PurchaseDateRequired" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+      <column comment="" key="false" length="23" name="PurchaseDateRequired_POH" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="3" name="PurchaseCurr" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="3" name="PurchaseCurr_POH" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="((1))" key="false" length="20" name="PurchaseCurrRate" nullable="false" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" defaultValue="((1))" key="false" length="20" name="PurchaseCurrRate_POH" nullable="false" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="((0))" key="false" length="20" name="PurchaseTax1" nullable="false" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" defaultValue="((0))" key="false" length="20" name="PurchaseTax1_POH" nullable="false" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="100" name="PurchaseTax1Name" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="100" name="PurchaseTax1Name_POH" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="BuyerID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="BuyerID_POH" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="true" length="10" name="PurchaseDetailID" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Integer" usefulColumn="true">
+      <column comment="" key="true" length="10" name="PurchaseDetailID_POD" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="10" name="PurchaseOrderID_POD" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="ProjectID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="ProjectID_POD" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="53" name="SpecID" nullable="false" pattern="" precision="0" sourceType="FLOAT" type="id_Double" usefulColumn="true">
+      <column comment="" key="false" length="53" name="SpecID_POD" nullable="false" pattern="" precision="0" sourceType="FLOAT" type="id_Double" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="ItemID_1" nullable="false" originalDbColumnName="ItemID" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="ItemID_POD" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="((0))" key="false" length="20" name="PurchaseQty_1" nullable="false" originalDbColumnName="PurchaseQty" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" defaultValue="((0))" key="false" length="20" name="PurchaseQty_POD" nullable="false" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="20" name="PurchasePrice_1" nullable="false" originalDbColumnName="PurchasePrice" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" key="false" length="20" name="PurchasePrice_POD" nullable="false" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="23" name="DateRequired" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+      <column comment="" key="false" length="23" name="DateRequired_POD" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="1000" name="PurchaseSupplierDescription" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="1000" name="PurchaseSupplierDescription_POD" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="50" name="PurchaseUOM" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="50" name="PurchaseUOM_POD" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="DestInventoryLoc" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="DestInventoryLoc_POD" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
     </metadata>
@@ -1521,29 +1521,29 @@
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="PurchaseOrder_Payload">
-        <mapperTableEntries name="PurchaseSupplierID" expression="POH.PurchaseSupplierID " type="id_Integer"/>
+        <mapperTableEntries name="PurchaseSupplierID_POH" expression="POH.PurchaseSupplierID " type="id_Integer"/>
         <mapperTableEntries name="PurchaseOrderID_POH" expression="POH.PurchaseOrderID " type="id_Integer"/>
-        <mapperTableEntries name="PurchaseDate" expression="POH.PurchaseDate " type="id_Date"/>
-        <mapperTableEntries name="PurchaseTerms" expression="POH.PurchaseTerms " type="id_String" nullable="true"/>
-        <mapperTableEntries name="PurchaseNotes" expression="//POH.PurchaseNotes //we commented this out.&#xD;&#xA;POH.PurchaseNotes == null ? null : POH.PurchaseNotes.replace(&quot;\r\n&quot;, &quot; &quot;).replace(&quot;\n&quot;, &quot; &quot;).replace(&quot;\r&quot;, &quot; &quot;) " type="id_String"/>
-        <mapperTableEntries name="PurchaseShipTo" expression="POH.PurchaseShipTo " type="id_Integer"/>
-        <mapperTableEntries name="PurchaseDateRequired" expression="POH.PurchaseDateRequired " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="PurchaseCurr" expression="POH.PurchaseCurr " type="id_String"/>
-        <mapperTableEntries name="PurchaseCurrRate" expression="POH.PurchaseCurrRate " type="id_BigDecimal"/>
-        <mapperTableEntries name="PurchaseTax1" expression="POH.PurchaseTax1 " type="id_BigDecimal"/>
-        <mapperTableEntries name="PurchaseTax1Name" expression="POH.PurchaseTax1Name " type="id_String" nullable="true"/>
-        <mapperTableEntries name="BuyerID" expression="POH.BuyerID " type="id_Integer"/>
-        <mapperTableEntries name="PurchaseDetailID" expression="POD.PurchaseDetailID " type="id_Integer"/>
+        <mapperTableEntries name="PurchaseDate_POH" expression="POH.PurchaseDate " type="id_Date"/>
+        <mapperTableEntries name="PurchaseTerms_POH" expression="POH.PurchaseTerms " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PurchaseNotes_POH" expression="//POH.PurchaseNotes //we commented this out.&#xD;&#xA;POH.PurchaseNotes == null ? null : POH.PurchaseNotes.replace(&quot;\r\n&quot;, &quot; &quot;).replace(&quot;\n&quot;, &quot; &quot;).replace(&quot;\r&quot;, &quot; &quot;) " type="id_String"/>
+        <mapperTableEntries name="PurchaseShipTo_POH" expression="POH.PurchaseShipTo " type="id_Integer"/>
+        <mapperTableEntries name="PurchaseDateRequired_POH" expression="POH.PurchaseDateRequired " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="PurchaseCurr_POH" expression="POH.PurchaseCurr " type="id_String"/>
+        <mapperTableEntries name="PurchaseCurrRate_POH" expression="POH.PurchaseCurrRate " type="id_BigDecimal"/>
+        <mapperTableEntries name="PurchaseTax1_POH" expression="POH.PurchaseTax1 " type="id_BigDecimal"/>
+        <mapperTableEntries name="PurchaseTax1Name_POH" expression="POH.PurchaseTax1Name " type="id_String" nullable="true"/>
+        <mapperTableEntries name="BuyerID_POH" expression="POH.BuyerID " type="id_Integer"/>
+        <mapperTableEntries name="PurchaseDetailID_POD" expression="POD.PurchaseDetailID " type="id_Integer"/>
         <mapperTableEntries name="PurchaseOrderID_POD" expression="POD.PurchaseOrderID " type="id_Integer"/>
-        <mapperTableEntries name="ProjectID" expression="POD.ProjectID " type="id_Integer"/>
-        <mapperTableEntries name="SpecID" expression="POD.SpecID " type="id_Double"/>
-        <mapperTableEntries name="ItemID_1" expression="POD.ItemID " type="id_Integer"/>
-        <mapperTableEntries name="PurchaseQty_1" expression="POD.PurchaseQty " type="id_BigDecimal"/>
-        <mapperTableEntries name="PurchasePrice_1" expression="POD.PurchasePrice " type="id_BigDecimal"/>
-        <mapperTableEntries name="DateRequired" expression="POD.DateRequired " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="PurchaseSupplierDescription" expression="POD.PurchaseSupplierDescription " type="id_String" nullable="true"/>
-        <mapperTableEntries name="PurchaseUOM" expression="POD.PurchaseUOM " type="id_String" nullable="true"/>
-        <mapperTableEntries name="DestInventoryLoc" expression="POD.DestInventoryLoc " type="id_Integer"/>
+        <mapperTableEntries name="ProjectID_POD" expression="POD.ProjectID " type="id_Integer"/>
+        <mapperTableEntries name="SpecID_POD" expression="POD.SpecID " type="id_Double"/>
+        <mapperTableEntries name="ItemID_POD" expression="POD.ItemID " type="id_Integer"/>
+        <mapperTableEntries name="PurchaseQty_POD" expression="POD.PurchaseQty " type="id_BigDecimal"/>
+        <mapperTableEntries name="PurchasePrice_POD" expression="POD.PurchasePrice " type="id_BigDecimal"/>
+        <mapperTableEntries name="DateRequired_POD" expression="POD.DateRequired " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="PurchaseSupplierDescription_POD" expression="POD.PurchaseSupplierDescription " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PurchaseUOM_POD" expression="POD.PurchaseUOM " type="id_String" nullable="true"/>
+        <mapperTableEntries name="DestInventoryLoc_POD" expression="POD.DestInventoryLoc " type="id_Integer"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="POD" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="PurchaseDetailID" type="id_Integer"/>
@@ -1631,51 +1631,51 @@
     <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
     <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
     <elementParameter field="TABLE" name="LENGTHS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseSupplierID" id="0"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseSupplierID_POH" id="0"/>
       <elementValue elementRef="LENGTH" value="10" id="1"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseOrderID_POH" id="2"/>
       <elementValue elementRef="LENGTH" value="10" id="3"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseDate" id="4"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseDate_POH" id="4"/>
       <elementValue elementRef="LENGTH" value="10" id="5"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseTerms" id="6"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseTerms_POH" id="6"/>
       <elementValue elementRef="LENGTH" value="10" id="7"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseNotes" id="8"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseNotes_POH" id="8"/>
       <elementValue elementRef="LENGTH" value="10" id="9"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseShipTo" id="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseShipTo_POH" id="10"/>
       <elementValue elementRef="LENGTH" value="10" id="11"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseDateRequired" id="12"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseDateRequired_POH" id="12"/>
       <elementValue elementRef="LENGTH" value="10" id="13"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseCurr" id="14"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseCurr_POH" id="14"/>
       <elementValue elementRef="LENGTH" value="10" id="15"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseCurrRate" id="16"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseCurrRate_POH" id="16"/>
       <elementValue elementRef="LENGTH" value="10" id="17"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseTax1" id="18"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseTax1_POH" id="18"/>
       <elementValue elementRef="LENGTH" value="10" id="19"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseTax1Name" id="20"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseTax1Name_POH" id="20"/>
       <elementValue elementRef="LENGTH" value="10" id="21"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="BuyerID" id="22"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BuyerID_POH" id="22"/>
       <elementValue elementRef="LENGTH" value="10" id="23"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseDetailID" id="24"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseDetailID_POD" id="24"/>
       <elementValue elementRef="LENGTH" value="10" id="25"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseOrderID_POD" id="26"/>
       <elementValue elementRef="LENGTH" value="10" id="27"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ProjectID" id="28"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ProjectID_POD" id="28"/>
       <elementValue elementRef="LENGTH" value="10" id="29"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="SpecID" id="30"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SpecID_POD" id="30"/>
       <elementValue elementRef="LENGTH" value="10" id="31"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ItemID_1" id="32"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ItemID_POD" id="32"/>
       <elementValue elementRef="LENGTH" value="10" id="33"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseQty_1" id="34"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseQty_POD" id="34"/>
       <elementValue elementRef="LENGTH" value="10" id="35"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PurchasePrice_1" id="36"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchasePrice_POD" id="36"/>
       <elementValue elementRef="LENGTH" value="10" id="37"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DateRequired" id="38"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DateRequired_POD" id="38"/>
       <elementValue elementRef="LENGTH" value="10" id="39"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseSupplierDescription" id="40"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseSupplierDescription_POD" id="40"/>
       <elementValue elementRef="LENGTH" value="10" id="41"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseUOM" id="42"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseUOM_POD" id="42"/>
       <elementValue elementRef="LENGTH" value="10" id="43"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DestInventoryLoc" id="44"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DestInventoryLoc_POD" id="44"/>
       <elementValue elementRef="LENGTH" value="10" id="45"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
@@ -1683,73 +1683,73 @@
     <elementParameter field="TEXT" name="LABEL" value="Payload preview"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tLogRow_5">
-      <column comment="" key="false" length="10" name="PurchaseSupplierID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="PurchaseSupplierID_POH" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="true" length="10" name="PurchaseOrderID_POH" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="'CONVERT([datetime],CONVERT([char](8),getdate(),(112)),(0))'" key="false" length="23" name="PurchaseDate" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+      <column comment="" defaultValue="'CONVERT([datetime],CONVERT([char](8),getdate(),(112)),(0))'" key="false" length="23" name="PurchaseDate_POH" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="255" name="PurchaseTerms" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="255" name="PurchaseTerms_POH" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="''" key="false" length="2147483647" name="PurchaseNotes" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" defaultValue="''" key="false" length="2147483647" name="PurchaseNotes_POH" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="PurchaseShipTo" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="PurchaseShipTo_POH" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="23" name="PurchaseDateRequired" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+      <column comment="" key="false" length="23" name="PurchaseDateRequired_POH" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="3" name="PurchaseCurr" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="3" name="PurchaseCurr_POH" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="((1))" key="false" length="20" name="PurchaseCurrRate" nullable="false" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" defaultValue="((1))" key="false" length="20" name="PurchaseCurrRate_POH" nullable="false" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="((0))" key="false" length="20" name="PurchaseTax1" nullable="false" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" defaultValue="((0))" key="false" length="20" name="PurchaseTax1_POH" nullable="false" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="100" name="PurchaseTax1Name" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="100" name="PurchaseTax1Name_POH" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="BuyerID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="BuyerID_POH" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="true" length="10" name="PurchaseDetailID" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Integer" usefulColumn="true">
+      <column comment="" key="true" length="10" name="PurchaseDetailID_POD" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="10" name="PurchaseOrderID_POD" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="ProjectID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="ProjectID_POD" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="53" name="SpecID" nullable="false" pattern="" precision="0" sourceType="FLOAT" type="id_Double" usefulColumn="true">
+      <column comment="" key="false" length="53" name="SpecID_POD" nullable="false" pattern="" precision="0" sourceType="FLOAT" type="id_Double" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="ItemID_1" nullable="false" originalDbColumnName="ItemID" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="ItemID_POD" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="((0))" key="false" length="20" name="PurchaseQty_1" nullable="false" originalDbColumnName="PurchaseQty" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" defaultValue="((0))" key="false" length="20" name="PurchaseQty_POD" nullable="false" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="20" name="PurchasePrice_1" nullable="false" originalDbColumnName="PurchasePrice" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" key="false" length="20" name="PurchasePrice_POD" nullable="false" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="23" name="DateRequired" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+      <column comment="" key="false" length="23" name="DateRequired_POD" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="1000" name="PurchaseSupplierDescription" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="1000" name="PurchaseSupplierDescription_POD" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="50" name="PurchaseUOM" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="50" name="PurchaseUOM_POD" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="DestInventoryLoc" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="DestInventoryLoc_POD" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
     </metadata>
@@ -1979,73 +1979,73 @@
     <elementParameter field="TEXT" name="EXTERNAL_SORT_BUFFERSIZE" value="1000000" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tSortRow_1">
-      <column comment="" key="false" length="10" name="PurchaseSupplierID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="PurchaseSupplierID_POH" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="true" length="10" name="PurchaseOrderID_POH" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="'CONVERT([datetime],CONVERT([char](8),getdate(),(112)),(0))'" key="false" length="23" name="PurchaseDate" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+      <column comment="" defaultValue="'CONVERT([datetime],CONVERT([char](8),getdate(),(112)),(0))'" key="false" length="23" name="PurchaseDate_POH" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="255" name="PurchaseTerms" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="255" name="PurchaseTerms_POH" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="''" key="false" length="2147483647" name="PurchaseNotes" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" defaultValue="''" key="false" length="2147483647" name="PurchaseNotes_POH" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="PurchaseShipTo" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="PurchaseShipTo_POH" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="23" name="PurchaseDateRequired" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+      <column comment="" key="false" length="23" name="PurchaseDateRequired_POH" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="3" name="PurchaseCurr" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="3" name="PurchaseCurr_POH" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="((1))" key="false" length="20" name="PurchaseCurrRate" nullable="false" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" defaultValue="((1))" key="false" length="20" name="PurchaseCurrRate_POH" nullable="false" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="((0))" key="false" length="20" name="PurchaseTax1" nullable="false" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" defaultValue="((0))" key="false" length="20" name="PurchaseTax1_POH" nullable="false" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="100" name="PurchaseTax1Name" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="100" name="PurchaseTax1Name_POH" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="BuyerID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="BuyerID_POH" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="true" length="10" name="PurchaseDetailID" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Integer" usefulColumn="true">
+      <column comment="" key="true" length="10" name="PurchaseDetailID_POD" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="10" name="PurchaseOrderID_POD" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="ProjectID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="ProjectID_POD" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="53" name="SpecID" nullable="false" pattern="" precision="0" sourceType="FLOAT" type="id_Double" usefulColumn="true">
+      <column comment="" key="false" length="53" name="SpecID_POD" nullable="false" pattern="" precision="0" sourceType="FLOAT" type="id_Double" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="ItemID_1" nullable="false" originalDbColumnName="ItemID" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="ItemID_POD" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="((0))" key="false" length="20" name="PurchaseQty_1" nullable="false" originalDbColumnName="PurchaseQty" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" defaultValue="((0))" key="false" length="20" name="PurchaseQty_POD" nullable="false" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="20" name="PurchasePrice_1" nullable="false" originalDbColumnName="PurchasePrice" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" key="false" length="20" name="PurchasePrice_POD" nullable="false" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="23" name="DateRequired" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+      <column comment="" key="false" length="23" name="DateRequired_POD" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="1000" name="PurchaseSupplierDescription" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="1000" name="PurchaseSupplierDescription_POD" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="50" name="PurchaseUOM" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="50" name="PurchaseUOM_POD" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="DestInventoryLoc" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="DestInventoryLoc_POD" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
     </metadata>
@@ -2064,51 +2064,51 @@
     <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
     <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
     <elementParameter field="TABLE" name="LENGTHS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseSupplierID" id="0"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseSupplierID_POH" id="0"/>
       <elementValue elementRef="LENGTH" value="10" id="1"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseOrderID_POH" id="2"/>
       <elementValue elementRef="LENGTH" value="10" id="3"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseDate" id="4"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseDate_POH" id="4"/>
       <elementValue elementRef="LENGTH" value="10" id="5"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseTerms" id="6"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseTerms_POH" id="6"/>
       <elementValue elementRef="LENGTH" value="10" id="7"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseNotes" id="8"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseNotes_POH" id="8"/>
       <elementValue elementRef="LENGTH" value="10" id="9"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseShipTo" id="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseShipTo_POH" id="10"/>
       <elementValue elementRef="LENGTH" value="10" id="11"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseDateRequired" id="12"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseDateRequired_POH" id="12"/>
       <elementValue elementRef="LENGTH" value="10" id="13"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseCurr" id="14"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseCurr_POH" id="14"/>
       <elementValue elementRef="LENGTH" value="10" id="15"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseCurrRate" id="16"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseCurrRate_POH" id="16"/>
       <elementValue elementRef="LENGTH" value="10" id="17"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseTax1" id="18"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseTax1_POH" id="18"/>
       <elementValue elementRef="LENGTH" value="10" id="19"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseTax1Name" id="20"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseTax1Name_POH" id="20"/>
       <elementValue elementRef="LENGTH" value="10" id="21"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="BuyerID" id="22"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BuyerID_POH" id="22"/>
       <elementValue elementRef="LENGTH" value="10" id="23"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseDetailID" id="24"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseDetailID_POD" id="24"/>
       <elementValue elementRef="LENGTH" value="10" id="25"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseOrderID_POD" id="26"/>
       <elementValue elementRef="LENGTH" value="10" id="27"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ProjectID" id="28"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ProjectID_POD" id="28"/>
       <elementValue elementRef="LENGTH" value="10" id="29"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="SpecID" id="30"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SpecID_POD" id="30"/>
       <elementValue elementRef="LENGTH" value="10" id="31"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ItemID_1" id="32"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ItemID_POD" id="32"/>
       <elementValue elementRef="LENGTH" value="10" id="33"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseQty_1" id="34"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseQty_POD" id="34"/>
       <elementValue elementRef="LENGTH" value="10" id="35"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PurchasePrice_1" id="36"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchasePrice_POD" id="36"/>
       <elementValue elementRef="LENGTH" value="10" id="37"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DateRequired" id="38"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DateRequired_POD" id="38"/>
       <elementValue elementRef="LENGTH" value="10" id="39"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseSupplierDescription" id="40"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseSupplierDescription_POD" id="40"/>
       <elementValue elementRef="LENGTH" value="10" id="41"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseUOM" id="42"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseUOM_POD" id="42"/>
       <elementValue elementRef="LENGTH" value="10" id="43"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DestInventoryLoc" id="44"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DestInventoryLoc_POD" id="44"/>
       <elementValue elementRef="LENGTH" value="10" id="45"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
@@ -2116,73 +2116,73 @@
     <elementParameter field="TEXT" name="LABEL" value="Sorted data preview"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tLogRow_1">
-      <column comment="" key="false" length="10" name="PurchaseSupplierID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="PurchaseSupplierID_POH" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="true" length="10" name="PurchaseOrderID_POH" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="'CONVERT([datetime],CONVERT([char](8),getdate(),(112)),(0))'" key="false" length="23" name="PurchaseDate" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+      <column comment="" defaultValue="'CONVERT([datetime],CONVERT([char](8),getdate(),(112)),(0))'" key="false" length="23" name="PurchaseDate_POH" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="255" name="PurchaseTerms" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="255" name="PurchaseTerms_POH" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="''" key="false" length="2147483647" name="PurchaseNotes" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" defaultValue="''" key="false" length="2147483647" name="PurchaseNotes_POH" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="PurchaseShipTo" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="PurchaseShipTo_POH" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="23" name="PurchaseDateRequired" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+      <column comment="" key="false" length="23" name="PurchaseDateRequired_POH" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="3" name="PurchaseCurr" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="3" name="PurchaseCurr_POH" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="((1))" key="false" length="20" name="PurchaseCurrRate" nullable="false" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" defaultValue="((1))" key="false" length="20" name="PurchaseCurrRate_POH" nullable="false" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="((0))" key="false" length="20" name="PurchaseTax1" nullable="false" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" defaultValue="((0))" key="false" length="20" name="PurchaseTax1_POH" nullable="false" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="100" name="PurchaseTax1Name" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="100" name="PurchaseTax1Name_POH" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="BuyerID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="BuyerID_POH" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="true" length="10" name="PurchaseDetailID" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Integer" usefulColumn="true">
+      <column comment="" key="true" length="10" name="PurchaseDetailID_POD" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="10" name="PurchaseOrderID_POD" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="ProjectID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="ProjectID_POD" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="53" name="SpecID" nullable="false" pattern="" precision="0" sourceType="FLOAT" type="id_Double" usefulColumn="true">
+      <column comment="" key="false" length="53" name="SpecID_POD" nullable="false" pattern="" precision="0" sourceType="FLOAT" type="id_Double" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="ItemID_1" nullable="false" originalDbColumnName="ItemID" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="ItemID_POD" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="((0))" key="false" length="20" name="PurchaseQty_1" nullable="false" originalDbColumnName="PurchaseQty" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" defaultValue="((0))" key="false" length="20" name="PurchaseQty_POD" nullable="false" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="20" name="PurchasePrice_1" nullable="false" originalDbColumnName="PurchasePrice" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" key="false" length="20" name="PurchasePrice_POD" nullable="false" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="23" name="DateRequired" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+      <column comment="" key="false" length="23" name="DateRequired_POD" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="1000" name="PurchaseSupplierDescription" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="1000" name="PurchaseSupplierDescription_POD" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="50" name="PurchaseUOM" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="50" name="PurchaseUOM_POD" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="DestInventoryLoc" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="DestInventoryLoc_POD" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
     </metadata>
@@ -2213,38 +2213,88 @@
       <elementValue elementRef="VALUE" value="" id="12"/>
       <elementValue elementRef="ATTRIBUTE" value="branch" id="13"/>
       <elementValue elementRef="ORDER" value="4" id="14"/>
-      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/items" id="15"/>
-      <elementValue elementRef="COLUMN" value="" id="16"/>
+      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/PurchaseSupplierID_POH" id="15"/>
+      <elementValue elementRef="COLUMN" value="PurchaseSupplierID_POH" id="16"/>
       <elementValue elementRef="VALUE" value="" id="17"/>
-      <elementValue elementRef="ATTRIBUTE" value="main" id="18"/>
+      <elementValue elementRef="ATTRIBUTE" value="branch" id="18"/>
       <elementValue elementRef="ORDER" value="5" id="19"/>
+      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/PurchaseDate_POH" id="20"/>
+      <elementValue elementRef="COLUMN" value="PurchaseDate_POH" id="21"/>
+      <elementValue elementRef="VALUE" value="" id="22"/>
+      <elementValue elementRef="ATTRIBUTE" value="branch" id="23"/>
+      <elementValue elementRef="ORDER" value="6" id="24"/>
+      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/PurchaseTerms_POH" id="25"/>
+      <elementValue elementRef="COLUMN" value="PurchaseTerms_POH" id="26"/>
+      <elementValue elementRef="VALUE" value="" id="27"/>
+      <elementValue elementRef="ATTRIBUTE" value="branch" id="28"/>
+      <elementValue elementRef="ORDER" value="7" id="29"/>
+      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/PurchaseShipTo_POH" id="30"/>
+      <elementValue elementRef="COLUMN" value="PurchaseShipTo_POH" id="31"/>
+      <elementValue elementRef="VALUE" value="" id="32"/>
+      <elementValue elementRef="ATTRIBUTE" value="branch" id="33"/>
+      <elementValue elementRef="ORDER" value="8" id="34"/>
+      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/PurchaseDateRequired_POH" id="35"/>
+      <elementValue elementRef="COLUMN" value="PurchaseDateRequired_POH" id="36"/>
+      <elementValue elementRef="VALUE" value="" id="37"/>
+      <elementValue elementRef="ATTRIBUTE" value="branch" id="38"/>
+      <elementValue elementRef="ORDER" value="9" id="39"/>
+      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/PurchaseCurr_POH" id="40"/>
+      <elementValue elementRef="COLUMN" value="PurchaseCurr_POH" id="41"/>
+      <elementValue elementRef="VALUE" value="" id="42"/>
+      <elementValue elementRef="ATTRIBUTE" value="branch" id="43"/>
+      <elementValue elementRef="ORDER" value="10" id="44"/>
+      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/PurchaseCurrRate_POH" id="45"/>
+      <elementValue elementRef="COLUMN" value="PurchaseCurrRate_POH" id="46"/>
+      <elementValue elementRef="VALUE" value="" id="47"/>
+      <elementValue elementRef="ATTRIBUTE" value="branch" id="48"/>
+      <elementValue elementRef="ORDER" value="11" id="49"/>
+      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/PurchaseTax1_POH" id="50"/>
+      <elementValue elementRef="COLUMN" value="PurchaseTax1_POH" id="51"/>
+      <elementValue elementRef="VALUE" value="" id="52"/>
+      <elementValue elementRef="ATTRIBUTE" value="branch" id="53"/>
+      <elementValue elementRef="ORDER" value="12" id="54"/>
+      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/PurchaseTax1Name_POH" id="55"/>
+      <elementValue elementRef="COLUMN" value="PurchaseTax1Name_POH" id="56"/>
+      <elementValue elementRef="VALUE" value="" id="57"/>
+      <elementValue elementRef="ATTRIBUTE" value="branch" id="58"/>
+      <elementValue elementRef="ORDER" value="13" id="59"/>
+      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/BuyerID_POH" id="60"/>
+      <elementValue elementRef="COLUMN" value="BuyerID_POH" id="61"/>
+      <elementValue elementRef="VALUE" value="" id="62"/>
+      <elementValue elementRef="ATTRIBUTE" value="branch" id="63"/>
+      <elementValue elementRef="ORDER" value="14" id="64"/>
+      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/items" id="65"/>
+      <elementValue elementRef="COLUMN" value="" id="66"/>
+      <elementValue elementRef="VALUE" value="" id="67"/>
+      <elementValue elementRef="ATTRIBUTE" value="main" id="68"/>
+      <elementValue elementRef="ORDER" value="15" id="69"/>
     </elementParameter>
     <elementParameter field="TABLE" name="LOOP" show="false">
       <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/items/item" id="0"/>
       <elementValue elementRef="COLUMN" value="" id="1"/>
       <elementValue elementRef="VALUE" value="" id="2"/>
       <elementValue elementRef="ATTRIBUTE" value="main" id="3"/>
-      <elementValue elementRef="ORDER" value="6" id="4"/>
+      <elementValue elementRef="ORDER" value="16" id="4"/>
       <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/items/item/PurchaseOrderID_POD" id="5"/>
       <elementValue elementRef="COLUMN" value="PurchaseOrderID_POD" id="6"/>
       <elementValue elementRef="VALUE" value="" id="7"/>
       <elementValue elementRef="ATTRIBUTE" value="branch" id="8"/>
-      <elementValue elementRef="ORDER" value="7" id="9"/>
+      <elementValue elementRef="ORDER" value="17" id="9"/>
       <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/items/item/PurchaseQty" id="10"/>
-      <elementValue elementRef="COLUMN" value="PurchaseQty" id="11"/>
+      <elementValue elementRef="COLUMN" value="" id="11"/>
       <elementValue elementRef="VALUE" value="" id="12"/>
       <elementValue elementRef="ATTRIBUTE" value="branch" id="13"/>
-      <elementValue elementRef="ORDER" value="8" id="14"/>
+      <elementValue elementRef="ORDER" value="18" id="14"/>
       <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/items/item/ItemID" id="15"/>
-      <elementValue elementRef="COLUMN" value="ItemID" id="16"/>
+      <elementValue elementRef="COLUMN" value="" id="16"/>
       <elementValue elementRef="VALUE" value="" id="17"/>
       <elementValue elementRef="ATTRIBUTE" value="branch" id="18"/>
-      <elementValue elementRef="ORDER" value="9" id="19"/>
+      <elementValue elementRef="ORDER" value="19" id="19"/>
       <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/items/item/PurchasePrice" id="20"/>
-      <elementValue elementRef="COLUMN" value="PurchasePrice" id="21"/>
+      <elementValue elementRef="COLUMN" value="" id="21"/>
       <elementValue elementRef="VALUE" value="" id="22"/>
       <elementValue elementRef="ATTRIBUTE" value="branch" id="23"/>
-      <elementValue elementRef="ORDER" value="10" id="24"/>
+      <elementValue elementRef="ORDER" value="20" id="24"/>
     </elementParameter>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="TABLE" name="GROUPBYS">
@@ -2847,7 +2897,7 @@
       <elementValue elementRef="TRACE_COLUMN" value="PurchaseQty_1" id="60"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="61"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="62"/>
-      <elementValue elementRef="TRACE_COLUMN" value="DestInventoryLoc" id="63"/>
+      <elementValue elementRef="TRACE_COLUMN" value="DestInventoryLoc_POD" id="63"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="64"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="65"/>
       <elementValue elementRef="TRACE_COLUMN" value="PurchaseDate" id="66"/>
@@ -2859,6 +2909,63 @@
       <elementValue elementRef="TRACE_COLUMN" value="PurchaseUOM" id="72"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="73"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="74"/>
+      <elementValue elementRef="TRACE_COLUMN" value="BuyerID_POH" id="75"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="76"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="77"/>
+      <elementValue elementRef="TRACE_COLUMN" value="SpecID_POD" id="78"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="79"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="80"/>
+      <elementValue elementRef="TRACE_COLUMN" value="PurchaseShipTo_POH" id="81"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="82"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="83"/>
+      <elementValue elementRef="TRACE_COLUMN" value="PurchaseCurr_POH" id="84"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="85"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="86"/>
+      <elementValue elementRef="TRACE_COLUMN" value="PurchaseTax1Name_POH" id="87"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="88"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="89"/>
+      <elementValue elementRef="TRACE_COLUMN" value="PurchaseSupplierID_POH" id="90"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="91"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="92"/>
+      <elementValue elementRef="TRACE_COLUMN" value="PurchaseUOM_POD" id="93"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="94"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="95"/>
+      <elementValue elementRef="TRACE_COLUMN" value="PurchaseDate_POH" id="96"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="97"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="98"/>
+      <elementValue elementRef="TRACE_COLUMN" value="PurchaseQty_POD" id="99"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="100"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="101"/>
+      <elementValue elementRef="TRACE_COLUMN" value="PurchaseTax1_POH" id="102"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="103"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="104"/>
+      <elementValue elementRef="TRACE_COLUMN" value="PurchasePrice_POD" id="105"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="106"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="107"/>
+      <elementValue elementRef="TRACE_COLUMN" value="PurchaseCurrRate_POH" id="108"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="109"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="110"/>
+      <elementValue elementRef="TRACE_COLUMN" value="PurchaseSupplierDescription_POD" id="111"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="112"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="113"/>
+      <elementValue elementRef="TRACE_COLUMN" value="PurchaseDetailID_POD" id="114"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="115"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="116"/>
+      <elementValue elementRef="TRACE_COLUMN" value="ProjectID_POD" id="117"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="118"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="119"/>
+      <elementValue elementRef="TRACE_COLUMN" value="ItemID_POD" id="120"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="121"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="122"/>
+      <elementValue elementRef="TRACE_COLUMN" value="PurchaseTerms_POH" id="123"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="124"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="125"/>
+      <elementValue elementRef="TRACE_COLUMN" value="DateRequired_POD" id="126"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="127"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="128"/>
+      <elementValue elementRef="TRACE_COLUMN" value="PurchaseDateRequired_POH" id="129"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="130"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="131"/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="PurchaseOrder_Payload" show="false"/>
