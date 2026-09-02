@@ -2280,21 +2280,56 @@
       <elementValue elementRef="VALUE" value="" id="7"/>
       <elementValue elementRef="ATTRIBUTE" value="branch" id="8"/>
       <elementValue elementRef="ORDER" value="17" id="9"/>
-      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/items/item/PurchaseQty" id="10"/>
-      <elementValue elementRef="COLUMN" value="" id="11"/>
+      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/items/item/PurchaseDetailID_POD" id="10"/>
+      <elementValue elementRef="COLUMN" value="PurchaseDetailID_POD" id="11"/>
       <elementValue elementRef="VALUE" value="" id="12"/>
       <elementValue elementRef="ATTRIBUTE" value="branch" id="13"/>
       <elementValue elementRef="ORDER" value="18" id="14"/>
-      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/items/item/ItemID" id="15"/>
-      <elementValue elementRef="COLUMN" value="" id="16"/>
+      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/items/item/ProjectID_POD" id="15"/>
+      <elementValue elementRef="COLUMN" value="ProjectID_POD" id="16"/>
       <elementValue elementRef="VALUE" value="" id="17"/>
       <elementValue elementRef="ATTRIBUTE" value="branch" id="18"/>
       <elementValue elementRef="ORDER" value="19" id="19"/>
-      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/items/item/PurchasePrice" id="20"/>
-      <elementValue elementRef="COLUMN" value="" id="21"/>
+      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/items/item/SpecID_POD" id="20"/>
+      <elementValue elementRef="COLUMN" value="SpecID_POD" id="21"/>
       <elementValue elementRef="VALUE" value="" id="22"/>
       <elementValue elementRef="ATTRIBUTE" value="branch" id="23"/>
       <elementValue elementRef="ORDER" value="20" id="24"/>
+      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/items/item/ItemID_POD" id="25"/>
+      <elementValue elementRef="COLUMN" value="ItemID_POD" id="26"/>
+      <elementValue elementRef="VALUE" value="" id="27"/>
+      <elementValue elementRef="ATTRIBUTE" value="branch" id="28"/>
+      <elementValue elementRef="ORDER" value="21" id="29"/>
+      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/items/item/PurchaseQty_POD" id="30"/>
+      <elementValue elementRef="COLUMN" value="PurchaseQty_POD" id="31"/>
+      <elementValue elementRef="VALUE" value="" id="32"/>
+      <elementValue elementRef="ATTRIBUTE" value="branch" id="33"/>
+      <elementValue elementRef="ORDER" value="22" id="34"/>
+      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/items/item/PurchasePrice_POD" id="35"/>
+      <elementValue elementRef="COLUMN" value="PurchasePrice_POD" id="36"/>
+      <elementValue elementRef="VALUE" value="" id="37"/>
+      <elementValue elementRef="ATTRIBUTE" value="branch" id="38"/>
+      <elementValue elementRef="ORDER" value="23" id="39"/>
+      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/items/item/DateRequired_POD" id="40"/>
+      <elementValue elementRef="COLUMN" value="DateRequired_POD" id="41"/>
+      <elementValue elementRef="VALUE" value="" id="42"/>
+      <elementValue elementRef="ATTRIBUTE" value="branch" id="43"/>
+      <elementValue elementRef="ORDER" value="24" id="44"/>
+      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/items/item/PurchaseSupplierDescription_POD" id="45"/>
+      <elementValue elementRef="COLUMN" value="PurchaseSupplierDescription_POD" id="46"/>
+      <elementValue elementRef="VALUE" value="" id="47"/>
+      <elementValue elementRef="ATTRIBUTE" value="branch" id="48"/>
+      <elementValue elementRef="ORDER" value="25" id="49"/>
+      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/items/item/PurchaseUOM_POD" id="50"/>
+      <elementValue elementRef="COLUMN" value="PurchaseUOM_POD" id="51"/>
+      <elementValue elementRef="VALUE" value="" id="52"/>
+      <elementValue elementRef="ATTRIBUTE" value="branch" id="53"/>
+      <elementValue elementRef="ORDER" value="26" id="54"/>
+      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/items/item/DestInventoryLoc_POD" id="55"/>
+      <elementValue elementRef="COLUMN" value="DestInventoryLoc_POD" id="56"/>
+      <elementValue elementRef="VALUE" value="" id="57"/>
+      <elementValue elementRef="ATTRIBUTE" value="branch" id="58"/>
+      <elementValue elementRef="ORDER" value="27" id="59"/>
     </elementParameter>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="TABLE" name="GROUPBYS">
