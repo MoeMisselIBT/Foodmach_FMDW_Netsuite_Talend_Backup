@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_0KDn4KaVEfGq3IYnFJCINg" name="repository.metadataGenericSchema" dataPackage="_0KDn4aaVEfGq3IYnFJCINg"/>
+  <TalendMetadata:GenericPackage xmi:id="_0KDn4aaVEfGq3IYnFJCINg" name="repository.metadataGenericSchema" dataManager="_0KDn4KaVEfGq3IYnFJCINg">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_0KDn4qaVEfGq3IYnFJCINg" id="_iucFkKaVEfGq3IYnFJCINg" label="PO_Select_Schema">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0KDn46aVEfGq3IYnFJCINg" name="PurchaseSupplierID" label="PurchaseSupplierID" length="10" sourceType="INT" talendType="id_Integer">
+        <initialValue xmi:id="_0KDn5KaVEfGq3IYnFJCINg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0KEO8KaVEfGq3IYnFJCINg" name="PurchaseDate" label="PurchaseDate" length="23" precision="3" sourceType="DATETIME" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_0KEO8aaVEfGq3IYnFJCINg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0KEO8qaVEfGq3IYnFJCINg" name="PurchaseTerms" label="PurchaseTerms" length="255" sourceType="NVARCHAR" talendType="id_String">
+        <initialValue xmi:id="_0KEO86aVEfGq3IYnFJCINg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0KEO9KaVEfGq3IYnFJCINg" name="PurchaseNotes" label="PurchaseNotes" length="2147483647" sourceType="NVARCHAR" talendType="id_String">
+        <initialValue xmi:id="_0KEO9aaVEfGq3IYnFJCINg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0KEO9qaVEfGq3IYnFJCINg" name="PurchaseShipTo" label="PurchaseShipTo" length="10" sourceType="INT" talendType="id_Integer">
+        <initialValue xmi:id="_0KEO96aVEfGq3IYnFJCINg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0KEO-KaVEfGq3IYnFJCINg" name="PurchaseDateRequired" label="PurchaseDateRequired" length="23" precision="3" sourceType="DATETIME" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_0KEO-aaVEfGq3IYnFJCINg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0KEO-qaVEfGq3IYnFJCINg" name="PurchaseCurr" label="PurchaseCurr" length="3" sourceType="NVARCHAR" talendType="id_String">
+        <initialValue xmi:id="_0KEO-6aVEfGq3IYnFJCINg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0KEO_KaVEfGq3IYnFJCINg" name="PurchaseCurrRate" label="PurchaseCurrRate" length="20" precision="6" sourceType="DECIMAL" talendType="id_BigDecimal">
+        <initialValue xmi:id="_0KEO_aaVEfGq3IYnFJCINg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0KEO_qaVEfGq3IYnFJCINg" name="PurchaseTax1" label="PurchaseTax1" length="20" precision="6" sourceType="DECIMAL" talendType="id_BigDecimal">
+        <initialValue xmi:id="_0KEO_6aVEfGq3IYnFJCINg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0KEPAKaVEfGq3IYnFJCINg" name="PurchaseTax1Name" label="PurchaseTax1Name" length="100" sourceType="NVARCHAR" talendType="id_String">
+        <initialValue xmi:id="_0KEPAaaVEfGq3IYnFJCINg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0KEPAqaVEfGq3IYnFJCINg" name="BuyerID" label="BuyerID" length="10" sourceType="INT" talendType="id_Integer">
+        <initialValue xmi:id="_0KEPA6aVEfGq3IYnFJCINg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0KEPBKaVEfGq3IYnFJCINg" name="PurchaseDetailID" label="PurchaseDetailID" length="10" sourceType="INT" talendType="id_Integer" key="true" nullable="false">
+        <initialValue xmi:id="_0KEPBaaVEfGq3IYnFJCINg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0KEPBqaVEfGq3IYnFJCINg" name="PurchaseOrderID" label="PurchaseOrderID" length="10" sourceType="INT" talendType="id_Integer" nullable="false">
+        <initialValue xmi:id="_0KEPB6aVEfGq3IYnFJCINg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0KEPCKaVEfGq3IYnFJCINg" name="ProjectID" label="ProjectID" length="10" sourceType="INT" talendType="id_Integer" nullable="false">
+        <initialValue xmi:id="_0KEPCaaVEfGq3IYnFJCINg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0KEPCqaVEfGq3IYnFJCINg" name="SpecID" label="SpecID" length="53" sourceType="FLOAT" talendType="id_Double" nullable="false">
+        <initialValue xmi:id="_0KEPC6aVEfGq3IYnFJCINg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0KEPDKaVEfGq3IYnFJCINg" name="ItemID" label="ItemID" length="10" sourceType="INT" talendType="id_Integer" nullable="false">
+        <initialValue xmi:id="_0KEPDaaVEfGq3IYnFJCINg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0KEPDqaVEfGq3IYnFJCINg" name="PurchaseQty" label="PurchaseQty" length="20" precision="6" sourceType="DECIMAL" talendType="id_BigDecimal" nullable="false">
+        <initialValue xmi:id="_0KEPD6aVEfGq3IYnFJCINg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0KEPEKaVEfGq3IYnFJCINg" name="PurchasePrice" label="PurchasePrice" length="20" precision="6" sourceType="DECIMAL" talendType="id_BigDecimal" nullable="false">
+        <initialValue xmi:id="_0KEPEaaVEfGq3IYnFJCINg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0KEPEqaVEfGq3IYnFJCINg" name="DateRequired" label="DateRequired" length="23" precision="3" sourceType="DATETIME" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_0KEPE6aVEfGq3IYnFJCINg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0KEPFKaVEfGq3IYnFJCINg" name="PurchaseSupplierDescription" label="PurchaseSupplierDescription" length="1000" sourceType="NVARCHAR" talendType="id_String">
+        <initialValue xmi:id="_0KEPFaaVEfGq3IYnFJCINg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0KEPFqaVEfGq3IYnFJCINg" name="PurchaseUOM" label="PurchaseUOM" length="50" sourceType="NVARCHAR" talendType="id_String">
+        <initialValue xmi:id="_0KEPF6aVEfGq3IYnFJCINg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0KEPGKaVEfGq3IYnFJCINg" name="DestInventoryLoc" label="DestInventoryLoc" length="10" sourceType="INT" talendType="id_Integer" nullable="false">
+        <initialValue xmi:id="_0KEPGaaVEfGq3IYnFJCINg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0KEPGqaVEfGq3IYnFJCINg" name="ItemDescription" label="ItemDescription" length="1000" sourceType="NVARCHAR" talendType="id_String">
+        <initialValue xmi:id="_0KEPG6aVEfGq3IYnFJCINg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0KEPHKaVEfGq3IYnFJCINg" name="CName" label="CName" length="100" sourceType="NVARCHAR" talendType="id_String">
+        <initialValue xmi:id="_0KEPHaaVEfGq3IYnFJCINg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0KEPHqaVEfGq3IYnFJCINg" name="CompanyCustom3" label="CompanyCustom3" length="20" precision="6" sourceType="DECIMAL" talendType="id_BigDecimal">
+        <initialValue xmi:id="_0KEPH6aVEfGq3IYnFJCINg" body=""/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>
