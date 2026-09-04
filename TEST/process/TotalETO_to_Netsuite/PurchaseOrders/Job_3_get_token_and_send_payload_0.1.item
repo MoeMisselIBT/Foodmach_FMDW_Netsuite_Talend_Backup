@@ -360,7 +360,7 @@
     </elementParameter>
     <elementParameter field="CHECK" name="configuration.dataset.hasBody" value="true"/>
     <elementParameter field="CLOSED_LIST" name="configuration.dataset.body.type" value="JSON"/>
-    <elementParameter field="MEMO" name="configuration.dataset.body.jsonValue" value="{&#xD;&#xA;    &quot;vendorId&quot;: 806,&#xD;&#xA;    &quot;memo&quot;: &quot;Hello&quot;,&#xD;&#xA;    &quot;items&quot;: [&#xD;&#xA;      {&#xD;&#xA;        &quot;itemId&quot;: 317,&#xD;&#xA;        &quot;quantity&quot;: 6&#xD;&#xA;      }&#xD;&#xA;    ]&#xD;&#xA; }"/>
+    <elementParameter field="MEMO" name="configuration.dataset.body.jsonValue" value="context.JSON_Payload"/>
     <elementParameter field="TABLE" name="configuration.dataset.body.params" show="false"/>
     <elementParameter field="CLOSED_LIST" name="configuration.dataset.format" value="RAW_TEXT"/>
     <elementParameter field="TEXT" name="configuration.dataset.dssl" value="" show="false"/>
