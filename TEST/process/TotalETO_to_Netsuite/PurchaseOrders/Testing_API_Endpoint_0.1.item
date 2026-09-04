@@ -171,7 +171,7 @@
   </node>
   <node componentName="tFileInputRaw" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="200" posY="680">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputRaw_1" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Talend-Studio-20260708_1430-V8.0.1/Talend-Studio-20260708_1430-V8.0.1/workspace/in.txt&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:\\Users\\mmisselmany\\Downloads\\succeeded.txt&quot;"/>
     <elementParameter field="RADIO" name="AS_STRING" value="true"/>
     <elementParameter field="RADIO" name="AS_BYTEARRAY" value="false"/>
     <elementParameter field="RADIO" name="AS_INPUTSTREAM" value="false"/>
