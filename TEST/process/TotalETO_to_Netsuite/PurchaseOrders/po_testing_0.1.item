@@ -5,7 +5,8 @@
     <contextParameter comment="" name="client_id" prompt="client_id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="36b9738ac8559b400408daaca9c22dc6cdcffc3c6fdd633c7e081038788c34df" internalId="_O1QzQadnEfGT9oUEhMZZCw"/>
     <contextParameter comment="" name="certificate_id" prompt="certificate_id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="S_eR_japu9FLYSq2Kzq9pw9OPBfiKkMR2trklvfe4Es" internalId="_O1QzQqdnEfGT9oUEhMZZCw"/>
     <contextParameter comment="" name="scope" prompt="scope?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="restlets rest_webservices" internalId="_O1QzQ6dnEfGT9oUEhMZZCw"/>
-    <contextParameter comment="" name="private_key_path" prompt="private_key_path?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="C:\Users\Administrator\Documents\FM\private.pem" internalId="_O1QzRKdnEfGT9oUEhMZZCw"/>
+    <contextParameter comment="" name="private_key_path" prompt="private_key_path?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="C:\Users\mmisselmany\Downloads\PO_Auth_flow\PO_Auth_flow\private.pem" internalId="_O1QzRKdnEfGT9oUEhMZZCw"/>
+    <contextParameter comment="" name="JSON_Payload" prompt="JSON_Payload?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_jMDhcKgQEfGq3IYnFJCINg"/>
   </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
@@ -296,6 +297,166 @@
       <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
+  <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="360" posY="440">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSetGlobalVar_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TABLE" name="VARIABLES">
+      <elementValue elementRef="KEY" value="&quot;json_dummy&quot;" id="0"/>
+      <elementValue elementRef="VALUE" value="row14.json" id="1"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSetGlobalVar_1">
+      <column comment="" key="false" length="-1" name="json" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="HTTPClient" componentVersion="5" offsetLabelX="0" offsetLabelY="0" posX="600" posY="440">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHTTPClient_2" show="false"/>
+    <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="aHR0cC1zdHVkaW8jSFRUUCNDbGllbnQ" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.base" value="https://847280-sb1.restlets.api.netsuite.com/app/site/hosting"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.type" value="Bearer"/>
+    <elementParameter field="PASSWORD" name="configuration.dataset.datastore.authentication.bearerToken" value="enc:system.encryption.key.v1:dHuEAFWZGTkvPXkXEzbKV6Phy46Z0azZ7XW9e56n4tpjGhAK6Hm2Dm4k4fuKJD60+0BF4lf5ayDm0tMWtIp3RNS7PY2jbNTYEqlFhJnqKc84di0HDSM+BzCRiCpQp8K8mXlU92FO0WN2HWa/k2xeNCNb73Eu0OdrF0sM4paPEqWwVgpS9egD8rsYdmkS4s67EIT66A8cnywIZIh5FrD5Oabbt2SkoQt7ZejTW4N3VJ0mFwXX6ujFUKw2sdTdCZdwDWZ8F850TMwaeb746v9qxvy3m/LfH1rjcSAejuXZ+gGxvonYpXzWQ0RhsAt+ic6uaQseDZr74JNlfqHNU3PVzbXL63FAk8T10k9MCy9fxLMYQSB44SYVTBKyJtEeNzHlyqkGRQAUPM/oGi9XO9oBf25CIO3pwfWNYn2LeshdRFskNWZQcMDh/FYelVBC/GivdZOatf4ime+Pfi2vNNUVXMGR07h2ENUTA8zk6enOTFlfE5k4ZjXC0B5Q8t1V0/3p2cTD+MMc5bV8NJxeqJL7lDl4L7gjasPxCZr/boAPcAJQ4gq0ny7T8WhK0+yYzHCSF48LqTxmmZFOkxN6SJ5ImHlMjVIfQTWOHVOFRFRFUUn+0gd/McmG3JtsquFANOzypWLy5+QBKx15VIgrAL2ilw6H+1usiC4ti77R/X7YxZlGmGE0DjfTeTaTePsbLyyoBU3vsxuSAjDSHCEmWru0CqwUKz2p80oURC8nqDnS6vUmzHmMkECYvB+Wh1qsvBLjoHTAl9WMrA8vvE2z8vr0Ks84x0/JCsL413TOxGVGJg1ijbBNAkO+sdORwDQxUTAP06024s4irrCPVvt0IwBx6yHLcZFV6ozd6cOzibC1xT8lqDYJVBQdgQVtNh7la6OnNy4JloIGyeneRliz5KzdQlOfnoO7BfHoQm98p44wbzrUDuUYAJdTSa3FvEsA1ZfzKR014R6yF7QwkEQPKVbOY4D7bV56NuBiCt8U74l4pc46UKnNxQMdgwy40reEv0FeDNosLdtHt5iwRDIVvxWYbWqlYnCji2r288z5oyoul2wJOkBRZ41kPYu1LKbivFR2XhKCL2MR9qh/dKLcfBwzAVmTz97Wo9AxIupNZiXXpZC4ZetgF9mGaFDpsDySWeyAtqqGJusSw1+ibHCCz1vxHw0eIu1iCP0IXCouwUaCSGb0t3L3ri7QuoNI9EvEodYi4FUTiNbkv+xy+5YMmQ2hPRI2/U+xnJsSmPy1zky9lW0oPKeF68IMW5kPsZIg+wS09r+eVDL76qhVlyoOIC/FrANV2qUOz17bW4cq1ZLJEK2qFaVn0MajQnT9RWRPsFV6m7xEe1dN0aN0f0WXVZjUUKR/dQtbzzH7xoyGxTiR8zacLgMOCNe+d3NseYGYOh0r/SjQcPJNPhcLSrSJrQoPe8GoqC/Kh8bo1jbPwrhg/LrAxzocT0ogvnHrsz7gTJvphclAcnuy2wNJFvBJK4PSzfP3Cf9tlXWYvPA63p3geb0zCu6+uFcbsLDfI9i/FpyFtTjPa/9AWwma7/P9PkJk+BJKXI9Ue4rukIHOj+QTHheyfmrzJiwi7eXvMBmL0fvAzTHJ1jgj2BcLUA0VBZcrfuTLaNF8fpxJ"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.apiKey.destination" value="HEADERS" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.apiKey.headerName" value="Authorization" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.apiKey.queryName" value="apikey" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.apiKey.prefix" value="Bearer" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.oauth20.flow" value="CLIENT_CREDENTIAL" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.oauth20.authenticationType" value="BASIC" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.datastore.authentication.oauth20.params" show="false"/>
+    <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataset.methodType" value="POST"/>
+    <elementParameter field="TEXT" name="configuration.dataset.resource" value="/restlet.nl?script=2962&amp;deploy=1"/>
+    <elementParameter field="CHECK" name="configuration.dataset.hasPathParams" value="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.pathParams" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.hasQueryParams" value="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.queryParams" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.hasHeaders" value="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.headers" show="false">
+      <elementValue elementRef="configuration.dataset.headers[].key" value="&quot;realm&quot;" id="0"/>
+      <elementValue elementRef="configuration.dataset.headers[].value" value="847280_SB1" id="1"/>
+      <elementValue elementRef="configuration.dataset.headers[].query" value="MAIN" id="2"/>
+      <elementValue elementRef="configuration.dataset.headers[].key" value="&quot;oauth_consumer_key&quot;" id="3"/>
+      <elementValue elementRef="configuration.dataset.headers[].value" value="36b9738ac8559b400408daaca9c22dc6cdcffc3c6fdd633c7e081038788c34df" id="4"/>
+      <elementValue elementRef="configuration.dataset.headers[].query" value="MAIN" id="5"/>
+      <elementValue elementRef="configuration.dataset.headers[].key" value="&quot;oauth_token&quot;" id="6"/>
+      <elementValue elementRef="configuration.dataset.headers[].value" value="fbd296529aab911d8a977fa8385e5f97da1d70db3313f5c2d817607bf5c48909" id="7"/>
+      <elementValue elementRef="configuration.dataset.headers[].query" value="MAIN" id="8"/>
+      <elementValue elementRef="configuration.dataset.headers[].key" value="&quot;oauth_nonce&quot;" id="9"/>
+      <elementValue elementRef="configuration.dataset.headers[].value" value="e9d588816ccbb1f76441f283632f0dca" id="10"/>
+      <elementValue elementRef="configuration.dataset.headers[].query" value="MAIN" id="11"/>
+      <elementValue elementRef="configuration.dataset.headers[].key" value="&quot;oauth_timestamp&quot;" id="12"/>
+      <elementValue elementRef="configuration.dataset.headers[].value" value="1788397938" id="13"/>
+      <elementValue elementRef="configuration.dataset.headers[].query" value="MAIN" id="14"/>
+      <elementValue elementRef="configuration.dataset.headers[].key" value="&quot;oauth_signature_method&quot;" id="15"/>
+      <elementValue elementRef="configuration.dataset.headers[].value" value="HMAC-SHA256" id="16"/>
+      <elementValue elementRef="configuration.dataset.headers[].query" value="MAIN" id="17"/>
+      <elementValue elementRef="configuration.dataset.headers[].key" value="&quot;oauth_version&quot;" id="18"/>
+      <elementValue elementRef="configuration.dataset.headers[].value" value="1.0" id="19"/>
+      <elementValue elementRef="configuration.dataset.headers[].query" value="MAIN" id="20"/>
+      <elementValue elementRef="configuration.dataset.headers[].key" value="&quot;oauth_signature&quot;" id="21"/>
+      <elementValue elementRef="configuration.dataset.headers[].value" value="486miyjNtb%2BYJPP00pIcyKtxqjPNCxHMjv4E7RqIt2o%3D" id="22"/>
+      <elementValue elementRef="configuration.dataset.headers[].query" value="MAIN" id="23"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="configuration.dataset.hasBody" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.body.type" value="JSON"/>
+    <elementParameter field="MEMO" name="configuration.dataset.body.jsonValue" value="(String) globalMap.get(&quot;json_dummy&quot;)"/>
+    <elementParameter field="TABLE" name="configuration.dataset.body.params" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.format" value="RAW_TEXT"/>
+    <elementParameter field="TEXT" name="configuration.dataset.dssl" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.returnedContent" value="STATUS_HEADERS_BODY"/>
+    <elementParameter field="CHECK" name="configuration.dataset.outputKeyValuePairs" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.forwardInput" value="false" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.keyValuePairs" show="false"/>
+    <elementParameter field="CHECK" name="configuration.downloadFile" value="false"/>
+    <elementParameter field="CHECK" name="configuration.specifyFileName" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.useCacheToSave" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.datastore.authentication.oauth20.customizeHeaderName" value="false" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.oauth20.customHeaderName" value="Authorization" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.datastore.authentication.oauth20.customizeTokenPrefix" value="false" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.oauth20.customTokenPrefix" value="Bearer" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.connectionTimeout" value="30000"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.receiveTimeout" value="120000"/>
+    <elementParameter field="CHECK" name="configuration.dataset.datastore.bypassCertificateValidation" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.datastore.useProxy" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.proxyConfiguration.proxyType" value="HTTP" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.proxyConfiguration.proxyPort" value="443" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.datastore.hasRetry" value="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.retry.backoff" value="500" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.retry.factor" value="1" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.retry.maxAttempts" value="2" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.acceptRedirections" value="true"/>
+    <elementParameter field="TEXT" name="configuration.dataset.maxRedirectOnSameURL" value="3"/>
+    <elementParameter field="CHECK" name="configuration.dataset.onlySameHost" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.hasPagination" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.pagination.strategy" value="OFFSET_LIMIT" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.pagination.offsetLimitStrategyConfig.location" value="QUERY_PARAMETERS" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.pagination.markerStrategyConfig.location" value="QUERY_PARAMETERS" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.pagination.markerStrategyConfig.limitValue" value="100" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.jsonForceDouble" value="true" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.normalizeJson" value="false" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.jsonCastConfigurations" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.jsonFilterConfigurations" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.enforceNumberAsString" value="true" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.useCookies" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.saveCookies" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.disableChunkedEncoding" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.httpVersion" value="HTTP_2"/>
+    <elementParameter field="CHECK" name="configuration.uploadFiles" value="false"/>
+    <elementParameter field="TABLE" name="configuration.uploadFileTable" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dieOnError" value="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataset.__version" value="5" show="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataset.datastore.__version" value="5" show="false"/>
+    <metadata connector="LOOKUP" name="LOOKUP"/>
+    <metadata connector="MERGE" name="MERGE"/>
+    <metadata connector="REJECT" name="REJECT"/>
+    <metadata connector="FLOW" name="tHTTPClient_2">
+      <column comment="" key="false" length="-1" name="headers" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="status" nullable="false" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="880" posY="440">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="headers" id="0"/>
+      <elementValue elementRef="LENGTH" value="10" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="status" id="2"/>
+      <elementValue elementRef="LENGTH" value="10" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="body" id="4"/>
+      <elementValue elementRef="LENGTH" value="10" id="5"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Response"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_1">
+      <column comment="" key="false" length="-1" name="headers" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="status" nullable="false" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="240" posY="680">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_3" show="false"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="System.out.println(&quot;jsonPayload = &quot; + context.JSON_Payload);"/>
+    <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Show payload"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_3"/>
+  </node>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tHTTPClient_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2" show="false"/>
   </connection>
@@ -306,9 +467,25 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
   </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tHTTPClient_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tHTTPClient_1" target="tJava_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk5" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tHTTPClient_1" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tHTTPClient_1" target="tSetGlobalVar_1">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk4" show="false"/>
+  </connection>
   <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tExtractJSONFields_2" offsetLabelX="0" offsetLabelY="0" source="tExtractJSONFields_2" target="tLogRow_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tSetGlobalVar_1" offsetLabelX="0" offsetLabelY="0" source="tSetGlobalVar_1" target="tHTTPClient_2">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row13" lineStyle="0" metaname="tHTTPClient_2" offsetLabelX="0" offsetLabelY="0" source="tHTTPClient_2" target="tLogRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row13" show="false"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
@@ -327,6 +504,21 @@
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSetGlobalVar_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHTTPClient_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_3" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
   </subjob>

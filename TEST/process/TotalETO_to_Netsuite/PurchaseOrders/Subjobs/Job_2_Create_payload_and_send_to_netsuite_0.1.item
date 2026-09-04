@@ -3,10 +3,11 @@
   <context confirmationNeeded="false" hide="false" name="Default">
     <contextParameter comment="" name="PO_ID_List" prompt="PO_ID_List?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_8b6SoKdAEfGq3IYnFJCINg"/>
     <contextParameter comment="" name="PO_Creation_Result" prompt="PO_Creation_Result?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="" internalId="_w9hlsKfuEfGq3IYnFJCINg"/>
+    <contextParameter comment="" name="JSON_Payload" prompt="JSON_Payload?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_XMlckKgBEfGq3IYnFJCINg"/>
   </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="40" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
@@ -102,7 +103,7 @@
     <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
     <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
   </parameters>
-  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="80" posY="200">
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="120" posY="240">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
@@ -121,7 +122,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT&#xD;&#xA;&#x9;PH.PurchaseSupplierID AS PurchaseSupplierID_POH,&#xD;&#xA;&#x9;PH.PurchaseDate AS PurchaseDate_POH,&#xD;&#xA;&#x9;PH.PurchaseTerms AS PurchaseTerms_POH,&#xD;&#xA;&#x9;PH.PurchaseNotes AS PurchaseNotes_POH,&#xD;&#xA;&#x9;PH.PurchaseShipTo AS PurchaseShipTo_POH,&#xD;&#xA;&#x9;PH.PurchaseDateRequired AS PurchaseDateRequired_POH,&#xD;&#xA;&#x9;PH.PurchaseCurr AS PurchaseCurr_POH,&#xD;&#xA;&#x9;PH.PurchaseCurrRate AS PurchaseCurrRate_POH,&#xD;&#xA;&#x9;PH.PurchaseTax1 AS PurchaseTax1_POH,&#xD;&#xA;&#x9;PH.PurchaseTax1Name AS PurchaseTax1Name_POH,&#xD;&#xA;&#x9;PH.BuyerID AS BuyerID_POH,&#xD;&#xA;&#x9;PD.PurchaseDetailID AS PurchaseDetailID_POD,&#xD;&#xA;&#x9;PD.PurchaseOrderID AS PurchaseOrderID_POD,&#xD;&#xA;&#x9;PD.ProjectID AS ProjectID_POD,&#xD;&#xA;&#x9;PD.SpecID AS SpecID_POD,&#xD;&#xA;&#x9;PD.ItemID AS ItemID_POD,&#xD;&#xA;&#x9;PD.PurchaseQty AS PurchaseQty_POD,&#xD;&#xA;&#x9;PD.PurchasePrice AS PurchasePrice_POD,&#xD;&#xA;&#x9;PD.DateRequired AS DateRequired_POD,&#xD;&#xA;&#x9;PD.PurchaseSupplierDescription AS PurchaseSupplierDescription_POD,&#xD;&#xA;&#x9;PD.PurchaseUOM AS PurchaseUOM_POD,&#xD;&#xA;&#x9;PD.DestInventoryLoc AS DestInventoryLoc_POD,&#xD;&#xA;&#x9;I.ItemDescription AS ItemDescription_I,&#xD;&#xA;&#x9;C.CName AS CName_C,&#xD;&#xA;&#x9;C.CompanyCustom3 AS CompanyCustom3_C&#xD;&#xA;FROM&#xD;&#xA;&#x9;Foodmach_Training.dbo.tblPurchaseOrderDetails PD&#xD;&#xA;&#x9;LEFT JOIN Foodmach_Training.dbo.tblPurchaseOrderHeader PH ON PD.PurchaseOrderID = PH.PurchaseOrderID&#xD;&#xA;&#x9;LEFT JOIN Foodmach_Training.dbo.tblCompany C ON PH.PurchaseSupplierID = C.CompanyID&#xD;&#xA;&#x9;LEFT JOIN Foodmach_Training.dbo.tblEngItemMaster I ON PD.ItemID = I.ItemID&#xD;&#xA;WHERE&#x9;PD.PurchaseOrderID IN (&quot; + context.PO_ID_List + &quot;)&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT&#xD;&#xA;&#x9;PH.PurchaseSupplierID AS PurchaseSupplierID_POH,&#xD;&#xA;&#x9;PH.PurchaseDate AS PurchaseDate_POH,&#xD;&#xA;&#x9;PH.PurchaseTerms AS PurchaseTerms_POH,&#xD;&#xA;&#x9;PH.PurchaseNotes AS PurchaseNotes_POH,&#xD;&#xA;&#x9;PH.PurchaseShipTo AS PurchaseShipTo_POH,&#xD;&#xA;&#x9;PH.PurchaseDateRequired AS PurchaseDateRequired_POH,&#xD;&#xA;&#x9;PH.PurchaseCurr AS PurchaseCurr_POH,&#xD;&#xA;&#x9;PH.PurchaseCurrRate AS PurchaseCurrRate_POH,&#xD;&#xA;&#x9;PH.PurchaseTax1 AS PurchaseTax1_POH,&#xD;&#xA;&#x9;PH.PurchaseTax1Name AS PurchaseTax1Name_POH,&#xD;&#xA;&#x9;PH.BuyerID AS BuyerID_POH,&#xD;&#xA;&#x9;PD.PurchaseDetailID AS PurchaseDetailID_POD,&#xD;&#xA;&#x9;PD.PurchaseOrderID AS PurchaseOrderID_POD,&#xD;&#xA;&#x9;PD.ProjectID AS ProjectID_POD,&#xD;&#xA;&#x9;PD.SpecID AS SpecID_POD,&#xD;&#xA;&#x9;PD.ItemID AS ItemID_POD,&#xD;&#xA;&#x9;PD.PurchaseQty AS PurchaseQty_POD,&#xD;&#xA;&#x9;PD.PurchasePrice AS PurchasePrice_POD,&#xD;&#xA;&#x9;PD.DateRequired AS DateRequired_POD,&#xD;&#xA;&#x9;PD.PurchaseSupplierDescription AS PurchaseSupplierDescription_POD,&#xD;&#xA;&#x9;PD.PurchaseUOM AS PurchaseUOM_POD,&#xD;&#xA;&#x9;PD.DestInventoryLoc AS DestInventoryLoc_POD,&#xD;&#xA;&#x9;I.ItemDescription AS ItemDescription_I,&#xD;&#xA;&#x9;C.CName AS CName_C,&#xD;&#xA;&#x9;C.CompanyCustom3 AS CompanyCustom3_C&#xD;&#xA;FROM&#xD;&#xA;&#x9;Foodmach_Training.dbo.tblPurchaseOrderDetails PD&#xD;&#xA;&#x9;LEFT JOIN Foodmach_Training.dbo.tblPurchaseOrderHeader PH ON PD.PurchaseOrderID = PH.PurchaseOrderID&#xD;&#xA;&#x9;LEFT JOIN Foodmach_Training.dbo.tblCompany C ON PH.PurchaseSupplierID = C.CompanyID&#xD;&#xA;&#x9;LEFT JOIN Foodmach_Training.dbo.tblEngItemMaster I ON PD.ItemID = I.ItemID&#xD;&#xA;WHERE&#x9;PD.PurchaseOrderID IN (&quot; + context.PO_ID_List + &quot;)&#xD;&#xA;&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -219,7 +220,7 @@
       <column comment="" defaultValue="" key="false" length="20" name="CompanyCustom3_C" nullable="true" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="280" posY="200">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="320" posY="240">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -320,7 +321,7 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="520" posY="200">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="560" posY="240">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
@@ -417,7 +418,7 @@
       <column comment="" defaultValue="" key="false" length="20" name="CompanyCustom3_C" nullable="true" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tSortRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="720" posY="200">
+  <node componentName="tSortRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="760" posY="240">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSortRow_1" show="false"/>
     <elementParameter field="TABLE" name="CRITERIA">
       <elementValue elementRef="COLNAME" value="PurchaseSupplierID_POH" id="0"/>
@@ -457,7 +458,7 @@
       <column comment="" defaultValue="" key="false" length="20" name="CompanyCustom3_C" nullable="true" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="920" posY="200">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="960" posY="240">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_2" show="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
@@ -554,9 +555,40 @@
       <column comment="" defaultValue="" key="false" length="20" name="CompanyCustom3_C" nullable="true" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tWriteJSONField" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="200">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tWriteJSONField_1" show="false"/>
-    <elementParameter field="COLUMN_LIST" name="JSONFIELD" value="json"/>
+  <node componentName="tReplicate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="240">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tReplicate_1" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="tblPurchaseOrderDetails" name="tReplicate_1">
+      <column comment="" defaultValue="" key="false" length="10" name="PurchaseSupplierID_POH" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="PurchaseDate_POH" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="PurchaseTerms_POH" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="PurchaseNotes_POH" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="PurchaseShipTo_POH" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="PurchaseDateRequired_POH" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="PurchaseCurr_POH" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="PurchaseCurrRate_POH" nullable="true" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="PurchaseTax1_POH" nullable="true" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="PurchaseTax1Name_POH" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="BuyerID_POH" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="true" length="10" name="PurchaseDetailID_POD" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="PurchaseOrderID_POD" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="ProjectID_POD" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="53" name="SpecID_POD" nullable="false" pattern="" precision="0" sourceType="FLOAT" type="id_Double" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="ItemID_POD" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="PurchaseQty_POD" nullable="false" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="PurchasePrice_POD" nullable="false" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="DateRequired_POD" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="PurchaseSupplierDescription_POD" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="PurchaseUOM_POD" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="DestInventoryLoc_POD" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="ItemDescription_I" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="CName_C" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="CompanyCustom3_C" nullable="true" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tWriteJSONField" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1320" posY="240">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tWriteJSONField_2" show="false"/>
+    <elementParameter field="COLUMN_LIST" name="JSONFIELD" value="json_po_payload"/>
     <elementParameter field="TABLE" name="ROOT" show="false">
       <elementValue elementRef="PATH" value="/PurchaseOrders" id="0"/>
       <elementValue elementRef="COLUMN" value="" id="1"/>
@@ -570,147 +602,47 @@
       <elementValue elementRef="VALUE" value="" id="2"/>
       <elementValue elementRef="ATTRIBUTE" value="main" id="3"/>
       <elementValue elementRef="ORDER" value="2" id="4"/>
-      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/PurchaseNotes_POH" id="5"/>
-      <elementValue elementRef="COLUMN" value="PurchaseNotes_POH" id="6"/>
+      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/vendorId" id="5"/>
+      <elementValue elementRef="COLUMN" value="CompanyCustom3_C" id="6"/>
       <elementValue elementRef="VALUE" value="" id="7"/>
       <elementValue elementRef="ATTRIBUTE" value="branch" id="8"/>
       <elementValue elementRef="ORDER" value="3" id="9"/>
-      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/PurchaseSupplierID_POH" id="10"/>
-      <elementValue elementRef="COLUMN" value="PurchaseSupplierID_POH" id="11"/>
+      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/memo" id="10"/>
+      <elementValue elementRef="COLUMN" value="PurchaseNotes_POH" id="11"/>
       <elementValue elementRef="VALUE" value="" id="12"/>
       <elementValue elementRef="ATTRIBUTE" value="branch" id="13"/>
       <elementValue elementRef="ORDER" value="4" id="14"/>
-      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/PurchaseDate_POH" id="15"/>
-      <elementValue elementRef="COLUMN" value="PurchaseDate_POH" id="16"/>
+      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/items" id="15"/>
+      <elementValue elementRef="COLUMN" value="" id="16"/>
       <elementValue elementRef="VALUE" value="" id="17"/>
-      <elementValue elementRef="ATTRIBUTE" value="branch" id="18"/>
+      <elementValue elementRef="ATTRIBUTE" value="main" id="18"/>
       <elementValue elementRef="ORDER" value="5" id="19"/>
-      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/PurchaseTerms_POH" id="20"/>
-      <elementValue elementRef="COLUMN" value="PurchaseTerms_POH" id="21"/>
-      <elementValue elementRef="VALUE" value="" id="22"/>
-      <elementValue elementRef="ATTRIBUTE" value="branch" id="23"/>
+      <elementValue elementRef="PATH" value="class" id="20"/>
+      <elementValue elementRef="COLUMN" value="" id="21"/>
+      <elementValue elementRef="VALUE" value="array" id="22"/>
+      <elementValue elementRef="ATTRIBUTE" value="attri" id="23"/>
       <elementValue elementRef="ORDER" value="6" id="24"/>
-      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/PurchaseShipTo_POH" id="25"/>
-      <elementValue elementRef="COLUMN" value="PurchaseShipTo_POH" id="26"/>
-      <elementValue elementRef="VALUE" value="" id="27"/>
-      <elementValue elementRef="ATTRIBUTE" value="branch" id="28"/>
-      <elementValue elementRef="ORDER" value="7" id="29"/>
-      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/PurchaseDateRequired_POH" id="30"/>
-      <elementValue elementRef="COLUMN" value="PurchaseDateRequired_POH" id="31"/>
-      <elementValue elementRef="VALUE" value="" id="32"/>
-      <elementValue elementRef="ATTRIBUTE" value="branch" id="33"/>
-      <elementValue elementRef="ORDER" value="8" id="34"/>
-      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/PurchaseCurr_POH" id="35"/>
-      <elementValue elementRef="COLUMN" value="PurchaseCurr_POH" id="36"/>
-      <elementValue elementRef="VALUE" value="" id="37"/>
-      <elementValue elementRef="ATTRIBUTE" value="branch" id="38"/>
-      <elementValue elementRef="ORDER" value="9" id="39"/>
-      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/PurchaseCurrRate_POH" id="40"/>
-      <elementValue elementRef="COLUMN" value="PurchaseCurrRate_POH" id="41"/>
-      <elementValue elementRef="VALUE" value="" id="42"/>
-      <elementValue elementRef="ATTRIBUTE" value="branch" id="43"/>
-      <elementValue elementRef="ORDER" value="10" id="44"/>
-      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/PurchaseTax1_POH" id="45"/>
-      <elementValue elementRef="COLUMN" value="PurchaseTax1_POH" id="46"/>
-      <elementValue elementRef="VALUE" value="" id="47"/>
-      <elementValue elementRef="ATTRIBUTE" value="branch" id="48"/>
-      <elementValue elementRef="ORDER" value="11" id="49"/>
-      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/PurchaseTax1Name_POH" id="50"/>
-      <elementValue elementRef="COLUMN" value="PurchaseTax1Name_POH" id="51"/>
-      <elementValue elementRef="VALUE" value="" id="52"/>
-      <elementValue elementRef="ATTRIBUTE" value="branch" id="53"/>
-      <elementValue elementRef="ORDER" value="12" id="54"/>
-      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/BuyerID_POH" id="55"/>
-      <elementValue elementRef="COLUMN" value="BuyerID_POH" id="56"/>
-      <elementValue elementRef="VALUE" value="" id="57"/>
-      <elementValue elementRef="ATTRIBUTE" value="branch" id="58"/>
-      <elementValue elementRef="ORDER" value="13" id="59"/>
-      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/CName_C" id="60"/>
-      <elementValue elementRef="COLUMN" value="CName_C" id="61"/>
-      <elementValue elementRef="VALUE" value="" id="62"/>
-      <elementValue elementRef="ATTRIBUTE" value="branch" id="63"/>
-      <elementValue elementRef="ORDER" value="14" id="64"/>
-      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/CompanyCustom3_C" id="65"/>
-      <elementValue elementRef="COLUMN" value="CompanyCustom3_C" id="66"/>
-      <elementValue elementRef="VALUE" value="" id="67"/>
-      <elementValue elementRef="ATTRIBUTE" value="branch" id="68"/>
-      <elementValue elementRef="ORDER" value="15" id="69"/>
-      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/items" id="70"/>
-      <elementValue elementRef="COLUMN" value="" id="71"/>
-      <elementValue elementRef="VALUE" value="" id="72"/>
-      <elementValue elementRef="ATTRIBUTE" value="main" id="73"/>
-      <elementValue elementRef="ORDER" value="16" id="74"/>
-      <elementValue elementRef="PATH" value="class" id="75"/>
-      <elementValue elementRef="COLUMN" value="" id="76"/>
-      <elementValue elementRef="VALUE" value="array" id="77"/>
-      <elementValue elementRef="ATTRIBUTE" value="attri" id="78"/>
-      <elementValue elementRef="ORDER" value="17" id="79"/>
     </elementParameter>
     <elementParameter field="TABLE" name="LOOP" show="false">
       <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/items/item" id="0"/>
       <elementValue elementRef="COLUMN" value="" id="1"/>
       <elementValue elementRef="VALUE" value="" id="2"/>
       <elementValue elementRef="ATTRIBUTE" value="main" id="3"/>
-      <elementValue elementRef="ORDER" value="18" id="4"/>
-      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/items/item/PurchaseOrderID_POD" id="5"/>
-      <elementValue elementRef="COLUMN" value="PurchaseOrderID_POD" id="6"/>
+      <elementValue elementRef="ORDER" value="7" id="4"/>
+      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/items/item/itemId" id="5"/>
+      <elementValue elementRef="COLUMN" value="ItemID_POD" id="6"/>
       <elementValue elementRef="VALUE" value="" id="7"/>
       <elementValue elementRef="ATTRIBUTE" value="branch" id="8"/>
-      <elementValue elementRef="ORDER" value="19" id="9"/>
-      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/items/item/PurchaseDetailID_POD" id="10"/>
-      <elementValue elementRef="COLUMN" value="PurchaseDetailID_POD" id="11"/>
+      <elementValue elementRef="ORDER" value="8" id="9"/>
+      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/items/item/quantity" id="10"/>
+      <elementValue elementRef="COLUMN" value="PurchaseQty_POD" id="11"/>
       <elementValue elementRef="VALUE" value="" id="12"/>
       <elementValue elementRef="ATTRIBUTE" value="branch" id="13"/>
-      <elementValue elementRef="ORDER" value="20" id="14"/>
-      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/items/item/ProjectID_POD" id="15"/>
-      <elementValue elementRef="COLUMN" value="ProjectID_POD" id="16"/>
-      <elementValue elementRef="VALUE" value="" id="17"/>
-      <elementValue elementRef="ATTRIBUTE" value="branch" id="18"/>
-      <elementValue elementRef="ORDER" value="21" id="19"/>
-      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/items/item/SpecID_POD" id="20"/>
-      <elementValue elementRef="COLUMN" value="SpecID_POD" id="21"/>
-      <elementValue elementRef="VALUE" value="" id="22"/>
-      <elementValue elementRef="ATTRIBUTE" value="branch" id="23"/>
-      <elementValue elementRef="ORDER" value="22" id="24"/>
-      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/items/item/ItemID_POD" id="25"/>
-      <elementValue elementRef="COLUMN" value="ItemID_POD" id="26"/>
-      <elementValue elementRef="VALUE" value="" id="27"/>
-      <elementValue elementRef="ATTRIBUTE" value="branch" id="28"/>
-      <elementValue elementRef="ORDER" value="23" id="29"/>
-      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/items/item/PurchaseQty_POD" id="30"/>
-      <elementValue elementRef="COLUMN" value="PurchaseQty_POD" id="31"/>
-      <elementValue elementRef="VALUE" value="" id="32"/>
-      <elementValue elementRef="ATTRIBUTE" value="branch" id="33"/>
-      <elementValue elementRef="ORDER" value="24" id="34"/>
-      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/items/item/PurchasePrice_POD" id="35"/>
-      <elementValue elementRef="COLUMN" value="PurchasePrice_POD" id="36"/>
-      <elementValue elementRef="VALUE" value="" id="37"/>
-      <elementValue elementRef="ATTRIBUTE" value="branch" id="38"/>
-      <elementValue elementRef="ORDER" value="25" id="39"/>
-      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/items/item/DateRequired_POD" id="40"/>
-      <elementValue elementRef="COLUMN" value="DateRequired_POD" id="41"/>
-      <elementValue elementRef="VALUE" value="" id="42"/>
-      <elementValue elementRef="ATTRIBUTE" value="branch" id="43"/>
-      <elementValue elementRef="ORDER" value="26" id="44"/>
-      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/items/item/PurchaseSupplierDescription_POD" id="45"/>
-      <elementValue elementRef="COLUMN" value="PurchaseSupplierDescription_POD" id="46"/>
-      <elementValue elementRef="VALUE" value="" id="47"/>
-      <elementValue elementRef="ATTRIBUTE" value="branch" id="48"/>
-      <elementValue elementRef="ORDER" value="27" id="49"/>
-      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/items/item/PurchaseUOM_POD" id="50"/>
-      <elementValue elementRef="COLUMN" value="PurchaseUOM_POD" id="51"/>
-      <elementValue elementRef="VALUE" value="" id="52"/>
-      <elementValue elementRef="ATTRIBUTE" value="branch" id="53"/>
-      <elementValue elementRef="ORDER" value="28" id="54"/>
-      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/items/item/DestInventoryLoc_POD" id="55"/>
-      <elementValue elementRef="COLUMN" value="DestInventoryLoc_POD" id="56"/>
-      <elementValue elementRef="VALUE" value="" id="57"/>
-      <elementValue elementRef="ATTRIBUTE" value="branch" id="58"/>
-      <elementValue elementRef="ORDER" value="29" id="59"/>
+      <elementValue elementRef="ORDER" value="9" id="14"/>
     </elementParameter>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="TABLE" name="GROUPBYS">
-      <elementValue elementRef="OUTPUT_COLUMN" value="json" id="0"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="json_po_payload" id="0"/>
       <elementValue elementRef="INPUT_COLUMN" value="PurchaseSupplierID_POH" id="1"/>
     </elementParameter>
     <elementParameter field="CHECK" name="REMOVE_ROOT" value="true"/>
@@ -719,12 +651,13 @@
     <elementParameter field="CHECK" name="QUOTE_NULL_VALUES" value="true" show="false"/>
     <elementParameter field="CHECK" name="ALLOW_EMPTY_STRINGS" value="true"/>
     <elementParameter field="CHECK" name="USE_SCIENTIFIC_NOTATION" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="writeJSON_dummy_JSON"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tWriteJSONField_1">
-      <column comment="" key="false" length="-1" name="json" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    <metadata connector="FLOW" name="tWriteJSONField_2">
+      <column comment="" key="false" length="-1" name="json_po_payload" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1360" posY="200">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="120" posY="360">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_3" show="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
@@ -738,7 +671,7 @@
     <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
     <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
     <elementParameter field="TABLE" name="LENGTHS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="json" id="0"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="json_po_payload" id="0"/>
       <elementValue elementRef="LENGTH" value="10" id="1"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
@@ -746,8 +679,15 @@
     <elementParameter field="TEXT" name="LABEL" value="new JSON "/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tLogRow_3">
-      <column comment="" key="false" length="-1" name="json" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="json_po_payload" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
+  </node>
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="120" posY="600">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_3" show="false"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="context.JSON_Payload = json_flow.json_po_payload;"/>
+    <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJavaRow_3"/>
   </node>
   <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="120" posY="40">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_2" show="false"/>
@@ -770,7 +710,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT integration.tblPurchaseOrderHeader_integration.IntegrationID,&#xA;&#x9;&#x9;integration.tblPurchaseOrderHeader_integration.PurchaseOrderID,&#xA;&#x9;&#x9;integration.tblPurchaseOrderHeader_integration.header__timestamp,&#xA;&#x9;&#x9;integration.tblPurchaseOrderHeader_integration.header__change_oper,&#xA;&#x9;&#x9;integration.tblPurchaseOrderHeader_integration.DateTimeLoadedIntoIntegrationTableUTC,&#xA;&#x9;&#x9;integration.tblPurchaseOrderHeader_integration.LoadedIntoNetsuite,&#xA;&#x9;&#x9;integration.tblPurchaseOrderHeader_integration.TimeLoadedIntoNetsuiteUTC&#xA;FROM&#x9;integration.tblPurchaseOrderHeader_integration&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT TOP 2&#xD;&#xA;    integration.tblPurchaseOrderHeader_integration.IntegrationID,&#xD;&#xA;    integration.tblPurchaseOrderHeader_integration.PurchaseOrderID,&#xD;&#xA;    integration.tblPurchaseOrderHeader_integration.header__timestamp,&#xD;&#xA;    integration.tblPurchaseOrderHeader_integration.header__change_oper,&#xD;&#xA;    integration.tblPurchaseOrderHeader_integration.DateTimeLoadedIntoIntegrationTableUTC,&#xD;&#xA;    integration.tblPurchaseOrderHeader_integration.LoadedIntoNetsuite,&#xD;&#xA;    integration.tblPurchaseOrderHeader_integration.TimeLoadedIntoNetsuiteUTC&#xD;&#xA;FROM integration.tblPurchaseOrderHeader_integration&#xD;&#xA;ORDER BY integration.tblPurchaseOrderHeader_integration.header__timestamp DESC&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -943,102 +883,9 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJavaRow_2"/>
   </node>
-  <node componentName="tRESTClient" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="920" posY="320">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTClient_1" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="TEXT" name="URL" value="&quot;http://localhost:8088/API/purchaseorders&quot;"/>
-    <elementParameter field="TEXT" name="PATH" value="&quot;&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="METHOD" value="POST"/>
-    <elementParameter field="CLOSED_LIST" name="CONTENT_TYPE" value="application/json"/>
-    <elementParameter field="CLOSED_LIST" name="ACCEPT_TYPE" value="*/*"/>
-    <elementParameter field="TABLE" name="QUERY"/>
-    <elementParameter field="CHECK" name="SERVICE_LOCATOR" value="false"/>
-    <elementParameter field="TEXT" name="SERVICE_NAMESPACE" value="&quot;http://www.talend.org/rest/&quot;" show="false"/>
-    <elementParameter field="TEXT" name="SERVICE_NAME" value="&quot;&quot;" show="false"/>
-    <elementParameter field="CHECK" name="SERVICE_ACTIVITY_MONITOR" value="false"/>
-    <elementParameter field="CHECK" name="NEED_AUTH" value="false"/>
-    <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" value="BASIC" show="false"/>
-    <elementParameter field="TEXT" name="AUTH_USERNAME" value="&quot;username&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="enc:system.encryption.key.v1:CcLjSgUupHfIUkT1F5abA8NexUtuSp/USTOcOBIjTDLnGxz0h30=" show="false"/>
-    <elementParameter field="TEXT" name="AUTH_BEARER_TOKEN" value="&quot;&quot;" show="false"/>
-    <elementParameter field="CHECK" name="NEED_AUTHORIZATION" value="false" show="false"/>
-    <elementParameter field="TEXT" name="ROLE" value="&quot;&quot;" show="false"/>
-    <elementParameter field="CHECK" name="USE_BUSINESS_CORRELATION" value="false"/>
-    <elementParameter field="TEXT" name="CORRELATION_VALUE" value="&quot;&quot;" show="false"/>
-    <elementParameter field="CHECK" name="CHECK_SERVER_IDENTITY" value="true"/>
-    <elementParameter field="CHECK" name="REUSE_SSL_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
-    <elementParameter field="CHECK" name="LOG_MESSAGES" value="false"/>
-    <elementParameter field="CHECK" name="FOLLOW_REDIRECTS" value="false"/>
-    <elementParameter field="CHECK" name="REDIRECT_NON_SAME_HOST" value="false" show="false"/>
-    <elementParameter field="CHECK" name="MAINTAIN_SESSION" value="false" show="false"/>
-    <elementParameter field="CHECK" name="ENABLE_WEBCLIENT_OPERATION_REPORTING" value="true"/>
-    <elementParameter field="CHECK" name="CONVERT_RESPONSE_TO_DOM" value="true" show="false"/>
-    <elementParameter field="CHECK" name="UNWRAP_JSON_REQUEST" value="false"/>
-    <elementParameter field="CHECK" name="WRAP_JSON_RESPONSE" value="true" show="false"/>
-    <elementParameter field="CHECK" name="CONVERT_TYPES_TO_STRINGS" value="false"/>
-    <elementParameter field="CHECK" name="FORCE_HTTP_VERSION_TO_1_1" value="false"/>
-    <elementParameter field="TABLE" name="HEADERS"/>
-    <elementParameter field="TABLE" name="SERVICE_LOCATOR_CUSTOM_PROPERTIES" show="false"/>
-    <elementParameter field="TABLE" name="SERVICE_ACTIVITY_MONITOR_CUSTOM_PROPERTIES" show="false"/>
-    <elementParameter field="CHECK" name="DISABLE_CHUNKED_ENCODING" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_TIMEOUT" value="30"/>
-    <elementParameter field="TEXT" name="RECEIVE_TIMEOUT" value="60"/>
-    <elementParameter field="LABEL" name="RECEIVE_TIMEOUT_DESC" value="(See tRESTClient doc. to configure timeouts for Talend Runtime)"/>
-    <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
-    <elementParameter field="TEXT" name="PROXY_HOST" value="&quot;127.0.0.1&quot;" show="false"/>
-    <elementParameter field="TEXT" name="PROXY_PORT" value="8080" show="false"/>
-    <elementParameter field="TEXT" name="PROXY_USERNAME" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" value="enc:system.encryption.key.v1:2lg4XC2vsjyYbNLdPnnQdP4/9fuE5jeyiVzS2Gui" show="false"/>
-    <elementParameter field="TEXT" name="ARRAY_KEYS" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tRESTClient_1">
-      <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-    <metadata connector="RESPONSE" name="RESPONSE">
-      <column defaultValue="" key="false" length="0" name="statusCode" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="4048" name="string" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-    <metadata connector="FAULT" name="FAULT">
-      <column defaultValue="" key="false" length="0" name="errorCode" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="1024" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1360" posY="320">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_4" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
-    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
-    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
-    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
-    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
-    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
-    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
-    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
-    <elementParameter field="TABLE" name="LENGTHS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="statusCode" id="0"/>
-      <elementValue elementRef="LENGTH" value="10" id="1"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="body" id="2"/>
-      <elementValue elementRef="LENGTH" value="10" id="3"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="string" id="4"/>
-      <elementValue elementRef="LENGTH" value="10" id="5"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
-    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="Response"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tLogRow_4">
-      <column defaultValue="" key="false" length="0" name="statusCode" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="4048" name="string" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tFileInputRaw" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="80" posY="440">
+  <node componentName="tFileInputRaw" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="0" posY="520">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputRaw_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;C:\\Users\\mmisselmany\\Downloads\\succeeded.txt&quot;"/>
     <elementParameter field="RADIO" name="AS_STRING" value="true"/>
     <elementParameter field="RADIO" name="AS_BYTEARRAY" value="false"/>
@@ -1051,8 +898,9 @@
       <column defaultValue="" key="false" length="0" name="content" nullable="true" precision="0" sourceType="" type="id_Object" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="440">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="240" posY="520">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_7" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
     <elementParameter field="RADIO" name="VERTICAL" value="false"/>
@@ -1076,8 +924,9 @@
       <column defaultValue="" key="false" length="0" name="content" nullable="true" precision="0" sourceType="" type="id_Object" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tExtractJSONFields" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="560" posY="440">
+  <node componentName="tExtractJSONFields" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="520">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tExtractJSONFields_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CLOSED_LIST" name="READ_BY" value="JSONPATH"/>
     <elementParameter field="CLOSED_LIST" name="JSON_PATH_VERSION" value="2_1_0"/>
     <elementParameter field="PREV_COLUMN_LIST" name="JSONFIELD" value="content"/>
@@ -1126,8 +975,9 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="800" posY="440">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="-50" offsetLabelY="0" posX="720" posY="520">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_8" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
     <elementParameter field="RADIO" name="VERTICAL" value="false"/>
@@ -1157,6 +1007,377 @@
       <column comment="" key="false" length="-1" name="tranId" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
+  <node componentName="tWriteJSONField" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="560">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tWriteJSONField_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="JSONFIELD" value="json"/>
+    <elementParameter field="TABLE" name="ROOT" show="false">
+      <elementValue elementRef="PATH" value="/PurchaseOrders" id="0"/>
+      <elementValue elementRef="COLUMN" value="" id="1"/>
+      <elementValue elementRef="VALUE" value="" id="2"/>
+      <elementValue elementRef="ATTRIBUTE" value="main" id="3"/>
+      <elementValue elementRef="ORDER" value="1" id="4"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="GROUP" show="false">
+      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder" id="0"/>
+      <elementValue elementRef="COLUMN" value="" id="1"/>
+      <elementValue elementRef="VALUE" value="" id="2"/>
+      <elementValue elementRef="ATTRIBUTE" value="main" id="3"/>
+      <elementValue elementRef="ORDER" value="2" id="4"/>
+      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/PurchaseNotes_POH" id="5"/>
+      <elementValue elementRef="COLUMN" value="PurchaseNotes_POH" id="6"/>
+      <elementValue elementRef="VALUE" value="" id="7"/>
+      <elementValue elementRef="ATTRIBUTE" value="branch" id="8"/>
+      <elementValue elementRef="ORDER" value="3" id="9"/>
+      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/PurchaseSupplierID_POH" id="10"/>
+      <elementValue elementRef="COLUMN" value="PurchaseSupplierID_POH" id="11"/>
+      <elementValue elementRef="VALUE" value="" id="12"/>
+      <elementValue elementRef="ATTRIBUTE" value="branch" id="13"/>
+      <elementValue elementRef="ORDER" value="4" id="14"/>
+      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/PurchaseDate_POH" id="15"/>
+      <elementValue elementRef="COLUMN" value="PurchaseDate_POH" id="16"/>
+      <elementValue elementRef="VALUE" value="" id="17"/>
+      <elementValue elementRef="ATTRIBUTE" value="branch" id="18"/>
+      <elementValue elementRef="ORDER" value="5" id="19"/>
+      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/PurchaseTerms_POH" id="20"/>
+      <elementValue elementRef="COLUMN" value="PurchaseTerms_POH" id="21"/>
+      <elementValue elementRef="VALUE" value="" id="22"/>
+      <elementValue elementRef="ATTRIBUTE" value="branch" id="23"/>
+      <elementValue elementRef="ORDER" value="6" id="24"/>
+      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/PurchaseShipTo_POH" id="25"/>
+      <elementValue elementRef="COLUMN" value="PurchaseShipTo_POH" id="26"/>
+      <elementValue elementRef="VALUE" value="" id="27"/>
+      <elementValue elementRef="ATTRIBUTE" value="branch" id="28"/>
+      <elementValue elementRef="ORDER" value="7" id="29"/>
+      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/PurchaseDateRequired_POH" id="30"/>
+      <elementValue elementRef="COLUMN" value="PurchaseDateRequired_POH" id="31"/>
+      <elementValue elementRef="VALUE" value="" id="32"/>
+      <elementValue elementRef="ATTRIBUTE" value="branch" id="33"/>
+      <elementValue elementRef="ORDER" value="8" id="34"/>
+      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/PurchaseCurr_POH" id="35"/>
+      <elementValue elementRef="COLUMN" value="PurchaseCurr_POH" id="36"/>
+      <elementValue elementRef="VALUE" value="" id="37"/>
+      <elementValue elementRef="ATTRIBUTE" value="branch" id="38"/>
+      <elementValue elementRef="ORDER" value="9" id="39"/>
+      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/PurchaseCurrRate_POH" id="40"/>
+      <elementValue elementRef="COLUMN" value="PurchaseCurrRate_POH" id="41"/>
+      <elementValue elementRef="VALUE" value="" id="42"/>
+      <elementValue elementRef="ATTRIBUTE" value="branch" id="43"/>
+      <elementValue elementRef="ORDER" value="10" id="44"/>
+      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/PurchaseTax1_POH" id="45"/>
+      <elementValue elementRef="COLUMN" value="PurchaseTax1_POH" id="46"/>
+      <elementValue elementRef="VALUE" value="" id="47"/>
+      <elementValue elementRef="ATTRIBUTE" value="branch" id="48"/>
+      <elementValue elementRef="ORDER" value="11" id="49"/>
+      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/PurchaseTax1Name_POH" id="50"/>
+      <elementValue elementRef="COLUMN" value="PurchaseTax1Name_POH" id="51"/>
+      <elementValue elementRef="VALUE" value="" id="52"/>
+      <elementValue elementRef="ATTRIBUTE" value="branch" id="53"/>
+      <elementValue elementRef="ORDER" value="12" id="54"/>
+      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/BuyerID_POH" id="55"/>
+      <elementValue elementRef="COLUMN" value="BuyerID_POH" id="56"/>
+      <elementValue elementRef="VALUE" value="" id="57"/>
+      <elementValue elementRef="ATTRIBUTE" value="branch" id="58"/>
+      <elementValue elementRef="ORDER" value="13" id="59"/>
+      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/CName_C" id="60"/>
+      <elementValue elementRef="COLUMN" value="CName_C" id="61"/>
+      <elementValue elementRef="VALUE" value="" id="62"/>
+      <elementValue elementRef="ATTRIBUTE" value="branch" id="63"/>
+      <elementValue elementRef="ORDER" value="14" id="64"/>
+      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/CompanyCustom3_C" id="65"/>
+      <elementValue elementRef="COLUMN" value="CompanyCustom3_C" id="66"/>
+      <elementValue elementRef="VALUE" value="" id="67"/>
+      <elementValue elementRef="ATTRIBUTE" value="branch" id="68"/>
+      <elementValue elementRef="ORDER" value="15" id="69"/>
+      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/items" id="70"/>
+      <elementValue elementRef="COLUMN" value="" id="71"/>
+      <elementValue elementRef="VALUE" value="" id="72"/>
+      <elementValue elementRef="ATTRIBUTE" value="main" id="73"/>
+      <elementValue elementRef="ORDER" value="16" id="74"/>
+      <elementValue elementRef="PATH" value="class" id="75"/>
+      <elementValue elementRef="COLUMN" value="" id="76"/>
+      <elementValue elementRef="VALUE" value="array" id="77"/>
+      <elementValue elementRef="ATTRIBUTE" value="attri" id="78"/>
+      <elementValue elementRef="ORDER" value="17" id="79"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="LOOP" show="false">
+      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/items/item" id="0"/>
+      <elementValue elementRef="COLUMN" value="" id="1"/>
+      <elementValue elementRef="VALUE" value="" id="2"/>
+      <elementValue elementRef="ATTRIBUTE" value="main" id="3"/>
+      <elementValue elementRef="ORDER" value="18" id="4"/>
+      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/items/item/PurchaseOrderID_POD" id="5"/>
+      <elementValue elementRef="COLUMN" value="PurchaseOrderID_POD" id="6"/>
+      <elementValue elementRef="VALUE" value="" id="7"/>
+      <elementValue elementRef="ATTRIBUTE" value="branch" id="8"/>
+      <elementValue elementRef="ORDER" value="19" id="9"/>
+      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/items/item/PurchaseDetailID_POD" id="10"/>
+      <elementValue elementRef="COLUMN" value="PurchaseDetailID_POD" id="11"/>
+      <elementValue elementRef="VALUE" value="" id="12"/>
+      <elementValue elementRef="ATTRIBUTE" value="branch" id="13"/>
+      <elementValue elementRef="ORDER" value="20" id="14"/>
+      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/items/item/ProjectID_POD" id="15"/>
+      <elementValue elementRef="COLUMN" value="ProjectID_POD" id="16"/>
+      <elementValue elementRef="VALUE" value="" id="17"/>
+      <elementValue elementRef="ATTRIBUTE" value="branch" id="18"/>
+      <elementValue elementRef="ORDER" value="21" id="19"/>
+      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/items/item/SpecID_POD" id="20"/>
+      <elementValue elementRef="COLUMN" value="SpecID_POD" id="21"/>
+      <elementValue elementRef="VALUE" value="" id="22"/>
+      <elementValue elementRef="ATTRIBUTE" value="branch" id="23"/>
+      <elementValue elementRef="ORDER" value="22" id="24"/>
+      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/items/item/ItemID_POD" id="25"/>
+      <elementValue elementRef="COLUMN" value="ItemID_POD" id="26"/>
+      <elementValue elementRef="VALUE" value="" id="27"/>
+      <elementValue elementRef="ATTRIBUTE" value="branch" id="28"/>
+      <elementValue elementRef="ORDER" value="23" id="29"/>
+      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/items/item/PurchaseQty_POD" id="30"/>
+      <elementValue elementRef="COLUMN" value="PurchaseQty_POD" id="31"/>
+      <elementValue elementRef="VALUE" value="" id="32"/>
+      <elementValue elementRef="ATTRIBUTE" value="branch" id="33"/>
+      <elementValue elementRef="ORDER" value="24" id="34"/>
+      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/items/item/PurchasePrice_POD" id="35"/>
+      <elementValue elementRef="COLUMN" value="PurchasePrice_POD" id="36"/>
+      <elementValue elementRef="VALUE" value="" id="37"/>
+      <elementValue elementRef="ATTRIBUTE" value="branch" id="38"/>
+      <elementValue elementRef="ORDER" value="25" id="39"/>
+      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/items/item/DateRequired_POD" id="40"/>
+      <elementValue elementRef="COLUMN" value="DateRequired_POD" id="41"/>
+      <elementValue elementRef="VALUE" value="" id="42"/>
+      <elementValue elementRef="ATTRIBUTE" value="branch" id="43"/>
+      <elementValue elementRef="ORDER" value="26" id="44"/>
+      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/items/item/PurchaseSupplierDescription_POD" id="45"/>
+      <elementValue elementRef="COLUMN" value="PurchaseSupplierDescription_POD" id="46"/>
+      <elementValue elementRef="VALUE" value="" id="47"/>
+      <elementValue elementRef="ATTRIBUTE" value="branch" id="48"/>
+      <elementValue elementRef="ORDER" value="27" id="49"/>
+      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/items/item/PurchaseUOM_POD" id="50"/>
+      <elementValue elementRef="COLUMN" value="PurchaseUOM_POD" id="51"/>
+      <elementValue elementRef="VALUE" value="" id="52"/>
+      <elementValue elementRef="ATTRIBUTE" value="branch" id="53"/>
+      <elementValue elementRef="ORDER" value="28" id="54"/>
+      <elementValue elementRef="PATH" value="/PurchaseOrders/PurchaseOrder/items/item/DestInventoryLoc_POD" id="55"/>
+      <elementValue elementRef="COLUMN" value="DestInventoryLoc_POD" id="56"/>
+      <elementValue elementRef="VALUE" value="" id="57"/>
+      <elementValue elementRef="ATTRIBUTE" value="branch" id="58"/>
+      <elementValue elementRef="ORDER" value="29" id="59"/>
+    </elementParameter>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="TABLE" name="GROUPBYS">
+      <elementValue elementRef="OUTPUT_COLUMN" value="json" id="0"/>
+      <elementValue elementRef="INPUT_COLUMN" value="PurchaseSupplierID_POH" id="1"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="REMOVE_ROOT" value="true"/>
+    <elementParameter field="CHECK" name="COMPACT_FORMAT" value="true" show="false"/>
+    <elementParameter field="CHECK" name="QUOTE_ALL_VALUES" value="false"/>
+    <elementParameter field="CHECK" name="QUOTE_NULL_VALUES" value="true" show="false"/>
+    <elementParameter field="CHECK" name="ALLOW_EMPTY_STRINGS" value="true"/>
+    <elementParameter field="CHECK" name="USE_SCIENTIFIC_NOTATION" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="writeJSON_full_JSON"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tWriteJSONField_1">
+      <column comment="" key="false" length="-1" name="json" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="HTTPClient" componentVersion="5" offsetLabelX="0" offsetLabelY="0" posX="640" posY="360">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHTTPClient_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="aHR0cC1zdHVkaW8jSFRUUCNDbGllbnQ" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.base" value="https://847280-sb1.restlets.api.netsuite.com/app/site/hosting"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.type" value="Bearer"/>
+    <elementParameter field="PASSWORD" name="configuration.dataset.datastore.authentication.bearerToken" value="enc:system.encryption.key.v1:dOhThNS8Y570nU6oqYBhSzOo/TG0GSJt9clhPHXoxYqr5n9ta/HB4cgnlq6jsmVGHa60SYWUkKzU/GkO9wRhpf672nF87FftEBxRSQIGyVM2aUpuRvqPX69ZidLpRnIkKUzq3bJcda7yRHImRHiqsLrUoUmDa7JP6SBOWHZTVEEx8YrFS4NwGQid5L/XY+ezLze1pAzaCABRjkx63MK4ifjvRubV8m6+Xa5nACOpVfYQwpUfCtSYLd4nntoRTLnUGK2jxKdUp4FQLuElgF0YhlJ2UAHB55Yx22EoVkItmHwGlQae4QNIeT6ug9Z5tYAI8vyUJUA0yiTmDADSPowD2MqcVe4EyUORUjmvWI8OvyzEOqkAFfjpujMTRw462CxZaNxoTBPzYTUtPA2mhfHqY/BjY5saDavm4K/YLruld9ntw/YjcCXGKSjrMtt4Up7M42cH7EwoKB9H2jorHZ2UB3g+8W/WPjJuyx8o4dD07TJc1kTlbpR+RSaopSMtfk0wAsJIzJhGA8lpYqdY2PVM5VmU4PNRaA2ILCgxvQvH2yLGGMWu8u/2eOyoeKhBOVFysz3u8I9q5G/pFvmI7dazmP4TLkgLzloThva9ZPzFVBocs5NbnaIb8oHhxwNkZ6XvIcfhq+IYtpsT5tkUUFO+gKfuTCzq96zwk3OoJ0700NfdSpHFJxWTnqiwiHZTOmmezMukZYXrCUc+CddE7RdTuSM1D1iBOjA4mlNR/ZfzWhjeR+6yAYeb0uSV5XJ9oTiPz8yowOXMbGiSFJ/9A5cl3cznan4Tr3F8jDWwUrGWYS62/JXN7WHGsYAm7yno/fDB/C8ww4wDhrBU2lRtUS0mZi7kurlNm87NmkFROR13/VpMsUJwN40imQ6YByYqWvPAjVMyd1Y1SbCguA/WfV5q4dprBUJCptJWYyp4QPNtms65nDkkGKZx52bjZm7XJ9mtr6fbPY6viT3cbUUoaLN5G2usK0tlurg+Z6Wtdo9wIB8k9ybfN8qDPzKFq6j8Tw9c87deNWdQ0cVZgZSS2K9vQ3Y8rNQpgvj5olYvLL87wLvdyg3vOMYlgKSQQkkOrS2b+awSaABHBFqbp+3t/tKJLLZ/hGhC/c0A6ST2vERTgUm2WtmBXLAixpEZMIDfEiNNIVYOcpTFfvO4CPaZuPtqljRdGINAklGRgvqJg/mh8ehsLJnf3usdWaXfVOdXUA45MxHjactfOLfF8X5uT1yTl1r+m+Q7l9lHpg5EH5kY6CrNdyixQdo+GNvfx/Yo5LTbAjMW6U7xJ65sfZrELvX2eYhZ4vC3dAoDp2/lCKCD195M7BZa5GXbzm8QKhVgrEnYIMZdn4uwIzb3zkCHucjMor+waLGByGDFD8cMX0LpPTCOVAfK8YCwAbpT58Yr4I5vaPVI7eIEasrCgV99OHG1V0HIxvDpIuAZilBLBwrAaieDCKo7r0a0oPoAPJ89gnqpC6mM8l5AuXxuY1Gl371GQkwaoT0f2EWDh90//O6+hCWqkPKTyA/RUq7cMQHPdFuoDR/R8ugT/P8tqYE4JfqRgh0SjJwerZ1zklGYXbPI65Bz/CdVKf6hMaCH9X2qcbfUT5WwimsrrZaYOmemB07lk1wOeoKb++q+"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.apiKey.destination" value="HEADERS" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.apiKey.headerName" value="Authorization" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.apiKey.queryName" value="apikey" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.apiKey.prefix" value="Bearer" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.oauth20.flow" value="CLIENT_CREDENTIAL" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.oauth20.authenticationType" value="BASIC" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.datastore.authentication.oauth20.params" show="false"/>
+    <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataset.methodType" value="POST"/>
+    <elementParameter field="TEXT" name="configuration.dataset.resource" value="/restlet.nl?script=2962&amp;deploy=1"/>
+    <elementParameter field="CHECK" name="configuration.dataset.hasPathParams" value="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.pathParams" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.hasQueryParams" value="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.queryParams" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.hasHeaders" value="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.headers" show="false">
+      <elementValue elementRef="configuration.dataset.headers[].key" value="&quot;realm&quot;" id="0"/>
+      <elementValue elementRef="configuration.dataset.headers[].value" value="847280_SB1" id="1"/>
+      <elementValue elementRef="configuration.dataset.headers[].query" value="MAIN" id="2"/>
+      <elementValue elementRef="configuration.dataset.headers[].key" value="&quot;oauth_consumer_key&quot;" id="3"/>
+      <elementValue elementRef="configuration.dataset.headers[].value" value="36b9738ac8559b400408daaca9c22dc6cdcffc3c6fdd633c7e081038788c34df" id="4"/>
+      <elementValue elementRef="configuration.dataset.headers[].query" value="MAIN" id="5"/>
+      <elementValue elementRef="configuration.dataset.headers[].key" value="&quot;oauth_token&quot;" id="6"/>
+      <elementValue elementRef="configuration.dataset.headers[].value" value="fbd296529aab911d8a977fa8385e5f97da1d70db3313f5c2d817607bf5c48909" id="7"/>
+      <elementValue elementRef="configuration.dataset.headers[].query" value="MAIN" id="8"/>
+      <elementValue elementRef="configuration.dataset.headers[].key" value="&quot;oauth_nonce&quot;" id="9"/>
+      <elementValue elementRef="configuration.dataset.headers[].value" value="e9d588816ccbb1f76441f283632f0dca" id="10"/>
+      <elementValue elementRef="configuration.dataset.headers[].query" value="MAIN" id="11"/>
+      <elementValue elementRef="configuration.dataset.headers[].key" value="&quot;oauth_timestamp&quot;" id="12"/>
+      <elementValue elementRef="configuration.dataset.headers[].value" value="1788397938" id="13"/>
+      <elementValue elementRef="configuration.dataset.headers[].query" value="MAIN" id="14"/>
+      <elementValue elementRef="configuration.dataset.headers[].key" value="&quot;oauth_signature_method&quot;" id="15"/>
+      <elementValue elementRef="configuration.dataset.headers[].value" value="HMAC-SHA256" id="16"/>
+      <elementValue elementRef="configuration.dataset.headers[].query" value="MAIN" id="17"/>
+      <elementValue elementRef="configuration.dataset.headers[].key" value="&quot;oauth_version&quot;" id="18"/>
+      <elementValue elementRef="configuration.dataset.headers[].value" value="1.0" id="19"/>
+      <elementValue elementRef="configuration.dataset.headers[].query" value="MAIN" id="20"/>
+      <elementValue elementRef="configuration.dataset.headers[].key" value="&quot;oauth_signature&quot;" id="21"/>
+      <elementValue elementRef="configuration.dataset.headers[].value" value="486miyjNtb%2BYJPP00pIcyKtxqjPNCxHMjv4E7RqIt2o%3D" id="22"/>
+      <elementValue elementRef="configuration.dataset.headers[].query" value="MAIN" id="23"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="configuration.dataset.hasBody" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.body.type" value="JSON"/>
+    <elementParameter field="MEMO" name="configuration.dataset.body.jsonValue" value="(String) globalMap.get(&quot;json_dummy&quot;)"/>
+    <elementParameter field="TABLE" name="configuration.dataset.body.params" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.format" value="RAW_TEXT"/>
+    <elementParameter field="TEXT" name="configuration.dataset.dssl" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.returnedContent" value="STATUS_HEADERS_BODY"/>
+    <elementParameter field="CHECK" name="configuration.dataset.outputKeyValuePairs" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.forwardInput" value="false" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.keyValuePairs" show="false"/>
+    <elementParameter field="CHECK" name="configuration.downloadFile" value="false"/>
+    <elementParameter field="CHECK" name="configuration.specifyFileName" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.useCacheToSave" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.datastore.authentication.oauth20.customizeHeaderName" value="false" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.oauth20.customHeaderName" value="Authorization" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.datastore.authentication.oauth20.customizeTokenPrefix" value="false" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.oauth20.customTokenPrefix" value="Bearer" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.connectionTimeout" value="30000"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.receiveTimeout" value="120000"/>
+    <elementParameter field="CHECK" name="configuration.dataset.datastore.bypassCertificateValidation" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.datastore.useProxy" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.proxyConfiguration.proxyType" value="HTTP" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.proxyConfiguration.proxyPort" value="443" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.datastore.hasRetry" value="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.retry.backoff" value="500" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.retry.factor" value="1" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.retry.maxAttempts" value="2" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.acceptRedirections" value="true"/>
+    <elementParameter field="TEXT" name="configuration.dataset.maxRedirectOnSameURL" value="3"/>
+    <elementParameter field="CHECK" name="configuration.dataset.onlySameHost" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.hasPagination" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.pagination.strategy" value="OFFSET_LIMIT" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.pagination.offsetLimitStrategyConfig.location" value="QUERY_PARAMETERS" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.pagination.markerStrategyConfig.location" value="QUERY_PARAMETERS" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.pagination.markerStrategyConfig.limitValue" value="100" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.jsonForceDouble" value="true" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.normalizeJson" value="false" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.jsonCastConfigurations" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.jsonFilterConfigurations" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.enforceNumberAsString" value="true" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.useCookies" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.saveCookies" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.disableChunkedEncoding" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.httpVersion" value="HTTP_2"/>
+    <elementParameter field="CHECK" name="configuration.uploadFiles" value="false"/>
+    <elementParameter field="TABLE" name="configuration.uploadFileTable" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dieOnError" value="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataset.__version" value="5" show="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataset.datastore.__version" value="5" show="false"/>
+    <metadata connector="LOOKUP" name="LOOKUP"/>
+    <metadata connector="MERGE" name="MERGE"/>
+    <metadata connector="REJECT" name="REJECT"/>
+    <metadata connector="FLOW" name="tHTTPClient_1">
+      <column comment="" key="false" length="-1" name="headers" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="status" nullable="false" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="920" posY="360">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_4" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="headers" id="0"/>
+      <elementValue elementRef="LENGTH" value="10" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="status" id="2"/>
+      <elementValue elementRef="LENGTH" value="10" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="body" id="4"/>
+      <elementValue elementRef="LENGTH" value="10" id="5"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Response"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_4">
+      <column comment="" key="false" length="-1" name="headers" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="status" nullable="false" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1040" posY="720">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="String val = (String) globalMap.get(&quot;json_dummy&quot;);&#xD;&#xA;System.out.println(&quot;The value is: &quot; + val);"/>
+    <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_1"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="120" posY="880">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="System.out.println(&quot;jsonPayload = &quot; + context.JSON_Payload);"/>
+    <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_2"/>
+  </node>
+  <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="360" posY="360">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSetGlobalVar_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TABLE" name="VARIABLES">
+      <elementValue elementRef="KEY" value="&quot;json_dummy&quot;" id="0"/>
+      <elementValue elementRef="VALUE" value="row14.json" id="1"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSetGlobalVar_1">
+      <column comment="" key="false" length="-1" name="json" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="440" posY="880">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="po_testing"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="TEST:_q7YNkKdgEfGrNKOYnrlUTg"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS">
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="JSON_Payload" id="0"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.JSON_Payload" id="1"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="RADIO" name="USE_CHILD_JVM_SETTING" value="true" show="false"/>
+    <elementParameter field="RADIO" name="USE_CUSTOM_JVM_SETTING" value="false" show="false"/>
+    <elementParameter field="TABLE" name="JVM_ARGUMENTS" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_CONTEXT" value="false"/>
+    <elementParameter field="TEXT" name="DYNAMIC_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXTRA_CLASSPATH" value="false" show="false"/>
+    <elementParameter field="TEXT" name="EXTRA_CLASSPATH" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="LOAD_CONTEXT_FROM_FILE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_BASE64" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_1"/>
+  </node>
   <connection connectorName="FLOW" label="row19" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row19" show="false"/>
@@ -1173,16 +1394,115 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row21" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row22" lineStyle="0" metaname="tLogRow_2" offsetLabelX="0" offsetLabelY="0" source="tLogRow_2" target="tWriteJSONField_1">
+  <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tLogRow_2" offsetLabelX="0" offsetLabelY="0" source="tLogRow_2" target="tReplicate_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row22" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row5" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row23" lineStyle="0" metaname="tWriteJSONField_1" offsetLabelX="0" offsetLabelY="0" source="tWriteJSONField_1" target="tLogRow_3">
+  <connection connectorName="FLOW" label="row11" lineStyle="0" metaname="tReplicate_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tReplicate_1" target="tWriteJSONField_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="SpecID_POD" id="0"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+      <elementValue elementRef="TRACE_COLUMN" value="PurchaseSupplierID_POH" id="3"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="4"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="5"/>
+      <elementValue elementRef="TRACE_COLUMN" value="PurchaseDate_POH" id="6"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="7"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="8"/>
+      <elementValue elementRef="TRACE_COLUMN" value="PurchaseQty_POD" id="9"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="10"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="11"/>
+      <elementValue elementRef="TRACE_COLUMN" value="PurchaseCurrRate_POH" id="12"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="13"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="14"/>
+      <elementValue elementRef="TRACE_COLUMN" value="CompanyCustom3_C" id="15"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="16"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="17"/>
+      <elementValue elementRef="TRACE_COLUMN" value="DestInventoryLoc_POD" id="18"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="19"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="20"/>
+      <elementValue elementRef="TRACE_COLUMN" value="CName_C" id="21"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="22"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="23"/>
+      <elementValue elementRef="TRACE_COLUMN" value="PurchaseTerms_POH" id="24"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="25"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="26"/>
+      <elementValue elementRef="TRACE_COLUMN" value="PurchaseOrderID_POD" id="27"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="28"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="29"/>
+      <elementValue elementRef="TRACE_COLUMN" value="PurchaseDateRequired_POH" id="30"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="31"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="32"/>
+      <elementValue elementRef="TRACE_COLUMN" value="ItemDescription_I" id="33"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="34"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="35"/>
+      <elementValue elementRef="TRACE_COLUMN" value="BuyerID_POH" id="36"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="37"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="38"/>
+      <elementValue elementRef="TRACE_COLUMN" value="PurchaseShipTo_POH" id="39"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="40"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="41"/>
+      <elementValue elementRef="TRACE_COLUMN" value="PurchaseCurr_POH" id="42"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="43"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="44"/>
+      <elementValue elementRef="TRACE_COLUMN" value="PurchaseTax1Name_POH" id="45"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="46"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="47"/>
+      <elementValue elementRef="TRACE_COLUMN" value="PurchaseNotes_POH" id="48"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="49"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="50"/>
+      <elementValue elementRef="TRACE_COLUMN" value="PurchaseUOM_POD" id="51"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="52"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="53"/>
+      <elementValue elementRef="TRACE_COLUMN" value="PurchaseTax1_POH" id="54"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="55"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="56"/>
+      <elementValue elementRef="TRACE_COLUMN" value="PurchasePrice_POD" id="57"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="58"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="59"/>
+      <elementValue elementRef="TRACE_COLUMN" value="PurchaseSupplierDescription_POD" id="60"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="61"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="62"/>
+      <elementValue elementRef="TRACE_COLUMN" value="PurchaseDetailID_POD" id="63"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="64"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="65"/>
+      <elementValue elementRef="TRACE_COLUMN" value="ProjectID_POD" id="66"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="67"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="68"/>
+      <elementValue elementRef="TRACE_COLUMN" value="ItemID_POD" id="69"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="70"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="71"/>
+      <elementValue elementRef="TRACE_COLUMN" value="DateRequired_POD" id="72"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="73"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="74"/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row23" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row11" show="false"/>
   </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tLogRow_3" offsetLabelX="0" offsetLabelY="0" source="tLogRow_3" target="tFileInputRaw_1">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
+  <connection connectorName="FLOW" label="row12" lineStyle="0" metaname="tReplicate_1" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tReplicate_1" target="tWriteJSONField_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row12" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row6" lineStyle="0" metaname="tWriteJSONField_2" offsetLabelX="0" offsetLabelY="0" source="tWriteJSONField_2" target="tLogRow_3">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="json_po_payload" id="0"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row6" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="json_flow" lineStyle="0" metaname="tLogRow_3" offsetLabelX="0" offsetLabelY="0" source="tLogRow_3" target="tJavaRow_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="json_flow" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJavaRow_3" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tJavaRow_3" target="tJava_2">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJavaRow_3" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tJavaRow_3" target="tRunJob_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk3" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tLogRow_5">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
@@ -1207,26 +1527,33 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row7" show="false"/>
   </connection>
-  <connection connectorName="RESPONSE" label="row18" lineStyle="0" metaname="tRESTClient_1" offsetLabelX="50" offsetLabelY="-39" source="tRESTClient_1" target="tLogRow_4">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row18" show="false"/>
-  </connection>
   <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tFileInputRaw_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputRaw_1" target="tLogRow_7">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tLogRow_7" offsetLabelX="0" offsetLabelY="0" source="tLogRow_7" target="tExtractJSONFields_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tExtractJSONFields_1" offsetLabelX="0" offsetLabelY="0" source="tExtractJSONFields_1" target="tLogRow_8">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
   </connection>
-  <note opaque="false" posX="1440" posY="160" sizeHeight="161" sizeWidth="201" text="Pull the PurchaseOrderIDs&#xD;&#xA;from the integration table.&#xD;&#xA;&#xD;&#xA;Stores them in a list so &#xD;&#xA;that the Talend job can&#xD;&#xA;process the required records.&#xD;&#xA;"/>
-  <note opaque="false" posX="1440" posY="360" sizeHeight="161" sizeWidth="241" text="Uses the list of headers to pull&#xD;&#xA;in the latest data from the &#xD;&#xA;POH and POD source tables.&#xD;&#xA;&#xD;&#xA;Processes them into a JSON&#xD;&#xA;Payload for Netsuite consumption"/>
-  <note opaque="false" posX="1440" posY="560" sizeHeight="161" sizeWidth="241" text="Depending on the result , this &#xD;&#xA;either updates TotalETO with&#xD;&#xA;the data or tries again."/>
+  <connection connectorName="FLOW" label="row13" lineStyle="0" metaname="tHTTPClient_1" offsetLabelX="0" offsetLabelY="0" source="tHTTPClient_1" target="tLogRow_4">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row13" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tSetGlobalVar_1" offsetLabelX="0" offsetLabelY="0" source="tSetGlobalVar_1" target="tHTTPClient_1">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
+  </connection>
+  <note opaque="false" posX="1480" posY="120" sizeHeight="161" sizeWidth="201" text="Pull the PurchaseOrderIDs&#xD;&#xA;from the integration table.&#xD;&#xA;&#xD;&#xA;Stores them in a list so &#xD;&#xA;that the Talend job can&#xD;&#xA;process the required records.&#xD;&#xA;"/>
+  <note opaque="false" posX="1440" posY="440" sizeHeight="161" sizeWidth="241" text="Uses the list of headers to pull&#xD;&#xA;in the latest data from the &#xD;&#xA;POH and POD source tables.&#xD;&#xA;&#xD;&#xA;Processes them into a JSON&#xD;&#xA;Payload for Netsuite consumption"/>
+  <note opaque="false" posX="1440" posY="640" sizeHeight="161" sizeWidth="241" text="Depending on the result , this &#xD;&#xA;either updates TotalETO with&#xD;&#xA;the data or tries again."/>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
@@ -1238,12 +1565,37 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
   </subjob>
   <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTClient_1" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputRaw_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
   </subjob>
   <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputRaw_1" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tWriteJSONField_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHTTPClient_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSetGlobalVar_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
   </subjob>
