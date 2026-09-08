@@ -906,7 +906,7 @@
       </column>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="json_payload">
         <mapperTableEntries name="IntegrationID" type="id_Integer"/>
@@ -915,7 +915,7 @@
         <mapperTableEntries name="header__change_oper" type="id_String" nullable="true"/>
         <mapperTableEntries name="DateTimeLoadedIntoIntegrationTableUTC" type="id_Date" nullable="true"/>
         <mapperTableEntries name="LoadedIntoNetsuite" expression="true " type="id_Boolean" nullable="true"/>
-        <mapperTableEntries name="TimeLoadedIntoNetsuiteUTC" expression="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss&quot;,java.time.format.DateTimeFormatter.ofPattern(&quot;yyyy-MM-dd HH:mm:ss&quot;).withZone(java.time.ZoneOffset.UTC).format(java.time.Instant.now())) " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="TimeLoadedIntoNetsuiteUTC" expression="" type="id_Date" nullable="true"/>
         <mapperTableEntries name="Netsuite_PurchaseOrderID" expression="" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="Netsuite_tranId" type="id_String" nullable="true"/>
         <mapperTableEntries name="Netsuite_Payload" expression="row17.json_po_payload " type="id_String" nullable="true"/>
@@ -1072,7 +1072,7 @@
       <elementValue elementRef="SCHEMA_COLUMN" value="TimeLoadedIntoNetsuiteUTC" id="30"/>
       <elementValue elementRef="UPDATE_KEY" value="false" id="31"/>
       <elementValue elementRef="DELETE_KEY" value="false" id="32"/>
-      <elementValue elementRef="UPDATABLE" value="true" id="33"/>
+      <elementValue elementRef="UPDATABLE" value="false" id="33"/>
       <elementValue elementRef="INSERTABLE" value="false" id="34"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Netsuite_PurchaseOrderID" id="35"/>
       <elementValue elementRef="UPDATE_KEY" value="false" id="36"/>
@@ -1459,7 +1459,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tRunJob_1"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="760" posY="800">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="880" posY="880">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="System.out.println(&quot;jsonPayload = &quot; + context.JSON_Payload);"/>
