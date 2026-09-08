@@ -186,10 +186,6 @@
     "id" : "_7_NhMKA9EfGq3IYnFJCINg",
     "version" : "Latest",
     "type" : "property"
-  }, {
-    "id" : "_7_NhMKA9EfGq3IYnFJCINg - tblPurchaseOrderHeader_integration",
-    "version" : "Latest",
-    "type" : "schema"
   } ]
 }, {
   "baseItem" : {
