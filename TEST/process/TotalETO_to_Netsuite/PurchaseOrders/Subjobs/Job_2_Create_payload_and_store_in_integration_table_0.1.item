@@ -786,61 +786,61 @@
       <elementValue elementRef="VALUE" value="" id="17"/>
       <elementValue elementRef="ATTRIBUTE" value="branch" id="18"/>
       <elementValue elementRef="ORDER" value="4" id="19"/>
-      <elementValue elementRef="PATH" value="/PurchaseOrders/items" id="20"/>
-      <elementValue elementRef="COLUMN" value="" id="21"/>
+      <elementValue elementRef="PATH" value="/PurchaseOrders/shippingAddress1" id="20"/>
+      <elementValue elementRef="COLUMN" value="SAddress1_C2" id="21"/>
       <elementValue elementRef="VALUE" value="" id="22"/>
-      <elementValue elementRef="ATTRIBUTE" value="main" id="23"/>
+      <elementValue elementRef="ATTRIBUTE" value="branch" id="23"/>
       <elementValue elementRef="ORDER" value="5" id="24"/>
-      <elementValue elementRef="PATH" value="class" id="25"/>
-      <elementValue elementRef="COLUMN" value="" id="26"/>
-      <elementValue elementRef="VALUE" value="array" id="27"/>
-      <elementValue elementRef="ATTRIBUTE" value="attri" id="28"/>
+      <elementValue elementRef="PATH" value="/PurchaseOrders/shippingAddress2" id="25"/>
+      <elementValue elementRef="COLUMN" value="SAddress2_C2" id="26"/>
+      <elementValue elementRef="VALUE" value="" id="27"/>
+      <elementValue elementRef="ATTRIBUTE" value="branch" id="28"/>
       <elementValue elementRef="ORDER" value="6" id="29"/>
-      <elementValue elementRef="PATH" value="/PurchaseOrders/shippingAddress1" id="30"/>
-      <elementValue elementRef="COLUMN" value="SAddress1_C2" id="31"/>
+      <elementValue elementRef="PATH" value="/PurchaseOrders/shippingCity" id="30"/>
+      <elementValue elementRef="COLUMN" value="SCity_C2" id="31"/>
       <elementValue elementRef="VALUE" value="" id="32"/>
       <elementValue elementRef="ATTRIBUTE" value="branch" id="33"/>
-      <elementValue elementRef="ORDER" value="18" id="34"/>
-      <elementValue elementRef="PATH" value="/PurchaseOrders/shippingAddress2" id="35"/>
-      <elementValue elementRef="COLUMN" value="SAddress2_C2" id="36"/>
+      <elementValue elementRef="ORDER" value="7" id="34"/>
+      <elementValue elementRef="PATH" value="/PurchaseOrders/shippingState" id="35"/>
+      <elementValue elementRef="COLUMN" value="SState_C2" id="36"/>
       <elementValue elementRef="VALUE" value="" id="37"/>
       <elementValue elementRef="ATTRIBUTE" value="branch" id="38"/>
-      <elementValue elementRef="ORDER" value="19" id="39"/>
-      <elementValue elementRef="PATH" value="/PurchaseOrders/shippingCity" id="40"/>
-      <elementValue elementRef="COLUMN" value="SCity_C2" id="41"/>
+      <elementValue elementRef="ORDER" value="8" id="39"/>
+      <elementValue elementRef="PATH" value="/PurchaseOrders/shippingCountry" id="40"/>
+      <elementValue elementRef="COLUMN" value="SCountry_C2" id="41"/>
       <elementValue elementRef="VALUE" value="" id="42"/>
       <elementValue elementRef="ATTRIBUTE" value="branch" id="43"/>
-      <elementValue elementRef="ORDER" value="20" id="44"/>
-      <elementValue elementRef="PATH" value="/PurchaseOrders/shippingState" id="45"/>
-      <elementValue elementRef="COLUMN" value="SState_C2" id="46"/>
+      <elementValue elementRef="ORDER" value="9" id="44"/>
+      <elementValue elementRef="PATH" value="/PurchaseOrders/purchaseCurrency" id="45"/>
+      <elementValue elementRef="COLUMN" value="PurchaseCurr_POH" id="46"/>
       <elementValue elementRef="VALUE" value="" id="47"/>
       <elementValue elementRef="ATTRIBUTE" value="branch" id="48"/>
-      <elementValue elementRef="ORDER" value="21" id="49"/>
-      <elementValue elementRef="PATH" value="/PurchaseOrders/shippingCountry" id="50"/>
-      <elementValue elementRef="COLUMN" value="SCountry_C2" id="51"/>
+      <elementValue elementRef="ORDER" value="10" id="49"/>
+      <elementValue elementRef="PATH" value="/PurchaseOrders/purchaseCurrencyRate" id="50"/>
+      <elementValue elementRef="COLUMN" value="PurchaseCurrRate_POH" id="51"/>
       <elementValue elementRef="VALUE" value="" id="52"/>
       <elementValue elementRef="ATTRIBUTE" value="branch" id="53"/>
-      <elementValue elementRef="ORDER" value="22" id="54"/>
-      <elementValue elementRef="PATH" value="/PurchaseOrders/purchaseCurrency" id="55"/>
-      <elementValue elementRef="COLUMN" value="PurchaseCurr_POH" id="56"/>
+      <elementValue elementRef="ORDER" value="11" id="54"/>
+      <elementValue elementRef="PATH" value="/PurchaseOrders/purchaseTax" id="55"/>
+      <elementValue elementRef="COLUMN" value="PurchaseTax1_POH" id="56"/>
       <elementValue elementRef="VALUE" value="" id="57"/>
       <elementValue elementRef="ATTRIBUTE" value="branch" id="58"/>
-      <elementValue elementRef="ORDER" value="23" id="59"/>
-      <elementValue elementRef="PATH" value="/PurchaseOrders/purchaseCurrencyRate" id="60"/>
-      <elementValue elementRef="COLUMN" value="PurchaseCurrRate_POH" id="61"/>
+      <elementValue elementRef="ORDER" value="12" id="59"/>
+      <elementValue elementRef="PATH" value="/PurchaseOrders/buyerEmail" id="60"/>
+      <elementValue elementRef="COLUMN" value="EmpEmail_E" id="61"/>
       <elementValue elementRef="VALUE" value="" id="62"/>
       <elementValue elementRef="ATTRIBUTE" value="branch" id="63"/>
-      <elementValue elementRef="ORDER" value="24" id="64"/>
-      <elementValue elementRef="PATH" value="/PurchaseOrders/purchaseTax" id="65"/>
-      <elementValue elementRef="COLUMN" value="PurchaseTax1_POH" id="66"/>
+      <elementValue elementRef="ORDER" value="13" id="64"/>
+      <elementValue elementRef="PATH" value="/PurchaseOrders/items" id="65"/>
+      <elementValue elementRef="COLUMN" value="" id="66"/>
       <elementValue elementRef="VALUE" value="" id="67"/>
-      <elementValue elementRef="ATTRIBUTE" value="branch" id="68"/>
-      <elementValue elementRef="ORDER" value="25" id="69"/>
-      <elementValue elementRef="PATH" value="/PurchaseOrders/buyerEmail" id="70"/>
-      <elementValue elementRef="COLUMN" value="EmpEmail_E" id="71"/>
-      <elementValue elementRef="VALUE" value="" id="72"/>
-      <elementValue elementRef="ATTRIBUTE" value="branch" id="73"/>
-      <elementValue elementRef="ORDER" value="26" id="74"/>
+      <elementValue elementRef="ATTRIBUTE" value="main" id="68"/>
+      <elementValue elementRef="ORDER" value="14" id="69"/>
+      <elementValue elementRef="PATH" value="class" id="70"/>
+      <elementValue elementRef="COLUMN" value="" id="71"/>
+      <elementValue elementRef="VALUE" value="array" id="72"/>
+      <elementValue elementRef="ATTRIBUTE" value="attri" id="73"/>
+      <elementValue elementRef="ORDER" value="15" id="74"/>
     </elementParameter>
     <elementParameter field="TABLE" name="GROUP" show="false"/>
     <elementParameter field="TABLE" name="LOOP" show="false">
@@ -848,60 +848,63 @@
       <elementValue elementRef="COLUMN" value="" id="1"/>
       <elementValue elementRef="VALUE" value="" id="2"/>
       <elementValue elementRef="ATTRIBUTE" value="main" id="3"/>
-      <elementValue elementRef="ORDER" value="7" id="4"/>
+      <elementValue elementRef="ORDER" value="16" id="4"/>
       <elementValue elementRef="PATH" value="/PurchaseOrders/items/item/itemId" id="5"/>
       <elementValue elementRef="COLUMN" value="ItemID_POD" id="6"/>
       <elementValue elementRef="VALUE" value="" id="7"/>
       <elementValue elementRef="ATTRIBUTE" value="branch" id="8"/>
-      <elementValue elementRef="ORDER" value="8" id="9"/>
+      <elementValue elementRef="ORDER" value="17" id="9"/>
       <elementValue elementRef="PATH" value="/PurchaseOrders/items/item/quantity" id="10"/>
       <elementValue elementRef="COLUMN" value="PurchaseQty_POD" id="11"/>
       <elementValue elementRef="VALUE" value="" id="12"/>
       <elementValue elementRef="ATTRIBUTE" value="branch" id="13"/>
-      <elementValue elementRef="ORDER" value="9" id="14"/>
+      <elementValue elementRef="ORDER" value="18" id="14"/>
       <elementValue elementRef="PATH" value="/PurchaseOrders/items/item/partNumber" id="15"/>
       <elementValue elementRef="COLUMN" value="PartNumber_I" id="16"/>
       <elementValue elementRef="VALUE" value="" id="17"/>
       <elementValue elementRef="ATTRIBUTE" value="branch" id="18"/>
-      <elementValue elementRef="ORDER" value="10" id="19"/>
+      <elementValue elementRef="ORDER" value="19" id="19"/>
       <elementValue elementRef="PATH" value="/PurchaseOrders/items/item/projectId" id="20"/>
       <elementValue elementRef="COLUMN" value="ProjectID_POD" id="21"/>
       <elementValue elementRef="VALUE" value="" id="22"/>
       <elementValue elementRef="ATTRIBUTE" value="branch" id="23"/>
-      <elementValue elementRef="ORDER" value="11" id="24"/>
+      <elementValue elementRef="ORDER" value="20" id="24"/>
       <elementValue elementRef="PATH" value="/PurchaseOrders/items/item/specId" id="25"/>
       <elementValue elementRef="COLUMN" value="SpecID_POD" id="26"/>
       <elementValue elementRef="VALUE" value="" id="27"/>
       <elementValue elementRef="ATTRIBUTE" value="branch" id="28"/>
-      <elementValue elementRef="ORDER" value="12" id="29"/>
+      <elementValue elementRef="ORDER" value="21" id="29"/>
       <elementValue elementRef="PATH" value="/PurchaseOrders/items/item/purchasePrice" id="30"/>
       <elementValue elementRef="COLUMN" value="PurchasePrice_POD" id="31"/>
       <elementValue elementRef="VALUE" value="" id="32"/>
       <elementValue elementRef="ATTRIBUTE" value="branch" id="33"/>
-      <elementValue elementRef="ORDER" value="13" id="34"/>
+      <elementValue elementRef="ORDER" value="22" id="34"/>
       <elementValue elementRef="PATH" value="/PurchaseOrders/items/item/dateRequired" id="35"/>
       <elementValue elementRef="COLUMN" value="DateRequired_POD" id="36"/>
       <elementValue elementRef="VALUE" value="" id="37"/>
       <elementValue elementRef="ATTRIBUTE" value="branch" id="38"/>
-      <elementValue elementRef="ORDER" value="14" id="39"/>
+      <elementValue elementRef="ORDER" value="23" id="39"/>
       <elementValue elementRef="PATH" value="/PurchaseOrders/items/item/purchaseSupplierDescription" id="40"/>
       <elementValue elementRef="COLUMN" value="PurchaseSupplierDescription_POD" id="41"/>
       <elementValue elementRef="VALUE" value="" id="42"/>
       <elementValue elementRef="ATTRIBUTE" value="branch" id="43"/>
-      <elementValue elementRef="ORDER" value="15" id="44"/>
+      <elementValue elementRef="ORDER" value="24" id="44"/>
       <elementValue elementRef="PATH" value="/PurchaseOrders/items/item/purchaseUOM" id="45"/>
       <elementValue elementRef="COLUMN" value="PurchaseUOM_POD" id="46"/>
       <elementValue elementRef="VALUE" value="" id="47"/>
       <elementValue elementRef="ATTRIBUTE" value="branch" id="48"/>
-      <elementValue elementRef="ORDER" value="16" id="49"/>
+      <elementValue elementRef="ORDER" value="25" id="49"/>
       <elementValue elementRef="PATH" value="/PurchaseOrders/items/item/itemDescription" id="50"/>
       <elementValue elementRef="COLUMN" value="ItemDescription_I" id="51"/>
       <elementValue elementRef="VALUE" value="" id="52"/>
       <elementValue elementRef="ATTRIBUTE" value="branch" id="53"/>
-      <elementValue elementRef="ORDER" value="17" id="54"/>
+      <elementValue elementRef="ORDER" value="26" id="54"/>
     </elementParameter>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
-    <elementParameter field="TABLE" name="GROUPBYS"/>
+    <elementParameter field="TABLE" name="GROUPBYS">
+      <elementValue elementRef="OUTPUT_COLUMN" value="PurchaseOrderID_POD" id="0"/>
+      <elementValue elementRef="INPUT_COLUMN" value="PurchaseOrderID_POD" id="1"/>
+    </elementParameter>
     <elementParameter field="CHECK" name="REMOVE_ROOT" value="true"/>
     <elementParameter field="CHECK" name="COMPACT_FORMAT" value="true" show="false"/>
     <elementParameter field="CHECK" name="QUOTE_ALL_VALUES" value="false"/>
