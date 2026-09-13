@@ -2179,7 +2179,7 @@
         <mapperTableEntries name="SCity" expression="company_table2.SCity " type="id_String" nullable="true"/>
         <mapperTableEntries name="SState" expression="company_table2.SState " type="id_String" nullable="true"/>
         <mapperTableEntries name="SZip" expression="company_table2.SZip " type="id_String" nullable="true"/>
-        <mapperTableEntries name="SCountry" expression="company_table2.SCountry " type="id_String" nullable="true"/>
+        <mapperTableEntries name="SCountry" expression="country_lookup_2.Country " type="id_String" nullable="true"/>
         <mapperTableEntries name="CWWWAddress" expression="company_table2.CWWWAddress " type="id_String" nullable="true"/>
         <mapperTableEntries name="CTollFree" expression="company_table2.CTollFree " type="id_String" nullable="true"/>
         <mapperTableEntries name="BSameAsMailing" expression="company_table2.BSameAsMailing " type="id_Boolean"/>
@@ -2275,10 +2275,10 @@
         <mapperTableEntries name="IntegrationID" type="id_Integer"/>
         <mapperTableEntries name="tblSupplier_currency" type="id_String" nullable="true"/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+      <inputTables sizeState="INTERMEDIATE" name="country_lookup_2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="CountryID" type="id_Integer"/>
         <mapperTableEntries name="Country" type="id_String"/>
-        <mapperTableEntries name="Alpha2Code" type="id_String"/>
+        <mapperTableEntries name="Alpha2Code" expression="company_table2.SCountry " type="id_String" operator="="/>
         <mapperTableEntries name="Alpha3Code" type="id_String"/>
         <mapperTableEntries name="Sort" type="id_Integer"/>
         <mapperTableEntries name="Enabled" type="id_Boolean"/>
@@ -2407,7 +2407,7 @@
       </column>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="2680" posY="-80">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="2520" posY="-80">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_10" show="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
@@ -5067,9 +5067,9 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="company3" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row1" lineStyle="8" metaname="tDBInput_4" offsetLabelX="0" offsetLabelY="0" source="tDBInput_4" target="tMap_5">
+  <connection connectorName="FLOW" label="country_lookup_2" lineStyle="8" metaname="tDBInput_4" offsetLabelX="0" offsetLabelY="0" source="tDBInput_4" target="tMap_5">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="country_lookup_2" show="false"/>
   </connection>
   <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tJavaRow_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tJavaRow_1" target="tJava_2">
     <elementParameter field="MEMO_JAVA" name="CONDITION" value="context.row_count > 0"/>
