@@ -943,6 +943,63 @@
           <sqlDataType xmi:id="_ltOXc62uEfG73rHPh6v8kA" name="BIT" javaDataType="-7"/>
         </feature>
       </ownedElement>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_R0n4ELDCEfGSVbdzGi-mGA" name="tblSupplier" id="_R0lb0LDCEfGSVbdzGi-mGA" label="tblSupplier" tableType="TABLE">
+        <feature xsi:type="relational:TdColumn" xmi:id="_R0n4EbDCEfGSVbdzGi-mGA" name="CompanyID" label="CompanyID" length="10" sourceType="INT" talendType="id_Integer" key="true" nullable="false">
+          <taggedValue xmi:id="_R0n4ErDCEfGSVbdzGi-mGA" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_R0n4E7DCEfGSVbdzGi-mGA" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_R0n4FLDCEfGSVbdzGi-mGA" name="INT" numericPrecisionRadix="10" javaDataType="4"/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_R0n4FbDCEfGSVbdzGi-mGA" name="SupNetTerms" label="SupNetTerms" length="50" sourceType="NVARCHAR" talendType="id_String">
+          <taggedValue xmi:id="_R0n4FrDCEfGSVbdzGi-mGA" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_R0n4F7DCEfGSVbdzGi-mGA" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_R0n4GLDCEfGSVbdzGi-mGA" name="NVARCHAR" javaDataType="-9" nullable="columnNullable"/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_R0n4GbDCEfGSVbdzGi-mGA" name="SupFOB" label="SupFOB" length="100" sourceType="NVARCHAR" talendType="id_String">
+          <taggedValue xmi:id="_R0n4GrDCEfGSVbdzGi-mGA" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_R0n4G7DCEfGSVbdzGi-mGA" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_R0n4HLDCEfGSVbdzGi-mGA" name="NVARCHAR" javaDataType="-9" nullable="columnNullable"/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_R0n4HbDCEfGSVbdzGi-mGA" name="SupVia" label="SupVia" length="100" sourceType="NVARCHAR" talendType="id_String">
+          <taggedValue xmi:id="_R0n4HrDCEfGSVbdzGi-mGA" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_R0n4H7DCEfGSVbdzGi-mGA" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_R0n4ILDCEfGSVbdzGi-mGA" name="NVARCHAR" javaDataType="-9" nullable="columnNullable"/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_R0n4IbDCEfGSVbdzGi-mGA" name="SupSpecial" label="SupSpecial" length="10" sourceType="INT" talendType="id_Integer">
+          <taggedValue xmi:id="_R0n4IrDCEfGSVbdzGi-mGA" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_R0n4I7DCEfGSVbdzGi-mGA" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_R0n4JLDCEfGSVbdzGi-mGA" name="INT" numericPrecisionRadix="10" javaDataType="4" nullable="columnNullable"/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_R0n4JbDCEfGSVbdzGi-mGA" name="SupQAApproved" label="SupQAApproved" length="1" sourceType="BIT" talendType="id_Boolean" nullable="false">
+          <taggedValue xmi:id="_R0n4JrDCEfGSVbdzGi-mGA" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_R0n4J7DCEfGSVbdzGi-mGA" body="'0'" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_R0n4KLDCEfGSVbdzGi-mGA" name="BIT" javaDataType="-7"/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_R0ofILDCEfGSVbdzGi-mGA" name="Port" label="Port" length="50" sourceType="NVARCHAR" talendType="id_String">
+          <taggedValue xmi:id="_R0ofIbDCEfGSVbdzGi-mGA" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_R0ofIrDCEfGSVbdzGi-mGA" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_R0ofI7DCEfGSVbdzGi-mGA" name="NVARCHAR" javaDataType="-9" nullable="columnNullable"/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_R0ofJLDCEfGSVbdzGi-mGA" name="FOBNotes" label="FOBNotes" length="50" sourceType="NVARCHAR" talendType="id_String">
+          <taggedValue xmi:id="_R0ofJbDCEfGSVbdzGi-mGA" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_R0ofJrDCEfGSVbdzGi-mGA" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_R0ofJ7DCEfGSVbdzGi-mGA" name="NVARCHAR" javaDataType="-9" nullable="columnNullable"/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_R0ofKLDCEfGSVbdzGi-mGA" name="POReportAlternateID" label="POReportAlternateID" length="10" sourceType="INT" talendType="id_Integer">
+          <taggedValue xmi:id="_R0ofKbDCEfGSVbdzGi-mGA" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_R0ofKrDCEfGSVbdzGi-mGA" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_R0ofK7DCEfGSVbdzGi-mGA" name="INT" numericPrecisionRadix="10" javaDataType="4" nullable="columnNullable"/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_R0ofLLDCEfGSVbdzGi-mGA" name="DefaultCurrName" label="DefaultCurrName" length="3" sourceType="NVARCHAR" talendType="id_String">
+          <taggedValue xmi:id="_R0ofLbDCEfGSVbdzGi-mGA" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_R0ofLrDCEfGSVbdzGi-mGA" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_R0ofL7DCEfGSVbdzGi-mGA" name="NVARCHAR" javaDataType="-9" nullable="columnNullable"/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_R0ofMLDCEfGSVbdzGi-mGA" name="APTaxCategoryID" label="APTaxCategoryID" length="10" sourceType="INT" talendType="id_Integer" nullable="false">
+          <taggedValue xmi:id="_R0ofMbDCEfGSVbdzGi-mGA" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_R0ofMrDCEfGSVbdzGi-mGA" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_R0ofM7DCEfGSVbdzGi-mGA" name="INT" numericPrecisionRadix="10" javaDataType="4"/>
+        </feature>
+      </ownedElement>
     </ownedElement>
   </orgomg.cwm.resource.relational:Catalog>
 </xmi:XMI>
