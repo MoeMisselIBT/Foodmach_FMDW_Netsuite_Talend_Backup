@@ -16,6 +16,8 @@
     <contextParameter xmi:id="_bDi6RpoPEfGdaILNokaaHA" comment="" name="foodmach_tblSupplier_table_name" prompt="foodmach_tblSupplier_table_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
     <contextParameter xmi:id="_wBjlQJoPEfGdaILNokaaHA" comment="" name="foodmach_schema_name" prompt="foodmach_schema_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
     <contextParameter xmi:id="_EW6DkLFjEfGVnY5xgP4JHQ" comment="" name="row_count" prompt="row_count?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter xmi:id="_2zO70LFlEfGVnY5xgP4JHQ" comment="" name="error_message_log" prompt="error_message_log?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_to3BgLFmEfGVnY5xgP4JHQ" comment="" name="integration_table_message" prompt="integration_table_message?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
   </talendfile:ContextType>
   <talendfile:ContextType xmi:id="_XkiBFpngEfGdaILNokaaHA" confirmationNeeded="false" hide="false" name="Foodmach_Dev">
     <contextParameter xmi:id="_XkiBF5ngEfGdaILNokaaHA" comment="" name="integration_database_server_ip" prompt="integration_database_server_ip?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="192.168.2.46"/>
@@ -33,6 +35,8 @@
     <contextParameter xmi:id="_bDi6TZoPEfGdaILNokaaHA" comment="" name="foodmach_tblSupplier_table_name" prompt="foodmach_tblSupplier_table_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="tblSupplier"/>
     <contextParameter xmi:id="_wBjlQZoPEfGdaILNokaaHA" comment="" name="foodmach_schema_name" prompt="foodmach_schema_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="dbo"/>
     <contextParameter xmi:id="_EW6qoLFjEfGVnY5xgP4JHQ" comment="" name="row_count" prompt="row_count?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter xmi:id="_2zO70bFlEfGVnY5xgP4JHQ" comment="" name="error_message_log" prompt="error_message_log?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_to3BgbFmEfGVnY5xgP4JHQ" comment="" name="integration_table_message" prompt="integration_table_message?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
   </talendfile:ContextType>
   <talendfile:ContextType xmi:id="_Dy20wKAfEfGq3IYnFJCINg" confirmationNeeded="false" hide="false" name="Foodmach_Dev_2">
     <contextParameter xmi:id="_Dy20waAfEfGq3IYnFJCINg" comment="" name="integration_database_server_ip" prompt="integration_database_server_ip?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="192.168.2.46"/>
@@ -50,6 +54,8 @@
     <contextParameter xmi:id="_Dy20zaAfEfGq3IYnFJCINg" comment="" name="foodmach_tblSupplier_table_name" prompt="foodmach_tblSupplier_table_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="tblSupplier"/>
     <contextParameter xmi:id="_Dy20zqAfEfGq3IYnFJCINg" comment="" name="foodmach_schema_name" prompt="foodmach_schema_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="dbo"/>
     <contextParameter xmi:id="_EW6qobFjEfGVnY5xgP4JHQ" comment="" name="row_count" prompt="row_count?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter xmi:id="_2zO70rFlEfGVnY5xgP4JHQ" comment="" name="error_message_log" prompt="error_message_log?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_to3BgrFmEfGVnY5xgP4JHQ" comment="" name="integration_table_message" prompt="integration_table_message?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
   </talendfile:ContextType>
   <talendfile:ContextType xmi:id="_XkiBHJngEfGdaILNokaaHA" confirmationNeeded="false" hide="false" name="IBT_Dev">
     <contextParameter xmi:id="_XkiBHZngEfGdaILNokaaHA" comment="" name="integration_database_server_ip" prompt="integration_database_server_ip?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="192.168.2.65"/>
@@ -67,5 +73,7 @@
     <contextParameter xmi:id="_bDi6VJoPEfGdaILNokaaHA" comment="" name="foodmach_tblSupplier_table_name" prompt="foodmach_tblSupplier_table_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="tblSupplier"/>
     <contextParameter xmi:id="_wBjlQpoPEfGdaILNokaaHA" comment="" name="foodmach_schema_name" prompt="foodmach_schema_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="foodmach_source_dummy"/>
     <contextParameter xmi:id="_EW6qorFjEfGVnY5xgP4JHQ" comment="" name="row_count" prompt="row_count?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter xmi:id="_2zO707FlEfGVnY5xgP4JHQ" comment="" name="error_message_log" prompt="error_message_log?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_to3Bg7FmEfGVnY5xgP4JHQ" comment="" name="integration_table_message" prompt="integration_table_message?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
   </talendfile:ContextType>
 </xmi:XMI>

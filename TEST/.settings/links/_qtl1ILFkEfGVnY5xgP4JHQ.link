@@ -45,6 +45,12 @@
     }, {
       "id" : "_wBjlQJoPEfGdaILNokaaHA",
       "name" : "foodmach_schema_name"
+    }, {
+      "id" : "_2zO70LFlEfGVnY5xgP4JHQ",
+      "name" : "error_message_log"
+    }, {
+      "id" : "_to3BgLFmEfGVnY5xgP4JHQ",
+      "name" : "integration_table_message"
     } ]
   }, {
     "contextName" : "Foodmach_Dev",
@@ -91,6 +97,12 @@
     }, {
       "id" : "_wBjlQZoPEfGdaILNokaaHA",
       "name" : "foodmach_schema_name"
+    }, {
+      "id" : "_2zO70bFlEfGVnY5xgP4JHQ",
+      "name" : "error_message_log"
+    }, {
+      "id" : "_to3BgbFmEfGVnY5xgP4JHQ",
+      "name" : "integration_table_message"
     } ]
   }, {
     "contextName" : "Foodmach_Dev_2",
@@ -137,6 +149,12 @@
     }, {
       "id" : "_Dy20zqAfEfGq3IYnFJCINg",
       "name" : "foodmach_schema_name"
+    }, {
+      "id" : "_2zO70rFlEfGVnY5xgP4JHQ",
+      "name" : "error_message_log"
+    }, {
+      "id" : "_to3BgrFmEfGVnY5xgP4JHQ",
+      "name" : "integration_table_message"
     } ]
   }, {
     "contextName" : "IBT_Dev",
@@ -183,6 +201,12 @@
     }, {
       "id" : "_wBjlQpoPEfGdaILNokaaHA",
       "name" : "foodmach_schema_name"
+    }, {
+      "id" : "_2zO707FlEfGVnY5xgP4JHQ",
+      "name" : "error_message_log"
+    }, {
+      "id" : "_to3Bg7FmEfGVnY5xgP4JHQ",
+      "name" : "integration_table_message"
     } ]
   } ]
 }
