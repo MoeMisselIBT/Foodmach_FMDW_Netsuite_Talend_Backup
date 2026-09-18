@@ -8037,6 +8037,7 @@
   <note opaque="true" posX="1880" posY="760" sizeHeight="120" sizeWidth="201" text="set flag to loaded in&#xD;&#xA;integration table"/>
   <note opaque="true" posX="1240" posY="-400" sizeHeight="121" sizeWidth="161" text="Could return 2&#xD;&#xA;rows if no filter&#xD;&#xA;to return a vendor"/>
   <note opaque="false" posX="1920" posY="520" sizeHeight="120" sizeWidth="201" text="set currency names&#xD;&#xA;"/>
+  <note opaque="true" posX="160" posY="960" sizeHeight="161" sizeWidth="241" text="Job starts here.&#xD;&#xA;This API component receives &#xD;&#xA;requests then triggers the subjob"/>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
