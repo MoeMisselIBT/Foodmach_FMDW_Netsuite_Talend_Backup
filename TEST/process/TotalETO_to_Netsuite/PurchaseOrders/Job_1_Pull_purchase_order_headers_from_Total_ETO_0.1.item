@@ -591,7 +591,7 @@
       </column>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="unprocessed_purchase_order_headers" activateExpressionFilter="true" activateCondensedTool="true" reject="true">
         <mapperTableEntries name="header__change_oper" expression="row6.header__change_oper " type="id_String"/>
@@ -1146,7 +1146,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_1" show="false"/>
     <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
     <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
-    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="Job_2_Create_payload_and_send_to_netsuite"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="Job_2_Create_payload_and_store_in_integration_table"/>
     <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
     <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="TEST:_5Uo_sKdAEfGq3IYnFJCINg"/>
     <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>

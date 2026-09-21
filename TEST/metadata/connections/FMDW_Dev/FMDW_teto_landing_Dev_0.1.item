@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
-  <TalendMetadata:DatabaseConnection xmi:id="_ybsgsJxlEfG0fNycJkJoag" name="FMDW_Dev" id="_j9yssJxlEfG0fNycJkJoag" label="FMDW_Dev" dataPackage="_ycw3sJxlEfG0fNycJkJoag" DatabaseType="Microsoft SQL Server" DriverClass="com.microsoft.sqlserver.jdbc.SQLServerDriver" URL="jdbc:sqlserver://192.168.2.46:51980;DatabaseName=fmdw;trustServerCertificate=true;" dbVersionString="MSSQL_PROP" Port="51980" Username="sa" Password="enc:system.encryption.key.v1:drRkTvEMSltLR/JZBY/rn8Le0J/tZBOwsPK80YLSxXVKeAS0yVEZ7ew=" ServerName="192.168.2.46" DatasourceName="" FileFieldName="" SID="fmdw" SqlSynthax="" StringQuote="" NullChar="" DbmsId="id_MSSQL" ProductId="SQL_SERVER" AdditionalParams="trustServerCertificate=true;" StandardSQL="true" SQLMode="false" UiSchema="teto_landing" supportNLS="false">
-    <taggedValue xmi:id="_ybsgsZxlEfG0fNycJkJoag" tag="Is Conn Need Reload" value="false"/>
+  <TalendMetadata:DatabaseConnection xmi:id="_ybsgsJxlEfG0fNycJkJoag" name="FMDW_teto_landing_Dev" id="_j9yssJxlEfG0fNycJkJoag" label="FMDW_teto_landing_Dev" dataPackage="_ycw3sJxlEfG0fNycJkJoag" DatabaseType="Microsoft SQL Server" DriverClass="com.microsoft.sqlserver.jdbc.SQLServerDriver" URL="jdbc:sqlserver://192.168.2.46:51980;DatabaseName=fmdw;trustServerCertificate=true;" dbVersionString="MSSQL_PROP" Port="51980" Username="sa" Password="enc:system.encryption.key.v1:drRkTvEMSltLR/JZBY/rn8Le0J/tZBOwsPK80YLSxXVKeAS0yVEZ7ew=" ServerName="192.168.2.46" DatasourceName="" FileFieldName="" SID="fmdw" SqlSynthax="" StringQuote="" NullChar="" DbmsId="id_MSSQL" ProductId="SQL_SERVER" AdditionalParams="trustServerCertificate=true;" StandardSQL="true" SQLMode="false" UiSchema="teto_landing" supportNLS="false">
+    <taggedValue xmi:id="_ybsgsZxlEfG0fNycJkJoag" tag="Is Conn Need Reload" value="true"/>
     <taggedValue xmi:id="_ycACsJxlEfG0fNycJkJoag" tag="package filter" value=""/>
     <taggedValue xmi:id="_ycCe8JxlEfG0fNycJkJoag" tag="Status" value=""/>
     <taggedValue xmi:id="_ycCe8ZxlEfG0fNycJkJoag" tag="Version" value="0.1"/>
@@ -13,6 +13,7 @@
     <taggedValue xmi:id="_ycP6UZxlEfG0fNycJkJoag" tag="DB ProductVersion" value="15.00.2000"/>
     <taggedValue xmi:id="_ycP6UpxlEfG0fNycJkJoag" tag="DB IdentifierQuoteString" value="&quot;"/>
     <parameters xmi:id="_ybsgspxlEfG0fNycJkJoag" key="CONN_PARA_KEY_USERNAME" value="sa"/>
+    <parameters xmi:id="__ZbrkLVVEfGVnY5xgP4JHQ" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
   </TalendMetadata:DatabaseConnection>
   <orgomg.cwm.resource.relational:Catalog xmi:id="_ycw3sJxlEfG0fNycJkJoag" name="fmdw" dataManager="_ybsgsJxlEfG0fNycJkJoag">
     <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_ycw3sZxlEfG0fNycJkJoag" name="teto_landing">
