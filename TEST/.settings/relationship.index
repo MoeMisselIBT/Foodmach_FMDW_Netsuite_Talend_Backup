@@ -240,6 +240,25 @@
     "id" : "_7_NhMKA9EfGq3IYnFJCINg",
     "version" : "Latest",
     "type" : "property"
+  }, {
+    "id" : "_7_NhMKA9EfGq3IYnFJCINg - tblPurchaseOrderHeader_integration",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_qFAaAK_WEfG73rHPh6v8kA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_F3_DYLVWEfGVnY5xgP4JHQ",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_F3_DYLVWEfGVnY5xgP4JHQ - empheroTimesheet",
+    "version" : "Latest",
+    "type" : "schema"
   } ]
 }, {
   "baseItem" : {
