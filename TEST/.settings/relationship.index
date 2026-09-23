@@ -243,7 +243,15 @@
     "version" : "0.1",
     "type" : "job"
   },
-  "relatedItems" : [ ]
+  "relatedItems" : [ {
+    "id" : "_F3_DYLVWEfGVnY5xgP4JHQ",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_F3_DYLVWEfGVnY5xgP4JHQ - empheroTimesheet",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
 }, {
   "baseItem" : {
     "id" : "_qtl1ILFkEfGVnY5xgP4JHQ",
