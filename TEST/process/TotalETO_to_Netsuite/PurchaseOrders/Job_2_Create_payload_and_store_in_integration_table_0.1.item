@@ -1006,6 +1006,11 @@
       <elementValue elementRef="VALUE" value="" id="92"/>
       <elementValue elementRef="ATTRIBUTE" value="branch" id="93"/>
       <elementValue elementRef="ORDER" value="34" id="94"/>
+      <elementValue elementRef="PATH" value="/PurchaseOrders/items/item/lineid" id="95"/>
+      <elementValue elementRef="COLUMN" value="PurchaseDetailID_POD" id="96"/>
+      <elementValue elementRef="VALUE" value="" id="97"/>
+      <elementValue elementRef="ATTRIBUTE" value="branch" id="98"/>
+      <elementValue elementRef="ORDER" value="35" id="99"/>
     </elementParameter>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="TABLE" name="GROUPBYS">
