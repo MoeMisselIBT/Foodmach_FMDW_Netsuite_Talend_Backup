@@ -334,6 +334,21 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_unWD0Lr6EfGVnY5xgP4JHQ",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_j9yssJxlEfG0fNycJkJoag",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_j9yssJxlEfG0fNycJkJoag - tblReceiverLog__ct",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_w1HkcIP7EfGE_b3nUrzfvQ",
     "version" : "0.1",
     "type" : "job"

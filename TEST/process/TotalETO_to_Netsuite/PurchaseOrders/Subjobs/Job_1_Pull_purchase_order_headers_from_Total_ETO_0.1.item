@@ -1647,6 +1647,7 @@
   <note opaque="false" posX="160" posY="240" sizeHeight="161" sizeWidth="201" text="This job pulls PO headers&#xD;&#xA;from the integration table&#xD;&#xA;and grabs the latest data&#xD;&#xA;from the source tables. It &#xD;&#xA;constructs the payload and&#xD;&#xA;sends it to Netsuite. &#xD;&#xA;"/>
   <note opaque="false" posX="0" posY="520" sizeHeight="201" sizeWidth="241" text="Scan POH_ct for POs with&#xD;&#xA;printed or emailed = 1.&#xD;&#xA;&#xD;&#xA;Store these records in an integration&#xD;&#xA;table for processing. &#xD;&#xA;&#xD;&#xA;These are&#xD;&#xA;the POs that need to be synced&#xD;&#xA;to Netsuite"/>
   <note opaque="false" posX="1520" posY="520" sizeHeight="161" sizeWidth="241" text="Uses the list of headers to pull&#xD;&#xA;in the latest data from the &#xD;&#xA;POH and POD source tables.&#xD;&#xA;&#xD;&#xA;Processes them into a JSON&#xD;&#xA;Payload for Netsuite consumption"/>
+  <note opaque="true" posX="1080" posY="840" sizeHeight="80" sizeWidth="120" text="text"/>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_2" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
