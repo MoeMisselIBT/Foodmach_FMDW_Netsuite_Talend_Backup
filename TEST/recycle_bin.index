@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin">
+  <deletedFolders>process/Netsuite_to_TotalETO/ItemReceipts</deletedFolders>
   <deletedFolders>process/Netsuite_to_TotalETO/PurchaseOrders</deletedFolders>
   <deletedFolders>process/TotalETO_to_Netsuite/API_Development_Jobs</deletedFolders>
   <deletedFolders>process/demo</deletedFolders>
@@ -7,6 +8,7 @@
   <deletedItems id="_tj1UwIDYEfG6A6lFHZgJdA" path="" type="METADATA_CONNECTIONS"/>
   <deletedItems id="_7_NhMKA9EfGq3IYnFJCINg" path="FMDW_Dev" type="METADATA_CONNECTIONS"/>
   <deletedItems id="_F3_DYLVWEfGVnY5xgP4JHQ" path="FMDW_Dev" type="METADATA_CONNECTIONS"/>
+  <deletedItems id="_Izz3YIZbEfG9C7e242mTTA" path="Netsuite_to_TotalETO/ItemReceipts" type="PROCESS"/>
   <deletedItems id="_XPr_kJB2EfGuCZ_y0rqpww" path="Netsuite_to_TotalETO/Vendors" type="PROCESS"/>
   <deletedItems id="_8tHV4IZbEfG9C7e242mTTA" path="TotalETO_to_Netsuite" type="PROCESS"/>
   <deletedItems id="_QKNNUGZ8EeWm5YvsrIoYzQ" path="demo" type="PROCESS"/>
