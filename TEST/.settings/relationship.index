@@ -5,6 +5,10 @@
     "type" : "job"
   },
   "relatedItems" : [ {
+    "id" : "built-in",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
     "id" : "_7_NhMKA9EfGq3IYnFJCINg",
     "version" : "Latest",
     "type" : "property"
@@ -12,6 +16,10 @@
     "id" : "_gDwS0KJ1EfGq3IYnFJCINg",
     "version" : "Latest",
     "type" : "property"
+  }, {
+    "id" : "_7_NhMKA9EfGq3IYnFJCINg - tblReceiverLog_integration",
+    "version" : "Latest",
+    "type" : "schema"
   } ]
 }, {
   "baseItem" : {
