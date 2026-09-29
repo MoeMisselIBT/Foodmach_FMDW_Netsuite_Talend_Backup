@@ -339,11 +339,15 @@
     "type" : "job"
   },
   "relatedItems" : [ {
+    "id" : "_7_NhMKA9EfGq3IYnFJCINg",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
     "id" : "_j9yssJxlEfG0fNycJkJoag",
     "version" : "Latest",
     "type" : "property"
   }, {
-    "id" : "_j9yssJxlEfG0fNycJkJoag - tblReceiverLog__ct",
+    "id" : "_7_NhMKA9EfGq3IYnFJCINg - tblReceiverLog_integration",
     "version" : "Latest",
     "type" : "schema"
   } ]

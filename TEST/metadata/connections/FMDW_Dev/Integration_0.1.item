@@ -388,6 +388,58 @@
           <sqlDataType xmi:id="_vQKbmagvEfGq3IYnFJCINg" name="NVARCHAR" javaDataType="-9" nullable="columnNullable"/>
         </feature>
       </ownedElement>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_9EUtsLudEfGVnY5xgP4JHQ" name="tblReceiverLog_integration" id="_9EUGoLudEfGVnY5xgP4JHQ" label="tblReceiverLog_integration" tableType="TABLE">
+        <feature xsi:type="relational:TdColumn" xmi:id="_9EUtsbudEfGVnY5xgP4JHQ" name="IntegrationID" label="IntegrationID" length="10" sourceType="INT IDENTITY" talendType="id_Integer" key="true" nullable="false">
+          <taggedValue xmi:id="_9EUtsrudEfGVnY5xgP4JHQ" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_9EUts7udEfGVnY5xgP4JHQ" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_9EUttLudEfGVnY5xgP4JHQ" name="INT IDENTITY" numericPrecisionRadix="10" javaDataType="4"/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_8jme5bugEfGVnY5xgP4JHQ" name="header__timestamp" label="header__timestamp" length="26" precision="6" sourceType="DATETIME2" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
+          <taggedValue xmi:id="_8jme5rugEfGVnY5xgP4JHQ" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_8jme57ugEfGVnY5xgP4JHQ" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_8jme6LugEfGVnY5xgP4JHQ" name="DATETIME2" numericPrecision="6" javaDataType="93" nullable="columnNullable"/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_8jme6bugEfGVnY5xgP4JHQ" name="header__change_oper" label="header__change_oper" length="1" sourceType="VARCHAR" talendType="id_String">
+          <taggedValue xmi:id="_8jme6rugEfGVnY5xgP4JHQ" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_8jme67ugEfGVnY5xgP4JHQ" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_8jme7LugEfGVnY5xgP4JHQ" name="VARCHAR" javaDataType="12" nullable="columnNullable"/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_9EUttbudEfGVnY5xgP4JHQ" name="ReceiverLogID" label="ReceiverLogID" length="10" sourceType="INT" talendType="id_Integer" nullable="false">
+          <taggedValue xmi:id="_9EUttrudEfGVnY5xgP4JHQ" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_9EUtt7udEfGVnY5xgP4JHQ" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_9EUtuLudEfGVnY5xgP4JHQ" name="INT" numericPrecisionRadix="10" javaDataType="4"/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_9EUtubudEfGVnY5xgP4JHQ" name="DateTimeLoadedIntoIntegrationTableUTC" label="DateTimeLoadedIntoIntegrationTableUTC" length="23" precision="3" sourceType="DATETIME2" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
+          <taggedValue xmi:id="_9EUturudEfGVnY5xgP4JHQ" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_9EUtu7udEfGVnY5xgP4JHQ" body="'sysutcdatetime()'" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_9EUtvLudEfGVnY5xgP4JHQ" name="DATETIME2" numericPrecision="3" javaDataType="93" nullable="columnNullable"/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_9EUtvbudEfGVnY5xgP4JHQ" name="LoadedIntoNetsuite" label="LoadedIntoNetsuite" length="1" sourceType="BIT" talendType="id_Boolean">
+          <taggedValue xmi:id="_9EUtvrudEfGVnY5xgP4JHQ" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_9EUtv7udEfGVnY5xgP4JHQ" body="'(0)'" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_9EUtwLudEfGVnY5xgP4JHQ" name="BIT" javaDataType="-7" nullable="columnNullable"/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_9EUtwbudEfGVnY5xgP4JHQ" name="TimeLoadedIntoNetsuiteUTC" label="TimeLoadedIntoNetsuiteUTC" length="23" precision="3" sourceType="DATETIME2" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
+          <taggedValue xmi:id="_9EUtwrudEfGVnY5xgP4JHQ" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_9EUtw7udEfGVnY5xgP4JHQ" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_9EUtxLudEfGVnY5xgP4JHQ" name="DATETIME2" numericPrecision="3" javaDataType="93" nullable="columnNullable"/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_9EUtxbudEfGVnY5xgP4JHQ" name="Netsuite_PO_Internal_ID" label="Netsuite_PO_Internal_ID" length="50" sourceType="VARCHAR" talendType="id_String">
+          <taggedValue xmi:id="_9EUtxrudEfGVnY5xgP4JHQ" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_9EUtx7udEfGVnY5xgP4JHQ" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_9EUtyLudEfGVnY5xgP4JHQ" name="VARCHAR" javaDataType="12" nullable="columnNullable"/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_9EUtybudEfGVnY5xgP4JHQ" name="Netsuite_tranId" label="Netsuite_tranId" length="50" sourceType="VARCHAR" talendType="id_String">
+          <taggedValue xmi:id="_9EUtyrudEfGVnY5xgP4JHQ" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_9EUty7udEfGVnY5xgP4JHQ" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_9EUtzLudEfGVnY5xgP4JHQ" name="VARCHAR" javaDataType="12" nullable="columnNullable"/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_9EUtzbudEfGVnY5xgP4JHQ" name="Netsuite_Payload" label="Netsuite_Payload" length="2147483647" sourceType="NVARCHAR" talendType="id_String">
+          <taggedValue xmi:id="_9EUtzrudEfGVnY5xgP4JHQ" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_9EUtz7udEfGVnY5xgP4JHQ" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_9EUt0LudEfGVnY5xgP4JHQ" name="NVARCHAR" javaDataType="-9" nullable="columnNullable"/>
+        </feature>
+      </ownedElement>
     </ownedElement>
   </orgomg.cwm.resource.relational:Catalog>
   <orgomg.cwm.resource.relational:Catalog xmi:id="_ycw3sJxlEfG0fNycJkJoag" name="fmdw" dataManager="_8BlfwKA9EfGq3IYnFJCINg">

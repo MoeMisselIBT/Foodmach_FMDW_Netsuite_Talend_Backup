@@ -1332,7 +1332,7 @@
           <initialValue xsi:type="relational:TdExpression" xmi:id="_IQO2zrsIEfGVnY5xgP4JHQ" language="COLUMN_DEF"/>
           <sqlDataType xmi:id="_IQO2z7sIEfGVnY5xgP4JHQ" name="DATETIME" numericPrecision="3" javaDataType="93" nullable="columnNullable"/>
         </feature>
-        <feature xsi:type="relational:TdColumn" xmi:id="_IQO20LsIEfGVnY5xgP4JHQ" name="BatchID" label="BatchID" length="36" sourceType="UNIQUEIDENTIFIER" talendType="id_Object">
+        <feature xsi:type="relational:TdColumn" xmi:id="_IQO20LsIEfGVnY5xgP4JHQ" name="BatchID" label="BatchID" length="-1" sourceType="UNIQUEIDENTIFIER" talendType="id_String">
           <taggedValue xmi:id="_IQO20bsIEfGVnY5xgP4JHQ" tag="Comment" value=""/>
           <initialValue xsi:type="relational:TdExpression" xmi:id="_IQO20rsIEfGVnY5xgP4JHQ" language="COLUMN_DEF"/>
           <sqlDataType xmi:id="_IQO207sIEfGVnY5xgP4JHQ" name="UNIQUEIDENTIFIER" javaDataType="1" nullable="columnNullable"/>
