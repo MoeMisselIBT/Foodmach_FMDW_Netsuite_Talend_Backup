@@ -719,7 +719,7 @@
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="Rejected POH"/>
+    <elementParameter field="TEXT" name="LABEL" value="Rejected Rows"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="ReceiverLog_rows_to_insert_into_integration_table" name="tLogRow_8">
       <column comment="" key="true" length="1" name="header__change_oper" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -1322,9 +1322,9 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row7" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tLogRow_2" offsetLabelX="0" offsetLabelY="0" source="tLogRow_2" target="tDBOutput_1">
+  <connection connectorName="FLOW" label="rows_to_insert" lineStyle="0" metaname="tLogRow_2" offsetLabelX="0" offsetLabelY="0" source="tLogRow_2" target="tDBOutput_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="rows_to_insert" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row6" lineStyle="0" metaname="tLogRow_8" offsetLabelX="0" offsetLabelY="0" source="tLogRow_8" target="tJavaRow_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
