@@ -61,6 +61,25 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_9Qc98LyJEfG0duEbEJJ1_w",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "built-in",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_7_NhMKA9EfGq3IYnFJCINg",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_7_NhMKA9EfGq3IYnFJCINg - tblReceiverLog_integration",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_EEYrMIDGEfG6A6lFHZgJdA",
     "version" : "0.1",
     "type" : "job"
