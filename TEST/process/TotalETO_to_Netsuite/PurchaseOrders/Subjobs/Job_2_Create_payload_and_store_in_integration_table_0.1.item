@@ -1076,7 +1076,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT&#xD;&#xA;    integration.tblPurchaseOrderHeader_integration.IntegrationID,&#xD;&#xA;    integration.tblPurchaseOrderHeader_integration.PurchaseOrderID,&#xD;&#xA;    integration.tblPurchaseOrderHeader_integration.header__timestamp,&#xD;&#xA;    integration.tblPurchaseOrderHeader_integration.header__change_oper,&#xD;&#xA;    integration.tblPurchaseOrderHeader_integration.DateTimeLoadedIntoIntegrationTableUTC,&#xD;&#xA;    integration.tblPurchaseOrderHeader_integration.LoadedIntoNetsuite,&#xD;&#xA;    integration.tblPurchaseOrderHeader_integration.TimeLoadedIntoNetsuiteUTC&#xD;&#xA;FROM integration.tblPurchaseOrderHeader_integration&#xD;&#xA;ORDER BY integration.tblPurchaseOrderHeader_integration.header__timestamp DESC&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT&#xD;&#xA;    integration.tblPurchaseOrderHeader_integration.IntegrationID,&#xD;&#xA;    integration.tblPurchaseOrderHeader_integration.PurchaseOrderID,&#xD;&#xA;    integration.tblPurchaseOrderHeader_integration.header__timestamp,&#xD;&#xA;    integration.tblPurchaseOrderHeader_integration.header__change_oper,&#xD;&#xA;    integration.tblPurchaseOrderHeader_integration.DateTimeLoadedIntoIntegrationTableUTC,&#xD;&#xA;    integration.tblPurchaseOrderHeader_integration.LoadedIntoNetsuite,&#xD;&#xA;    integration.tblPurchaseOrderHeader_integration.TimeLoadedIntoNetsuiteUTC&#xD;&#xA;FROM integration.tblPurchaseOrderHeader_integration&#xD;&#xA;WHERE integration.tblPurchaseOrderHeader_integration.LoadedIntoNetsuite = 0&#xD;&#xA;ORDER BY integration.tblPurchaseOrderHeader_integration.header__timestamp DESC&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -2239,14 +2239,14 @@
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row20" show="false"/>
   </connection>
-  <connection connectorName="COMPONENT_ERROR" label="OnComponentError" lineStyle="5" metaname="tDBOutput_1" offsetLabelX="0" offsetLabelY="0" source="tDBOutput_1" target="tJava_4">
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentError3" show="false"/>
-  </connection>
   <connection connectorName="FLOW" label="row18" lineStyle="0" metaname="tDBOutput_1" offsetLabelX="0" offsetLabelY="0" source="tDBOutput_1" target="tLogRow_10">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row18" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_ERROR" label="OnComponentError" lineStyle="5" metaname="tDBOutput_1" offsetLabelX="0" offsetLabelY="0" source="tDBOutput_1" target="tJava_4">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentError3" show="false"/>
   </connection>
   <note opaque="false" posX="1440" posY="0" sizeHeight="161" sizeWidth="201" text="Pull the PurchaseOrderIDs&#xD;&#xA;from the integration table.&#xD;&#xA;&#xD;&#xA;Stores them in a list so &#xD;&#xA;that the Talend job can&#xD;&#xA;process the required records.&#xD;&#xA;"/>
   <note opaque="false" posX="1440" posY="560" sizeHeight="161" sizeWidth="241" text="Uses the list of headers to pull&#xD;&#xA;in the latest data from the &#xD;&#xA;POH and POD source tables.&#xD;&#xA;&#xD;&#xA;Processes them into a JSON&#xD;&#xA;Payload for Netsuite consumption"/>
