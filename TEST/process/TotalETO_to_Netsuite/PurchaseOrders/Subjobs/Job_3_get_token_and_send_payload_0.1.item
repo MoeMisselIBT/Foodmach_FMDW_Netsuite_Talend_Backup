@@ -2063,6 +2063,7 @@
   <note opaque="true" posX="1160" posY="160" sizeHeight="80" sizeWidth="361" text="(String) globalMap.get(&quot;json_dummy&quot;)"/>
   <note opaque="true" posX="1560" posY="520" sizeHeight="80" sizeWidth="361" text="Mark POs as loaded in the integration table"/>
   <note opaque="true" posX="280" posY="520" sizeHeight="121" sizeWidth="361" text="Check if row in payload is successful. &#xD;&#xA;If so, marked as loaded in integration table,&#xD;&#xA;else, row is rejected and logged"/>
+  <note opaque="true" posX="1720" posY="720" sizeHeight="80" sizeWidth="120" text="text"/>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
