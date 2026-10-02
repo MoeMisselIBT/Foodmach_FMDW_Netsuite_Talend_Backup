@@ -1240,7 +1240,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tExtractJSONFields_1" show="false"/>
     <elementParameter field="CLOSED_LIST" name="READ_BY" value="JSONPATH"/>
     <elementParameter field="CLOSED_LIST" name="JSON_PATH_VERSION" value="2_1_0"/>
-    <elementParameter field="PREV_COLUMN_LIST" name="JSONFIELD" value="LoadedIntoNetsuite"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="JSONFIELD" value="body"/>
     <elementParameter field="TEXT" name="LOOP_QUERY" value="&quot;/bills/bill/line&quot;" show="false"/>
     <elementParameter field="TEXT" name="JSON_LOOP_QUERY" value="&quot;$&quot;"/>
     <elementParameter field="TABLE" name="MAPPING" show="false">
@@ -1264,6 +1264,14 @@
       <elementValue elementRef="QUERY" value="" id="17"/>
       <elementValue elementRef="NODECHECK" value="false" id="18"/>
       <elementValue elementRef="ISARRAY" value="false" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseOrderID" id="20"/>
+      <elementValue elementRef="QUERY" value="" id="21"/>
+      <elementValue elementRef="NODECHECK" value="false" id="22"/>
+      <elementValue elementRef="ISARRAY" value="false" id="23"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseDetailID" id="24"/>
+      <elementValue elementRef="QUERY" value="" id="25"/>
+      <elementValue elementRef="NODECHECK" value="false" id="26"/>
+      <elementValue elementRef="ISARRAY" value="false" id="27"/>
     </elementParameter>
     <elementParameter field="TABLE" name="MAPPING_4_JSONPATH">
       <elementValue elementRef="SCHEMA_COLUMN" value="success" id="0"/>
@@ -1276,6 +1284,10 @@
       <elementValue elementRef="QUERY" value="&quot;error.message&quot;" id="7"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="body" id="8"/>
       <elementValue elementRef="QUERY" value="" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseOrderID" id="10"/>
+      <elementValue elementRef="QUERY" value="" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseDetailID" id="12"/>
+      <elementValue elementRef="QUERY" value="" id="13"/>
     </elementParameter>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
@@ -1290,6 +1302,8 @@
       <column comment="" key="false" length="-1" name="error_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="error" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PurchaseOrderID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PurchaseDetailID" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" name="REJECT">
       <column comment="" key="false" length="-1" name="success" nullable="true" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
@@ -1297,6 +1311,8 @@
       <column comment="" key="false" length="-1" name="error_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="error" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PurchaseOrderID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PurchaseDetailID" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorJSONField" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -1326,6 +1342,10 @@
       <elementValue elementRef="LENGTH" value="10" id="7"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="body" id="8"/>
       <elementValue elementRef="LENGTH" value="10" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseOrderID" id="10"/>
+      <elementValue elementRef="LENGTH" value="10" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseDetailID" id="12"/>
+      <elementValue elementRef="LENGTH" value="10" id="13"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
@@ -1337,6 +1357,8 @@
       <column comment="" key="false" length="-1" name="error_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="error" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PurchaseOrderID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PurchaseDetailID" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tFilterRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="720" posY="440">
@@ -1358,6 +1380,8 @@
       <column comment="" key="false" length="-1" name="error_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="error" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PurchaseOrderID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PurchaseDetailID" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <metadata connector="FILTER" name="FILTER">
       <column comment="" key="false" length="-1" name="success" nullable="true" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
@@ -1365,6 +1389,8 @@
       <column comment="" key="false" length="-1" name="error_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="error" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PurchaseOrderID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PurchaseDetailID" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" name="REJECT">
       <column comment="" key="false" length="-1" name="success" nullable="true" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
@@ -1372,6 +1398,8 @@
       <column comment="" key="false" length="-1" name="error_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="error" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PurchaseOrderID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PurchaseDetailID" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
@@ -1399,6 +1427,10 @@
       <elementValue elementRef="LENGTH" value="10" id="7"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="body" id="8"/>
       <elementValue elementRef="LENGTH" value="10" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseOrderID" id="10"/>
+      <elementValue elementRef="LENGTH" value="10" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseDetailID" id="12"/>
+      <elementValue elementRef="LENGTH" value="10" id="13"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
@@ -1410,6 +1442,8 @@
       <column comment="" key="false" length="-1" name="error_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="error" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PurchaseOrderID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PurchaseDetailID" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="720" posY="600">
@@ -1436,8 +1470,12 @@
       <elementValue elementRef="LENGTH" value="10" id="7"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="body" id="8"/>
       <elementValue elementRef="LENGTH" value="10" id="9"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="errorMessage" id="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseOrderID" id="10"/>
       <elementValue elementRef="LENGTH" value="10" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseDetailID" id="12"/>
+      <elementValue elementRef="LENGTH" value="10" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="errorMessage" id="14"/>
+      <elementValue elementRef="LENGTH" value="10" id="15"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
@@ -1449,6 +1487,8 @@
       <column comment="" key="false" length="-1" name="error_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="error" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PurchaseOrderID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PurchaseDetailID" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
@@ -1461,7 +1501,6 @@
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="1200" posY="440">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
@@ -1475,31 +1514,25 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="tblPurchaseOrderHeader_integration" name="netsuite_res_formatted">
-      <column comment="" key="true" length="10" name="IntegrationID" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
       <column comment="" key="false" length="10" name="PurchaseOrderID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Long" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
+      <column comment="" key="false" length="-1" name="PurchaseDetailID" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="'(0)'" key="false" length="1" name="LoadedIntoNetsuite" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="23" name="TimeLoadedIntoNetsuiteUTC" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME2" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="-1" name="Netsuite_PO_Internal_ID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Netsuite_tranId" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="netsuite_res_formatted">
-        <mapperTableEntries name="IntegrationID" expression="" type="id_Integer"/>
-        <mapperTableEntries name="PurchaseOrderID" expression="row7.eto_po_id " type="id_Long"/>
+        <mapperTableEntries name="PurchaseOrderID" expression="row7.PurchaseOrderID " type="id_Long"/>
+        <mapperTableEntries name="PurchaseDetailID" expression="row7.PurchaseDetailID " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="LoadedIntoNetsuite" expression="true" type="id_Boolean" nullable="true"/>
         <mapperTableEntries name="TimeLoadedIntoNetsuiteUTC" expression="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss&quot;,java.time.format.DateTimeFormatter.ofPattern(&quot;yyyy-MM-dd HH:mm:ss&quot;).withZone(java.time.ZoneOffset.UTC).format(java.time.Instant.now())) " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="Netsuite_PO_Internal_ID" expression="row7.Netsuite_PurchaseOrderID " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="Netsuite_tranId" expression="row7.tranId " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row7" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="success" type="id_Boolean" nullable="true"/>
@@ -1507,12 +1540,13 @@
         <mapperTableEntries name="error_name" type="id_String" nullable="true"/>
         <mapperTableEntries name="error" type="id_String" nullable="true"/>
         <mapperTableEntries name="body" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PurchaseOrderID" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="PurchaseDetailID" type="id_Integer" nullable="true"/>
       </inputTables>
     </nodeData>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1440" posY="440">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_10" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
     <elementParameter field="RADIO" name="VERTICAL" value="false"/>
@@ -1525,43 +1559,34 @@
     <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
     <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
     <elementParameter field="TABLE" name="LENGTHS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="IntegrationID" id="0"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseOrderID" id="0"/>
       <elementValue elementRef="LENGTH" value="10" id="1"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseOrderID" id="2"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseDetailID" id="2"/>
       <elementValue elementRef="LENGTH" value="10" id="3"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="LoadedIntoNetsuite" id="4"/>
       <elementValue elementRef="LENGTH" value="10" id="5"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="TimeLoadedIntoNetsuiteUTC" id="6"/>
       <elementValue elementRef="LENGTH" value="10" id="7"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Netsuite_PO_Internal_ID" id="8"/>
-      <elementValue elementRef="LENGTH" value="10" id="9"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Netsuite_tranId" id="10"/>
-      <elementValue elementRef="LENGTH" value="10" id="11"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
     <elementParameter field="TEXT" name="LABEL" value="update integration table"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="tblPurchaseOrderHeader_integration" name="tLogRow_10">
-      <column comment="" key="true" length="10" name="IntegrationID" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
       <column comment="" key="false" length="10" name="PurchaseOrderID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Long" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
+      <column comment="" key="false" length="-1" name="PurchaseDetailID" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="'(0)'" key="false" length="1" name="LoadedIntoNetsuite" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="23" name="TimeLoadedIntoNetsuiteUTC" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME2" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="-1" name="Netsuite_PO_Internal_ID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Netsuite_tranId" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="960" posY="560">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_1" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
     <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
@@ -1600,15 +1625,15 @@
     <elementParameter field="TABLE" name="ADD_COLS"/>
     <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="true"/>
     <elementParameter field="TABLE" name="FIELD_OPTIONS">
-      <elementValue elementRef="SCHEMA_COLUMN" value="IntegrationID" id="0"/>
-      <elementValue elementRef="UPDATE_KEY" value="false" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseOrderID" id="0"/>
+      <elementValue elementRef="UPDATE_KEY" value="true" id="1"/>
       <elementValue elementRef="DELETE_KEY" value="false" id="2"/>
       <elementValue elementRef="UPDATABLE" value="false" id="3"/>
       <elementValue elementRef="INSERTABLE" value="false" id="4"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseOrderID" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseDetailID" id="5"/>
       <elementValue elementRef="UPDATE_KEY" value="true" id="6"/>
       <elementValue elementRef="DELETE_KEY" value="false" id="7"/>
-      <elementValue elementRef="UPDATABLE" value="false" id="8"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="8"/>
       <elementValue elementRef="INSERTABLE" value="false" id="9"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="LoadedIntoNetsuite" id="10"/>
       <elementValue elementRef="UPDATE_KEY" value="false" id="11"/>
@@ -1620,16 +1645,6 @@
       <elementValue elementRef="DELETE_KEY" value="false" id="17"/>
       <elementValue elementRef="UPDATABLE" value="false" id="18"/>
       <elementValue elementRef="INSERTABLE" value="false" id="19"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Netsuite_PO_Internal_ID" id="20"/>
-      <elementValue elementRef="UPDATE_KEY" value="false" id="21"/>
-      <elementValue elementRef="DELETE_KEY" value="false" id="22"/>
-      <elementValue elementRef="UPDATABLE" value="true" id="23"/>
-      <elementValue elementRef="INSERTABLE" value="false" id="24"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Netsuite_tranId" id="25"/>
-      <elementValue elementRef="UPDATE_KEY" value="false" id="26"/>
-      <elementValue elementRef="DELETE_KEY" value="false" id="27"/>
-      <elementValue elementRef="UPDATABLE" value="true" id="28"/>
-      <elementValue elementRef="INSERTABLE" value="false" id="29"/>
     </elementParameter>
     <elementParameter field="CHECK" name="IGNORE_DATE_OUTOF_RANGE" value="false"/>
     <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
@@ -1641,43 +1656,34 @@
     <elementParameter field="TEXT" name="LABEL" value="update integration table"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="tblPurchaseOrderHeader_integration" name="tDBOutput_1">
-      <column comment="" key="true" length="10" name="IntegrationID" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
       <column comment="" key="false" length="10" name="PurchaseOrderID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Long" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
+      <column comment="" key="false" length="-1" name="PurchaseDetailID" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="'(0)'" key="false" length="1" name="LoadedIntoNetsuite" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="23" name="TimeLoadedIntoNetsuiteUTC" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME2" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="-1" name="Netsuite_PO_Internal_ID" nullable="true" pattern="" precision="-1" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Netsuite_tranId" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" label="tblPurchaseOrderHeader_integration" name="REJECT">
-      <column comment="" key="true" length="10" name="IntegrationID" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
       <column comment="" key="false" length="10" name="PurchaseOrderID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Long" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
+      <column comment="" key="false" length="-1" name="PurchaseDetailID" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="'(0)'" key="false" length="1" name="LoadedIntoNetsuite" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="23" name="TimeLoadedIntoNetsuiteUTC" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME2" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="-1" name="Netsuite_PO_Internal_ID" nullable="true" pattern="" precision="-1" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Netsuite_tranId" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1440" posY="560">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_9" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
     <elementParameter field="RADIO" name="VERTICAL" value="false"/>
@@ -1690,38 +1696,49 @@
     <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
     <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
     <elementParameter field="TABLE" name="LENGTHS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="IntegrationID" id="0"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseOrderID" id="0"/>
       <elementValue elementRef="LENGTH" value="10" id="1"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseOrderID" id="2"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseDetailID" id="2"/>
       <elementValue elementRef="LENGTH" value="10" id="3"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="LoadedIntoNetsuite" id="4"/>
       <elementValue elementRef="LENGTH" value="10" id="5"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="TimeLoadedIntoNetsuiteUTC" id="6"/>
       <elementValue elementRef="LENGTH" value="10" id="7"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Netsuite_PO_Internal_ID" id="8"/>
-      <elementValue elementRef="LENGTH" value="10" id="9"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Netsuite_tranId" id="10"/>
-      <elementValue elementRef="LENGTH" value="10" id="11"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
     <elementParameter field="TEXT" name="LABEL" value="final_data"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="tblPurchaseOrderHeader_integration" name="tLogRow_9">
-      <column comment="" key="true" length="10" name="IntegrationID" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
       <column comment="" key="false" length="10" name="PurchaseOrderID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Long" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
+      <column comment="" key="false" length="-1" name="PurchaseDetailID" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="'(0)'" key="false" length="1" name="LoadedIntoNetsuite" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="23" name="TimeLoadedIntoNetsuiteUTC" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME2" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="-1" name="Netsuite_PO_Internal_ID" nullable="true" pattern="" precision="-1" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Netsuite_tranId" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1640" posY="720">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_3" show="false"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="System.out.println(&quot;Payload loaded successfully: &quot; + &quot;PurchaseDetailID: &quot; + input_row.PurchaseDetailID + &quot;PurchaseOrderID: &quot; + input_row.PurchaseOrderID);&#xD;&#xA;"/>
+    <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="log payload successfully loaded"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="tblPurchaseOrderHeader_integration" name="tJavaRow_3">
+      <column comment="" key="false" length="10" name="PurchaseOrderID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="-1" name="PurchaseDetailID" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="'(0)'" key="false" length="1" name="LoadedIntoNetsuite" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="TimeLoadedIntoNetsuiteUTC" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME2" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
     </metadata>
   </node>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tHTTPClient_1">
@@ -1942,6 +1959,12 @@
       <elementValue elementRef="TRACE_COLUMN" value="error_name" id="6"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="7"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="8"/>
+      <elementValue elementRef="TRACE_COLUMN" value="PurchaseDetailID" id="9"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="10"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="11"/>
+      <elementValue elementRef="TRACE_COLUMN" value="PurchaseOrderID" id="12"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="13"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="14"/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row8" show="false"/>
@@ -1965,7 +1988,6 @@
   </connection>
   <connection connectorName="FLOW" label="row7" lineStyle="0" metaname="tLogRow_6" offsetLabelX="0" offsetLabelY="0" source="tLogRow_6" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row7" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row14" lineStyle="0" metaname="tLogRow_8" offsetLabelX="0" offsetLabelY="0" source="tLogRow_8" target="tJavaRow_2">
@@ -1983,19 +2005,16 @@
       <elementValue elementRef="TRACE_COLUMN" value="Netsuite_tranId" id="3"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="4"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="5"/>
+      <elementValue elementRef="TRACE_COLUMN" value="PurchaseDetailID" id="6"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="7"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="8"/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="netsuite_res_formatted" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row10" lineStyle="0" metaname="tLogRow_10" offsetLabelX="0" offsetLabelY="0" source="tLogRow_10" target="tDBOutput_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row10" show="false"/>
-  </connection>
-  <connection connectorName="COMPONENT_ERROR" label="OnComponentError" lineStyle="5" metaname="tDBOutput_1" offsetLabelX="0" offsetLabelY="0" source="tDBOutput_1" target="tJava_7">
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentError1" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row9" lineStyle="0" metaname="tDBOutput_1" offsetLabelX="0" offsetLabelY="0" source="tDBOutput_1" target="tLogRow_9">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
@@ -2004,8 +2023,15 @@
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row9" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_ERROR" label="OnComponentError" lineStyle="5" metaname="tDBOutput_1" offsetLabelX="0" offsetLabelY="0" source="tDBOutput_1" target="tJava_7">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentError1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row19" lineStyle="0" metaname="tLogRow_9" offsetLabelX="0" offsetLabelY="0" source="tLogRow_9" target="tJavaRow_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row19" show="false"/>
   </connection>
   <note opaque="true" posX="1560" posY="320" sizeHeight="80" sizeWidth="361" text="(String) globalMap.get(&quot;json_dummy&quot;)"/>
   <note opaque="true" posX="1560" posY="520" sizeHeight="80" sizeWidth="361" text="Mark POs as loaded in the integration table"/>
@@ -2092,11 +2118,6 @@
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_2" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
   </subjob>
