@@ -292,6 +292,21 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_evG4ML4NEfG0duEbEJJ1_w",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_7_NhMKA9EfGq3IYnFJCINg",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_j9yssJxlEfG0fNycJkJoag",
+    "version" : "Latest",
+    "type" : "property"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_iyx4sJuBEfGuCZ_y0rqpww",
     "version" : "0.1",
     "type" : "job"
@@ -384,10 +399,6 @@
     "id" : "_j9yssJxlEfG0fNycJkJoag",
     "version" : "Latest",
     "type" : "property"
-  }, {
-    "id" : "_7_NhMKA9EfGq3IYnFJCINg - tblReceiverLog_integration",
-    "version" : "Latest",
-    "type" : "schema"
   } ]
 }, {
   "baseItem" : {
