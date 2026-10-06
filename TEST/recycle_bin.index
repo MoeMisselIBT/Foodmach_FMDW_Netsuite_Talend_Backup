@@ -3,6 +3,7 @@
   <deletedFolders>process/Netsuite_to_TotalETO/ItemReceipts</deletedFolders>
   <deletedFolders>process/Netsuite_to_TotalETO/PurchaseOrders</deletedFolders>
   <deletedFolders>process/TotalETO_to_Netsuite/API_Development_Jobs</deletedFolders>
+  <deletedFolders>process/TotalETO_to_Netsuite/ItemReceipts/Subjobs/old</deletedFolders>
   <deletedFolders>process/demo</deletedFolders>
   <deletedItems id="_gclOEI7jEfGuCZ_y0rqpww" path="" type="JOBLET"/>
   <deletedItems id="_tj1UwIDYEfG6A6lFHZgJdA" path="" type="METADATA_CONNECTIONS"/>
@@ -12,10 +13,13 @@
   <deletedItems id="_Izz3YIZbEfG9C7e242mTTA" path="Netsuite_to_TotalETO/ItemReceipts" type="PROCESS"/>
   <deletedItems id="_XPr_kJB2EfGuCZ_y0rqpww" path="Netsuite_to_TotalETO/Vendors" type="PROCESS"/>
   <deletedItems id="_8tHV4IZbEfG9C7e242mTTA" path="TotalETO_to_Netsuite" type="PROCESS"/>
+  <deletedItems id="_SqvZEMEbEfG0duEbEJJ1_w" path="TotalETO_to_Netsuite/ItemReceipts/Subjobs" type="PROCESS"/>
   <deletedItems id="_bQI6QLyJEfG0duEbEJJ1_w" path="TotalETO_to_Netsuite/ItemReceipts/Subjobs" type="PROCESS"/>
+  <deletedItems id="_csz68MEbEfG0duEbEJJ1_w" path="TotalETO_to_Netsuite/ItemReceipts/Subjobs" type="PROCESS"/>
   <deletedItems id="_dzRlULrcEfGVnY5xgP4JHQ" path="TotalETO_to_Netsuite/ItemReceipts/Subjobs" type="PROCESS"/>
   <deletedItems id="_e74zMLrcEfGVnY5xgP4JHQ" path="TotalETO_to_Netsuite/ItemReceipts/Subjobs" type="PROCESS"/>
   <deletedItems id="_eTCDcLrcEfGVnY5xgP4JHQ" path="TotalETO_to_Netsuite/ItemReceipts/Subjobs" type="PROCESS"/>
+  <deletedItems id="_unWD0Lr6EfGVnY5xgP4JHQ" path="TotalETO_to_Netsuite/ItemReceipts/Subjobs/old" type="PROCESS"/>
   <deletedItems id="_QKNNUGZ8EeWm5YvsrIoYzQ" path="demo" type="PROCESS"/>
   <deletedItems id="_6X6CAIDJEfG6A6lFHZgJdA" path="" type="ROUTE"/>
 </recyclebin:RecycleBin>
