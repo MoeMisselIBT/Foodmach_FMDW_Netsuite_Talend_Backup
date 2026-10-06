@@ -602,7 +602,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xD;&#xA;&#x9;PurchaseDetailID,&#xD;&#xA;&#x9;PurchaseOrderID,&#xD;&#xA;&#x9;SUM(QtyReceived) as QtyReceived,&#xD;&#xA;&#x9;PurchaseUOM,&#xD;&#xA;&#x9;[Date],&#xD;&#xA;&#x9;RaisedByEmployee&#xD;&#xA;FROM&#xD;&#xA;integration_database.integration.tblReceiverLog_integration&#xD;&#xA;WHERE LoadedIntoNetsuite = 0&#xD;&#xA;GROUP BY [Date], PurchaseOrderID, PurchaseDetailID, PurchaseUOM, RaisedByEmployee&#xD;&#xA;HAVING SUM(QtyReceived) > 0&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT&#xD;&#xA;&#x9;I.PurchaseDetailID,&#xD;&#xA;&#x9;I.PurchaseOrderID,&#xD;&#xA;&#x9;SUM(I.QtyReceived) AS QtyReceived,&#xD;&#xA;&#x9;I.PurchaseUOM,&#xD;&#xA;&#x9;I.[Date],&#xD;&#xA;&#x9;I.RaisedByEmployee,&#xD;&#xA;&#x9;E.EmpEmail as Email&#xD;&#xA;FROM integration_database.integration.tblReceiverLog_integration I&#xD;&#xA;LEFT JOIN fmdw.teto_bronze.tblEmployee E&#xD;&#xA;&#x9;ON REPLACE(I.RaisedByEmployee, ' ', '') =&#xD;&#xA;   CONCAT(REPLACE(E.EmpLastName, ' ', ''), ',', REPLACE(E.EmpFirstName, ' ', '')) COLLATE Latin1_General_CI_AI&#xD;&#xA;WHERE I.LoadedIntoNetsuite = 0&#xD;&#xA;GROUP BY I.[Date], I.PurchaseOrderID, I.PurchaseDetailID, I.PurchaseUOM, I.RaisedByEmployee, E.EmpEmail&#xD;&#xA;HAVING SUM(I.QtyReceived) > 0&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -629,6 +629,8 @@
       <elementValue elementRef="TRIM" value="false" id="9"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="RaisedByEmployee" id="10"/>
       <elementValue elementRef="TRIM" value="false" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Email" id="12"/>
+      <elementValue elementRef="TRIM" value="false" id="13"/>
     </elementParameter>
     <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
     <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" value="30" show="false"/>
@@ -641,6 +643,7 @@
       <column comment="" key="false" length="50" name="PurchaseUOM" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="23" name="Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="102" name="RaisedByEmployee" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Email" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1000" posY="360">
@@ -669,18 +672,21 @@
       <elementValue elementRef="LENGTH" value="10" id="9"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="RaisedByEmployee" id="10"/>
       <elementValue elementRef="LENGTH" value="10" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Email" id="12"/>
+      <elementValue elementRef="LENGTH" value="10" id="13"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
     <elementParameter field="TEXT" name="LABEL" value="view of the data after integration table update for debugging purposes"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="tblReceiverLog" name="tLogRow_12">
-      <column comment="" defaultValue="" key="false" length="10" name="PurchaseDetailID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="PurchaseOrderID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+    <metadata connector="FLOW" label="tblReceiverLog_integration" name="tLogRow_12">
+      <column comment="" defaultValue="" key="false" length="10" name="PurchaseDetailID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="PurchaseOrderID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="20" name="QtyReceived" nullable="true" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="PurchaseUOM" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="23" name="Date" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="102" name="RaisedByEmployee" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Email" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tSortRow" componentVersion="0.102" offsetLabelX="8" offsetLabelY="37" posX="1400" posY="360">
@@ -699,13 +705,14 @@
     <elementParameter field="TEXT" name="EXTERNAL_SORT_BUFFERSIZE" value="1000000" show="false"/>
     <elementParameter field="TEXT" name="LABEL" value="sort by purchaseOrderID and PurchaseDetailID"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="tblReceiverLog" name="tSortRow_1">
-      <column comment="" defaultValue="" key="false" length="10" name="PurchaseDetailID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="PurchaseOrderID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+    <metadata connector="FLOW" label="tblReceiverLog_integration" name="tSortRow_1">
+      <column comment="" defaultValue="" key="false" length="10" name="PurchaseDetailID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="PurchaseOrderID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="20" name="QtyReceived" nullable="true" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="PurchaseUOM" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="23" name="Date" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="102" name="RaisedByEmployee" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Email" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1840" posY="360">
@@ -734,18 +741,21 @@
       <elementValue elementRef="LENGTH" value="10" id="9"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="RaisedByEmployee" id="10"/>
       <elementValue elementRef="LENGTH" value="10" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Email" id="12"/>
+      <elementValue elementRef="LENGTH" value="10" id="13"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
     <elementParameter field="TEXT" name="LABEL" value="tblReceiverLog data after sorting"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="tblReceiverLog" name="tLogRow_5">
-      <column comment="" defaultValue="" key="false" length="10" name="PurchaseDetailID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="PurchaseOrderID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+    <metadata connector="FLOW" label="tblReceiverLog_integration" name="tLogRow_5">
+      <column comment="" defaultValue="" key="false" length="10" name="PurchaseDetailID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="PurchaseOrderID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="20" name="QtyReceived" nullable="true" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="PurchaseUOM" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="23" name="Date" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="102" name="RaisedByEmployee" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Email" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tWriteJSONField" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1840" posY="520">
@@ -801,7 +811,7 @@
       <elementValue elementRef="ATTRIBUTE" value="branch" id="18"/>
       <elementValue elementRef="ORDER" value="9" id="19"/>
       <elementValue elementRef="PATH" value="/PurchaseOrders/lines/line/employeeEmail" id="20"/>
-      <elementValue elementRef="COLUMN" value="RaisedByEmployee" id="21"/>
+      <elementValue elementRef="COLUMN" value="Email" id="21"/>
       <elementValue elementRef="VALUE" value="" id="22"/>
       <elementValue elementRef="ATTRIBUTE" value="branch" id="23"/>
       <elementValue elementRef="ORDER" value="10" id="24"/>
@@ -1181,6 +1191,11 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row22" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tLogRow_12">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="Email" id="0"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
   </connection>
