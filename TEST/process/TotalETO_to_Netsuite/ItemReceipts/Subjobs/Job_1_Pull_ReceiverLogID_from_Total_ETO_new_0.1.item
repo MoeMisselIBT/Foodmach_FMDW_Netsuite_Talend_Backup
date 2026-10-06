@@ -1599,6 +1599,7 @@
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk4" show="false"/>
   </connection>
+  <note opaque="true" posX="720" posY="320" sizeHeight="161" sizeWidth="161" text="Fix this&#xD;&#xA;->&#xD;&#xA;Can be optimised&#xD;&#xA;to not do a full&#xD;&#xA;select&#xD;&#xA;"/>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
