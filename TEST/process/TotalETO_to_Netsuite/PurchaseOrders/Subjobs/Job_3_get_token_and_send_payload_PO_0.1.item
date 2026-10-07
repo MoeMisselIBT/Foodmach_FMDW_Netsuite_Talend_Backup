@@ -1015,7 +1015,7 @@
       <elementValue elementRef="SCHEMA_COLUMN" value="TimeLoadedIntoNetsuiteUTC" id="15"/>
       <elementValue elementRef="UPDATE_KEY" value="false" id="16"/>
       <elementValue elementRef="DELETE_KEY" value="false" id="17"/>
-      <elementValue elementRef="UPDATABLE" value="false" id="18"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="18"/>
       <elementValue elementRef="INSERTABLE" value="false" id="19"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Netsuite_PO_Internal_ID" id="20"/>
       <elementValue elementRef="UPDATE_KEY" value="false" id="21"/>
