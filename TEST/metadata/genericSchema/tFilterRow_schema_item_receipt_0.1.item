@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_8bxhwMK1EfGA9rGHMyEOkw" comment="connectionComment" label="connectionLabel" dataPackage="_8bxhwcK1EfGA9rGHMyEOkw"/>
+  <TalendMetadata:GenericPackage xmi:id="_8bxhwcK1EfGA9rGHMyEOkw" dataManager="_8bxhwMK1EfGA9rGHMyEOkw">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_8bxhwsK1EfGA9rGHMyEOkw" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_8byI0MK1EfGA9rGHMyEOkw" name="success" id="10642" label="success" length="-1" precision="-1" sourceType="" talendType="id_Boolean">
+        <initialValue xmi:id="_8byv4MK1EfGA9rGHMyEOkw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_8byv4cK1EfGA9rGHMyEOkw" name="Netsuite_PurchaseOrderID" id="10643" label="Netsuite_PurchaseOrderID" length="-1" precision="-1" sourceType="" talendType="id_Long">
+        <initialValue xmi:id="_8byv4sK1EfGA9rGHMyEOkw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_8byv48K1EfGA9rGHMyEOkw" name="tranId" id="10644" label="tranId" length="-1" precision="-1" sourceType="" talendType="id_String">
+        <initialValue xmi:id="_8byv5MK1EfGA9rGHMyEOkw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_8byv5cK1EfGA9rGHMyEOkw" name="eto_po_id" id="10645" label="eto_po_id" length="-1" precision="-1" sourceType="" talendType="id_Integer">
+        <initialValue xmi:id="_8byv5sK1EfGA9rGHMyEOkw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_8byv58K1EfGA9rGHMyEOkw" name="error" id="10646" label="error" length="-1" precision="-1" sourceType="" talendType="id_String">
+        <initialValue xmi:id="_8byv6MK1EfGA9rGHMyEOkw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_8byv6cK1EfGA9rGHMyEOkw" name="body" id="10647" label="body" length="-1" precision="-1" sourceType="" talendType="id_String">
+        <initialValue xmi:id="_8byv6sK1EfGA9rGHMyEOkw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_8byv68K1EfGA9rGHMyEOkw" name="errorMessage" id="10648" label="errorMessage" length="255" sourceType="" talendType="id_String">
+        <initialValue xmi:id="_8byv7MK1EfGA9rGHMyEOkw"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>
