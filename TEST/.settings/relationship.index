@@ -217,13 +217,9 @@
     "type" : "job"
   },
   "relatedItems" : [ {
-    "id" : "_F3_DYLVWEfGVnY5xgP4JHQ",
+    "id" : "built-in",
     "version" : "Latest",
-    "type" : "property"
-  }, {
-    "id" : "_F3_DYLVWEfGVnY5xgP4JHQ - empheroTimesheet",
-    "version" : "Latest",
-    "type" : "schema"
+    "type" : "context"
   } ]
 }, {
   "baseItem" : {
