@@ -1,0 +1,32 @@
+{
+  "itemId" : "_q7YNkKdgEfGrNKOYnrlUTg",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_iGOx0M5wEfGRWfYhjqv9Dg",
+    "parameterList" : [ {
+      "id" : "_HWqicM5xEfGRWfYhjqv9Dg",
+      "name" : "account_id"
+    }, {
+      "id" : "_HWqicc5xEfGRWfYhjqv9Dg",
+      "name" : "client_id"
+    }, {
+      "id" : "_HWqics5xEfGRWfYhjqv9Dg",
+      "name" : "certificate_id"
+    }, {
+      "id" : "_HWqic85xEfGRWfYhjqv9Dg",
+      "name" : "scope"
+    }, {
+      "id" : "_HWqidM5xEfGRWfYhjqv9Dg",
+      "name" : "private_key_path"
+    }, {
+      "id" : "_Iis3wM5xEfGRWfYhjqv9Dg",
+      "name" : "new_bearer_token"
+    }, {
+      "id" : "_Iis3wc5xEfGRWfYhjqv9Dg",
+      "name" : "rejectCount"
+    }, {
+      "id" : "_iHRTos5wEfGRWfYhjqv9Dg",
+      "name" : "JSON_Payload"
+    } ]
+  } ]
+}

@@ -1,0 +1,38 @@
+{
+  "itemId" : "_WXLJsM5wEfGRWfYhjqv9Dg",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_iGOx0M5wEfGRWfYhjqv9Dg",
+    "parameterList" : [ {
+      "id" : "_iHRToM5wEfGRWfYhjqv9Dg",
+      "name" : "PO_ID_List"
+    }, {
+      "id" : "_iHRToc5wEfGRWfYhjqv9Dg",
+      "name" : "PO_Creation_Result"
+    }, {
+      "id" : "_iHRTos5wEfGRWfYhjqv9Dg",
+      "name" : "JSON_Payload"
+    }, {
+      "id" : "_HWqicM5xEfGRWfYhjqv9Dg",
+      "name" : "account_id"
+    }, {
+      "id" : "_HWqicc5xEfGRWfYhjqv9Dg",
+      "name" : "client_id"
+    }, {
+      "id" : "_HWqics5xEfGRWfYhjqv9Dg",
+      "name" : "certificate_id"
+    }, {
+      "id" : "_HWqic85xEfGRWfYhjqv9Dg",
+      "name" : "scope"
+    }, {
+      "id" : "_HWqidM5xEfGRWfYhjqv9Dg",
+      "name" : "private_key_path"
+    }, {
+      "id" : "_Iis3wM5xEfGRWfYhjqv9Dg",
+      "name" : "new_bearer_token"
+    }, {
+      "id" : "_Iis3wc5xEfGRWfYhjqv9Dg",
+      "name" : "rejectCount"
+    } ]
+  } ]
+}

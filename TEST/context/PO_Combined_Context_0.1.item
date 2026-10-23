@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_iGOx0c5wEfGRWfYhjqv9Dg" name="Default">
+  <contextParameter xmi:id="_iHRToM5wEfGRWfYhjqv9Dg" comment="" name="PO_ID_List" prompt="PO_ID_List?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_iHRToc5wEfGRWfYhjqv9Dg" comment="" name="PO_Creation_Result" prompt="PO_Creation_Result?" promptNeeded="false" type="id_Boolean" value=""/>
+  <contextParameter xmi:id="_iHRTos5wEfGRWfYhjqv9Dg" comment="" name="JSON_Payload" prompt="JSON_Payload?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_HWqicM5xEfGRWfYhjqv9Dg" comment="" name="account_id" prompt="account_id?" promptNeeded="false" type="id_String" value="847280-sb1"/>
+  <contextParameter xmi:id="_HWqicc5xEfGRWfYhjqv9Dg" comment="" name="client_id" prompt="client_id?" promptNeeded="false" type="id_String" value="e74f0683fa5379e2b725547a322cb11514b0915b7a7efec374a72c4ae3a04531"/>
+  <contextParameter xmi:id="_HWqics5xEfGRWfYhjqv9Dg" comment="" name="certificate_id" prompt="certificate_id?" promptNeeded="false" type="id_String" value="S_eR_japu9FLYSq2Kzq9pw9OPBfiKkMR2trklvfe4Es"/>
+  <contextParameter xmi:id="_HWqic85xEfGRWfYhjqv9Dg" comment="" name="scope" prompt="scope?" promptNeeded="false" type="id_String" value="restlets rest_webservices"/>
+  <contextParameter xmi:id="_HWqidM5xEfGRWfYhjqv9Dg" comment="" name="private_key_path" prompt="private_key_path?" promptNeeded="false" type="id_String" value="C:\Users\mmisselmany\Downloads\PO_Auth_flow\PO_Auth_flow\private.pem"/>
+  <contextParameter xmi:id="_Iis3wM5xEfGRWfYhjqv9Dg" comment="" name="new_bearer_token" prompt="new_bearer_token?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_Iis3wc5xEfGRWfYhjqv9Dg" comment="" name="rejectCount" prompt="rejectCount?" promptNeeded="false" type="id_Integer" value="0"/>
+</talendfile:ContextType>
