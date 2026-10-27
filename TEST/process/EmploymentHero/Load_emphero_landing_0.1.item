@@ -7,8 +7,8 @@
     <contextParameter comment="" name="getProjectUrl" prompt="getProjectUrl?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="114542/dimension/5861" internalId="_vHIDgchVEfGA9rGHMyEOkw"/>
     <contextParameter comment="" name="getHourTypeUrl" prompt="getHourTypeUrl?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="114542/dimension/5862" internalId="_vHIDgshVEfGA9rGHMyEOkw"/>
     <contextParameter comment="" name="getTimesheetReportUrl" prompt="getTimesheetReportUrl?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="114542/report" internalId="_RCLlAMhcEfGA9rGHMyEOkw"/>
-    <contextParameter comment="for timesheetline" name="tsl_fromDate" prompt="tsl_fromDate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_6Lai0M2kEfGooOP-z9a4XQ"/>
-    <contextParameter comment="This is less than. E.g. If you want 1st -> 7th, then put 8th." name="tsl_toDate" prompt="tsl_toDate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_6Lai0c2kEfGooOP-z9a4XQ"/>
+    <contextParameter comment="for timesheetline. yyyy-mm-dd" name="tsl_fromDate" prompt="tsl_fromDate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_6Lai0M2kEfGooOP-z9a4XQ"/>
+    <contextParameter comment="This is less than. E.g. If you want 1st -> 7th, then put 8th. yyyy-mm-dd" name="tsl_toDate" prompt="tsl_toDate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_6Lai0c2kEfGooOP-z9a4XQ"/>
     <contextParameter comment="" name="lookbackDays" prompt="lookbackDays?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="7" internalId="_yAHocM28EfGooOP-z9a4XQ"/>
     <contextParameter comment="This is inclusive so if you want 1st-7th, then put 7th. The format is yyyy-mm-dd." name="eh_ts_toDate" prompt="eh_ts_toDate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_yAHocc28EfGooOP-z9a4XQ"/>
     <contextParameter comment="For the eh_timesheet. The format is yyyy-mm-dd." name="eh_ts_fromDate" prompt="eh_ts_fromDate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_FjZa0M29EfGooOP-z9a4XQ"/>
@@ -17,6 +17,8 @@
     <contextParameter comment="" name="integrationDatabase" prompt="integrationDatabase?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_twfVkc3YEfGooOP-z9a4XQ"/>
     <contextParameter comment="" name="ip_address" prompt="ip_address?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="192.168.2.46" internalId="_twfVks3YEfGooOP-z9a4XQ"/>
     <contextParameter comment="" name="port" prompt="port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="51980" internalId="_twfVk83YEfGooOP-z9a4XQ"/>
+    <contextParameter comment="yyyy-mm-dd" name="manualFromDate" prompt="manualFromDate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_O1UDANJbEfGUzJ4r5AqM4g"/>
+    <contextParameter comment="yyyy-mm-dd" name="manualToDate" prompt="manualToDate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_O1UDAdJbEfGUzJ4r5AqM4g"/>
   </context>
   <context confirmationNeeded="false" hide="false" name="Dev_testing">
     <contextParameter comment="" name="apiKey" prompt="apiKey?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:Qc9XfSZVyVZczyNnLdkqqKxgnVhAr3u62lYxPle/uflvHzQnDFXEx7DXNHttFcLUo1W1KULb9wlf3I579udKrxqRjC0ellkv5dOTccTWNnE23Jg5cm/zYtRKckgpvWSnu8Z55ElSPZ2aS30OarUFO/4oVPCw" internalId="_OY-dMMhTEfGA9rGHMyEOkw"/>
@@ -25,8 +27,8 @@
     <contextParameter comment="" name="getProjectUrl" prompt="getProjectUrl?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="114542/dimension/5861" internalId="_vHIDgchVEfGA9rGHMyEOkw"/>
     <contextParameter comment="" name="getHourTypeUrl" prompt="getHourTypeUrl?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="114542/dimension/5862" internalId="_vHIDgshVEfGA9rGHMyEOkw"/>
     <contextParameter comment="" name="getTimesheetReportUrl" prompt="getTimesheetReportUrl?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="114542/report" internalId="_RCLlAMhcEfGA9rGHMyEOkw"/>
-    <contextParameter comment="for timesheetline" name="tsl_fromDate" prompt="tsl_fromDate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_6Lai0M2kEfGooOP-z9a4XQ"/>
-    <contextParameter comment="This is less than. E.g. If you want 1st -> 7th, then put 8th." name="tsl_toDate" prompt="tsl_toDate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_6Lai0c2kEfGooOP-z9a4XQ"/>
+    <contextParameter comment="for timesheetline. yyyy-mm-dd" name="tsl_fromDate" prompt="tsl_fromDate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_6Lai0M2kEfGooOP-z9a4XQ"/>
+    <contextParameter comment="This is less than. E.g. If you want 1st -> 7th, then put 8th. yyyy-mm-dd" name="tsl_toDate" prompt="tsl_toDate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_6Lai0c2kEfGooOP-z9a4XQ"/>
     <contextParameter comment="" name="lookbackDays" prompt="lookbackDays?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="7" internalId="_yAHocM28EfGooOP-z9a4XQ"/>
     <contextParameter comment="This is inclusive so if you want 1st-7th, then put 7th. The format is yyyy-mm-dd." name="eh_ts_toDate" prompt="eh_ts_toDate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_yAHocc28EfGooOP-z9a4XQ"/>
     <contextParameter comment="For the eh_timesheet. The format is yyyy-mm-dd." name="eh_ts_fromDate" prompt="eh_ts_fromDate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_FjZa0M29EfGooOP-z9a4XQ"/>
@@ -35,6 +37,8 @@
     <contextParameter comment="" name="integrationDatabase" prompt="integrationDatabase?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_twfVkc3YEfGooOP-z9a4XQ"/>
     <contextParameter comment="" name="ip_address" prompt="ip_address?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="192.168.2.46" internalId="_twfVks3YEfGooOP-z9a4XQ"/>
     <contextParameter comment="" name="port" prompt="port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="51980" internalId="_twfVk83YEfGooOP-z9a4XQ"/>
+    <contextParameter comment="yyyy-mm-dd" name="manualFromDate" prompt="manualFromDate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_O1UDAtJbEfGUzJ4r5AqM4g"/>
+    <contextParameter comment="yyyy-mm-dd" name="manualToDate" prompt="manualToDate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_O1UDA9JbEfGUzJ4r5AqM4g"/>
   </context>
   <context confirmationNeeded="false" hide="false" name="Prod">
     <contextParameter comment="" name="apiKey" prompt="apiKey?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:Qc9XfSZVyVZczyNnLdkqqKxgnVhAr3u62lYxPle/uflvHzQnDFXEx7DXNHttFcLUo1W1KULb9wlf3I579udKrxqRjC0ellkv5dOTccTWNnE23Jg5cm/zYtRKckgpvWSnu8Z55ElSPZ2aS30OarUFO/4oVPCw" internalId="_OY-dMMhTEfGA9rGHMyEOkw"/>
@@ -43,8 +47,8 @@
     <contextParameter comment="" name="getProjectUrl" prompt="getProjectUrl?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="114542/dimension/5861" internalId="_vHIDgchVEfGA9rGHMyEOkw"/>
     <contextParameter comment="" name="getHourTypeUrl" prompt="getHourTypeUrl?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="114542/dimension/5862" internalId="_vHIDgshVEfGA9rGHMyEOkw"/>
     <contextParameter comment="" name="getTimesheetReportUrl" prompt="getTimesheetReportUrl?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="114542/report" internalId="_RCLlAMhcEfGA9rGHMyEOkw"/>
-    <contextParameter comment="for timesheetline" name="tsl_fromDate" prompt="tsl_fromDate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_6Lai0M2kEfGooOP-z9a4XQ"/>
-    <contextParameter comment="This is less than. E.g. If you want 1st -> 7th, then put 8th." name="tsl_toDate" prompt="tsl_toDate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_6Lai0c2kEfGooOP-z9a4XQ"/>
+    <contextParameter comment="for timesheetline. yyyy-mm-dd" name="tsl_fromDate" prompt="tsl_fromDate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_6Lai0M2kEfGooOP-z9a4XQ"/>
+    <contextParameter comment="This is less than. E.g. If you want 1st -> 7th, then put 8th. yyyy-mm-dd" name="tsl_toDate" prompt="tsl_toDate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_6Lai0c2kEfGooOP-z9a4XQ"/>
     <contextParameter comment="" name="lookbackDays" prompt="lookbackDays?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="7" internalId="_yAHocM28EfGooOP-z9a4XQ"/>
     <contextParameter comment="This is inclusive so if you want 1st-7th, then put 7th. The format is yyyy-mm-dd." name="eh_ts_toDate" prompt="eh_ts_toDate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_yAHocc28EfGooOP-z9a4XQ"/>
     <contextParameter comment="For the eh_timesheet. The format is yyyy-mm-dd." name="eh_ts_fromDate" prompt="eh_ts_fromDate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_FjZa0M29EfGooOP-z9a4XQ"/>
@@ -53,6 +57,8 @@
     <contextParameter comment="" name="integrationDatabase" prompt="integrationDatabase?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_twfVlc3YEfGooOP-z9a4XQ"/>
     <contextParameter comment="" name="ip_address" prompt="ip_address?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="192.168.2.46" internalId="_twfVls3YEfGooOP-z9a4XQ"/>
     <contextParameter comment="" name="port" prompt="port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="52015" internalId="_twfVl83YEfGooOP-z9a4XQ"/>
+    <contextParameter comment="yyyy-mm-dd" name="manualFromDate" prompt="manualFromDate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_O1UDBNJbEfGUzJ4r5AqM4g"/>
+    <contextParameter comment="yyyy-mm-dd" name="manualToDate" prompt="manualToDate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_O1UDBdJbEfGUzJ4r5AqM4g"/>
   </context>
   <context confirmationNeeded="false" hide="false" name="Test">
     <contextParameter comment="" name="apiKey" prompt="apiKey?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:Qc9XfSZVyVZczyNnLdkqqKxgnVhAr3u62lYxPle/uflvHzQnDFXEx7DXNHttFcLUo1W1KULb9wlf3I579udKrxqRjC0ellkv5dOTccTWNnE23Jg5cm/zYtRKckgpvWSnu8Z55ElSPZ2aS30OarUFO/4oVPCw" internalId="_OY-dMMhTEfGA9rGHMyEOkw"/>
@@ -61,8 +67,8 @@
     <contextParameter comment="" name="getProjectUrl" prompt="getProjectUrl?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="114542/dimension/5861" internalId="_vHIDgchVEfGA9rGHMyEOkw"/>
     <contextParameter comment="" name="getHourTypeUrl" prompt="getHourTypeUrl?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="114542/dimension/5862" internalId="_vHIDgshVEfGA9rGHMyEOkw"/>
     <contextParameter comment="" name="getTimesheetReportUrl" prompt="getTimesheetReportUrl?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="114542/report" internalId="_RCLlAMhcEfGA9rGHMyEOkw"/>
-    <contextParameter comment="for timesheetline" name="tsl_fromDate" prompt="tsl_fromDate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_6Lai0M2kEfGooOP-z9a4XQ"/>
-    <contextParameter comment="This is less than. E.g. If you want 1st -> 7th, then put 8th." name="tsl_toDate" prompt="tsl_toDate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_6Lai0c2kEfGooOP-z9a4XQ"/>
+    <contextParameter comment="for timesheetline. yyyy-mm-dd" name="tsl_fromDate" prompt="tsl_fromDate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_6Lai0M2kEfGooOP-z9a4XQ"/>
+    <contextParameter comment="This is less than. E.g. If you want 1st -> 7th, then put 8th. yyyy-mm-dd" name="tsl_toDate" prompt="tsl_toDate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_6Lai0c2kEfGooOP-z9a4XQ"/>
     <contextParameter comment="" name="lookbackDays" prompt="lookbackDays?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="7" internalId="_yAHocM28EfGooOP-z9a4XQ"/>
     <contextParameter comment="This is inclusive so if you want 1st-7th, then put 7th. The format is yyyy-mm-dd." name="eh_ts_toDate" prompt="eh_ts_toDate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_yAHocc28EfGooOP-z9a4XQ"/>
     <contextParameter comment="For the eh_timesheet. The format is yyyy-mm-dd." name="eh_ts_fromDate" prompt="eh_ts_fromDate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_FjZa0M29EfGooOP-z9a4XQ"/>
@@ -71,6 +77,8 @@
     <contextParameter comment="" name="integrationDatabase" prompt="integrationDatabase?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_twfVmc3YEfGooOP-z9a4XQ"/>
     <contextParameter comment="" name="ip_address" prompt="ip_address?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="192.168.2.47" internalId="_twfVms3YEfGooOP-z9a4XQ"/>
     <contextParameter comment="" name="port" prompt="port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433" internalId="_twfVm83YEfGooOP-z9a4XQ"/>
+    <contextParameter comment="yyyy-mm-dd" name="manualFromDate" prompt="manualFromDate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_O1UDBtJbEfGUzJ4r5AqM4g"/>
+    <contextParameter comment="yyyy-mm-dd" name="manualToDate" prompt="manualToDate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_O1UDB9JbEfGUzJ4r5AqM4g"/>
   </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
@@ -3535,7 +3543,7 @@
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="0" posY="-400">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
-    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="java.util.Date today = TalendDate.getCurrentDate();&#xD;&#xA;String from = TalendDate.formatDate(&quot;yyyy-MM-dd&quot;, TalendDate.addDate(today, -Integer.parseInt(context.lookbackDays), &quot;dd&quot;));&#xD;&#xA;&#xD;&#xA;// Report (/report/timesheet): ToDate is INCLUSIVE -> yesterday&#xD;&#xA;if (context.eh_ts_fromDate == null || context.eh_ts_fromDate.isEmpty()) {&#xD;&#xA;    context.eh_ts_fromDate = from;&#xD;&#xA;    context.eh_ts_toDate   = TalendDate.formatDate(&quot;yyyy-MM-dd&quot;, TalendDate.addDate(today, -1, &quot;dd&quot;));&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;// Timesheet lines (/timesheet): &quot;lt&quot; is EXCLUSIVE -> today&#xD;&#xA;if (context.tsl_fromDate == null || context.tsl_fromDate.isEmpty()) {&#xD;&#xA;    context.tsl_fromDate = from;&#xD;&#xA;    context.tsl_toDate   = TalendDate.formatDate(&quot;yyyy-MM-dd&quot;, today);&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;System.out.println(&quot;eh_timesheet:  &quot; + context.eh_ts_fromDate + &quot; to &quot; + context.eh_ts_toDate + &quot; (inclusive)&quot;);&#xD;&#xA;System.out.println(&quot;timesheetline: &quot; + context.tsl_fromDate + &quot; to before &quot; + context.tsl_toDate + &quot; (less than)&quot;);"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="//Get the current date and time when the job runs&#xD;&#xA;java.util.Date today = TalendDate.getCurrentDate();&#xD;&#xA;&#xD;&#xA;//true if manualFromDate has a value (not null and not just spaces)&#xD;&#xA;boolean hasFrom = context.manualFromDate != null &amp;&amp; !context.manualFromDate.trim().isEmpty();&#xD;&#xA;//true if manualToDate has a value (not null and not just spaces)&#xD;&#xA;boolean hasTo   = context.manualToDate   != null &amp;&amp; !context.manualToDate.trim().isEmpty();&#xD;&#xA;&#xD;&#xA;//Show what was entered&#xD;&#xA;System.out.println(&quot;manualFromDate = '&quot; + context.manualFromDate + &quot;' (filled: &quot; + hasFrom + &quot;)&quot;);&#xD;&#xA;System.out.println(&quot;manualToDate   = '&quot; + context.manualToDate   + &quot;' (filled: &quot; + hasTo   + &quot;)&quot;);&#xD;&#xA;&#xD;&#xA;//First day to pull (always inclusive)&#xD;&#xA;java.util.Date fromDate;&#xD;&#xA;//Last day to pull (always inclusive) - the +1 for the exclusive API is added further down&#xD;&#xA;java.util.Date toDate;&#xD;&#xA;&#xD;&#xA;//---------- Decide which date range to use ----------&#xD;&#xA;if (hasFrom &amp;&amp; hasTo) {&#xD;&#xA;  // MANUAL MODE: both manual dates were filled in&#xD;&#xA;  System.out.println(&quot;Scenario: BOTH manual dates filled -> MANUAL mode&quot;);&#xD;&#xA;&#xD;&#xA;  // Convert the typed text (e.g. &quot;2026-08-01&quot;) into a real Date; trim() removes stray spaces&#xD;&#xA;  fromDate = TalendDate.parseDate(&quot;yyyy-MM-dd&quot;, context.manualFromDate.trim());&#xD;&#xA;  toDate   = TalendDate.parseDate(&quot;yyyy-MM-dd&quot;, context.manualToDate.trim());&#xD;&#xA;&#xD;&#xA;  // Safety check: stop the job if the start date is after the end date&#xD;&#xA;  if (fromDate.after(toDate)) {&#xD;&#xA;      System.out.println(&quot;ERROR: manualFromDate is after manualToDate - stopping job&quot;);&#xD;&#xA;      throw new RuntimeException(&quot;manualFromDate (&quot; + context.manualFromDate + &quot;) is after manualToDate (&quot; + context.manualToDate + &quot;)&quot;);&#xD;&#xA;  }&#xD;&#xA;&#xD;&#xA;  System.out.println(&quot;Manual dates are valid&quot;);&#xD;&#xA;&#xD;&#xA;} else if (hasFrom == true &amp;&amp; hasTo == false) {&#xD;&#xA;  // From filled but To empty&#xD;&#xA;  System.out.println(&quot;Scenario: ONLY manualFromDate filled -> ERROR, manualToDate is missing&quot;);&#xD;&#xA;  throw new RuntimeException(&quot;manualToDate is blank. Fill in BOTH manualFromDate and manualToDate, or leave both blank.&quot;);&#xD;&#xA;&#xD;&#xA;} else if (hasFrom == false &amp;&amp; hasTo == true) {&#xD;&#xA;  // To filled but From empty&#xD;&#xA;  System.out.println(&quot;Scenario: ONLY manualToDate filled -> ERROR, manualFromDate is missing&quot;);&#xD;&#xA;  throw new RuntimeException(&quot;manualFromDate is blank. Fill in BOTH manualFromDate and manualToDate, or leave both blank.&quot;);&#xD;&#xA;&#xD;&#xA;} else {&#xD;&#xA;  // DEFAULT MODE: no manual dates, so use the rolling window&#xD;&#xA;  System.out.println(&quot;Scenario: NO manual dates -> DEFAULT mode (last &quot; + context.lookbackDays + &quot; days)&quot;);&#xD;&#xA;&#xD;&#xA;  // Start = today minus lookbackDays (stored as text, so convert to a number first)&#xD;&#xA;  fromDate = TalendDate.addDate(today, -Integer.parseInt(context.lookbackDays), &quot;dd&quot;);&#xD;&#xA;  // End = yesterday (today's timesheets aren't complete yet)&#xD;&#xA;  toDate   = TalendDate.addDate(today, -1, &quot;dd&quot;);&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;//---------- Fill the 4 API date variables ----------&#xD;&#xA;&#xD;&#xA;///report/timesheet: ToDate is INCLUSIVE, so use the last day as-is&#xD;&#xA;context.eh_ts_fromDate = TalendDate.formatDate(&quot;yyyy-MM-dd&quot;, fromDate);&#xD;&#xA;context.eh_ts_toDate   = TalendDate.formatDate(&quot;yyyy-MM-dd&quot;, toDate);&#xD;&#xA;&#xD;&#xA;///timesheet: the &quot;lt&quot; (less than) filter is EXCLUSIVE, so use the day AFTER the last day&#xD;&#xA;context.tsl_fromDate = TalendDate.formatDate(&quot;yyyy-MM-dd&quot;, fromDate);&#xD;&#xA;context.tsl_toDate   = TalendDate.formatDate(&quot;yyyy-MM-dd&quot;, TalendDate.addDate(toDate, 1, &quot;dd&quot;));&#xD;&#xA;&#xD;&#xA;//---------- Log the final windows so you can verify them in the run output ----------&#xD;&#xA;System.out.println(&quot;eh_timesheet:  &quot; + context.eh_ts_fromDate + &quot; to &quot; + context.eh_ts_toDate + &quot; (inclusive)&quot;);&#xD;&#xA;System.out.println(&quot;timesheetline: &quot; + context.tsl_fromDate + &quot; to before &quot; + context.tsl_toDate + &quot; (less than)&quot;);"/>
     <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="LABEL" value="set dates for the last week"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -4136,16 +4144,6 @@
   </node>
   <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="240" posY="960">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
-    <elementParameter field="TEXT" name="COMPONENT_NAME" value="tMSSqlInput" show="false"/>
-    <elementParameter field="TEXT" name="VERSION" value="0.102 (ALPHA)" show="false"/>
-    <elementParameter field="TEXT" name="FAMILY" value="Databases/DB Specifics/MS_SQL_Server" show="false"/>
-    <elementParameter field="CHECK" name="START" value="false" show="false"/>
-    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
-    <elementParameter field="CHECK" name="SUBTREE_START" value="true" show="false"/>
-    <elementParameter field="CHECK" name="END_OF_FLOW" value="false" show="false"/>
-    <elementParameter field="TEXT" name="HELP" value="org.talend.help.tMSSqlInput" show="false"/>
-    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
-    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend-Studio-20260708_1430-V8.0.1\Talend-Studio-20260708_1430-V8.0.1\configuration\lib\java" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
@@ -4346,6 +4344,15 @@
     <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJavaRow_2"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="200" posY="-400">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="java.util.Date today = TalendDate.getCurrentDate();&#xD;&#xA;String from = TalendDate.formatDate(&quot;yyyy-MM-dd&quot;, TalendDate.addDate(today, -Integer.parseInt(context.lookbackDays), &quot;dd&quot;));&#xD;&#xA;&#xD;&#xA;// Report (/report/timesheet): ToDate is INCLUSIVE -> yesterday&#xD;&#xA;if (context.eh_ts_fromDate == null || context.eh_ts_fromDate.isEmpty()) {&#xD;&#xA;    context.eh_ts_fromDate = from;&#xD;&#xA;    context.eh_ts_toDate   = TalendDate.formatDate(&quot;yyyy-MM-dd&quot;, TalendDate.addDate(today, -1, &quot;dd&quot;));&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;// Timesheet lines (/timesheet): &quot;lt&quot; is EXCLUSIVE -> today&#xD;&#xA;if (context.tsl_fromDate == null || context.tsl_fromDate.isEmpty()) {&#xD;&#xA;    context.tsl_fromDate = from;&#xD;&#xA;    context.tsl_toDate   = TalendDate.formatDate(&quot;yyyy-MM-dd&quot;, today);&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;System.out.println(&quot;eh_timesheet:  &quot; + context.eh_ts_fromDate + &quot; to &quot; + context.eh_ts_toDate + &quot; (inclusive)&quot;);&#xD;&#xA;System.out.println(&quot;timesheetline: &quot; + context.tsl_fromDate + &quot; to before &quot; + context.tsl_toDate + &quot; (less than)&quot;);"/>
+    <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="set dates for the last week"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_2"/>
   </node>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tHTTPClient_1" offsetLabelX="0" offsetLabelY="0" source="tHTTPClient_1" target="tLogRow_1">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
@@ -4692,6 +4699,11 @@
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
   </subjob>
