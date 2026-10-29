@@ -57,6 +57,12 @@
     }, {
       "id" : "_SxZdMtNPEfGRPYW6g8hdOg",
       "name" : "dw_pwd"
+    }, {
+      "id" : "_9dCJ4dNdEfGRPYW6g8hdOg",
+      "name" : "teams_path"
+    }, {
+      "id" : "_9dCJ4NNdEfGRPYW6g8hdOg",
+      "name" : "teams_base_url"
     } ]
   }, {
     "contextName" : "Test",
@@ -115,6 +121,12 @@
     }, {
       "id" : "_hfmhsdNQEfGRPYW6g8hdOg",
       "name" : "dw_pwd"
+    }, {
+      "id" : "_9dCJ5dNdEfGRPYW6g8hdOg",
+      "name" : "teams_path"
+    }, {
+      "id" : "_9dCJ5NNdEfGRPYW6g8hdOg",
+      "name" : "teams_base_url"
     } ]
   }, {
     "contextName" : "Prod",
@@ -173,6 +185,12 @@
     }, {
       "id" : "_hfmhntNQEfGRPYW6g8hdOg",
       "name" : "dw_pwd"
+    }, {
+      "id" : "_9dCJ49NdEfGRPYW6g8hdOg",
+      "name" : "teams_path"
+    }, {
+      "id" : "_9dCJ4tNdEfGRPYW6g8hdOg",
+      "name" : "teams_base_url"
     } ]
   } ]
 }

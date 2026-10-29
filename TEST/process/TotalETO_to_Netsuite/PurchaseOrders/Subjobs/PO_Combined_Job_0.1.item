@@ -19,6 +19,8 @@
     <contextParameter comment="data warehouse ip" name="dw_ip" prompt="dw_ip?" promptNeeded="false" repositoryContextId="_iGOx0M5wEfGRWfYhjqv9Dg" type="id_String" value="192.168.2.46" internalId="_i2XgNNNQEfGRPYW6g8hdOg"/>
     <contextParameter comment="total eto database name " name="foodmach_db" prompt="foodmach_db?" promptNeeded="false" repositoryContextId="_iGOx0M5wEfGRWfYhjqv9Dg" type="id_String" value="Foodmach_training" internalId="_i2XgNdNQEfGRPYW6g8hdOg"/>
     <contextParameter comment="data warehouse pwd" name="dw_pwd" prompt="dw_pwd?" promptNeeded="false" repositoryContextId="_iGOx0M5wEfGRWfYhjqv9Dg" type="id_Password" value="enc:system.encryption.key.v1:kA+SB5BfYHYcmzGSIWr75Rlyou+2wCaLEjr0dDIK3xCOIxy/dDrIb2A=" internalId="_i2XgNtNQEfGRPYW6g8hdOg"/>
+    <contextParameter comment="Power Automate Workflows webhook part 2. This has been split into 2" name="teams_path" prompt="teams_path?" promptNeeded="false" repositoryContextId="_iGOx0M5wEfGRWfYhjqv9Dg" type="id_String" value="/invoke?api-version=1&amp;sp=%2Ftriggers%2Fmanual%2Frun&amp;sv=1.0&amp;sig=rHGifzi61aUZzyKSQxtkZdj4bf79WU98m4pkJKW_hx4" internalId="__gquMNNgEfGRPYW6g8hdOg"/>
+    <contextParameter comment="Power Automate Workflows webhook part 1. This has been split into 2" name="teams_base_url" prompt="teams_base_url?" promptNeeded="false" repositoryContextId="_iGOx0M5wEfGRWfYhjqv9Dg" type="id_String" value="https://default37f3b1b2de5a4ccf94f5b8c2c7a688.00.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/01/workflows/58eacb3c9e234189b8c22bce15da5a6e/triggers/manual/paths" internalId="__gquMdNgEfGRPYW6g8hdOg"/>
   </context>
   <context confirmationNeeded="false" hide="false" name="Test">
     <contextParameter comment="" name="PO_ID_List" prompt="PO_ID_List?" promptNeeded="false" repositoryContextId="_iGOx0M5wEfGRWfYhjqv9Dg" type="id_String" value="" internalId="_i2XgN9NQEfGRPYW6g8hdOg"/>
@@ -39,6 +41,8 @@
     <contextParameter comment="data warehouse ip" name="dw_ip" prompt="dw_ip?" promptNeeded="false" repositoryContextId="_iGOx0M5wEfGRWfYhjqv9Dg" type="id_String" value="192.168.2.46" internalId="_i2XgRtNQEfGRPYW6g8hdOg"/>
     <contextParameter comment="total eto database name " name="foodmach_db" prompt="foodmach_db?" promptNeeded="false" repositoryContextId="_iGOx0M5wEfGRWfYhjqv9Dg" type="id_String" value="Foodmach" internalId="_i2XgR9NQEfGRPYW6g8hdOg"/>
     <contextParameter comment="data warehouse pwd" name="dw_pwd" prompt="dw_pwd?" promptNeeded="false" repositoryContextId="_iGOx0M5wEfGRWfYhjqv9Dg" type="id_Password" value="enc:system.encryption.key.v1:I+pRime9btgzHouH61bpcE/LNzaNHxLvylHVZfIh8Zi1ITpP5TRRunE=" internalId="_i2XgSNNQEfGRPYW6g8hdOg"/>
+    <contextParameter comment="Power Automate Workflows webhook part 2. This has been split into 2" name="teams_path" prompt="teams_path?" promptNeeded="false" repositoryContextId="_iGOx0M5wEfGRWfYhjqv9Dg" type="id_String" value="/invoke?api-version=1&amp;sp=%2Ftriggers%2Fmanual%2Frun&amp;sv=1.0&amp;sig=rHGifzi61aUZzyKSQxtkZdj4bf79WU98m4pkJKW_hx4" internalId="__gquMtNgEfGRPYW6g8hdOg"/>
+    <contextParameter comment="Power Automate Workflows webhook part 1. This has been split into 2" name="teams_base_url" prompt="teams_base_url?" promptNeeded="false" repositoryContextId="_iGOx0M5wEfGRWfYhjqv9Dg" type="id_String" value="https://default37f3b1b2de5a4ccf94f5b8c2c7a688.00.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/01/workflows/58eacb3c9e234189b8c22bce15da5a6e/triggers/manual/paths" internalId="__gquM9NgEfGRPYW6g8hdOg"/>
   </context>
   <context confirmationNeeded="false" hide="false" name="Prod">
     <contextParameter comment="" name="PO_ID_List" prompt="PO_ID_List?" promptNeeded="false" repositoryContextId="_iGOx0M5wEfGRWfYhjqv9Dg" type="id_String" value="" internalId="_i2XgSdNQEfGRPYW6g8hdOg"/>
@@ -59,6 +63,8 @@
     <contextParameter comment="data warehouse ip" name="dw_ip" prompt="dw_ip?" promptNeeded="false" repositoryContextId="_iGOx0M5wEfGRWfYhjqv9Dg" type="id_String" value="192.168.2.47" internalId="_i2XgWNNQEfGRPYW6g8hdOg"/>
     <contextParameter comment="total eto database name " name="foodmach_db" prompt="foodmach_db?" promptNeeded="false" repositoryContextId="_iGOx0M5wEfGRWfYhjqv9Dg" type="id_String" value="Foodmach" internalId="_i2XgWdNQEfGRPYW6g8hdOg"/>
     <contextParameter comment="data warehouse pwd" name="dw_pwd" prompt="dw_pwd?" promptNeeded="false" repositoryContextId="_iGOx0M5wEfGRWfYhjqv9Dg" type="id_Password" value="enc:system.encryption.key.v1:NFYdpVc49xluStK5Ok4e9cqda6P3DMDeqmzMlwsntCTwNp4jI7EWJzs=" internalId="_i2YHQNNQEfGRPYW6g8hdOg"/>
+    <contextParameter comment="Power Automate Workflows webhook part 2. This has been split into 2" name="teams_path" prompt="teams_path?" promptNeeded="false" repositoryContextId="_iGOx0M5wEfGRWfYhjqv9Dg" type="id_String" value="/invoke?api-version=1&amp;sp=%2Ftriggers%2Fmanual%2Frun&amp;sv=1.0&amp;sig=rHGifzi61aUZzyKSQxtkZdj4bf79WU98m4pkJKW_hx4" internalId="__gquNNNgEfGRPYW6g8hdOg"/>
+    <contextParameter comment="Power Automate Workflows webhook part 1. This has been split into 2" name="teams_base_url" prompt="teams_base_url?" promptNeeded="false" repositoryContextId="_iGOx0M5wEfGRWfYhjqv9Dg" type="id_String" value="https://default37f3b1b2de5a4ccf94f5b8c2c7a688.00.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/01/workflows/58eacb3c9e234189b8c22bce15da5a6e/triggers/manual/paths" internalId="__gquNdNgEfGRPYW6g8hdOg"/>
   </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
@@ -192,7 +198,7 @@
     <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
     <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
     <elementParameter field="PROCESS_TYPE" name="PROCESS" value="Job_2_Create_payload_and_store_in_integration_table_PO"/>
-    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Dev"/>
     <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="TEST:_5Uo_sKdAEfGq3IYnFJCINg"/>
     <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
     <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
