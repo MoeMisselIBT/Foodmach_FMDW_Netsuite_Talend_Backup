@@ -1,14 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_U8FDsNDsEfGeZdyo0ckLtQ" confirmationNeeded="false" hide="false" name="Default">
-  <contextParameter xmi:id="_U-RcENDsEfGeZdyo0ckLtQ" comment="" name="PurchaseDetailID_List" prompt="PurchaseDetailID_List?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
-  <contextParameter xmi:id="_W7unQNDsEfGeZdyo0ckLtQ" comment="" name="ReceiverLogID_List" prompt="ReceiverLogID_List?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
-  <contextParameter xmi:id="_W7unQdDsEfGeZdyo0ckLtQ" comment="" name="PurchaseOrderID_List" prompt="PurchaseOrderID_List?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
-  <contextParameter xmi:id="_YWvMsNDsEfGeZdyo0ckLtQ" comment="" name="account_id" prompt="account_id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="847280-sb1"/>
-  <contextParameter xmi:id="_YWvMsdDsEfGeZdyo0ckLtQ" comment="" name="client_id" prompt="client_id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="e74f0683fa5379e2b725547a322cb11514b0915b7a7efec374a72c4ae3a04531"/>
-  <contextParameter xmi:id="_YWvMstDsEfGeZdyo0ckLtQ" comment="" name="certificate_id" prompt="certificate_id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="S_eR_japu9FLYSq2Kzq9pw9OPBfiKkMR2trklvfe4Es"/>
-  <contextParameter xmi:id="_YWvMs9DsEfGeZdyo0ckLtQ" comment="" name="scope" prompt="scope?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="restlets rest_webservices"/>
-  <contextParameter xmi:id="_YWvMtNDsEfGeZdyo0ckLtQ" comment="" name="private_key_path" prompt="private_key_path?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="C:\Users\mmisselmany\Downloads\PO_Auth_flow\PO_Auth_flow\private.pem"/>
-  <contextParameter xmi:id="_YWvMtdDsEfGeZdyo0ckLtQ" comment="" name="JSON_Payload" prompt="JSON_Payload?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
-  <contextParameter xmi:id="_YWvMttDsEfGeZdyo0ckLtQ" comment="" name="new_bearer_token" prompt="new_bearer_token?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
-  <contextParameter xmi:id="_YWvMt9DsEfGeZdyo0ckLtQ" comment="" name="rejectCount" prompt="rejectCount?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
-</talendfile:ContextType>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_U8FDsNDsEfGeZdyo0ckLtQ" confirmationNeeded="false" hide="false" name="Dev">
+    <contextParameter xmi:id="_U-RcENDsEfGeZdyo0ckLtQ" comment="" name="PurchaseDetailID_List" prompt="PurchaseDetailID_List?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_W7unQNDsEfGeZdyo0ckLtQ" comment="" name="ReceiverLogID_List" prompt="ReceiverLogID_List?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_W7unQdDsEfGeZdyo0ckLtQ" comment="" name="PurchaseOrderID_List" prompt="PurchaseOrderID_List?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_YWvMsNDsEfGeZdyo0ckLtQ" comment="" name="account_id" prompt="account_id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="847280-sb1"/>
+    <contextParameter xmi:id="_YWvMsdDsEfGeZdyo0ckLtQ" comment="" name="client_id" prompt="client_id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="e74f0683fa5379e2b725547a322cb11514b0915b7a7efec374a72c4ae3a04531"/>
+    <contextParameter xmi:id="_YWvMstDsEfGeZdyo0ckLtQ" comment="" name="certificate_id" prompt="certificate_id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="S_eR_japu9FLYSq2Kzq9pw9OPBfiKkMR2trklvfe4Es"/>
+    <contextParameter xmi:id="_YWvMs9DsEfGeZdyo0ckLtQ" comment="" name="scope" prompt="scope?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="restlets rest_webservices"/>
+    <contextParameter xmi:id="_YWvMtNDsEfGeZdyo0ckLtQ" comment="" name="private_key_path" prompt="private_key_path?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="C:\Users\mmisselmany\Downloads\PO_Auth_flow\PO_Auth_flow\private.pem"/>
+    <contextParameter xmi:id="_YWvMtdDsEfGeZdyo0ckLtQ" comment="" name="JSON_Payload" prompt="JSON_Payload?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_YWvMttDsEfGeZdyo0ckLtQ" comment="" name="new_bearer_token" prompt="new_bearer_token?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_YWvMt9DsEfGeZdyo0ckLtQ" comment="" name="rejectCount" prompt="rejectCount?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter xmi:id="_eBLdQNMsEfGRPYW6g8hdOg" comment="data warehouse" name="dw_ip" prompt="dw_ip?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="192.168.2.46"/>
+    <contextParameter xmi:id="_eBLdQdMsEfGRPYW6g8hdOg" comment="data warehouse" name="dw_password" prompt="dw_password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:vu+mhDNSJ0slhFGD0/MNxv7e/UKCdBjTukxg6LGEHQ+ybi9x7DwCfxY="/>
+    <contextParameter xmi:id="_eBLdQtMsEfGRPYW6g8hdOg" comment="data warehouse" name="dw_port" prompt="dw_port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="51980"/>
+    <contextParameter xmi:id="_eBLdQ9MsEfGRPYW6g8hdOg" comment="foodmach database" name="foodmach_ip" prompt="foodmach_ip?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="192.168.2.4"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_erIZMNMsEfGRPYW6g8hdOg" confirmationNeeded="false" hide="false" name="Prod">
+    <contextParameter xmi:id="_erIZMdMsEfGRPYW6g8hdOg" comment="" name="PurchaseDetailID_List" prompt="PurchaseDetailID_List?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_erIZMtMsEfGRPYW6g8hdOg" comment="" name="ReceiverLogID_List" prompt="ReceiverLogID_List?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_erIZM9MsEfGRPYW6g8hdOg" comment="" name="PurchaseOrderID_List" prompt="PurchaseOrderID_List?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_erIZNNMsEfGRPYW6g8hdOg" comment="" name="account_id" prompt="account_id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="847280-sb1"/>
+    <contextParameter xmi:id="_erIZNdMsEfGRPYW6g8hdOg" comment="" name="client_id" prompt="client_id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="e74f0683fa5379e2b725547a322cb11514b0915b7a7efec374a72c4ae3a04531"/>
+    <contextParameter xmi:id="_erIZNtMsEfGRPYW6g8hdOg" comment="" name="certificate_id" prompt="certificate_id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="S_eR_japu9FLYSq2Kzq9pw9OPBfiKkMR2trklvfe4Es"/>
+    <contextParameter xmi:id="_erIZN9MsEfGRPYW6g8hdOg" comment="" name="scope" prompt="scope?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="restlets rest_webservices"/>
+    <contextParameter xmi:id="_erIZONMsEfGRPYW6g8hdOg" comment="" name="private_key_path" prompt="private_key_path?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="C:\Users\mmisselmany\Downloads\PO_Auth_flow\PO_Auth_flow\private.pem"/>
+    <contextParameter xmi:id="_erIZOdMsEfGRPYW6g8hdOg" comment="" name="JSON_Payload" prompt="JSON_Payload?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_erIZOtMsEfGRPYW6g8hdOg" comment="" name="new_bearer_token" prompt="new_bearer_token?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_erIZO9MsEfGRPYW6g8hdOg" comment="" name="rejectCount" prompt="rejectCount?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter xmi:id="_erIZPNMsEfGRPYW6g8hdOg" comment="data warehouse" name="dw_ip" prompt="dw_ip?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="192.168.2.47"/>
+    <contextParameter xmi:id="_erIZPdMsEfGRPYW6g8hdOg" comment="data warehouse" name="dw_password" prompt="dw_password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:DLpXrP6o4e85ZRLzGE81GH8LpDH1hgslqzYZEJcl9/VtMzC65YGypEU="/>
+    <contextParameter xmi:id="_erIZPtMsEfGRPYW6g8hdOg" comment="data warehouse" name="dw_port" prompt="dw_port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433"/>
+    <contextParameter xmi:id="_erIZP9MsEfGRPYW6g8hdOg" comment="foodmach database" name="foodmach_ip" prompt="foodmach_ip?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_erIZQNMsEfGRPYW6g8hdOg" confirmationNeeded="false" hide="false" name="Test">
+    <contextParameter xmi:id="_erIZQdMsEfGRPYW6g8hdOg" comment="" name="PurchaseDetailID_List" prompt="PurchaseDetailID_List?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_erIZQtMsEfGRPYW6g8hdOg" comment="" name="ReceiverLogID_List" prompt="ReceiverLogID_List?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_erIZQ9MsEfGRPYW6g8hdOg" comment="" name="PurchaseOrderID_List" prompt="PurchaseOrderID_List?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_erIZRNMsEfGRPYW6g8hdOg" comment="" name="account_id" prompt="account_id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="847280-sb1"/>
+    <contextParameter xmi:id="_erIZRdMsEfGRPYW6g8hdOg" comment="" name="client_id" prompt="client_id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="e74f0683fa5379e2b725547a322cb11514b0915b7a7efec374a72c4ae3a04531"/>
+    <contextParameter xmi:id="_erIZRtMsEfGRPYW6g8hdOg" comment="" name="certificate_id" prompt="certificate_id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="S_eR_japu9FLYSq2Kzq9pw9OPBfiKkMR2trklvfe4Es"/>
+    <contextParameter xmi:id="_erIZR9MsEfGRPYW6g8hdOg" comment="" name="scope" prompt="scope?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="restlets rest_webservices"/>
+    <contextParameter xmi:id="_erIZSNMsEfGRPYW6g8hdOg" comment="" name="private_key_path" prompt="private_key_path?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="C:\Users\mmisselmany\Downloads\PO_Auth_flow\PO_Auth_flow\private.pem"/>
+    <contextParameter xmi:id="_erIZSdMsEfGRPYW6g8hdOg" comment="" name="JSON_Payload" prompt="JSON_Payload?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_erIZStMsEfGRPYW6g8hdOg" comment="" name="new_bearer_token" prompt="new_bearer_token?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_erIZS9MsEfGRPYW6g8hdOg" comment="" name="rejectCount" prompt="rejectCount?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter xmi:id="_erIZTNMsEfGRPYW6g8hdOg" comment="data warehouse" name="dw_ip" prompt="dw_ip?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="192.168.2.46"/>
+    <contextParameter xmi:id="_erIZTdMsEfGRPYW6g8hdOg" comment="data warehouse" name="dw_password" prompt="dw_password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:o2XlvrbTioP0Q8uXDp80f34+9IJqV/SIDKX1na8BtVP+PImFlxBRa90="/>
+    <contextParameter xmi:id="_erIZTtMsEfGRPYW6g8hdOg" comment="data warehouse" name="dw_port" prompt="dw_port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="52015"/>
+    <contextParameter xmi:id="_erIZT9MsEfGRPYW6g8hdOg" comment="foodmach database" name="foodmach_ip" prompt="foodmach_ip?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </talendfile:ContextType>
+</xmi:XMI>
