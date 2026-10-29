@@ -19,6 +19,8 @@
     <contextParameter comment="data warehouse ip" name="dw_ip" prompt="dw_ip?" promptNeeded="false" repositoryContextId="_iGOx0M5wEfGRWfYhjqv9Dg" type="id_String" value="192.168.2.46" internalId="_kT2K3NNQEfGRPYW6g8hdOg"/>
     <contextParameter comment="total eto database name " name="foodmach_db" prompt="foodmach_db?" promptNeeded="false" repositoryContextId="_iGOx0M5wEfGRWfYhjqv9Dg" type="id_String" value="Foodmach_training" internalId="_kT2K3dNQEfGRPYW6g8hdOg"/>
     <contextParameter comment="data warehouse pwd" name="dw_pwd" prompt="dw_pwd?" promptNeeded="false" repositoryContextId="_iGOx0M5wEfGRWfYhjqv9Dg" type="id_Password" value="enc:system.encryption.key.v1:rYHyXZbGf7z/dfMhNL1/usTuV4fpdFOBq7PLwE6Xus5YfevfIHSEqZI=" internalId="_kT2K3tNQEfGRPYW6g8hdOg"/>
+    <contextParameter comment="Power Automate Workflows webhook part 2. This has been split into 2" name="teams_path" prompt="teams_path?" promptNeeded="false" repositoryContextId="_iGOx0M5wEfGRWfYhjqv9Dg" type="id_String" value="/invoke?api-version=1&amp;sp=%2Ftriggers%2Fmanual%2Frun&amp;sv=1.0&amp;sig=rHGifzi61aUZzyKSQxtkZdj4bf79WU98m4pkJKW_hx4" internalId="_FkjqoNNeEfGRPYW6g8hdOg"/>
+    <contextParameter comment="Power Automate Workflows webhook part 1. This has been split into 2" name="teams_base_url" prompt="teams_base_url?" promptNeeded="false" repositoryContextId="_iGOx0M5wEfGRWfYhjqv9Dg" type="id_String" value="https://default37f3b1b2de5a4ccf94f5b8c2c7a688.00.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/01/workflows/58eacb3c9e234189b8c22bce15da5a6e/triggers/manual/paths" internalId="_FkjqodNeEfGRPYW6g8hdOg"/>
   </context>
   <context confirmationNeeded="false" hide="false" name="Test">
     <contextParameter comment="" name="PO_ID_List" prompt="PO_ID_List?" promptNeeded="false" repositoryContextId="_iGOx0M5wEfGRWfYhjqv9Dg" type="id_String" value="" internalId="_kT2K39NQEfGRPYW6g8hdOg"/>
@@ -39,6 +41,8 @@
     <contextParameter comment="data warehouse ip" name="dw_ip" prompt="dw_ip?" promptNeeded="false" repositoryContextId="_iGOx0M5wEfGRWfYhjqv9Dg" type="id_String" value="192.168.2.46" internalId="_kT2K7tNQEfGRPYW6g8hdOg"/>
     <contextParameter comment="total eto database name " name="foodmach_db" prompt="foodmach_db?" promptNeeded="false" repositoryContextId="_iGOx0M5wEfGRWfYhjqv9Dg" type="id_String" value="Foodmach" internalId="_kT2K79NQEfGRPYW6g8hdOg"/>
     <contextParameter comment="data warehouse pwd" name="dw_pwd" prompt="dw_pwd?" promptNeeded="false" repositoryContextId="_iGOx0M5wEfGRWfYhjqv9Dg" type="id_Password" value="enc:system.encryption.key.v1:YF4JqzF9rZFcEfyGSY4c5I38Us/O8893t0jFhxhWySjSNy45beX06ns=" internalId="_kT2K8NNQEfGRPYW6g8hdOg"/>
+    <contextParameter comment="Power Automate Workflows webhook part 2. This has been split into 2" name="teams_path" prompt="teams_path?" promptNeeded="false" repositoryContextId="_iGOx0M5wEfGRWfYhjqv9Dg" type="id_String" value="/invoke?api-version=1&amp;sp=%2Ftriggers%2Fmanual%2Frun&amp;sv=1.0&amp;sig=rHGifzi61aUZzyKSQxtkZdj4bf79WU98m4pkJKW_hx4" internalId="_FkjqotNeEfGRPYW6g8hdOg"/>
+    <contextParameter comment="Power Automate Workflows webhook part 1. This has been split into 2" name="teams_base_url" prompt="teams_base_url?" promptNeeded="false" repositoryContextId="_iGOx0M5wEfGRWfYhjqv9Dg" type="id_String" value="https://default37f3b1b2de5a4ccf94f5b8c2c7a688.00.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/01/workflows/58eacb3c9e234189b8c22bce15da5a6e/triggers/manual/paths" internalId="_Fkjqo9NeEfGRPYW6g8hdOg"/>
   </context>
   <context confirmationNeeded="false" hide="false" name="Prod">
     <contextParameter comment="" name="PO_ID_List" prompt="PO_ID_List?" promptNeeded="false" repositoryContextId="_iGOx0M5wEfGRWfYhjqv9Dg" type="id_String" value="" internalId="_kT2K8dNQEfGRPYW6g8hdOg"/>
@@ -59,6 +63,8 @@
     <contextParameter comment="data warehouse ip" name="dw_ip" prompt="dw_ip?" promptNeeded="false" repositoryContextId="_iGOx0M5wEfGRWfYhjqv9Dg" type="id_String" value="192.168.2.47" internalId="_kT2LANNQEfGRPYW6g8hdOg"/>
     <contextParameter comment="total eto database name " name="foodmach_db" prompt="foodmach_db?" promptNeeded="false" repositoryContextId="_iGOx0M5wEfGRWfYhjqv9Dg" type="id_String" value="Foodmach" internalId="_kT2LAdNQEfGRPYW6g8hdOg"/>
     <contextParameter comment="data warehouse pwd" name="dw_pwd" prompt="dw_pwd?" promptNeeded="false" repositoryContextId="_iGOx0M5wEfGRWfYhjqv9Dg" type="id_Password" value="enc:system.encryption.key.v1:cnVsIOgZBns4ejyeoAMIQUep+WyLajumJUtzAICF9n8JIBOrnntl4g0=" internalId="_kT2LAtNQEfGRPYW6g8hdOg"/>
+    <contextParameter comment="Power Automate Workflows webhook part 2. This has been split into 2" name="teams_path" prompt="teams_path?" promptNeeded="false" repositoryContextId="_iGOx0M5wEfGRWfYhjqv9Dg" type="id_String" value="/invoke?api-version=1&amp;sp=%2Ftriggers%2Fmanual%2Frun&amp;sv=1.0&amp;sig=rHGifzi61aUZzyKSQxtkZdj4bf79WU98m4pkJKW_hx4" internalId="_FkjqpNNeEfGRPYW6g8hdOg"/>
+    <contextParameter comment="Power Automate Workflows webhook part 1. This has been split into 2" name="teams_base_url" prompt="teams_base_url?" promptNeeded="false" repositoryContextId="_iGOx0M5wEfGRWfYhjqv9Dg" type="id_String" value="https://default37f3b1b2de5a4ccf94f5b8c2c7a688.00.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/01/workflows/58eacb3c9e234189b8c22bce15da5a6e/triggers/manual/paths" internalId="_FkjqpdNeEfGRPYW6g8hdOg"/>
   </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
@@ -162,22 +168,20 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_gDwS0KJ1EfGq3IYnFJCINg" show="false"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;192.168.2.4&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="context.foodmach_ip"/>
     <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="context.foodmach_port"/>
     <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;dbo&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;Foodmach_Training&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.foodmach_db"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:WFl8eui+vcXLSVD7pQ+uqV1xVHrfdaReYDDP3WXM/3RpccNCbZw="/>
+    <elementParameter field="PASSWORD" name="PASS" value="context.foodmach_pwd"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;PO_Select_Schema&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT&#xD;&#xA;&#x9;PH.PurchaseSupplierID AS PurchaseSupplierID_POH,&#xD;&#xA;&#x9;PH.PurchaseDate AS PurchaseDate_POH,&#xD;&#xA;&#x9;PH.PurchaseTerms AS PurchaseTerms_POH,&#xD;&#xA;&#x9;PH.PurchaseNotes AS PurchaseNotes_POH,&#xD;&#xA;&#x9;PH.PurchaseShipTo AS PurchaseShipTo_POH, -- Add to payload Get the address&#xD;&#xA;&#x9;PH.PurchaseDateRequired AS PurchaseDateRequired_POH,&#xD;&#xA;&#x9;PH.PurchaseCurr AS PurchaseCurr_POH, -- Add to payload&#xD;&#xA;&#x9;PH.PurchaseCurrRate AS PurchaseCurrRate_POH, -- Add to payload&#xD;&#xA;&#x9;PH.PurchaseTax1 AS PurchaseTax1_POH, -- Add to payload&#xD;&#xA;&#x9;PH.PurchaseTax1Name AS PurchaseTax1Name_POH,&#xD;&#xA;&#x9;PH.BuyerID AS BuyerID_POH, -- Add to payload&#xD;&#xA;&#x9;E.EmpEmail as EmpEmail_E,&#xD;&#xA;&#x9;PD.PurchaseDetailID AS PurchaseDetailID_POD,&#xD;&#xA;&#x9;PD.PurchaseOrderID AS PurchaseOrderID_POD,&#xD;&#xA;&#x9;PD.ProjectID AS ProjectID_POD,-- Add to payload&#xD;&#xA;&#x9;PD.SpecID AS SpecID_POD, -- Add to payload&#xD;&#xA;&#x9;PD.ItemID AS ItemID_POD,&#xD;&#xA;&#x9;I.ItemCompanyID as  PartNumber_I, -- New column -- Add to payload&#xD;&#xA;&#x9;PD.PurchaseQty AS PurchaseQty_POD,&#xD;&#xA;&#x9;PD.PurchasePrice AS PurchasePrice_POD, -- Add to payload&#xD;&#xA;&#x9;PD.DateRequired AS DateRequired_POD, -- Add to payload&#xD;&#xA;&#x9;PD.PurchaseSupplierDescription AS PurchaseSupplierDescription_POD, -- Add to payload&#xD;&#xA;&#x9;PD.PurchaseUOM AS PurchaseUOM_POD, -- Add to payload&#xD;&#xA;&#x9;PD.DestInventoryLoc AS DestInventoryLoc_POD,&#xD;&#xA;&#x9;I.ItemDescription AS ItemDescription_I, -- Add to payload&#xD;&#xA;&#x9;C.CName AS CName_C,&#xD;&#xA;&#x9;C.CompanyCustom3 AS CompanyCustom3_C,&#xD;&#xA;&#x9;C2.SAddress1 as SAddress1_C2, -- Add to payload&#xD;&#xA;&#x9;C2.SAddress2 as SAddress2_C2, -- Add to payload&#xD;&#xA;&#x9;C2.SCity as SCity_C2,-- Add to payload&#xD;&#xA;&#x9;C2.SState as SState_C2, -- Add to payload&#xD;&#xA;&#x9;C2.SCountry as SCountry_C2, -- Add to payload&#xD;&#xA;IMC.ItemCategory AS ItemCategory_IMC,&#xD;&#xA;&#x9;IMC.CategoryDescription AS CategoryDescription_IMC,&#xD;&#xA;&#x9;IMC.CatergoryMajor AS CatergoryMajor_IMC,&#xD;&#xA;&#x9;IMC.CategoryCode AS CategoryCode_IMC,&#xD;&#xA;&#x9;IMC.ItemMasterGroupID AS ItemMasterGroupID_IMC,&#xD;&#xA;&#x9;IMC.ItemCategoryCustom1 AS ItemCategoryCustom1_IMC,&#xD;&#xA;&#x9;IMG.ItemMasterGroupName AS ItemMasterGroupName_IMG&#xD;&#xA;FROM&#xD;&#xA;&#x9;Foodmach_Training.dbo.tblPurchaseOrderDetails PD&#xD;&#xA;&#x9;LEFT JOIN Foodmach_Training.dbo.tblPurchaseOrderHeader PH ON PD.PurchaseOrderID = PH.PurchaseOrderID&#xD;&#xA;&#x9;LEFT JOIN Foodmach_Training.dbo.tblCompany C ON PH.PurchaseSupplierID = C.CompanyID&#xD;&#xA;&#x9;LEFT JOIN Foodmach_Training.dbo.tblEngItemMaster I ON PD.ItemID = I.ItemID&#xD;&#xA;&#x9;LEFT JOIN Foodmach_Training.dbo.tblCompany C2 on PH.PurchaseShipTo = C2.CompanyID&#xD;&#xA;&#x9;LEFT JOIN Foodmach_Training.dbo.tblEmployee E on PH.BuyerID = E.EmployeeID&#xD;&#xA;&#x9;LEFT JOIN Foodmach_Training.dbo.tlkpItemMaster_Categories IMC on I.ItemCategory = IMC.ItemCategory&#xD;&#xA;&#x9;LEFT JOIN Foodmach_Training.dbo.tlkpItemMaster_Group IMG on IMC.ItemMasterGroupID = IMG.ItemMasterGroupID &#xD;&#xA;WHERE&#x9;PD.PurchaseOrderID IN (&quot; + context.PO_ID_List + &quot;)&#xD;&#xA;&quot;&#xD;&#xA;&#xD;&#xA;&#x9;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT&#xD;&#xA;&#x9;PH.PurchaseSupplierID AS PurchaseSupplierID_POH,&#xD;&#xA;&#x9;PH.PurchaseDate AS PurchaseDate_POH,&#xD;&#xA;&#x9;PH.PurchaseTerms AS PurchaseTerms_POH,&#xD;&#xA;&#x9;PH.PurchaseNotes AS PurchaseNotes_POH,&#xD;&#xA;&#x9;PH.PurchaseShipTo AS PurchaseShipTo_POH, -- Add to payload Get the address&#xD;&#xA;&#x9;PH.PurchaseDateRequired AS PurchaseDateRequired_POH,&#xD;&#xA;&#x9;PH.PurchaseCurr AS PurchaseCurr_POH, -- Add to payload&#xD;&#xA;&#x9;PH.PurchaseCurrRate AS PurchaseCurrRate_POH, -- Add to payload&#xD;&#xA;&#x9;PH.PurchaseTax1 AS PurchaseTax1_POH, -- Add to payload&#xD;&#xA;&#x9;PH.PurchaseTax1Name AS PurchaseTax1Name_POH,&#xD;&#xA;&#x9;PH.BuyerID AS BuyerID_POH, -- Add to payload&#xD;&#xA;&#x9;E.EmpEmail as EmpEmail_E,&#xD;&#xA;&#x9;PD.PurchaseDetailID AS PurchaseDetailID_POD,&#xD;&#xA;&#x9;PD.PurchaseOrderID AS PurchaseOrderID_POD,&#xD;&#xA;&#x9;PD.ProjectID AS ProjectID_POD,-- Add to payload&#xD;&#xA;&#x9;PD.SpecID AS SpecID_POD, -- Add to payload&#xD;&#xA;&#x9;PD.ItemID AS ItemID_POD,&#xD;&#xA;&#x9;I.ItemCompanyID as  PartNumber_I, -- New column -- Add to payload&#xD;&#xA;&#x9;PD.PurchaseQty AS PurchaseQty_POD,&#xD;&#xA;&#x9;PD.PurchasePrice AS PurchasePrice_POD, -- Add to payload&#xD;&#xA;&#x9;PD.DateRequired AS DateRequired_POD, -- Add to payload&#xD;&#xA;&#x9;PD.PurchaseSupplierDescription AS PurchaseSupplierDescription_POD, -- Add to payload&#xD;&#xA;&#x9;PD.PurchaseUOM AS PurchaseUOM_POD, -- Add to payload&#xD;&#xA;&#x9;PD.DestInventoryLoc AS DestInventoryLoc_POD,&#xD;&#xA;&#x9;I.ItemDescription AS ItemDescription_I, -- Add to payload&#xD;&#xA;&#x9;C.CName AS CName_C,&#xD;&#xA;&#x9;C.CompanyCustom3 AS CompanyCustom3_C,&#xD;&#xA;&#x9;C2.SAddress1 as SAddress1_C2, -- Add to payload&#xD;&#xA;&#x9;C2.SAddress2 as SAddress2_C2, -- Add to payload&#xD;&#xA;&#x9;C2.SCity as SCity_C2,-- Add to payload&#xD;&#xA;&#x9;C2.SState as SState_C2, -- Add to payload&#xD;&#xA;&#x9;C2.SCountry as SCountry_C2, -- Add to payload&#xD;&#xA;IMC.ItemCategory AS ItemCategory_IMC,&#xD;&#xA;&#x9;IMC.CategoryDescription AS CategoryDescription_IMC,&#xD;&#xA;&#x9;IMC.CatergoryMajor AS CatergoryMajor_IMC,&#xD;&#xA;&#x9;IMC.CategoryCode AS CategoryCode_IMC,&#xD;&#xA;&#x9;IMC.ItemMasterGroupID AS ItemMasterGroupID_IMC,&#xD;&#xA;&#x9;IMC.ItemCategoryCustom1 AS ItemCategoryCustom1_IMC,&#xD;&#xA;&#x9;IMG.ItemMasterGroupName AS ItemMasterGroupName_IMG&#xD;&#xA;FROM&#xD;&#xA;&#x9;dbo.tblPurchaseOrderDetails PD&#xD;&#xA;&#x9;LEFT JOIN dbo.tblPurchaseOrderHeader PH ON PD.PurchaseOrderID = PH.PurchaseOrderID&#xD;&#xA;&#x9;LEFT JOIN dbo.tblCompany C ON PH.PurchaseSupplierID = C.CompanyID&#xD;&#xA;&#x9;LEFT JOIN dbo.tblEngItemMaster I ON PD.ItemID = I.ItemID&#xD;&#xA;&#x9;LEFT JOIN dbo.tblCompany C2 ON PH.PurchaseShipTo = C2.CompanyID&#xD;&#xA;&#x9;LEFT JOIN dbo.tblEmployee E ON PH.BuyerID = E.EmployeeID&#xD;&#xA;&#x9;LEFT JOIN dbo.tlkpItemMaster_Categories IMC ON I.ItemCategory = IMC.ItemCategory&#xD;&#xA;&#x9;LEFT JOIN dbo.tlkpItemMaster_Group IMG ON IMC.ItemMasterGroupID = IMG.ItemMasterGroupID&#xD;&#xA;WHERE PD.PurchaseOrderID IN (&quot; + context.PO_ID_List + &quot;)&quot;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#x9;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -1253,13 +1257,13 @@
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
     <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;192.168.2.46&quot;"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;51980&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="context.dw_ip"/>
+    <elementParameter field="TEXT" name="PORT" value="context.dw_port"/>
     <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;integration&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;integration_database&quot;"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:UPLkvD0rIT8G4xLCeDLmDGc6o94ISLAvaT+f08sZZt1SMWxRoW8OPx5ThQ=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="context.dw_pwd"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;tblPurchaseOrderHeader_integration&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -1363,16 +1367,14 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_2" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_7_NhMKA9EfGq3IYnFJCINg" show="false"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;192.168.2.46&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="context.dw_ip"/>
     <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;51980&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="context.dw_port"/>
     <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;integration&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;integration_database&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:URYzOniewb6Fdzl+FKVDTw2o1IiDjDMwAbGgD55DuIJEOEI/KMGNSNqJDQ=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="context.dw_pwd"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;tblPurchaseOrderHeader_integration&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
@@ -1578,7 +1580,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="TEXT" name="LABEL" value="Send Teams error message"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.base" value="https://default37f3b1b2de5a4ccf94f5b8c2c7a688.00.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/01/workflows/58eacb3c9e234189b8c22bce15da5a6e/triggers/manual/paths"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.base" value="context.teams_base_url"/>
     <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.type" value="NoAuth"/>
     <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.apiKey.destination" value="HEADERS" show="false"/>
     <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.apiKey.headerName" value="Authorization" show="false"/>
@@ -1588,7 +1590,7 @@
     <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.oauth20.authenticationType" value="FORM" show="false"/>
     <elementParameter field="TABLE" name="configuration.dataset.datastore.authentication.oauth20.params" show="false"/>
     <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataset.methodType" value="POST"/>
-    <elementParameter field="TEXT" name="configuration.dataset.resource" value="/invoke?api-version=1&amp;sp=%2Ftriggers%2Fmanual%2Frun&amp;sv=1.0&amp;sig=rHGifzi61aUZzyKSQxtkZdj4bf79WU98m4pkJKW_hx4"/>
+    <elementParameter field="TEXT" name="configuration.dataset.resource" value="context.teams_path"/>
     <elementParameter field="CHECK" name="configuration.dataset.hasPathParams" value="false"/>
     <elementParameter field="TABLE" name="configuration.dataset.pathParams" show="false"/>
     <elementParameter field="CHECK" name="configuration.dataset.hasQueryParams" value="false"/>
@@ -1704,7 +1706,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="TEXT" name="LABEL" value="Send Teams error message"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.base" value="https://default37f3b1b2de5a4ccf94f5b8c2c7a688.00.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/01/workflows/58eacb3c9e234189b8c22bce15da5a6e/triggers/manual/paths"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.base" value="context.teams_base_url"/>
     <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.type" value="NoAuth"/>
     <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.apiKey.destination" value="HEADERS" show="false"/>
     <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.apiKey.headerName" value="Authorization" show="false"/>
@@ -1714,7 +1716,7 @@
     <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.oauth20.authenticationType" value="FORM" show="false"/>
     <elementParameter field="TABLE" name="configuration.dataset.datastore.authentication.oauth20.params" show="false"/>
     <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataset.methodType" value="POST"/>
-    <elementParameter field="TEXT" name="configuration.dataset.resource" value="/invoke?api-version=1&amp;sp=%2Ftriggers%2Fmanual%2Frun&amp;sv=1.0&amp;sig=rHGifzi61aUZzyKSQxtkZdj4bf79WU98m4pkJKW_hx4"/>
+    <elementParameter field="TEXT" name="configuration.dataset.resource" value="context.teams_path"/>
     <elementParameter field="CHECK" name="configuration.dataset.hasPathParams" value="false"/>
     <elementParameter field="TABLE" name="configuration.dataset.pathParams" show="false"/>
     <elementParameter field="CHECK" name="configuration.dataset.hasQueryParams" value="false"/>
@@ -1830,7 +1832,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="TEXT" name="LABEL" value="Send Teams error message"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.base" value="https://default37f3b1b2de5a4ccf94f5b8c2c7a688.00.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/01/workflows/58eacb3c9e234189b8c22bce15da5a6e/triggers/manual/paths"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.base" value="context.teams_base_url"/>
     <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.type" value="NoAuth"/>
     <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.apiKey.destination" value="HEADERS" show="false"/>
     <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.apiKey.headerName" value="Authorization" show="false"/>
@@ -1840,7 +1842,7 @@
     <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.oauth20.authenticationType" value="FORM" show="false"/>
     <elementParameter field="TABLE" name="configuration.dataset.datastore.authentication.oauth20.params" show="false"/>
     <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataset.methodType" value="POST"/>
-    <elementParameter field="TEXT" name="configuration.dataset.resource" value="/invoke?api-version=1&amp;sp=%2Ftriggers%2Fmanual%2Frun&amp;sv=1.0&amp;sig=rHGifzi61aUZzyKSQxtkZdj4bf79WU98m4pkJKW_hx4"/>
+    <elementParameter field="TEXT" name="configuration.dataset.resource" value="context.teams_path"/>
     <elementParameter field="CHECK" name="configuration.dataset.hasPathParams" value="false"/>
     <elementParameter field="TABLE" name="configuration.dataset.pathParams" show="false"/>
     <elementParameter field="CHECK" name="configuration.dataset.hasQueryParams" value="false"/>
