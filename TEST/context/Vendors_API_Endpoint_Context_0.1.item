@@ -18,6 +18,8 @@
     <contextParameter xmi:id="_EW6DkLFjEfGVnY5xgP4JHQ" comment="" name="row_count" prompt="row_count?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
     <contextParameter xmi:id="_2zO70LFlEfGVnY5xgP4JHQ" comment="" name="error_message_log" prompt="error_message_log?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
     <contextParameter xmi:id="_to3BgLFmEfGVnY5xgP4JHQ" comment="" name="integration_table_message" prompt="integration_table_message?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_Te9zMNNiEfGRPYW6g8hdOg" comment="" name="teams_base_url" prompt="teams_base_url?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="https://default37f3b1b2de5a4ccf94f5b8c2c7a688.00.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/01/workflows/58eacb3c9e234189b8c22bce15da5a6e/triggers/manual/paths"/>
+    <contextParameter xmi:id="_Te9zMdNiEfGRPYW6g8hdOg" comment="" name="teams_path" prompt="teams_path?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/invoke?api-version=1&amp;sp=%2Ftriggers%2Fmanual%2Frun&amp;sv=1.0&amp;sig=rHGifzi61aUZzyKSQxtkZdj4bf79WU98m4pkJKW_hx4"/>
   </talendfile:ContextType>
   <talendfile:ContextType xmi:id="_XkiBFpngEfGdaILNokaaHA" confirmationNeeded="false" hide="false" name="Foodmach_Dev">
     <contextParameter xmi:id="_XkiBF5ngEfGdaILNokaaHA" comment="" name="integration_database_server_ip" prompt="integration_database_server_ip?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="192.168.2.46"/>
@@ -37,6 +39,8 @@
     <contextParameter xmi:id="_EW6qoLFjEfGVnY5xgP4JHQ" comment="" name="row_count" prompt="row_count?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
     <contextParameter xmi:id="_2zO70bFlEfGVnY5xgP4JHQ" comment="" name="error_message_log" prompt="error_message_log?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
     <contextParameter xmi:id="_to3BgbFmEfGVnY5xgP4JHQ" comment="" name="integration_table_message" prompt="integration_table_message?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_Te9zMtNiEfGRPYW6g8hdOg" comment="" name="teams_base_url" prompt="teams_base_url?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="https://default37f3b1b2de5a4ccf94f5b8c2c7a688.00.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/01/workflows/58eacb3c9e234189b8c22bce15da5a6e/triggers/manual/paths"/>
+    <contextParameter xmi:id="_Te9zM9NiEfGRPYW6g8hdOg" comment="" name="teams_path" prompt="teams_path?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/invoke?api-version=1&amp;sp=%2Ftriggers%2Fmanual%2Frun&amp;sv=1.0&amp;sig=rHGifzi61aUZzyKSQxtkZdj4bf79WU98m4pkJKW_hx4"/>
   </talendfile:ContextType>
   <talendfile:ContextType xmi:id="_Dy20wKAfEfGq3IYnFJCINg" confirmationNeeded="false" hide="false" name="Foodmach_Dev_2">
     <contextParameter xmi:id="_Dy20waAfEfGq3IYnFJCINg" comment="" name="integration_database_server_ip" prompt="integration_database_server_ip?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="192.168.2.46"/>
@@ -56,6 +60,8 @@
     <contextParameter xmi:id="_EW6qobFjEfGVnY5xgP4JHQ" comment="" name="row_count" prompt="row_count?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
     <contextParameter xmi:id="_2zO70rFlEfGVnY5xgP4JHQ" comment="" name="error_message_log" prompt="error_message_log?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
     <contextParameter xmi:id="_to3BgrFmEfGVnY5xgP4JHQ" comment="" name="integration_table_message" prompt="integration_table_message?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_Te9zNNNiEfGRPYW6g8hdOg" comment="" name="teams_base_url" prompt="teams_base_url?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="https://default37f3b1b2de5a4ccf94f5b8c2c7a688.00.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/01/workflows/58eacb3c9e234189b8c22bce15da5a6e/triggers/manual/paths"/>
+    <contextParameter xmi:id="_Te9zNdNiEfGRPYW6g8hdOg" comment="" name="teams_path" prompt="teams_path?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/invoke?api-version=1&amp;sp=%2Ftriggers%2Fmanual%2Frun&amp;sv=1.0&amp;sig=rHGifzi61aUZzyKSQxtkZdj4bf79WU98m4pkJKW_hx4"/>
   </talendfile:ContextType>
   <talendfile:ContextType xmi:id="_XkiBHJngEfGdaILNokaaHA" confirmationNeeded="false" hide="false" name="IBT_Dev">
     <contextParameter xmi:id="_XkiBHZngEfGdaILNokaaHA" comment="" name="integration_database_server_ip" prompt="integration_database_server_ip?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="192.168.2.65"/>
@@ -75,5 +81,7 @@
     <contextParameter xmi:id="_EW6qorFjEfGVnY5xgP4JHQ" comment="" name="row_count" prompt="row_count?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
     <contextParameter xmi:id="_2zO707FlEfGVnY5xgP4JHQ" comment="" name="error_message_log" prompt="error_message_log?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
     <contextParameter xmi:id="_to3Bg7FmEfGVnY5xgP4JHQ" comment="" name="integration_table_message" prompt="integration_table_message?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_Te9zNtNiEfGRPYW6g8hdOg" comment="" name="teams_base_url" prompt="teams_base_url?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="https://default37f3b1b2de5a4ccf94f5b8c2c7a688.00.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/01/workflows/58eacb3c9e234189b8c22bce15da5a6e/triggers/manual/paths"/>
+    <contextParameter xmi:id="_Te9zN9NiEfGRPYW6g8hdOg" comment="" name="teams_path" prompt="teams_path?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/invoke?api-version=1&amp;sp=%2Ftriggers%2Fmanual%2Frun&amp;sv=1.0&amp;sig=rHGifzi61aUZzyKSQxtkZdj4bf79WU98m4pkJKW_hx4"/>
   </talendfile:ContextType>
 </xmi:XMI>
