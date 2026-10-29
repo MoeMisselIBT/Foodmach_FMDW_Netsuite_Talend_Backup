@@ -1,13 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
-  <context confirmationNeeded="false" hide="false" name="Default">
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Dev" jobType="Standard">
+  <context confirmationNeeded="false" hide="false" name="Dev">
     <contextParameter comment="" name="PurchaseDetailID_List" prompt="PurchaseDetailID_List?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="" internalId="_Q4iwwMEdEfG0duEbEJJ1_w"/>
+    <contextParameter comment="data warehouse" name="dw_port" prompt="dw_port?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="51980" internalId="_4zrZ8NMtEfGRPYW6g8hdOg"/>
+    <contextParameter comment="foodmach database" name="foodmach_ip" prompt="foodmach_ip?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="192.168.2.4" internalId="_4zrZ8dMtEfGRPYW6g8hdOg"/>
+    <contextParameter comment="" name="ReceiverLogID_List" prompt="ReceiverLogID_List?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="" internalId="_4zrZ8tMtEfGRPYW6g8hdOg"/>
+    <contextParameter comment="data warehouse ip address" name="dw_ip" prompt="dw_ip?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="192.168.2.46" internalId="_4zrZ89MtEfGRPYW6g8hdOg"/>
+    <contextParameter comment="" name="rejectCount" prompt="rejectCount?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_Integer" value="0" internalId="_4zrZ9NMtEfGRPYW6g8hdOg"/>
+    <contextParameter comment="" name="client_id" prompt="client_id?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="e74f0683fa5379e2b725547a322cb11514b0915b7a7efec374a72c4ae3a04531" internalId="_4zrZ9dMtEfGRPYW6g8hdOg"/>
+    <contextParameter comment="" name="private_key_path" prompt="private_key_path?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="C:\Users\mmisselmany\Downloads\PO_Auth_flow\PO_Auth_flow\private.pem" internalId="_4zrZ9tMtEfGRPYW6g8hdOg"/>
+    <contextParameter comment="" name="certificate_id" prompt="certificate_id?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="S_eR_japu9FLYSq2Kzq9pw9OPBfiKkMR2trklvfe4Es" internalId="_4zrZ99MtEfGRPYW6g8hdOg"/>
+    <contextParameter comment="" name="JSON_Payload" prompt="JSON_Payload?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="" internalId="_4zrZ-NMtEfGRPYW6g8hdOg"/>
+    <contextParameter comment="" name="account_id" prompt="account_id?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="847280-sb1" internalId="_4zrZ-dMtEfGRPYW6g8hdOg"/>
+    <contextParameter comment="" name="PurchaseOrderID_List" prompt="PurchaseOrderID_List?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="" internalId="_4zrZ-tMtEfGRPYW6g8hdOg"/>
+    <contextParameter comment="" name="new_bearer_token" prompt="new_bearer_token?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="" internalId="_4zrZ-9MtEfGRPYW6g8hdOg"/>
+    <contextParameter comment="" name="scope" prompt="scope?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="restlets rest_webservices" internalId="_4zrZ_NMtEfGRPYW6g8hdOg"/>
+    <contextParameter comment="foodmach password" name="foodmach_pwd" prompt="foodmach_pwd?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_Password" value="enc:system.encryption.key.v1:TFe5IlEsGppJJWlztI3e4jAMMlmWBtVXwHPJkBXtOcB0flDD" internalId="_4zrZ_dMtEfGRPYW6g8hdOg"/>
+    <contextParameter comment="foodmach port" name="foodmach_port" prompt="foodmach_port?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="1433" internalId="_4zrZ_tMtEfGRPYW6g8hdOg"/>
+    <contextParameter comment="data warehouse password" name="dw_pwd" prompt="dw_pwd?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_Password" value="enc:system.encryption.key.v1:6OFO4kthUPPyhhbrZVVSRROWGOzyGxL1EUqpsnqNeQKIFpcCq5mDN38=" internalId="_4zrZ_9MtEfGRPYW6g8hdOg"/>
+    <contextParameter comment="database name" name="foodmach_db" prompt="foodmach_db?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="Foodmach_training" internalId="_rG7goNMuEfGRPYW6g8hdOg"/>
+    <contextParameter comment="data warehouse database name" name="dw_db" prompt="dw_db?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="fmdw" internalId="_OyQ7sNMvEfGRPYW6g8hdOg"/>
   </context>
   <context confirmationNeeded="false" hide="false" name="Test">
     <contextParameter comment="" name="PurchaseDetailID_List" prompt="PurchaseDetailID_List?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="" internalId="_HQsSkNMtEfGRPYW6g8hdOg"/>
+    <contextParameter comment="data warehouse" name="dw_port" prompt="dw_port?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="52015" internalId="_4zraANMtEfGRPYW6g8hdOg"/>
+    <contextParameter comment="foodmach database" name="foodmach_ip" prompt="foodmach_ip?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="" internalId="_4zraAdMtEfGRPYW6g8hdOg"/>
+    <contextParameter comment="" name="ReceiverLogID_List" prompt="ReceiverLogID_List?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="" internalId="_4zraAtMtEfGRPYW6g8hdOg"/>
+    <contextParameter comment="data warehouse ip address" name="dw_ip" prompt="dw_ip?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="192.168.2.46" internalId="_4zraA9MtEfGRPYW6g8hdOg"/>
+    <contextParameter comment="" name="rejectCount" prompt="rejectCount?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_Integer" value="0" internalId="_4zraBNMtEfGRPYW6g8hdOg"/>
+    <contextParameter comment="" name="client_id" prompt="client_id?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="e74f0683fa5379e2b725547a322cb11514b0915b7a7efec374a72c4ae3a04531" internalId="_4zraBdMtEfGRPYW6g8hdOg"/>
+    <contextParameter comment="" name="private_key_path" prompt="private_key_path?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="C:\Users\mmisselmany\Downloads\PO_Auth_flow\PO_Auth_flow\private.pem" internalId="_4zraBtMtEfGRPYW6g8hdOg"/>
+    <contextParameter comment="" name="certificate_id" prompt="certificate_id?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="S_eR_japu9FLYSq2Kzq9pw9OPBfiKkMR2trklvfe4Es" internalId="_4zraB9MtEfGRPYW6g8hdOg"/>
+    <contextParameter comment="" name="JSON_Payload" prompt="JSON_Payload?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="" internalId="_4zraCNMtEfGRPYW6g8hdOg"/>
+    <contextParameter comment="" name="account_id" prompt="account_id?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="847280-sb1" internalId="_4zraCdMtEfGRPYW6g8hdOg"/>
+    <contextParameter comment="" name="PurchaseOrderID_List" prompt="PurchaseOrderID_List?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="" internalId="_4zraCtMtEfGRPYW6g8hdOg"/>
+    <contextParameter comment="" name="new_bearer_token" prompt="new_bearer_token?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="" internalId="_4zraC9MtEfGRPYW6g8hdOg"/>
+    <contextParameter comment="" name="scope" prompt="scope?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="restlets rest_webservices" internalId="_4zraDNMtEfGRPYW6g8hdOg"/>
+    <contextParameter comment="foodmach password" name="foodmach_pwd" prompt="foodmach_pwd?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_Password" value="enc:system.encryption.key.v1:02tZdSk6nvMWTMZ1NEcr8+bG6HCE5hT2dUX92HZRCB28C2lG" internalId="_4zraDdMtEfGRPYW6g8hdOg"/>
+    <contextParameter comment="foodmach port" name="foodmach_port" prompt="foodmach_port?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="1433" internalId="_4zraDtMtEfGRPYW6g8hdOg"/>
+    <contextParameter comment="data warehouse password" name="dw_pwd" prompt="dw_pwd?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_Password" value="enc:system.encryption.key.v1:FZnyuxXcNZ7q6fkI0s0rgNcK9jfRbiEgkqoAllBVK5iRSEbokq5gQHw=" internalId="_4zraD9MtEfGRPYW6g8hdOg"/>
+    <contextParameter comment="database name" name="foodmach_db" prompt="foodmach_db?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="Foodmach" internalId="_rG7godMuEfGRPYW6g8hdOg"/>
+    <contextParameter comment="data warehouse database name" name="dw_db" prompt="dw_db?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="fmdw" internalId="_OyQ7sdMvEfGRPYW6g8hdOg"/>
   </context>
   <context confirmationNeeded="false" hide="false" name="Prod">
     <contextParameter comment="" name="PurchaseDetailID_List" prompt="PurchaseDetailID_List?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="" internalId="_HQsSkdMtEfGRPYW6g8hdOg"/>
+    <contextParameter comment="data warehouse" name="dw_port" prompt="dw_port?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="1433" internalId="_4zraENMtEfGRPYW6g8hdOg"/>
+    <contextParameter comment="foodmach database" name="foodmach_ip" prompt="foodmach_ip?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="" internalId="_4zraEdMtEfGRPYW6g8hdOg"/>
+    <contextParameter comment="" name="ReceiverLogID_List" prompt="ReceiverLogID_List?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="" internalId="_4zraEtMtEfGRPYW6g8hdOg"/>
+    <contextParameter comment="data warehouse ip address" name="dw_ip" prompt="dw_ip?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="192.168.2.47" internalId="_4zraE9MtEfGRPYW6g8hdOg"/>
+    <contextParameter comment="" name="rejectCount" prompt="rejectCount?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_Integer" value="0" internalId="_4zraFNMtEfGRPYW6g8hdOg"/>
+    <contextParameter comment="" name="client_id" prompt="client_id?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="e74f0683fa5379e2b725547a322cb11514b0915b7a7efec374a72c4ae3a04531" internalId="_4zraFdMtEfGRPYW6g8hdOg"/>
+    <contextParameter comment="" name="private_key_path" prompt="private_key_path?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="C:\Users\mmisselmany\Downloads\PO_Auth_flow\PO_Auth_flow\private.pem" internalId="_4zraFtMtEfGRPYW6g8hdOg"/>
+    <contextParameter comment="" name="certificate_id" prompt="certificate_id?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="S_eR_japu9FLYSq2Kzq9pw9OPBfiKkMR2trklvfe4Es" internalId="_4zraF9MtEfGRPYW6g8hdOg"/>
+    <contextParameter comment="" name="JSON_Payload" prompt="JSON_Payload?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="" internalId="_4zraGNMtEfGRPYW6g8hdOg"/>
+    <contextParameter comment="" name="account_id" prompt="account_id?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="847280-sb1" internalId="_4zraGdMtEfGRPYW6g8hdOg"/>
+    <contextParameter comment="" name="PurchaseOrderID_List" prompt="PurchaseOrderID_List?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="" internalId="_4zraGtMtEfGRPYW6g8hdOg"/>
+    <contextParameter comment="" name="new_bearer_token" prompt="new_bearer_token?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="" internalId="_4zraG9MtEfGRPYW6g8hdOg"/>
+    <contextParameter comment="" name="scope" prompt="scope?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="restlets rest_webservices" internalId="_4zraHNMtEfGRPYW6g8hdOg"/>
+    <contextParameter comment="foodmach password" name="foodmach_pwd" prompt="foodmach_pwd?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_Password" value="enc:system.encryption.key.v1:6xRaZ6vQRZu487hA0jh12ZtmkdhDZG20p05TZYfMZkz21Nap" internalId="_4zraHdMtEfGRPYW6g8hdOg"/>
+    <contextParameter comment="foodmach port" name="foodmach_port" prompt="foodmach_port?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="1433" internalId="_4zraHtMtEfGRPYW6g8hdOg"/>
+    <contextParameter comment="data warehouse password" name="dw_pwd" prompt="dw_pwd?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_Password" value="enc:system.encryption.key.v1:LMd7yHKgcRm3J4Bn/bn8soN6HMRJ53419n4/ptvZWmYBKqMF97Y+kuY=" internalId="_4zraH9MtEfGRPYW6g8hdOg"/>
+    <contextParameter comment="database name" name="foodmach_db" prompt="foodmach_db?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="Foodmach" internalId="_rG7gotMuEfGRPYW6g8hdOg"/>
+    <contextParameter comment="data warehouse database name" name="dw_db" prompt="dw_db?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="fmdw" internalId="_OyQ7stMvEfGRPYW6g8hdOg"/>
   </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
@@ -109,34 +163,34 @@
   </parameters>
   <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="280" posY="80">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_j9yssJxlEfG0fNycJkJoag" show="false"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;192.168.2.46&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;192.168.2.46&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;51980&quot;"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;teto_landing&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;fmdw&quot;"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:8FmEmWJgTMihRcWo0rWi63XtJiMJ3wBxnBOMNNgWVQHOqClNUKu6FI1AGQ=="/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;51980&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;teto_landing&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;fmdw&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:8FmEmWJgTMihRcWo0rWi63XtJiMJ3wBxnBOMNNgWVQHOqClNUKu6FI1AGQ==" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;tblReceiverLog__ct&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
     <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;WITH ranked_receiver AS (&#xD;&#xA;    SELECT&#xD;&#xA;        -- Grabs all updates from the change table in landing, orders them by header__timestamp desc,&#xD;&#xA;        -- and numbers the rows latest to earliest per ReceiverLogID, so we can pick the latest update per record.&#xD;&#xA;        teto_landing.tblReceiverLog__ct.header__change_oper,&#xD;&#xA;        teto_landing.tblReceiverLog__ct.header__timestamp,&#xD;&#xA;        teto_landing.tblReceiverLog__ct.ReceiverLogID,&#xD;&#xA;        teto_landing.tblReceiverLog__ct.PurchaseDetailID,&#xD;&#xA;        teto_landing.tblReceiverLog__ct.QtyReceived,&#xD;&#xA;        teto_landing.tblReceiverLog__ct.[Date],&#xD;&#xA;        teto_landing.tblReceiverLog__ct.DateCreated,&#xD;&#xA;        teto_landing.tblReceiverLog__ct.BatchID,&#xD;&#xA;        teto_landing.tblReceiverLog__ct.ReceiverLogCustom1,&#xD;&#xA;        teto_landing.tblReceiverLog__ct.ReceiverLogCustom2,&#xD;&#xA;        teto_landing.tblReceiverLog__ct.ReceiverLogCustom3,&#xD;&#xA;        teto_landing.tblReceiverLog__ct.ReceiverLogCustom4,&#xD;&#xA;        teto_landing.tblReceiverLog__ct.ReceiverLogCustom5,&#xD;&#xA;        teto_landing.tblReceiverLog__ct.ReceiverLogCustom6,&#xD;&#xA;        teto_landing.tblReceiverLog__ct.ReceiverLogCustom7,&#xD;&#xA;        teto_landing.tblReceiverLog__ct.ReceiverLogCustom8,&#xD;&#xA;        teto_landing.tblReceiverLog__ct.RaisedByEmployee,&#xD;&#xA;        teto_landing.tblReceiverLog__ct.ProcessScheduleID,&#xD;&#xA;        teto_landing.tblReceiverLog__ct.ProcessScheduleDetailID,&#xD;&#xA;        teto_landing.tblReceiverLog__ct.PackingSlipNumber,&#xD;&#xA;        ROW_NUMBER() OVER (PARTITION BY ReceiverLogID ORDER BY header__timestamp DESC, header__change_seq DESC) AS rn&#xD;&#xA;    FROM teto_landing.tblReceiverLog__ct&#xD;&#xA;    WHERE header__change_oper = 'U'&#xD;&#xA;    --AND header__timestamp > DATEADD(DAY, -7, GETDATE())&#xD;&#xA;)&#xD;&#xA;SELECT&#xD;&#xA;    header__change_oper, header__timestamp, ReceiverLogID, PurchaseDetailID, QtyReceived,&#xD;&#xA;    [Date], DateCreated, BatchID, ReceiverLogCustom1, ReceiverLogCustom2,&#xD;&#xA;    ReceiverLogCustom3, ReceiverLogCustom4, ReceiverLogCustom5, ReceiverLogCustom6,&#xD;&#xA;    ReceiverLogCustom7, ReceiverLogCustom8, RaisedByEmployee, ProcessScheduleID,&#xD;&#xA;    ProcessScheduleDetailID, PackingSlipNumber&#xD;&#xA;FROM ranked_receiver r&#xD;&#xA;WHERE r.rn = 1&#xD;&#xA;  AND NOT EXISTS (&#xD;&#xA;      SELECT 1&#xD;&#xA;      FROM integration_database.integration.tblReceiverLog_integration x&#xD;&#xA;      WHERE x.ReceiverLogID = r.ReceiverLogID&#xD;&#xA;  );&quot;"/>
-    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
-    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;trustServerCertificate=true;&quot;"/>
-    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;trustServerCertificate=true;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false" show="false"/>
     <elementParameter field="CLOSED_LIST" name="ACTIVE_DIR_AUTH_MODE" value="PASSWORD" show="false"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="CHECK" name="ENABLE_ALWAYS_ENCRYPTED" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_ALWAYS_ENCRYPTED" value="false" show="false"/>
     <elementParameter field="TEXT" name="KEYSTORE_PRINCIPAL_ID" value="" show="false"/>
     <elementParameter field="PASSWORD" name="KEYSTORE_SECRET" value="" show="false"/>
     <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
@@ -1375,34 +1429,34 @@
   </node>
   <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="720" posY="680">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_3" show="false"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_2"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_gDwS0KJ1EfGq3IYnFJCINg" show="false"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;192.168.2.4&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;192.168.2.4&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;dbo&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;Foodmach_Training&quot;"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:JQhQc46CunBMsPuIzqGLlL/DiWpl3zCgCogCtglo6pGxHb+ueqg="/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;dbo&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;Foodmach_Training&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:JQhQc46CunBMsPuIzqGLlL/DiWpl3zCgCogCtglo6pGxHb+ueqg=" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;tblPurchaseOrderDetails&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
     <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &quot; +&#xD;&#xA;&quot;    dbo.tblPurchaseOrderDetails.PurchaseDetailID, &quot; +&#xD;&#xA;&quot;    dbo.tblPurchaseOrderDetails.PurchaseOrderID, &quot; +&#xD;&#xA;&quot;    dbo.tblPurchaseOrderDetails.PurchaseUOM &quot; +&#xD;&#xA;&quot;FROM dbo.tblPurchaseOrderDetails &quot; +&#xD;&#xA;&quot;WHERE dbo.tblPurchaseOrderDetails.PurchaseDetailID IN (&quot; + context.PurchaseDetailID_List + &quot;)&quot;"/>
-    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
-    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;TrustServerCertificate=true;&quot;"/>
-    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;TrustServerCertificate=true;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false" show="false"/>
     <elementParameter field="CLOSED_LIST" name="ACTIVE_DIR_AUTH_MODE" value="PASSWORD" show="false"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="CHECK" name="ENABLE_ALWAYS_ENCRYPTED" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_ALWAYS_ENCRYPTED" value="false" show="false"/>
     <elementParameter field="TEXT" name="KEYSTORE_PRINCIPAL_ID" value="" show="false"/>
     <elementParameter field="PASSWORD" name="KEYSTORE_SECRET" value="" show="false"/>
     <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
@@ -1432,18 +1486,18 @@
   </node>
   <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1840" posY="560">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_1" show="false"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_7_NhMKA9EfGq3IYnFJCINg" show="false"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;192.168.2.46&quot;"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;51980&quot;"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;integration&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;integration_database&quot;"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;192.168.2.46&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;51980&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;integration&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;integration_database&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:iE2jBK5zGgHIPs5w8cD6tbzi3jhHoMwRfDbH0WebPDXc3ag5I+j8TbheGw=="/>
+    <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:iE2jBK5zGgHIPs5w8cD6tbzi3jhHoMwRfDbH0WebPDXc3ag5I+j8TbheGw==" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;tblReceiverLog_integration&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -1453,22 +1507,22 @@
     <elementParameter field="COLUMN_LIST" name="IDENTITY_FIELD" value="header__change_oper" show="false"/>
     <elementParameter field="TEXT" name="START_VALUE" value="1" show="false"/>
     <elementParameter field="TEXT" name="STEP" value="1" show="false"/>
-    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
-    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;trustServerCertificate=true;&quot;"/>
-    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;trustServerCertificate=true;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false" show="false"/>
     <elementParameter field="CLOSED_LIST" name="ACTIVE_DIR_AUTH_MODE" value="PASSWORD" show="false"/>
-    <elementParameter field="CHECK" name="ENABLE_ALWAYS_ENCRYPTED" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_ALWAYS_ENCRYPTED" value="false" show="false"/>
     <elementParameter field="TEXT" name="KEYSTORE_PRINCIPAL_ID" value="" show="false"/>
     <elementParameter field="PASSWORD" name="KEYSTORE_SECRET" value="" show="false"/>
-    <elementParameter field="CHECK" name="USE_ALTERNATE_SCHEMA" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_ALTERNATE_SCHEMA" value="false"/>
     <elementParameter field="TEXT" name="ALTERNATE_SCHEMA" value="&quot;&quot;" show="false"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000" show="false"/>
     <elementParameter field="TABLE" name="ADD_COLS"/>
     <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="true"/>
     <elementParameter field="TABLE" name="FIELD_OPTIONS">
@@ -1665,26 +1719,14 @@
   </node>
   <node componentName="tMSSqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-280" posY="80">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBConnection_1" show="false"/>
-    <elementParameter field="TEXT" name="COMPONENT_NAME" value="tMSSqlConnection" show="false"/>
-    <elementParameter field="TEXT" name="VERSION" value="0.102 (ALPHA)" show="false"/>
-    <elementParameter field="TEXT" name="FAMILY" value="Databases/DB Specifics/MS_SQL_Server|ELT/Connections" show="false"/>
-    <elementParameter field="CHECK" name="START" value="true" show="false"/>
-    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
-    <elementParameter field="CHECK" name="SUBTREE_START" value="true" show="false"/>
-    <elementParameter field="CHECK" name="END_OF_FLOW" value="true" show="false"/>
-    <elementParameter field="TEXT" name="HELP" value="org.talend.help.tMSSqlConnection" show="false"/>
-    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
-    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend-Studio-20260708_1430-V8.0.1\Talend-Studio-20260708_1430-V8.0.1\configuration\lib\java" show="false"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_7_NhMKA9EfGq3IYnFJCINg" show="false"/>
     <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;192.168.2.46&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="context.dw_ip"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;51980&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="context.dw_port"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;integration&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;integration_database&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.dw_db"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ilo9TgjIj/6o48gzyufROGWRbY5zBdZF+EYXHWuNs2qirKWyfk62OpqlZw=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="context.dw_pwd"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;trustServerCertificate=true;&quot;"/>
@@ -1705,26 +1747,14 @@
   </node>
   <node componentName="tMSSqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-80" posY="80">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBConnection_2" show="false"/>
-    <elementParameter field="TEXT" name="COMPONENT_NAME" value="tMSSqlConnection" show="false"/>
-    <elementParameter field="TEXT" name="VERSION" value="0.102 (ALPHA)" show="false"/>
-    <elementParameter field="TEXT" name="FAMILY" value="Databases/DB Specifics/MS_SQL_Server|ELT/Connections" show="false"/>
-    <elementParameter field="CHECK" name="START" value="false" show="false"/>
-    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
-    <elementParameter field="CHECK" name="SUBTREE_START" value="true" show="false"/>
-    <elementParameter field="CHECK" name="END_OF_FLOW" value="true" show="false"/>
-    <elementParameter field="TEXT" name="HELP" value="org.talend.help.tMSSqlConnection" show="false"/>
-    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
-    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend-Studio-20260708_1430-V8.0.1\Talend-Studio-20260708_1430-V8.0.1\configuration\lib\java" show="false"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_gDwS0KJ1EfGq3IYnFJCINg" show="false"/>
     <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;192.168.2.4&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="context.foodmach_ip"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="context.foodmach_port"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;dbo&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;Foodmach_Training&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.foodmach_db"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:5ykPEyNpxtvIZGQutKORbSA2DQRQo47w/tAl9FR6ois9cbfCvy8="/>
+    <elementParameter field="PASSWORD" name="PASS" value="context.foodmach_pwd"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;TrustServerCertificate=true;&quot;"/>
