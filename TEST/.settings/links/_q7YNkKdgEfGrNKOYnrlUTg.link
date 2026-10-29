@@ -27,6 +27,15 @@
     }, {
       "id" : "_iHRTos5wEfGRWfYhjqv9Dg",
       "name" : "JSON_Payload"
+    }, {
+      "id" : "_iHRToM5wEfGRWfYhjqv9Dg",
+      "name" : "PO_ID_List"
+    }, {
+      "id" : "_QarIUNNNEfGRPYW6g8hdOg",
+      "name" : "api_url"
+    }, {
+      "id" : "_iHRToc5wEfGRWfYhjqv9Dg",
+      "name" : "PO_Creation_Result"
     } ]
   } ]
 }
