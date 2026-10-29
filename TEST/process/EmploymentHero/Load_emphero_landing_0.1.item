@@ -20,6 +20,8 @@
     <contextParameter comment="yyyy-mm-dd" name="manualFromDate" prompt="manualFromDate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_O1UDANJbEfGUzJ4r5AqM4g"/>
     <contextParameter comment="yyyy-mm-dd" name="manualToDate" prompt="manualToDate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_O1UDAdJbEfGUzJ4r5AqM4g"/>
     <contextParameter comment="Data warehouse password" name="pwd" prompt="pwd?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:Lc5ZfFvf9K1MI1uu6+7E3Ezv/yv3O6C+Dwtyw6PaEWX2ub0yYf40LtY=" internalId="_jKd6ANMmEfGRPYW6g8hdOg"/>
+    <contextParameter comment="Power Automate Workflows webhook part 1. This has been split into 2" name="teams_base_url" prompt="teams_base_url?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="https://default37f3b1b2de5a4ccf94f5b8c2c7a688.00.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/01/workflows/58eacb3c9e234189b8c22bce15da5a6e/triggers/manual/paths" internalId="_s_VrkNNhEfGRPYW6g8hdOg"/>
+    <contextParameter comment="Power Automate Workflows webhook part 2. This has been split into 2" name="teams_path" prompt="teams_path?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/invoke?api-version=1&amp;sp=%2Ftriggers%2Fmanual%2Frun&amp;sv=1.0&amp;sig=rHGifzi61aUZzyKSQxtkZdj4bf79WU98m4pkJKW_hx4" internalId="_s_VrkdNhEfGRPYW6g8hdOg"/>
   </context>
   <context confirmationNeeded="false" hide="false" name="Dev_testing">
     <contextParameter comment="" name="apiKey" prompt="apiKey?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:Qc9XfSZVyVZczyNnLdkqqKxgnVhAr3u62lYxPle/uflvHzQnDFXEx7DXNHttFcLUo1W1KULb9wlf3I579udKrxqRjC0ellkv5dOTccTWNnE23Jg5cm/zYtRKckgpvWSnu8Z55ElSPZ2aS30OarUFO/4oVPCw" internalId="_OY-dMMhTEfGA9rGHMyEOkw"/>
@@ -41,6 +43,8 @@
     <contextParameter comment="yyyy-mm-dd" name="manualFromDate" prompt="manualFromDate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="2026-08-01" internalId="_O1UDAtJbEfGUzJ4r5AqM4g"/>
     <contextParameter comment="yyyy-mm-dd" name="manualToDate" prompt="manualToDate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="2026-10-25" internalId="_O1UDA9JbEfGUzJ4r5AqM4g"/>
     <contextParameter comment="Data warehouse password" name="pwd" prompt="pwd?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:sAkNtvufbDM7p7iWtrpWDl6qJaH725N9rKZ2virudDuqdStwuf1lkb0=" internalId="_jKd6AdMmEfGRPYW6g8hdOg"/>
+    <contextParameter comment="Power Automate Workflows webhook part 1. This has been split into 2" name="teams_base_url" prompt="teams_base_url?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="https://default37f3b1b2de5a4ccf94f5b8c2c7a688.00.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/01/workflows/58eacb3c9e234189b8c22bce15da5a6e/triggers/manual/paths" internalId="_s_VrktNhEfGRPYW6g8hdOg"/>
+    <contextParameter comment="Power Automate Workflows webhook part 2. This has been split into 2" name="teams_path" prompt="teams_path?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/invoke?api-version=1&amp;sp=%2Ftriggers%2Fmanual%2Frun&amp;sv=1.0&amp;sig=rHGifzi61aUZzyKSQxtkZdj4bf79WU98m4pkJKW_hx4" internalId="_s_Vrk9NhEfGRPYW6g8hdOg"/>
   </context>
   <context confirmationNeeded="false" hide="false" name="Prod">
     <contextParameter comment="" name="apiKey" prompt="apiKey?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:Qc9XfSZVyVZczyNnLdkqqKxgnVhAr3u62lYxPle/uflvHzQnDFXEx7DXNHttFcLUo1W1KULb9wlf3I579udKrxqRjC0ellkv5dOTccTWNnE23Jg5cm/zYtRKckgpvWSnu8Z55ElSPZ2aS30OarUFO/4oVPCw" internalId="_OY-dMMhTEfGA9rGHMyEOkw"/>
@@ -62,6 +66,8 @@
     <contextParameter comment="yyyy-mm-dd" name="manualFromDate" prompt="manualFromDate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_O1UDBNJbEfGUzJ4r5AqM4g"/>
     <contextParameter comment="yyyy-mm-dd" name="manualToDate" prompt="manualToDate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_O1UDBdJbEfGUzJ4r5AqM4g"/>
     <contextParameter comment="Data warehouse password" name="pwd" prompt="pwd?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:dJDT0KPLznJDJR78WURfE7S7QN3rIm0G0+IefUL0vGUZV5AtG4mx/7Q=" internalId="_jKd6AtMmEfGRPYW6g8hdOg"/>
+    <contextParameter comment="Power Automate Workflows webhook part 1. This has been split into 2" name="teams_base_url" prompt="teams_base_url?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="https://default37f3b1b2de5a4ccf94f5b8c2c7a688.00.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/01/workflows/58eacb3c9e234189b8c22bce15da5a6e/triggers/manual/paths" internalId="_s_VrlNNhEfGRPYW6g8hdOg"/>
+    <contextParameter comment="Power Automate Workflows webhook part 2. This has been split into 2" name="teams_path" prompt="teams_path?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/invoke?api-version=1&amp;sp=%2Ftriggers%2Fmanual%2Frun&amp;sv=1.0&amp;sig=rHGifzi61aUZzyKSQxtkZdj4bf79WU98m4pkJKW_hx4" internalId="_s_VrldNhEfGRPYW6g8hdOg"/>
   </context>
   <context confirmationNeeded="false" hide="false" name="Test">
     <contextParameter comment="" name="apiKey" prompt="apiKey?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:Qc9XfSZVyVZczyNnLdkqqKxgnVhAr3u62lYxPle/uflvHzQnDFXEx7DXNHttFcLUo1W1KULb9wlf3I579udKrxqRjC0ellkv5dOTccTWNnE23Jg5cm/zYtRKckgpvWSnu8Z55ElSPZ2aS30OarUFO/4oVPCw" internalId="_OY-dMMhTEfGA9rGHMyEOkw"/>
@@ -83,6 +89,8 @@
     <contextParameter comment="yyyy-mm-dd" name="manualFromDate" prompt="manualFromDate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_O1UDBtJbEfGUzJ4r5AqM4g"/>
     <contextParameter comment="yyyy-mm-dd" name="manualToDate" prompt="manualToDate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_O1UDB9JbEfGUzJ4r5AqM4g"/>
     <contextParameter comment="Data warehouse password" name="pwd" prompt="pwd?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:7tC7B80PSJ/A2SlCy1LOfwFgRm2Bs1NbhGE1CJ+N9uNT1IQgKD6RXnQ=" internalId="_jKd6A9MmEfGRPYW6g8hdOg"/>
+    <contextParameter comment="Power Automate Workflows webhook part 1. This has been split into 2" name="teams_base_url" prompt="teams_base_url?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="https://default37f3b1b2de5a4ccf94f5b8c2c7a688.00.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/01/workflows/58eacb3c9e234189b8c22bce15da5a6e/triggers/manual/paths" internalId="_s_VrltNhEfGRPYW6g8hdOg"/>
+    <contextParameter comment="Power Automate Workflows webhook part 2. This has been split into 2" name="teams_path" prompt="teams_path?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/invoke?api-version=1&amp;sp=%2Ftriggers%2Fmanual%2Frun&amp;sv=1.0&amp;sig=rHGifzi61aUZzyKSQxtkZdj4bf79WU98m4pkJKW_hx4" internalId="_s_Vrl9NhEfGRPYW6g8hdOg"/>
   </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
@@ -3197,7 +3205,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="TEXT" name="LABEL" value="Send Teams error message"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.base" value="https://default37f3b1b2de5a4ccf94f5b8c2c7a688.00.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/01/workflows/58eacb3c9e234189b8c22bce15da5a6e/triggers/manual/paths"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.base" value="context.teams_base_url"/>
     <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.type" value="NoAuth"/>
     <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.apiKey.destination" value="HEADERS" show="false"/>
     <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.apiKey.headerName" value="Authorization" show="false"/>
@@ -3207,7 +3215,7 @@
     <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.oauth20.authenticationType" value="FORM" show="false"/>
     <elementParameter field="TABLE" name="configuration.dataset.datastore.authentication.oauth20.params" show="false"/>
     <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataset.methodType" value="POST"/>
-    <elementParameter field="TEXT" name="configuration.dataset.resource" value="/invoke?api-version=1&amp;sp=%2Ftriggers%2Fmanual%2Frun&amp;sv=1.0&amp;sig=rHGifzi61aUZzyKSQxtkZdj4bf79WU98m4pkJKW_hx4"/>
+    <elementParameter field="TEXT" name="configuration.dataset.resource" value="context.teams_path"/>
     <elementParameter field="CHECK" name="configuration.dataset.hasPathParams" value="false"/>
     <elementParameter field="TABLE" name="configuration.dataset.pathParams" show="false"/>
     <elementParameter field="CHECK" name="configuration.dataset.hasQueryParams" value="false"/>
