@@ -24,7 +24,7 @@
   <context confirmationNeeded="false" hide="false" name="Test">
     <contextParameter comment="" name="PurchaseDetailID_List" prompt="PurchaseDetailID_List?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="" internalId="_HQsSkNMtEfGRPYW6g8hdOg"/>
     <contextParameter comment="data warehouse" name="dw_port" prompt="dw_port?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="52015" internalId="_4zraANMtEfGRPYW6g8hdOg"/>
-    <contextParameter comment="foodmach database" name="foodmach_ip" prompt="foodmach_ip?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="" internalId="_4zraAdMtEfGRPYW6g8hdOg"/>
+    <contextParameter comment="foodmach database" name="foodmach_ip" prompt="foodmach_ip?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="192.168.2.4" internalId="_4zraAdMtEfGRPYW6g8hdOg"/>
     <contextParameter comment="" name="ReceiverLogID_List" prompt="ReceiverLogID_List?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="" internalId="_4zraAtMtEfGRPYW6g8hdOg"/>
     <contextParameter comment="data warehouse ip address" name="dw_ip" prompt="dw_ip?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="192.168.2.46" internalId="_4zraA9MtEfGRPYW6g8hdOg"/>
     <contextParameter comment="" name="rejectCount" prompt="rejectCount?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_Integer" value="0" internalId="_4zraBNMtEfGRPYW6g8hdOg"/>
@@ -45,7 +45,7 @@
   <context confirmationNeeded="false" hide="false" name="Prod">
     <contextParameter comment="" name="PurchaseDetailID_List" prompt="PurchaseDetailID_List?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="" internalId="_HQsSkdMtEfGRPYW6g8hdOg"/>
     <contextParameter comment="data warehouse" name="dw_port" prompt="dw_port?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="1433" internalId="_4zraENMtEfGRPYW6g8hdOg"/>
-    <contextParameter comment="foodmach database" name="foodmach_ip" prompt="foodmach_ip?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="" internalId="_4zraEdMtEfGRPYW6g8hdOg"/>
+    <contextParameter comment="foodmach database" name="foodmach_ip" prompt="foodmach_ip?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="192.168.2.4" internalId="_4zraEdMtEfGRPYW6g8hdOg"/>
     <contextParameter comment="" name="ReceiverLogID_List" prompt="ReceiverLogID_List?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="" internalId="_4zraEtMtEfGRPYW6g8hdOg"/>
     <contextParameter comment="data warehouse ip address" name="dw_ip" prompt="dw_ip?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="192.168.2.47" internalId="_4zraE9MtEfGRPYW6g8hdOg"/>
     <contextParameter comment="" name="rejectCount" prompt="rejectCount?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_Integer" value="0" internalId="_4zraFNMtEfGRPYW6g8hdOg"/>
