@@ -9,6 +9,17 @@
     <contextParameter comment="" name="JSON_Payload" prompt="JSON_Payload?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="" internalId="_jMDhcKgQEfGq3IYnFJCINg"/>
     <contextParameter comment="" name="new_bearer_token" prompt="new_bearer_token?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="" internalId="_dOY-QKgSEfGq3IYnFJCINg"/>
     <contextParameter comment="" name="rejectCount" prompt="rejectCount?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_Integer" value="0" internalId="_tiOr4MK7EfGA9rGHMyEOkw"/>
+    <contextParameter comment="data warehouse" name="dw_port" prompt="dw_port?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="51980" internalId="_w9cucNM2EfGRPYW6g8hdOg"/>
+    <contextParameter comment="foodmach password" name="foodmach_pwd" prompt="foodmach_pwd?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_Password" value="enc:system.encryption.key.v1:ifoS1GAvymdSwQliVajhSvRPf+t1u1lcobUaIMW10PFMxs2o" internalId="_w9cucdM2EfGRPYW6g8hdOg"/>
+    <contextParameter comment="data warehouse database name" name="dw_db" prompt="dw_db?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="fmdw" internalId="_w9cuctM2EfGRPYW6g8hdOg"/>
+    <contextParameter comment="foodmach port" name="foodmach_port" prompt="foodmach_port?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="1433" internalId="_w9cuc9M2EfGRPYW6g8hdOg"/>
+    <contextParameter comment="foodmach database" name="foodmach_ip" prompt="foodmach_ip?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="192.168.2.4" internalId="_w9cudNM2EfGRPYW6g8hdOg"/>
+    <contextParameter comment="" name="PurchaseOrderID_List" prompt="PurchaseOrderID_List?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="" internalId="_w9cuddM2EfGRPYW6g8hdOg"/>
+    <contextParameter comment="" name="ReceiverLogID_List" prompt="ReceiverLogID_List?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="" internalId="_w9cudtM2EfGRPYW6g8hdOg"/>
+    <contextParameter comment="data warehouse ip address" name="dw_ip" prompt="dw_ip?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="192.168.2.46" internalId="_w9cud9M2EfGRPYW6g8hdOg"/>
+    <contextParameter comment="database name" name="foodmach_db" prompt="foodmach_db?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="Foodmach_training" internalId="_w9cueNM2EfGRPYW6g8hdOg"/>
+    <contextParameter comment="" name="PurchaseDetailID_List" prompt="PurchaseDetailID_List?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="" internalId="_w9cuedM2EfGRPYW6g8hdOg"/>
+    <contextParameter comment="data warehouse password" name="dw_pwd" prompt="dw_pwd?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_Password" value="enc:system.encryption.key.v1:R5lmLazVo8oil8B5ywg5MowyjcA7G3dX4nHjEKioTxTrqK/7ZYzTWJw=" internalId="_w9cuetM2EfGRPYW6g8hdOg"/>
   </context>
   <context confirmationNeeded="false" hide="false" name="Test">
     <contextParameter comment="" name="account_id" prompt="account_id?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="847280-sb1" internalId="_elVTMNMsEfGRPYW6g8hdOg"/>
@@ -19,6 +30,17 @@
     <contextParameter comment="" name="JSON_Payload" prompt="JSON_Payload?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="" internalId="_elVTNdMsEfGRPYW6g8hdOg"/>
     <contextParameter comment="" name="new_bearer_token" prompt="new_bearer_token?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="" internalId="_elVTNtMsEfGRPYW6g8hdOg"/>
     <contextParameter comment="" name="rejectCount" prompt="rejectCount?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_Integer" value="0" internalId="_elVTN9MsEfGRPYW6g8hdOg"/>
+    <contextParameter comment="data warehouse" name="dw_port" prompt="dw_port?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="52015" internalId="_w9cue9M2EfGRPYW6g8hdOg"/>
+    <contextParameter comment="foodmach password" name="foodmach_pwd" prompt="foodmach_pwd?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_Password" value="enc:system.encryption.key.v1:enHghhS0/xKed6lLvO7Orj7bf6oDM5W1Oh57STBEys83DOQk" internalId="_w9cufNM2EfGRPYW6g8hdOg"/>
+    <contextParameter comment="data warehouse database name" name="dw_db" prompt="dw_db?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="fmdw" internalId="_w9cufdM2EfGRPYW6g8hdOg"/>
+    <contextParameter comment="foodmach port" name="foodmach_port" prompt="foodmach_port?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="1433" internalId="_w9cuftM2EfGRPYW6g8hdOg"/>
+    <contextParameter comment="foodmach database" name="foodmach_ip" prompt="foodmach_ip?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="192.168.2.4" internalId="_w9cuf9M2EfGRPYW6g8hdOg"/>
+    <contextParameter comment="" name="PurchaseOrderID_List" prompt="PurchaseOrderID_List?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="" internalId="_w9cugNM2EfGRPYW6g8hdOg"/>
+    <contextParameter comment="" name="ReceiverLogID_List" prompt="ReceiverLogID_List?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="" internalId="_w9cugdM2EfGRPYW6g8hdOg"/>
+    <contextParameter comment="data warehouse ip address" name="dw_ip" prompt="dw_ip?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="192.168.2.46" internalId="_w9cugtM2EfGRPYW6g8hdOg"/>
+    <contextParameter comment="database name" name="foodmach_db" prompt="foodmach_db?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="Foodmach" internalId="_w9cug9M2EfGRPYW6g8hdOg"/>
+    <contextParameter comment="" name="PurchaseDetailID_List" prompt="PurchaseDetailID_List?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="" internalId="_w9cuhNM2EfGRPYW6g8hdOg"/>
+    <contextParameter comment="data warehouse password" name="dw_pwd" prompt="dw_pwd?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_Password" value="enc:system.encryption.key.v1:L5oOKIx79bzMhHLPuaf6H21FhOKWZOqYO8LVQqMORcpfp3s1CwFN1E8=" internalId="_w9cuhdM2EfGRPYW6g8hdOg"/>
   </context>
   <context confirmationNeeded="false" hide="false" name="Prod">
     <contextParameter comment="" name="account_id" prompt="account_id?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="847280-sb1" internalId="_elVTONMsEfGRPYW6g8hdOg"/>
@@ -29,6 +51,17 @@
     <contextParameter comment="" name="JSON_Payload" prompt="JSON_Payload?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="" internalId="_elVTPdMsEfGRPYW6g8hdOg"/>
     <contextParameter comment="" name="new_bearer_token" prompt="new_bearer_token?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="" internalId="_elVTPtMsEfGRPYW6g8hdOg"/>
     <contextParameter comment="" name="rejectCount" prompt="rejectCount?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_Integer" value="0" internalId="_elVTP9MsEfGRPYW6g8hdOg"/>
+    <contextParameter comment="data warehouse" name="dw_port" prompt="dw_port?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="1433" internalId="_w9cuhtM2EfGRPYW6g8hdOg"/>
+    <contextParameter comment="foodmach password" name="foodmach_pwd" prompt="foodmach_pwd?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_Password" value="enc:system.encryption.key.v1:VQ/aFTxRb3llgpbUHq79x+n/Ar5nLmS9LGpAAsbi2f9botpx" internalId="_w9cuh9M2EfGRPYW6g8hdOg"/>
+    <contextParameter comment="data warehouse database name" name="dw_db" prompt="dw_db?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="fmdw" internalId="_w9cuiNM2EfGRPYW6g8hdOg"/>
+    <contextParameter comment="foodmach port" name="foodmach_port" prompt="foodmach_port?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="1433" internalId="_w9cuidM2EfGRPYW6g8hdOg"/>
+    <contextParameter comment="foodmach database" name="foodmach_ip" prompt="foodmach_ip?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="192.168.2.4" internalId="_w9cuitM2EfGRPYW6g8hdOg"/>
+    <contextParameter comment="" name="PurchaseOrderID_List" prompt="PurchaseOrderID_List?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="" internalId="_w9cui9M2EfGRPYW6g8hdOg"/>
+    <contextParameter comment="" name="ReceiverLogID_List" prompt="ReceiverLogID_List?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="" internalId="_w9cujNM2EfGRPYW6g8hdOg"/>
+    <contextParameter comment="data warehouse ip address" name="dw_ip" prompt="dw_ip?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="192.168.2.47" internalId="_w9cujdM2EfGRPYW6g8hdOg"/>
+    <contextParameter comment="database name" name="foodmach_db" prompt="foodmach_db?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="Foodmach" internalId="_w9cujtM2EfGRPYW6g8hdOg"/>
+    <contextParameter comment="" name="PurchaseDetailID_List" prompt="PurchaseDetailID_List?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="" internalId="_w9cuj9M2EfGRPYW6g8hdOg"/>
+    <contextParameter comment="data warehouse password" name="dw_pwd" prompt="dw_pwd?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_Password" value="enc:system.encryption.key.v1:dIUiZDBXDmDig/UFlIGXbo84tb6q/ipTbWyJKQ3diJtRRZmHzwklHcM=" internalId="_w9cukNM2EfGRPYW6g8hdOg"/>
   </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
@@ -951,16 +984,14 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_2" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_7_NhMKA9EfGq3IYnFJCINg" show="false"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;192.168.2.46&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="context.dw_ip"/>
     <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;51980&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="context.dw_port"/>
     <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;integration&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;integration_database&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:3T6IY1To1UIIkrztSp4g+5mHCYY40NSox4hHV1D4G+AlVrh//ySC66yZ3A=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="context.dw_pwd"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;tblReceiverLog_integration&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
@@ -1555,13 +1586,13 @@
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
     <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;192.168.2.46&quot;"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;51980&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="context.dw_ip"/>
+    <elementParameter field="TEXT" name="PORT" value="context.dw_port"/>
     <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;integration&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;integration_database&quot;"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Qw/iHAeKbqsYlrPCdKDDvmVSM5LSRBueXc6JHtoDpo2MqSXtUSm7L32bbg=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="context.dw_pwd"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;tblReceiverLog_integration&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -1870,18 +1901,16 @@
   </node>
   <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1040" posY="840">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_2" show="false"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_7_NhMKA9EfGq3IYnFJCINg" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
     <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;192.168.2.46&quot;"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;51980&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="context.dw_ip"/>
+    <elementParameter field="TEXT" name="PORT" value="context.dw_port"/>
     <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;integration&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;integration_database&quot;"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:HbotuzfyDf2lkZy5DcDSd7sVtzHMhvnJbAJlMQxnePCNCAPgkVfa691R6w=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="context.dw_pwd"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;tblReceiverLog_integration&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
