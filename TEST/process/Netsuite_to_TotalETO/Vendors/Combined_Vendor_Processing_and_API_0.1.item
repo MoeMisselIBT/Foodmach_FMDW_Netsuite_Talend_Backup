@@ -5397,7 +5397,7 @@
       <elementValue elementRef="SCHEMA_COLUMN" value="CompanyID" id="0"/>
       <elementValue elementRef="UPDATE_KEY" value="false" id="1"/>
       <elementValue elementRef="DELETE_KEY" value="false" id="2"/>
-      <elementValue elementRef="UPDATABLE" value="false" id="3"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="3"/>
       <elementValue elementRef="INSERTABLE" value="false" id="4"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="IntegrationID" id="5"/>
       <elementValue elementRef="UPDATE_KEY" value="true" id="6"/>
