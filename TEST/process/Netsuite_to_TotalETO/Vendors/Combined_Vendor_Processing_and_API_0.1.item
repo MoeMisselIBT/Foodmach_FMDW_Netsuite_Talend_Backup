@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Foodmach_Dev" jobType="Standard">
   <context confirmationNeeded="false" hide="false" name="Default">
-    <contextParameter comment="" name="row_count" prompt="row_count?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0" internalId="_BXzGsIsaEfG9C7e242mTTA"/>
     <contextParameter comment="" name="integration_database_name" prompt="integration_database_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_BvT6EJoIEfGdaILNokaaHA"/>
     <contextParameter comment="" name="integration_database_server_ip" prompt="integration_database_server_ip?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_BvT6EZoIEfGdaILNokaaHA"/>
     <contextParameter comment="" name="integration_database_port" prompt="integration_database_port?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_BvT6EpoIEfGdaILNokaaHA"/>
@@ -18,10 +17,11 @@
     <contextParameter comment="" name="foodmach_schema_name" prompt="foodmach_schema_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_y2vCqJoPEfGdaILNokaaHA"/>
     <contextParameter comment="" name="error_message_log" prompt="error_message_log?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_5HQz8LFlEfGVnY5xgP4JHQ"/>
     <contextParameter comment="" name="integration_table_message" prompt="integration_table_message?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_3bmG4LFmEfGVnY5xgP4JHQ"/>
-    <contextParameter comment="" name="new1" prompt="new1?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_gQlxIMdlEfGA9rGHMyEOkw"/>
+    <contextParameter comment="" name="teams_path" prompt="teams_path?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="/invoke?api-version=1&amp;sp=%2Ftriggers%2Fmanual%2Frun&amp;sv=1.0&amp;sig=rHGifzi61aUZzyKSQxtkZdj4bf79WU98m4pkJKW_hx4" internalId="_4lCQMNZ-EfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="teams_base_url" prompt="teams_base_url?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="https://default37f3b1b2de5a4ccf94f5b8c2c7a688.00.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/01/workflows/58eacb3c9e234189b8c22bce15da5a6e/triggers/manual/paths" internalId="_4lCQMdZ-EfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="row_count" prompt="row_count?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Integer" value="0" internalId="_D4L_cNZ_EfGsM6Y8Dt6xKA"/>
   </context>
   <context confirmationNeeded="false" hide="false" name="Foodmach_Dev">
-    <contextParameter comment="" name="row_count" prompt="row_count?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0" internalId="_BXzGsIsaEfG9C7e242mTTA"/>
     <contextParameter comment="" name="integration_database_name" prompt="integration_database_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="integration_database" internalId="_BvT6EJoIEfGdaILNokaaHA"/>
     <contextParameter comment="" name="integration_database_server_ip" prompt="integration_database_server_ip?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="192.168.2.46" internalId="_BvT6EZoIEfGdaILNokaaHA"/>
     <contextParameter comment="" name="integration_database_port" prompt="integration_database_port?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="51980" internalId="_BvT6EpoIEfGdaILNokaaHA"/>
@@ -38,10 +38,11 @@
     <contextParameter comment="" name="foodmach_schema_name" prompt="foodmach_schema_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="dbo" internalId="_y2vCsZoPEfGdaILNokaaHA"/>
     <contextParameter comment="" name="error_message_log" prompt="error_message_log?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_5HQz8bFlEfGVnY5xgP4JHQ"/>
     <contextParameter comment="" name="integration_table_message" prompt="integration_table_message?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_3bmG4bFmEfGVnY5xgP4JHQ"/>
-    <contextParameter comment="" name="new1" prompt="new1?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_gQm_QMdlEfGA9rGHMyEOkw"/>
+    <contextParameter comment="" name="teams_path" prompt="teams_path?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="/invoke?api-version=1&amp;sp=%2Ftriggers%2Fmanual%2Frun&amp;sv=1.0&amp;sig=rHGifzi61aUZzyKSQxtkZdj4bf79WU98m4pkJKW_hx4" internalId="_4lCQMtZ-EfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="teams_base_url" prompt="teams_base_url?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="https://default37f3b1b2de5a4ccf94f5b8c2c7a688.00.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/01/workflows/58eacb3c9e234189b8c22bce15da5a6e/triggers/manual/paths" internalId="_4lCQM9Z-EfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="row_count" prompt="row_count?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Integer" value="0" internalId="_D4L_cdZ_EfGsM6Y8Dt6xKA"/>
   </context>
   <context confirmationNeeded="false" hide="false" name="Foodmach_Dev_2">
-    <contextParameter comment="" name="row_count" prompt="row_count?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0" internalId="_BXzGsIsaEfG9C7e242mTTA"/>
     <contextParameter comment="" name="integration_database_name" prompt="integration_database_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="integration_database" internalId="_BvT6EJoIEfGdaILNokaaHA"/>
     <contextParameter comment="" name="integration_database_server_ip" prompt="integration_database_server_ip?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="192.168.2.46" internalId="_BvT6EZoIEfGdaILNokaaHA"/>
     <contextParameter comment="" name="integration_database_port" prompt="integration_database_port?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="51980" internalId="_BvT6EpoIEfGdaILNokaaHA"/>
@@ -58,10 +59,11 @@
     <contextParameter comment="" name="foodmach_schema_name" prompt="foodmach_schema_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="dbo" internalId="_y2vCqJoPEfGdaILNokaaHA"/>
     <contextParameter comment="" name="error_message_log" prompt="error_message_log?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_5HQz8rFlEfGVnY5xgP4JHQ"/>
     <contextParameter comment="" name="integration_table_message" prompt="integration_table_message?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_3bmG4rFmEfGVnY5xgP4JHQ"/>
-    <contextParameter comment="" name="new1" prompt="new1?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_gQnmUMdlEfGA9rGHMyEOkw"/>
+    <contextParameter comment="" name="teams_path" prompt="teams_path?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="/invoke?api-version=1&amp;sp=%2Ftriggers%2Fmanual%2Frun&amp;sv=1.0&amp;sig=rHGifzi61aUZzyKSQxtkZdj4bf79WU98m4pkJKW_hx4" internalId="_4lCQNNZ-EfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="teams_base_url" prompt="teams_base_url?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="https://default37f3b1b2de5a4ccf94f5b8c2c7a688.00.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/01/workflows/58eacb3c9e234189b8c22bce15da5a6e/triggers/manual/paths" internalId="_4lCQNdZ-EfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="row_count" prompt="row_count?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Integer" value="0" internalId="_D4MmgNZ_EfGsM6Y8Dt6xKA"/>
   </context>
   <context confirmationNeeded="false" hide="false" name="IBT_Dev">
-    <contextParameter comment="" name="row_count" prompt="row_count?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0" internalId="_BXzGsIsaEfG9C7e242mTTA"/>
     <contextParameter comment="" name="integration_database_name" prompt="integration_database_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="client_projects" internalId="_BvT6EJoIEfGdaILNokaaHA"/>
     <contextParameter comment="" name="integration_database_server_ip" prompt="integration_database_server_ip?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="192.168.2.65" internalId="_BvT6EZoIEfGdaILNokaaHA"/>
     <contextParameter comment="" name="integration_database_port" prompt="integration_database_port?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="1433" internalId="_BvT6EpoIEfGdaILNokaaHA"/>
@@ -78,10 +80,11 @@
     <contextParameter comment="" name="foodmach_schema_name" prompt="foodmach_schema_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="foodmach_source_dummy" internalId="_y2vCupoPEfGdaILNokaaHA"/>
     <contextParameter comment="" name="error_message_log" prompt="error_message_log?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_5HQz87FlEfGVnY5xgP4JHQ"/>
     <contextParameter comment="" name="integration_table_message" prompt="integration_table_message?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_3bmG47FmEfGVnY5xgP4JHQ"/>
-    <contextParameter comment="" name="new1" prompt="new1?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_gQnmUcdlEfGA9rGHMyEOkw"/>
+    <contextParameter comment="" name="teams_path" prompt="teams_path?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="/invoke?api-version=1&amp;sp=%2Ftriggers%2Fmanual%2Frun&amp;sv=1.0&amp;sig=rHGifzi61aUZzyKSQxtkZdj4bf79WU98m4pkJKW_hx4" internalId="_4lCQNtZ-EfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="teams_base_url" prompt="teams_base_url?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="https://default37f3b1b2de5a4ccf94f5b8c2c7a688.00.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/01/workflows/58eacb3c9e234189b8c22bce15da5a6e/triggers/manual/paths" internalId="_4lCQN9Z-EfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="row_count" prompt="row_count?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Integer" value="0" internalId="_D4MmgdZ_EfGsM6Y8Dt6xKA"/>
   </context>
   <context confirmationNeeded="false" hide="false" name="Prod">
-    <contextParameter comment="" name="row_count" prompt="row_count?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0" internalId="_BXzGsIsaEfG9C7e242mTTA"/>
     <contextParameter comment="" name="integration_database_name" prompt="integration_database_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="integration_database" internalId="_BvT6EJoIEfGdaILNokaaHA"/>
     <contextParameter comment="" name="integration_database_server_ip" prompt="integration_database_server_ip?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="192.168.2.47" internalId="_BvT6EZoIEfGdaILNokaaHA"/>
     <contextParameter comment="" name="integration_database_port" prompt="integration_database_port?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="1433" internalId="_BvT6EpoIEfGdaILNokaaHA"/>
@@ -98,11 +101,11 @@
     <contextParameter comment="" name="foodmach_schema_name" prompt="foodmach_schema_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="dbo" internalId="_y2vCsZoPEfGdaILNokaaHA"/>
     <contextParameter comment="" name="error_message_log" prompt="error_message_log?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_5HQz8bFlEfGVnY5xgP4JHQ"/>
     <contextParameter comment="" name="integration_table_message" prompt="integration_table_message?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_3bmG4bFmEfGVnY5xgP4JHQ"/>
-    <contextParameter comment="" name="new1" prompt="new1?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_gQm_QMdlEfGA9rGHMyEOkw"/>
+    <contextParameter comment="" name="teams_path" prompt="teams_path?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="/invoke?api-version=1&amp;sp=%2Ftriggers%2Fmanual%2Frun&amp;sv=1.0&amp;sig=rHGifzi61aUZzyKSQxtkZdj4bf79WU98m4pkJKW_hx4" internalId="_4lCQONZ-EfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="teams_base_url" prompt="teams_base_url?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="https://default37f3b1b2de5a4ccf94f5b8c2c7a688.00.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/01/workflows/58eacb3c9e234189b8c22bce15da5a6e/triggers/manual/paths" internalId="_4lCQOdZ-EfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="row_count" prompt="row_count?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Integer" value="0" internalId="_D4MmgtZ_EfGsM6Y8Dt6xKA"/>
   </context>
   <context confirmationNeeded="false" hide="false" name="Test">
-    <contextParameter comment="" name="row_count" prompt="row_count?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0" internalId="_BXzGsIsaEfG9C7e242mTTA"/>
-    <contextParameter comment="" name="new1" prompt="new1?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_gQm_QMdlEfGA9rGHMyEOkw"/>
     <contextParameter comment="" name="integration_database_server_ip" prompt="integration_database_server_ip?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="192.168.2.46" internalId="_u_O68NZ7EfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="integration_database_name" prompt="integration_database_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="integration_database" internalId="_u_O68dZ7EfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="integration_database_schema_name" prompt="integration_database_schema_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="integration" internalId="_u_O68tZ7EfGsM6Y8Dt6xKA"/>
@@ -119,6 +122,9 @@
     <contextParameter comment="" name="foodmach_schema_name" prompt="foodmach_schema_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="dbo" internalId="_u_O6_dZ7EfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="error_message_log" prompt="error_message_log?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_u_O6_tZ7EfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="integration_table_message" prompt="integration_table_message?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_u_O6_9Z7EfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="teams_path" prompt="teams_path?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="/invoke?api-version=1&amp;sp=%2Ftriggers%2Fmanual%2Frun&amp;sv=1.0&amp;sig=rHGifzi61aUZzyKSQxtkZdj4bf79WU98m4pkJKW_hx4" internalId="_4lCQOtZ-EfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="teams_base_url" prompt="teams_base_url?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="https://default37f3b1b2de5a4ccf94f5b8c2c7a688.00.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/01/workflows/58eacb3c9e234189b8c22bce15da5a6e/triggers/manual/paths" internalId="_4lCQO9Z-EfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="row_count" prompt="row_count?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Integer" value="0" internalId="_D4Mmg9Z_EfGsM6Y8Dt6xKA"/>
   </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
@@ -4514,7 +4520,7 @@
   </node>
   <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="440" posY="-80">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_1" show="false"/>
-    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="// code sample:&#xA;//&#xA;// multiply by 2 the row identifier&#xA;// output_row.id = input_row.id * 2;&#xA;//&#xA;// lowercase the name&#xA;// output_row.name = input_row.name.toLowerCase();&#xA;&#xD;&#xA;&#xA;context.row_count = input_row.row_count;&#xD;&#xA;System.out.println(&quot;Context row count is: &quot; + context.row_count);"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="// code sample:&#xA;//&#xA;// multiply by 2 the row identifier&#xA;// output_row.id = input_row.id * 2;&#xA;//&#xA;// lowercase the name&#xA;// output_row.name = input_row.name.toLowerCase();&#xA;&#xD;&#xA;&#xA;context.row_count_OLD = input_row.row_count;&#xD;&#xA;System.out.println(&quot;Context row count is: &quot; + context.row_count_OLD);"/>
     <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="LABEL" value="set row count variable"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
