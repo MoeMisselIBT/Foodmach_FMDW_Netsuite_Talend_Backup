@@ -4,7 +4,7 @@
     <contextParameter xmi:id="_U-RcENDsEfGeZdyo0ckLtQ" comment="" name="PurchaseDetailID_List" prompt="PurchaseDetailID_List?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
     <contextParameter xmi:id="_W7unQNDsEfGeZdyo0ckLtQ" comment="" name="ReceiverLogID_List" prompt="ReceiverLogID_List?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
     <contextParameter xmi:id="_W7unQdDsEfGeZdyo0ckLtQ" comment="" name="PurchaseOrderID_List" prompt="PurchaseOrderID_List?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
-    <contextParameter xmi:id="_YWvMsNDsEfGeZdyo0ckLtQ" comment="" name="account_id" prompt="account_id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="847280-sb1"/>
+    <contextParameter xmi:id="_YWvMsNDsEfGeZdyo0ckLtQ" comment="for netsuite API" name="account_id" prompt="account_id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="847280-sb1"/>
     <contextParameter xmi:id="_YWvMsdDsEfGeZdyo0ckLtQ" comment="" name="client_id" prompt="client_id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="e74f0683fa5379e2b725547a322cb11514b0915b7a7efec374a72c4ae3a04531"/>
     <contextParameter xmi:id="_YWvMstDsEfGeZdyo0ckLtQ" comment="" name="certificate_id" prompt="certificate_id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="S_eR_japu9FLYSq2Kzq9pw9OPBfiKkMR2trklvfe4Es"/>
     <contextParameter xmi:id="_YWvMs9DsEfGeZdyo0ckLtQ" comment="" name="scope" prompt="scope?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="restlets rest_webservices"/>
@@ -28,7 +28,7 @@
     <contextParameter xmi:id="_erIZMdMsEfGRPYW6g8hdOg" comment="" name="PurchaseDetailID_List" prompt="PurchaseDetailID_List?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
     <contextParameter xmi:id="_erIZMtMsEfGRPYW6g8hdOg" comment="" name="ReceiverLogID_List" prompt="ReceiverLogID_List?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
     <contextParameter xmi:id="_erIZM9MsEfGRPYW6g8hdOg" comment="" name="PurchaseOrderID_List" prompt="PurchaseOrderID_List?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
-    <contextParameter xmi:id="_erIZNNMsEfGRPYW6g8hdOg" comment="" name="account_id" prompt="account_id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="847280-sb1"/>
+    <contextParameter xmi:id="_erIZNNMsEfGRPYW6g8hdOg" comment="for netsuite API" name="account_id" prompt="account_id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="847280-sb1"/>
     <contextParameter xmi:id="_erIZNdMsEfGRPYW6g8hdOg" comment="" name="client_id" prompt="client_id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="e74f0683fa5379e2b725547a322cb11514b0915b7a7efec374a72c4ae3a04531"/>
     <contextParameter xmi:id="_erIZNtMsEfGRPYW6g8hdOg" comment="" name="certificate_id" prompt="certificate_id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="S_eR_japu9FLYSq2Kzq9pw9OPBfiKkMR2trklvfe4Es"/>
     <contextParameter xmi:id="_erIZN9MsEfGRPYW6g8hdOg" comment="" name="scope" prompt="scope?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="restlets rest_webservices"/>
@@ -52,7 +52,7 @@
     <contextParameter xmi:id="_erIZQdMsEfGRPYW6g8hdOg" comment="" name="PurchaseDetailID_List" prompt="PurchaseDetailID_List?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
     <contextParameter xmi:id="_erIZQtMsEfGRPYW6g8hdOg" comment="" name="ReceiverLogID_List" prompt="ReceiverLogID_List?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
     <contextParameter xmi:id="_erIZQ9MsEfGRPYW6g8hdOg" comment="" name="PurchaseOrderID_List" prompt="PurchaseOrderID_List?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
-    <contextParameter xmi:id="_erIZRNMsEfGRPYW6g8hdOg" comment="" name="account_id" prompt="account_id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="847280-sb1"/>
+    <contextParameter xmi:id="_erIZRNMsEfGRPYW6g8hdOg" comment="for netsuite API" name="account_id" prompt="account_id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="847280-sb1"/>
     <contextParameter xmi:id="_erIZRdMsEfGRPYW6g8hdOg" comment="" name="client_id" prompt="client_id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="e74f0683fa5379e2b725547a322cb11514b0915b7a7efec374a72c4ae3a04531"/>
     <contextParameter xmi:id="_erIZRtMsEfGRPYW6g8hdOg" comment="" name="certificate_id" prompt="certificate_id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="S_eR_japu9FLYSq2Kzq9pw9OPBfiKkMR2trklvfe4Es"/>
     <contextParameter xmi:id="_erIZR9MsEfGRPYW6g8hdOg" comment="" name="scope" prompt="scope?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="restlets rest_webservices"/>

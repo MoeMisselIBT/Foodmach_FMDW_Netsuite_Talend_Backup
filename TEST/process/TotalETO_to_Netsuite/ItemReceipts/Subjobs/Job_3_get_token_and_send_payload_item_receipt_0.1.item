@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
   <context confirmationNeeded="false" hide="false" name="Default">
-    <contextParameter comment="" name="account_id" prompt="account_id?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="847280-sb1" internalId="_O1QzQKdnEfGT9oUEhMZZCw"/>
+    <contextParameter comment="for netsuite API" name="account_id" prompt="account_id?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="847280-sb1" internalId="_O1QzQKdnEfGT9oUEhMZZCw"/>
     <contextParameter comment="" name="client_id" prompt="client_id?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="e74f0683fa5379e2b725547a322cb11514b0915b7a7efec374a72c4ae3a04531" internalId="_O1QzQadnEfGT9oUEhMZZCw"/>
     <contextParameter comment="" name="certificate_id" prompt="certificate_id?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="S_eR_japu9FLYSq2Kzq9pw9OPBfiKkMR2trklvfe4Es" internalId="_O1QzQqdnEfGT9oUEhMZZCw"/>
     <contextParameter comment="" name="scope" prompt="scope?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="restlets rest_webservices" internalId="_O1QzQ6dnEfGT9oUEhMZZCw"/>
@@ -25,7 +25,7 @@
     <contextParameter comment="Power Automate Workflows webhook part 1. This has been chopped into 2 parts" name="teams_base_url" prompt="teams_base_url?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="https://default37f3b1b2de5a4ccf94f5b8c2c7a688.00.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/01/workflows/58eacb3c9e234189b8c22bce15da5a6e/triggers/manual/paths" internalId="_v_kpwdNeEfGRPYW6g8hdOg"/>
   </context>
   <context confirmationNeeded="false" hide="false" name="Test">
-    <contextParameter comment="" name="account_id" prompt="account_id?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="847280-sb1" internalId="_elVTMNMsEfGRPYW6g8hdOg"/>
+    <contextParameter comment="for netsuite API" name="account_id" prompt="account_id?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="847280-sb1" internalId="_elVTMNMsEfGRPYW6g8hdOg"/>
     <contextParameter comment="" name="client_id" prompt="client_id?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="e74f0683fa5379e2b725547a322cb11514b0915b7a7efec374a72c4ae3a04531" internalId="_elVTMdMsEfGRPYW6g8hdOg"/>
     <contextParameter comment="" name="certificate_id" prompt="certificate_id?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="S_eR_japu9FLYSq2Kzq9pw9OPBfiKkMR2trklvfe4Es" internalId="_elVTMtMsEfGRPYW6g8hdOg"/>
     <contextParameter comment="" name="scope" prompt="scope?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="restlets rest_webservices" internalId="_elVTM9MsEfGRPYW6g8hdOg"/>
@@ -49,7 +49,7 @@
     <contextParameter comment="Power Automate Workflows webhook part 1. This has been chopped into 2 parts" name="teams_base_url" prompt="teams_base_url?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="https://default37f3b1b2de5a4ccf94f5b8c2c7a688.00.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/01/workflows/58eacb3c9e234189b8c22bce15da5a6e/triggers/manual/paths" internalId="_v_kpw9NeEfGRPYW6g8hdOg"/>
   </context>
   <context confirmationNeeded="false" hide="false" name="Prod">
-    <contextParameter comment="" name="account_id" prompt="account_id?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="847280-sb1" internalId="_elVTONMsEfGRPYW6g8hdOg"/>
+    <contextParameter comment="for netsuite API" name="account_id" prompt="account_id?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="847280-sb1" internalId="_elVTONMsEfGRPYW6g8hdOg"/>
     <contextParameter comment="" name="client_id" prompt="client_id?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="e74f0683fa5379e2b725547a322cb11514b0915b7a7efec374a72c4ae3a04531" internalId="_elVTOdMsEfGRPYW6g8hdOg"/>
     <contextParameter comment="" name="certificate_id" prompt="certificate_id?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="S_eR_japu9FLYSq2Kzq9pw9OPBfiKkMR2trklvfe4Es" internalId="_elVTOtMsEfGRPYW6g8hdOg"/>
     <contextParameter comment="" name="scope" prompt="scope?" promptNeeded="false" repositoryContextId="_U8EcoNDsEfGeZdyo0ckLtQ" type="id_String" value="restlets rest_webservices" internalId="_elVTO9MsEfGRPYW6g8hdOg"/>
