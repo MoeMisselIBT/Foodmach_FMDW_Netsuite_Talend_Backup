@@ -20,7 +20,7 @@
     <contextParameter comment="" name="teams_path" prompt="teams_path?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="/invoke?api-version=1&amp;sp=%2Ftriggers%2Fmanual%2Frun&amp;sv=1.0&amp;sig=rHGifzi61aUZzyKSQxtkZdj4bf79WU98m4pkJKW_hx4" internalId="_4lCQMNZ-EfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="teams_base_url" prompt="teams_base_url?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="https://default37f3b1b2de5a4ccf94f5b8c2c7a688.00.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/01/workflows/58eacb3c9e234189b8c22bce15da5a6e/triggers/manual/paths" internalId="_4lCQMdZ-EfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="row_count" prompt="row_count?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Integer" value="0" internalId="_D4L_cNZ_EfGsM6Y8Dt6xKA"/>
-    <contextParameter comment="for nestuite api. this is the part that comes after the account id" name="api_url" prompt="api_url?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value=".suitetalk.api.netsuite.com/services/rest/auth/oauth2/v1/token" internalId="_AEKsQNckEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="for nestuite api. this is the part that comes after the account id" name="netsuite_token_api_url" prompt="netsuite_token_api_url?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value=".suitetalk.api.netsuite.com/services/rest/auth/oauth2/v1/token" internalId="_AEKsQNckEfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="client_id" prompt="client_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="e74f0683fa5379e2b725547a322cb11514b0915b7a7efec374a72c4ae3a04531" internalId="_AEKsQdckEfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="private_key_path" prompt="private_key_path?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="C:\Users\mmisselmany\Downloads\PO_Auth_flow\PO_Auth_flow\private.pem" internalId="_AEKsQtckEfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="certificate_id" prompt="certificate_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="S_eR_japu9FLYSq2Kzq9pw9OPBfiKkMR2trklvfe4Es" internalId="_AEKsQ9ckEfGsM6Y8Dt6xKA"/>
@@ -48,7 +48,7 @@
     <contextParameter comment="" name="teams_path" prompt="teams_path?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="/invoke?api-version=1&amp;sp=%2Ftriggers%2Fmanual%2Frun&amp;sv=1.0&amp;sig=rHGifzi61aUZzyKSQxtkZdj4bf79WU98m4pkJKW_hx4" internalId="_4lCQMtZ-EfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="teams_base_url" prompt="teams_base_url?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="https://default37f3b1b2de5a4ccf94f5b8c2c7a688.00.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/01/workflows/58eacb3c9e234189b8c22bce15da5a6e/triggers/manual/paths" internalId="_4lCQM9Z-EfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="row_count" prompt="row_count?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Integer" value="0" internalId="_D4L_cdZ_EfGsM6Y8Dt6xKA"/>
-    <contextParameter comment="for nestuite api. this is the part that comes after the account id" name="api_url" prompt="api_url?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value=".suitetalk.api.netsuite.com/services/rest/auth/oauth2/v1/token" internalId="_AEKsR9ckEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="for nestuite api. this is the part that comes after the account id" name="netsuite_token_api_url" prompt="netsuite_token_api_url?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value=".suitetalk.api.netsuite.com/services/rest/auth/oauth2/v1/token" internalId="_AEKsR9ckEfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="client_id" prompt="client_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="e74f0683fa5379e2b725547a322cb11514b0915b7a7efec374a72c4ae3a04531" internalId="_AEKsSNckEfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="private_key_path" prompt="private_key_path?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="C:\Users\mmisselmany\Downloads\PO_Auth_flow\PO_Auth_flow\private.pem" internalId="_AEKsSdckEfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="certificate_id" prompt="certificate_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="S_eR_japu9FLYSq2Kzq9pw9OPBfiKkMR2trklvfe4Es" internalId="_AEKsStckEfGsM6Y8Dt6xKA"/>
@@ -76,7 +76,7 @@
     <contextParameter comment="" name="teams_path" prompt="teams_path?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="/invoke?api-version=1&amp;sp=%2Ftriggers%2Fmanual%2Frun&amp;sv=1.0&amp;sig=rHGifzi61aUZzyKSQxtkZdj4bf79WU98m4pkJKW_hx4" internalId="_4lCQNNZ-EfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="teams_base_url" prompt="teams_base_url?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="https://default37f3b1b2de5a4ccf94f5b8c2c7a688.00.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/01/workflows/58eacb3c9e234189b8c22bce15da5a6e/triggers/manual/paths" internalId="_4lCQNdZ-EfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="row_count" prompt="row_count?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Integer" value="0" internalId="_D4MmgNZ_EfGsM6Y8Dt6xKA"/>
-    <contextParameter comment="for nestuite api. this is the part that comes after the account id" name="api_url" prompt="api_url?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value=".suitetalk.api.netsuite.com/services/rest/auth/oauth2/v1/token" internalId="_AEKsTtckEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="for nestuite api. this is the part that comes after the account id" name="netsuite_token_api_url" prompt="netsuite_token_api_url?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value=".suitetalk.api.netsuite.com/services/rest/auth/oauth2/v1/token" internalId="_AEKsTtckEfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="client_id" prompt="client_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="e74f0683fa5379e2b725547a322cb11514b0915b7a7efec374a72c4ae3a04531" internalId="_AEKsT9ckEfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="private_key_path" prompt="private_key_path?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="C:\Users\mmisselmany\Downloads\PO_Auth_flow\PO_Auth_flow\private.pem" internalId="_AEKsUNckEfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="certificate_id" prompt="certificate_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="S_eR_japu9FLYSq2Kzq9pw9OPBfiKkMR2trklvfe4Es" internalId="_AEKsUdckEfGsM6Y8Dt6xKA"/>
@@ -104,7 +104,7 @@
     <contextParameter comment="" name="teams_path" prompt="teams_path?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="/invoke?api-version=1&amp;sp=%2Ftriggers%2Fmanual%2Frun&amp;sv=1.0&amp;sig=rHGifzi61aUZzyKSQxtkZdj4bf79WU98m4pkJKW_hx4" internalId="_4lCQNtZ-EfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="teams_base_url" prompt="teams_base_url?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="https://default37f3b1b2de5a4ccf94f5b8c2c7a688.00.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/01/workflows/58eacb3c9e234189b8c22bce15da5a6e/triggers/manual/paths" internalId="_4lCQN9Z-EfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="row_count" prompt="row_count?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Integer" value="0" internalId="_D4MmgdZ_EfGsM6Y8Dt6xKA"/>
-    <contextParameter comment="for nestuite api. this is the part that comes after the account id" name="api_url" prompt="api_url?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value=".suitetalk.api.netsuite.com/services/rest/auth/oauth2/v1/token" internalId="_AEKsVdckEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="for nestuite api. this is the part that comes after the account id" name="netsuite_token_api_url" prompt="netsuite_token_api_url?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value=".suitetalk.api.netsuite.com/services/rest/auth/oauth2/v1/token" internalId="_AEKsVdckEfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="client_id" prompt="client_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="e74f0683fa5379e2b725547a322cb11514b0915b7a7efec374a72c4ae3a04531" internalId="_AEKsVtckEfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="private_key_path" prompt="private_key_path?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="C:\Users\mmisselmany\Downloads\PO_Auth_flow\PO_Auth_flow\private.pem" internalId="_AEKsV9ckEfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="certificate_id" prompt="certificate_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="S_eR_japu9FLYSq2Kzq9pw9OPBfiKkMR2trklvfe4Es" internalId="_AEKsWNckEfGsM6Y8Dt6xKA"/>
@@ -132,7 +132,7 @@
     <contextParameter comment="" name="teams_path" prompt="teams_path?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="/invoke?api-version=1&amp;sp=%2Ftriggers%2Fmanual%2Frun&amp;sv=1.0&amp;sig=rHGifzi61aUZzyKSQxtkZdj4bf79WU98m4pkJKW_hx4" internalId="_4lCQONZ-EfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="teams_base_url" prompt="teams_base_url?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="https://default37f3b1b2de5a4ccf94f5b8c2c7a688.00.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/01/workflows/58eacb3c9e234189b8c22bce15da5a6e/triggers/manual/paths" internalId="_4lCQOdZ-EfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="row_count" prompt="row_count?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Integer" value="0" internalId="_D4MmgtZ_EfGsM6Y8Dt6xKA"/>
-    <contextParameter comment="for nestuite api. this is the part that comes after the account id" name="api_url" prompt="api_url?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value=".suitetalk.api.netsuite.com/services/rest/auth/oauth2/v1/token" internalId="_AEKsXNckEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="for nestuite api. this is the part that comes after the account id" name="netsuite_token_api_url" prompt="netsuite_token_api_url?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value=".suitetalk.api.netsuite.com/services/rest/auth/oauth2/v1/token" internalId="_AEKsXNckEfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="client_id" prompt="client_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="e74f0683fa5379e2b725547a322cb11514b0915b7a7efec374a72c4ae3a04531" internalId="_AEKsXdckEfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="private_key_path" prompt="private_key_path?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="C:\Users\mmisselmany\Downloads\PO_Auth_flow\PO_Auth_flow\private.pem" internalId="_AEKsXtckEfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="certificate_id" prompt="certificate_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="S_eR_japu9FLYSq2Kzq9pw9OPBfiKkMR2trklvfe4Es" internalId="_AEKsX9ckEfGsM6Y8Dt6xKA"/>
@@ -160,7 +160,7 @@
     <contextParameter comment="" name="teams_path" prompt="teams_path?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="/invoke?api-version=1&amp;sp=%2Ftriggers%2Fmanual%2Frun&amp;sv=1.0&amp;sig=rHGifzi61aUZzyKSQxtkZdj4bf79WU98m4pkJKW_hx4" internalId="_4lCQOtZ-EfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="teams_base_url" prompt="teams_base_url?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="https://default37f3b1b2de5a4ccf94f5b8c2c7a688.00.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/01/workflows/58eacb3c9e234189b8c22bce15da5a6e/triggers/manual/paths" internalId="_4lCQO9Z-EfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="row_count" prompt="row_count?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Integer" value="0" internalId="_D4Mmg9Z_EfGsM6Y8Dt6xKA"/>
-    <contextParameter comment="for nestuite api. this is the part that comes after the account id" name="api_url" prompt="api_url?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value=".suitetalk.api.netsuite.com/services/rest/auth/oauth2/v1/token" internalId="_AEKsY9ckEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="for nestuite api. this is the part that comes after the account id" name="netsuite_token_api_url" prompt="netsuite_token_api_url?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value=".suitetalk.api.netsuite.com/services/rest/auth/oauth2/v1/token" internalId="_AEKsY9ckEfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="client_id" prompt="client_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="e74f0683fa5379e2b725547a322cb11514b0915b7a7efec374a72c4ae3a04531" internalId="_AEKsZNckEfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="private_key_path" prompt="private_key_path?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="C:\Users\mmisselmany\Downloads\PO_Auth_flow\PO_Auth_flow\private.pem" internalId="_AEKsZdckEfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="certificate_id" prompt="certificate_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="S_eR_japu9FLYSq2Kzq9pw9OPBfiKkMR2trklvfe4Es" internalId="_AEKsZtckEfGsM6Y8Dt6xKA"/>
@@ -8722,7 +8722,7 @@
       <column comment="" key="false" length="-1" name="headers" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1760" posY="1200">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1760" posY="1480">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_13" show="false"/>
     <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="context.error_message_log = &quot;Failed to insert into integration table&quot;;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;"/>
     <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
@@ -8734,7 +8734,7 @@
       <column comment="" key="false" length="-1" name="headers" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="HTTPClient" componentVersion="5" offsetLabelX="6" offsetLabelY="14" posX="2000" posY="1200">
+  <node componentName="HTTPClient" componentVersion="5" offsetLabelX="6" offsetLabelY="14" posX="2000" posY="1480">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHTTPClient_8" show="false"/>
     <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="aHR0cC1zdHVkaW8jSFRUUCNDbGllbnQ" show="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
@@ -8817,7 +8817,7 @@
       <column comment="" key="false" length="-1" name="headers" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="2240" posY="1200">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="2240" posY="1480">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_20" show="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
@@ -8848,7 +8848,7 @@
       <column comment="" key="false" length="-1" name="headers" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tHashInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1760" posY="1000">
+  <node componentName="tHashInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1760" posY="1280">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashInput_4" show="false"/>
     <elementParameter field="CHECK" name="LINK_WITH" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="LIST" value="tHashOutput_2"/>
@@ -8865,7 +8865,7 @@
       <column comment="" key="false" length="-1" name="CompanyCustom3" nullable="true" pattern="" precision="-1" sourceType="" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="2000" posY="1000">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="2000" posY="1280">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_7" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -8902,7 +8902,7 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="2240" posY="1000">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="2240" posY="1280">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_19" show="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
@@ -8930,23 +8930,76 @@
       <column comment="" key="false" length="-1" name="CompanyCustom3" nullable="true" pattern="" precision="-1" sourceType="DECIMAL" type="id_Integer" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLibraryLoad" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="2520" posY="880">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="2440" posY="1280">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_8" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_qtl1ILFkEfGVnY5xgP4JHQ-tMap_8-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="Netsuite_Payloads_list">
+      <column comment="" key="false" length="-1" name="Netsuite_Payload" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="Netsuite_Payloads_list">
+        <mapperTableEntries name="Netsuite_Payload" expression="&quot;{\&quot;nsVendorID\&quot;: &quot; + row30.nsVendorID + &quot;, \&quot;etoCompanyID\&quot;: \&quot;&quot; + row30.etoCompanyID + &quot;\&quot;}&quot; " type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row30" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="CompanyID" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="CompanyCustom3" type="id_Integer" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="2440" posY="1480">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_23" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="JSON_Payload" id="0"/>
+      <elementValue elementRef="LENGTH" value="10" id="1"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_23">
+      <column comment="" key="false" length="-1" name="JSON_Payload" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLibraryLoad" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1760" posY="960">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLibraryLoad_1" show="false"/>
     <elementParameter field="MODULE_LIST" name="LIBRARY" value="&quot;mvn:com.nimbusds/nimbus-jose-jwt/10.0.2/jar&quot;"/>
     <elementParameter field="TABLE" name="HOTLIBS"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="2520" posY="1040">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1760" posY="1120">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_14" show="false"/>
-    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="String pem = new String(Files.readAllBytes(Path.of(context.private_key_path)));&#xD;&#xA;String base64Key = pem&#xD;&#xA;        .replace(&quot;-----BEGIN PRIVATE KEY-----&quot;, &quot;&quot;)&#xD;&#xA;        .replace(&quot;-----END PRIVATE KEY-----&quot;, &quot;&quot;)&#xD;&#xA;        .replaceAll(&quot;\\s&quot;, &quot;&quot;);&#xD;&#xA;&#xD;&#xA;byte[] keyBytes = Base64.getDecoder().decode(base64Key);&#xD;&#xA;PKCS8EncodedKeySpec spec = new PKCS8EncodedKeySpec(keyBytes);&#xD;&#xA;RSAPrivateKey privateKey = (RSAPrivateKey) KeyFactory.getInstance(&quot;RSA&quot;).generatePrivate(spec);&#xD;&#xA;&#xD;&#xA;String tokenUrl = &quot;https://&quot; + context.account_id + context.api_url;&#xD;&#xA;long now = System.currentTimeMillis() / 1000;&#xD;&#xA;&#xD;&#xA;JWSHeader header = new JWSHeader.Builder(JWSAlgorithm.PS256)&#xD;&#xA;        .keyID(context.certificate_id)&#xD;&#xA;        .type(JOSEObjectType.JWT)&#xD;&#xA;        .build();&#xD;&#xA;&#xD;&#xA;JWTClaimsSet claims = new JWTClaimsSet.Builder()&#xD;&#xA;        .issuer(context.client_id)&#xD;&#xA;        .claim(&quot;scope&quot;, context.scope)&#xD;&#xA;        .audience(tokenUrl)&#xD;&#xA;        .issueTime(new Date(now * 1000))&#xD;&#xA;        .expirationTime(new Date((now + 300) * 1000))&#xD;&#xA;        .build();&#xD;&#xA;&#xD;&#xA;SignedJWT signedJWT = new SignedJWT(header, claims);&#xD;&#xA;signedJWT.sign(new RSASSASigner(privateKey));&#xD;&#xA;&#xD;&#xA;globalMap.put(&quot;client_assertion&quot;, signedJWT.serialize());&#xD;&#xA;globalMap.put(&quot;token_url&quot;, tokenUrl);"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="String pem = new String(Files.readAllBytes(Path.of(context.private_key_path)));&#xD;&#xA;String base64Key = pem&#xD;&#xA;        .replace(&quot;-----BEGIN PRIVATE KEY-----&quot;, &quot;&quot;)&#xD;&#xA;        .replace(&quot;-----END PRIVATE KEY-----&quot;, &quot;&quot;)&#xD;&#xA;        .replaceAll(&quot;\\s&quot;, &quot;&quot;);&#xD;&#xA;&#xD;&#xA;byte[] keyBytes = Base64.getDecoder().decode(base64Key);&#xD;&#xA;PKCS8EncodedKeySpec spec = new PKCS8EncodedKeySpec(keyBytes);&#xD;&#xA;RSAPrivateKey privateKey = (RSAPrivateKey) KeyFactory.getInstance(&quot;RSA&quot;).generatePrivate(spec);&#xD;&#xA;&#xD;&#xA;String tokenUrl = &quot;https://&quot; + context.account_id + context.netsuite_token_api_url;&#xD;&#xA;long now = System.currentTimeMillis() / 1000;&#xD;&#xA;&#xD;&#xA;JWSHeader header = new JWSHeader.Builder(JWSAlgorithm.PS256)&#xD;&#xA;        .keyID(context.certificate_id)&#xD;&#xA;        .type(JOSEObjectType.JWT)&#xD;&#xA;        .build();&#xD;&#xA;&#xD;&#xA;JWTClaimsSet claims = new JWTClaimsSet.Builder()&#xD;&#xA;        .issuer(context.client_id)&#xD;&#xA;        .claim(&quot;scope&quot;, context.scope)&#xD;&#xA;        .audience(tokenUrl)&#xD;&#xA;        .issueTime(new Date(now * 1000))&#xD;&#xA;        .expirationTime(new Date((now + 300) * 1000))&#xD;&#xA;        .build();&#xD;&#xA;&#xD;&#xA;SignedJWT signedJWT = new SignedJWT(header, claims);&#xD;&#xA;signedJWT.sign(new RSASSASigner(privateKey));&#xD;&#xA;&#xD;&#xA;globalMap.put(&quot;client_assertion&quot;, signedJWT.serialize());&#xD;&#xA;globalMap.put(&quot;token_url&quot;, tokenUrl);"/>
     <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="import com.nimbusds.jose.*;&#xD;&#xA;import com.nimbusds.jose.crypto.RSASSASigner;&#xD;&#xA;import com.nimbusds.jwt.JWTClaimsSet;&#xD;&#xA;import com.nimbusds.jwt.SignedJWT;&#xD;&#xA;import java.security.KeyFactory;&#xD;&#xA;import java.security.interfaces.RSAPrivateKey;&#xD;&#xA;import java.security.spec.PKCS8EncodedKeySpec;&#xD;&#xA;import java.nio.file.Files;&#xD;&#xA;import java.nio.file.Path;&#xD;&#xA;import java.util.Base64;&#xD;&#xA;import java.util.Date;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_14">
       <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="HTTPClient" componentVersion="5" offsetLabelX="0" offsetLabelY="0" posX="2720" posY="1040">
+  <node componentName="HTTPClient" componentVersion="5" offsetLabelX="0" offsetLabelY="0" posX="1960" posY="1120">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHTTPClient_9" show="false"/>
     <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="aHR0cC1zdHVkaW8jSFRUUCNDbGllbnQ" show="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
@@ -9031,7 +9084,7 @@
       <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tExtractJSONFields" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="2960" posY="1040">
+  <node componentName="tExtractJSONFields" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="2200" posY="1120">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tExtractJSONFields_2" show="false"/>
     <elementParameter field="CLOSED_LIST" name="READ_BY" value="JSONPATH"/>
     <elementParameter field="CLOSED_LIST" name="JSON_PATH_VERSION" value="2_1_0"/>
@@ -9081,10 +9134,11 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="3200" posY="1040">
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="2440" posY="1120">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_8" show="false"/>
     <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="context.new_bearer_token = response_data.access_token;&#xD;&#xA;System.out.println(&quot;Token acquired&quot;);"/>
     <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Log token acquired success and end"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJavaRow_8">
       <column comment="" key="false" length="-1" name="access_token" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -9092,7 +9146,7 @@
       <column comment="" key="false" length="-1" name="token_type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="3080" posY="880">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1960" posY="960">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_15" show="false"/>
     <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="System.out.println(&quot;Job experienced an error&quot;);&#xD;&#xA;&#xD;&#xA;String errorMsg = String.valueOf(globalMap.get(&quot;tHTTPClient_9_ERROR_MESSAGE&quot;));&#xD;&#xA;String safeErrorMsg = errorMsg.replace(&quot;\\&quot;, &quot;\\\\&quot;).replace(&quot;\&quot;&quot;, &quot;\\\&quot;&quot;).replace(&quot;\n&quot;, &quot;\\n&quot;).replace(&quot;\r&quot;, &quot;&quot;);&#xD;&#xA;&#xD;&#xA;globalMap.put(&quot;errorMsg&quot;, safeErrorMsg);"/>
     <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
@@ -9104,7 +9158,7 @@
       <column comment="" key="false" length="-1" name="headers" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="HTTPClient" componentVersion="5" offsetLabelX="6" offsetLabelY="14" posX="3320" posY="880">
+  <node componentName="HTTPClient" componentVersion="5" offsetLabelX="6" offsetLabelY="14" posX="2240" posY="960">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHTTPClient_10" show="false"/>
     <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="aHR0cC1zdHVkaW8jSFRUUCNDbGllbnQ" show="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
@@ -9187,7 +9241,7 @@
       <column comment="" key="false" length="-1" name="headers" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="3520" posY="880">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="2440" posY="960">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_21" show="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
@@ -9218,7 +9272,7 @@
       <column comment="" key="false" length="-1" name="headers" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="HTTPClient" componentVersion="5" offsetLabelX="0" offsetLabelY="0" posX="2720" posY="1240">
+  <node componentName="HTTPClient" componentVersion="5" offsetLabelX="0" offsetLabelY="0" posX="2720" posY="1280">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHTTPClient_11" show="false"/>
     <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="aHR0cC1zdHVkaW8jSFRUUCNDbGllbnQ" show="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
@@ -9235,7 +9289,7 @@
     <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.oauth20.authenticationType" value="BASIC" show="false"/>
     <elementParameter field="TABLE" name="configuration.dataset.datastore.authentication.oauth20.params" show="false"/>
     <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataset.methodType" value="POST"/>
-    <elementParameter field="TEXT" name="configuration.dataset.resource" value="/restlet.nl?script=2965&amp;deploy=2"/>
+    <elementParameter field="TEXT" name="configuration.dataset.resource" value="/restlet.nl?script=2982&amp;deploy=1"/>
     <elementParameter field="CHECK" name="configuration.dataset.hasPathParams" value="false"/>
     <elementParameter field="TABLE" name="configuration.dataset.pathParams" show="false"/>
     <elementParameter field="CHECK" name="configuration.dataset.hasQueryParams" value="false"/>
@@ -9269,7 +9323,7 @@
     </elementParameter>
     <elementParameter field="CHECK" name="configuration.dataset.hasBody" value="true"/>
     <elementParameter field="CLOSED_LIST" name="configuration.dataset.body.type" value="JSON"/>
-    <elementParameter field="MEMO" name="configuration.dataset.body.jsonValue" value="{.input.Netsuite_Payload}"/>
+    <elementParameter field="MEMO" name="configuration.dataset.body.jsonValue" value="{&#xD;&#xA;   &quot;nsVendorID&quot;: 3414,           &#xD;&#xA;   &quot;etoCompanyID&quot;: &quot;2543&quot;         &#xD;&#xA;}"/>
     <elementParameter field="TABLE" name="configuration.dataset.body.params" show="false"/>
     <elementParameter field="CLOSED_LIST" name="configuration.dataset.format" value="RAW_TEXT"/>
     <elementParameter field="TEXT" name="configuration.dataset.dssl" value="" show="false"/>
@@ -9320,6 +9374,37 @@
     <metadata connector="MERGE" name="MERGE"/>
     <metadata connector="REJECT" name="REJECT"/>
     <metadata connector="FLOW" name="tHTTPClient_11">
+      <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="headers" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="2880" posY="1280">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_22" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="status" id="0"/>
+      <elementValue elementRef="LENGTH" value="10" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="headers" id="2"/>
+      <elementValue elementRef="LENGTH" value="10" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="body" id="4"/>
+      <elementValue elementRef="LENGTH" value="10" id="5"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="response"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_22">
       <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="headers" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -9570,7 +9655,7 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row17" show="false"/>
   </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBOutput_2" offsetLabelX="0" offsetLabelY="0" source="tDBOutput_2" target="tHashInput_4">
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBOutput_2" offsetLabelX="0" offsetLabelY="0" source="tDBOutput_2" target="tLibraryLoad_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk18" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tHashInput_1" offsetLabelX="0" offsetLabelY="0" source="tHashInput_1" target="tJavaRow_2">
@@ -9821,6 +9906,14 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="Netsuite_Payload" show="false"/>
   </connection>
+  <connection connectorName="FLOW" label="row30" lineStyle="0" metaname="tLogRow_19" offsetLabelX="0" offsetLabelY="0" source="tLogRow_19" target="tMap_8">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row30" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="Netsuite_Payloads_list" lineStyle="0" metaname="Netsuite_Payloads_list" offsetLabelX="0" offsetLabelY="0" source="tMap_8" target="tLogRow_23">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Netsuite_Payloads_list" show="false"/>
+  </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tLibraryLoad_1" offsetLabelX="0" offsetLabelY="0" source="tLibraryLoad_1" target="tJava_14">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk6" show="false"/>
   </connection>
@@ -9833,6 +9926,9 @@
   </connection>
   <connection connectorName="COMPONENT_ERROR" label="OnComponentError" lineStyle="5" metaname="tHTTPClient_9" offsetLabelX="0" offsetLabelY="0" source="tHTTPClient_9" target="tJava_15">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentError4" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tHTTPClient_9" offsetLabelX="0" offsetLabelY="0" source="tHTTPClient_9" target="tHashInput_4">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk8" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="response_data" lineStyle="0" metaname="tExtractJSONFields_2" offsetLabelX="0" offsetLabelY="0" source="tExtractJSONFields_2" target="tJavaRow_8">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
@@ -9856,6 +9952,10 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row28" show="false"/>
   </connection>
+  <connection connectorName="FLOW" label="row29" lineStyle="0" metaname="tHTTPClient_11" offsetLabelX="0" offsetLabelY="0" source="tHTTPClient_11" target="tLogRow_22">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row29" show="false"/>
+  </connection>
   <note opaque="false" posX="760" posY="-400" sizeHeight="121" sizeWidth="201" text="Insert vendor into&#xD;&#xA;tblComany&#xD;&#xA;from integration&#xD;&#xA;table">
     <elementParameter field="TEXT" name="NOTE_FONT" value="Arial"/>
   </note>
@@ -9867,6 +9967,7 @@
   <note opaque="true" posX="1240" posY="-400" sizeHeight="121" sizeWidth="161" text="Could return 2&#xD;&#xA;rows if no filter&#xD;&#xA;to return a vendor"/>
   <note opaque="false" posX="1920" posY="520" sizeHeight="120" sizeWidth="201" text="set currency names&#xD;&#xA;"/>
   <note opaque="true" posX="160" posY="960" sizeHeight="161" sizeWidth="241" text="Job starts here.&#xD;&#xA;This API component receives &#xD;&#xA;requests then triggers the subjob"/>
+  <note opaque="false" posX="2600" posY="1040" sizeHeight="161" sizeWidth="201" text="&lt;----&#xD;&#xA;This flow here acquires &#xD;&#xA;a netsuite token to make&#xD;&#xA;api calls possible"/>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>

@@ -1,8 +1,177 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
-  <context confirmationNeeded="false" hide="false" name="Default"/>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Foodmach_Dev" jobType="Standard">
+  <context confirmationNeeded="false" hide="false" name="Prod">
+    <contextParameter comment="" name="integration_database_server_ip" prompt="integration_database_server_ip?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="192.168.2.47" internalId="_7smjMNcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="integration_database_name" prompt="integration_database_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="integration_database" internalId="_7smjMdcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="integration_database_schema_name" prompt="integration_database_schema_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="integration" internalId="_7smjMtcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="integration_database_port" prompt="integration_database_port?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="1433" internalId="_7smjM9cwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="integration_database_password" prompt="integration_database_password?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Password" value="enc:system.encryption.key.v1:Ix0aoolqm3NOzgsC4UfxgQ9W/VJdyV8+WPF2Z7xy17bwrAPgTt3dcbo=" internalId="_7snxUNcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="integration_database_table_name" prompt="integration_database_table_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="tblCompany_integration" internalId="_7snxUdcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="foodmach_database_server_ip" prompt="foodmach_database_server_ip?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="192.168.2.4" internalId="_7snxUtcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="foodmach_database_name" prompt="foodmach_database_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="Foodmach_training" internalId="_7snxU9cwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="foodmach_database_port" prompt="foodmach_database_port?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="1433" internalId="_7snxVNcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="foodmach_database_password" prompt="foodmach_database_password?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Password" value="" internalId="_7snxVdcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="foodmach_tblCompany_table_name" prompt="foodmach_tblCompany_table_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="tblCompany" internalId="_7snxVtcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="foodmach_tblCompanyTypes_table_name" prompt="foodmach_tblCompanyTypes_table_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="tblCompanyTypes" internalId="_7snxV9cwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="foodmach_tblSupplier_table_name" prompt="foodmach_tblSupplier_table_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="tblSupplier" internalId="_7snxWNcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="foodmach_schema_name" prompt="foodmach_schema_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="dbo" internalId="_7snxWdcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="row_count" prompt="row_count?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Integer" value="0" internalId="_7snxWtcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="error_message_log" prompt="error_message_log?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_7snxW9cwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="integration_table_message" prompt="integration_table_message?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_7snxXNcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="teams_base_url" prompt="teams_base_url?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="https://default37f3b1b2de5a4ccf94f5b8c2c7a688.00.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/01/workflows/58eacb3c9e234189b8c22bce15da5a6e/triggers/manual/paths" internalId="_7snxXdcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="teams_path" prompt="teams_path?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="/invoke?api-version=1&amp;sp=%2Ftriggers%2Fmanual%2Frun&amp;sv=1.0&amp;sig=rHGifzi61aUZzyKSQxtkZdj4bf79WU98m4pkJKW_hx4" internalId="_7snxXtcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="for nestuite api. this is the part that comes after the account id" name="netsuite_token_api_url" prompt="netsuite_token_api_url?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value=".suitetalk.api.netsuite.com/services/rest/auth/oauth2/v1/token" internalId="_7snxX9cwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="client_id" prompt="client_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="e74f0683fa5379e2b725547a322cb11514b0915b7a7efec374a72c4ae3a04531" internalId="_7snxYNcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="private_key_path" prompt="private_key_path?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="C:\Users\mmisselmany\Downloads\PO_Auth_flow\PO_Auth_flow\private.pem" internalId="_7snxYdcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="certificate_id" prompt="certificate_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="S_eR_japu9FLYSq2Kzq9pw9OPBfiKkMR2trklvfe4Es" internalId="_7snxYtcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="account_id" prompt="account_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="847280-sb1" internalId="_7snxY9cwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="new_bearer_token" prompt="new_bearer_token?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_7snxZNcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="scope" prompt="scope?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="restlets rest_webservices" internalId="_7snxZdcwEfGsM6Y8Dt6xKA"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="IBT_Dev">
+    <contextParameter comment="" name="integration_database_server_ip" prompt="integration_database_server_ip?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="192.168.2.65" internalId="_7snxZtcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="integration_database_name" prompt="integration_database_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="client_projects" internalId="_7snxZ9cwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="integration_database_schema_name" prompt="integration_database_schema_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="foodmach" internalId="_7snxaNcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="integration_database_port" prompt="integration_database_port?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="1433" internalId="_7snxadcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="integration_database_password" prompt="integration_database_password?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Password" value="enc:system.encryption.key.v1:ra1BeVb5eyHrl0asNduOHe43HiQDtqbUUnv73WNZKZ1WvkXvDQ==" internalId="_7snxatcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="integration_database_table_name" prompt="integration_database_table_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="tblCompany_integration" internalId="_7snxa9cwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="foodmach_database_server_ip" prompt="foodmach_database_server_ip?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="192.168.2.65" internalId="_7snxbNcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="foodmach_database_name" prompt="foodmach_database_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="client_projects" internalId="_7snxbdcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="foodmach_database_port" prompt="foodmach_database_port?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="1433" internalId="_7snxbtcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="foodmach_database_password" prompt="foodmach_database_password?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Password" value="enc:system.encryption.key.v1:CTRwmhOzXyVxsF8oqfOf98x9hLtbbwxtMZjhKa9aoYATRsFqQA==" internalId="_7snxb9cwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="foodmach_tblCompany_table_name" prompt="foodmach_tblCompany_table_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="tblCompany" internalId="_7snxcNcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="foodmach_tblCompanyTypes_table_name" prompt="foodmach_tblCompanyTypes_table_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="tblCompanyTypes" internalId="_7snxcdcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="foodmach_tblSupplier_table_name" prompt="foodmach_tblSupplier_table_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="tblSupplier" internalId="_7snxctcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="foodmach_schema_name" prompt="foodmach_schema_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="foodmach_source_dummy" internalId="_7snxc9cwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="row_count" prompt="row_count?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Integer" value="0" internalId="_7snxdNcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="error_message_log" prompt="error_message_log?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_7snxddcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="integration_table_message" prompt="integration_table_message?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_7snxdtcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="teams_base_url" prompt="teams_base_url?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="https://default37f3b1b2de5a4ccf94f5b8c2c7a688.00.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/01/workflows/58eacb3c9e234189b8c22bce15da5a6e/triggers/manual/paths" internalId="_7snxd9cwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="teams_path" prompt="teams_path?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="/invoke?api-version=1&amp;sp=%2Ftriggers%2Fmanual%2Frun&amp;sv=1.0&amp;sig=rHGifzi61aUZzyKSQxtkZdj4bf79WU98m4pkJKW_hx4" internalId="_7snxeNcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="for nestuite api. this is the part that comes after the account id" name="netsuite_token_api_url" prompt="netsuite_token_api_url?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value=".suitetalk.api.netsuite.com/services/rest/auth/oauth2/v1/token" internalId="_7snxedcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="client_id" prompt="client_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="e74f0683fa5379e2b725547a322cb11514b0915b7a7efec374a72c4ae3a04531" internalId="_7snxetcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="private_key_path" prompt="private_key_path?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="C:\Users\mmisselmany\Downloads\PO_Auth_flow\PO_Auth_flow\private.pem" internalId="_7snxe9cwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="certificate_id" prompt="certificate_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="S_eR_japu9FLYSq2Kzq9pw9OPBfiKkMR2trklvfe4Es" internalId="_7snxfNcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="account_id" prompt="account_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="847280-sb1" internalId="_7snxfdcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="new_bearer_token" prompt="new_bearer_token?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_7snxftcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="scope" prompt="scope?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="restlets rest_webservices" internalId="_7snxf9cwEfGsM6Y8Dt6xKA"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="Test">
+    <contextParameter comment="" name="integration_database_server_ip" prompt="integration_database_server_ip?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="192.168.2.46" internalId="_7snxgNcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="integration_database_name" prompt="integration_database_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="integration_database" internalId="_7snxgdcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="integration_database_schema_name" prompt="integration_database_schema_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="integration" internalId="_7snxgtcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="integration_database_port" prompt="integration_database_port?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="52015" internalId="_7snxg9cwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="integration_database_password" prompt="integration_database_password?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Password" value="enc:system.encryption.key.v1:iYbDxKmfbn7H2xzu17BQkes4eqQlaS5bYeaEeNaI7/kRjnCMXW8Ay9o=" internalId="_7snxhNcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="integration_database_table_name" prompt="integration_database_table_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="tblCompany_integration" internalId="_7snxhdcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="foodmach_database_server_ip" prompt="foodmach_database_server_ip?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="192.168.2.4" internalId="_7snxhtcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="foodmach_database_name" prompt="foodmach_database_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="Foodmach_training" internalId="_7snxh9cwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="foodmach_database_port" prompt="foodmach_database_port?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="1433" internalId="_7snxiNcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="foodmach_database_password" prompt="foodmach_database_password?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Password" value="enc:system.encryption.key.v1:Wmqpaq29OaI0+NXvP/JQcSr/qXYYDFKF1E+3Oen4U+/pNDI4" internalId="_7snxidcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="foodmach_tblCompany_table_name" prompt="foodmach_tblCompany_table_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="tblCompany" internalId="_7snxitcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="foodmach_tblCompanyTypes_table_name" prompt="foodmach_tblCompanyTypes_table_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="tblCompanyTypes" internalId="_7snxi9cwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="foodmach_tblSupplier_table_name" prompt="foodmach_tblSupplier_table_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="tblSupplier" internalId="_7snxjNcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="foodmach_schema_name" prompt="foodmach_schema_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="dbo" internalId="_7snxjdcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="row_count" prompt="row_count?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Integer" value="0" internalId="_7snxjtcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="error_message_log" prompt="error_message_log?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_7snxj9cwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="integration_table_message" prompt="integration_table_message?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_7snxkNcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="teams_base_url" prompt="teams_base_url?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="https://default37f3b1b2de5a4ccf94f5b8c2c7a688.00.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/01/workflows/58eacb3c9e234189b8c22bce15da5a6e/triggers/manual/paths" internalId="_7snxkdcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="teams_path" prompt="teams_path?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="/invoke?api-version=1&amp;sp=%2Ftriggers%2Fmanual%2Frun&amp;sv=1.0&amp;sig=rHGifzi61aUZzyKSQxtkZdj4bf79WU98m4pkJKW_hx4" internalId="_7snxktcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="for nestuite api. this is the part that comes after the account id" name="netsuite_token_api_url" prompt="netsuite_token_api_url?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value=".suitetalk.api.netsuite.com/services/rest/auth/oauth2/v1/token" internalId="_7snxk9cwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="client_id" prompt="client_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="e74f0683fa5379e2b725547a322cb11514b0915b7a7efec374a72c4ae3a04531" internalId="_7snxlNcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="private_key_path" prompt="private_key_path?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="C:\Users\mmisselmany\Downloads\PO_Auth_flow\PO_Auth_flow\private.pem" internalId="_7snxldcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="certificate_id" prompt="certificate_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="S_eR_japu9FLYSq2Kzq9pw9OPBfiKkMR2trklvfe4Es" internalId="_7snxltcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="account_id" prompt="account_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="847280-sb1" internalId="_7snxl9cwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="new_bearer_token" prompt="new_bearer_token?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_7snxmNcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="scope" prompt="scope?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="restlets rest_webservices" internalId="_7snxmdcwEfGsM6Y8Dt6xKA"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="Foodmach_Dev_2">
+    <contextParameter comment="" name="integration_database_server_ip" prompt="integration_database_server_ip?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="192.168.2.46" internalId="_7snxmtcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="integration_database_name" prompt="integration_database_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="integration_database" internalId="_7snxm9cwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="integration_database_schema_name" prompt="integration_database_schema_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="integration" internalId="_7snxnNcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="integration_database_port" prompt="integration_database_port?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="51980" internalId="_7snxndcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="integration_database_password" prompt="integration_database_password?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Password" value="enc:system.encryption.key.v1:1v7IyMqZbHboEvlvYtd7kuy4otUaKYssNYm6eL7CccI5P7Pb5yTMglw=" internalId="_7snxntcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="integration_database_table_name" prompt="integration_database_table_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="tblCompany_integration" internalId="_7snxn9cwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="foodmach_database_server_ip" prompt="foodmach_database_server_ip?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="192.168.2.46" internalId="_7snxoNcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="foodmach_database_name" prompt="foodmach_database_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="Foodmach_training" internalId="_7snxodcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="foodmach_database_port" prompt="foodmach_database_port?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="51980" internalId="_7snxotcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="foodmach_database_password" prompt="foodmach_database_password?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Password" value="enc:system.encryption.key.v1:He5hjNXW9z8uVUXqfELmOO1yMBC0lnUTZ0knfaBQbI/HX4cxyBoEap4=" internalId="_7snxo9cwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="foodmach_tblCompany_table_name" prompt="foodmach_tblCompany_table_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="tblCompany" internalId="_7snxpNcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="foodmach_tblCompanyTypes_table_name" prompt="foodmach_tblCompanyTypes_table_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="tblCompanyTypes" internalId="_7snxpdcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="foodmach_tblSupplier_table_name" prompt="foodmach_tblSupplier_table_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="tblSupplier" internalId="_7snxptcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="foodmach_schema_name" prompt="foodmach_schema_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="dbo" internalId="_7snxp9cwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="row_count" prompt="row_count?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Integer" value="0" internalId="_7snxqNcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="error_message_log" prompt="error_message_log?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_7snxqdcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="integration_table_message" prompt="integration_table_message?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_7snxqtcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="teams_base_url" prompt="teams_base_url?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="https://default37f3b1b2de5a4ccf94f5b8c2c7a688.00.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/01/workflows/58eacb3c9e234189b8c22bce15da5a6e/triggers/manual/paths" internalId="_7snxq9cwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="teams_path" prompt="teams_path?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="/invoke?api-version=1&amp;sp=%2Ftriggers%2Fmanual%2Frun&amp;sv=1.0&amp;sig=rHGifzi61aUZzyKSQxtkZdj4bf79WU98m4pkJKW_hx4" internalId="_7snxrNcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="for nestuite api. this is the part that comes after the account id" name="netsuite_token_api_url" prompt="netsuite_token_api_url?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value=".suitetalk.api.netsuite.com/services/rest/auth/oauth2/v1/token" internalId="_7snxrdcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="client_id" prompt="client_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="e74f0683fa5379e2b725547a322cb11514b0915b7a7efec374a72c4ae3a04531" internalId="_7snxrtcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="private_key_path" prompt="private_key_path?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="C:\Users\mmisselmany\Downloads\PO_Auth_flow\PO_Auth_flow\private.pem" internalId="_7snxr9cwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="certificate_id" prompt="certificate_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="S_eR_japu9FLYSq2Kzq9pw9OPBfiKkMR2trklvfe4Es" internalId="_7snxsNcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="account_id" prompt="account_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="847280-sb1" internalId="_7snxsdcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="new_bearer_token" prompt="new_bearer_token?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_7snxstcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="scope" prompt="scope?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="restlets rest_webservices" internalId="_7snxs9cwEfGsM6Y8Dt6xKA"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="Default">
+    <contextParameter comment="" name="integration_database_server_ip" prompt="integration_database_server_ip?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_7snxtNcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="integration_database_name" prompt="integration_database_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_7snxtdcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="integration_database_schema_name" prompt="integration_database_schema_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_7snxttcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="integration_database_port" prompt="integration_database_port?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_7snxt9cwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="integration_database_password" prompt="integration_database_password?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Password" value="" internalId="_7snxuNcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="integration_database_table_name" prompt="integration_database_table_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_7snxudcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="foodmach_database_server_ip" prompt="foodmach_database_server_ip?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_7snxutcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="foodmach_database_name" prompt="foodmach_database_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_7snxu9cwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="foodmach_database_port" prompt="foodmach_database_port?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_7snxvNcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="foodmach_database_password" prompt="foodmach_database_password?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Password" value="" internalId="_7snxvdcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="foodmach_tblCompany_table_name" prompt="foodmach_tblCompany_table_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_7snxvtcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="foodmach_tblCompanyTypes_table_name" prompt="foodmach_tblCompanyTypes_table_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_7snxv9cwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="foodmach_tblSupplier_table_name" prompt="foodmach_tblSupplier_table_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_7snxwNcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="foodmach_schema_name" prompt="foodmach_schema_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_7snxwdcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="row_count" prompt="row_count?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Integer" value="0" internalId="_7snxwtcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="error_message_log" prompt="error_message_log?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_7snxw9cwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="integration_table_message" prompt="integration_table_message?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_7snxxNcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="teams_base_url" prompt="teams_base_url?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="https://default37f3b1b2de5a4ccf94f5b8c2c7a688.00.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/01/workflows/58eacb3c9e234189b8c22bce15da5a6e/triggers/manual/paths" internalId="_7snxxdcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="teams_path" prompt="teams_path?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="/invoke?api-version=1&amp;sp=%2Ftriggers%2Fmanual%2Frun&amp;sv=1.0&amp;sig=rHGifzi61aUZzyKSQxtkZdj4bf79WU98m4pkJKW_hx4" internalId="_7snxxtcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="for nestuite api. this is the part that comes after the account id" name="netsuite_token_api_url" prompt="netsuite_token_api_url?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value=".suitetalk.api.netsuite.com/services/rest/auth/oauth2/v1/token" internalId="_7snxx9cwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="client_id" prompt="client_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="e74f0683fa5379e2b725547a322cb11514b0915b7a7efec374a72c4ae3a04531" internalId="_7snxyNcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="private_key_path" prompt="private_key_path?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="C:\Users\mmisselmany\Downloads\PO_Auth_flow\PO_Auth_flow\private.pem" internalId="_7snxydcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="certificate_id" prompt="certificate_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="S_eR_japu9FLYSq2Kzq9pw9OPBfiKkMR2trklvfe4Es" internalId="_7snxytcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="account_id" prompt="account_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="847280-sb1" internalId="_7snxy9cwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="new_bearer_token" prompt="new_bearer_token?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_7snxzNcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="scope" prompt="scope?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="restlets rest_webservices" internalId="_7snxzdcwEfGsM6Y8Dt6xKA"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="Foodmach_Dev">
+    <contextParameter comment="" name="integration_database_server_ip" prompt="integration_database_server_ip?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="192.168.2.46" internalId="_7snxztcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="integration_database_name" prompt="integration_database_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="integration_database" internalId="_7snxz9cwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="integration_database_schema_name" prompt="integration_database_schema_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="integration" internalId="_7snx0NcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="integration_database_port" prompt="integration_database_port?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="51980" internalId="_7snx0dcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="integration_database_password" prompt="integration_database_password?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Password" value="enc:system.encryption.key.v1:Buf7ahhfyMcZQT7RA4kZ80ONJzWwccrXPym/3VJUcHIook/jUT3F1Uo=" internalId="_7snx0tcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="integration_database_table_name" prompt="integration_database_table_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="tblCompany_integration" internalId="_7snx09cwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="foodmach_database_server_ip" prompt="foodmach_database_server_ip?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="192.168.2.4" internalId="_7snx1NcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="foodmach_database_name" prompt="foodmach_database_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="Foodmach_training" internalId="_7soYYNcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="foodmach_database_port" prompt="foodmach_database_port?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="1433" internalId="_7soYYdcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="foodmach_database_password" prompt="foodmach_database_password?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Password" value="enc:system.encryption.key.v1:J7KedZHdmCmvWb3vtngNyubMqjLWwg7U9VD1KTedeak+rqbA" internalId="_7soYYtcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="foodmach_tblCompany_table_name" prompt="foodmach_tblCompany_table_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="tblCompany" internalId="_7soYY9cwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="foodmach_tblCompanyTypes_table_name" prompt="foodmach_tblCompanyTypes_table_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="tblCompanyTypes" internalId="_7soYZNcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="foodmach_tblSupplier_table_name" prompt="foodmach_tblSupplier_table_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="tblSupplier" internalId="_7soYZdcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="foodmach_schema_name" prompt="foodmach_schema_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="dbo" internalId="_7soYZtcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="row_count" prompt="row_count?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Integer" value="0" internalId="_7soYZ9cwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="error_message_log" prompt="error_message_log?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_7soYaNcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="integration_table_message" prompt="integration_table_message?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_7soYadcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="teams_base_url" prompt="teams_base_url?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="https://default37f3b1b2de5a4ccf94f5b8c2c7a688.00.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/01/workflows/58eacb3c9e234189b8c22bce15da5a6e/triggers/manual/paths" internalId="_7soYatcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="teams_path" prompt="teams_path?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="/invoke?api-version=1&amp;sp=%2Ftriggers%2Fmanual%2Frun&amp;sv=1.0&amp;sig=rHGifzi61aUZzyKSQxtkZdj4bf79WU98m4pkJKW_hx4" internalId="_7soYa9cwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="for nestuite api. this is the part that comes after the account id" name="netsuite_token_api_url" prompt="netsuite_token_api_url?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value=".suitetalk.api.netsuite.com/services/rest/auth/oauth2/v1/token" internalId="_7soYbNcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="client_id" prompt="client_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="e74f0683fa5379e2b725547a322cb11514b0915b7a7efec374a72c4ae3a04531" internalId="_7soYbdcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="private_key_path" prompt="private_key_path?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="C:\Users\mmisselmany\Downloads\PO_Auth_flow\PO_Auth_flow\private.pem" internalId="_7soYbtcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="certificate_id" prompt="certificate_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="S_eR_japu9FLYSq2Kzq9pw9OPBfiKkMR2trklvfe4Es" internalId="_7soYb9cwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="account_id" prompt="account_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="847280-sb1" internalId="_7soYcNcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="new_bearer_token" prompt="new_bearer_token?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_7soYcdcwEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="" name="scope" prompt="scope?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="restlets rest_webservices" internalId="_7soYctcwEfGsM6Y8Dt6xKA"/>
+  </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
@@ -97,4 +266,814 @@
     <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
     <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
   </parameters>
+  <node componentName="tLibraryLoad" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="80" posY="80">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLibraryLoad_1" show="false"/>
+    <elementParameter field="MODULE_LIST" name="LIBRARY" value="&quot;mvn:com.nimbusds/nimbus-jose-jwt/10.0.2/jar&quot;"/>
+    <elementParameter field="TABLE" name="HOTLIBS"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="80" posY="240">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="String pem = new String(Files.readAllBytes(Path.of(context.private_key_path)));&#xD;&#xA;String base64Key = pem&#xD;&#xA;        .replace(&quot;-----BEGIN PRIVATE KEY-----&quot;, &quot;&quot;)&#xD;&#xA;        .replace(&quot;-----END PRIVATE KEY-----&quot;, &quot;&quot;)&#xD;&#xA;        .replaceAll(&quot;\\s&quot;, &quot;&quot;);&#xD;&#xA;&#xD;&#xA;byte[] keyBytes = Base64.getDecoder().decode(base64Key);&#xD;&#xA;PKCS8EncodedKeySpec spec = new PKCS8EncodedKeySpec(keyBytes);&#xD;&#xA;RSAPrivateKey privateKey = (RSAPrivateKey) KeyFactory.getInstance(&quot;RSA&quot;).generatePrivate(spec);&#xD;&#xA;&#xD;&#xA;String tokenUrl = &quot;https://&quot; + context.account_id + context.netsuite_token_api_url;&#xD;&#xA;long now = System.currentTimeMillis() / 1000;&#xD;&#xA;&#xD;&#xA;JWSHeader header = new JWSHeader.Builder(JWSAlgorithm.PS256)&#xD;&#xA;        .keyID(context.certificate_id)&#xD;&#xA;        .type(JOSEObjectType.JWT)&#xD;&#xA;        .build();&#xD;&#xA;&#xD;&#xA;JWTClaimsSet claims = new JWTClaimsSet.Builder()&#xD;&#xA;        .issuer(context.client_id)&#xD;&#xA;        .claim(&quot;scope&quot;, context.scope)&#xD;&#xA;        .audience(tokenUrl)&#xD;&#xA;        .issueTime(new Date(now * 1000))&#xD;&#xA;        .expirationTime(new Date((now + 300) * 1000))&#xD;&#xA;        .build();&#xD;&#xA;&#xD;&#xA;SignedJWT signedJWT = new SignedJWT(header, claims);&#xD;&#xA;signedJWT.sign(new RSASSASigner(privateKey));&#xD;&#xA;&#xD;&#xA;globalMap.put(&quot;client_assertion&quot;, signedJWT.serialize());&#xD;&#xA;globalMap.put(&quot;token_url&quot;, tokenUrl);"/>
+    <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="import com.nimbusds.jose.*;&#xD;&#xA;import com.nimbusds.jose.crypto.RSASSASigner;&#xD;&#xA;import com.nimbusds.jwt.JWTClaimsSet;&#xD;&#xA;import com.nimbusds.jwt.SignedJWT;&#xD;&#xA;import java.security.KeyFactory;&#xD;&#xA;import java.security.interfaces.RSAPrivateKey;&#xD;&#xA;import java.security.spec.PKCS8EncodedKeySpec;&#xD;&#xA;import java.nio.file.Files;&#xD;&#xA;import java.nio.file.Path;&#xD;&#xA;import java.util.Base64;&#xD;&#xA;import java.util.Date;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_1">
+      <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="80" posY="600">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="context.error_message_log = &quot;Failed to insert into integration table&quot;;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;"/>
+    <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="log job failed"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_2">
+      <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="headers" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="280" posY="80">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_3" show="false"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="System.out.println(&quot;Job experienced an error&quot;);&#xD;&#xA;&#xD;&#xA;String errorMsg = String.valueOf(globalMap.get(&quot;tHTTPClient_1_ERROR_MESSAGE&quot;));&#xD;&#xA;String safeErrorMsg = errorMsg.replace(&quot;\\&quot;, &quot;\\\\&quot;).replace(&quot;\&quot;&quot;, &quot;\\\&quot;&quot;).replace(&quot;\n&quot;, &quot;\\n&quot;).replace(&quot;\r&quot;, &quot;&quot;);&#xD;&#xA;&#xD;&#xA;globalMap.put(&quot;errorMsg&quot;, safeErrorMsg);"/>
+    <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="log job failed"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_3">
+      <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="headers" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="HTTPClient" componentVersion="5" offsetLabelX="0" offsetLabelY="0" posX="280" posY="240">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHTTPClient_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="aHR0cC1zdHVkaW8jSFRUUCNDbGllbnQ" show="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.base" value="((String)globalMap.get(&quot;token_url&quot;))"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.type" value="NoAuth"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.apiKey.destination" value="HEADERS" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.apiKey.headerName" value="Authorization" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.apiKey.queryName" value="apikey" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.apiKey.prefix" value="Bearer" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.oauth20.flow" value="CLIENT_CREDENTIAL" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.oauth20.authenticationType" value="FORM" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.datastore.authentication.oauth20.params" show="false"/>
+    <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataset.methodType" value="POST"/>
+    <elementParameter field="TEXT" name="configuration.dataset.resource" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="configuration.dataset.hasPathParams" value="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.pathParams" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.hasQueryParams" value="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.queryParams" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.hasHeaders" value="true"/>
+    <elementParameter field="TABLE" name="configuration.dataset.headers">
+      <elementValue elementRef="configuration.dataset.headers[].key" value="&quot;Content-Type&quot;" id="0"/>
+      <elementValue elementRef="configuration.dataset.headers[].value" value="&quot;application/x-www-form-urlencoded&quot;" id="1"/>
+      <elementValue elementRef="configuration.dataset.headers[].query" value="MAIN" id="2"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="configuration.dataset.hasBody" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.body.type" value="TEXT"/>
+    <elementParameter field="TACOKIT_TEXT_AREA" name="configuration.dataset.body.textValue" value="&quot;grant_type=client_credentials&amp;client_assertion_type=&quot; +&#xD;&#xA;java.net.URLEncoder.encode(&quot;urn:ietf:params:oauth:client-assertion-type:jwt-bearer&quot;, &quot;UTF-8&quot;) +&#xD;&#xA;&quot;&amp;client_assertion=&quot; +&#xD;&#xA;java.net.URLEncoder.encode((String)globalMap.get(&quot;client_assertion&quot;), &quot;UTF-8&quot;)"/>
+    <elementParameter field="TABLE" name="configuration.dataset.body.params" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.format" value="JSON"/>
+    <elementParameter field="TEXT" name="configuration.dataset.dssl" value=""/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.returnedContent" value="STATUS_HEADERS_BODY"/>
+    <elementParameter field="CHECK" name="configuration.dataset.outputKeyValuePairs" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.forwardInput" value="false" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.keyValuePairs" show="false"/>
+    <elementParameter field="CHECK" name="configuration.downloadFile" value="false"/>
+    <elementParameter field="CHECK" name="configuration.specifyFileName" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.useCacheToSave" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.datastore.authentication.oauth20.customizeHeaderName" value="false" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.oauth20.customHeaderName" value="Authorization" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.datastore.authentication.oauth20.customizeTokenPrefix" value="false" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.oauth20.customTokenPrefix" value="Bearer" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.connectionTimeout" value="30000"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.receiveTimeout" value="120000"/>
+    <elementParameter field="CHECK" name="configuration.dataset.datastore.bypassCertificateValidation" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.datastore.useProxy" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.proxyConfiguration.proxyType" value="HTTP" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.proxyConfiguration.proxyPort" value="443" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.datastore.hasRetry" value="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.retry.backoff" value="500" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.retry.factor" value="1" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.retry.maxAttempts" value="2" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.acceptRedirections" value="true"/>
+    <elementParameter field="TEXT" name="configuration.dataset.maxRedirectOnSameURL" value="3"/>
+    <elementParameter field="CHECK" name="configuration.dataset.onlySameHost" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.hasPagination" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.pagination.strategy" value="OFFSET_LIMIT" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.pagination.offsetLimitStrategyConfig.location" value="QUERY_PARAMETERS" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.pagination.markerStrategyConfig.location" value="QUERY_PARAMETERS" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.pagination.markerStrategyConfig.limitValue" value="100" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.jsonForceDouble" value="true"/>
+    <elementParameter field="CHECK" name="configuration.dataset.normalizeJson" value="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.jsonCastConfigurations" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.jsonFilterConfigurations" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.enforceNumberAsString" value="true" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.useCookies" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.saveCookies" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.disableChunkedEncoding" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.httpVersion" value="HTTP_2"/>
+    <elementParameter field="CHECK" name="configuration.uploadFiles" value="false"/>
+    <elementParameter field="TABLE" name="configuration.uploadFileTable" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dieOnError" value="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataset.__version" value="5" show="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataset.datastore.__version" value="5" show="false"/>
+    <metadata connector="LOOKUP" name="LOOKUP"/>
+    <metadata connector="MERGE" name="MERGE"/>
+    <metadata connector="REJECT" name="REJECT"/>
+    <metadata connector="FLOW" name="tHTTPClient_1">
+      <column comment="" key="false" length="-1" name="headers" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="status" nullable="false" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tExtractJSONFields" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="520" posY="240">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tExtractJSONFields_1" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="READ_BY" value="JSONPATH"/>
+    <elementParameter field="CLOSED_LIST" name="JSON_PATH_VERSION" value="2_1_0"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="JSONFIELD" value="body"/>
+    <elementParameter field="TEXT" name="LOOP_QUERY" value="&quot;/bills/bill/line&quot;" show="false"/>
+    <elementParameter field="TEXT" name="JSON_LOOP_QUERY" value="&quot;$&quot;"/>
+    <elementParameter field="TABLE" name="MAPPING" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="access_token" id="0"/>
+      <elementValue elementRef="QUERY" value="" id="1"/>
+      <elementValue elementRef="NODECHECK" value="false" id="2"/>
+      <elementValue elementRef="ISARRAY" value="false" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="expires_in" id="4"/>
+      <elementValue elementRef="QUERY" value="" id="5"/>
+      <elementValue elementRef="NODECHECK" value="false" id="6"/>
+      <elementValue elementRef="ISARRAY" value="false" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="token_type" id="8"/>
+      <elementValue elementRef="QUERY" value="" id="9"/>
+      <elementValue elementRef="NODECHECK" value="false" id="10"/>
+      <elementValue elementRef="ISARRAY" value="false" id="11"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="MAPPING_4_JSONPATH">
+      <elementValue elementRef="SCHEMA_COLUMN" value="access_token" id="0"/>
+      <elementValue elementRef="QUERY" value="&quot;access_token&quot;" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="expires_in" id="2"/>
+      <elementValue elementRef="QUERY" value="&quot;expires_in&quot;" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="token_type" id="4"/>
+      <elementValue elementRef="QUERY" value="&quot;token_type&quot;" id="5"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8" show="false"/>
+    <elementParameter field="CHECK" name="USE_LOOP_AS_ROOT" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT_LIST" value="true" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tExtractJSONFields_1">
+      <column comment="" key="false" length="-1" name="access_token" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="expires_in" nullable="false" pattern="" precision="-1" sourceType="" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="token_type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="-1" name="access_token" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="expires_in" nullable="false" pattern="" precision="-1" sourceType="" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="token_type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorJSONField" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="760" posY="240">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_1" show="false"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="context.new_bearer_token = response_data.access_token;&#xD;&#xA;System.out.println(&quot;Token acquired&quot;);"/>
+    <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Log token acquired success and end"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJavaRow_1">
+      <column comment="" key="false" length="-1" name="access_token" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="expires_in" nullable="false" pattern="" precision="-1" sourceType="" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="token_type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="HTTPClient" componentVersion="5" offsetLabelX="6" offsetLabelY="14" posX="320" posY="600">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHTTPClient_2" show="false"/>
+    <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="aHR0cC1zdHVkaW8jSFRUUCNDbGllbnQ" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="TEXT" name="LABEL" value="Send Teams error message"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.base" value="context.teams_base_url"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.type" value="NoAuth"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.apiKey.destination" value="HEADERS" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.apiKey.headerName" value="Authorization" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.apiKey.queryName" value="apikey" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.apiKey.prefix" value="Bearer" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.oauth20.flow" value="CLIENT_CREDENTIAL" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.oauth20.authenticationType" value="FORM" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.datastore.authentication.oauth20.params" show="false"/>
+    <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataset.methodType" value="POST"/>
+    <elementParameter field="TEXT" name="configuration.dataset.resource" value="context.teams_path"/>
+    <elementParameter field="CHECK" name="configuration.dataset.hasPathParams" value="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.pathParams" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.hasQueryParams" value="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.queryParams" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.hasHeaders" value="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.headers" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.hasBody" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.body.type" value="JSON"/>
+    <elementParameter field="TACOKIT_TEXT_AREA" name="configuration.dataset.body.textValue" value="{&#xD;&#xA;  &quot;type&quot;: &quot;message&quot;,&#xD;&#xA;  &quot;attachments&quot;: [&#xD;&#xA;    {&#xD;&#xA;      &quot;contentType&quot;: &quot;application/vnd.microsoft.card.adaptive&quot;,&#xD;&#xA;      &quot;content&quot;: {&#xD;&#xA;        &quot;type&quot;: &quot;AdaptiveCard&quot;,&#xD;&#xA;        &quot;$schema&quot;: &quot;http://adaptivecards.io/schemas/adaptive-card.json&quot;,&#xD;&#xA;        &quot;version&quot;: &quot;1.4&quot;,&#xD;&#xA;        &quot;body&quot;: [&#xD;&#xA;          { &quot;type&quot;: &quot;TextBlock&quot;, &quot;text&quot;: &quot;Test message from Postman&quot;, &quot;wrap&quot;: true }&#xD;&#xA;        ]&#xD;&#xA;      }&#xD;&#xA;    }&#xD;&#xA;  ]&#xD;&#xA;}" show="false"/>
+    <elementParameter field="MEMO" name="configuration.dataset.body.jsonValue" value="&quot;{&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;message\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;attachments\&quot;: [{&quot;&#xD;&#xA;+ &quot;\&quot;contentType\&quot;: \&quot;application/vnd.microsoft.card.adaptive\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;content\&quot;: {&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;AdaptiveCard\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;$schema\&quot;: \&quot;http://adaptivecards.io/schemas/adaptive-card.json\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;version\&quot;: \&quot;1.4\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;body\&quot;: [{&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;TextBlock\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;text\&quot;: \&quot;\u274C Dev - Talend job failed\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;weight\&quot;: \&quot;Bolder\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;size\&quot;: \&quot;Medium\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;color\&quot;: \&quot;Attention\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;wrap\&quot;: true&quot;&#xD;&#xA;+ &quot;},{&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;FactSet\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;facts\&quot;: [&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Job:\&quot;, \&quot;value\&quot;: \&quot;Combined_Vendor_Processing_and_API\&quot;},&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Time:\&quot;, \&quot;value\&quot;: \&quot;&quot; + java.time.ZonedDateTime.now(java.time.ZoneId.of(&quot;Australia/Sydney&quot;)).format(java.time.format.DateTimeFormatter.ofPattern(&quot;yyyy-MM-dd HH:mm:ss z&quot;)) + &quot;\&quot;},&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Description:\&quot;, \&quot;value\&quot;: \&quot;An error occurred with sending the Vendor data from TotalETO to Netsuite. Manual intervention is required to synchronise the TotalETO CompanyID with Netsuite. Please check job and integration table for more info on which record was rejected\&quot;},&quot;&#xD;&#xA;+ &quot;]&quot;&#xD;&#xA;+ &quot;}]&quot;&#xD;&#xA;+ &quot;}&quot;&#xD;&#xA;+ &quot;}]&quot;&#xD;&#xA;+ &quot;}&quot;"/>
+    <elementParameter field="TABLE" name="configuration.dataset.body.params" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.format" value="RAW_TEXT"/>
+    <elementParameter field="TEXT" name="configuration.dataset.dssl" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.returnedContent" value="STATUS_HEADERS_BODY"/>
+    <elementParameter field="CHECK" name="configuration.dataset.outputKeyValuePairs" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.forwardInput" value="false" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.keyValuePairs" show="false"/>
+    <elementParameter field="CHECK" name="configuration.downloadFile" value="false"/>
+    <elementParameter field="CHECK" name="configuration.specifyFileName" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.useCacheToSave" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.datastore.authentication.oauth20.customizeHeaderName" value="false" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.oauth20.customHeaderName" value="Authorization" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.datastore.authentication.oauth20.customizeTokenPrefix" value="false" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.oauth20.customTokenPrefix" value="Bearer" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.connectionTimeout" value="30000"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.receiveTimeout" value="120000"/>
+    <elementParameter field="CHECK" name="configuration.dataset.datastore.bypassCertificateValidation" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.datastore.useProxy" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.proxyConfiguration.proxyType" value="HTTP" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.proxyConfiguration.proxyPort" value="443" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.datastore.hasRetry" value="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.retry.backoff" value="500" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.retry.factor" value="1" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.retry.maxAttempts" value="2" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.acceptRedirections" value="true"/>
+    <elementParameter field="TEXT" name="configuration.dataset.maxRedirectOnSameURL" value="3"/>
+    <elementParameter field="CHECK" name="configuration.dataset.onlySameHost" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.hasPagination" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.pagination.strategy" value="OFFSET_LIMIT" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.pagination.offsetLimitStrategyConfig.location" value="QUERY_PARAMETERS" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.pagination.markerStrategyConfig.location" value="QUERY_PARAMETERS" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.pagination.markerStrategyConfig.limitValue" value="100" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.jsonForceDouble" value="true" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.normalizeJson" value="false" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.jsonCastConfigurations" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.jsonFilterConfigurations" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.enforceNumberAsString" value="true" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.useCookies" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.saveCookies" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.disableChunkedEncoding" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.httpVersion" value="HTTP_2"/>
+    <elementParameter field="CHECK" name="configuration.uploadFiles" value="false"/>
+    <elementParameter field="TABLE" name="configuration.uploadFileTable" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dieOnError" value="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataset.__version" value="5" show="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataset.datastore.__version" value="5" show="false"/>
+    <metadata connector="LOOKUP" name="LOOKUP"/>
+    <metadata connector="MERGE" name="MERGE"/>
+    <metadata connector="REJECT" name="REJECT"/>
+    <metadata connector="FLOW" name="tHTTPClient_2">
+      <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="headers" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="560" posY="600">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_2" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="body" id="0"/>
+      <elementValue elementRef="LENGTH" value="10" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="status" id="2"/>
+      <elementValue elementRef="LENGTH" value="10" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="headers" id="4"/>
+      <elementValue elementRef="LENGTH" value="10" id="5"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="View result"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_2">
+      <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="headers" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="HTTPClient" componentVersion="5" offsetLabelX="6" offsetLabelY="14" posX="560" posY="80">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHTTPClient_3" show="false"/>
+    <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="aHR0cC1zdHVkaW8jSFRUUCNDbGllbnQ" show="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="TEXT" name="LABEL" value="Send Teams error message"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.base" value="context.teams_base_url"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.type" value="NoAuth"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.apiKey.destination" value="HEADERS" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.apiKey.headerName" value="Authorization" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.apiKey.queryName" value="apikey" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.apiKey.prefix" value="Bearer" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.oauth20.flow" value="CLIENT_CREDENTIAL" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.oauth20.authenticationType" value="FORM" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.datastore.authentication.oauth20.params" show="false"/>
+    <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataset.methodType" value="POST"/>
+    <elementParameter field="TEXT" name="configuration.dataset.resource" value="context.teams_path"/>
+    <elementParameter field="CHECK" name="configuration.dataset.hasPathParams" value="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.pathParams" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.hasQueryParams" value="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.queryParams" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.hasHeaders" value="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.headers" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.hasBody" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.body.type" value="JSON"/>
+    <elementParameter field="TACOKIT_TEXT_AREA" name="configuration.dataset.body.textValue" value="{&#xD;&#xA;  &quot;type&quot;: &quot;message&quot;,&#xD;&#xA;  &quot;attachments&quot;: [&#xD;&#xA;    {&#xD;&#xA;      &quot;contentType&quot;: &quot;application/vnd.microsoft.card.adaptive&quot;,&#xD;&#xA;      &quot;content&quot;: {&#xD;&#xA;        &quot;type&quot;: &quot;AdaptiveCard&quot;,&#xD;&#xA;        &quot;$schema&quot;: &quot;http://adaptivecards.io/schemas/adaptive-card.json&quot;,&#xD;&#xA;        &quot;version&quot;: &quot;1.4&quot;,&#xD;&#xA;        &quot;body&quot;: [&#xD;&#xA;          { &quot;type&quot;: &quot;TextBlock&quot;, &quot;text&quot;: &quot;Test message from Postman&quot;, &quot;wrap&quot;: true }&#xD;&#xA;        ]&#xD;&#xA;      }&#xD;&#xA;    }&#xD;&#xA;  ]&#xD;&#xA;}" show="false"/>
+    <elementParameter field="MEMO" name="configuration.dataset.body.jsonValue" value="&quot;{&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;message\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;attachments\&quot;: [{&quot;&#xD;&#xA;+ &quot;\&quot;contentType\&quot;: \&quot;application/vnd.microsoft.card.adaptive\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;content\&quot;: {&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;AdaptiveCard\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;$schema\&quot;: \&quot;http://adaptivecards.io/schemas/adaptive-card.json\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;version\&quot;: \&quot;1.4\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;body\&quot;: [{&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;TextBlock\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;text\&quot;: \&quot;\u274C Dev - Talend job failed\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;weight\&quot;: \&quot;Bolder\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;size\&quot;: \&quot;Medium\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;color\&quot;: \&quot;Attention\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;wrap\&quot;: true&quot;&#xD;&#xA;+ &quot;},{&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;FactSet\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;facts\&quot;: [&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Job:\&quot;, \&quot;value\&quot;: \&quot;Job_3_get_token_and_send_payload\&quot;},&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Component:\&quot;, \&quot;value\&quot;: \&quot;tHTTPClient_1_ERROR_MESSAGE\&quot;},&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Status:\&quot;, \&quot;value\&quot;: \&quot;Failed\&quot;},&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Time:\&quot;, \&quot;value\&quot;: \&quot;&quot; + java.time.ZonedDateTime.now(java.time.ZoneId.of(&quot;Australia/Sydney&quot;)).format(java.time.format.DateTimeFormatter.ofPattern(&quot;yyyy-MM-dd HH:mm:ss z&quot;)) + &quot;\&quot;},&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Error:\&quot;, \&quot;value\&quot;: \&quot;&quot; + (String)globalMap.get(&quot;errorMsg&quot;) + &quot;\&quot;}&quot;&#xD;&#xA;+ &quot;]&quot;&#xD;&#xA;+ &quot;}]&quot;&#xD;&#xA;+ &quot;}&quot;&#xD;&#xA;+ &quot;}]&quot;&#xD;&#xA;+ &quot;}&quot;"/>
+    <elementParameter field="TABLE" name="configuration.dataset.body.params" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.format" value="RAW_TEXT"/>
+    <elementParameter field="TEXT" name="configuration.dataset.dssl" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.returnedContent" value="STATUS_HEADERS_BODY"/>
+    <elementParameter field="CHECK" name="configuration.dataset.outputKeyValuePairs" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.forwardInput" value="false" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.keyValuePairs" show="false"/>
+    <elementParameter field="CHECK" name="configuration.downloadFile" value="false"/>
+    <elementParameter field="CHECK" name="configuration.specifyFileName" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.useCacheToSave" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.datastore.authentication.oauth20.customizeHeaderName" value="false" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.oauth20.customHeaderName" value="Authorization" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.datastore.authentication.oauth20.customizeTokenPrefix" value="false" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.oauth20.customTokenPrefix" value="Bearer" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.connectionTimeout" value="30000"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.receiveTimeout" value="120000"/>
+    <elementParameter field="CHECK" name="configuration.dataset.datastore.bypassCertificateValidation" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.datastore.useProxy" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.proxyConfiguration.proxyType" value="HTTP" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.proxyConfiguration.proxyPort" value="443" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.datastore.hasRetry" value="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.retry.backoff" value="500" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.retry.factor" value="1" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.retry.maxAttempts" value="2" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.acceptRedirections" value="true"/>
+    <elementParameter field="TEXT" name="configuration.dataset.maxRedirectOnSameURL" value="3"/>
+    <elementParameter field="CHECK" name="configuration.dataset.onlySameHost" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.hasPagination" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.pagination.strategy" value="OFFSET_LIMIT" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.pagination.offsetLimitStrategyConfig.location" value="QUERY_PARAMETERS" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.pagination.markerStrategyConfig.location" value="QUERY_PARAMETERS" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.pagination.markerStrategyConfig.limitValue" value="100" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.jsonForceDouble" value="true" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.normalizeJson" value="false" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.jsonCastConfigurations" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.jsonFilterConfigurations" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.enforceNumberAsString" value="true" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.useCookies" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.saveCookies" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.disableChunkedEncoding" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.httpVersion" value="HTTP_2"/>
+    <elementParameter field="CHECK" name="configuration.uploadFiles" value="false"/>
+    <elementParameter field="TABLE" name="configuration.uploadFileTable" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dieOnError" value="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataset.__version" value="5" show="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataset.datastore.__version" value="5" show="false"/>
+    <metadata connector="LOOKUP" name="LOOKUP"/>
+    <metadata connector="MERGE" name="MERGE"/>
+    <metadata connector="REJECT" name="REJECT"/>
+    <metadata connector="FLOW" name="tHTTPClient_3">
+      <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="headers" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="760" posY="80">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_3" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="body" id="0"/>
+      <elementValue elementRef="LENGTH" value="10" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="status" id="2"/>
+      <elementValue elementRef="LENGTH" value="10" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="headers" id="4"/>
+      <elementValue elementRef="LENGTH" value="10" id="5"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="View result"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_3">
+      <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="headers" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="80" posY="400">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1" show="false"/>
+    <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
+    <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
+    <elementParameter field="TABLE" name="VALUES">
+      <elementValue elementRef="SCHEMA_COLUMN" value="CompanyID" id="0"/>
+      <elementValue elementRef="VALUE" value="1234" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CompanyCustom3" id="2"/>
+      <elementValue elementRef="VALUE" value="1234" id="3"/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
+    <elementParameter field="TABLE" name="INTABLE" show="false"/>
+    <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;" show="false"/>
+    <elementParameter field="MEMO" name="INLINECONTENT" value="" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFixedFlowInput_1">
+      <column comment="" key="false" length="-1" name="CompanyID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CompanyCustom3" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="320" posY="400">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_bgvoENciEfGsM6Y8Dt6xKA-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="convert datatypes"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="Converted_data_types">
+      <column comment="" key="false" length="-1" name="CompanyID" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CompanyCustom3" nullable="true" pattern="" precision="-1" sourceType="DECIMAL" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="Converted_data_types">
+        <mapperTableEntries name="CompanyID" expression="row2.CompanyID " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="CompanyCustom3" expression="row2.CompanyCustom3 == null ? null : row2.CompanyCustom3.intValue() " type="id_Integer" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="CompanyID" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="CompanyCustom3" type="id_Integer" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="600" posY="400">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_2" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_bgvoENciEfGsM6Y8Dt6xKA-tMap_2-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="create netsuite payload"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="netsuite_payload">
+      <column comment="" key="false" length="-1" name="netsuite_payload" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="netsuite_payload">
+        <mapperTableEntries name="netsuite_payload" expression="&quot;{\&quot;nsVendorID\&quot;: &quot; + Converted_data_types.CompanyCustom3 + &quot;, \&quot;etoCompanyID\&quot;: \&quot;&quot; + Converted_data_types.CompanyID + &quot;\&quot;}&quot; " type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="Converted_data_types" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="CompanyID" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="CompanyCustom3" type="id_Integer" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="800" posY="400">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="netsuite_payload" id="0"/>
+      <elementValue elementRef="LENGTH" value="10" id="1"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_1">
+      <column comment="" key="false" length="-1" name="netsuite_payload" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="HTTPClient" componentVersion="5" offsetLabelX="0" offsetLabelY="0" posX="1000" posY="400">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHTTPClient_4" show="false"/>
+    <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="aHR0cC1zdHVkaW8jSFRUUCNDbGllbnQ" show="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="TEXT" name="LABEL" value="send update to Netsuite"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.base" value="https://847280-sb1.restlets.api.netsuite.com/app/site/hosting"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.type" value="Bearer"/>
+    <elementParameter field="PASSWORD" name="configuration.dataset.datastore.authentication.bearerToken" value="context.new_bearer_token"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.apiKey.destination" value="HEADERS" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.apiKey.headerName" value="Authorization" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.apiKey.queryName" value="apikey" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.apiKey.prefix" value="Bearer" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.oauth20.flow" value="CLIENT_CREDENTIAL" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.oauth20.authenticationType" value="BASIC" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.datastore.authentication.oauth20.params" show="false"/>
+    <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataset.methodType" value="POST"/>
+    <elementParameter field="TEXT" name="configuration.dataset.resource" value="/restlet.nl?script=2982&amp;deploy=1"/>
+    <elementParameter field="CHECK" name="configuration.dataset.hasPathParams" value="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.pathParams" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.hasQueryParams" value="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.queryParams" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.hasHeaders" value="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.headers" show="false">
+      <elementValue elementRef="configuration.dataset.headers[].key" value="&quot;realm&quot;" id="0"/>
+      <elementValue elementRef="configuration.dataset.headers[].value" value="847280_SB1" id="1"/>
+      <elementValue elementRef="configuration.dataset.headers[].query" value="MAIN" id="2"/>
+      <elementValue elementRef="configuration.dataset.headers[].key" value="&quot;oauth_consumer_key&quot;" id="3"/>
+      <elementValue elementRef="configuration.dataset.headers[].value" value="36b9738ac8559b400408daaca9c22dc6cdcffc3c6fdd633c7e081038788c34df" id="4"/>
+      <elementValue elementRef="configuration.dataset.headers[].query" value="MAIN" id="5"/>
+      <elementValue elementRef="configuration.dataset.headers[].key" value="&quot;oauth_token&quot;" id="6"/>
+      <elementValue elementRef="configuration.dataset.headers[].value" value="fbd296529aab911d8a977fa8385e5f97da1d70db3313f5c2d817607bf5c48909" id="7"/>
+      <elementValue elementRef="configuration.dataset.headers[].query" value="MAIN" id="8"/>
+      <elementValue elementRef="configuration.dataset.headers[].key" value="&quot;oauth_nonce&quot;" id="9"/>
+      <elementValue elementRef="configuration.dataset.headers[].value" value="e9d588816ccbb1f76441f283632f0dca" id="10"/>
+      <elementValue elementRef="configuration.dataset.headers[].query" value="MAIN" id="11"/>
+      <elementValue elementRef="configuration.dataset.headers[].key" value="&quot;oauth_timestamp&quot;" id="12"/>
+      <elementValue elementRef="configuration.dataset.headers[].value" value="1788397938" id="13"/>
+      <elementValue elementRef="configuration.dataset.headers[].query" value="MAIN" id="14"/>
+      <elementValue elementRef="configuration.dataset.headers[].key" value="&quot;oauth_signature_method&quot;" id="15"/>
+      <elementValue elementRef="configuration.dataset.headers[].value" value="HMAC-SHA256" id="16"/>
+      <elementValue elementRef="configuration.dataset.headers[].query" value="MAIN" id="17"/>
+      <elementValue elementRef="configuration.dataset.headers[].key" value="&quot;oauth_version&quot;" id="18"/>
+      <elementValue elementRef="configuration.dataset.headers[].value" value="1.0" id="19"/>
+      <elementValue elementRef="configuration.dataset.headers[].query" value="MAIN" id="20"/>
+      <elementValue elementRef="configuration.dataset.headers[].key" value="&quot;oauth_signature&quot;" id="21"/>
+      <elementValue elementRef="configuration.dataset.headers[].value" value="486miyjNtb%2BYJPP00pIcyKtxqjPNCxHMjv4E7RqIt2o%3D" id="22"/>
+      <elementValue elementRef="configuration.dataset.headers[].query" value="MAIN" id="23"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="configuration.dataset.hasBody" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.body.type" value="JSON"/>
+    <elementParameter field="MEMO" name="configuration.dataset.body.jsonValue" value="{&#xD;&#xA;  input.netsuite_payload&#xD;&#xA;}"/>
+    <elementParameter field="TABLE" name="configuration.dataset.body.params" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.format" value="RAW_TEXT"/>
+    <elementParameter field="TEXT" name="configuration.dataset.dssl" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.returnedContent" value="STATUS_HEADERS_BODY"/>
+    <elementParameter field="CHECK" name="configuration.dataset.outputKeyValuePairs" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.forwardInput" value="true" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.keyValuePairs" show="false"/>
+    <elementParameter field="CHECK" name="configuration.downloadFile" value="false"/>
+    <elementParameter field="CHECK" name="configuration.specifyFileName" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.useCacheToSave" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.datastore.authentication.oauth20.customizeHeaderName" value="false" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.oauth20.customHeaderName" value="Authorization" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.datastore.authentication.oauth20.customizeTokenPrefix" value="false" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.oauth20.customTokenPrefix" value="Bearer" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.connectionTimeout" value="30000"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.receiveTimeout" value="120000"/>
+    <elementParameter field="CHECK" name="configuration.dataset.datastore.bypassCertificateValidation" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.datastore.useProxy" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.proxyConfiguration.proxyType" value="HTTP" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.proxyConfiguration.proxyPort" value="443" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.datastore.hasRetry" value="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.retry.backoff" value="500" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.retry.factor" value="1" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.retry.maxAttempts" value="2" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.acceptRedirections" value="true"/>
+    <elementParameter field="TEXT" name="configuration.dataset.maxRedirectOnSameURL" value="3"/>
+    <elementParameter field="CHECK" name="configuration.dataset.onlySameHost" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.hasPagination" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.pagination.strategy" value="OFFSET_LIMIT" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.pagination.offsetLimitStrategyConfig.location" value="QUERY_PARAMETERS" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.pagination.markerStrategyConfig.location" value="QUERY_PARAMETERS" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.pagination.markerStrategyConfig.limitValue" value="100" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.jsonForceDouble" value="true" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.normalizeJson" value="false" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.jsonCastConfigurations" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.jsonFilterConfigurations" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.enforceNumberAsString" value="true" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.useCookies" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.saveCookies" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.disableChunkedEncoding" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.httpVersion" value="HTTP_2"/>
+    <elementParameter field="CHECK" name="configuration.uploadFiles" value="false"/>
+    <elementParameter field="TABLE" name="configuration.uploadFileTable" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dieOnError" value="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataset.__version" value="5" show="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataset.datastore.__version" value="5" show="false"/>
+    <metadata connector="LOOKUP" name="LOOKUP"/>
+    <metadata connector="MERGE" name="MERGE"/>
+    <metadata connector="REJECT" name="REJECT"/>
+    <metadata connector="FLOW" name="tHTTPClient_4">
+      <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="headers" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="netsuite_payload" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1280" posY="400">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_4" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="status" id="0"/>
+      <elementValue elementRef="LENGTH" value="10" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="headers" id="2"/>
+      <elementValue elementRef="LENGTH" value="10" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="body" id="4"/>
+      <elementValue elementRef="LENGTH" value="10" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="netsuite_payload" id="6"/>
+      <elementValue elementRef="LENGTH" value="10" id="7"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="response"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_4">
+      <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="headers" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="netsuite_payload" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tLibraryLoad_1" offsetLabelX="0" offsetLabelY="0" source="tLibraryLoad_1" target="tJava_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tHTTPClient_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_2" offsetLabelX="0" offsetLabelY="0" source="tJava_2" target="tHTTPClient_2">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_3" offsetLabelX="0" offsetLabelY="0" source="tJava_3" target="tHTTPClient_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row26" lineStyle="0" metaname="tHTTPClient_1" offsetLabelX="0" offsetLabelY="0" source="tHTTPClient_1" target="tExtractJSONFields_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row26" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_ERROR" label="OnComponentError" lineStyle="5" metaname="tHTTPClient_1" offsetLabelX="0" offsetLabelY="0" source="tHTTPClient_1" target="tJava_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentError1" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tHTTPClient_1" offsetLabelX="0" offsetLabelY="0" source="tHTTPClient_1" target="tFixedFlowInput_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk3" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="response_data" lineStyle="0" metaname="tExtractJSONFields_1" offsetLabelX="0" offsetLabelY="0" source="tExtractJSONFields_1" target="tJavaRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="response_data" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row27" lineStyle="0" metaname="tHTTPClient_2" offsetLabelX="0" offsetLabelY="0" source="tHTTPClient_2" target="tLogRow_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="body" id="0"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+      <elementValue elementRef="TRACE_COLUMN" value="headers" id="3"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="4"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="5"/>
+      <elementValue elementRef="TRACE_COLUMN" value="status" id="6"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="7"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="8"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row27" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row28" lineStyle="0" metaname="tHTTPClient_3" offsetLabelX="0" offsetLabelY="0" source="tHTTPClient_3" target="tLogRow_3">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="body" id="0"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+      <elementValue elementRef="TRACE_COLUMN" value="headers" id="3"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="4"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="5"/>
+      <elementValue elementRef="TRACE_COLUMN" value="status" id="6"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="7"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="8"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row28" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tMap_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="CompanyID" id="0"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+      <elementValue elementRef="TRACE_COLUMN" value="CompanyCustom3" id="3"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="4"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="5"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="Converted_data_types" lineStyle="0" metaname="Converted_data_types" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tMap_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Converted_data_types" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="netsuite_payload" lineStyle="0" metaname="netsuite_payload" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tLogRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="netsuite_payload" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tLogRow_1" offsetLabelX="0" offsetLabelY="0" source="tLogRow_1" target="tHTTPClient_4">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tHTTPClient_4" offsetLabelX="0" offsetLabelY="0" source="tHTTPClient_4" target="tLogRow_4">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="headers" id="0"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+      <elementValue elementRef="TRACE_COLUMN" value="body" id="3"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="4"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="5"/>
+      <elementValue elementRef="TRACE_COLUMN" value="status" id="6"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="7"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="8"/>
+      <elementValue elementRef="TRACE_COLUMN" value="netsuite_payload" id="9"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="10"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="11"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <note opaque="false" posX="920" posY="160" sizeHeight="161" sizeWidth="201" text="&lt;----&#xD;&#xA;This flow here acquires &#xD;&#xA;a netsuite token to make&#xD;&#xA;api calls possible"/>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLibraryLoad_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_3" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHTTPClient_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHTTPClient_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHTTPClient_3" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
 </talendfile:ProcessType>
