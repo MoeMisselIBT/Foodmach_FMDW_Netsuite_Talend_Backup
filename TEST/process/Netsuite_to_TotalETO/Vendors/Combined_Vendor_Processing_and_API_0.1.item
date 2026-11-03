@@ -4009,7 +4009,7 @@
       </column>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="update_integration_table">
         <mapperTableEntries name="CompanyID" expression="company_table.CompanyID " type="id_Integer" nullable="true"/>
@@ -8898,7 +8898,7 @@
       <column comment="" key="false" length="-1" name="CompanyCustom3" nullable="true" pattern="" precision="-1" sourceType="DECIMAL" type="id_Integer" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="Converted_data_types">
         <mapperTableEntries name="CompanyID" expression="row25.CompanyID " type="id_Integer" nullable="true"/>
@@ -8934,7 +8934,7 @@
       <column comment="" key="false" length="-1" name="netsuite_payload" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="copyOfnetsuite_payload">
         <mapperTableEntries name="netsuite_payload" expression="&quot;{\&quot;nsVendorID\&quot;: &quot; + Converted_data_types.CompanyCustom3 + &quot;, \&quot;etoCompanyID\&quot;: \&quot;&quot; + Converted_data_types.CompanyID + &quot;\&quot;}&quot; " type="id_String" nullable="true"/>
@@ -9115,6 +9115,7 @@
   </node>
   <node componentName="tLibraryLoad" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1760" posY="960">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLibraryLoad_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="MODULE_LIST" name="LIBRARY" value="&quot;mvn:com.nimbusds/nimbus-jose-jwt/10.0.2/jar&quot;"/>
     <elementParameter field="TABLE" name="HOTLIBS"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
@@ -9654,7 +9655,7 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row17" show="false"/>
   </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBOutput_2" offsetLabelX="0" offsetLabelY="0" source="tDBOutput_2" target="tLibraryLoad_1">
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBOutput_2" offsetLabelX="0" offsetLabelY="0" source="tDBOutput_2" target="tJava_14">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk18" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tHashInput_1" offsetLabelX="0" offsetLabelY="0" source="tHashInput_1" target="tJavaRow_2">
@@ -9930,9 +9931,6 @@
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row32" show="false"/>
-  </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tLibraryLoad_1" offsetLabelX="0" offsetLabelY="0" source="tLibraryLoad_1" target="tJava_14">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk6" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_14" offsetLabelX="0" offsetLabelY="0" source="tJava_14" target="tHTTPClient_9">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk7" show="false"/>
