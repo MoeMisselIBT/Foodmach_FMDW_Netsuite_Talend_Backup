@@ -63,6 +63,12 @@
     }, {
       "id" : "_9dCJ4NNdEfGRPYW6g8hdOg",
       "name" : "teams_base_url"
+    }, {
+      "id" : "_uIgwQdcpEfGsM6Y8Dt6xKA",
+      "name" : "netsuite_api_path"
+    }, {
+      "id" : "_up0GgNcpEfGsM6Y8Dt6xKA",
+      "name" : "netsuite_api_url"
     } ]
   }, {
     "contextName" : "Test",
@@ -127,6 +133,12 @@
     }, {
       "id" : "_9dCJ5NNdEfGRPYW6g8hdOg",
       "name" : "teams_base_url"
+    }, {
+      "id" : "_uIgwRdcpEfGsM6Y8Dt6xKA",
+      "name" : "netsuite_api_path"
+    }, {
+      "id" : "_up0tkNcpEfGsM6Y8Dt6xKA",
+      "name" : "netsuite_api_url"
     } ]
   }, {
     "contextName" : "Prod",
@@ -191,6 +203,12 @@
     }, {
       "id" : "_9dCJ4tNdEfGRPYW6g8hdOg",
       "name" : "teams_base_url"
+    }, {
+      "id" : "_uIgwQ9cpEfGsM6Y8Dt6xKA",
+      "name" : "netsuite_api_path"
+    }, {
+      "id" : "_up0GgdcpEfGsM6Y8Dt6xKA",
+      "name" : "netsuite_api_url"
     } ]
   } ]
 }

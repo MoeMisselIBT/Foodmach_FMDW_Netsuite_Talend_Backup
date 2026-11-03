@@ -62,7 +62,7 @@
       "name" : "dw_db"
     }, {
       "id" : "_WzePsNNIEfGRPYW6g8hdOg",
-      "name" : "api_url"
+      "name" : "netsuite_token_api_url"
     }, {
       "id" : "_hCajYdNdEfGRPYW6g8hdOg",
       "name" : "teams_path"
@@ -132,7 +132,7 @@
       "name" : "dw_db"
     }, {
       "id" : "_WzePstNIEfGRPYW6g8hdOg",
-      "name" : "api_url"
+      "name" : "netsuite_token_api_url"
     }, {
       "id" : "_hCajZdNdEfGRPYW6g8hdOg",
       "name" : "teams_path"
@@ -202,7 +202,7 @@
       "name" : "dw_db"
     }, {
       "id" : "_WzePsdNIEfGRPYW6g8hdOg",
-      "name" : "api_url"
+      "name" : "netsuite_token_api_url"
     }, {
       "id" : "_hCajY9NdEfGRPYW6g8hdOg",
       "name" : "teams_path"

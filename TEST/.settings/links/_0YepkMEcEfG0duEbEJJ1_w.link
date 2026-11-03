@@ -65,7 +65,7 @@
       "name" : "teams_path"
     }, {
       "id" : "_WzePsNNIEfGRPYW6g8hdOg",
-      "name" : "api_url"
+      "name" : "netsuite_token_api_url"
     }, {
       "id" : "_hCajYNNdEfGRPYW6g8hdOg",
       "name" : "teams_base_url"
@@ -135,7 +135,7 @@
       "name" : "teams_path"
     }, {
       "id" : "_WzePstNIEfGRPYW6g8hdOg",
-      "name" : "api_url"
+      "name" : "netsuite_token_api_url"
     }, {
       "id" : "_hCajZNNdEfGRPYW6g8hdOg",
       "name" : "teams_base_url"
@@ -205,7 +205,7 @@
       "name" : "teams_path"
     }, {
       "id" : "_WzePsdNIEfGRPYW6g8hdOg",
-      "name" : "api_url"
+      "name" : "netsuite_token_api_url"
     }, {
       "id" : "_hCajYtNdEfGRPYW6g8hdOg",
       "name" : "teams_base_url"

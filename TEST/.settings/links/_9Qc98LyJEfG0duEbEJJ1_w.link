@@ -62,13 +62,19 @@
       "name" : "dw_pwd"
     }, {
       "id" : "_WzePsNNIEfGRPYW6g8hdOg",
-      "name" : "api_url"
+      "name" : "netsuite_token_api_url"
     }, {
       "id" : "_hCajYdNdEfGRPYW6g8hdOg",
       "name" : "teams_path"
     }, {
       "id" : "_hCajYNNdEfGRPYW6g8hdOg",
       "name" : "teams_base_url"
+    }, {
+      "id" : "_MM8CodcpEfGsM6Y8Dt6xKA",
+      "name" : "netsuite_api_path"
+    }, {
+      "id" : "_MM8CoNcpEfGsM6Y8Dt6xKA",
+      "name" : "netsuite_api_url"
     } ]
   }, {
     "contextName" : "Test",
@@ -132,13 +138,19 @@
       "name" : "dw_pwd"
     }, {
       "id" : "_WzePstNIEfGRPYW6g8hdOg",
-      "name" : "api_url"
+      "name" : "netsuite_token_api_url"
     }, {
       "id" : "_hCajZdNdEfGRPYW6g8hdOg",
       "name" : "teams_path"
     }, {
       "id" : "_hCajZNNdEfGRPYW6g8hdOg",
       "name" : "teams_base_url"
+    }, {
+      "id" : "_MM8ps9cpEfGsM6Y8Dt6xKA",
+      "name" : "netsuite_api_path"
+    }, {
+      "id" : "_MM8pstcpEfGsM6Y8Dt6xKA",
+      "name" : "netsuite_api_url"
     } ]
   }, {
     "contextName" : "Prod",
@@ -202,13 +214,19 @@
       "name" : "dw_pwd"
     }, {
       "id" : "_WzePsdNIEfGRPYW6g8hdOg",
-      "name" : "api_url"
+      "name" : "netsuite_token_api_url"
     }, {
       "id" : "_hCajY9NdEfGRPYW6g8hdOg",
       "name" : "teams_path"
     }, {
       "id" : "_hCajYtNdEfGRPYW6g8hdOg",
       "name" : "teams_base_url"
+    }, {
+      "id" : "_MM8psdcpEfGsM6Y8Dt6xKA",
+      "name" : "netsuite_api_path"
+    }, {
+      "id" : "_MM8psNcpEfGsM6Y8Dt6xKA",
+      "name" : "netsuite_api_url"
     } ]
   } ]
 }

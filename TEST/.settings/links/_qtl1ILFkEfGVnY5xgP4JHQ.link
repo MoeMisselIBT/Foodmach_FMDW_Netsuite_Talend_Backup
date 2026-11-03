@@ -61,8 +61,8 @@
       "id" : "_EW6DkLFjEfGVnY5xgP4JHQ",
       "name" : "row_count"
     }, {
-      "id" : "__WLk4NcjEfGsM6Y8Dt6xKA",
-      "name" : "api_url"
+      "id" : "_9SMvYNctEfGsM6Y8Dt6xKA",
+      "name" : "netsuite_token_api_url"
     }, {
       "id" : "__WLk4dcjEfGsM6Y8Dt6xKA",
       "name" : "client_id"
@@ -143,8 +143,8 @@
       "id" : "_EW6qoLFjEfGVnY5xgP4JHQ",
       "name" : "row_count"
     }, {
-      "id" : "__WLk59cjEfGsM6Y8Dt6xKA",
-      "name" : "api_url"
+      "id" : "_9SMvYdctEfGsM6Y8Dt6xKA",
+      "name" : "netsuite_token_api_url"
     }, {
       "id" : "__WLk6NcjEfGsM6Y8Dt6xKA",
       "name" : "client_id"
@@ -225,8 +225,8 @@
       "id" : "_EW6qobFjEfGVnY5xgP4JHQ",
       "name" : "row_count"
     }, {
-      "id" : "__WLk7tcjEfGsM6Y8Dt6xKA",
-      "name" : "api_url"
+      "id" : "_9SMvYtctEfGsM6Y8Dt6xKA",
+      "name" : "netsuite_token_api_url"
     }, {
       "id" : "__WLk79cjEfGsM6Y8Dt6xKA",
       "name" : "client_id"
@@ -307,8 +307,8 @@
       "id" : "_EW6qorFjEfGVnY5xgP4JHQ",
       "name" : "row_count"
     }, {
-      "id" : "__WLk9dcjEfGsM6Y8Dt6xKA",
-      "name" : "api_url"
+      "id" : "_9SMvY9ctEfGsM6Y8Dt6xKA",
+      "name" : "netsuite_token_api_url"
     }, {
       "id" : "__WLk9tcjEfGsM6Y8Dt6xKA",
       "name" : "client_id"
@@ -389,8 +389,8 @@
       "id" : "_roYT79Z7EfGsM6Y8Dt6xKA",
       "name" : "row_count"
     }, {
-      "id" : "__WLk_NcjEfGsM6Y8Dt6xKA",
-      "name" : "api_url"
+      "id" : "_9SMvZNctEfGsM6Y8Dt6xKA",
+      "name" : "netsuite_token_api_url"
     }, {
       "id" : "__WLk_dcjEfGsM6Y8Dt6xKA",
       "name" : "client_id"
@@ -471,8 +471,8 @@
       "id" : "_roYUA9Z7EfGsM6Y8Dt6xKA",
       "name" : "row_count"
     }, {
-      "id" : "__WLlA9cjEfGsM6Y8Dt6xKA",
-      "name" : "api_url"
+      "id" : "_9SMvZdctEfGsM6Y8Dt6xKA",
+      "name" : "netsuite_token_api_url"
     }, {
       "id" : "__WLlBNcjEfGsM6Y8Dt6xKA",
       "name" : "client_id"
