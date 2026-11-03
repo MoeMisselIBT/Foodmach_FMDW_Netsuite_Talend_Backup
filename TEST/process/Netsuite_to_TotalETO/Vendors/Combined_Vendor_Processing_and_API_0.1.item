@@ -2765,7 +2765,7 @@
       </column>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="2680" posY="-120">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="2920" posY="-240">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_10" show="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
@@ -3069,7 +3069,7 @@
       <column comment="" key="false" length="-1" name="tblSupplier_currency" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="2680" posY="40">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="2920" posY="-120">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_6" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -3378,7 +3378,7 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="2440" posY="40">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="2480" posY="-120">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_7" show="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
@@ -3949,9 +3949,12 @@
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="-1" name="tblSupplier_currency" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="CompanyCustom3" nullable="true" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="update_integration_table">
         <mapperTableEntries name="CompanyID" expression="company_table.CompanyID " type="id_Integer" nullable="true"/>
@@ -3960,6 +3963,7 @@
         <mapperTableEntries name="TimeLoadedIntoTotalETOUTC" expression="integration_table.TimeLoadedIntoTotalETOUTC " type="id_Date" nullable="true"/>
         <mapperTableEntries name="CDefaultTerms" expression="company_table.CDefaultTerms " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="tblSupplier_currency" expression="company_table.tblSupplier_currency " type="id_String" nullable="true"/>
+        <mapperTableEntries name="CompanyCustom3" expression="company_table.CompanyCustom3 " type="id_BigDecimal" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="company_table" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="CompanyID" type="id_Integer"/>
@@ -4387,6 +4391,8 @@
       <elementValue elementRef="LENGTH" value="10" id="9"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="tblSupplier_currency" id="10"/>
       <elementValue elementRef="LENGTH" value="10" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CompanyCustom3" id="12"/>
+      <elementValue elementRef="LENGTH" value="10" id="13"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
@@ -4407,11 +4413,14 @@
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="-1" name="tblSupplier_currency" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="CompanyCustom3" nullable="true" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
     </metadata>
   </node>
   <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1360" posY="40">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_5" show="false"/>
-    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="output_row.LoadedIntoTotalETO = true;&#xD;&#xA;output_row.TimeLoadedIntoTotalETOUTC = java.sql.Timestamp.valueOf(java.time.LocalDateTime.now(java.time.ZoneOffset.UTC));&#xD;&#xA;output_row.IntegrationID = input_row.IntegrationID;&#xD;&#xA;output_row.CompanyID = input_row.CompanyID;&#xD;&#xA;output_row.tblSupplier_currency = input_row.tblSupplier_currency;&#xD;&#xA;output_row.CDefaultTerms = input_row.CDefaultTerms;"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="output_row.LoadedIntoTotalETO = true;&#xD;&#xA;output_row.TimeLoadedIntoTotalETOUTC = java.sql.Timestamp.valueOf(java.time.LocalDateTime.now(java.time.ZoneOffset.UTC));&#xD;&#xA;output_row.IntegrationID = input_row.IntegrationID;&#xD;&#xA;output_row.CompanyID = input_row.CompanyID;&#xD;&#xA;output_row.tblSupplier_currency = input_row.tblSupplier_currency;&#xD;&#xA;output_row.CDefaultTerms = input_row.CDefaultTerms;&#xD;&#xA;output_row.CompanyCustom3 = input_row.CompanyCustom3;"/>
     <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="LABEL" value="set_loaded_flag_to_true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -4428,6 +4437,9 @@
       </column>
       <column comment="" key="false" length="-1" name="tblSupplier_currency" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="CDefaultTerms" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="CompanyCustom3" nullable="true" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
     </metadata>
@@ -4458,13 +4470,15 @@
       <elementValue elementRef="LENGTH" value="10" id="9"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="CDefaultTerms" id="10"/>
       <elementValue elementRef="LENGTH" value="10" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CompanyCustom3" id="12"/>
+      <elementValue elementRef="LENGTH" value="10" id="13"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
     <elementParameter field="TEXT" name="LABEL" value="final_table"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="tblCompany" name="tLogRow_2">
-      <column comment="" key="false" length="-1" name="CompanyID" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CompanyID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="IntegrationID" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
@@ -4476,6 +4490,9 @@
       </column>
       <column comment="" key="false" length="-1" name="tblSupplier_currency" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="CDefaultTerms" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="CompanyCustom3" nullable="true" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
     </metadata>
@@ -4493,7 +4510,7 @@
     <elementParameter field="TEXT" name="LABEL" value="new_vendors_data_list"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="tblCompany" name="tHashOutput_2">
-      <column comment="" key="false" length="-1" name="CompanyID" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CompanyID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="IntegrationID" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
@@ -4505,6 +4522,9 @@
       </column>
       <column comment="" key="false" length="-1" name="tblSupplier_currency" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="CDefaultTerms" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="CompanyCustom3" nullable="true" pattern="" precision="6" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
     </metadata>
@@ -5287,11 +5307,12 @@
       <column comment="" key="false" length="23" name="TimeLoadedIntoTotalETOUTC" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="3" sourceType="DATETIME2" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="tblSupplier_currency" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="CDefaultTerms" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CompanyCustom3" nullable="true" pattern="" precision="-1" sourceType="" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1280" posY="800">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_6" show="false"/>
-    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="output_row.LoadedIntoTotalETO = true;&#xD;&#xA;output_row.TimeLoadedIntoTotalETOUTC = java.sql.Timestamp.valueOf(java.time.LocalDateTime.now(java.time.ZoneOffset.UTC));&#xD;&#xA;output_row.IntegrationID = input_row.IntegrationID;&#xD;&#xA;output_row.CompanyID = input_row.CompanyID;&#xD;&#xA;output_row.tblSupplier_currency = input_row.tblSupplier_currency;&#xD;&#xA;output_row.CDefaultTerms = input_row.CDefaultTerms;"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="output_row.LoadedIntoTotalETO = true;&#xD;&#xA;output_row.TimeLoadedIntoTotalETOUTC = java.sql.Timestamp.valueOf(java.time.LocalDateTime.now(java.time.ZoneOffset.UTC));&#xD;&#xA;output_row.IntegrationID = input_row.IntegrationID;&#xD;&#xA;output_row.CompanyID = input_row.CompanyID;&#xD;&#xA;output_row.tblSupplier_currency = input_row.tblSupplier_currency;&#xD;&#xA;output_row.CDefaultTerms = input_row.CDefaultTerms;&#xD;&#xA;output_row.CompanyCustom3 = input_row.CompanyCustom3;"/>
     <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="LABEL" value="set_loaded_flag_to_true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -5310,6 +5331,7 @@
       <column comment="" key="false" length="10" name="CDefaultTerms" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
+      <column comment="" key="false" length="-1" name="CompanyCustom3" nullable="true" pattern="" precision="-1" sourceType="" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="50" offsetLabelY="0" posX="1520" posY="800">
@@ -5338,18 +5360,29 @@
       <elementValue elementRef="LENGTH" value="10" id="9"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="CDefaultTerms" id="10"/>
       <elementValue elementRef="LENGTH" value="10" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CompanyCustom3" id="12"/>
+      <elementValue elementRef="LENGTH" value="10" id="13"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
     <elementParameter field="TEXT" name="LABEL" value="set_integation_table_to_loaded"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="metadata" name="tLogRow_6">
-      <column comment="" key="false" length="-1" name="CompanyID" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="IntegrationID" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="'(0)'" key="false" length="1" name="LoadedIntoTotalETO" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true"/>
-      <column comment="" key="false" length="23" name="TimeLoadedIntoTotalETOUTC" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="3" sourceType="DATETIME2" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="tblSupplier_currency" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CDefaultTerms" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    <metadata connector="FLOW" label="tblCompany" name="tLogRow_6">
+      <column comment="" key="false" length="-1" name="CompanyID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="IntegrationID" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(0)'" key="false" length="1" name="LoadedIntoTotalETO" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="TimeLoadedIntoTotalETOUTC" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="3" sourceType="DATETIME2" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="-1" name="tblSupplier_currency" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="CDefaultTerms" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="-1" name="CompanyCustom3" nullable="true" pattern="" precision="-1" sourceType="" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1760" posY="800">
@@ -5424,6 +5457,11 @@
       <elementValue elementRef="DELETE_KEY" value="false" id="27"/>
       <elementValue elementRef="UPDATABLE" value="false" id="28"/>
       <elementValue elementRef="INSERTABLE" value="false" id="29"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CompanyCustom3" id="30"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="31"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="32"/>
+      <elementValue elementRef="UPDATABLE" value="false" id="33"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="34"/>
     </elementParameter>
     <elementParameter field="CHECK" name="IGNORE_DATE_OUTOF_RANGE" value="false"/>
     <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
@@ -5449,6 +5487,7 @@
       <column comment="" key="false" length="10" name="CDefaultTerms" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
+      <column comment="" key="false" length="-1" name="CompanyCustom3" nullable="true" pattern="" precision="-1" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" label="tblCompany" name="REJECT">
       <column comment="" key="false" length="-1" name="CompanyID" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
@@ -5465,6 +5504,7 @@
       <column comment="" key="false" length="10" name="CDefaultTerms" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
+      <column comment="" key="false" length="-1" name="CompanyCustom3" nullable="true" pattern="" precision="-1" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
@@ -7851,7 +7891,7 @@
       <column comment="" key="false" length="-1" name="headers" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="920" posY="1040">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="920" posY="1280">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_8" show="false"/>
     <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="context.error_message_log = &quot;Failed to insert into integration table&quot;;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;"/>
     <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
@@ -7863,7 +7903,7 @@
       <column comment="" key="false" length="-1" name="headers" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="HTTPClient" componentVersion="5" offsetLabelX="6" offsetLabelY="14" posX="1160" posY="1040">
+  <node componentName="HTTPClient" componentVersion="5" offsetLabelX="6" offsetLabelY="14" posX="920" posY="1400">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHTTPClient_2" show="false"/>
     <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="aHR0cC1zdHVkaW8jSFRUUCNDbGllbnQ" show="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
@@ -7890,7 +7930,7 @@
     <elementParameter field="CHECK" name="configuration.dataset.hasBody" value="true"/>
     <elementParameter field="CLOSED_LIST" name="configuration.dataset.body.type" value="JSON"/>
     <elementParameter field="TACOKIT_TEXT_AREA" name="configuration.dataset.body.textValue" value="{&#xD;&#xA;  &quot;type&quot;: &quot;message&quot;,&#xD;&#xA;  &quot;attachments&quot;: [&#xD;&#xA;    {&#xD;&#xA;      &quot;contentType&quot;: &quot;application/vnd.microsoft.card.adaptive&quot;,&#xD;&#xA;      &quot;content&quot;: {&#xD;&#xA;        &quot;type&quot;: &quot;AdaptiveCard&quot;,&#xD;&#xA;        &quot;$schema&quot;: &quot;http://adaptivecards.io/schemas/adaptive-card.json&quot;,&#xD;&#xA;        &quot;version&quot;: &quot;1.4&quot;,&#xD;&#xA;        &quot;body&quot;: [&#xD;&#xA;          { &quot;type&quot;: &quot;TextBlock&quot;, &quot;text&quot;: &quot;Test message from Postman&quot;, &quot;wrap&quot;: true }&#xD;&#xA;        ]&#xD;&#xA;      }&#xD;&#xA;    }&#xD;&#xA;  ]&#xD;&#xA;}" show="false"/>
-    <elementParameter field="MEMO" name="configuration.dataset.body.jsonValue" value="&quot;{&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;message\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;attachments\&quot;: [{&quot;&#xD;&#xA;+ &quot;\&quot;contentType\&quot;: \&quot;application/vnd.microsoft.card.adaptive\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;content\&quot;: {&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;AdaptiveCard\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;$schema\&quot;: \&quot;http://adaptivecards.io/schemas/adaptive-card.json\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;version\&quot;: \&quot;1.4\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;body\&quot;: [{&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;TextBlock\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;text\&quot;: \&quot;\u274C Dev - Talend job failed\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;weight\&quot;: \&quot;Bolder\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;size\&quot;: \&quot;Medium\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;color\&quot;: \&quot;Attention\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;wrap\&quot;: true&quot;&#xD;&#xA;+ &quot;},{&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;FactSet\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;facts\&quot;: [&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Job:\&quot;, \&quot;value\&quot;: \&quot;Combined_Vendor_Processing\&quot;},&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Time:\&quot;, \&quot;value\&quot;: \&quot;&quot; + java.time.ZonedDateTime.now(java.time.ZoneId.of(&quot;Australia/Sydney&quot;)).format(java.time.format.DateTimeFormatter.ofPattern(&quot;yyyy-MM-dd HH:mm:ss z&quot;)) + &quot;\&quot;},&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Description:\&quot;, \&quot;value\&quot;: \&quot;An error occurred with the API message receive subjob\&quot;},&quot;&#xD;&#xA;+ &quot;]&quot;&#xD;&#xA;+ &quot;}]&quot;&#xD;&#xA;+ &quot;}&quot;&#xD;&#xA;+ &quot;}]&quot;&#xD;&#xA;+ &quot;}&quot;"/>
+    <elementParameter field="MEMO" name="configuration.dataset.body.jsonValue" value="&quot;{&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;message\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;attachments\&quot;: [{&quot;&#xD;&#xA;+ &quot;\&quot;contentType\&quot;: \&quot;application/vnd.microsoft.card.adaptive\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;content\&quot;: {&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;AdaptiveCard\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;$schema\&quot;: \&quot;http://adaptivecards.io/schemas/adaptive-card.json\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;version\&quot;: \&quot;1.4\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;body\&quot;: [{&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;TextBlock\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;text\&quot;: \&quot;\u274C Dev - Talend job failed\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;weight\&quot;: \&quot;Bolder\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;size\&quot;: \&quot;Medium\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;color\&quot;: \&quot;Attention\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;wrap\&quot;: true&quot;&#xD;&#xA;+ &quot;},{&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;FactSet\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;facts\&quot;: [&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Job:\&quot;, \&quot;value\&quot;: \&quot;Combined_Vendor_Processing_and_API\&quot;},&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Time:\&quot;, \&quot;value\&quot;: \&quot;&quot; + java.time.ZonedDateTime.now(java.time.ZoneId.of(&quot;Australia/Sydney&quot;)).format(java.time.format.DateTimeFormatter.ofPattern(&quot;yyyy-MM-dd HH:mm:ss z&quot;)) + &quot;\&quot;},&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Description:\&quot;, \&quot;value\&quot;: \&quot;An error occurred with the API message receive subjob\&quot;},&quot;&#xD;&#xA;+ &quot;]&quot;&#xD;&#xA;+ &quot;}]&quot;&#xD;&#xA;+ &quot;}&quot;&#xD;&#xA;+ &quot;}]&quot;&#xD;&#xA;+ &quot;}&quot;"/>
     <elementParameter field="TABLE" name="configuration.dataset.body.params" show="false"/>
     <elementParameter field="CLOSED_LIST" name="configuration.dataset.format" value="RAW_TEXT"/>
     <elementParameter field="TEXT" name="configuration.dataset.dssl" value="" show="false"/>
@@ -7946,7 +7986,7 @@
       <column comment="" key="false" length="-1" name="headers" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1360" posY="1040">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="920" posY="1520">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_13" show="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
@@ -8049,7 +8089,7 @@
     <elementParameter field="CHECK" name="configuration.dataset.hasBody" value="true"/>
     <elementParameter field="CLOSED_LIST" name="configuration.dataset.body.type" value="JSON"/>
     <elementParameter field="TACOKIT_TEXT_AREA" name="configuration.dataset.body.textValue" value="{&#xD;&#xA;  &quot;type&quot;: &quot;message&quot;,&#xD;&#xA;  &quot;attachments&quot;: [&#xD;&#xA;    {&#xD;&#xA;      &quot;contentType&quot;: &quot;application/vnd.microsoft.card.adaptive&quot;,&#xD;&#xA;      &quot;content&quot;: {&#xD;&#xA;        &quot;type&quot;: &quot;AdaptiveCard&quot;,&#xD;&#xA;        &quot;$schema&quot;: &quot;http://adaptivecards.io/schemas/adaptive-card.json&quot;,&#xD;&#xA;        &quot;version&quot;: &quot;1.4&quot;,&#xD;&#xA;        &quot;body&quot;: [&#xD;&#xA;          { &quot;type&quot;: &quot;TextBlock&quot;, &quot;text&quot;: &quot;Test message from Postman&quot;, &quot;wrap&quot;: true }&#xD;&#xA;        ]&#xD;&#xA;      }&#xD;&#xA;    }&#xD;&#xA;  ]&#xD;&#xA;}" show="false"/>
-    <elementParameter field="MEMO" name="configuration.dataset.body.jsonValue" value="&quot;{&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;message\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;attachments\&quot;: [{&quot;&#xD;&#xA;+ &quot;\&quot;contentType\&quot;: \&quot;application/vnd.microsoft.card.adaptive\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;content\&quot;: {&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;AdaptiveCard\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;$schema\&quot;: \&quot;http://adaptivecards.io/schemas/adaptive-card.json\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;version\&quot;: \&quot;1.4\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;body\&quot;: [{&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;TextBlock\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;text\&quot;: \&quot;\u274C Dev - Talend job failed\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;weight\&quot;: \&quot;Bolder\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;size\&quot;: \&quot;Medium\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;color\&quot;: \&quot;Attention\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;wrap\&quot;: true&quot;&#xD;&#xA;+ &quot;},{&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;FactSet\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;facts\&quot;: [&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Job:\&quot;, \&quot;value\&quot;: \&quot;Combined_Vendor_Processing\&quot;},&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Time:\&quot;, \&quot;value\&quot;: \&quot;&quot; + java.time.ZonedDateTime.now(java.time.ZoneId.of(&quot;Australia/Sydney&quot;)).format(java.time.format.DateTimeFormatter.ofPattern(&quot;yyyy-MM-dd HH:mm:ss z&quot;)) + &quot;\&quot;},&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Description:\&quot;, \&quot;value\&quot;: \&quot;An error occurred with counting the records\&quot;},&quot;&#xD;&#xA;+ &quot;]&quot;&#xD;&#xA;+ &quot;}]&quot;&#xD;&#xA;+ &quot;}&quot;&#xD;&#xA;+ &quot;}]&quot;&#xD;&#xA;+ &quot;}&quot;"/>
+    <elementParameter field="MEMO" name="configuration.dataset.body.jsonValue" value="&quot;{&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;message\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;attachments\&quot;: [{&quot;&#xD;&#xA;+ &quot;\&quot;contentType\&quot;: \&quot;application/vnd.microsoft.card.adaptive\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;content\&quot;: {&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;AdaptiveCard\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;$schema\&quot;: \&quot;http://adaptivecards.io/schemas/adaptive-card.json\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;version\&quot;: \&quot;1.4\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;body\&quot;: [{&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;TextBlock\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;text\&quot;: \&quot;\u274C Dev - Talend job failed\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;weight\&quot;: \&quot;Bolder\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;size\&quot;: \&quot;Medium\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;color\&quot;: \&quot;Attention\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;wrap\&quot;: true&quot;&#xD;&#xA;+ &quot;},{&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;FactSet\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;facts\&quot;: [&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Job:\&quot;, \&quot;value\&quot;: \&quot;Combined_Vendor_Processing_and_API\&quot;},&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Time:\&quot;, \&quot;value\&quot;: \&quot;&quot; + java.time.ZonedDateTime.now(java.time.ZoneId.of(&quot;Australia/Sydney&quot;)).format(java.time.format.DateTimeFormatter.ofPattern(&quot;yyyy-MM-dd HH:mm:ss z&quot;)) + &quot;\&quot;},&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Description:\&quot;, \&quot;value\&quot;: \&quot;An error occurred with counting the records\&quot;},&quot;&#xD;&#xA;+ &quot;]&quot;&#xD;&#xA;+ &quot;}]&quot;&#xD;&#xA;+ &quot;}&quot;&#xD;&#xA;+ &quot;}]&quot;&#xD;&#xA;+ &quot;}&quot;"/>
     <elementParameter field="TABLE" name="configuration.dataset.body.params" show="false"/>
     <elementParameter field="CLOSED_LIST" name="configuration.dataset.format" value="RAW_TEXT"/>
     <elementParameter field="TEXT" name="configuration.dataset.dssl" value="" show="false"/>
@@ -8175,7 +8215,7 @@
     <elementParameter field="CHECK" name="configuration.dataset.hasBody" value="true"/>
     <elementParameter field="CLOSED_LIST" name="configuration.dataset.body.type" value="JSON"/>
     <elementParameter field="TACOKIT_TEXT_AREA" name="configuration.dataset.body.textValue" value="{&#xD;&#xA;  &quot;type&quot;: &quot;message&quot;,&#xD;&#xA;  &quot;attachments&quot;: [&#xD;&#xA;    {&#xD;&#xA;      &quot;contentType&quot;: &quot;application/vnd.microsoft.card.adaptive&quot;,&#xD;&#xA;      &quot;content&quot;: {&#xD;&#xA;        &quot;type&quot;: &quot;AdaptiveCard&quot;,&#xD;&#xA;        &quot;$schema&quot;: &quot;http://adaptivecards.io/schemas/adaptive-card.json&quot;,&#xD;&#xA;        &quot;version&quot;: &quot;1.4&quot;,&#xD;&#xA;        &quot;body&quot;: [&#xD;&#xA;          { &quot;type&quot;: &quot;TextBlock&quot;, &quot;text&quot;: &quot;Test message from Postman&quot;, &quot;wrap&quot;: true }&#xD;&#xA;        ]&#xD;&#xA;      }&#xD;&#xA;    }&#xD;&#xA;  ]&#xD;&#xA;}" show="false"/>
-    <elementParameter field="MEMO" name="configuration.dataset.body.jsonValue" value="&quot;{&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;message\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;attachments\&quot;: [{&quot;&#xD;&#xA;+ &quot;\&quot;contentType\&quot;: \&quot;application/vnd.microsoft.card.adaptive\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;content\&quot;: {&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;AdaptiveCard\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;$schema\&quot;: \&quot;http://adaptivecards.io/schemas/adaptive-card.json\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;version\&quot;: \&quot;1.4\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;body\&quot;: [{&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;TextBlock\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;text\&quot;: \&quot;\u274C Dev - Talend job failed\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;weight\&quot;: \&quot;Bolder\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;size\&quot;: \&quot;Medium\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;color\&quot;: \&quot;Attention\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;wrap\&quot;: true&quot;&#xD;&#xA;+ &quot;},{&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;FactSet\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;facts\&quot;: [&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Job:\&quot;, \&quot;value\&quot;: \&quot;Combined_Vendor_Processing\&quot;},&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Time:\&quot;, \&quot;value\&quot;: \&quot;&quot; + java.time.ZonedDateTime.now(java.time.ZoneId.of(&quot;Australia/Sydney&quot;)).format(java.time.format.DateTimeFormatter.ofPattern(&quot;yyyy-MM-dd HH:mm:ss z&quot;)) + &quot;\&quot;},&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Description:\&quot;, \&quot;value\&quot;: \&quot;An error occurred with the Vendor payload creation and insert into TotalETO subjob\&quot;},&quot;&#xD;&#xA;+ &quot;]&quot;&#xD;&#xA;+ &quot;}]&quot;&#xD;&#xA;+ &quot;}&quot;&#xD;&#xA;+ &quot;}]&quot;&#xD;&#xA;+ &quot;}&quot;"/>
+    <elementParameter field="MEMO" name="configuration.dataset.body.jsonValue" value="&quot;{&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;message\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;attachments\&quot;: [{&quot;&#xD;&#xA;+ &quot;\&quot;contentType\&quot;: \&quot;application/vnd.microsoft.card.adaptive\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;content\&quot;: {&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;AdaptiveCard\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;$schema\&quot;: \&quot;http://adaptivecards.io/schemas/adaptive-card.json\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;version\&quot;: \&quot;1.4\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;body\&quot;: [{&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;TextBlock\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;text\&quot;: \&quot;\u274C Dev - Talend job failed\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;weight\&quot;: \&quot;Bolder\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;size\&quot;: \&quot;Medium\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;color\&quot;: \&quot;Attention\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;wrap\&quot;: true&quot;&#xD;&#xA;+ &quot;},{&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;FactSet\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;facts\&quot;: [&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Job:\&quot;, \&quot;value\&quot;: \&quot;Combined_Vendor_Processing_and_API\&quot;},&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Time:\&quot;, \&quot;value\&quot;: \&quot;&quot; + java.time.ZonedDateTime.now(java.time.ZoneId.of(&quot;Australia/Sydney&quot;)).format(java.time.format.DateTimeFormatter.ofPattern(&quot;yyyy-MM-dd HH:mm:ss z&quot;)) + &quot;\&quot;},&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Description:\&quot;, \&quot;value\&quot;: \&quot;An error occurred with the Vendor payload creation and insert into TotalETO subjob\&quot;},&quot;&#xD;&#xA;+ &quot;]&quot;&#xD;&#xA;+ &quot;}]&quot;&#xD;&#xA;+ &quot;}&quot;&#xD;&#xA;+ &quot;}]&quot;&#xD;&#xA;+ &quot;}&quot;"/>
     <elementParameter field="TABLE" name="configuration.dataset.body.params" show="false"/>
     <elementParameter field="CLOSED_LIST" name="configuration.dataset.format" value="RAW_TEXT"/>
     <elementParameter field="TEXT" name="configuration.dataset.dssl" value="" show="false"/>
@@ -8301,7 +8341,7 @@
     <elementParameter field="CHECK" name="configuration.dataset.hasBody" value="true"/>
     <elementParameter field="CLOSED_LIST" name="configuration.dataset.body.type" value="JSON"/>
     <elementParameter field="TACOKIT_TEXT_AREA" name="configuration.dataset.body.textValue" value="{&#xD;&#xA;  &quot;type&quot;: &quot;message&quot;,&#xD;&#xA;  &quot;attachments&quot;: [&#xD;&#xA;    {&#xD;&#xA;      &quot;contentType&quot;: &quot;application/vnd.microsoft.card.adaptive&quot;,&#xD;&#xA;      &quot;content&quot;: {&#xD;&#xA;        &quot;type&quot;: &quot;AdaptiveCard&quot;,&#xD;&#xA;        &quot;$schema&quot;: &quot;http://adaptivecards.io/schemas/adaptive-card.json&quot;,&#xD;&#xA;        &quot;version&quot;: &quot;1.4&quot;,&#xD;&#xA;        &quot;body&quot;: [&#xD;&#xA;          { &quot;type&quot;: &quot;TextBlock&quot;, &quot;text&quot;: &quot;Test message from Postman&quot;, &quot;wrap&quot;: true }&#xD;&#xA;        ]&#xD;&#xA;      }&#xD;&#xA;    }&#xD;&#xA;  ]&#xD;&#xA;}" show="false"/>
-    <elementParameter field="MEMO" name="configuration.dataset.body.jsonValue" value="&quot;{&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;message\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;attachments\&quot;: [{&quot;&#xD;&#xA;+ &quot;\&quot;contentType\&quot;: \&quot;application/vnd.microsoft.card.adaptive\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;content\&quot;: {&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;AdaptiveCard\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;$schema\&quot;: \&quot;http://adaptivecards.io/schemas/adaptive-card.json\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;version\&quot;: \&quot;1.4\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;body\&quot;: [{&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;TextBlock\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;text\&quot;: \&quot;\u274C Dev - Talend job failed\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;weight\&quot;: \&quot;Bolder\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;size\&quot;: \&quot;Medium\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;color\&quot;: \&quot;Attention\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;wrap\&quot;: true&quot;&#xD;&#xA;+ &quot;},{&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;FactSet\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;facts\&quot;: [&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Job:\&quot;, \&quot;value\&quot;: \&quot;Combined_Vendor_Processing\&quot;},&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Time:\&quot;, \&quot;value\&quot;: \&quot;&quot; + java.time.ZonedDateTime.now(java.time.ZoneId.of(&quot;Australia/Sydney&quot;)).format(java.time.format.DateTimeFormatter.ofPattern(&quot;yyyy-MM-dd HH:mm:ss z&quot;)) + &quot;\&quot;},&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Description:\&quot;, \&quot;value\&quot;: \&quot;An error occurred with the insert into tblCompanyTypes subjob\&quot;},&quot;&#xD;&#xA;+ &quot;]&quot;&#xD;&#xA;+ &quot;}]&quot;&#xD;&#xA;+ &quot;}&quot;&#xD;&#xA;+ &quot;}]&quot;&#xD;&#xA;+ &quot;}&quot;"/>
+    <elementParameter field="MEMO" name="configuration.dataset.body.jsonValue" value="&quot;{&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;message\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;attachments\&quot;: [{&quot;&#xD;&#xA;+ &quot;\&quot;contentType\&quot;: \&quot;application/vnd.microsoft.card.adaptive\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;content\&quot;: {&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;AdaptiveCard\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;$schema\&quot;: \&quot;http://adaptivecards.io/schemas/adaptive-card.json\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;version\&quot;: \&quot;1.4\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;body\&quot;: [{&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;TextBlock\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;text\&quot;: \&quot;\u274C Dev - Talend job failed\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;weight\&quot;: \&quot;Bolder\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;size\&quot;: \&quot;Medium\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;color\&quot;: \&quot;Attention\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;wrap\&quot;: true&quot;&#xD;&#xA;+ &quot;},{&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;FactSet\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;facts\&quot;: [&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Job:\&quot;, \&quot;value\&quot;: \&quot;Combined_Vendor_Processing_and_API\&quot;},&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Time:\&quot;, \&quot;value\&quot;: \&quot;&quot; + java.time.ZonedDateTime.now(java.time.ZoneId.of(&quot;Australia/Sydney&quot;)).format(java.time.format.DateTimeFormatter.ofPattern(&quot;yyyy-MM-dd HH:mm:ss z&quot;)) + &quot;\&quot;},&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Description:\&quot;, \&quot;value\&quot;: \&quot;An error occurred with the insert into tblCompanyTypes subjob\&quot;},&quot;&#xD;&#xA;+ &quot;]&quot;&#xD;&#xA;+ &quot;}]&quot;&#xD;&#xA;+ &quot;}&quot;&#xD;&#xA;+ &quot;}]&quot;&#xD;&#xA;+ &quot;}&quot;"/>
     <elementParameter field="TABLE" name="configuration.dataset.body.params" show="false"/>
     <elementParameter field="CLOSED_LIST" name="configuration.dataset.format" value="RAW_TEXT"/>
     <elementParameter field="TEXT" name="configuration.dataset.dssl" value="" show="false"/>
@@ -8427,7 +8467,7 @@
     <elementParameter field="CHECK" name="configuration.dataset.hasBody" value="true"/>
     <elementParameter field="CLOSED_LIST" name="configuration.dataset.body.type" value="JSON"/>
     <elementParameter field="TACOKIT_TEXT_AREA" name="configuration.dataset.body.textValue" value="{&#xD;&#xA;  &quot;type&quot;: &quot;message&quot;,&#xD;&#xA;  &quot;attachments&quot;: [&#xD;&#xA;    {&#xD;&#xA;      &quot;contentType&quot;: &quot;application/vnd.microsoft.card.adaptive&quot;,&#xD;&#xA;      &quot;content&quot;: {&#xD;&#xA;        &quot;type&quot;: &quot;AdaptiveCard&quot;,&#xD;&#xA;        &quot;$schema&quot;: &quot;http://adaptivecards.io/schemas/adaptive-card.json&quot;,&#xD;&#xA;        &quot;version&quot;: &quot;1.4&quot;,&#xD;&#xA;        &quot;body&quot;: [&#xD;&#xA;          { &quot;type&quot;: &quot;TextBlock&quot;, &quot;text&quot;: &quot;Test message from Postman&quot;, &quot;wrap&quot;: true }&#xD;&#xA;        ]&#xD;&#xA;      }&#xD;&#xA;    }&#xD;&#xA;  ]&#xD;&#xA;}" show="false"/>
-    <elementParameter field="MEMO" name="configuration.dataset.body.jsonValue" value="&quot;{&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;message\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;attachments\&quot;: [{&quot;&#xD;&#xA;+ &quot;\&quot;contentType\&quot;: \&quot;application/vnd.microsoft.card.adaptive\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;content\&quot;: {&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;AdaptiveCard\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;$schema\&quot;: \&quot;http://adaptivecards.io/schemas/adaptive-card.json\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;version\&quot;: \&quot;1.4\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;body\&quot;: [{&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;TextBlock\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;text\&quot;: \&quot;\u274C Dev - Talend job failed\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;weight\&quot;: \&quot;Bolder\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;size\&quot;: \&quot;Medium\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;color\&quot;: \&quot;Attention\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;wrap\&quot;: true&quot;&#xD;&#xA;+ &quot;},{&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;FactSet\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;facts\&quot;: [&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Job:\&quot;, \&quot;value\&quot;: \&quot;Combined_Vendor_Processing\&quot;},&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Time:\&quot;, \&quot;value\&quot;: \&quot;&quot; + java.time.ZonedDateTime.now(java.time.ZoneId.of(&quot;Australia/Sydney&quot;)).format(java.time.format.DateTimeFormatter.ofPattern(&quot;yyyy-MM-dd HH:mm:ss z&quot;)) + &quot;\&quot;},&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Description:\&quot;, \&quot;value\&quot;: \&quot;An error occurred with the update tblSupplier subjob\&quot;},&quot;&#xD;&#xA;+ &quot;]&quot;&#xD;&#xA;+ &quot;}]&quot;&#xD;&#xA;+ &quot;}&quot;&#xD;&#xA;+ &quot;}]&quot;&#xD;&#xA;+ &quot;}&quot;"/>
+    <elementParameter field="MEMO" name="configuration.dataset.body.jsonValue" value="&quot;{&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;message\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;attachments\&quot;: [{&quot;&#xD;&#xA;+ &quot;\&quot;contentType\&quot;: \&quot;application/vnd.microsoft.card.adaptive\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;content\&quot;: {&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;AdaptiveCard\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;$schema\&quot;: \&quot;http://adaptivecards.io/schemas/adaptive-card.json\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;version\&quot;: \&quot;1.4\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;body\&quot;: [{&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;TextBlock\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;text\&quot;: \&quot;\u274C Dev - Talend job failed\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;weight\&quot;: \&quot;Bolder\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;size\&quot;: \&quot;Medium\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;color\&quot;: \&quot;Attention\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;wrap\&quot;: true&quot;&#xD;&#xA;+ &quot;},{&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;FactSet\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;facts\&quot;: [&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Job:\&quot;, \&quot;value\&quot;: \&quot;Combined_Vendor_Processing_and_API\&quot;},&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Time:\&quot;, \&quot;value\&quot;: \&quot;&quot; + java.time.ZonedDateTime.now(java.time.ZoneId.of(&quot;Australia/Sydney&quot;)).format(java.time.format.DateTimeFormatter.ofPattern(&quot;yyyy-MM-dd HH:mm:ss z&quot;)) + &quot;\&quot;},&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Description:\&quot;, \&quot;value\&quot;: \&quot;An error occurred with the update tblSupplier subjob\&quot;},&quot;&#xD;&#xA;+ &quot;]&quot;&#xD;&#xA;+ &quot;}]&quot;&#xD;&#xA;+ &quot;}&quot;&#xD;&#xA;+ &quot;}]&quot;&#xD;&#xA;+ &quot;}&quot;"/>
     <elementParameter field="TABLE" name="configuration.dataset.body.params" show="false"/>
     <elementParameter field="CLOSED_LIST" name="configuration.dataset.format" value="RAW_TEXT"/>
     <elementParameter field="TEXT" name="configuration.dataset.dssl" value="" show="false"/>
@@ -8514,7 +8554,7 @@
       <column comment="" key="false" length="-1" name="headers" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1560" posY="960">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1000" posY="960">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_12" show="false"/>
     <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="context.error_message_log = &quot;Failed to insert into integration table&quot;;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;"/>
     <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
@@ -8526,7 +8566,7 @@
       <column comment="" key="false" length="-1" name="headers" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="HTTPClient" componentVersion="5" offsetLabelX="6" offsetLabelY="14" posX="1800" posY="960">
+  <node componentName="HTTPClient" componentVersion="5" offsetLabelX="6" offsetLabelY="14" posX="1240" posY="960">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHTTPClient_7" show="false"/>
     <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="aHR0cC1zdHVkaW8jSFRUUCNDbGllbnQ" show="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
@@ -8553,7 +8593,7 @@
     <elementParameter field="CHECK" name="configuration.dataset.hasBody" value="true"/>
     <elementParameter field="CLOSED_LIST" name="configuration.dataset.body.type" value="JSON"/>
     <elementParameter field="TACOKIT_TEXT_AREA" name="configuration.dataset.body.textValue" value="{&#xD;&#xA;  &quot;type&quot;: &quot;message&quot;,&#xD;&#xA;  &quot;attachments&quot;: [&#xD;&#xA;    {&#xD;&#xA;      &quot;contentType&quot;: &quot;application/vnd.microsoft.card.adaptive&quot;,&#xD;&#xA;      &quot;content&quot;: {&#xD;&#xA;        &quot;type&quot;: &quot;AdaptiveCard&quot;,&#xD;&#xA;        &quot;$schema&quot;: &quot;http://adaptivecards.io/schemas/adaptive-card.json&quot;,&#xD;&#xA;        &quot;version&quot;: &quot;1.4&quot;,&#xD;&#xA;        &quot;body&quot;: [&#xD;&#xA;          { &quot;type&quot;: &quot;TextBlock&quot;, &quot;text&quot;: &quot;Test message from Postman&quot;, &quot;wrap&quot;: true }&#xD;&#xA;        ]&#xD;&#xA;      }&#xD;&#xA;    }&#xD;&#xA;  ]&#xD;&#xA;}" show="false"/>
-    <elementParameter field="MEMO" name="configuration.dataset.body.jsonValue" value="&quot;{&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;message\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;attachments\&quot;: [{&quot;&#xD;&#xA;+ &quot;\&quot;contentType\&quot;: \&quot;application/vnd.microsoft.card.adaptive\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;content\&quot;: {&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;AdaptiveCard\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;$schema\&quot;: \&quot;http://adaptivecards.io/schemas/adaptive-card.json\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;version\&quot;: \&quot;1.4\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;body\&quot;: [{&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;TextBlock\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;text\&quot;: \&quot;\u274C Dev - Talend job failed\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;weight\&quot;: \&quot;Bolder\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;size\&quot;: \&quot;Medium\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;color\&quot;: \&quot;Attention\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;wrap\&quot;: true&quot;&#xD;&#xA;+ &quot;},{&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;FactSet\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;facts\&quot;: [&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Job:\&quot;, \&quot;value\&quot;: \&quot;Combined_Vendor_Processing\&quot;},&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Time:\&quot;, \&quot;value\&quot;: \&quot;&quot; + java.time.ZonedDateTime.now(java.time.ZoneId.of(&quot;Australia/Sydney&quot;)).format(java.time.format.DateTimeFormatter.ofPattern(&quot;yyyy-MM-dd HH:mm:ss z&quot;)) + &quot;\&quot;},&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Description:\&quot;, \&quot;value\&quot;: \&quot;An error occurred with the update integration table to indicate that the Vendor has been loaded to Netsuite subjob\&quot;},&quot;&#xD;&#xA;+ &quot;]&quot;&#xD;&#xA;+ &quot;}]&quot;&#xD;&#xA;+ &quot;}&quot;&#xD;&#xA;+ &quot;}]&quot;&#xD;&#xA;+ &quot;}&quot;"/>
+    <elementParameter field="MEMO" name="configuration.dataset.body.jsonValue" value="&quot;{&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;message\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;attachments\&quot;: [{&quot;&#xD;&#xA;+ &quot;\&quot;contentType\&quot;: \&quot;application/vnd.microsoft.card.adaptive\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;content\&quot;: {&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;AdaptiveCard\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;$schema\&quot;: \&quot;http://adaptivecards.io/schemas/adaptive-card.json\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;version\&quot;: \&quot;1.4\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;body\&quot;: [{&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;TextBlock\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;text\&quot;: \&quot;\u274C Dev - Talend job failed\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;weight\&quot;: \&quot;Bolder\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;size\&quot;: \&quot;Medium\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;color\&quot;: \&quot;Attention\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;wrap\&quot;: true&quot;&#xD;&#xA;+ &quot;},{&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;FactSet\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;facts\&quot;: [&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Job:\&quot;, \&quot;value\&quot;: \&quot;Combined_Vendor_Processing_and_API\&quot;},&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Time:\&quot;, \&quot;value\&quot;: \&quot;&quot; + java.time.ZonedDateTime.now(java.time.ZoneId.of(&quot;Australia/Sydney&quot;)).format(java.time.format.DateTimeFormatter.ofPattern(&quot;yyyy-MM-dd HH:mm:ss z&quot;)) + &quot;\&quot;},&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Description:\&quot;, \&quot;value\&quot;: \&quot;An error occurred with the update integration table to indicate that the Vendor has been loaded to Netsuite subjob\&quot;},&quot;&#xD;&#xA;+ &quot;]&quot;&#xD;&#xA;+ &quot;}]&quot;&#xD;&#xA;+ &quot;}&quot;&#xD;&#xA;+ &quot;}]&quot;&#xD;&#xA;+ &quot;}&quot;"/>
     <elementParameter field="TABLE" name="configuration.dataset.body.params" show="false"/>
     <elementParameter field="CLOSED_LIST" name="configuration.dataset.format" value="RAW_TEXT"/>
     <elementParameter field="TEXT" name="configuration.dataset.dssl" value="" show="false"/>
@@ -8609,7 +8649,7 @@
       <column comment="" key="false" length="-1" name="headers" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="2000" posY="960">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1440" posY="960">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_18" show="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
@@ -8638,6 +8678,217 @@
       <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="headers" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1680" posY="1360">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_13" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="context.error_message_log = &quot;Failed to insert into integration table&quot;;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;"/>
+    <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="log job failed"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_13">
+      <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="headers" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="HTTPClient" componentVersion="5" offsetLabelX="6" offsetLabelY="14" posX="1920" posY="1360">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHTTPClient_8" show="false"/>
+    <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="aHR0cC1zdHVkaW8jSFRUUCNDbGllbnQ" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="TEXT" name="LABEL" value="Send Teams error message"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.base" value="context.teams_base_url"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.type" value="NoAuth"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.apiKey.destination" value="HEADERS" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.apiKey.headerName" value="Authorization" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.apiKey.queryName" value="apikey" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.apiKey.prefix" value="Bearer" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.oauth20.flow" value="CLIENT_CREDENTIAL" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.oauth20.authenticationType" value="FORM" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.datastore.authentication.oauth20.params" show="false"/>
+    <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataset.methodType" value="POST"/>
+    <elementParameter field="TEXT" name="configuration.dataset.resource" value="context.teams_path"/>
+    <elementParameter field="CHECK" name="configuration.dataset.hasPathParams" value="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.pathParams" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.hasQueryParams" value="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.queryParams" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.hasHeaders" value="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.headers" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.hasBody" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.body.type" value="JSON"/>
+    <elementParameter field="TACOKIT_TEXT_AREA" name="configuration.dataset.body.textValue" value="{&#xD;&#xA;  &quot;type&quot;: &quot;message&quot;,&#xD;&#xA;  &quot;attachments&quot;: [&#xD;&#xA;    {&#xD;&#xA;      &quot;contentType&quot;: &quot;application/vnd.microsoft.card.adaptive&quot;,&#xD;&#xA;      &quot;content&quot;: {&#xD;&#xA;        &quot;type&quot;: &quot;AdaptiveCard&quot;,&#xD;&#xA;        &quot;$schema&quot;: &quot;http://adaptivecards.io/schemas/adaptive-card.json&quot;,&#xD;&#xA;        &quot;version&quot;: &quot;1.4&quot;,&#xD;&#xA;        &quot;body&quot;: [&#xD;&#xA;          { &quot;type&quot;: &quot;TextBlock&quot;, &quot;text&quot;: &quot;Test message from Postman&quot;, &quot;wrap&quot;: true }&#xD;&#xA;        ]&#xD;&#xA;      }&#xD;&#xA;    }&#xD;&#xA;  ]&#xD;&#xA;}" show="false"/>
+    <elementParameter field="MEMO" name="configuration.dataset.body.jsonValue" value="&quot;{&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;message\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;attachments\&quot;: [{&quot;&#xD;&#xA;+ &quot;\&quot;contentType\&quot;: \&quot;application/vnd.microsoft.card.adaptive\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;content\&quot;: {&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;AdaptiveCard\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;$schema\&quot;: \&quot;http://adaptivecards.io/schemas/adaptive-card.json\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;version\&quot;: \&quot;1.4\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;body\&quot;: [{&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;TextBlock\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;text\&quot;: \&quot;\u274C Dev - Talend job failed\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;weight\&quot;: \&quot;Bolder\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;size\&quot;: \&quot;Medium\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;color\&quot;: \&quot;Attention\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;wrap\&quot;: true&quot;&#xD;&#xA;+ &quot;},{&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;FactSet\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;facts\&quot;: [&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Job:\&quot;, \&quot;value\&quot;: \&quot;Combined_Vendor_Processing_and_API\&quot;},&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Time:\&quot;, \&quot;value\&quot;: \&quot;&quot; + java.time.ZonedDateTime.now(java.time.ZoneId.of(&quot;Australia/Sydney&quot;)).format(java.time.format.DateTimeFormatter.ofPattern(&quot;yyyy-MM-dd HH:mm:ss z&quot;)) + &quot;\&quot;},&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Description:\&quot;, \&quot;value\&quot;: \&quot;An error occurred with sending the Vendor data from TotalETO to Netsuite, please check job\&quot;},&quot;&#xD;&#xA;+ &quot;]&quot;&#xD;&#xA;+ &quot;}]&quot;&#xD;&#xA;+ &quot;}&quot;&#xD;&#xA;+ &quot;}]&quot;&#xD;&#xA;+ &quot;}&quot;"/>
+    <elementParameter field="TABLE" name="configuration.dataset.body.params" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.format" value="RAW_TEXT"/>
+    <elementParameter field="TEXT" name="configuration.dataset.dssl" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.returnedContent" value="STATUS_HEADERS_BODY"/>
+    <elementParameter field="CHECK" name="configuration.dataset.outputKeyValuePairs" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.forwardInput" value="false" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.keyValuePairs" show="false"/>
+    <elementParameter field="CHECK" name="configuration.downloadFile" value="false"/>
+    <elementParameter field="CHECK" name="configuration.specifyFileName" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.useCacheToSave" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.datastore.authentication.oauth20.customizeHeaderName" value="false" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.oauth20.customHeaderName" value="Authorization" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.datastore.authentication.oauth20.customizeTokenPrefix" value="false" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.oauth20.customTokenPrefix" value="Bearer" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.connectionTimeout" value="30000"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.receiveTimeout" value="120000"/>
+    <elementParameter field="CHECK" name="configuration.dataset.datastore.bypassCertificateValidation" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.datastore.useProxy" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.proxyConfiguration.proxyType" value="HTTP" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.proxyConfiguration.proxyPort" value="443" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.datastore.hasRetry" value="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.retry.backoff" value="500" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.retry.factor" value="1" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.retry.maxAttempts" value="2" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.acceptRedirections" value="true"/>
+    <elementParameter field="TEXT" name="configuration.dataset.maxRedirectOnSameURL" value="3"/>
+    <elementParameter field="CHECK" name="configuration.dataset.onlySameHost" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.hasPagination" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.pagination.strategy" value="OFFSET_LIMIT" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.pagination.offsetLimitStrategyConfig.location" value="QUERY_PARAMETERS" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.pagination.markerStrategyConfig.location" value="QUERY_PARAMETERS" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.pagination.markerStrategyConfig.limitValue" value="100" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.jsonForceDouble" value="true" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.normalizeJson" value="false" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.jsonCastConfigurations" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.jsonFilterConfigurations" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.enforceNumberAsString" value="true" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.useCookies" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.saveCookies" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.disableChunkedEncoding" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.httpVersion" value="HTTP_2"/>
+    <elementParameter field="CHECK" name="configuration.uploadFiles" value="false"/>
+    <elementParameter field="TABLE" name="configuration.uploadFileTable" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dieOnError" value="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataset.__version" value="5" show="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataset.datastore.__version" value="5" show="false"/>
+    <metadata connector="LOOKUP" name="LOOKUP"/>
+    <metadata connector="MERGE" name="MERGE"/>
+    <metadata connector="REJECT" name="REJECT"/>
+    <metadata connector="FLOW" name="tHTTPClient_8">
+      <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="headers" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="2120" posY="1360">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_20" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="body" id="0"/>
+      <elementValue elementRef="LENGTH" value="10" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="status" id="2"/>
+      <elementValue elementRef="LENGTH" value="10" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="headers" id="4"/>
+      <elementValue elementRef="LENGTH" value="10" id="5"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="View result"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_20">
+      <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="headers" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tHashInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1760" posY="1120">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashInput_4" show="false"/>
+    <elementParameter field="CHECK" name="LINK_WITH" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="LIST" value="tHashOutput_2"/>
+    <elementParameter field="FILE" name="BASE_FILE_PATH" value="&quot;C:/Talend/8.0.1/studio/workspace/in.hash&quot;" show="false"/>
+    <elementParameter field="CHECK" name="RELEASE_CACHE" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tHashInput_4">
+      <column comment="" key="false" length="-1" name="CompanyID" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="IntegrationID" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="'(0)'" key="false" length="1" name="LoadedIntoTotalETO" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="TimeLoadedIntoTotalETOUTC" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="3" sourceType="DATETIME2" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="tblSupplier_currency" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CDefaultTerms" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CompanyCustom3" nullable="true" pattern="" precision="-1" sourceType="" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="2000" posY="1120">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_7" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_qtl1ILFkEfGVnY5xgP4JHQ-tMap_7-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="build netsuite payload"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="Netsuite_Payload">
+      <column comment="" key="false" length="-1" name="CompanyID" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CompanyCustom3" nullable="true" pattern="" precision="-1" sourceType="DECIMAL" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="Netsuite_Payload">
+        <mapperTableEntries name="CompanyID" expression="row25.CompanyID " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="CompanyCustom3" expression="row25.CompanyCustom3 == null ? null : row25.CompanyCustom3.intValue()" type="id_Integer" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row25" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="CompanyID" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="IntegrationID" type="id_Integer"/>
+        <mapperTableEntries name="LoadedIntoTotalETO" type="id_Boolean"/>
+        <mapperTableEntries name="TimeLoadedIntoTotalETOUTC" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="tblSupplier_currency" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CDefaultTerms" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="CompanyCustom3" type="id_BigDecimal" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="2240" posY="1120">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_19" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="CompanyID" id="0"/>
+      <elementValue elementRef="LENGTH" value="10" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CompanyCustom3" id="2"/>
+      <elementValue elementRef="LENGTH" value="10" id="3"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Data to send to Netsuite"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_19">
+      <column comment="" key="false" length="-1" name="CompanyID" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CompanyCustom3" nullable="true" pattern="" precision="-1" sourceType="DECIMAL" type="id_Integer" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <connection connectorName="FLOW" label="row_count" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tJavaRow_1">
@@ -8777,6 +9028,9 @@
       <elementValue elementRef="TRACE_COLUMN" value="tblSupplier_currency" id="21"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="22"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="23"/>
+      <elementValue elementRef="TRACE_COLUMN" value="CompanyCustom3" id="24"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="25"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="26"/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="update_integration_table" show="false"/>
@@ -8805,6 +9059,9 @@
       <elementValue elementRef="TRACE_COLUMN" value="CDefaultTerms" id="6"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="7"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="8"/>
+      <elementValue elementRef="TRACE_COLUMN" value="CompanyCustom3" id="9"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="10"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="11"/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row9" show="false"/>
@@ -8852,6 +9109,11 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row10" lineStyle="0" metaname="tHashInput_3" offsetLabelX="0" offsetLabelY="0" source="tHashInput_3" target="tJavaRow_6">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="CompanyCustom3" id="0"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row10" show="false"/>
   </connection>
@@ -8863,6 +9125,9 @@
       <elementValue elementRef="TRACE_COLUMN" value="DefaultCurrName" id="0"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+      <elementValue elementRef="TRACE_COLUMN" value="CompanyCustom3" id="3"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="4"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="5"/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row11" show="false"/>
@@ -8870,6 +9135,9 @@
   <connection connectorName="FLOW" label="row17" lineStyle="0" metaname="tLogRow_6" offsetLabelX="0" offsetLabelY="0" source="tLogRow_6" target="tDBOutput_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row17" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBOutput_2" offsetLabelX="0" offsetLabelY="0" source="tDBOutput_2" target="tHashInput_4">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk18" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tHashInput_1" offsetLabelX="0" offsetLabelY="0" source="tHashInput_1" target="tJavaRow_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
@@ -9090,6 +9358,34 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row24" show="false"/>
   </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_13" offsetLabelX="0" offsetLabelY="0" source="tJava_13" target="tHTTPClient_8">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk12" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row27" lineStyle="0" metaname="tHTTPClient_8" offsetLabelX="0" offsetLabelY="0" source="tHTTPClient_8" target="tLogRow_20">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="body" id="0"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+      <elementValue elementRef="TRACE_COLUMN" value="headers" id="3"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="4"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="5"/>
+      <elementValue elementRef="TRACE_COLUMN" value="status" id="6"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="7"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="8"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row27" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row25" lineStyle="0" metaname="tHashInput_4" offsetLabelX="0" offsetLabelY="0" source="tHashInput_4" target="tMap_7">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row25" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="Netsuite_Payload" lineStyle="0" metaname="Netsuite_Payload" offsetLabelX="0" offsetLabelY="0" source="tMap_7" target="tLogRow_19">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Netsuite_Payload" show="false"/>
+  </connection>
   <note opaque="false" posX="760" posY="-400" sizeHeight="121" sizeWidth="201" text="Insert vendor into&#xD;&#xA;tblComany&#xD;&#xA;from integration&#xD;&#xA;table">
     <elementParameter field="TEXT" name="NOTE_FONT" value="Arial"/>
   </note>
@@ -9263,6 +9559,21 @@
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHTTPClient_7" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_13" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHTTPClient_8" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashInput_4" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
   </subjob>
