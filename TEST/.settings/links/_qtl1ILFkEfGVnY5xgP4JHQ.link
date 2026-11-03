@@ -81,6 +81,12 @@
     }, {
       "id" : "__WLk5tcjEfGsM6Y8Dt6xKA",
       "name" : "scope"
+    }, {
+      "id" : "_U5tyQNc5EfGsM6Y8Dt6xKA",
+      "name" : "netsuite_api_path"
+    }, {
+      "id" : "_o6CtANc5EfGsM6Y8Dt6xKA",
+      "name" : "netsuite_api_url"
     } ]
   }, {
     "contextName" : "Foodmach_Dev",
@@ -163,6 +169,12 @@
     }, {
       "id" : "__WLk7dcjEfGsM6Y8Dt6xKA",
       "name" : "scope"
+    }, {
+      "id" : "_U5tyQdc5EfGsM6Y8Dt6xKA",
+      "name" : "netsuite_api_path"
+    }, {
+      "id" : "_o6CtAdc5EfGsM6Y8Dt6xKA",
+      "name" : "netsuite_api_url"
     } ]
   }, {
     "contextName" : "Foodmach_Dev_2",
@@ -245,6 +257,12 @@
     }, {
       "id" : "__WLk9NcjEfGsM6Y8Dt6xKA",
       "name" : "scope"
+    }, {
+      "id" : "_U5tyQtc5EfGsM6Y8Dt6xKA",
+      "name" : "netsuite_api_path"
+    }, {
+      "id" : "_o6CtAtc5EfGsM6Y8Dt6xKA",
+      "name" : "netsuite_api_url"
     } ]
   }, {
     "contextName" : "IBT_Dev",
@@ -327,6 +345,12 @@
     }, {
       "id" : "__WLk-9cjEfGsM6Y8Dt6xKA",
       "name" : "scope"
+    }, {
+      "id" : "_U5tyQ9c5EfGsM6Y8Dt6xKA",
+      "name" : "netsuite_api_path"
+    }, {
+      "id" : "_o6CtA9c5EfGsM6Y8Dt6xKA",
+      "name" : "netsuite_api_url"
     } ]
   }, {
     "contextName" : "Prod",
@@ -409,6 +433,12 @@
     }, {
       "id" : "__WLlAtcjEfGsM6Y8Dt6xKA",
       "name" : "scope"
+    }, {
+      "id" : "_U5tyRNc5EfGsM6Y8Dt6xKA",
+      "name" : "netsuite_api_path"
+    }, {
+      "id" : "_o6CtBNc5EfGsM6Y8Dt6xKA",
+      "name" : "netsuite_api_url"
     } ]
   }, {
     "contextName" : "Test",
@@ -491,6 +521,12 @@
     }, {
       "id" : "__WLlCdcjEfGsM6Y8Dt6xKA",
       "name" : "scope"
+    }, {
+      "id" : "_U5tyRdc5EfGsM6Y8Dt6xKA",
+      "name" : "netsuite_api_path"
+    }, {
+      "id" : "_o6CtBdc5EfGsM6Y8Dt6xKA",
+      "name" : "netsuite_api_url"
     } ]
   } ]
 }

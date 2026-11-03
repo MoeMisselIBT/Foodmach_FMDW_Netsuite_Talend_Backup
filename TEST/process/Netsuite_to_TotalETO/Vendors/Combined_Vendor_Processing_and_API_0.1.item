@@ -27,6 +27,8 @@
     <contextParameter comment="" name="account_id" prompt="account_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="847280-sb1" internalId="_AEKsRNckEfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="new_bearer_token" prompt="new_bearer_token?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_AEKsRdckEfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="scope" prompt="scope?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="restlets rest_webservices" internalId="_AEKsRtckEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="The path suffix for the Netsuite URL to create a PO. Something like /restlet.nl?script=2965&amp;deploy=2" name="netsuite_api_path" prompt="netsuite_api_path?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="/restlet.nl?script=2965&amp;deploy=2" internalId="_TByAQNc5EfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="The netstuite API URL to send vendor data to netsuite" name="netsuite_api_url" prompt="netsuite_api_url?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="https://847280-sb1.restlets.api.netsuite.com/app/site/hosting" internalId="_jed1INc5EfGsM6Y8Dt6xKA"/>
   </context>
   <context confirmationNeeded="false" hide="false" name="Foodmach_Dev">
     <contextParameter comment="" name="integration_database_name" prompt="integration_database_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="integration_database" internalId="_BvT6EJoIEfGdaILNokaaHA"/>
@@ -55,6 +57,8 @@
     <contextParameter comment="" name="account_id" prompt="account_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="847280-sb1" internalId="_AEKsS9ckEfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="new_bearer_token" prompt="new_bearer_token?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_AEKsTNckEfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="scope" prompt="scope?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="restlets rest_webservices" internalId="_AEKsTdckEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="The path suffix for the Netsuite URL to create a PO. Something like /restlet.nl?script=2965&amp;deploy=2" name="netsuite_api_path" prompt="netsuite_api_path?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="/restlet.nl?script=2965&amp;deploy=2" internalId="_TByAQtc5EfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="The netstuite API URL to send vendor data to netsuite" name="netsuite_api_url" prompt="netsuite_api_url?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="https://847280-sb1.restlets.api.netsuite.com/app/site/hosting" internalId="_jed1Idc5EfGsM6Y8Dt6xKA"/>
   </context>
   <context confirmationNeeded="false" hide="false" name="Foodmach_Dev_2">
     <contextParameter comment="" name="integration_database_name" prompt="integration_database_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="integration_database" internalId="_BvT6EJoIEfGdaILNokaaHA"/>
@@ -83,6 +87,8 @@
     <contextParameter comment="" name="account_id" prompt="account_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="847280-sb1" internalId="_AEKsUtckEfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="new_bearer_token" prompt="new_bearer_token?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_AEKsU9ckEfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="scope" prompt="scope?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="restlets rest_webservices" internalId="_AEKsVNckEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="The path suffix for the Netsuite URL to create a PO. Something like /restlet.nl?script=2965&amp;deploy=2" name="netsuite_api_path" prompt="netsuite_api_path?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="/restlet.nl?script=2965&amp;deploy=2" internalId="_TByARNc5EfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="The netstuite API URL to send vendor data to netsuite" name="netsuite_api_url" prompt="netsuite_api_url?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="https://847280-sb1.restlets.api.netsuite.com/app/site/hosting" internalId="_jed1Itc5EfGsM6Y8Dt6xKA"/>
   </context>
   <context confirmationNeeded="false" hide="false" name="IBT_Dev">
     <contextParameter comment="" name="integration_database_name" prompt="integration_database_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="client_projects" internalId="_BvT6EJoIEfGdaILNokaaHA"/>
@@ -111,6 +117,8 @@
     <contextParameter comment="" name="account_id" prompt="account_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="847280-sb1" internalId="_AEKsWdckEfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="new_bearer_token" prompt="new_bearer_token?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_AEKsWtckEfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="scope" prompt="scope?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="restlets rest_webservices" internalId="_AEKsW9ckEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="The path suffix for the Netsuite URL to create a PO. Something like /restlet.nl?script=2965&amp;deploy=2" name="netsuite_api_path" prompt="netsuite_api_path?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="/restlet.nl?script=2965&amp;deploy=2" internalId="_TByARtc5EfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="The netstuite API URL to send vendor data to netsuite" name="netsuite_api_url" prompt="netsuite_api_url?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="https://847280-sb1.restlets.api.netsuite.com/app/site/hosting" internalId="_jed1I9c5EfGsM6Y8Dt6xKA"/>
   </context>
   <context confirmationNeeded="false" hide="false" name="Prod">
     <contextParameter comment="" name="integration_database_name" prompt="integration_database_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="integration_database" internalId="_BvT6EJoIEfGdaILNokaaHA"/>
@@ -139,6 +147,8 @@
     <contextParameter comment="" name="account_id" prompt="account_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="847280-sb1" internalId="_AEKsYNckEfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="new_bearer_token" prompt="new_bearer_token?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_AEKsYdckEfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="scope" prompt="scope?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="restlets rest_webservices" internalId="_AEKsYtckEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="The path suffix for the Netsuite URL to create a PO. Something like /restlet.nl?script=2965&amp;deploy=2" name="netsuite_api_path" prompt="netsuite_api_path?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_TByASNc5EfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="The netstuite API URL to send vendor data to netsuite" name="netsuite_api_url" prompt="netsuite_api_url?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="https://847280-sb1.restlets.api.netsuite.com/app/site/hosting" internalId="_jed1JNc5EfGsM6Y8Dt6xKA"/>
   </context>
   <context confirmationNeeded="false" hide="false" name="Test">
     <contextParameter comment="" name="integration_database_server_ip" prompt="integration_database_server_ip?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="192.168.2.46" internalId="_u_O68NZ7EfGsM6Y8Dt6xKA"/>
@@ -167,6 +177,8 @@
     <contextParameter comment="" name="account_id" prompt="account_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="847280-sb1" internalId="_AEKsZ9ckEfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="new_bearer_token" prompt="new_bearer_token?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_AEKsaNckEfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="scope" prompt="scope?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="restlets rest_webservices" internalId="_AEKsadckEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="The path suffix for the Netsuite URL to create a PO. Something like /restlet.nl?script=2965&amp;deploy=2" name="netsuite_api_path" prompt="netsuite_api_path?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_TByAStc5EfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="The netstuite API URL to send vendor data to netsuite" name="netsuite_api_url" prompt="netsuite_api_url?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="https://847280-sb1.restlets.api.netsuite.com/app/site/hosting" internalId="_jed1Jdc5EfGsM6Y8Dt6xKA"/>
   </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
@@ -8865,12 +8877,12 @@
       <column comment="" key="false" length="-1" name="CompanyCustom3" nullable="true" pattern="" precision="-1" sourceType="" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="2000" posY="1280">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_7" show="false"/>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="1960" posY="1280">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_9" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_qtl1ILFkEfGVnY5xgP4JHQ-tMap_7-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_qtl1ILFkEfGVnY5xgP4JHQ-tMap_9-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
     <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
@@ -8878,18 +8890,18 @@
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
-    <elementParameter field="TEXT" name="LABEL" value="build netsuite payload"/>
+    <elementParameter field="TEXT" name="LABEL" value="convert datatypes"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="Netsuite_Payload">
+    <metadata connector="FLOW" name="Converted_data_types">
       <column comment="" key="false" length="-1" name="CompanyID" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="CompanyCustom3" nullable="true" pattern="" precision="-1" sourceType="DECIMAL" type="id_Integer" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="Netsuite_Payload">
+      <outputTables sizeState="INTERMEDIATE" name="Converted_data_types">
         <mapperTableEntries name="CompanyID" expression="row25.CompanyID " type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="CompanyCustom3" expression="row25.CompanyCustom3 == null ? null : row25.CompanyCustom3.intValue()" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="CompanyCustom3" expression="row25.CompanyCustom3 == null ? null : row25.CompanyCustom3.intValue() " type="id_Integer" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row25" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="CompanyID" type="id_Integer" nullable="true"/>
@@ -8902,40 +8914,12 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="2240" posY="1280">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_19" show="false"/>
-    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
-    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
-    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
-    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
-    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
-    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
-    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
-    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
-    <elementParameter field="TABLE" name="LENGTHS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="CompanyID" id="0"/>
-      <elementValue elementRef="LENGTH" value="10" id="1"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CompanyCustom3" id="2"/>
-      <elementValue elementRef="LENGTH" value="10" id="3"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
-    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="Data to send to Netsuite"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tLogRow_19">
-      <column comment="" key="false" length="-1" name="CompanyID" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CompanyCustom3" nullable="true" pattern="" precision="-1" sourceType="DECIMAL" type="id_Integer" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="2440" posY="1280">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_8" show="false"/>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="2240" posY="1280">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_10" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_qtl1ILFkEfGVnY5xgP4JHQ-tMap_8-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_qtl1ILFkEfGVnY5xgP4JHQ-tMap_10-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
     <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
@@ -8943,24 +8927,25 @@
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="create netsuite payload"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="Netsuite_Payloads_list">
-      <column comment="" key="false" length="-1" name="Netsuite_Payload" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    <metadata connector="FLOW" name="copyOfnetsuite_payload">
+      <column comment="" key="false" length="-1" name="netsuite_payload" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="Netsuite_Payloads_list">
-        <mapperTableEntries name="Netsuite_Payload" expression="&quot;{\&quot;nsVendorID\&quot;: &quot; + row30.nsVendorID + &quot;, \&quot;etoCompanyID\&quot;: \&quot;&quot; + row30.etoCompanyID + &quot;\&quot;}&quot; " type="id_String" nullable="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="copyOfnetsuite_payload">
+        <mapperTableEntries name="netsuite_payload" expression="&quot;{\&quot;nsVendorID\&quot;: &quot; + Converted_data_types.CompanyCustom3 + &quot;, \&quot;etoCompanyID\&quot;: \&quot;&quot; + Converted_data_types.CompanyID + &quot;\&quot;}&quot; " type="id_String" nullable="true"/>
       </outputTables>
-      <inputTables sizeState="INTERMEDIATE" name="row30" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+      <inputTables sizeState="INTERMEDIATE" name="Converted_data_types" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="CompanyID" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="CompanyCustom3" type="id_Integer" nullable="true"/>
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="2440" posY="1480">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_23" show="false"/>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="2440" posY="1280">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_24" show="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
     <elementParameter field="RADIO" name="VERTICAL" value="false"/>
@@ -8973,14 +8958,158 @@
     <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
     <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
     <elementParameter field="TABLE" name="LENGTHS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="JSON_Payload" id="0"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="netsuite_payload" id="0"/>
       <elementValue elementRef="LENGTH" value="10" id="1"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tLogRow_23">
-      <column comment="" key="false" length="-1" name="JSON_Payload" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    <metadata connector="FLOW" name="tLogRow_24">
+      <column comment="" key="false" length="-1" name="netsuite_payload" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="HTTPClient" componentVersion="5" offsetLabelX="0" offsetLabelY="0" posX="2680" posY="1280">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHTTPClient_12" show="false"/>
+    <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="aHR0cC1zdHVkaW8jSFRUUCNDbGllbnQ" show="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="TEXT" name="LABEL" value="send update to Netsuite"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.base" value="context.netsuite_api_url"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.type" value="Bearer"/>
+    <elementParameter field="PASSWORD" name="configuration.dataset.datastore.authentication.bearerToken" value="context.new_bearer_token"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.apiKey.destination" value="HEADERS" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.apiKey.headerName" value="Authorization" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.apiKey.queryName" value="apikey" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.apiKey.prefix" value="Bearer" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.oauth20.flow" value="CLIENT_CREDENTIAL" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.oauth20.authenticationType" value="BASIC" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.datastore.authentication.oauth20.params" show="false"/>
+    <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataset.methodType" value="POST"/>
+    <elementParameter field="TEXT" name="configuration.dataset.resource" value="context.netsuite_api_path"/>
+    <elementParameter field="CHECK" name="configuration.dataset.hasPathParams" value="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.pathParams" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.hasQueryParams" value="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.queryParams" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.hasHeaders" value="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.headers" show="false">
+      <elementValue elementRef="configuration.dataset.headers[].key" value="&quot;realm&quot;" id="0"/>
+      <elementValue elementRef="configuration.dataset.headers[].value" value="847280_SB1" id="1"/>
+      <elementValue elementRef="configuration.dataset.headers[].query" value="MAIN" id="2"/>
+      <elementValue elementRef="configuration.dataset.headers[].key" value="&quot;oauth_consumer_key&quot;" id="3"/>
+      <elementValue elementRef="configuration.dataset.headers[].value" value="36b9738ac8559b400408daaca9c22dc6cdcffc3c6fdd633c7e081038788c34df" id="4"/>
+      <elementValue elementRef="configuration.dataset.headers[].query" value="MAIN" id="5"/>
+      <elementValue elementRef="configuration.dataset.headers[].key" value="&quot;oauth_token&quot;" id="6"/>
+      <elementValue elementRef="configuration.dataset.headers[].value" value="fbd296529aab911d8a977fa8385e5f97da1d70db3313f5c2d817607bf5c48909" id="7"/>
+      <elementValue elementRef="configuration.dataset.headers[].query" value="MAIN" id="8"/>
+      <elementValue elementRef="configuration.dataset.headers[].key" value="&quot;oauth_nonce&quot;" id="9"/>
+      <elementValue elementRef="configuration.dataset.headers[].value" value="e9d588816ccbb1f76441f283632f0dca" id="10"/>
+      <elementValue elementRef="configuration.dataset.headers[].query" value="MAIN" id="11"/>
+      <elementValue elementRef="configuration.dataset.headers[].key" value="&quot;oauth_timestamp&quot;" id="12"/>
+      <elementValue elementRef="configuration.dataset.headers[].value" value="1788397938" id="13"/>
+      <elementValue elementRef="configuration.dataset.headers[].query" value="MAIN" id="14"/>
+      <elementValue elementRef="configuration.dataset.headers[].key" value="&quot;oauth_signature_method&quot;" id="15"/>
+      <elementValue elementRef="configuration.dataset.headers[].value" value="HMAC-SHA256" id="16"/>
+      <elementValue elementRef="configuration.dataset.headers[].query" value="MAIN" id="17"/>
+      <elementValue elementRef="configuration.dataset.headers[].key" value="&quot;oauth_version&quot;" id="18"/>
+      <elementValue elementRef="configuration.dataset.headers[].value" value="1.0" id="19"/>
+      <elementValue elementRef="configuration.dataset.headers[].query" value="MAIN" id="20"/>
+      <elementValue elementRef="configuration.dataset.headers[].key" value="&quot;oauth_signature&quot;" id="21"/>
+      <elementValue elementRef="configuration.dataset.headers[].value" value="486miyjNtb%2BYJPP00pIcyKtxqjPNCxHMjv4E7RqIt2o%3D" id="22"/>
+      <elementValue elementRef="configuration.dataset.headers[].query" value="MAIN" id="23"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="configuration.dataset.hasBody" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.body.type" value="JSON"/>
+    <elementParameter field="TACOKIT_TEXT_AREA" name="configuration.dataset.body.textValue" value="{.input.netsuite_payload}" show="false"/>
+    <elementParameter field="MEMO" name="configuration.dataset.body.jsonValue" value="{.input.netsuite_payload}"/>
+    <elementParameter field="TABLE" name="configuration.dataset.body.params" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.format" value="RAW_TEXT"/>
+    <elementParameter field="TEXT" name="configuration.dataset.dssl" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.returnedContent" value="STATUS_HEADERS_BODY"/>
+    <elementParameter field="CHECK" name="configuration.dataset.outputKeyValuePairs" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.forwardInput" value="true" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.keyValuePairs" show="false"/>
+    <elementParameter field="CHECK" name="configuration.downloadFile" value="false"/>
+    <elementParameter field="CHECK" name="configuration.specifyFileName" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.useCacheToSave" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.datastore.authentication.oauth20.customizeHeaderName" value="false" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.oauth20.customHeaderName" value="Authorization" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.datastore.authentication.oauth20.customizeTokenPrefix" value="false" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.oauth20.customTokenPrefix" value="Bearer" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.connectionTimeout" value="30000"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.receiveTimeout" value="120000"/>
+    <elementParameter field="CHECK" name="configuration.dataset.datastore.bypassCertificateValidation" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.datastore.useProxy" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.proxyConfiguration.proxyType" value="HTTP" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.proxyConfiguration.proxyPort" value="443" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.datastore.hasRetry" value="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.retry.backoff" value="500" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.retry.factor" value="1" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.retry.maxAttempts" value="2" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.acceptRedirections" value="true"/>
+    <elementParameter field="TEXT" name="configuration.dataset.maxRedirectOnSameURL" value="3"/>
+    <elementParameter field="CHECK" name="configuration.dataset.onlySameHost" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.hasPagination" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.pagination.strategy" value="OFFSET_LIMIT" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.pagination.offsetLimitStrategyConfig.location" value="QUERY_PARAMETERS" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.pagination.markerStrategyConfig.location" value="QUERY_PARAMETERS" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.pagination.markerStrategyConfig.limitValue" value="100" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.jsonForceDouble" value="true" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.normalizeJson" value="false" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.jsonCastConfigurations" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.jsonFilterConfigurations" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.enforceNumberAsString" value="true" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.useCookies" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.saveCookies" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.disableChunkedEncoding" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.httpVersion" value="HTTP_2"/>
+    <elementParameter field="CHECK" name="configuration.uploadFiles" value="false"/>
+    <elementParameter field="TABLE" name="configuration.uploadFileTable" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dieOnError" value="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataset.__version" value="5" show="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataset.datastore.__version" value="5" show="false"/>
+    <metadata connector="LOOKUP" name="LOOKUP"/>
+    <metadata connector="MERGE" name="MERGE"/>
+    <metadata connector="REJECT" name="REJECT"/>
+    <metadata connector="FLOW" name="tHTTPClient_12">
+      <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="headers" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="netsuite_payload" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="2920" posY="1280">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_25" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="status" id="0"/>
+      <elementValue elementRef="LENGTH" value="10" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="headers" id="2"/>
+      <elementValue elementRef="LENGTH" value="10" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="body" id="4"/>
+      <elementValue elementRef="LENGTH" value="10" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="netsuite_payload" id="6"/>
+      <elementValue elementRef="LENGTH" value="10" id="7"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="response"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_25">
+      <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="headers" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="netsuite_payload" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tLibraryLoad" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1760" posY="960">
@@ -9270,144 +9399,6 @@
       <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="headers" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="HTTPClient" componentVersion="5" offsetLabelX="0" offsetLabelY="0" posX="2720" posY="1280">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHTTPClient_11" show="false"/>
-    <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="aHR0cC1zdHVkaW8jSFRUUCNDbGllbnQ" show="false"/>
-    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
-    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
-    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.base" value="https://847280-sb1.restlets.api.netsuite.com/app/site/hosting"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.type" value="Bearer"/>
-    <elementParameter field="PASSWORD" name="configuration.dataset.datastore.authentication.bearerToken" value="context.new_bearer_token"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.apiKey.destination" value="HEADERS" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.apiKey.headerName" value="Authorization" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.apiKey.queryName" value="apikey" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.apiKey.prefix" value="Bearer" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.oauth20.flow" value="CLIENT_CREDENTIAL" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.oauth20.authenticationType" value="BASIC" show="false"/>
-    <elementParameter field="TABLE" name="configuration.dataset.datastore.authentication.oauth20.params" show="false"/>
-    <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataset.methodType" value="POST"/>
-    <elementParameter field="TEXT" name="configuration.dataset.resource" value="/restlet.nl?script=2982&amp;deploy=1"/>
-    <elementParameter field="CHECK" name="configuration.dataset.hasPathParams" value="false"/>
-    <elementParameter field="TABLE" name="configuration.dataset.pathParams" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.hasQueryParams" value="false"/>
-    <elementParameter field="TABLE" name="configuration.dataset.queryParams" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.hasHeaders" value="false"/>
-    <elementParameter field="TABLE" name="configuration.dataset.headers" show="false">
-      <elementValue elementRef="configuration.dataset.headers[].key" value="&quot;realm&quot;" id="0"/>
-      <elementValue elementRef="configuration.dataset.headers[].value" value="847280_SB1" id="1"/>
-      <elementValue elementRef="configuration.dataset.headers[].query" value="MAIN" id="2"/>
-      <elementValue elementRef="configuration.dataset.headers[].key" value="&quot;oauth_consumer_key&quot;" id="3"/>
-      <elementValue elementRef="configuration.dataset.headers[].value" value="36b9738ac8559b400408daaca9c22dc6cdcffc3c6fdd633c7e081038788c34df" id="4"/>
-      <elementValue elementRef="configuration.dataset.headers[].query" value="MAIN" id="5"/>
-      <elementValue elementRef="configuration.dataset.headers[].key" value="&quot;oauth_token&quot;" id="6"/>
-      <elementValue elementRef="configuration.dataset.headers[].value" value="fbd296529aab911d8a977fa8385e5f97da1d70db3313f5c2d817607bf5c48909" id="7"/>
-      <elementValue elementRef="configuration.dataset.headers[].query" value="MAIN" id="8"/>
-      <elementValue elementRef="configuration.dataset.headers[].key" value="&quot;oauth_nonce&quot;" id="9"/>
-      <elementValue elementRef="configuration.dataset.headers[].value" value="e9d588816ccbb1f76441f283632f0dca" id="10"/>
-      <elementValue elementRef="configuration.dataset.headers[].query" value="MAIN" id="11"/>
-      <elementValue elementRef="configuration.dataset.headers[].key" value="&quot;oauth_timestamp&quot;" id="12"/>
-      <elementValue elementRef="configuration.dataset.headers[].value" value="1788397938" id="13"/>
-      <elementValue elementRef="configuration.dataset.headers[].query" value="MAIN" id="14"/>
-      <elementValue elementRef="configuration.dataset.headers[].key" value="&quot;oauth_signature_method&quot;" id="15"/>
-      <elementValue elementRef="configuration.dataset.headers[].value" value="HMAC-SHA256" id="16"/>
-      <elementValue elementRef="configuration.dataset.headers[].query" value="MAIN" id="17"/>
-      <elementValue elementRef="configuration.dataset.headers[].key" value="&quot;oauth_version&quot;" id="18"/>
-      <elementValue elementRef="configuration.dataset.headers[].value" value="1.0" id="19"/>
-      <elementValue elementRef="configuration.dataset.headers[].query" value="MAIN" id="20"/>
-      <elementValue elementRef="configuration.dataset.headers[].key" value="&quot;oauth_signature&quot;" id="21"/>
-      <elementValue elementRef="configuration.dataset.headers[].value" value="486miyjNtb%2BYJPP00pIcyKtxqjPNCxHMjv4E7RqIt2o%3D" id="22"/>
-      <elementValue elementRef="configuration.dataset.headers[].query" value="MAIN" id="23"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="configuration.dataset.hasBody" value="true"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataset.body.type" value="JSON"/>
-    <elementParameter field="MEMO" name="configuration.dataset.body.jsonValue" value="{&#xD;&#xA;   &quot;nsVendorID&quot;: 3414,           &#xD;&#xA;   &quot;etoCompanyID&quot;: &quot;2543&quot;         &#xD;&#xA;}"/>
-    <elementParameter field="TABLE" name="configuration.dataset.body.params" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataset.format" value="RAW_TEXT"/>
-    <elementParameter field="TEXT" name="configuration.dataset.dssl" value="" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataset.returnedContent" value="STATUS_HEADERS_BODY"/>
-    <elementParameter field="CHECK" name="configuration.dataset.outputKeyValuePairs" value="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.forwardInput" value="true" show="false"/>
-    <elementParameter field="TABLE" name="configuration.dataset.keyValuePairs" show="false"/>
-    <elementParameter field="CHECK" name="configuration.downloadFile" value="false"/>
-    <elementParameter field="CHECK" name="configuration.specifyFileName" value="false" show="false"/>
-    <elementParameter field="CHECK" name="configuration.useCacheToSave" value="false" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.datastore.authentication.oauth20.customizeHeaderName" value="false" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.oauth20.customHeaderName" value="Authorization" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.datastore.authentication.oauth20.customizeTokenPrefix" value="false" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.oauth20.customTokenPrefix" value="Bearer" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.connectionTimeout" value="30000"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.receiveTimeout" value="120000"/>
-    <elementParameter field="CHECK" name="configuration.dataset.datastore.bypassCertificateValidation" value="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.datastore.useProxy" value="false"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.proxyConfiguration.proxyType" value="HTTP" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.proxyConfiguration.proxyPort" value="443" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.datastore.hasRetry" value="false"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.retry.backoff" value="500" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.retry.factor" value="1" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.retry.maxAttempts" value="2" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.acceptRedirections" value="true"/>
-    <elementParameter field="TEXT" name="configuration.dataset.maxRedirectOnSameURL" value="3"/>
-    <elementParameter field="CHECK" name="configuration.dataset.onlySameHost" value="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.hasPagination" value="false"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataset.pagination.strategy" value="OFFSET_LIMIT" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataset.pagination.offsetLimitStrategyConfig.location" value="QUERY_PARAMETERS" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataset.pagination.markerStrategyConfig.location" value="QUERY_PARAMETERS" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataset.pagination.markerStrategyConfig.limitValue" value="100" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.jsonForceDouble" value="true" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.normalizeJson" value="false" show="false"/>
-    <elementParameter field="TABLE" name="configuration.dataset.jsonCastConfigurations" show="false"/>
-    <elementParameter field="TABLE" name="configuration.dataset.jsonFilterConfigurations" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.enforceNumberAsString" value="true" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.useCookies" value="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.saveCookies" value="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.disableChunkedEncoding" value="false"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.httpVersion" value="HTTP_2"/>
-    <elementParameter field="CHECK" name="configuration.uploadFiles" value="false"/>
-    <elementParameter field="TABLE" name="configuration.uploadFileTable" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dieOnError" value="false"/>
-    <elementParameter field="TECHNICAL" name="configuration.dataset.__version" value="5" show="false"/>
-    <elementParameter field="TECHNICAL" name="configuration.dataset.datastore.__version" value="5" show="false"/>
-    <metadata connector="LOOKUP" name="LOOKUP"/>
-    <metadata connector="MERGE" name="MERGE"/>
-    <metadata connector="REJECT" name="REJECT"/>
-    <metadata connector="FLOW" name="tHTTPClient_11">
-      <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="headers" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="2880" posY="1280">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_22" show="false"/>
-    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
-    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
-    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
-    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
-    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
-    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
-    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
-    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
-    <elementParameter field="TABLE" name="LENGTHS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="status" id="0"/>
-      <elementValue elementRef="LENGTH" value="10" id="1"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="headers" id="2"/>
-      <elementValue elementRef="LENGTH" value="10" id="3"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="body" id="4"/>
-      <elementValue elementRef="LENGTH" value="10" id="5"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
-    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="response"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tLogRow_22">
-      <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="headers" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <connection connectorName="FLOW" label="row_count" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tJavaRow_1">
@@ -9895,24 +9886,42 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row27" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row25" lineStyle="0" metaname="tHashInput_4" offsetLabelX="0" offsetLabelY="0" source="tHashInput_4" target="tMap_7">
+  <connection connectorName="FLOW" label="row25" lineStyle="0" metaname="tHashInput_4" offsetLabelX="0" offsetLabelY="0" source="tHashInput_4" target="tMap_9">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row25" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tHashInput_4" offsetLabelX="0" offsetLabelY="0" source="tHashInput_4" target="tJava_13">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobError9" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="Netsuite_Payload" lineStyle="0" metaname="Netsuite_Payload" offsetLabelX="0" offsetLabelY="0" source="tMap_7" target="tLogRow_19">
+  <connection connectorName="FLOW" label="Converted_data_types" lineStyle="0" metaname="Converted_data_types" offsetLabelX="0" offsetLabelY="0" source="tMap_9" target="tMap_10">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Netsuite_Payload" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Converted_data_types" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row30" lineStyle="0" metaname="tLogRow_19" offsetLabelX="0" offsetLabelY="0" source="tLogRow_19" target="tMap_8">
+  <connection connectorName="FLOW" label="copyOfnetsuite_payload" lineStyle="0" metaname="copyOfnetsuite_payload" offsetLabelX="0" offsetLabelY="0" source="tMap_10" target="tLogRow_24">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row30" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="copyOfnetsuite_payload" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="Netsuite_Payloads_list" lineStyle="0" metaname="Netsuite_Payloads_list" offsetLabelX="0" offsetLabelY="0" source="tMap_8" target="tLogRow_23">
+  <connection connectorName="FLOW" label="row31" lineStyle="0" metaname="tLogRow_24" offsetLabelX="0" offsetLabelY="0" source="tLogRow_24" target="tHTTPClient_12">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Netsuite_Payloads_list" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row31" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row32" lineStyle="0" metaname="tHTTPClient_12" offsetLabelX="0" offsetLabelY="0" source="tHTTPClient_12" target="tLogRow_25">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="headers" id="0"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+      <elementValue elementRef="TRACE_COLUMN" value="body" id="3"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="4"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="5"/>
+      <elementValue elementRef="TRACE_COLUMN" value="status" id="6"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="7"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="8"/>
+      <elementValue elementRef="TRACE_COLUMN" value="copyOfnetsuite_payload" id="9"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="10"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="11"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row32" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tLibraryLoad_1" offsetLabelX="0" offsetLabelY="0" source="tLibraryLoad_1" target="tJava_14">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk6" show="false"/>
@@ -9951,10 +9960,6 @@
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row28" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="row29" lineStyle="0" metaname="tHTTPClient_11" offsetLabelX="0" offsetLabelY="0" source="tHTTPClient_11" target="tLogRow_22">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row29" show="false"/>
   </connection>
   <note opaque="false" posX="760" posY="-400" sizeHeight="121" sizeWidth="201" text="Insert vendor into&#xD;&#xA;tblComany&#xD;&#xA;from integration&#xD;&#xA;table">
     <elementParameter field="TEXT" name="NOTE_FONT" value="Arial"/>
@@ -10170,11 +10175,6 @@
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHTTPClient_10" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHTTPClient_11" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
   </subjob>
