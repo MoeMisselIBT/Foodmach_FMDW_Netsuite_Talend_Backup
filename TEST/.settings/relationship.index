@@ -467,6 +467,10 @@
     "version" : "Latest",
     "type" : "property"
   }, {
+    "id" : "JwtHelper",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
     "id" : "_QQIh8IlvEfG9C7e242mTTA - tblCompany_integration",
     "version" : "Latest",
     "type" : "schema"
