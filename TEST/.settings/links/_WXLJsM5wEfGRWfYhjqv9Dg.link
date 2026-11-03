@@ -35,7 +35,7 @@
       "name" : "rejectCount"
     }, {
       "id" : "_QarIUNNNEfGRPYW6g8hdOg",
-      "name" : "api_url"
+      "name" : "netsuite_token_api_url"
     }, {
       "id" : "_SxZdMdNPEfGRPYW6g8hdOg",
       "name" : "dw_port"
@@ -99,7 +99,7 @@
       "name" : "rejectCount"
     }, {
       "id" : "_hfmhrtNQEfGRPYW6g8hdOg",
-      "name" : "api_url"
+      "name" : "netsuite_token_api_url"
     }, {
       "id" : "_hfmhsNNQEfGRPYW6g8hdOg",
       "name" : "dw_port"
@@ -163,7 +163,7 @@
       "name" : "rejectCount"
     }, {
       "id" : "_hfmhm9NQEfGRPYW6g8hdOg",
-      "name" : "api_url"
+      "name" : "netsuite_token_api_url"
     }, {
       "id" : "_hfmhndNQEfGRPYW6g8hdOg",
       "name" : "dw_port"
