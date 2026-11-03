@@ -8860,7 +8860,7 @@
       <column comment="" key="false" length="-1" name="headers" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tHashInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1760" posY="1280">
+  <node componentName="tHashInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1960" posY="1280">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashInput_4" show="false"/>
     <elementParameter field="CHECK" name="LINK_WITH" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="LIST" value="tHashOutput_2"/>
@@ -8877,7 +8877,7 @@
       <column comment="" key="false" length="-1" name="CompanyCustom3" nullable="true" pattern="" precision="-1" sourceType="" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="1960" posY="1280">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="2160" posY="1280">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_9" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -8914,7 +8914,7 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="2240" posY="1280">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="2440" posY="1280">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_10" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -8944,7 +8944,7 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="2440" posY="1280">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="2640" posY="1280">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_24" show="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
@@ -8968,7 +8968,7 @@
       <column comment="" key="false" length="-1" name="netsuite_payload" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="HTTPClient" componentVersion="5" offsetLabelX="0" offsetLabelY="0" posX="2680" posY="1280">
+  <node componentName="HTTPClient" componentVersion="5" offsetLabelX="0" offsetLabelY="0" posX="2880" posY="1280">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHTTPClient_12" show="false"/>
     <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="aHR0cC1zdHVkaW8jSFRUUCNDbGllbnQ" show="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
@@ -9078,7 +9078,7 @@
       <column comment="" key="false" length="-1" name="netsuite_payload" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="2920" posY="1280">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="3120" posY="1280">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_25" show="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
@@ -9400,6 +9400,13 @@
       <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="headers" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1760" posY="1280">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_16" show="false"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="System.out.println(&quot;Begin sending CompanyID and CompanyCustom3 to Netsuite&quot;);"/>
+    <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_16"/>
   </node>
   <connection connectorName="FLOW" label="row_count" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tJavaRow_1">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
@@ -9936,7 +9943,7 @@
   <connection connectorName="COMPONENT_ERROR" label="OnComponentError" lineStyle="5" metaname="tHTTPClient_9" offsetLabelX="0" offsetLabelY="0" source="tHTTPClient_9" target="tJava_15">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentError4" show="false"/>
   </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tHTTPClient_9" offsetLabelX="0" offsetLabelY="0" source="tHTTPClient_9" target="tHashInput_4">
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tHTTPClient_9" offsetLabelX="0" offsetLabelY="0" source="tHTTPClient_9" target="tJava_16">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk8" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="response_data" lineStyle="0" metaname="tExtractJSONFields_2" offsetLabelX="0" offsetLabelY="0" source="tExtractJSONFields_2" target="tJavaRow_8">
@@ -9961,6 +9968,9 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row28" show="false"/>
   </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_16" offsetLabelX="0" offsetLabelY="0" source="tJava_16" target="tHashInput_4">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk9" show="false"/>
+  </connection>
   <note opaque="false" posX="760" posY="-400" sizeHeight="121" sizeWidth="201" text="Insert vendor into&#xD;&#xA;tblComany&#xD;&#xA;from integration&#xD;&#xA;table">
     <elementParameter field="TEXT" name="NOTE_FONT" value="Arial"/>
   </note>
@@ -9973,6 +9983,7 @@
   <note opaque="false" posX="1920" posY="520" sizeHeight="120" sizeWidth="201" text="set currency names&#xD;&#xA;"/>
   <note opaque="true" posX="160" posY="960" sizeHeight="161" sizeWidth="241" text="Job starts here.&#xD;&#xA;This API component receives &#xD;&#xA;requests then triggers the subjob"/>
   <note opaque="false" posX="2600" posY="1040" sizeHeight="161" sizeWidth="201" text="&lt;----&#xD;&#xA;This flow here acquires &#xD;&#xA;a netsuite token to make&#xD;&#xA;api calls possible"/>
+  <note opaque="true" posX="3240" posY="1240" sizeHeight="241" sizeWidth="241" text="&lt;- Dev notes:&#xD;&#xA;&#xD;&#xA;1. Make sure&#xD;&#xA;that this validates the change &#xD;&#xA;with the integration table a&#xD;&#xA;&#xD;&#xA;2. Make sure every time this&#xD;&#xA;runs it loads all records where&#xD;&#xA;loadedIntoNetsuite = 0"/>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
@@ -10175,6 +10186,11 @@
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHTTPClient_10" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_16" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
   </subjob>
