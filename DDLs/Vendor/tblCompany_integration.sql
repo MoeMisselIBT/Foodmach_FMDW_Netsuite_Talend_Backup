@@ -66,5 +66,6 @@ CREATE TABLE integration_database.integration.tblCompany_integration (
 	LastErrorTimeUTC datetime2(3) NULL,
 	LastErrorMessage nvarchar(4000) COLLATE Latin1_General_CI_AS NULL,
 	CompanyID int NULL,
+	LoadedIntoNetsuite bit DEFAULT 0 NOT NULL,
 	CONSTRAINT PK_tblCompany_integration PRIMARY KEY (IntegrationID)
 );
