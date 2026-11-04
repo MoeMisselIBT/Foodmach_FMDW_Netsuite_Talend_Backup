@@ -68,5 +68,6 @@ CREATE TABLE integration_database.integration.tblCompany_integration (
 	CompanyID int NULL,
 	LoadedIntoNetsuite bit DEFAULT 0 NOT NULL,
 	TimeNetsuiteUpdatedWithTotalETOCompanyID datetime2(3) NULL,
+	TimeNetsuiteUpdatedWithTotalETOCompanyIdUTC datetime2(3) NULL,
 	CONSTRAINT PK_tblCompany_integration PRIMARY KEY (IntegrationID)
 );
