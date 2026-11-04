@@ -567,9 +567,9 @@
     <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
     <elementParameter field="TABLE" name="VALUES">
       <elementValue elementRef="SCHEMA_COLUMN" value="CompanyID" id="0"/>
-      <elementValue elementRef="VALUE" value="51155" id="1"/>
+      <elementValue elementRef="VALUE" value="5121" id="1"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="CompanyCustom3" id="2"/>
-      <elementValue elementRef="VALUE" value="3415" id="3"/>
+      <elementValue elementRef="VALUE" value="3420" id="3"/>
     </elementParameter>
     <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
     <elementParameter field="TABLE" name="INTABLE" show="false"/>
@@ -994,7 +994,7 @@
       <column comment="" key="false" length="-1" name="CompanyCustom3" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="rejected_rows_tbl">
         <mapperTableEntries name="success" expression="row35.success " type="id_Boolean" nullable="true"/>
@@ -1081,7 +1081,7 @@
       <column comment="" key="false" length="-1" name="CompanyCustom3" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="netsuite_res_formatted">
         <mapperTableEntries name="LoadedIntoNetsuite" expression="true" type="id_Boolean" nullable="true"/>
