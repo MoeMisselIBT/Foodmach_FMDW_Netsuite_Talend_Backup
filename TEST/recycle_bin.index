@@ -6,6 +6,7 @@
   <deletedFolders>process/TotalETO_to_Netsuite/ItemReceipts/Subjobs/old</deletedFolders>
   <deletedFolders>process/demo</deletedFolders>
   <deletedItems id="_gclOEI7jEfGuCZ_y0rqpww" path="" type="JOBLET"/>
+  <deletedItems id="_aaDH4Nf1EfGfAYQ0lujzvA" path="Vendor" type="JOBLET"/>
   <deletedItems id="_tj1UwIDYEfG6A6lFHZgJdA" path="" type="METADATA_CONNECTIONS"/>
   <deletedItems id="_3pT2gL4OEfG0duEbEJJ1_w" path="FMDW_Dev" type="METADATA_CONNECTIONS"/>
   <deletedItems id="_7_NhMKA9EfGq3IYnFJCINg" path="FMDW_Dev" type="METADATA_CONNECTIONS"/>
