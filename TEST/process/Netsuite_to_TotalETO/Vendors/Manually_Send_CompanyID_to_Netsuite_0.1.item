@@ -1181,7 +1181,7 @@
       <elementValue elementRef="SCHEMA_COLUMN" value="TimeNetsuiteUpdatedWithTotalETOCompanyIdUTC" id="5"/>
       <elementValue elementRef="UPDATE_KEY" value="false" id="6"/>
       <elementValue elementRef="DELETE_KEY" value="false" id="7"/>
-      <elementValue elementRef="UPDATABLE" value="false" id="8"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="8"/>
       <elementValue elementRef="INSERTABLE" value="false" id="9"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="CompanyCustom3" id="10"/>
       <elementValue elementRef="UPDATE_KEY" value="true" id="11"/>
