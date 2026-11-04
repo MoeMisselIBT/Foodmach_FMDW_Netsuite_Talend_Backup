@@ -9828,7 +9828,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_16"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="3" offsetLabelY="5" posX="3160" posY="1160">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="3" offsetLabelY="5" posX="3600" posY="1160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_17" show="false"/>
     <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="context.error_message_log = &quot;Failed to insert into integration table&quot;;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;"/>
     <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
@@ -9840,7 +9840,7 @@
       <column comment="" key="false" length="-1" name="headers" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="HTTPClient" componentVersion="5" offsetLabelX="10" offsetLabelY="0" posX="3320" posY="1160">
+  <node componentName="HTTPClient" componentVersion="5" offsetLabelX="10" offsetLabelY="0" posX="3600" posY="1040">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHTTPClient_11" show="false"/>
     <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="aHR0cC1zdHVkaW8jSFRUUCNDbGllbnQ" show="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
@@ -9923,7 +9923,7 @@
       <column comment="" key="false" length="-1" name="headers" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="3560" posY="1160">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="3600" posY="880">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_19" show="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
