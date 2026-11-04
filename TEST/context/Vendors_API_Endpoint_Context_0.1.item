@@ -29,6 +29,7 @@
     <contextParameter xmi:id="__WLk5tcjEfGsM6Y8Dt6xKA" comment="" name="scope" prompt="scope?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="restlets rest_webservices"/>
     <contextParameter xmi:id="_U5tyQNc5EfGsM6Y8Dt6xKA" comment="The path suffix for the Netsuite URL to create a PO. Something like /restlet.nl?script=2965&amp;deploy=2" name="netsuite_api_path" prompt="netsuite_api_path?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/restlet.nl?script=2965&amp;deploy=2"/>
     <contextParameter xmi:id="_o6CtANc5EfGsM6Y8Dt6xKA" comment="The netstuite API URL to send vendor data to netsuite" name="netsuite_api_url" prompt="netsuite_api_url?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="https://847280-sb1.restlets.api.netsuite.com/app/site/hosting"/>
+    <contextParameter xmi:id="_8JkasNfuEfGfAYQ0lujzvA" comment="" name="rejectCount" prompt="rejectCount?" promptNeeded="false" type="id_Integer" value="0"/>
   </talendfile:ContextType>
   <talendfile:ContextType xmi:id="_XkiBFpngEfGdaILNokaaHA" confirmationNeeded="false" hide="false" name="Foodmach_Dev">
     <contextParameter xmi:id="_XkiBF5ngEfGdaILNokaaHA" comment="" name="integration_database_server_ip" prompt="integration_database_server_ip?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="192.168.2.46"/>
@@ -59,6 +60,7 @@
     <contextParameter xmi:id="__WLk7dcjEfGsM6Y8Dt6xKA" comment="" name="scope" prompt="scope?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="restlets rest_webservices"/>
     <contextParameter xmi:id="_U5tyQdc5EfGsM6Y8Dt6xKA" comment="The path suffix for the Netsuite URL to create a PO. Something like /restlet.nl?script=2965&amp;deploy=2" name="netsuite_api_path" prompt="netsuite_api_path?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/restlet.nl?script=2965&amp;deploy=2"/>
     <contextParameter xmi:id="_o6CtAdc5EfGsM6Y8Dt6xKA" comment="The netstuite API URL to send vendor data to netsuite" name="netsuite_api_url" prompt="netsuite_api_url?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="https://847280-sb1.restlets.api.netsuite.com/app/site/hosting"/>
+    <contextParameter xmi:id="_8JlBwNfuEfGfAYQ0lujzvA" comment="" name="rejectCount" prompt="rejectCount?" promptNeeded="false" type="id_Integer" value="0"/>
   </talendfile:ContextType>
   <talendfile:ContextType xmi:id="_Dy20wKAfEfGq3IYnFJCINg" confirmationNeeded="false" hide="false" name="Foodmach_Dev_2">
     <contextParameter xmi:id="_Dy20waAfEfGq3IYnFJCINg" comment="" name="integration_database_server_ip" prompt="integration_database_server_ip?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="192.168.2.46"/>
@@ -89,6 +91,7 @@
     <contextParameter xmi:id="__WLk9NcjEfGsM6Y8Dt6xKA" comment="" name="scope" prompt="scope?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="restlets rest_webservices"/>
     <contextParameter xmi:id="_U5tyQtc5EfGsM6Y8Dt6xKA" comment="The path suffix for the Netsuite URL to create a PO. Something like /restlet.nl?script=2965&amp;deploy=2" name="netsuite_api_path" prompt="netsuite_api_path?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/restlet.nl?script=2965&amp;deploy=2"/>
     <contextParameter xmi:id="_o6CtAtc5EfGsM6Y8Dt6xKA" comment="The netstuite API URL to send vendor data to netsuite" name="netsuite_api_url" prompt="netsuite_api_url?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="https://847280-sb1.restlets.api.netsuite.com/app/site/hosting"/>
+    <contextParameter xmi:id="_8JlBwdfuEfGfAYQ0lujzvA" comment="" name="rejectCount" prompt="rejectCount?" promptNeeded="false" type="id_Integer" value="0"/>
   </talendfile:ContextType>
   <talendfile:ContextType xmi:id="_XkiBHJngEfGdaILNokaaHA" confirmationNeeded="false" hide="false" name="IBT_Dev">
     <contextParameter xmi:id="_XkiBHZngEfGdaILNokaaHA" comment="" name="integration_database_server_ip" prompt="integration_database_server_ip?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="192.168.2.65"/>
@@ -119,6 +122,7 @@
     <contextParameter xmi:id="__WLk-9cjEfGsM6Y8Dt6xKA" comment="" name="scope" prompt="scope?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="restlets rest_webservices"/>
     <contextParameter xmi:id="_U5tyQ9c5EfGsM6Y8Dt6xKA" comment="The path suffix for the Netsuite URL to create a PO. Something like /restlet.nl?script=2965&amp;deploy=2" name="netsuite_api_path" prompt="netsuite_api_path?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/restlet.nl?script=2965&amp;deploy=2"/>
     <contextParameter xmi:id="_o6CtA9c5EfGsM6Y8Dt6xKA" comment="The netstuite API URL to send vendor data to netsuite" name="netsuite_api_url" prompt="netsuite_api_url?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="https://847280-sb1.restlets.api.netsuite.com/app/site/hosting"/>
+    <contextParameter xmi:id="_8JlBwtfuEfGfAYQ0lujzvA" comment="" name="rejectCount" prompt="rejectCount?" promptNeeded="false" type="id_Integer" value="0"/>
   </talendfile:ContextType>
   <talendfile:ContextType xmi:id="_roYT4NZ7EfGsM6Y8Dt6xKA" confirmationNeeded="false" hide="false" name="Prod">
     <contextParameter xmi:id="_roYT4dZ7EfGsM6Y8Dt6xKA" comment="" name="integration_database_server_ip" prompt="integration_database_server_ip?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="192.168.2.47"/>
@@ -149,6 +153,7 @@
     <contextParameter xmi:id="__WLlAtcjEfGsM6Y8Dt6xKA" comment="" name="scope" prompt="scope?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="restlets rest_webservices"/>
     <contextParameter xmi:id="_U5tyRNc5EfGsM6Y8Dt6xKA" comment="The path suffix for the Netsuite URL to create a PO. Something like /restlet.nl?script=2965&amp;deploy=2" name="netsuite_api_path" prompt="netsuite_api_path?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
     <contextParameter xmi:id="_o6CtBNc5EfGsM6Y8Dt6xKA" comment="The netstuite API URL to send vendor data to netsuite" name="netsuite_api_url" prompt="netsuite_api_url?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="https://847280-sb1.restlets.api.netsuite.com/app/site/hosting"/>
+    <contextParameter xmi:id="_8JlBw9fuEfGfAYQ0lujzvA" comment="" name="rejectCount" prompt="rejectCount?" promptNeeded="false" type="id_Integer" value="0"/>
   </talendfile:ContextType>
   <talendfile:ContextType xmi:id="_roYT9NZ7EfGsM6Y8Dt6xKA" confirmationNeeded="false" hide="false" name="Test">
     <contextParameter xmi:id="_roYT9dZ7EfGsM6Y8Dt6xKA" comment="" name="integration_database_server_ip" prompt="integration_database_server_ip?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="192.168.2.46"/>
@@ -179,5 +184,6 @@
     <contextParameter xmi:id="__WLlCdcjEfGsM6Y8Dt6xKA" comment="" name="scope" prompt="scope?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="restlets rest_webservices"/>
     <contextParameter xmi:id="_U5tyRdc5EfGsM6Y8Dt6xKA" comment="The path suffix for the Netsuite URL to create a PO. Something like /restlet.nl?script=2965&amp;deploy=2" name="netsuite_api_path" prompt="netsuite_api_path?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
     <contextParameter xmi:id="_o6CtBdc5EfGsM6Y8Dt6xKA" comment="The netstuite API URL to send vendor data to netsuite" name="netsuite_api_url" prompt="netsuite_api_url?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="https://847280-sb1.restlets.api.netsuite.com/app/site/hosting"/>
+    <contextParameter xmi:id="_8JlBxNfuEfGfAYQ0lujzvA" comment="" name="rejectCount" prompt="rejectCount?" promptNeeded="false" type="id_Integer" value="0"/>
   </talendfile:ContextType>
 </xmi:XMI>
