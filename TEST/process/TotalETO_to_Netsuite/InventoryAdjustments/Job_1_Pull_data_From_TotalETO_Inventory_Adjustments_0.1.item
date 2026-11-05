@@ -1,27 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Dev" jobType="Standard">
   <context confirmationNeeded="false" hide="false" name="Dev">
-    <contextParameter comment="data warehouse IP" name="fmdw_ip" prompt="fmdw_ip?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="192.168.2.46" internalId="_MOGv4NigEfGzEfgJjXvOdQ"/>
-    <contextParameter comment="data warehouse port" name="fmdw_port" prompt="fmdw_port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="51980" internalId="_MOGv4digEfGzEfgJjXvOdQ"/>
-    <contextParameter comment="data warehouse pwd" name="fmdw_pwd" prompt="fmdw_pwd?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:64CgHudzOTjgQlDttboB14bfRBK2pWer+zuQe38gEKGU2oNnCFjXCCo=" internalId="_MOGv4tigEfGzEfgJjXvOdQ"/>
-    <contextParameter comment="This should just be fmdw" name="fmdw_database_name" prompt="fmdw_database_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_2kqEwNirEfGzEfgJjXvOdQ"/>
+    <contextParameter comment="data warehouse IP" name="fmdw_ip" prompt="fmdw_ip?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="192.168.2.46" internalId="_MOGv4NigEfGzEfgJjXvOdQ"/>
+    <contextParameter comment="data warehouse port" name="fmdw_port" prompt="fmdw_port?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="51980" internalId="_MOGv4digEfGzEfgJjXvOdQ"/>
+    <contextParameter comment="data warehouse pwd" name="fmdw_pwd" prompt="fmdw_pwd?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_Password" value="enc:system.encryption.key.v1:64CgHudzOTjgQlDttboB14bfRBK2pWer+zuQe38gEKGU2oNnCFjXCCo=" internalId="_MOGv4tigEfGzEfgJjXvOdQ"/>
+    <contextParameter comment="This should just be fmdw" name="fmdw_database_name" prompt="fmdw_database_name?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="" internalId="_2kqEwNirEfGzEfgJjXvOdQ"/>
+    <contextParameter comment="Power Automate Workflows webhook part 2. This has been chopped into 2 parts" name="teams_path" prompt="teams_path?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="/invoke?api-version=1&amp;sp=%2Ftriggers%2Fmanual%2Frun&amp;sv=1.0&amp;sig=rHGifzi61aUZzyKSQxtkZdj4bf79WU98m4pkJKW_hx4" internalId="_djkxoNjGEfGzEfgJjXvOdQ"/>
+    <contextParameter comment="Power Automate Workflows webhook part 1. This has been chopped into 2 parts" name="teams_base_url" prompt="teams_base_url?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="https://default37f3b1b2de5a4ccf94f5b8c2c7a688.00.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/01/workflows/58eacb3c9e234189b8c22bce15da5a6e/triggers/manual/paths" internalId="_djkxodjGEfGzEfgJjXvOdQ"/>
+    <contextParameter comment="" name="rejectCount" prompt="rejectCount?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_Integer" value="0" internalId="_djkxotjGEfGzEfgJjXvOdQ"/>
+    <contextParameter comment="" name="client_id" prompt="client_id?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="e74f0683fa5379e2b725547a322cb11514b0915b7a7efec374a72c4ae3a04531" internalId="_djkxo9jGEfGzEfgJjXvOdQ"/>
+    <contextParameter comment="" name="private_key_path" prompt="private_key_path?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="C:\Users\mmisselmany\Downloads\PO_Auth_flow\PO_Auth_flow\private.pem" internalId="_djkxpNjGEfGzEfgJjXvOdQ"/>
+    <contextParameter comment="" name="certificate_id" prompt="certificate_id?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="S_eR_japu9FLYSq2Kzq9pw9OPBfiKkMR2trklvfe4Es" internalId="_djkxpdjGEfGzEfgJjXvOdQ"/>
+    <contextParameter comment="" name="JSON_Payload" prompt="JSON_Payload?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="" internalId="_djkxptjGEfGzEfgJjXvOdQ"/>
+    <contextParameter comment="The Netsuite API path to create Item Receipts. Something like /restlet.nl?script=2973&amp;deploy=1" name="netsuite_api_path" prompt="netsuite_api_path?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="/restlet.nl?script=2973&amp;deploy=1" internalId="_djkxp9jGEfGzEfgJjXvOdQ"/>
+    <contextParameter comment="for netsuite API" name="account_id" prompt="account_id?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="847280-sb1" internalId="_djkxqNjGEfGzEfgJjXvOdQ"/>
+    <contextParameter comment="" name="new_bearer_token" prompt="new_bearer_token?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="" internalId="_djkxqdjGEfGzEfgJjXvOdQ"/>
+    <contextParameter comment="" name="scope" prompt="scope?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="restlets rest_webservices" internalId="_djkxqtjGEfGzEfgJjXvOdQ"/>
+    <contextParameter comment="This is for the token URL, not for the Item Receipt URL" name="netsuite_token_api_url" prompt="netsuite_token_api_url?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value=".suitetalk.api.netsuite.com/services/rest/auth/oauth2/v1/token" internalId="_djkxq9jGEfGzEfgJjXvOdQ"/>
+    <contextParameter comment="The Netsuite API URL to create Item Receipts" name="netsuite_api_url" prompt="netsuite_api_url?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="https://847280-sb1.restlets.api.netsuite.com/app/site/hosting" internalId="_djkxrNjGEfGzEfgJjXvOdQ"/>
   </context>
   <context confirmationNeeded="false" hide="false" name="Prod">
-    <contextParameter comment="data warehouse IP" name="fmdw_ip" prompt="fmdw_ip?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="192.168.2.47" internalId="_MOGv4NigEfGzEfgJjXvOdQ"/>
-    <contextParameter comment="data warehouse port" name="fmdw_port" prompt="fmdw_port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433" internalId="_MOGv4digEfGzEfgJjXvOdQ"/>
-    <contextParameter comment="data warehouse pwd" name="fmdw_pwd" prompt="fmdw_pwd?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:RZKSloqptBUFo6Peo2Z8xuUG89e3RZ/fA71QaRiOuNLlKoMh0tPb1YA=" internalId="_MOGv4tigEfGzEfgJjXvOdQ"/>
-    <contextParameter comment="This should just be fmdw" name="fmdw_database_name" prompt="fmdw_database_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_2kqEwdirEfGzEfgJjXvOdQ"/>
+    <contextParameter comment="data warehouse IP" name="fmdw_ip" prompt="fmdw_ip?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="192.168.2.47" internalId="_MOGv4NigEfGzEfgJjXvOdQ"/>
+    <contextParameter comment="data warehouse port" name="fmdw_port" prompt="fmdw_port?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="1433" internalId="_MOGv4digEfGzEfgJjXvOdQ"/>
+    <contextParameter comment="data warehouse pwd" name="fmdw_pwd" prompt="fmdw_pwd?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_Password" value="enc:system.encryption.key.v1:RZKSloqptBUFo6Peo2Z8xuUG89e3RZ/fA71QaRiOuNLlKoMh0tPb1YA=" internalId="_MOGv4tigEfGzEfgJjXvOdQ"/>
+    <contextParameter comment="This should just be fmdw" name="fmdw_database_name" prompt="fmdw_database_name?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="" internalId="_2kqEwdirEfGzEfgJjXvOdQ"/>
+    <contextParameter comment="Power Automate Workflows webhook part 2. This has been chopped into 2 parts" name="teams_path" prompt="teams_path?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="/invoke?api-version=1&amp;sp=%2Ftriggers%2Fmanual%2Frun&amp;sv=1.0&amp;sig=rHGifzi61aUZzyKSQxtkZdj4bf79WU98m4pkJKW_hx4" internalId="_djkxrdjGEfGzEfgJjXvOdQ"/>
+    <contextParameter comment="Power Automate Workflows webhook part 1. This has been chopped into 2 parts" name="teams_base_url" prompt="teams_base_url?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="https://default37f3b1b2de5a4ccf94f5b8c2c7a688.00.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/01/workflows/58eacb3c9e234189b8c22bce15da5a6e/triggers/manual/paths" internalId="_djkxrtjGEfGzEfgJjXvOdQ"/>
+    <contextParameter comment="" name="rejectCount" prompt="rejectCount?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_Integer" value="0" internalId="_djkxr9jGEfGzEfgJjXvOdQ"/>
+    <contextParameter comment="" name="client_id" prompt="client_id?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="e74f0683fa5379e2b725547a322cb11514b0915b7a7efec374a72c4ae3a04531" internalId="_djkxsNjGEfGzEfgJjXvOdQ"/>
+    <contextParameter comment="" name="private_key_path" prompt="private_key_path?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="C:\Users\mmisselmany\Downloads\PO_Auth_flow\PO_Auth_flow\private.pem" internalId="_djkxsdjGEfGzEfgJjXvOdQ"/>
+    <contextParameter comment="" name="certificate_id" prompt="certificate_id?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="S_eR_japu9FLYSq2Kzq9pw9OPBfiKkMR2trklvfe4Es" internalId="_djkxstjGEfGzEfgJjXvOdQ"/>
+    <contextParameter comment="" name="JSON_Payload" prompt="JSON_Payload?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="" internalId="_djkxs9jGEfGzEfgJjXvOdQ"/>
+    <contextParameter comment="The Netsuite API path to create Item Receipts. Something like /restlet.nl?script=2973&amp;deploy=1" name="netsuite_api_path" prompt="netsuite_api_path?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="" internalId="_djkxtNjGEfGzEfgJjXvOdQ"/>
+    <contextParameter comment="for netsuite API" name="account_id" prompt="account_id?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="847280-sb1" internalId="_djkxtdjGEfGzEfgJjXvOdQ"/>
+    <contextParameter comment="" name="new_bearer_token" prompt="new_bearer_token?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="" internalId="_djkxttjGEfGzEfgJjXvOdQ"/>
+    <contextParameter comment="" name="scope" prompt="scope?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="restlets rest_webservices" internalId="_djkxt9jGEfGzEfgJjXvOdQ"/>
+    <contextParameter comment="This is for the token URL, not for the Item Receipt URL" name="netsuite_token_api_url" prompt="netsuite_token_api_url?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="" internalId="_djkxuNjGEfGzEfgJjXvOdQ"/>
+    <contextParameter comment="The Netsuite API URL to create Item Receipts" name="netsuite_api_url" prompt="netsuite_api_url?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="" internalId="_djkxudjGEfGzEfgJjXvOdQ"/>
   </context>
   <context confirmationNeeded="false" hide="false" name="Test">
-    <contextParameter comment="data warehouse IP" name="fmdw_ip" prompt="fmdw_ip?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="192.168.2.46" internalId="_MOGv4NigEfGzEfgJjXvOdQ"/>
-    <contextParameter comment="data warehouse port" name="fmdw_port" prompt="fmdw_port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="52015" internalId="_MOGv4digEfGzEfgJjXvOdQ"/>
-    <contextParameter comment="data warehouse pwd" name="fmdw_pwd" prompt="fmdw_pwd?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:jEPMVVfUD/PkoVJN3ayYXg4a6yi6b4FjNbgVKRKvR1iZlkkrtbwmlRY=" internalId="_MOGv4tigEfGzEfgJjXvOdQ"/>
-    <contextParameter comment="This should just be fmdw" name="fmdw_database_name" prompt="fmdw_database_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_2kqEwtirEfGzEfgJjXvOdQ"/>
+    <contextParameter comment="data warehouse IP" name="fmdw_ip" prompt="fmdw_ip?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="192.168.2.46" internalId="_MOGv4NigEfGzEfgJjXvOdQ"/>
+    <contextParameter comment="data warehouse port" name="fmdw_port" prompt="fmdw_port?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="52015" internalId="_MOGv4digEfGzEfgJjXvOdQ"/>
+    <contextParameter comment="data warehouse pwd" name="fmdw_pwd" prompt="fmdw_pwd?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_Password" value="enc:system.encryption.key.v1:jEPMVVfUD/PkoVJN3ayYXg4a6yi6b4FjNbgVKRKvR1iZlkkrtbwmlRY=" internalId="_MOGv4tigEfGzEfgJjXvOdQ"/>
+    <contextParameter comment="This should just be fmdw" name="fmdw_database_name" prompt="fmdw_database_name?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="" internalId="_2kqEwtirEfGzEfgJjXvOdQ"/>
+    <contextParameter comment="Power Automate Workflows webhook part 2. This has been chopped into 2 parts" name="teams_path" prompt="teams_path?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="/invoke?api-version=1&amp;sp=%2Ftriggers%2Fmanual%2Frun&amp;sv=1.0&amp;sig=rHGifzi61aUZzyKSQxtkZdj4bf79WU98m4pkJKW_hx4" internalId="_djkxutjGEfGzEfgJjXvOdQ"/>
+    <contextParameter comment="Power Automate Workflows webhook part 1. This has been chopped into 2 parts" name="teams_base_url" prompt="teams_base_url?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="https://default37f3b1b2de5a4ccf94f5b8c2c7a688.00.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/01/workflows/58eacb3c9e234189b8c22bce15da5a6e/triggers/manual/paths" internalId="_djkxu9jGEfGzEfgJjXvOdQ"/>
+    <contextParameter comment="" name="rejectCount" prompt="rejectCount?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_Integer" value="0" internalId="_djkxvNjGEfGzEfgJjXvOdQ"/>
+    <contextParameter comment="" name="client_id" prompt="client_id?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="e74f0683fa5379e2b725547a322cb11514b0915b7a7efec374a72c4ae3a04531" internalId="_djkxvdjGEfGzEfgJjXvOdQ"/>
+    <contextParameter comment="" name="private_key_path" prompt="private_key_path?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="C:\Users\mmisselmany\Downloads\PO_Auth_flow\PO_Auth_flow\private.pem" internalId="_djkxvtjGEfGzEfgJjXvOdQ"/>
+    <contextParameter comment="" name="certificate_id" prompt="certificate_id?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="S_eR_japu9FLYSq2Kzq9pw9OPBfiKkMR2trklvfe4Es" internalId="_djkxv9jGEfGzEfgJjXvOdQ"/>
+    <contextParameter comment="" name="JSON_Payload" prompt="JSON_Payload?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="" internalId="_djkxwNjGEfGzEfgJjXvOdQ"/>
+    <contextParameter comment="The Netsuite API path to create Item Receipts. Something like /restlet.nl?script=2973&amp;deploy=1" name="netsuite_api_path" prompt="netsuite_api_path?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="" internalId="_djkxwdjGEfGzEfgJjXvOdQ"/>
+    <contextParameter comment="for netsuite API" name="account_id" prompt="account_id?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="847280-sb1" internalId="_djkxwtjGEfGzEfgJjXvOdQ"/>
+    <contextParameter comment="" name="new_bearer_token" prompt="new_bearer_token?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="" internalId="_djkxw9jGEfGzEfgJjXvOdQ"/>
+    <contextParameter comment="" name="scope" prompt="scope?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="restlets rest_webservices" internalId="_djkxxNjGEfGzEfgJjXvOdQ"/>
+    <contextParameter comment="This is for the token URL, not for the Item Receipt URL" name="netsuite_token_api_url" prompt="netsuite_token_api_url?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="" internalId="_djkxxdjGEfGzEfgJjXvOdQ"/>
+    <contextParameter comment="The Netsuite API URL to create Item Receipts" name="netsuite_api_url" prompt="netsuite_api_url?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="" internalId="_djkxxtjGEfGzEfgJjXvOdQ"/>
   </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="14" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
@@ -191,11 +230,11 @@
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SET NOCOUNT ON;&#xD;&#xA;SET XACT_ABORT ON;&#xD;&#xA;&#xD;&#xA;DECLARE @Actions TABLE (Action NVARCHAR(10));&#xD;&#xA;&#xD;&#xA;BEGIN TRY&#xD;&#xA;&#xD;&#xA;    ;WITH src AS (&#xD;&#xA;        SELECT&#xD;&#xA;         I.ProjectID,&#xD;&#xA;         I.SpecID,&#xD;&#xA;         I.ItemID,&#xD;&#xA;         E.ItemCompanyID,&#xD;&#xA;         C.CategoryDescription AS ItemCategory,&#xD;&#xA;         I.InventoryLocation,&#xD;&#xA;         I.ReceivedDate,&#xD;&#xA;         SUM(I.PullQty) AS PullQty,&#xD;&#xA;         SUM(I.CostingValue) AS CostingValue,&#xD;&#xA;         I.PullPrice&#xD;&#xA;        FROM&#xD;&#xA;         fmdw.teto_bronze.tblInventoryPullDetails I&#xD;&#xA;        LEFT JOIN&#xD;&#xA;         fmdw.teto_bronze.tblEngItemMaster E ON I.ItemID = E.ItemID&#xD;&#xA;        LEFT JOIN&#xD;&#xA;         fmdw.teto_bronze.tlkpItemMaster_Categories C ON E.ItemCategory = C.ItemCategory&#xD;&#xA;        WHERE I.FulfilledStatus = 1&#xD;&#xA;          AND I.ReceivedDate >= (&#xD;&#xA;                SELECT ISNULL(MAX(ReceivedDate), '1900-01-01')&#xD;&#xA;                FROM integration_database.integration.tblInventoryAdjustment_integration)&#xD;&#xA;        GROUP BY I.ProjectID, I.SpecID, I.ItemID, I.PullPrice, E.ItemCompanyID, C.CategoryDescription, I.InventoryLocation, I.FulfilledStatus, I.ReceivedDate&#xD;&#xA;    )&#xD;&#xA;    MERGE integration_database.integration.tblInventoryAdjustment_integration WITH (HOLDLOCK) AS tgt&#xD;&#xA;    USING src&#xD;&#xA;       ON  tgt.ProjectID                  = src.ProjectID&#xD;&#xA;       AND tgt.SpecID                     = src.SpecID&#xD;&#xA;       AND tgt.ItemID                     = src.ItemID&#xD;&#xA;       AND ISNULL(tgt.ItemCompanyID, '')  = ISNULL(src.ItemCompanyID, '')&#xD;&#xA;       AND ISNULL(tgt.ItemCategory, '')   = ISNULL(src.ItemCategory, '')&#xD;&#xA;       AND tgt.InventoryLocation          = src.InventoryLocation&#xD;&#xA;       AND tgt.ReceivedDate               = src.ReceivedDate&#xD;&#xA;       AND ISNULL(tgt.PullPrice, -1)      = ISNULL(src.PullPrice, -1)&#xD;&#xA;    WHEN MATCHED AND ISNULL(tgt.LoadedIntoNetsuite, 0) = 0&#xD;&#xA;       AND (ISNULL(tgt.PullQty, 0)      &lt;> ISNULL(src.PullQty, 0)&#xD;&#xA;         OR ISNULL(tgt.CostingValue, 0) &lt;> ISNULL(src.CostingValue, 0)) THEN&#xD;&#xA;        UPDATE SET tgt.PullQty      = src.PullQty,&#xD;&#xA;                   tgt.CostingValue = src.CostingValue&#xD;&#xA;    WHEN NOT MATCHED BY TARGET THEN&#xD;&#xA;        INSERT (ProjectID, SpecID, ItemID, ItemCompanyID, ItemCategory, InventoryLocation,&#xD;&#xA;                ReceivedDate, PullQty, CostingValue, PullPrice)&#xD;&#xA;        VALUES (src.ProjectID, src.SpecID, src.ItemID, src.ItemCompanyID, src.ItemCategory, src.InventoryLocation,&#xD;&#xA;                src.ReceivedDate, src.PullQty, src.CostingValue, src.PullPrice)&#xD;&#xA;    OUTPUT $action INTO @Actions;&#xD;&#xA;&#xD;&#xA;    SELECT&#xD;&#xA;        'Success' AS Status,&#xD;&#xA;        COUNT(CASE WHEN Action = 'INSERT' THEN 1 END) AS RowsInserted,&#xD;&#xA;        COUNT(CASE WHEN Action = 'UPDATE' THEN 1 END) AS RowsUpdated,&#xD;&#xA;        CAST(NULL AS NVARCHAR(4000)) AS ErrorMessage&#xD;&#xA;    FROM @Actions;&#xD;&#xA;&#xD;&#xA;END TRY&#xD;&#xA;BEGIN CATCH&#xD;&#xA;&#xD;&#xA;    IF @@TRANCOUNT > 0 ROLLBACK;&#xD;&#xA;&#xD;&#xA;    SELECT&#xD;&#xA;        'Failed' AS Status,&#xD;&#xA;        0 AS RowsInserted,&#xD;&#xA;        0 AS RowsUpdated,&#xD;&#xA;        ERROR_MESSAGE() AS ErrorMessage;&#xD;&#xA;&#xD;&#xA;END CATCH;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;wSET NOCOUNT ON;&#xD;&#xA;SET XACT_ABORT ON;&#xD;&#xA;&#xD;&#xA;DECLARE @Actions TABLE (Action NVARCHAR(10));&#xD;&#xA;&#xD;&#xA;BEGIN TRY&#xD;&#xA;&#xD;&#xA;    ;WITH src AS (&#xD;&#xA;        SELECT&#xD;&#xA;         I.ProjectID,&#xD;&#xA;         I.SpecID,&#xD;&#xA;         I.ItemID,&#xD;&#xA;         E.ItemCompanyID,&#xD;&#xA;         C.CategoryDescription AS ItemCategory,&#xD;&#xA;         I.InventoryLocation,&#xD;&#xA;         I.ReceivedDate,&#xD;&#xA;         SUM(I.PullQty) AS PullQty,&#xD;&#xA;         SUM(I.CostingValue) AS CostingValue,&#xD;&#xA;         I.PullPrice&#xD;&#xA;        FROM&#xD;&#xA;         fmdw.teto_bronze.tblInventoryPullDetails I&#xD;&#xA;        LEFT JOIN&#xD;&#xA;         fmdw.teto_bronze.tblEngItemMaster E ON I.ItemID = E.ItemID&#xD;&#xA;        LEFT JOIN&#xD;&#xA;         fmdw.teto_bronze.tlkpItemMaster_Categories C ON E.ItemCategory = C.ItemCategory&#xD;&#xA;        WHERE I.FulfilledStatus = 1&#xD;&#xA;          AND I.ReceivedDate >= (&#xD;&#xA;                SELECT ISNULL(MAX(ReceivedDate), '1900-01-01')&#xD;&#xA;                FROM integration_database.integration.tblInventoryAdjustment_integration)&#xD;&#xA;        GROUP BY I.ProjectID, I.SpecID, I.ItemID, I.PullPrice, E.ItemCompanyID, C.CategoryDescription, I.InventoryLocation, I.FulfilledStatus, I.ReceivedDate&#xD;&#xA;    )&#xD;&#xA;    MERGE integration_database.integration.tblInventoryAdjustment_integration WITH (HOLDLOCK) AS tgt&#xD;&#xA;    USING src&#xD;&#xA;       ON  tgt.ProjectID                  = src.ProjectID&#xD;&#xA;       AND tgt.SpecID                     = src.SpecID&#xD;&#xA;       AND tgt.ItemID                     = src.ItemID&#xD;&#xA;       AND ISNULL(tgt.ItemCompanyID, '')  = ISNULL(src.ItemCompanyID, '')&#xD;&#xA;       AND ISNULL(tgt.ItemCategory, '')   = ISNULL(src.ItemCategory, '')&#xD;&#xA;       AND tgt.InventoryLocation          = src.InventoryLocation&#xD;&#xA;       AND tgt.ReceivedDate               = src.ReceivedDate&#xD;&#xA;       AND ISNULL(tgt.PullPrice, -1)      = ISNULL(src.PullPrice, -1)&#xD;&#xA;    WHEN MATCHED AND ISNULL(tgt.LoadedIntoNetsuite, 0) = 0&#xD;&#xA;       AND (ISNULL(tgt.PullQty, 0)      &lt;> ISNULL(src.PullQty, 0)&#xD;&#xA;         OR ISNULL(tgt.CostingValue, 0) &lt;> ISNULL(src.CostingValue, 0)) THEN&#xD;&#xA;        UPDATE SET tgt.PullQty      = src.PullQty,&#xD;&#xA;                   tgt.CostingValue = src.CostingValue&#xD;&#xA;    WHEN NOT MATCHED BY TARGET THEN&#xD;&#xA;        INSERT (ProjectID, SpecID, ItemID, ItemCompanyID, ItemCategory, InventoryLocation,&#xD;&#xA;                ReceivedDate, PullQty, CostingValue, PullPrice)&#xD;&#xA;        VALUES (src.ProjectID, src.SpecID, src.ItemID, src.ItemCompanyID, src.ItemCategory, src.InventoryLocation,&#xD;&#xA;                src.ReceivedDate, src.PullQty, src.CostingValue, src.PullPrice)&#xD;&#xA;    OUTPUT $action INTO @Actions;&#xD;&#xA;&#xD;&#xA;    SELECT&#xD;&#xA;        'Success' AS Status,&#xD;&#xA;        COUNT(CASE WHEN Action = 'INSERT' THEN 1 END) AS RowsInserted,&#xD;&#xA;        COUNT(CASE WHEN Action = 'UPDATE' THEN 1 END) AS RowsUpdated,&#xD;&#xA;        CAST(NULL AS NVARCHAR(4000)) AS ErrorMessage&#xD;&#xA;    FROM @Actions;&#xD;&#xA;&#xD;&#xA;END TRY&#xD;&#xA;BEGIN CATCH&#xD;&#xA;&#xD;&#xA;    IF @@TRANCOUNT > 0 ROLLBACK;&#xD;&#xA;&#xD;&#xA;    SELECT&#xD;&#xA;        'Failed' AS Status,&#xD;&#xA;        0 AS RowsInserted,&#xD;&#xA;        0 AS RowsUpdated,&#xD;&#xA;        ERROR_MESSAGE() AS ErrorMessage;&#xD;&#xA;&#xD;&#xA;END CATCH;&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;trustServerCertificate=true;&quot;" show="false"/>
     <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false" show="false"/>
     <elementParameter field="CLOSED_LIST" name="ACTIVE_DIR_AUTH_MODE" value="PASSWORD" show="false"/>
@@ -281,6 +320,239 @@
       <column comment="" key="false" length="-1" name="ErrorMessage" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
+  <node componentName="tLogCatcher" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="880" posY="640">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogCatcher_1" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_JAVA_EXCEPTION" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_TDIE" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_TWARN" value="false"/>
+    <elementParameter field="CHECK" name="CATCH_TACTIONFAILURE" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogCatcher_1">
+      <column defaultValue="" key="false" length="0" name="moment" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="pid" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="root_pid" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="father_pid" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="50" name="project" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="job" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="50" name="context" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="priority" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="type" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="origin" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="message" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="code" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1080" posY="640">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_2" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="moment" id="0"/>
+      <elementValue elementRef="LENGTH" value="10" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="pid" id="2"/>
+      <elementValue elementRef="LENGTH" value="10" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="root_pid" id="4"/>
+      <elementValue elementRef="LENGTH" value="10" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="father_pid" id="6"/>
+      <elementValue elementRef="LENGTH" value="10" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="project" id="8"/>
+      <elementValue elementRef="LENGTH" value="10" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="job" id="10"/>
+      <elementValue elementRef="LENGTH" value="10" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="context" id="12"/>
+      <elementValue elementRef="LENGTH" value="10" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="priority" id="14"/>
+      <elementValue elementRef="LENGTH" value="10" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="type" id="16"/>
+      <elementValue elementRef="LENGTH" value="10" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="origin" id="18"/>
+      <elementValue elementRef="LENGTH" value="10" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="message" id="20"/>
+      <elementValue elementRef="LENGTH" value="10" id="21"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="code" id="22"/>
+      <elementValue elementRef="LENGTH" value="10" id="23"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Preview tLogCatcher"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_2">
+      <column defaultValue="" key="false" length="0" name="moment" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="pid" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="root_pid" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="father_pid" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="50" name="project" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="job" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="50" name="context" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="priority" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="type" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="origin" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="message" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="code" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tSampleRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1280" posY="640">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSampleRow_1" show="false"/>
+    <elementParameter field="LABEL" name="INFO_RANGE" value="Range let you choose a list of line numbers and/or a list of ranges.&#xA;&#xA;- &quot;1,5&quot; : line 1 and 5&#xA;- &quot;10..20&quot; : lines 10 to 20&#xA;- &quot;23..45,48,50..54&quot; : lines 23 to 45, line 48 and lines 50 to 54&#xA;- &quot;1..10&quot; : 10 first lines&#xA;&#xA;&#x9;  "/>
+    <elementParameter field="MEMO_JAVA" name="RANGE" value="&quot;1&quot;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSampleRow_1">
+      <column key="false" length="0" name="moment" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="20" name="pid" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="20" name="root_pid" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="20" name="father_pid" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="50" name="project" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="255" name="job" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="50" name="context" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="priority" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="255" name="type" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="255" name="origin" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="255" name="message" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="code" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1520" posY="640">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_1" show="false"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="globalMap.put(&quot;errJob&quot;, input_row.job);&#xD;&#xA;globalMap.put(&quot;errComponent&quot;, input_row.origin);&#xD;&#xA;globalMap.put(&quot;errorMsg&quot;, input_row.message == null ? &quot;&quot; : input_row.message.replace(&quot;\\&quot;, &quot;\\\\&quot;).replace(&quot;\&quot;&quot;, &quot;\\\&quot;&quot;).replaceAll(&quot;[\\r\\n]+&quot;, &quot; &quot;));&#xD;&#xA;System.out.println(&quot;CAUGHT [&quot; + input_row.type + &quot;] in &quot; + input_row.origin + &quot;: &quot; + input_row.message);&#xD;&#xA;System.out.println(&quot;[&quot; + input_row.moment + &quot;] &quot;&#xD;&#xA;&#x9;    + (input_row.type == null ? &quot;&quot; : input_row.type.toUpperCase())&#xD;&#xA;&#x9;    + &quot; | priority &quot; + input_row.priority&#xD;&#xA;&#x9;    + &quot; | code &quot; + input_row.code&#xD;&#xA;&#x9;    + &quot; | &quot; + input_row.origin&#xD;&#xA;&#x9;    + &quot; | &quot; + input_row.message);"/>
+    <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJavaRow_1"/>
+  </node>
+  <node componentName="HTTPClient" componentVersion="5" offsetLabelX="6" offsetLabelY="14" posX="1680" posY="640">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHTTPClient_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="aHR0cC1zdHVkaW8jSFRUUCNDbGllbnQ" show="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="TEXT" name="LABEL" value="Send Teams error message"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.base" value="context.teams_base_url"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.type" value="NoAuth"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.apiKey.destination" value="HEADERS" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.apiKey.headerName" value="Authorization" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.apiKey.queryName" value="apikey" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.apiKey.prefix" value="Bearer" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.oauth20.flow" value="CLIENT_CREDENTIAL" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.oauth20.authenticationType" value="FORM" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.datastore.authentication.oauth20.params" show="false"/>
+    <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataset.methodType" value="POST"/>
+    <elementParameter field="TEXT" name="configuration.dataset.resource" value="context.teams_path"/>
+    <elementParameter field="CHECK" name="configuration.dataset.hasPathParams" value="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.pathParams" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.hasQueryParams" value="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.queryParams" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.hasHeaders" value="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.headers" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.hasBody" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.body.type" value="JSON"/>
+    <elementParameter field="TACOKIT_TEXT_AREA" name="configuration.dataset.body.textValue" value="{&#xD;&#xA;  &quot;type&quot;: &quot;message&quot;,&#xD;&#xA;  &quot;attachments&quot;: [&#xD;&#xA;    {&#xD;&#xA;      &quot;contentType&quot;: &quot;application/vnd.microsoft.card.adaptive&quot;,&#xD;&#xA;      &quot;content&quot;: {&#xD;&#xA;        &quot;type&quot;: &quot;AdaptiveCard&quot;,&#xD;&#xA;        &quot;$schema&quot;: &quot;http://adaptivecards.io/schemas/adaptive-card.json&quot;,&#xD;&#xA;        &quot;version&quot;: &quot;1.4&quot;,&#xD;&#xA;        &quot;body&quot;: [&#xD;&#xA;          { &quot;type&quot;: &quot;TextBlock&quot;, &quot;text&quot;: &quot;Test message from Postman&quot;, &quot;wrap&quot;: true }&#xD;&#xA;        ]&#xD;&#xA;      }&#xD;&#xA;    }&#xD;&#xA;  ]&#xD;&#xA;}" show="false"/>
+    <elementParameter field="MEMO" name="configuration.dataset.body.jsonValue" value="&quot;{&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;message\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;attachments\&quot;: [{&quot;&#xD;&#xA;+ &quot;\&quot;contentType\&quot;: \&quot;application/vnd.microsoft.card.adaptive\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;content\&quot;: {&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;AdaptiveCard\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;$schema\&quot;: \&quot;http://adaptivecards.io/schemas/adaptive-card.json\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;version\&quot;: \&quot;1.4\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;body\&quot;: [{&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;TextBlock\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;text\&quot;: \&quot;\u274C Dev - Talend job failed\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;weight\&quot;: \&quot;Bolder\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;size\&quot;: \&quot;Medium\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;color\&quot;: \&quot;Attention\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;wrap\&quot;: true&quot;&#xD;&#xA;+ &quot;},{&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;FactSet\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;facts\&quot;: [&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Job:\&quot;, \&quot;value\&quot;: \&quot;&quot; + (String)globalMap.get(&quot;errJob&quot;) + &quot;\&quot;},&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Component:\&quot;, \&quot;value\&quot;: \&quot;&quot; + (String)globalMap.get(&quot;errComponent&quot;) + &quot;\&quot;},&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Time:\&quot;, \&quot;value\&quot;: \&quot;&quot; + java.time.ZonedDateTime.now(java.time.ZoneId.of(&quot;Australia/Sydney&quot;)).format(java.time.format.DateTimeFormatter.ofPattern(&quot;yyyy-MM-dd HH:mm:ss z&quot;)) + &quot;\&quot;},&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Status:\&quot;, \&quot;value\&quot;: \&quot;Failed\&quot;},&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Error:\&quot;, \&quot;value\&quot;: \&quot;&quot; + (String)globalMap.get(&quot;errorMsg&quot;) + &quot;\&quot;}&quot;&#xD;&#xA;+ &quot;]&quot;&#xD;&#xA;+ &quot;}]&quot;&#xD;&#xA;+ &quot;}&quot;&#xD;&#xA;+ &quot;}]&quot;&#xD;&#xA;+ &quot;}&quot;"/>
+    <elementParameter field="TABLE" name="configuration.dataset.body.params" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.format" value="RAW_TEXT"/>
+    <elementParameter field="TEXT" name="configuration.dataset.dssl" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.returnedContent" value="STATUS_HEADERS_BODY"/>
+    <elementParameter field="CHECK" name="configuration.dataset.outputKeyValuePairs" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.forwardInput" value="false" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.keyValuePairs" show="false"/>
+    <elementParameter field="CHECK" name="configuration.downloadFile" value="false"/>
+    <elementParameter field="CHECK" name="configuration.specifyFileName" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.useCacheToSave" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.datastore.authentication.oauth20.customizeHeaderName" value="false" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.oauth20.customHeaderName" value="Authorization" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.datastore.authentication.oauth20.customizeTokenPrefix" value="false" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.oauth20.customTokenPrefix" value="Bearer" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.connectionTimeout" value="30000"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.receiveTimeout" value="120000"/>
+    <elementParameter field="CHECK" name="configuration.dataset.datastore.bypassCertificateValidation" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.datastore.useProxy" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.proxyConfiguration.proxyType" value="HTTP" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.proxyConfiguration.proxyPort" value="443" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.datastore.hasRetry" value="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.retry.backoff" value="500" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.retry.factor" value="1" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.retry.maxAttempts" value="2" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.acceptRedirections" value="true"/>
+    <elementParameter field="TEXT" name="configuration.dataset.maxRedirectOnSameURL" value="3"/>
+    <elementParameter field="CHECK" name="configuration.dataset.onlySameHost" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.hasPagination" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.pagination.strategy" value="OFFSET_LIMIT" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.pagination.offsetLimitStrategyConfig.location" value="QUERY_PARAMETERS" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.pagination.markerStrategyConfig.location" value="QUERY_PARAMETERS" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.pagination.markerStrategyConfig.limitValue" value="100" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.jsonForceDouble" value="true" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.normalizeJson" value="false" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.jsonCastConfigurations" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.jsonFilterConfigurations" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.enforceNumberAsString" value="true" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.useCookies" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.saveCookies" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.disableChunkedEncoding" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.httpVersion" value="HTTP_2"/>
+    <elementParameter field="CHECK" name="configuration.uploadFiles" value="false"/>
+    <elementParameter field="TABLE" name="configuration.uploadFileTable" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dieOnError" value="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataset.__version" value="5" show="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataset.datastore.__version" value="5" show="false"/>
+    <metadata connector="LOOKUP" name="LOOKUP"/>
+    <metadata connector="MERGE" name="MERGE"/>
+    <metadata connector="REJECT" name="REJECT"/>
+    <metadata connector="FLOW" name="tHTTPClient_1">
+      <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="headers" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="2000" posY="640">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_3" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="body" id="0"/>
+      <elementValue elementRef="LENGTH" value="10" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="status" id="2"/>
+      <elementValue elementRef="LENGTH" value="10" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="headers" id="4"/>
+      <elementValue elementRef="LENGTH" value="10" id="5"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Send Teams message result"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_3">
+      <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="headers" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="2000" posY="800">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="System.out.println(&quot;Job experienced an error&quot;);&#xD;&#xA;"/>
+    <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="log job failed"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_2">
+      <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="headers" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBConnection_1" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_1" target="tJava_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
   </connection>
@@ -294,6 +566,41 @@
   <connection connectorName="FLOW" label="results" lineStyle="0" metaname="tParseRecordSet_1" offsetLabelX="0" offsetLabelY="0" source="tParseRecordSet_1" target="tLogRow_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="results" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row27" lineStyle="0" metaname="tLogCatcher_1" offsetLabelX="0" offsetLabelY="0" source="tLogCatcher_1" target="tLogRow_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row27" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row24" lineStyle="0" metaname="tLogRow_2" offsetLabelX="0" offsetLabelY="0" source="tLogRow_2" target="tSampleRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row24" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row29" lineStyle="0" metaname="tSampleRow_1" offsetLabelX="0" offsetLabelY="0" source="tSampleRow_1" target="tJavaRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row29" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row26" lineStyle="0" metaname="tJavaRow_1" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_1" target="tHTTPClient_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row26" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row28" lineStyle="0" metaname="tHTTPClient_1" offsetLabelX="0" offsetLabelY="0" source="tHTTPClient_1" target="tLogRow_3">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="body" id="0"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+      <elementValue elementRef="TRACE_COLUMN" value="headers" id="3"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="4"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="5"/>
+      <elementValue elementRef="TRACE_COLUMN" value="status" id="6"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="7"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="8"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row28" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row25" lineStyle="0" metaname="tLogRow_3" offsetLabelX="0" offsetLabelY="0" source="tLogRow_3" target="tJava_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row25" show="false"/>
   </connection>
   <note opaque="true" posX="520" posY="400" sizeHeight="201" sizeWidth="361" text="&lt;----------&#xD;&#xA;Performs a SQL statement that moves the data&#xD;&#xA;from the InventoryPullDetails table into the&#xD;&#xA;integration table.&#xD;&#xA;&#xD;&#xA;It only grabs records from InventoryPullDetails&#xD;&#xA;if the ReceivedDate is greater than the &#xD;&#xA;ReceivedDate in the integration table"/>
   <note opaque="true" posX="520" posY="0" sizeHeight="401" sizeWidth="441" text="Important Note - The ReceivedDate is sometimes null.&#xD;&#xA;If we use this column to load the day's data then we &#xD;&#xA;can miss records. Please implement a solution&#xD;&#xA;once the whole pipeline is complete">
@@ -313,6 +620,11 @@
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBRow_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogCatcher_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
   </subjob>
