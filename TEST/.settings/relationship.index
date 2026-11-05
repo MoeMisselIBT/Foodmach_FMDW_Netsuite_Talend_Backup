@@ -520,13 +520,9 @@
     "version" : "Latest",
     "type" : "context"
   }, {
-    "id" : "_3pT2gL4OEfG0duEbEJJ1_w",
+    "id" : "_7_NhMKA9EfGq3IYnFJCINg",
     "version" : "Latest",
     "type" : "property"
-  }, {
-    "id" : "_3pT2gL4OEfG0duEbEJJ1_w - tblReceiverLog",
-    "version" : "Latest",
-    "type" : "schema"
   } ]
 }, {
   "baseItem" : {
