@@ -511,6 +511,25 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_w4DnMNgPEfGfAYQ0lujzvA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "built-in",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_3pT2gL4OEfG0duEbEJJ1_w",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_3pT2gL4OEfG0duEbEJJ1_w - tblReceiverLog",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_JBoxII7kEfGuCZ_y0rqpww",
     "version" : "0.1",
     "type" : "joblet"
