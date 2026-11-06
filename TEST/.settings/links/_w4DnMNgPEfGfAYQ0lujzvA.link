@@ -54,6 +54,9 @@
     }, {
       "id" : "_cCW2i9jGEfGzEfgJjXvOdQ",
       "name" : "netsuite_api_url"
+    }, {
+      "id" : "_YHs1YNmjEfGievzSKCqvKQ",
+      "name" : "inventory_cutoff_date"
     } ]
   }, {
     "contextName" : "Prod",
@@ -109,6 +112,9 @@
     }, {
       "id" : "_cCW2mNjGEfGzEfgJjXvOdQ",
       "name" : "netsuite_api_url"
+    }, {
+      "id" : "_YHs1YdmjEfGievzSKCqvKQ",
+      "name" : "inventory_cutoff_date"
     } ]
   }, {
     "contextName" : "Test",
@@ -164,6 +170,9 @@
     }, {
       "id" : "_cCW2pdjGEfGzEfgJjXvOdQ",
       "name" : "netsuite_api_url"
+    }, {
+      "id" : "_YHs1YtmjEfGievzSKCqvKQ",
+      "name" : "inventory_cutoff_date"
     } ]
   } ]
 }
