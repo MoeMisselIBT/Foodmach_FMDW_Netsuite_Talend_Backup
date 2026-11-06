@@ -98,6 +98,21 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_9GdQ8NjDEfGzEfgJjXvOdQ",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_P1wWwNjGEfGzEfgJjXvOdQ",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_7_NhMKA9EfGq3IYnFJCINg - tblPurchaseOrderHeader_integration",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_9Qc98LyJEfG0duEbEJJ1_w",
     "version" : "0.1",
     "type" : "job"
