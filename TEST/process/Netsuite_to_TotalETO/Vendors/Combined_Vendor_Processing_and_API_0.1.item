@@ -9307,7 +9307,7 @@
       <column comment="" key="false" length="-1" name="CompanyCustom3" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="netsuite_res_formatted">
         <mapperTableEntries name="LoadedIntoNetsuite" expression="true" type="id_Boolean" nullable="true"/>
@@ -9467,7 +9467,7 @@
       <column comment="" key="false" length="-1" name="CompanyCustom3" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="rejected_rows_tbl">
         <mapperTableEntries name="success" expression="row36.success " type="id_Boolean" nullable="true"/>
@@ -10648,6 +10648,10 @@
   <note opaque="false" posX="1920" posY="520" sizeHeight="120" sizeWidth="201" text="set currency names&#xD;&#xA;"/>
   <note opaque="true" posX="160" posY="960" sizeHeight="161" sizeWidth="241" text="Job starts here.&#xD;&#xA;This API component receives &#xD;&#xA;requests then triggers the subjob"/>
   <note opaque="false" posX="2600" posY="1040" sizeHeight="161" sizeWidth="201" text="&lt;----&#xD;&#xA;This flow here acquires &#xD;&#xA;a netsuite token to make&#xD;&#xA;api calls possible"/>
+  <note opaque="true" posX="1480" posY="1520" sizeHeight="201" sizeWidth="361" text="------>&#xD;&#xA;This subjob sends the CompanyID back to Netsuite so&#xD;&#xA; it can be recorded. There is a manual version of this &#xD;&#xA;subjob named &#xD;&#xA;Manually_Send_CompanyID_to_Netsuite.&#xD;&#xA;Trigger it when there's an issue with this job&#xD;&#xA;and the CompanyID was not sent to Netsuite&#xD;&#xA;&#xD;&#xA;">
+    <elementParameter field="RADIO" name="NOTELABEL_CENTER" value="false"/>
+    <elementParameter field="RADIO" name="NOTETXT_TOP" value="true"/>
+  </note>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
