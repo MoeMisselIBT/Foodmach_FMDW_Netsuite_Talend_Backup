@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Dev" jobType="Standard">
+  <context confirmationNeeded="false" hide="false" name="Error_Test">
+    <contextParameter comment="data warehouse IP" name="fmdw_ip" prompt="fmdw_ip?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="192.168.2.46" internalId="_Gl1h4NyoEfG7S4713UCU8Q"/>
+    <contextParameter comment="data warehouse port" name="fmdw_port" prompt="fmdw_port?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="51980" internalId="_Gl1h4dyoEfG7S4713UCU8Q"/>
+    <contextParameter comment="data warehouse pwd" name="fmdw_pwd" prompt="fmdw_pwd?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_Password" value="enc:system.encryption.key.v1:9/2iMIsq2dggT/NKL8kFfqeTUwazXVfLlvNCgEnX/Zh0COl7lGmOBFM=" internalId="_Gl1h4tyoEfG7S4713UCU8Q"/>
+    <contextParameter comment="This should just be fmdw" name="fmdw_database_name" prompt="fmdw_database_name?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="" internalId="_Gl1h49yoEfG7S4713UCU8Q"/>
+    <contextParameter comment="for netsuite API" name="account_id" prompt="account_id?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="847280-sb1" internalId="_Gl1h5NyoEfG7S4713UCU8Q"/>
+    <contextParameter comment="" name="client_id" prompt="client_id?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="e74f0683fa5379e2b725547a322cb11514b0915b7a7efec374a72c4ae3a04531" internalId="_Gl1h5dyoEfG7S4713UCU8Q"/>
+    <contextParameter comment="" name="certificate_id" prompt="certificate_id?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="S_eR_japu9FLYSq2Kzq9pw9OPBfiKkMR2trklvfe4Es" internalId="_Gl1h5tyoEfG7S4713UCU8Q"/>
+    <contextParameter comment="" name="scope" prompt="scope?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="restlets rest_webservices" internalId="_Gl1h59yoEfG7S4713UCU8Q"/>
+    <contextParameter comment="" name="private_key_path" prompt="private_key_path?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="C:\Users\mmisselmany\Downloads\PO_Auth_flow\PO_Auth_flow\private.pem" internalId="_Gl1h6NyoEfG7S4713UCU8Q"/>
+    <contextParameter comment="" name="JSON_Payload" prompt="JSON_Payload?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="" internalId="_Gl1h6dyoEfG7S4713UCU8Q"/>
+    <contextParameter comment="" name="new_bearer_token" prompt="new_bearer_token?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="wdwaawd" internalId="_Gl1h6tyoEfG7S4713UCU8Q"/>
+    <contextParameter comment="" name="rejectCount" prompt="rejectCount?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_Integer" value="0" internalId="_Gl1h69yoEfG7S4713UCU8Q"/>
+    <contextParameter comment="This is for the token URL, not for the Item Receipt URL" name="netsuite_token_api_url" prompt="netsuite_token_api_url?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value=".suitetalk.api.netsuite.com/services/rest/auth/oauth2/v1/token" internalId="_Gl1h7NyoEfG7S4713UCU8Q"/>
+    <contextParameter comment="Power Automate Workflows webhook part 1. This has been chopped into 2 parts" name="teams_base_url" prompt="teams_base_url?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="https://default37f3b1b2de5a4ccf94f5b8c2c7a688.00.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/01/workflows/58eacb3c9e234189b8c22bce15da5a6e/triggers/manual/paths" internalId="_Gl1h7dyoEfG7S4713UCU8Q"/>
+    <contextParameter comment="Power Automate Workflows webhook part 2. This has been chopped into 2 parts" name="teams_path" prompt="teams_path?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="/invoke?api-version=1&amp;sp=%2Ftriggers%2Fmanual%2Frun&amp;sv=1.0&amp;sig=rHGifzi61aUZzyKSQxtkZdj4bf79WU98m4pkJKW_hx4" internalId="_Gl1h7tyoEfG7S4713UCU8Q"/>
+    <contextParameter comment="The Netsuite API URL to create Item Receipts" name="netsuite_api_url" prompt="netsuite_api_url?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="https://847280-sb1.restlets.api.netsuite.com/app/site/hostings" internalId="_Gl1h79yoEfG7S4713UCU8Q"/>
+    <contextParameter comment="The Netsuite API path to create Item Receipts. Something like /restlet.nl?script=2973&amp;deploy=1" name="netsuite_api_path" prompt="netsuite_api_path?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="/restlet.nl?script=2981&amp;deploy=1" internalId="_Gl1h8NyoEfG7S4713UCU8Q"/>
+    <contextParameter comment="No inventory pulls before this date will be send to Netsuite" name="inventory_cutoff_date" prompt="inventory_cutoff_date?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="2026-09-01" internalId="_Gl1h8dyoEfG7S4713UCU8Q"/>
+    <contextParameter comment="A list of ProjectID's to filter while testing. These should be comma separated with no quotes or brackets. For example 7108, 6809, 4304. Leave blank in production." name="projectIDs" prompt="projectIDs?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="7108" internalId="_Gl1h8tyoEfG7S4713UCU8Q"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="Prod">
+    <contextParameter comment="data warehouse IP" name="fmdw_ip" prompt="fmdw_ip?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="192.168.2.47" internalId="_Gl1h89yoEfG7S4713UCU8Q"/>
+    <contextParameter comment="data warehouse port" name="fmdw_port" prompt="fmdw_port?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="1433" internalId="_Gl1h9NyoEfG7S4713UCU8Q"/>
+    <contextParameter comment="data warehouse pwd" name="fmdw_pwd" prompt="fmdw_pwd?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_Password" value="enc:system.encryption.key.v1:nzA5joqFKw11EVEeY1OVnJtFxmaYSRrxN4jaPWh8XDwHTH7wA3Fcrcw=" internalId="_Gl1h9dyoEfG7S4713UCU8Q"/>
+    <contextParameter comment="This should just be fmdw" name="fmdw_database_name" prompt="fmdw_database_name?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="" internalId="_Gl1h9tyoEfG7S4713UCU8Q"/>
+    <contextParameter comment="for netsuite API" name="account_id" prompt="account_id?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="847280-sb1" internalId="_Gl1h99yoEfG7S4713UCU8Q"/>
+    <contextParameter comment="" name="client_id" prompt="client_id?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="e74f0683fa5379e2b725547a322cb11514b0915b7a7efec374a72c4ae3a04531" internalId="_Gl1h-NyoEfG7S4713UCU8Q"/>
+    <contextParameter comment="" name="certificate_id" prompt="certificate_id?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="S_eR_japu9FLYSq2Kzq9pw9OPBfiKkMR2trklvfe4Es" internalId="_Gl1h-dyoEfG7S4713UCU8Q"/>
+    <contextParameter comment="" name="scope" prompt="scope?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="restlets rest_webservices" internalId="_Gl1h-tyoEfG7S4713UCU8Q"/>
+    <contextParameter comment="" name="private_key_path" prompt="private_key_path?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="C:\Users\mmisselmany\Downloads\PO_Auth_flow\PO_Auth_flow\private.pem" internalId="_Gl1h-9yoEfG7S4713UCU8Q"/>
+    <contextParameter comment="" name="JSON_Payload" prompt="JSON_Payload?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="" internalId="_Gl1h_NyoEfG7S4713UCU8Q"/>
+    <contextParameter comment="" name="new_bearer_token" prompt="new_bearer_token?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="" internalId="_Gl1h_dyoEfG7S4713UCU8Q"/>
+    <contextParameter comment="" name="rejectCount" prompt="rejectCount?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_Integer" value="0" internalId="_Gl1h_tyoEfG7S4713UCU8Q"/>
+    <contextParameter comment="This is for the token URL, not for the Item Receipt URL" name="netsuite_token_api_url" prompt="netsuite_token_api_url?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="" internalId="_Gl1h_9yoEfG7S4713UCU8Q"/>
+    <contextParameter comment="Power Automate Workflows webhook part 1. This has been chopped into 2 parts" name="teams_base_url" prompt="teams_base_url?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="https://default37f3b1b2de5a4ccf94f5b8c2c7a688.00.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/01/workflows/58eacb3c9e234189b8c22bce15da5a6e/triggers/manual/paths" internalId="_Gl1iANyoEfG7S4713UCU8Q"/>
+    <contextParameter comment="Power Automate Workflows webhook part 2. This has been chopped into 2 parts" name="teams_path" prompt="teams_path?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="/invoke?api-version=1&amp;sp=%2Ftriggers%2Fmanual%2Frun&amp;sv=1.0&amp;sig=rHGifzi61aUZzyKSQxtkZdj4bf79WU98m4pkJKW_hx4" internalId="_Gl1iAdyoEfG7S4713UCU8Q"/>
+    <contextParameter comment="The Netsuite API URL to create Item Receipts" name="netsuite_api_url" prompt="netsuite_api_url?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="https://847280-sb1.restlets.api.netsuite.com/app/site/hosting" internalId="_Gl1iAtyoEfG7S4713UCU8Q"/>
+    <contextParameter comment="The Netsuite API path to create Item Receipts. Something like /restlet.nl?script=2973&amp;deploy=1" name="netsuite_api_path" prompt="netsuite_api_path?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="/restlet.nl?script=2981&amp;deploy=1" internalId="_Gl1iA9yoEfG7S4713UCU8Q"/>
+    <contextParameter comment="No inventory pulls before this date will be send to Netsuite" name="inventory_cutoff_date" prompt="inventory_cutoff_date?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="2026-09-01" internalId="_Gl1iBNyoEfG7S4713UCU8Q"/>
+    <contextParameter comment="A list of ProjectID's to filter while testing. These should be comma separated with no quotes or brackets. For example 7108, 6809, 4304. Leave blank in production." name="projectIDs" prompt="projectIDs?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="" internalId="_Gl1iBdyoEfG7S4713UCU8Q"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="Dev">
+    <contextParameter comment="data warehouse IP" name="fmdw_ip" prompt="fmdw_ip?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="192.168.2.46" internalId="_Gl1iBtyoEfG7S4713UCU8Q"/>
+    <contextParameter comment="data warehouse port" name="fmdw_port" prompt="fmdw_port?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="51980" internalId="_Gl1iB9yoEfG7S4713UCU8Q"/>
+    <contextParameter comment="data warehouse pwd" name="fmdw_pwd" prompt="fmdw_pwd?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_Password" value="enc:system.encryption.key.v1:xfty9JIzXXuD3GZbRLLaY2SoYIFccm/7DAM2DT0ikVTLx+PFWQS8zZU=" internalId="_Gl1iCNyoEfG7S4713UCU8Q"/>
+    <contextParameter comment="This should just be fmdw" name="fmdw_database_name" prompt="fmdw_database_name?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="" internalId="_Gl1iCdyoEfG7S4713UCU8Q"/>
+    <contextParameter comment="for netsuite API" name="account_id" prompt="account_id?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="847280-sb1" internalId="_Gl1iCtyoEfG7S4713UCU8Q"/>
+    <contextParameter comment="" name="client_id" prompt="client_id?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="e74f0683fa5379e2b725547a322cb11514b0915b7a7efec374a72c4ae3a04531" internalId="_Gl1iC9yoEfG7S4713UCU8Q"/>
+    <contextParameter comment="" name="certificate_id" prompt="certificate_id?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="S_eR_japu9FLYSq2Kzq9pw9OPBfiKkMR2trklvfe4Es" internalId="_Gl1iDNyoEfG7S4713UCU8Q"/>
+    <contextParameter comment="" name="scope" prompt="scope?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="restlets rest_webservices" internalId="_Gl1iDdyoEfG7S4713UCU8Q"/>
+    <contextParameter comment="" name="private_key_path" prompt="private_key_path?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="C:\Users\mmisselmany\Downloads\PO_Auth_flow\PO_Auth_flow\private.pem" internalId="_Gl1iDtyoEfG7S4713UCU8Q"/>
+    <contextParameter comment="" name="JSON_Payload" prompt="JSON_Payload?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="" internalId="_Gl1iD9yoEfG7S4713UCU8Q"/>
+    <contextParameter comment="" name="new_bearer_token" prompt="new_bearer_token?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="" internalId="_Gl1iENyoEfG7S4713UCU8Q"/>
+    <contextParameter comment="" name="rejectCount" prompt="rejectCount?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_Integer" value="0" internalId="_Gl1iEdyoEfG7S4713UCU8Q"/>
+    <contextParameter comment="This is for the token URL, not for the Item Receipt URL" name="netsuite_token_api_url" prompt="netsuite_token_api_url?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value=".suitetalk.api.netsuite.com/services/rest/auth/oauth2/v1/token" internalId="_Gl1iEtyoEfG7S4713UCU8Q"/>
+    <contextParameter comment="Power Automate Workflows webhook part 1. This has been chopped into 2 parts" name="teams_base_url" prompt="teams_base_url?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="https://default37f3b1b2de5a4ccf94f5b8c2c7a688.00.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/01/workflows/58eacb3c9e234189b8c22bce15da5a6e/triggers/manual/paths" internalId="_Gl1iE9yoEfG7S4713UCU8Q"/>
+    <contextParameter comment="Power Automate Workflows webhook part 2. This has been chopped into 2 parts" name="teams_path" prompt="teams_path?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="/invoke?api-version=1&amp;sp=%2Ftriggers%2Fmanual%2Frun&amp;sv=1.0&amp;sig=rHGifzi61aUZzyKSQxtkZdj4bf79WU98m4pkJKW_hx4" internalId="_Gl1iFNyoEfG7S4713UCU8Q"/>
+    <contextParameter comment="The Netsuite API URL to create Item Receipts" name="netsuite_api_url" prompt="netsuite_api_url?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="https://847280-sb1.restlets.api.netsuite.com/app/site/hosting" internalId="_Gl1iFdyoEfG7S4713UCU8Q"/>
+    <contextParameter comment="The Netsuite API path to create Item Receipts. Something like /restlet.nl?script=2973&amp;deploy=1" name="netsuite_api_path" prompt="netsuite_api_path?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="/restlet.nl?script=2981&amp;deploy=1" internalId="_Gl1iFtyoEfG7S4713UCU8Q"/>
+    <contextParameter comment="No inventory pulls before this date will be send to Netsuite" name="inventory_cutoff_date" prompt="inventory_cutoff_date?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="2026-09-01" internalId="_Gl1iF9yoEfG7S4713UCU8Q"/>
+    <contextParameter comment="A list of ProjectID's to filter while testing. These should be comma separated with no quotes or brackets. For example 7108, 6809, 4304. Leave blank in production." name="projectIDs" prompt="projectIDs?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="7108" internalId="_Gl1iGNyoEfG7S4713UCU8Q"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="Test">
+    <contextParameter comment="data warehouse IP" name="fmdw_ip" prompt="fmdw_ip?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="192.168.2.46" internalId="_Gl1iGdyoEfG7S4713UCU8Q"/>
+    <contextParameter comment="data warehouse port" name="fmdw_port" prompt="fmdw_port?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="52015" internalId="_Gl1iGtyoEfG7S4713UCU8Q"/>
+    <contextParameter comment="data warehouse pwd" name="fmdw_pwd" prompt="fmdw_pwd?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_Password" value="enc:system.encryption.key.v1:b+WtHje+8KmOBDBfyzN6foj8QWngk5ibGyWO5romsPhySMSBJM+5uW0=" internalId="_Gl2I8NyoEfG7S4713UCU8Q"/>
+    <contextParameter comment="This should just be fmdw" name="fmdw_database_name" prompt="fmdw_database_name?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="" internalId="_Gl2I8dyoEfG7S4713UCU8Q"/>
+    <contextParameter comment="for netsuite API" name="account_id" prompt="account_id?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="847280-sb1" internalId="_Gl2I8tyoEfG7S4713UCU8Q"/>
+    <contextParameter comment="" name="client_id" prompt="client_id?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="e74f0683fa5379e2b725547a322cb11514b0915b7a7efec374a72c4ae3a04531" internalId="_Gl2I89yoEfG7S4713UCU8Q"/>
+    <contextParameter comment="" name="certificate_id" prompt="certificate_id?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="S_eR_japu9FLYSq2Kzq9pw9OPBfiKkMR2trklvfe4Es" internalId="_Gl2I9NyoEfG7S4713UCU8Q"/>
+    <contextParameter comment="" name="scope" prompt="scope?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="restlets rest_webservices" internalId="_Gl2I9dyoEfG7S4713UCU8Q"/>
+    <contextParameter comment="" name="private_key_path" prompt="private_key_path?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="C:\Users\mmisselmany\Downloads\PO_Auth_flow\PO_Auth_flow\private.pem" internalId="_Gl2I9tyoEfG7S4713UCU8Q"/>
+    <contextParameter comment="" name="JSON_Payload" prompt="JSON_Payload?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="" internalId="_Gl2I99yoEfG7S4713UCU8Q"/>
+    <contextParameter comment="" name="new_bearer_token" prompt="new_bearer_token?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="" internalId="_Gl2I-NyoEfG7S4713UCU8Q"/>
+    <contextParameter comment="" name="rejectCount" prompt="rejectCount?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_Integer" value="0" internalId="_Gl2I-dyoEfG7S4713UCU8Q"/>
+    <contextParameter comment="This is for the token URL, not for the Item Receipt URL" name="netsuite_token_api_url" prompt="netsuite_token_api_url?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="" internalId="_Gl2I-tyoEfG7S4713UCU8Q"/>
+    <contextParameter comment="Power Automate Workflows webhook part 1. This has been chopped into 2 parts" name="teams_base_url" prompt="teams_base_url?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="https://default37f3b1b2de5a4ccf94f5b8c2c7a688.00.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/01/workflows/58eacb3c9e234189b8c22bce15da5a6e/triggers/manual/paths" internalId="_Gl2I-9yoEfG7S4713UCU8Q"/>
+    <contextParameter comment="Power Automate Workflows webhook part 2. This has been chopped into 2 parts" name="teams_path" prompt="teams_path?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="/invoke?api-version=1&amp;sp=%2Ftriggers%2Fmanual%2Frun&amp;sv=1.0&amp;sig=rHGifzi61aUZzyKSQxtkZdj4bf79WU98m4pkJKW_hx4" internalId="_Gl2I_NyoEfG7S4713UCU8Q"/>
+    <contextParameter comment="The Netsuite API URL to create Item Receipts" name="netsuite_api_url" prompt="netsuite_api_url?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="https://847280-sb1.restlets.api.netsuite.com/app/site/hosting" internalId="_Gl2I_dyoEfG7S4713UCU8Q"/>
+    <contextParameter comment="The Netsuite API path to create Item Receipts. Something like /restlet.nl?script=2973&amp;deploy=1" name="netsuite_api_path" prompt="netsuite_api_path?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="/restlet.nl?script=2981&amp;deploy=1" internalId="_Gl2I_tyoEfG7S4713UCU8Q"/>
+    <contextParameter comment="No inventory pulls before this date will be send to Netsuite" name="inventory_cutoff_date" prompt="inventory_cutoff_date?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="2026-09-01" internalId="_Gl2I_9yoEfG7S4713UCU8Q"/>
+    <contextParameter comment="A list of ProjectID's to filter while testing. These should be comma separated with no quotes or brackets. For example 7108, 6809, 4304. Leave blank in production." name="projectIDs" prompt="projectIDs?" promptNeeded="false" repositoryContextId="_P1wWwNjGEfGzEfgJjXvOdQ" type="id_String" value="" internalId="_Gl2JANyoEfG7S4713UCU8Q"/>
+  </context>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:WYNkX0yb9aSJT1L7tzc7XOpWq9UZsom1UcpVH4FS" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Talend-Studio-20260708_1430-V8.0.1/Talend-Studio-20260708_1430-V8.0.1/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="JDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_18" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:JYqqqmJyo1SKRXbU/v0p4WR71YpUg6OUgWlyIq7x" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+  </parameters>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="200" posY="360">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="Job_1_Pull_data_From_TotalETO_Inventory_Adjustments"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Dev"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="TEST:_w4DnMNgPEfGfAYQ0lujzvA"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="RADIO" name="USE_CHILD_JVM_SETTING" value="true" show="false"/>
+    <elementParameter field="RADIO" name="USE_CUSTOM_JVM_SETTING" value="false" show="false"/>
+    <elementParameter field="TABLE" name="JVM_ARGUMENTS" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_CONTEXT" value="false"/>
+    <elementParameter field="TEXT" name="DYNAMIC_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXTRA_CLASSPATH" value="false" show="false"/>
+    <elementParameter field="TEXT" name="EXTRA_CLASSPATH" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="LOAD_CONTEXT_FROM_FILE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_BASE64" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="Store inventory adjustments in integration table"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_1"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="600" posY="360">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_2" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="Job_2_Create_Payload_Inventory_Adjustments"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Dev"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="TEST:_4d-p8NjDEfGzEfgJjXvOdQ"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="RADIO" name="USE_CHILD_JVM_SETTING" value="true" show="false"/>
+    <elementParameter field="RADIO" name="USE_CUSTOM_JVM_SETTING" value="false" show="false"/>
+    <elementParameter field="TABLE" name="JVM_ARGUMENTS" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_CONTEXT" value="false"/>
+    <elementParameter field="TEXT" name="DYNAMIC_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXTRA_CLASSPATH" value="false" show="false"/>
+    <elementParameter field="TEXT" name="EXTRA_CLASSPATH" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="LOAD_CONTEXT_FROM_FILE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_BASE64" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="create payloads"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_2"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1000" posY="360">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_3" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="Job_3_Send_Payloads_to_Netsuite_Inventory_Adjustments"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Dev"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="TEST:_9GdQ8NjDEfGzEfgJjXvOdQ"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="RADIO" name="USE_CHILD_JVM_SETTING" value="true" show="false"/>
+    <elementParameter field="RADIO" name="USE_CUSTOM_JVM_SETTING" value="false" show="false"/>
+    <elementParameter field="TABLE" name="JVM_ARGUMENTS" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_CONTEXT" value="false"/>
+    <elementParameter field="TEXT" name="DYNAMIC_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXTRA_CLASSPATH" value="false" show="false"/>
+    <elementParameter field="TEXT" name="EXTRA_CLASSPATH" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="LOAD_CONTEXT_FROM_FILE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_BASE64" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="Send payloads to Netsuite"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_3"/>
+  </node>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRunJob_1" offsetLabelX="0" offsetLabelY="0" source="tRunJob_1" target="tRunJob_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRunJob_2" offsetLabelX="0" offsetLabelY="0" source="tRunJob_2" target="tRunJob_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_3" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+</talendfile:ProcessType>
