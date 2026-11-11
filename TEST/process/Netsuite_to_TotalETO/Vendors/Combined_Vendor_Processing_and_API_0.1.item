@@ -4566,7 +4566,7 @@
     <elementParameter field="FILE" name="BASE_FILE_PATH" value="&quot;C:/Talend/8.0.1/studio/workspace/in.hash&quot;" show="false"/>
     <elementParameter field="TEXT" name="MEMORY_HEAP_MAX_SIZE" value="2" show="false"/>
     <elementParameter field="CLOSED_LIST" name="KEYS_MANAGEMENT" value="KEEP_ALL"/>
-    <elementParameter field="CHECK" name="APPEND" value="true"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
     <elementParameter field="CHECK" name="HASH_KEY_FROM_INPUT_CONNECTOR" value="false" show="false"/>
     <elementParameter field="TEXT" name="LABEL" value="new_vendors_data_list"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -8872,7 +8872,7 @@
     <elementParameter field="CHECK" name="LINK_WITH" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="LIST" value="tHashOutput_2"/>
     <elementParameter field="FILE" name="BASE_FILE_PATH" value="&quot;C:/Talend/8.0.1/studio/workspace/in.hash&quot;" show="false"/>
-    <elementParameter field="CHECK" name="RELEASE_CACHE" value="false"/>
+    <elementParameter field="CHECK" name="RELEASE_CACHE" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tHashInput_4">
       <column comment="" key="false" length="-1" name="CompanyID" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
@@ -9957,7 +9957,7 @@
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1880" posY="1600">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_19" show="false"/>
-    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="//How many rows the tDBOutput updated (change tDBOutput_6 to your component's name)&#xD;&#xA;Integer rowsUpdated = (Integer)globalMap.get(&quot;tDBOutput_6_NB_LINE_UPDATED&quot;);&#xD;&#xA;&#xD;&#xA;if (rowsUpdated != null &amp;&amp; rowsUpdated > 0) {&#xD;&#xA; System.out.println(&quot;Success: &quot; + rowsUpdated + &quot; row(s) updated. Integration table has marked CompanyID as successfully loaded into Netsuite&quot;);&#xD;&#xA;} else {&#xD;&#xA; System.out.println(&quot;Integration table did not record CompanyID as sent to Netsuite&quot;);&#xD;&#xA;}"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="//How many rows the tDBOutput updated (change tDBOutput_6 to your component's name)&#xD;&#xA;Integer rowsUpdated = (Integer)globalMap.get(&quot;tDBOutput_6_NB_LINE_UPDATED&quot;);&#xD;&#xA;&#xD;&#xA;if (rowsUpdated != null &amp;&amp; rowsUpdated > 0) {&#xD;&#xA; System.out.println(&quot;Success: &quot; + rowsUpdated + &quot; row(s) updated. Integration table has marked CompanyID as successfully loaded into Netsuite&quot;);&#xD;&#xA;} else {&#xD;&#xA; System.out.println(&quot;Integration table did not record CompanyID as sent to Netsuite&quot;);&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;System.out.println(&quot;===== globalMap keys =====&quot;);&#xD;&#xA;for (Object key : globalMap.keySet()) {&#xD;&#xA;    System.out.println(key + &quot; = &quot; + globalMap.get(key));&#xD;&#xA;}"/>
     <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="LABEL" value="log update succes"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
