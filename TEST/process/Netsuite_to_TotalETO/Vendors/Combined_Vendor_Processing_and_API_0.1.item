@@ -22,7 +22,7 @@
     <contextParameter comment="" name="row_count" prompt="row_count?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Integer" value="0" internalId="_D4L_cNZ_EfGsM6Y8Dt6xKA"/>
     <contextParameter comment="for nestuite api. this is the part that comes after the account id" name="netsuite_token_api_url" prompt="netsuite_token_api_url?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value=".suitetalk.api.netsuite.com/services/rest/auth/oauth2/v1/token" internalId="_AEKsQNckEfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="client_id" prompt="client_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="e74f0683fa5379e2b725547a322cb11514b0915b7a7efec374a72c4ae3a04531" internalId="_AEKsQdckEfGsM6Y8Dt6xKA"/>
-    <contextParameter comment="This should be &quot;D:/Talend Job Files/PurchaseOrders/PO_Auth_flow/private.pem&quot; for cloud" name="private_key_path" prompt="private_key_path?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="C:\Users\mmisselmany\Downloads\PO_Auth_flow\PO_Auth_flow\private.pem" internalId="_AEKsQtckEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="This should be &quot;D:/Talend Job Files/PurchaseOrders/PO_Auth_flow/private.pem&quot; for cloud" name="private_key_path" prompt="private_key_path?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="C:\Talend Foodmach\private.pem" internalId="_AEKsQtckEfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="certificate_id" prompt="certificate_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="S_eR_japu9FLYSq2Kzq9pw9OPBfiKkMR2trklvfe4Es" internalId="_AEKsQ9ckEfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="account_id" prompt="account_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="847280-sb1" internalId="_AEKsRNckEfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="new_bearer_token" prompt="new_bearer_token?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_AEKsRdckEfGsM6Y8Dt6xKA"/>
@@ -53,7 +53,7 @@
     <contextParameter comment="" name="row_count" prompt="row_count?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Integer" value="0" internalId="_D4L_cdZ_EfGsM6Y8Dt6xKA"/>
     <contextParameter comment="for nestuite api. this is the part that comes after the account id" name="netsuite_token_api_url" prompt="netsuite_token_api_url?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value=".suitetalk.api.netsuite.com/services/rest/auth/oauth2/v1/token" internalId="_AEKsR9ckEfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="client_id" prompt="client_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="e74f0683fa5379e2b725547a322cb11514b0915b7a7efec374a72c4ae3a04531" internalId="_AEKsSNckEfGsM6Y8Dt6xKA"/>
-    <contextParameter comment="This should be &quot;D:/Talend Job Files/PurchaseOrders/PO_Auth_flow/private.pem&quot; for cloud" name="private_key_path" prompt="private_key_path?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="C:\Users\mmisselmany\Downloads\PO_Auth_flow\PO_Auth_flow\private.pem" internalId="_AEKsSdckEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="This should be &quot;D:/Talend Job Files/PurchaseOrders/PO_Auth_flow/private.pem&quot; for cloud" name="private_key_path" prompt="private_key_path?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="C:\Talend Foodmach\private.pem" internalId="_AEKsSdckEfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="certificate_id" prompt="certificate_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="S_eR_japu9FLYSq2Kzq9pw9OPBfiKkMR2trklvfe4Es" internalId="_AEKsStckEfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="account_id" prompt="account_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="847280-sb1" internalId="_AEKsS9ckEfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="new_bearer_token" prompt="new_bearer_token?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_AEKsTNckEfGsM6Y8Dt6xKA"/>
@@ -84,7 +84,7 @@
     <contextParameter comment="" name="row_count" prompt="row_count?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Integer" value="0" internalId="_D4MmgNZ_EfGsM6Y8Dt6xKA"/>
     <contextParameter comment="for nestuite api. this is the part that comes after the account id" name="netsuite_token_api_url" prompt="netsuite_token_api_url?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value=".suitetalk.api.netsuite.com/services/rest/auth/oauth2/v1/token" internalId="_AEKsTtckEfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="client_id" prompt="client_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="e74f0683fa5379e2b725547a322cb11514b0915b7a7efec374a72c4ae3a04531" internalId="_AEKsT9ckEfGsM6Y8Dt6xKA"/>
-    <contextParameter comment="This should be &quot;D:/Talend Job Files/PurchaseOrders/PO_Auth_flow/private.pem&quot; for cloud" name="private_key_path" prompt="private_key_path?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="C:\Users\mmisselmany\Downloads\PO_Auth_flow\PO_Auth_flow\private.pem" internalId="_AEKsUNckEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="This should be &quot;D:/Talend Job Files/PurchaseOrders/PO_Auth_flow/private.pem&quot; for cloud" name="private_key_path" prompt="private_key_path?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="C:\Talend Foodmach\private.pem" internalId="_AEKsUNckEfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="certificate_id" prompt="certificate_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="S_eR_japu9FLYSq2Kzq9pw9OPBfiKkMR2trklvfe4Es" internalId="_AEKsUdckEfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="account_id" prompt="account_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="847280-sb1" internalId="_AEKsUtckEfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="new_bearer_token" prompt="new_bearer_token?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_AEKsU9ckEfGsM6Y8Dt6xKA"/>
@@ -115,7 +115,7 @@
     <contextParameter comment="" name="row_count" prompt="row_count?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Integer" value="0" internalId="_D4MmgdZ_EfGsM6Y8Dt6xKA"/>
     <contextParameter comment="for nestuite api. this is the part that comes after the account id" name="netsuite_token_api_url" prompt="netsuite_token_api_url?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value=".suitetalk.api.netsuite.com/services/rest/auth/oauth2/v1/token" internalId="_AEKsVdckEfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="client_id" prompt="client_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="e74f0683fa5379e2b725547a322cb11514b0915b7a7efec374a72c4ae3a04531" internalId="_AEKsVtckEfGsM6Y8Dt6xKA"/>
-    <contextParameter comment="This should be &quot;D:/Talend Job Files/PurchaseOrders/PO_Auth_flow/private.pem&quot; for cloud" name="private_key_path" prompt="private_key_path?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="C:\Users\mmisselmany\Downloads\PO_Auth_flow\PO_Auth_flow\private.pem" internalId="_AEKsV9ckEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="This should be &quot;D:/Talend Job Files/PurchaseOrders/PO_Auth_flow/private.pem&quot; for cloud" name="private_key_path" prompt="private_key_path?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="C:\Talend Foodmach\private.pem" internalId="_AEKsV9ckEfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="certificate_id" prompt="certificate_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="S_eR_japu9FLYSq2Kzq9pw9OPBfiKkMR2trklvfe4Es" internalId="_AEKsWNckEfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="account_id" prompt="account_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="847280-sb1" internalId="_AEKsWdckEfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="new_bearer_token" prompt="new_bearer_token?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_AEKsWtckEfGsM6Y8Dt6xKA"/>
@@ -146,7 +146,7 @@
     <contextParameter comment="" name="row_count" prompt="row_count?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Integer" value="0" internalId="_D4MmgtZ_EfGsM6Y8Dt6xKA"/>
     <contextParameter comment="for nestuite api. this is the part that comes after the account id" name="netsuite_token_api_url" prompt="netsuite_token_api_url?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value=".suitetalk.api.netsuite.com/services/rest/auth/oauth2/v1/token" internalId="_AEKsXNckEfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="client_id" prompt="client_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="e74f0683fa5379e2b725547a322cb11514b0915b7a7efec374a72c4ae3a04531" internalId="_AEKsXdckEfGsM6Y8Dt6xKA"/>
-    <contextParameter comment="This should be &quot;D:/Talend Job Files/PurchaseOrders/PO_Auth_flow/private.pem&quot; for cloud" name="private_key_path" prompt="private_key_path?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="C:\Users\mmisselmany\Downloads\PO_Auth_flow\PO_Auth_flow\private.pem" internalId="_AEKsXtckEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="This should be &quot;D:/Talend Job Files/PurchaseOrders/PO_Auth_flow/private.pem&quot; for cloud" name="private_key_path" prompt="private_key_path?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="C:\Talend Foodmach\private.pem" internalId="_AEKsXtckEfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="certificate_id" prompt="certificate_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="S_eR_japu9FLYSq2Kzq9pw9OPBfiKkMR2trklvfe4Es" internalId="_AEKsX9ckEfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="account_id" prompt="account_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="847280-sb1" internalId="_AEKsYNckEfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="new_bearer_token" prompt="new_bearer_token?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_AEKsYdckEfGsM6Y8Dt6xKA"/>
@@ -177,7 +177,7 @@
     <contextParameter comment="" name="row_count" prompt="row_count?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Integer" value="0" internalId="_D4Mmg9Z_EfGsM6Y8Dt6xKA"/>
     <contextParameter comment="for nestuite api. this is the part that comes after the account id" name="netsuite_token_api_url" prompt="netsuite_token_api_url?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value=".suitetalk.api.netsuite.com/services/rest/auth/oauth2/v1/token" internalId="_AEKsY9ckEfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="client_id" prompt="client_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="e74f0683fa5379e2b725547a322cb11514b0915b7a7efec374a72c4ae3a04531" internalId="_AEKsZNckEfGsM6Y8Dt6xKA"/>
-    <contextParameter comment="This should be &quot;D:/Talend Job Files/PurchaseOrders/PO_Auth_flow/private.pem&quot; for cloud" name="private_key_path" prompt="private_key_path?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="C:\Users\mmisselmany\Downloads\PO_Auth_flow\PO_Auth_flow\private.pem" internalId="_AEKsZdckEfGsM6Y8Dt6xKA"/>
+    <contextParameter comment="This should be &quot;D:/Talend Job Files/PurchaseOrders/PO_Auth_flow/private.pem&quot; for cloud" name="private_key_path" prompt="private_key_path?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="C:\Talend Foodmach\private.pem" internalId="_AEKsZdckEfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="certificate_id" prompt="certificate_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="S_eR_japu9FLYSq2Kzq9pw9OPBfiKkMR2trklvfe4Es" internalId="_AEKsZtckEfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="account_id" prompt="account_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="847280-sb1" internalId="_AEKsZ9ckEfGsM6Y8Dt6xKA"/>
     <contextParameter comment="" name="new_bearer_token" prompt="new_bearer_token?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_AEKsaNckEfGsM6Y8Dt6xKA"/>
@@ -8741,7 +8741,7 @@
       <column comment="" key="false" length="-1" name="headers" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="50" offsetLabelY="-90" posX="1440" posY="1440">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="50" offsetLabelY="-90" posX="1320" posY="1440">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_13" show="false"/>
     <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="context.error_message_log = &quot;Failed to insert into integration table&quot;;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;"/>
     <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
@@ -8753,7 +8753,7 @@
       <column comment="" key="false" length="-1" name="headers" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="HTTPClient" componentVersion="5" offsetLabelX="50" offsetLabelY="-40" posX="1600" posY="1440">
+  <node componentName="HTTPClient" componentVersion="5" offsetLabelX="24" offsetLabelY="6" posX="1520" posY="1440">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHTTPClient_8" show="false"/>
     <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="aHR0cC1zdHVkaW8jSFRUUCNDbGllbnQ" show="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
@@ -8836,7 +8836,7 @@
       <column comment="" key="false" length="-1" name="headers" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1840" posY="1440">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1760" posY="1440">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_20" show="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
@@ -8974,6 +8974,7 @@
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="preview data sent to netsuite"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tLogRow_24">
       <column comment="" key="false" length="-1" name="netsuite_payload" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -9520,7 +9521,7 @@
   </node>
   <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="2560" posY="1840">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_9" show="false"/>
-    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="//Code generated according to input schema and output schema&#xD;&#xA;//output_row.success = input_row.success;&#xD;&#xA;//output_row.error = input_row.error;&#xD;&#xA;//output_row.body = input_row.body;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;context.rejectCount++;&#xD;&#xA;System.out.println(&quot;==========================================&quot;);&#xD;&#xA;System.out.println(&quot;Checking Filter Reject Status...&quot;);&#xD;&#xA;System.out.println(&quot;Total Rows Rejected: &quot; + context.rejectCount);&#xD;&#xA;System.out.println(&quot;==========================================&quot;);&#xD;&#xA;System.out.println(&quot;Failed to send PO&quot; + input_row.CompanyCustom3 + &quot;to Netsuite. Netsuite error - &quot; + input_row.error);&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="//Code generated according to input schema and output schema&#xD;&#xA;//output_row.success = input_row.success;&#xD;&#xA;//output_row.error = input_row.error;&#xD;&#xA;//output_row.body = input_row.body;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;context.rejectCount++;&#xD;&#xA;System.out.println(&quot;==========================================&quot;);&#xD;&#xA;System.out.println(&quot;Checking Filter Reject Status...&quot;);&#xD;&#xA;System.out.println(&quot;Total Rows Rejected: &quot; + context.rejectCount);&#xD;&#xA;System.out.println(&quot;==========================================&quot;);&#xD;&#xA;System.out.println(&quot;Failed to send CompanyCustom3 &quot; + input_row.CompanyCustom3 + &quot;to Netsuite. Netsuite error - &quot; + input_row.error);&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;"/>
     <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="LABEL" value="log info about the rejected rows"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -9820,7 +9821,7 @@
       <column comment="" key="false" length="-1" name="headers" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1760" posY="1280">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1680" posY="1280">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_16" show="false"/>
     <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="System.out.println(&quot;Begin sending CompanyID and CompanyCustom3 to Netsuite&quot;);"/>
     <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
@@ -9954,13 +9955,21 @@
       <column comment="" key="false" length="-1" name="headers" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="3640" posY="1600">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_18" show="false"/>
-    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="System.out.println(&quot;Integration table succesfully recorded that the CompanyID has been updated in Netsuite for the corresponding Vendor&quot;);"/>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1880" posY="1600">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_19" show="false"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="//How many rows the tDBOutput updated (change tDBOutput_6 to your component's name)&#xD;&#xA;Integer rowsUpdated = (Integer)globalMap.get(&quot;tDBOutput_6_NB_LINE_UPDATED&quot;);&#xD;&#xA;&#xD;&#xA;if (rowsUpdated != null &amp;&amp; rowsUpdated > 0) {&#xD;&#xA; System.out.println(&quot;Success: &quot; + rowsUpdated + &quot; row(s) updated. Integration table has marked CompanyIDs as successfully loaded into Netsuite&quot;);&#xD;&#xA;} else {&#xD;&#xA; System.out.println(&quot;Integration table did not record CompanyID as sent to Netsuite&quot;);&#xD;&#xA;}"/>
     <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
-    <elementParameter field="TEXT" name="LABEL" value="Log integration table ok"/>
+    <elementParameter field="TEXT" name="LABEL" value="log update succes"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tJava_18"/>
+    <metadata connector="FLOW" name="tJava_19"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="2800" posY="1600">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_20" show="false"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="System.out.println(&quot;Successfully sent CompanyID to Netsuite. Now updating integration table&quot;);"/>
+    <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="log CompanyID sent to Netsuite"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_20"/>
   </node>
   <connection connectorName="FLOW" label="row_count" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tJavaRow_1">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
@@ -10454,6 +10463,9 @@
   <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tHashInput_4" offsetLabelX="0" offsetLabelY="0" source="tHashInput_4" target="tJava_13">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobError9" show="false"/>
   </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tHashInput_4" offsetLabelX="0" offsetLabelY="0" source="tHashInput_4" target="tJava_19">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk10" show="false"/>
+  </connection>
   <connection connectorName="FLOW" label="Converted_data_types" lineStyle="0" metaname="Converted_data_types" offsetLabelX="0" offsetLabelY="0" source="tMap_9" target="tMap_10">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="Converted_data_types" show="false"/>
@@ -10536,6 +10548,9 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row37" show="false"/>
   </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tLogRow_26" offsetLabelX="0" offsetLabelY="0" source="tLogRow_26" target="tJava_20">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk24" show="false"/>
+  </connection>
   <connection connectorName="FLOW" label="netsuite_res_formatted" lineStyle="0" metaname="netsuite_res_formatted" offsetLabelX="0" offsetLabelY="0" source="tMap_12" target="tLogRow_28">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
       <elementValue elementRef="TRACE_COLUMN" value="Netsuite_PO_Internal_ID" id="0"/>
@@ -10563,9 +10578,6 @@
   </connection>
   <connection connectorName="COMPONENT_ERROR" label="OnComponentError" lineStyle="5" metaname="tDBOutput_6" offsetLabelX="0" offsetLabelY="0" source="tDBOutput_6" target="tJava_17">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentError5" show="false"/>
-  </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBOutput_6" offsetLabelX="0" offsetLabelY="0" source="tDBOutput_6" target="tJava_18">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk22" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="rejected_rows_tbl" lineStyle="0" metaname="rejected_rows_tbl" offsetLabelX="0" offsetLabelY="0" source="tMap_11" target="tLogRow_27">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
@@ -10873,7 +10885,12 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
   </subjob>
   <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_18" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_19" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_20" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
   </subjob>
