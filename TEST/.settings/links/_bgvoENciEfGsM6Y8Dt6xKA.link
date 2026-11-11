@@ -84,6 +84,12 @@
     }, {
       "id" : "_8JlBw9fuEfGfAYQ0lujzvA",
       "name" : "rejectCount"
+    }, {
+      "id" : "_U5tyRNc5EfGsM6Y8Dt6xKA",
+      "name" : "netsuite_api_path"
+    }, {
+      "id" : "_o6CtBNc5EfGsM6Y8Dt6xKA",
+      "name" : "netsuite_api_url"
     } ]
   }, {
     "contextName" : "IBT_Dev",
@@ -169,6 +175,12 @@
     }, {
       "id" : "_8JlBwtfuEfGfAYQ0lujzvA",
       "name" : "rejectCount"
+    }, {
+      "id" : "_U5tyQ9c5EfGsM6Y8Dt6xKA",
+      "name" : "netsuite_api_path"
+    }, {
+      "id" : "_o6CtA9c5EfGsM6Y8Dt6xKA",
+      "name" : "netsuite_api_url"
     } ]
   }, {
     "contextName" : "Test",
@@ -254,6 +266,12 @@
     }, {
       "id" : "_8JlBxNfuEfGfAYQ0lujzvA",
       "name" : "rejectCount"
+    }, {
+      "id" : "_U5tyRdc5EfGsM6Y8Dt6xKA",
+      "name" : "netsuite_api_path"
+    }, {
+      "id" : "_o6CtBdc5EfGsM6Y8Dt6xKA",
+      "name" : "netsuite_api_url"
     } ]
   }, {
     "contextName" : "Foodmach_Dev_2",
@@ -339,6 +357,12 @@
     }, {
       "id" : "_8JlBwdfuEfGfAYQ0lujzvA",
       "name" : "rejectCount"
+    }, {
+      "id" : "_U5tyQtc5EfGsM6Y8Dt6xKA",
+      "name" : "netsuite_api_path"
+    }, {
+      "id" : "_o6CtAtc5EfGsM6Y8Dt6xKA",
+      "name" : "netsuite_api_url"
     } ]
   }, {
     "contextName" : "Default",
@@ -424,6 +448,12 @@
     }, {
       "id" : "_8JkasNfuEfGfAYQ0lujzvA",
       "name" : "rejectCount"
+    }, {
+      "id" : "_U5tyQNc5EfGsM6Y8Dt6xKA",
+      "name" : "netsuite_api_path"
+    }, {
+      "id" : "_o6CtANc5EfGsM6Y8Dt6xKA",
+      "name" : "netsuite_api_url"
     } ]
   }, {
     "contextName" : "Foodmach_Dev",
@@ -509,6 +539,12 @@
     }, {
       "id" : "_8JlBwNfuEfGfAYQ0lujzvA",
       "name" : "rejectCount"
+    }, {
+      "id" : "_U5tyQdc5EfGsM6Y8Dt6xKA",
+      "name" : "netsuite_api_path"
+    }, {
+      "id" : "_o6CtAdc5EfGsM6Y8Dt6xKA",
+      "name" : "netsuite_api_url"
     } ]
   } ]
 }

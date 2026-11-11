@@ -9151,13 +9151,13 @@
     </elementParameter>
     <elementParameter field="TABLE" name="MAPPING_4_JSONPATH">
       <elementValue elementRef="SCHEMA_COLUMN" value="success" id="0"/>
-      <elementValue elementRef="QUERY" value="&quot;success&quot;" id="1"/>
+      <elementValue elementRef="QUERY" value="&quot;$.success&quot;" id="1"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="error" id="2"/>
-      <elementValue elementRef="QUERY" value="&quot;error.message&quot;" id="3"/>
+      <elementValue elementRef="QUERY" value="&quot;$.error.message&quot;" id="3"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="body" id="4"/>
       <elementValue elementRef="QUERY" value="" id="5"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="CompanyCustom3" id="6"/>
-      <elementValue elementRef="QUERY" value="&quot;vendorId&quot;" id="7"/>
+      <elementValue elementRef="QUERY" value="&quot;$.vendorId&quot;" id="7"/>
     </elementParameter>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
@@ -9957,7 +9957,7 @@
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1880" posY="1600">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_19" show="false"/>
-    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="//How many rows the tDBOutput updated (change tDBOutput_6 to your component's name)&#xD;&#xA;Integer rowsUpdated = (Integer)globalMap.get(&quot;tDBOutput_6_NB_LINE_UPDATED&quot;);&#xD;&#xA;&#xD;&#xA;if (rowsUpdated != null &amp;&amp; rowsUpdated > 0) {&#xD;&#xA; System.out.println(&quot;Success: &quot; + rowsUpdated + &quot; row(s) updated. Integration table has marked CompanyIDs as successfully loaded into Netsuite&quot;);&#xD;&#xA;} else {&#xD;&#xA; System.out.println(&quot;Integration table did not record CompanyID as sent to Netsuite&quot;);&#xD;&#xA;}"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="//How many rows the tDBOutput updated (change tDBOutput_6 to your component's name)&#xD;&#xA;Integer rowsUpdated = (Integer)globalMap.get(&quot;tDBOutput_6_NB_LINE_UPDATED&quot;);&#xD;&#xA;&#xD;&#xA;if (rowsUpdated != null &amp;&amp; rowsUpdated > 0) {&#xD;&#xA; System.out.println(&quot;Success: &quot; + rowsUpdated + &quot; row(s) updated. Integration table has marked CompanyID as successfully loaded into Netsuite&quot;);&#xD;&#xA;} else {&#xD;&#xA; System.out.println(&quot;Integration table did not record CompanyID as sent to Netsuite&quot;);&#xD;&#xA;}"/>
     <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="LABEL" value="log update succes"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
