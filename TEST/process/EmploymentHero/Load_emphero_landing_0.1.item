@@ -95,7 +95,7 @@
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="120" show="false"/>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="480" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="800" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
@@ -1360,7 +1360,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="HTTPClient" componentVersion="5" offsetLabelX="0" offsetLabelY="0" posX="0" posY="-80">
+  <node componentName="HTTPClient" componentVersion="5" offsetLabelX="0" offsetLabelY="0" posX="0" posY="-320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHTTPClient_7" show="false"/>
     <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="aHR0cC1zdHVkaW8jSFRUUCNDbGllbnQ" show="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
@@ -1446,7 +1446,7 @@
       <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tExtractJSONFields" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="560" posY="-80">
+  <node componentName="tExtractJSONFields" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="-320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tExtractJSONFields_7" show="false"/>
     <elementParameter field="CLOSED_LIST" name="READ_BY" value="JSONPATH"/>
     <elementParameter field="CLOSED_LIST" name="JSON_PATH_VERSION" value="2_1_0"/>
@@ -1753,7 +1753,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="840" posY="-80">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="680" posY="-320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -1883,7 +1883,7 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1360" posY="-80">
+  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1080" posY="-320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_7" show="false"/>
     <elementParameter field="TEXT" name="PARALLELIZE_NUMBER" value="4" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY" show="false"/>
@@ -2250,7 +2250,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="0" posY="-400">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="0" posY="-640">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
     <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="//Get the current date and time when the job runs&#xD;&#xA;java.util.Date today = TalendDate.getCurrentDate();&#xD;&#xA;&#xD;&#xA;//true if manualFromDate has a value (not null and not just spaces)&#xD;&#xA;boolean hasFrom = context.manualFromDate != null &amp;&amp; !context.manualFromDate.trim().isEmpty();&#xD;&#xA;//true if manualToDate has a value (not null and not just spaces)&#xD;&#xA;boolean hasTo   = context.manualToDate   != null &amp;&amp; !context.manualToDate.trim().isEmpty();&#xD;&#xA;&#xD;&#xA;//Show what was entered&#xD;&#xA;System.out.println(&quot;manualFromDate = '&quot; + context.manualFromDate + &quot;' (filled: &quot; + hasFrom + &quot;)&quot;);&#xD;&#xA;System.out.println(&quot;manualToDate   = '&quot; + context.manualToDate   + &quot;' (filled: &quot; + hasTo   + &quot;)&quot;);&#xD;&#xA;&#xD;&#xA;//First day to pull (always inclusive)&#xD;&#xA;java.util.Date fromDate;&#xD;&#xA;//Last day to pull (always inclusive) - the +1 for the exclusive API is added further down&#xD;&#xA;java.util.Date toDate;&#xD;&#xA;&#xD;&#xA;//---------- Decide which date range to use ----------&#xD;&#xA;if (hasFrom &amp;&amp; hasTo) {&#xD;&#xA;  // MANUAL MODE: both manual dates were filled in&#xD;&#xA;  System.out.println(&quot;Scenario: BOTH manual dates filled -> MANUAL mode&quot;);&#xD;&#xA;&#xD;&#xA;  // Convert the typed text (e.g. &quot;2026-08-01&quot;) into a real Date; trim() removes stray spaces&#xD;&#xA;  fromDate = TalendDate.parseDate(&quot;yyyy-MM-dd&quot;, context.manualFromDate.trim());&#xD;&#xA;  toDate   = TalendDate.parseDate(&quot;yyyy-MM-dd&quot;, context.manualToDate.trim());&#xD;&#xA;&#xD;&#xA;  // Safety check: stop the job if the start date is after the end date&#xD;&#xA;  if (fromDate.after(toDate)) {&#xD;&#xA;      System.out.println(&quot;ERROR: manualFromDate is after manualToDate - stopping job&quot;);&#xD;&#xA;      throw new RuntimeException(&quot;manualFromDate (&quot; + context.manualFromDate + &quot;) is after manualToDate (&quot; + context.manualToDate + &quot;)&quot;);&#xD;&#xA;  }&#xD;&#xA;&#xD;&#xA;  System.out.println(&quot;Manual dates are valid&quot;);&#xD;&#xA;&#xD;&#xA;} else if (hasFrom == true &amp;&amp; hasTo == false) {&#xD;&#xA;  // From filled but To empty&#xD;&#xA;  System.out.println(&quot;Scenario: ONLY manualFromDate filled -> ERROR, manualToDate is missing&quot;);&#xD;&#xA;  throw new RuntimeException(&quot;manualToDate is blank. Fill in BOTH manualFromDate and manualToDate, or leave both blank.&quot;);&#xD;&#xA;&#xD;&#xA;} else if (hasFrom == false &amp;&amp; hasTo == true) {&#xD;&#xA;  // To filled but From empty&#xD;&#xA;  System.out.println(&quot;Scenario: ONLY manualToDate filled -> ERROR, manualFromDate is missing&quot;);&#xD;&#xA;  throw new RuntimeException(&quot;manualFromDate is blank. Fill in BOTH manualFromDate and manualToDate, or leave both blank.&quot;);&#xD;&#xA;&#xD;&#xA;} else {&#xD;&#xA;  // DEFAULT MODE: no manual dates, so use the rolling window&#xD;&#xA;  System.out.println(&quot;Scenario: NO manual dates -> DEFAULT mode (last &quot; + context.lookbackDays + &quot; days)&quot;);&#xD;&#xA;&#xD;&#xA;  // Start = today minus lookbackDays (stored as text, so convert to a number first)&#xD;&#xA;  fromDate = TalendDate.addDate(today, -Integer.parseInt(context.lookbackDays), &quot;dd&quot;);&#xD;&#xA;  // End = yesterday (today's timesheets aren't complete yet)&#xD;&#xA;  toDate   = TalendDate.addDate(today, -1, &quot;dd&quot;);&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;//---------- Fill the 4 API date variables ----------&#xD;&#xA;&#xD;&#xA;///report/timesheet: ToDate is INCLUSIVE, so use the last day as-is&#xD;&#xA;context.eh_ts_fromDate = TalendDate.formatDate(&quot;yyyy-MM-dd&quot;, fromDate);&#xD;&#xA;context.eh_ts_toDate   = TalendDate.formatDate(&quot;yyyy-MM-dd&quot;, toDate);&#xD;&#xA;&#xD;&#xA;///timesheet: the &quot;lt&quot; (less than) filter is EXCLUSIVE, so use the day AFTER the last day&#xD;&#xA;context.tsl_fromDate = TalendDate.formatDate(&quot;yyyy-MM-dd&quot;, fromDate);&#xD;&#xA;context.tsl_toDate   = TalendDate.formatDate(&quot;yyyy-MM-dd&quot;, TalendDate.addDate(toDate, 1, &quot;dd&quot;));&#xD;&#xA;&#xD;&#xA;//---------- Log the final windows so you can verify them in the run output ----------&#xD;&#xA;System.out.println(&quot;eh_timesheet:  &quot; + context.eh_ts_fromDate + &quot; to &quot; + context.eh_ts_toDate + &quot; (inclusive)&quot;);&#xD;&#xA;System.out.println(&quot;timesheetline: &quot; + context.tsl_fromDate + &quot; to before &quot; + context.tsl_toDate + &quot; (less than)&quot;);"/>
     <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
@@ -2258,7 +2258,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_1"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1640" posY="-80">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1440" posY="-320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_6" show="false"/>
     <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="System.out.println(&quot;tDBOutput_7 (eh_timesheet) Inserted count: &quot; + globalMap.get(&quot;tDBOutput_7_NB_LINE_INSERTED&quot;));&#xD;&#xA;System.out.println(&quot;tDBOutput_7 (eh_timesheet) Updated count:  &quot; + globalMap.get(&quot;tDBOutput_7_NB_LINE_UPDATED&quot;));&#xD;&#xA;System.out.println(&quot;tDBOutput_7 (eh_timesheet) Rejected count: &quot; + globalMap.get(&quot;tDBOutput_7_NB_LINE_REJECTED&quot;));"/>
     <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
@@ -2266,7 +2266,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_6"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1360" posY="40">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1440" posY="-120">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_7" show="false"/>
     <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="System.out.println(&quot;tDBOutput_5 (timesheetline) Inserted count: &quot; + globalMap.get(&quot;tDBOutput_5_NB_LINE_INSERTED&quot;));&#xD;&#xA;System.out.println(&quot;tDBOutput_5 (timesheetline) Updated count:  &quot; + globalMap.get(&quot;tDBOutput_5_NB_LINE_UPDATED&quot;));&#xD;&#xA;System.out.println(&quot;tDBOutput_5 (timesheetline) Rejected count: &quot; + globalMap.get(&quot;tDBOutput_5_NB_LINE_REJECTED&quot;));&#xD;&#xA;"/>
     <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
@@ -2306,7 +2306,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_11"/>
   </node>
-  <node componentName="tMSSqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="0" posY="-240">
+  <node componentName="tMSSqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="0" posY="-480">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBConnection_2" show="false"/>
     <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
     <elementParameter field="TEXT" name="HOST" value="context.ip_address"/>
@@ -2821,15 +2821,6 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJavaRow_2"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="200" posY="-400">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="java.util.Date today = TalendDate.getCurrentDate();&#xD;&#xA;String from = TalendDate.formatDate(&quot;yyyy-MM-dd&quot;, TalendDate.addDate(today, -Integer.parseInt(context.lookbackDays), &quot;dd&quot;));&#xD;&#xA;&#xD;&#xA;// Report (/report/timesheet): ToDate is INCLUSIVE -> yesterday&#xD;&#xA;if (context.eh_ts_fromDate == null || context.eh_ts_fromDate.isEmpty()) {&#xD;&#xA;    context.eh_ts_fromDate = from;&#xD;&#xA;    context.eh_ts_toDate   = TalendDate.formatDate(&quot;yyyy-MM-dd&quot;, TalendDate.addDate(today, -1, &quot;dd&quot;));&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;// Timesheet lines (/timesheet): &quot;lt&quot; is EXCLUSIVE -> today&#xD;&#xA;if (context.tsl_fromDate == null || context.tsl_fromDate.isEmpty()) {&#xD;&#xA;    context.tsl_fromDate = from;&#xD;&#xA;    context.tsl_toDate   = TalendDate.formatDate(&quot;yyyy-MM-dd&quot;, today);&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;System.out.println(&quot;eh_timesheet:  &quot; + context.eh_ts_fromDate + &quot; to &quot; + context.eh_ts_toDate + &quot; (inclusive)&quot;);&#xD;&#xA;System.out.println(&quot;timesheetline: &quot; + context.tsl_fromDate + &quot; to before &quot; + context.tsl_toDate + &quot; (less than)&quot;);"/>
-    <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
-    <elementParameter field="TEXT" name="LABEL" value="set dates for the last week"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tJava_2"/>
-  </node>
   <node componentName="tLogCatcher" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="800" posY="800">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogCatcher_1" show="false"/>
     <elementParameter field="CHECK" name="CATCH_JAVA_EXCEPTION" value="true"/>
@@ -3072,7 +3063,682 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDie_1"/>
   </node>
-  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="40">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="0" posY="-120">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_4" show="false"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="//=====================================================================&#xD;&#xA;//Timesheet lines: set up pagination before the loop starts&#xD;&#xA;//Runs ONCE, before tLoop_1&#xD;&#xA;//=====================================================================&#xD;&#xA;&#xD;&#xA;//---- Page size (records per API call) ----&#xD;&#xA;//Taken from the context so it can be changed in TMC without republishing&#xD;&#xA;Integer pageSize = context.tsl_pageSize;&#xD;&#xA;&#xD;&#xA;//If the context value is empty or invalid, fall back to 100&#xD;&#xA;if (pageSize == null || pageSize &lt;= 0) {&#xD;&#xA; System.out.println(&quot;tsl_pageSize was empty or invalid, using the default of 100&quot;);&#xD;&#xA; pageSize = 100;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;//Employment Hero allows a maximum of 100 records per page&#xD;&#xA;if (pageSize > 100) {&#xD;&#xA; System.out.println(&quot;tsl_pageSize was &quot; + pageSize + &quot;, capped at Employment Hero's maximum of 100&quot;);&#xD;&#xA; pageSize = 100;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;globalMap.put(&quot;tsl_pageSize&quot;, pageSize);&#xD;&#xA;&#xD;&#xA;//---- Starting position ----&#xD;&#xA;//Always start at the first record; step 4 moves this forward after each full page&#xD;&#xA;globalMap.put(&quot;tsl_skip&quot;, 0);&#xD;&#xA;&#xD;&#xA;//---- Loop control ----&#xD;&#xA;//Assume there's at least one page; step 4 sets this to false on the last page&#xD;&#xA;globalMap.put(&quot;tsl_hasMorePages&quot;, true);&#xD;&#xA;&#xD;&#xA;//---- Rate-limit retries ----&#xD;&#xA;//Counts 429 retries for the current page; step 4 resets it after each successful page&#xD;&#xA;globalMap.put(&quot;tsl_retries&quot;, 0);&#xD;&#xA;&#xD;&#xA;//---- Log what this run will do ----&#xD;&#xA;System.out.println(&#xD;&#xA; &quot;Timesheet lines | starting pagination&quot;&#xD;&#xA; + &quot; | dates &quot; + context.tsl_fromDate + &quot; to before &quot; + context.tsl_toDate&#xD;&#xA; + &quot; | page size=&quot; + pageSize&#xD;&#xA;);"/>
+    <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Set pagination values"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_4"/>
+  </node>
+  <node componentName="tLoop" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="-120">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLoop_1" show="false"/>
+    <elementParameter field="RADIO" name="FORLOOP" value="false"/>
+    <elementParameter field="RADIO" name="WHILELOOP" value="true"/>
+    <elementParameter field="TEXT" name="FROM" value="1" show="false"/>
+    <elementParameter field="TEXT" name="TO" value="10" show="false"/>
+    <elementParameter field="TEXT" name="STEP" value="1" show="false"/>
+    <elementParameter field="CHECK" name="INCREASE" value="true" show="false"/>
+    <elementParameter field="TEXT" name="DECLARATION" value=""/>
+    <elementParameter field="TEXT" name="CONDITION" value="(Boolean)globalMap.get(&quot;tsl_hasMorePages&quot;)"/>
+    <elementParameter field="TEXT" name="ITERATION" value=""/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="-120">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1" show="false"/>
+    <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
+    <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
+    <elementParameter field="TABLE" name="VALUES">
+      <elementValue elementRef="SCHEMA_COLUMN" value="trigger" id="0"/>
+      <elementValue elementRef="VALUE" value="&quot;page&quot;" id="1"/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
+    <elementParameter field="TABLE" name="INTABLE" show="false"/>
+    <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;" show="false"/>
+    <elementParameter field="MEMO" name="INLINECONTENT" value="" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="generate dummy row"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFixedFlowInput_1">
+      <column comment="" key="false" length="-1" name="trigger" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="HTTPClient" componentVersion="5" offsetLabelX="0" offsetLabelY="0" posX="480" posY="-120">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHTTPClient_5" show="false"/>
+    <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="aHR0cC1zdHVkaW8jSFRUUCNDbGllbnQ" show="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="TEXT" name="LABEL" value="get timesheet lines"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.base" value="&quot;https://api.yourpayroll.com.au/api/v2/business/114542&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.type" value="NoAuth"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.basic.username" value="ev2dVR4Ny9VVzI1YUNTVm04WnYrczgrUVYyUlU0MmM0T3BQTFNiV3lRanIrTkhOb1pzV1FCWUJFalJIV0dTWmt0SA" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.apiKey.destination" value="HEADERS" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.apiKey.headerName" value="Authorization" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.apiKey.queryName" value="apikey" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.apiKey.prefix" value="Bearer" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.oauth20.flow" value="CLIENT_CREDENTIAL" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.oauth20.authenticationType" value="FORM" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.datastore.authentication.oauth20.params" show="false"/>
+    <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataset.methodType" value="GET"/>
+    <elementParameter field="TEXT" name="configuration.dataset.resource" value="&quot;/timesheet?$filter=StartTime%20ge%20datetime%27&quot; + context.tsl_fromDate + &quot;T00:00:00%27%20and%20StartTime%20lt%20datetime%27&quot; + context.tsl_toDate + &quot;T00:00:00%27&quot; + &quot;&amp;$orderby=Id&quot;+ &quot;&amp;$top=&quot;  + (Integer)globalMap.get(&quot;tsl_pageSize&quot;)+ &quot;&amp;$skip=&quot; + (Integer)globalMap.get(&quot;tsl_skip&quot;)"/>
+    <elementParameter field="CHECK" name="configuration.dataset.hasPathParams" value="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.pathParams" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.hasQueryParams" value="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.queryParams" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.hasHeaders" value="true"/>
+    <elementParameter field="TABLE" name="configuration.dataset.headers">
+      <elementValue elementRef="configuration.dataset.headers[].key" value="&quot;Authorization&quot;" id="0"/>
+      <elementValue elementRef="configuration.dataset.headers[].value" value="&quot;Basic &quot; + java.util.Base64.getEncoder().encodeToString((context.apiKey + &quot;:&quot;).getBytes())" id="1"/>
+      <elementValue elementRef="configuration.dataset.headers[].query" value="MAIN" id="2"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="configuration.dataset.hasBody" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.body.type" value="TEXT" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.body.params" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.format" value="RAW_TEXT"/>
+    <elementParameter field="TEXT" name="configuration.dataset.dssl" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.returnedContent" value="STATUS_HEADERS_BODY"/>
+    <elementParameter field="CHECK" name="configuration.dataset.outputKeyValuePairs" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.forwardInput" value="false" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.keyValuePairs" show="false"/>
+    <elementParameter field="CHECK" name="configuration.downloadFile" value="false"/>
+    <elementParameter field="CHECK" name="configuration.specifyFileName" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.useCacheToSave" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.datastore.authentication.oauth20.customizeHeaderName" value="false" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.oauth20.customHeaderName" value="Authorization" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.datastore.authentication.oauth20.customizeTokenPrefix" value="false" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.oauth20.customTokenPrefix" value="Bearer" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.connectionTimeout" value="30000"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.receiveTimeout" value="120000"/>
+    <elementParameter field="CHECK" name="configuration.dataset.datastore.bypassCertificateValidation" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.datastore.useProxy" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.proxyConfiguration.proxyType" value="HTTP" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.proxyConfiguration.proxyPort" value="443" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.datastore.hasRetry" value="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.retry.backoff" value="500" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.retry.factor" value="1" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.retry.maxAttempts" value="2" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.acceptRedirections" value="true"/>
+    <elementParameter field="TEXT" name="configuration.dataset.maxRedirectOnSameURL" value="3"/>
+    <elementParameter field="CHECK" name="configuration.dataset.onlySameHost" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.hasPagination" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.pagination.strategy" value="OFFSET_LIMIT" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.pagination.offsetLimitStrategyConfig.location" value="QUERY_PARAMETERS" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.pagination.markerStrategyConfig.location" value="QUERY_PARAMETERS" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.pagination.markerStrategyConfig.limitValue" value="100" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.jsonForceDouble" value="true" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.normalizeJson" value="false" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.jsonCastConfigurations" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.jsonFilterConfigurations" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.enforceNumberAsString" value="true" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.useCookies" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.saveCookies" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.disableChunkedEncoding" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.httpVersion" value="HTTP_2"/>
+    <elementParameter field="CHECK" name="configuration.uploadFiles" value="false"/>
+    <elementParameter field="TABLE" name="configuration.uploadFileTable" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dieOnError" value="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataset.__version" value="5" show="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataset.datastore.__version" value="5" show="false"/>
+    <metadata connector="LOOKUP" name="LOOKUP"/>
+    <metadata connector="MERGE" name="MERGE"/>
+    <metadata connector="REJECT" name="REJECT"/>
+    <metadata connector="FLOW" name="tHTTPClient_5">
+      <column comment="" key="false" length="-1" name="headers" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="status" nullable="false" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="-120">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_3" show="false"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="//Pass the response through unchanged&#xD;&#xA;output_row.body    = input_row.body;&#xD;&#xA;output_row.status  = input_row.status;&#xD;&#xA;output_row.headers = input_row.headers;&#xD;&#xA;&#xD;&#xA;//Remember this page's HTTP status for the step 4 tJava&#xD;&#xA;globalMap.put(&quot;tsl_lastStatus&quot;, input_row.status);"/>
+    <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="track data for debugging"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJavaRow_3">
+      <column comment="" key="false" length="-1" name="headers" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="status" nullable="false" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tExtractJSONFields" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="-120">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tExtractJSONFields_5" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="READ_BY" value="JSONPATH"/>
+    <elementParameter field="CLOSED_LIST" name="JSON_PATH_VERSION" value="2_1_0"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="JSONFIELD" value="body"/>
+    <elementParameter field="TEXT" name="LOOP_QUERY" value="&quot;/bills/bill/line&quot;" show="false"/>
+    <elementParameter field="TEXT" name="JSON_LOOP_QUERY" value="&quot;$[*]&quot;"/>
+    <elementParameter field="TABLE" name="MAPPING" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="TimesheetLineId" id="0"/>
+      <elementValue elementRef="QUERY" value="" id="1"/>
+      <elementValue elementRef="NODECHECK" value="false" id="2"/>
+      <elementValue elementRef="ISARRAY" value="false" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EmployeeId" id="4"/>
+      <elementValue elementRef="QUERY" value="" id="5"/>
+      <elementValue elementRef="NODECHECK" value="false" id="6"/>
+      <elementValue elementRef="ISARRAY" value="false" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="StartDateTime" id="8"/>
+      <elementValue elementRef="QUERY" value="" id="9"/>
+      <elementValue elementRef="NODECHECK" value="false" id="10"/>
+      <elementValue elementRef="ISARRAY" value="false" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EndDateTime" id="12"/>
+      <elementValue elementRef="QUERY" value="" id="13"/>
+      <elementValue elementRef="NODECHECK" value="false" id="14"/>
+      <elementValue elementRef="ISARRAY" value="false" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Status" id="16"/>
+      <elementValue elementRef="QUERY" value="" id="17"/>
+      <elementValue elementRef="NODECHECK" value="false" id="18"/>
+      <elementValue elementRef="ISARRAY" value="false" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LocationId" id="20"/>
+      <elementValue elementRef="QUERY" value="" id="21"/>
+      <elementValue elementRef="NODECHECK" value="false" id="22"/>
+      <elementValue elementRef="ISARRAY" value="false" id="23"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FullyQualifiedLocationName" id="24"/>
+      <elementValue elementRef="QUERY" value="" id="25"/>
+      <elementValue elementRef="NODECHECK" value="false" id="26"/>
+      <elementValue elementRef="ISARRAY" value="false" id="27"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WorkTypeId" id="28"/>
+      <elementValue elementRef="QUERY" value="" id="29"/>
+      <elementValue elementRef="NODECHECK" value="false" id="30"/>
+      <elementValue elementRef="ISARRAY" value="false" id="31"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WorkType" id="32"/>
+      <elementValue elementRef="QUERY" value="" id="33"/>
+      <elementValue elementRef="NODECHECK" value="false" id="34"/>
+      <elementValue elementRef="ISARRAY" value="false" id="35"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PayCategoryId" id="36"/>
+      <elementValue elementRef="QUERY" value="" id="37"/>
+      <elementValue elementRef="NODECHECK" value="false" id="38"/>
+      <elementValue elementRef="ISARRAY" value="false" id="39"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LeaveCategoryId" id="40"/>
+      <elementValue elementRef="QUERY" value="" id="41"/>
+      <elementValue elementRef="NODECHECK" value="false" id="42"/>
+      <elementValue elementRef="ISARRAY" value="false" id="43"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ClassificationId" id="44"/>
+      <elementValue elementRef="QUERY" value="" id="45"/>
+      <elementValue elementRef="NODECHECK" value="false" id="46"/>
+      <elementValue elementRef="ISARRAY" value="false" id="47"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Units" id="48"/>
+      <elementValue elementRef="QUERY" value="" id="49"/>
+      <elementValue elementRef="NODECHECK" value="false" id="50"/>
+      <elementValue elementRef="ISARRAY" value="false" id="51"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Rate" id="52"/>
+      <elementValue elementRef="QUERY" value="" id="53"/>
+      <elementValue elementRef="NODECHECK" value="false" id="54"/>
+      <elementValue elementRef="ISARRAY" value="false" id="55"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Comments" id="56"/>
+      <elementValue elementRef="QUERY" value="" id="57"/>
+      <elementValue elementRef="NODECHECK" value="false" id="58"/>
+      <elementValue elementRef="ISARRAY" value="false" id="59"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HiddenComments" id="60"/>
+      <elementValue elementRef="QUERY" value="" id="61"/>
+      <elementValue elementRef="NODECHECK" value="false" id="62"/>
+      <elementValue elementRef="ISARRAY" value="false" id="63"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ExternalId" id="64"/>
+      <elementValue elementRef="QUERY" value="" id="65"/>
+      <elementValue elementRef="NODECHECK" value="false" id="66"/>
+      <elementValue elementRef="ISARRAY" value="false" id="67"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Source" id="68"/>
+      <elementValue elementRef="QUERY" value="" id="69"/>
+      <elementValue elementRef="NODECHECK" value="false" id="70"/>
+      <elementValue elementRef="ISARRAY" value="false" id="71"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SubmittedByUser" id="72"/>
+      <elementValue elementRef="QUERY" value="" id="73"/>
+      <elementValue elementRef="NODECHECK" value="false" id="74"/>
+      <elementValue elementRef="ISARRAY" value="false" id="75"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DimensionValueIds" id="76"/>
+      <elementValue elementRef="QUERY" value="" id="77"/>
+      <elementValue elementRef="NODECHECK" value="false" id="78"/>
+      <elementValue elementRef="ISARRAY" value="false" id="79"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LoadedAt" id="80"/>
+      <elementValue elementRef="QUERY" value="" id="81"/>
+      <elementValue elementRef="NODECHECK" value="false" id="82"/>
+      <elementValue elementRef="ISARRAY" value="false" id="83"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="MAPPING_4_JSONPATH">
+      <elementValue elementRef="SCHEMA_COLUMN" value="TimesheetLineId" id="0"/>
+      <elementValue elementRef="QUERY" value="&quot;id&quot;" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EmployeeId" id="2"/>
+      <elementValue elementRef="QUERY" value="&quot;employeeId&quot;" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="StartDateTime" id="4"/>
+      <elementValue elementRef="QUERY" value="&quot;startTime&quot;" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EndDateTime" id="6"/>
+      <elementValue elementRef="QUERY" value="&quot;endTime&quot;" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Status" id="8"/>
+      <elementValue elementRef="QUERY" value="&quot;status&quot;" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LocationId" id="10"/>
+      <elementValue elementRef="QUERY" value="&quot;locationId&quot;" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FullyQualifiedLocationName" id="12"/>
+      <elementValue elementRef="QUERY" value="&quot;fullyQualifiedLocationName&quot;" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WorkTypeId" id="14"/>
+      <elementValue elementRef="QUERY" value="&quot;workTypeId&quot;" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WorkType" id="16"/>
+      <elementValue elementRef="QUERY" value="&quot;workType&quot;" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PayCategoryId" id="18"/>
+      <elementValue elementRef="QUERY" value="&quot;payCategoryId&quot;" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LeaveCategoryId" id="20"/>
+      <elementValue elementRef="QUERY" value="&quot;leaveCategoryId&quot;" id="21"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ClassificationId" id="22"/>
+      <elementValue elementRef="QUERY" value="&quot;classificationId&quot;" id="23"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Units" id="24"/>
+      <elementValue elementRef="QUERY" value="&quot;units&quot;" id="25"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Rate" id="26"/>
+      <elementValue elementRef="QUERY" value="&quot;rate&quot;" id="27"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Comments" id="28"/>
+      <elementValue elementRef="QUERY" value="&quot;comments&quot;" id="29"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HiddenComments" id="30"/>
+      <elementValue elementRef="QUERY" value="&quot;hiddenComments&quot;" id="31"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ExternalId" id="32"/>
+      <elementValue elementRef="QUERY" value="&quot;externalId&quot;" id="33"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Source" id="34"/>
+      <elementValue elementRef="QUERY" value="&quot;source&quot;" id="35"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SubmittedByUser" id="36"/>
+      <elementValue elementRef="QUERY" value="&quot;submittedByUser&quot;" id="37"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DimensionValueIds" id="38"/>
+      <elementValue elementRef="QUERY" value="&quot;dimensionValueIds&quot;" id="39"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LoadedAt" id="40"/>
+      <elementValue elementRef="QUERY" value="" id="41"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8" show="false"/>
+    <elementParameter field="CHECK" name="USE_LOOP_AS_ROOT" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT_LIST" value="true" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="extract timesheet lines json"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="timesheetline" name="tExtractJSONFields_5">
+      <column comment="" key="true" length="19" name="TimesheetLineId" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="EmployeeId" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="StartDateTime" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" precision="0" sourceType="DATETIME2" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="EndDateTime" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" precision="0" sourceType="DATETIME2" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="Status" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="LocationId" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="500" name="FullyQualifiedLocationName" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="WorkTypeId" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="WorkType" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="PayCategoryId" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="LeaveCategoryId" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="ClassificationId" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="Units" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="Rate" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="Comments" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="HiddenComments" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="ExternalId" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="Source" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="SubmittedByUser" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="500" name="DimensionValueIds" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_Object" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'sysdatetime()'" key="false" length="19" name="LoadedAt" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME2" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <metadata connector="REJECT" label="timesheetline" name="REJECT">
+      <column comment="" key="true" length="19" name="TimesheetLineId" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="EmployeeId" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="StartDateTime" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" precision="0" sourceType="DATETIME2" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="EndDateTime" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" precision="0" sourceType="DATETIME2" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="Status" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="LocationId" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="500" name="FullyQualifiedLocationName" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="WorkTypeId" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="WorkType" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="PayCategoryId" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="LeaveCategoryId" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="ClassificationId" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="Units" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="Rate" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="Comments" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="HiddenComments" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="ExternalId" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="Source" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="SubmittedByUser" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="500" name="DimensionValueIds" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_Object" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'sysdatetime()'" key="false" length="19" name="LoadedAt" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME2" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column defaultValue="" key="false" length="255" name="errorJSONField" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="960" posY="-120">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_2" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_GH8PoN2SEfGIPtFBJSUBGg-tMap_3-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="output_table">
+      <column comment="" key="true" length="19" name="TimesheetLineId" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="EmployeeId" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="StartDateTime" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" precision="0" sourceType="DATETIME2" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="EndDateTime" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" precision="0" sourceType="DATETIME2" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="Status" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="LocationId" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="500" name="FullyQualifiedLocationName" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="WorkTypeId" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="WorkType" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="PayCategoryId" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="LeaveCategoryId" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="ClassificationId" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="Units" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="Rate" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="Comments" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="HiddenComments" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="ExternalId" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="Source" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="SubmittedByUser" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="500" name="DimensionValueIds" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_Object" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'sysdatetime()'" key="false" length="19" name="LoadedAt" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME2" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="output_table">
+        <mapperTableEntries name="TimesheetLineId" expression="row18.TimesheetLineId " type="id_Long"/>
+        <mapperTableEntries name="EmployeeId" expression="row18.EmployeeId " type="id_Long"/>
+        <mapperTableEntries name="StartDateTime" expression="row18.StartDateTime " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="EndDateTime" expression="row18.EndDateTime " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Status" expression="row18.Status " type="id_String" nullable="true"/>
+        <mapperTableEntries name="LocationId" expression="row18.LocationId " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="FullyQualifiedLocationName" expression="row18.FullyQualifiedLocationName " type="id_String" nullable="true"/>
+        <mapperTableEntries name="WorkTypeId" expression="row18.WorkTypeId " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="WorkType" expression="row18.WorkType " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PayCategoryId" expression="row18.PayCategoryId " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="LeaveCategoryId" expression="row18.LeaveCategoryId " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="ClassificationId" expression="row18.ClassificationId " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="Units" expression="row18.Units " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="Rate" expression="row18.Rate " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="Comments" expression="row18.Comments == null ? null : row18.Comments.replaceAll(&quot;[\\r\\n]+&quot;, &quot; &quot;) " type="id_String" nullable="true"/>
+        <mapperTableEntries name="HiddenComments" expression="row18.HiddenComments == null ? null : row18.HiddenComments.replaceAll(&quot;[\\r\\n]+&quot;, &quot; &quot;) " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ExternalId" expression="row18.ExternalId " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Source" expression="row18.Source " type="id_String" nullable="true"/>
+        <mapperTableEntries name="SubmittedByUser" expression="row18.SubmittedByUser " type="id_String" nullable="true"/>
+        <mapperTableEntries name="DimensionValueIds" expression="row18.DimensionValueIds " type="id_Object" nullable="true"/>
+        <mapperTableEntries name="LoadedAt" expression="row18.LoadedAt " type="id_Date"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row18" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="TimesheetLineId" type="id_Long"/>
+        <mapperTableEntries name="EmployeeId" type="id_Long"/>
+        <mapperTableEntries name="StartDateTime" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="EndDateTime" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Status" type="id_String" nullable="true"/>
+        <mapperTableEntries name="LocationId" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="FullyQualifiedLocationName" type="id_String" nullable="true"/>
+        <mapperTableEntries name="WorkTypeId" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="WorkType" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PayCategoryId" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="LeaveCategoryId" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="ClassificationId" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="Units" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="Rate" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="Comments" type="id_String" nullable="true"/>
+        <mapperTableEntries name="HiddenComments" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ExternalId" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Source" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SubmittedByUser" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DimensionValueIds" type="id_Object" nullable="true"/>
+        <mapperTableEntries name="LoadedAt" type="id_Date"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="-120">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_4" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="TimesheetLineId" id="0"/>
+      <elementValue elementRef="LENGTH" value="10" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EmployeeId" id="2"/>
+      <elementValue elementRef="LENGTH" value="10" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="StartDateTime" id="4"/>
+      <elementValue elementRef="LENGTH" value="10" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EndDateTime" id="6"/>
+      <elementValue elementRef="LENGTH" value="10" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Status" id="8"/>
+      <elementValue elementRef="LENGTH" value="10" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LocationId" id="10"/>
+      <elementValue elementRef="LENGTH" value="10" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FullyQualifiedLocationName" id="12"/>
+      <elementValue elementRef="LENGTH" value="10" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WorkTypeId" id="14"/>
+      <elementValue elementRef="LENGTH" value="10" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WorkType" id="16"/>
+      <elementValue elementRef="LENGTH" value="10" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PayCategoryId" id="18"/>
+      <elementValue elementRef="LENGTH" value="10" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LeaveCategoryId" id="20"/>
+      <elementValue elementRef="LENGTH" value="10" id="21"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ClassificationId" id="22"/>
+      <elementValue elementRef="LENGTH" value="10" id="23"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Units" id="24"/>
+      <elementValue elementRef="LENGTH" value="10" id="25"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Rate" id="26"/>
+      <elementValue elementRef="LENGTH" value="10" id="27"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Comments" id="28"/>
+      <elementValue elementRef="LENGTH" value="10" id="29"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HiddenComments" id="30"/>
+      <elementValue elementRef="LENGTH" value="10" id="31"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ExternalId" id="32"/>
+      <elementValue elementRef="LENGTH" value="10" id="33"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Source" id="34"/>
+      <elementValue elementRef="LENGTH" value="10" id="35"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SubmittedByUser" id="36"/>
+      <elementValue elementRef="LENGTH" value="10" id="37"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DimensionValueIds" id="38"/>
+      <elementValue elementRef="LENGTH" value="10" id="39"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LoadedAt" id="40"/>
+      <elementValue elementRef="LENGTH" value="10" id="41"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Preview data"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_4">
+      <column comment="" key="true" length="19" name="TimesheetLineId" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="EmployeeId" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="StartDateTime" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" precision="0" sourceType="DATETIME2" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="EndDateTime" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" precision="0" sourceType="DATETIME2" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="Status" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="LocationId" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="500" name="FullyQualifiedLocationName" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="WorkTypeId" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="WorkType" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="PayCategoryId" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="LeaveCategoryId" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="ClassificationId" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="Units" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="Rate" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="Comments" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="HiddenComments" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="ExternalId" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="Source" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="SubmittedByUser" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="500" name="DimensionValueIds" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_Object" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'sysdatetime()'" key="false" length="19" name="LoadedAt" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME2" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1280" posY="-120">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_5" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_7_NhMKA9EfGq3IYnFJCINg" show="false"/>
@@ -3362,6 +4028,14 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="40">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_5" show="false"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="&#xD;&#xA;//---- What happened on this page ----&#xD;&#xA;Integer httpStatus   = (Integer)globalMap.get(&quot;tsl_lastStatus&quot;);&#xD;&#xA;Integer rowsThisPage = (Integer)globalMap.get(&quot;tExtractJSONFields_5_NB_LINE&quot;);&#xD;&#xA;if (rowsThisPage == null) {&#xD;&#xA; rowsThisPage = 0;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;Integer pageSize = (Integer)globalMap.get(&quot;tsl_pageSize&quot;);&#xD;&#xA;Integer skip     = (Integer)globalMap.get(&quot;tsl_skip&quot;);&#xD;&#xA;&#xD;&#xA;System.out.println(&quot;Timesheet lines: skip=&quot; + skip + &quot; status=&quot; + httpStatus + &quot; rows=&quot; + rowsThisPage);&#xD;&#xA;&#xD;&#xA;//---- Rate limited (429): wait, then retry the SAME page ----&#xD;&#xA;if (httpStatus != null &amp;&amp; httpStatus == 429) {&#xD;&#xA;&#xD;&#xA; Integer retries = (Integer)globalMap.get(&quot;tsl_retries&quot;);&#xD;&#xA; if (retries == null) {&#xD;&#xA;     retries = 0;&#xD;&#xA; }&#xD;&#xA;&#xD;&#xA; if (retries >= 5) {&#xD;&#xA;     throw new RuntimeException(&quot;Employment Hero kept returning 429 at skip=&quot; + skip + &quot; after 5 retries.&quot;);&#xD;&#xA; }&#xD;&#xA;&#xD;&#xA; globalMap.put(&quot;tsl_retries&quot;, retries + 1);&#xD;&#xA; System.out.println(&quot;Rate limited. Waiting 2 seconds, then retrying skip=&quot; + skip);&#xD;&#xA; Thread.sleep(2000);&#xD;&#xA;&#xD;&#xA; // Don't change skip, and don't stop the loop: the same page is requested again&#xD;&#xA;&#xD;&#xA;//---- Any other error: stop the job, don't pretend it was the last page ----&#xD;&#xA;} else if (httpStatus == null || httpStatus != 200) {&#xD;&#xA;&#xD;&#xA; throw new RuntimeException(&quot;Employment Hero returned HTTP &quot; + httpStatus + &quot; at skip=&quot; + skip);&#xD;&#xA;&#xD;&#xA;//---- Success: next page, or finish ----&#xD;&#xA;} else {&#xD;&#xA;&#xD;&#xA; globalMap.put(&quot;tsl_retries&quot;, 0);   // reset the retry counter after a good page&#xD;&#xA;&#xD;&#xA; if (rowsThisPage &lt; pageSize) {&#xD;&#xA;     globalMap.put(&quot;tsl_hasMorePages&quot;, false);       // last page&#xD;&#xA;     int totalRows = skip + rowsThisPage;&#xD;&#xA;     System.out.println(&quot;Timesheet lines | finished | total rows fetched = &quot; + totalRows);&#xD;&#xA; } else {&#xD;&#xA;     globalMap.put(&quot;tsl_skip&quot;, skip + pageSize);     // next page&#xD;&#xA;     Thread.sleep(300);                              // pause, to stay under ~5 requests per second&#xD;&#xA; }&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;//---- Rate limiter: always wait 250 ms before the next call (max 4 calls per second) ----&#xD;&#xA;if ((Boolean)globalMap.get(&quot;tsl_hasMorePages&quot;)) {&#xD;&#xA;  Thread.sleep(250);&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;//---- Safety net ----&#xD;&#xA;if ((Integer)globalMap.get(&quot;tsl_skip&quot;) >= 20000) {&#xD;&#xA; throw new RuntimeException(&quot;Timesheet lines pagination exceeded 20,000 records.&quot;);&#xD;&#xA;}&#xD;&#xA;"/>
+    <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="increment values"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_5"/>
+  </node>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tHTTPClient_1" offsetLabelX="0" offsetLabelY="0" source="tHTTPClient_1" target="tLogRow_1">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
       <elementValue elementRef="TRACE_COLUMN" value="Body" id="0"/>
@@ -3446,6 +4120,9 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row21" show="false"/>
   </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tHTTPClient_7" offsetLabelX="0" offsetLabelY="0" source="tHTTPClient_7" target="tJava_4">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk4" show="false"/>
+  </connection>
   <connection connectorName="FLOW" label="row20" lineStyle="0" metaname="tExtractJSONFields_7" offsetLabelX="0" offsetLabelY="0" source="tExtractJSONFields_7" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row20" show="false"/>
@@ -3514,12 +4191,67 @@
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_3" offsetLabelX="0" offsetLabelY="0" source="tJava_3" target="tDie_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk10" show="false"/>
   </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_4" offsetLabelX="0" offsetLabelY="0" source="tJava_4" target="tLoop_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
+  </connection>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tLoop_1" offsetLabelX="0" offsetLabelY="0" source="tLoop_1" target="tFixedFlowInput_1">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" value="2" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate1" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tLoop_1" offsetLabelX="0" offsetLabelY="0" source="tLoop_1" target="tHTTPClient_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk14" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tHTTPClient_5">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="trigger" id="0"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row5" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row12" lineStyle="0" metaname="tHTTPClient_5" offsetLabelX="0" offsetLabelY="0" source="tHTTPClient_5" target="tJavaRow_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row12" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row13" lineStyle="0" metaname="tJavaRow_3" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_3" target="tExtractJSONFields_5">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="headers" id="0"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+      <elementValue elementRef="TRACE_COLUMN" value="body" id="3"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="4"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="5"/>
+      <elementValue elementRef="TRACE_COLUMN" value="status" id="6"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="7"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="8"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row13" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row18" lineStyle="0" metaname="tExtractJSONFields_5" offsetLabelX="0" offsetLabelY="0" source="tExtractJSONFields_5" target="tMap_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row18" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="output_table" lineStyle="0" metaname="output_table" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tLogRow_4">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="output_table" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row14" lineStyle="0" metaname="tLogRow_4" offsetLabelX="0" offsetLabelY="0" source="tLogRow_4" target="tDBOutput_5">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row14" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tLogRow_4" offsetLabelX="0" offsetLabelY="0" source="tLogRow_4" target="tJava_5">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk11" show="false"/>
+  </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBOutput_5" offsetLabelX="0" offsetLabelY="0" source="tDBOutput_5" target="tJava_7">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk7" show="false"/>
   </connection>
   <note opaque="true" posX="760" posY="600" sizeHeight="161" sizeWidth="281" text="Upserts the timesheet data into the&#xD;&#xA;landing schema by combining the data &#xD;&#xA;from the pre-processing tables&#xD;&#xA;&lt;--&#xD;&#xA;"/>
   <note opaque="true" posX="160" posY="600" sizeHeight="121" sizeWidth="281" text="&lt;-- Creates the links&#xD;&#xA;"/>
-  <note opaque="true" posX="160" posY="-280" sizeHeight="121" sizeWidth="281" text="Sets the contex variable&#xD;&#xA;dates to -7 days ago&#xD;&#xA;to load only the last 7 days of timesheet &#xD;&#xA;data&#xD;&#xA;&lt;--"/>
+  <note opaque="true" posX="120" posY="-800" sizeHeight="281" sizeWidth="361" text="Sets the contex variable&#xD;&#xA;dates to -7 days ago&#xD;&#xA;to load only the last 7 days of timesheet &#xD;&#xA;data. Also if you fill out the two &#xD;&#xA;manalFromDate and manualToDate variables,&#xD;&#xA;this component does some date calculations &#xD;&#xA;and sets the correct date for the API calls&#xD;&#xA;&lt;--"/>
+  <note opaque="true" posX="120" posY="-520" sizeHeight="121" sizeWidth="441" text="Opens up a conneciton to FMDW that all the tDBOuput&#xD;&#xA;Components use&#xD;&#xA;&lt;------------------------"/>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHTTPClient_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
@@ -3601,11 +4333,6 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
   </subjob>
   <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
-  </subjob>
-  <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogCatcher_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
@@ -3621,7 +4348,17 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
   </subjob>
   <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_5" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_4" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLoop_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_5" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
   </subjob>
