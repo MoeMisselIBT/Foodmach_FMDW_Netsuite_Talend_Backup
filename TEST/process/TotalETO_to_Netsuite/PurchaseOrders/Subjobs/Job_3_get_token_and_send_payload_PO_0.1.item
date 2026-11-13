@@ -332,16 +332,6 @@
       <column comment="" key="false" length="-1" name="token_type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="360" posY="0">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="System.out.println(globalMap.get(&quot;token_url&quot;));&#xD;&#xA;&#xD;&#xA;System.out.println(globalMap.get(&quot;client_assertion&quot;));&#xD;&#xA;&#xD;&#xA;System.out.println(context.account_id);&#xD;&#xA;&#xD;&#xA;System.out.println(context.certificate_id);&#xD;&#xA;&#xD;&#xA;System.out.println(context.client_id);&#xD;&#xA;&#xD;&#xA;System.out.println(context.private_key_path);&#xD;&#xA;&#xD;&#xA;System.out.println(context.scope);;"/>
-    <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tJava_2">
-      <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-  </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="560" posY="40">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_3" show="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
@@ -1042,7 +1032,7 @@
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;trustServerCertificate=true;&quot;"/>
     <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false"/>
@@ -1292,7 +1282,7 @@
       </column>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="send_errors_to_integration_table">
         <mapperTableEntries name="IntegrationID" type="id_Integer"/>
@@ -1345,7 +1335,7 @@
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;trustServerCertificate=true;&quot;"/>
     <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false"/>
@@ -1518,510 +1508,6 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_4"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="160" posY="880">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_6" show="false"/>
-    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="System.out.println(&quot;Job experienced an error&quot;);&#xD;&#xA;&#xD;&#xA;String errorMsg = String.valueOf(globalMap.get(&quot;tDBInput_1_ERROR_MESSAGE&quot;));&#xD;&#xA;String safeErrorMsg = errorMsg.replace(&quot;\\&quot;, &quot;\\\\&quot;).replace(&quot;\&quot;&quot;, &quot;\\\&quot;&quot;).replace(&quot;\n&quot;, &quot;\\n&quot;).replace(&quot;\r&quot;, &quot;&quot;);&#xD;&#xA;&#xD;&#xA;globalMap.put(&quot;errorMsg&quot;, safeErrorMsg);&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;"/>
-    <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
-    <elementParameter field="TEXT" name="LABEL" value="log job failed"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tJava_6">
-      <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="headers" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="HTTPClient" componentVersion="5" offsetLabelX="6" offsetLabelY="14" posX="320" posY="880">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHTTPClient_3" show="false"/>
-    <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="aHR0cC1zdHVkaW8jSFRUUCNDbGllbnQ" show="false"/>
-    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
-    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
-    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
-    <elementParameter field="TEXT" name="LABEL" value="Send Teams error message"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.base" value="context.teams_base_url"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.type" value="NoAuth"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.apiKey.destination" value="HEADERS" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.apiKey.headerName" value="Authorization" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.apiKey.queryName" value="apikey" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.apiKey.prefix" value="Bearer" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.oauth20.flow" value="CLIENT_CREDENTIAL" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.oauth20.authenticationType" value="FORM" show="false"/>
-    <elementParameter field="TABLE" name="configuration.dataset.datastore.authentication.oauth20.params" show="false"/>
-    <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataset.methodType" value="POST"/>
-    <elementParameter field="TEXT" name="configuration.dataset.resource" value="context.teams_path"/>
-    <elementParameter field="CHECK" name="configuration.dataset.hasPathParams" value="false"/>
-    <elementParameter field="TABLE" name="configuration.dataset.pathParams" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.hasQueryParams" value="false"/>
-    <elementParameter field="TABLE" name="configuration.dataset.queryParams" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.hasHeaders" value="false"/>
-    <elementParameter field="TABLE" name="configuration.dataset.headers" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.hasBody" value="true"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataset.body.type" value="JSON"/>
-    <elementParameter field="TACOKIT_TEXT_AREA" name="configuration.dataset.body.textValue" value="{&#xD;&#xA;  &quot;type&quot;: &quot;message&quot;,&#xD;&#xA;  &quot;attachments&quot;: [&#xD;&#xA;    {&#xD;&#xA;      &quot;contentType&quot;: &quot;application/vnd.microsoft.card.adaptive&quot;,&#xD;&#xA;      &quot;content&quot;: {&#xD;&#xA;        &quot;type&quot;: &quot;AdaptiveCard&quot;,&#xD;&#xA;        &quot;$schema&quot;: &quot;http://adaptivecards.io/schemas/adaptive-card.json&quot;,&#xD;&#xA;        &quot;version&quot;: &quot;1.4&quot;,&#xD;&#xA;        &quot;body&quot;: [&#xD;&#xA;          { &quot;type&quot;: &quot;TextBlock&quot;, &quot;text&quot;: &quot;Test message from Postman&quot;, &quot;wrap&quot;: true }&#xD;&#xA;        ]&#xD;&#xA;      }&#xD;&#xA;    }&#xD;&#xA;  ]&#xD;&#xA;}" show="false"/>
-    <elementParameter field="MEMO" name="configuration.dataset.body.jsonValue" value="&quot;{&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;message\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;attachments\&quot;: [{&quot;&#xD;&#xA;+ &quot;\&quot;contentType\&quot;: \&quot;application/vnd.microsoft.card.adaptive\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;content\&quot;: {&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;AdaptiveCard\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;$schema\&quot;: \&quot;http://adaptivecards.io/schemas/adaptive-card.json\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;version\&quot;: \&quot;1.4\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;body\&quot;: [{&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;TextBlock\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;text\&quot;: \&quot;\u274C Dev - Talend job failed\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;weight\&quot;: \&quot;Bolder\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;size\&quot;: \&quot;Medium\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;color\&quot;: \&quot;Attention\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;wrap\&quot;: true&quot;&#xD;&#xA;+ &quot;},{&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;FactSet\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;facts\&quot;: [&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Job:\&quot;, \&quot;value\&quot;: \&quot;Job_3_get_token_and_send_payload\&quot;},&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Component:\&quot;, \&quot;value\&quot;: \&quot;tDBInput_1_ERROR_MESSAGE\&quot;},&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Status:\&quot;, \&quot;value\&quot;: \&quot;Failed\&quot;},&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Time:\&quot;, \&quot;value\&quot;: \&quot;&quot; + java.time.ZonedDateTime.now(java.time.ZoneId.of(&quot;Australia/Sydney&quot;)).format(java.time.format.DateTimeFormatter.ofPattern(&quot;yyyy-MM-dd HH:mm:ss z&quot;)) + &quot;\&quot;},&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Error:\&quot;, \&quot;value\&quot;: \&quot;&quot; + (String)globalMap.get(&quot;errorMsg&quot;) + &quot;\&quot;}&quot;&#xD;&#xA;+ &quot;]&quot;&#xD;&#xA;+ &quot;}]&quot;&#xD;&#xA;+ &quot;}&quot;&#xD;&#xA;+ &quot;}]&quot;&#xD;&#xA;+ &quot;}&quot;"/>
-    <elementParameter field="TABLE" name="configuration.dataset.body.params" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataset.format" value="RAW_TEXT"/>
-    <elementParameter field="TEXT" name="configuration.dataset.dssl" value="" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataset.returnedContent" value="STATUS_HEADERS_BODY"/>
-    <elementParameter field="CHECK" name="configuration.dataset.outputKeyValuePairs" value="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.forwardInput" value="false" show="false"/>
-    <elementParameter field="TABLE" name="configuration.dataset.keyValuePairs" show="false"/>
-    <elementParameter field="CHECK" name="configuration.downloadFile" value="false"/>
-    <elementParameter field="CHECK" name="configuration.specifyFileName" value="false" show="false"/>
-    <elementParameter field="CHECK" name="configuration.useCacheToSave" value="false" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.datastore.authentication.oauth20.customizeHeaderName" value="false" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.oauth20.customHeaderName" value="Authorization" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.datastore.authentication.oauth20.customizeTokenPrefix" value="false" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.oauth20.customTokenPrefix" value="Bearer" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.connectionTimeout" value="30000"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.receiveTimeout" value="120000"/>
-    <elementParameter field="CHECK" name="configuration.dataset.datastore.bypassCertificateValidation" value="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.datastore.useProxy" value="false"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.proxyConfiguration.proxyType" value="HTTP" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.proxyConfiguration.proxyPort" value="443" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.datastore.hasRetry" value="false"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.retry.backoff" value="500" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.retry.factor" value="1" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.retry.maxAttempts" value="2" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.acceptRedirections" value="true"/>
-    <elementParameter field="TEXT" name="configuration.dataset.maxRedirectOnSameURL" value="3"/>
-    <elementParameter field="CHECK" name="configuration.dataset.onlySameHost" value="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.hasPagination" value="false"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataset.pagination.strategy" value="OFFSET_LIMIT" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataset.pagination.offsetLimitStrategyConfig.location" value="QUERY_PARAMETERS" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataset.pagination.markerStrategyConfig.location" value="QUERY_PARAMETERS" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataset.pagination.markerStrategyConfig.limitValue" value="100" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.jsonForceDouble" value="true" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.normalizeJson" value="false" show="false"/>
-    <elementParameter field="TABLE" name="configuration.dataset.jsonCastConfigurations" show="false"/>
-    <elementParameter field="TABLE" name="configuration.dataset.jsonFilterConfigurations" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.enforceNumberAsString" value="true" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.useCookies" value="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.saveCookies" value="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.disableChunkedEncoding" value="false"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.httpVersion" value="HTTP_2"/>
-    <elementParameter field="CHECK" name="configuration.uploadFiles" value="false"/>
-    <elementParameter field="TABLE" name="configuration.uploadFileTable" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dieOnError" value="false"/>
-    <elementParameter field="TECHNICAL" name="configuration.dataset.__version" value="5" show="false"/>
-    <elementParameter field="TECHNICAL" name="configuration.dataset.datastore.__version" value="5" show="false"/>
-    <metadata connector="LOOKUP" name="LOOKUP"/>
-    <metadata connector="MERGE" name="MERGE"/>
-    <metadata connector="REJECT" name="REJECT"/>
-    <metadata connector="FLOW" name="tHTTPClient_3">
-      <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="headers" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="520" posY="880">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_2" show="false"/>
-    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
-    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
-    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
-    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
-    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
-    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
-    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
-    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
-    <elementParameter field="TABLE" name="LENGTHS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="body" id="0"/>
-      <elementValue elementRef="LENGTH" value="10" id="1"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="status" id="2"/>
-      <elementValue elementRef="LENGTH" value="10" id="3"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="headers" id="4"/>
-      <elementValue elementRef="LENGTH" value="10" id="5"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
-    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="View result"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tLogRow_2">
-      <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="headers" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1200" posY="880">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_7" show="false"/>
-    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="System.out.println(&quot;Job experienced an error&quot;);&#xD;&#xA;&#xD;&#xA;String errorMsg = String.valueOf(globalMap.get(&quot;tDBOutput_1_ERROR_MESSAGE&quot;));&#xD;&#xA;String safeErrorMsg = errorMsg.replace(&quot;\\&quot;, &quot;\\\\&quot;).replace(&quot;\&quot;&quot;, &quot;\\\&quot;&quot;).replace(&quot;\n&quot;, &quot;\\n&quot;).replace(&quot;\r&quot;, &quot;&quot;);&#xD;&#xA;&#xD;&#xA;globalMap.put(&quot;errorMsg&quot;, safeErrorMsg);&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;"/>
-    <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
-    <elementParameter field="TEXT" name="LABEL" value="log job failed"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tJava_7">
-      <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="headers" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="HTTPClient" componentVersion="5" offsetLabelX="6" offsetLabelY="14" posX="1480" posY="880">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHTTPClient_4" show="false"/>
-    <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="aHR0cC1zdHVkaW8jSFRUUCNDbGllbnQ" show="false"/>
-    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
-    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
-    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
-    <elementParameter field="TEXT" name="LABEL" value="Send Teams error message"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.base" value="context.teams_base_url"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.type" value="NoAuth"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.apiKey.destination" value="HEADERS" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.apiKey.headerName" value="Authorization" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.apiKey.queryName" value="apikey" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.apiKey.prefix" value="Bearer" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.oauth20.flow" value="CLIENT_CREDENTIAL" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.oauth20.authenticationType" value="FORM" show="false"/>
-    <elementParameter field="TABLE" name="configuration.dataset.datastore.authentication.oauth20.params" show="false"/>
-    <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataset.methodType" value="POST"/>
-    <elementParameter field="TEXT" name="configuration.dataset.resource" value="context.teams_path"/>
-    <elementParameter field="CHECK" name="configuration.dataset.hasPathParams" value="false"/>
-    <elementParameter field="TABLE" name="configuration.dataset.pathParams" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.hasQueryParams" value="false"/>
-    <elementParameter field="TABLE" name="configuration.dataset.queryParams" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.hasHeaders" value="false"/>
-    <elementParameter field="TABLE" name="configuration.dataset.headers" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.hasBody" value="true"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataset.body.type" value="JSON"/>
-    <elementParameter field="TACOKIT_TEXT_AREA" name="configuration.dataset.body.textValue" value="{&#xD;&#xA;  &quot;type&quot;: &quot;message&quot;,&#xD;&#xA;  &quot;attachments&quot;: [&#xD;&#xA;    {&#xD;&#xA;      &quot;contentType&quot;: &quot;application/vnd.microsoft.card.adaptive&quot;,&#xD;&#xA;      &quot;content&quot;: {&#xD;&#xA;        &quot;type&quot;: &quot;AdaptiveCard&quot;,&#xD;&#xA;        &quot;$schema&quot;: &quot;http://adaptivecards.io/schemas/adaptive-card.json&quot;,&#xD;&#xA;        &quot;version&quot;: &quot;1.4&quot;,&#xD;&#xA;        &quot;body&quot;: [&#xD;&#xA;          { &quot;type&quot;: &quot;TextBlock&quot;, &quot;text&quot;: &quot;Test message from Postman&quot;, &quot;wrap&quot;: true }&#xD;&#xA;        ]&#xD;&#xA;      }&#xD;&#xA;    }&#xD;&#xA;  ]&#xD;&#xA;}" show="false"/>
-    <elementParameter field="MEMO" name="configuration.dataset.body.jsonValue" value="&quot;{&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;message\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;attachments\&quot;: [{&quot;&#xD;&#xA;+ &quot;\&quot;contentType\&quot;: \&quot;application/vnd.microsoft.card.adaptive\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;content\&quot;: {&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;AdaptiveCard\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;$schema\&quot;: \&quot;http://adaptivecards.io/schemas/adaptive-card.json\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;version\&quot;: \&quot;1.4\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;body\&quot;: [{&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;TextBlock\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;text\&quot;: \&quot;\u274C Dev - Talend job failed\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;weight\&quot;: \&quot;Bolder\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;size\&quot;: \&quot;Medium\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;color\&quot;: \&quot;Attention\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;wrap\&quot;: true&quot;&#xD;&#xA;+ &quot;},{&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;FactSet\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;facts\&quot;: [&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Job:\&quot;, \&quot;value\&quot;: \&quot;Job_3_get_token_and_send_payload\&quot;},&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Component:\&quot;, \&quot;value\&quot;: \&quot;tDBOutput_1_ERROR_MESSAGE\&quot;},&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Status:\&quot;, \&quot;value\&quot;: \&quot;Failed\&quot;},&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Time:\&quot;, \&quot;value\&quot;: \&quot;&quot; + java.time.ZonedDateTime.now(java.time.ZoneId.of(&quot;Australia/Sydney&quot;)).format(java.time.format.DateTimeFormatter.ofPattern(&quot;yyyy-MM-dd HH:mm:ss z&quot;)) + &quot;\&quot;},&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Error:\&quot;, \&quot;value\&quot;: \&quot;&quot; + (String)globalMap.get(&quot;errorMsg&quot;) + &quot;\&quot;}&quot;&#xD;&#xA;+ &quot;]&quot;&#xD;&#xA;+ &quot;}]&quot;&#xD;&#xA;+ &quot;}&quot;&#xD;&#xA;+ &quot;}]&quot;&#xD;&#xA;+ &quot;}&quot;"/>
-    <elementParameter field="TABLE" name="configuration.dataset.body.params" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataset.format" value="RAW_TEXT"/>
-    <elementParameter field="TEXT" name="configuration.dataset.dssl" value="" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataset.returnedContent" value="STATUS_HEADERS_BODY"/>
-    <elementParameter field="CHECK" name="configuration.dataset.outputKeyValuePairs" value="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.forwardInput" value="false" show="false"/>
-    <elementParameter field="TABLE" name="configuration.dataset.keyValuePairs" show="false"/>
-    <elementParameter field="CHECK" name="configuration.downloadFile" value="false"/>
-    <elementParameter field="CHECK" name="configuration.specifyFileName" value="false" show="false"/>
-    <elementParameter field="CHECK" name="configuration.useCacheToSave" value="false" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.datastore.authentication.oauth20.customizeHeaderName" value="false" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.oauth20.customHeaderName" value="Authorization" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.datastore.authentication.oauth20.customizeTokenPrefix" value="false" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.oauth20.customTokenPrefix" value="Bearer" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.connectionTimeout" value="30000"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.receiveTimeout" value="120000"/>
-    <elementParameter field="CHECK" name="configuration.dataset.datastore.bypassCertificateValidation" value="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.datastore.useProxy" value="false"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.proxyConfiguration.proxyType" value="HTTP" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.proxyConfiguration.proxyPort" value="443" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.datastore.hasRetry" value="false"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.retry.backoff" value="500" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.retry.factor" value="1" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.retry.maxAttempts" value="2" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.acceptRedirections" value="true"/>
-    <elementParameter field="TEXT" name="configuration.dataset.maxRedirectOnSameURL" value="3"/>
-    <elementParameter field="CHECK" name="configuration.dataset.onlySameHost" value="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.hasPagination" value="false"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataset.pagination.strategy" value="OFFSET_LIMIT" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataset.pagination.offsetLimitStrategyConfig.location" value="QUERY_PARAMETERS" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataset.pagination.markerStrategyConfig.location" value="QUERY_PARAMETERS" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataset.pagination.markerStrategyConfig.limitValue" value="100" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.jsonForceDouble" value="true" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.normalizeJson" value="false" show="false"/>
-    <elementParameter field="TABLE" name="configuration.dataset.jsonCastConfigurations" show="false"/>
-    <elementParameter field="TABLE" name="configuration.dataset.jsonFilterConfigurations" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.enforceNumberAsString" value="true" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.useCookies" value="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.saveCookies" value="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.disableChunkedEncoding" value="false"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.httpVersion" value="HTTP_2"/>
-    <elementParameter field="CHECK" name="configuration.uploadFiles" value="false"/>
-    <elementParameter field="TABLE" name="configuration.uploadFileTable" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dieOnError" value="false"/>
-    <elementParameter field="TECHNICAL" name="configuration.dataset.__version" value="5" show="false"/>
-    <elementParameter field="TECHNICAL" name="configuration.dataset.datastore.__version" value="5" show="false"/>
-    <metadata connector="LOOKUP" name="LOOKUP"/>
-    <metadata connector="MERGE" name="MERGE"/>
-    <metadata connector="REJECT" name="REJECT"/>
-    <metadata connector="FLOW" name="tHTTPClient_4">
-      <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="headers" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1680" posY="880">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_3" show="false"/>
-    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
-    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
-    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
-    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
-    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
-    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
-    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
-    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
-    <elementParameter field="TABLE" name="LENGTHS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="body" id="0"/>
-      <elementValue elementRef="LENGTH" value="10" id="1"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="status" id="2"/>
-      <elementValue elementRef="LENGTH" value="10" id="3"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="headers" id="4"/>
-      <elementValue elementRef="LENGTH" value="10" id="5"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
-    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="View result"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tLogRow_3">
-      <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="headers" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="720" posY="0">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_5" show="false"/>
-    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="System.out.println(&quot;Job experienced an error&quot;);&#xD;&#xA;&#xD;&#xA;String errorMsg = String.valueOf(globalMap.get(&quot;tHTTPClient_1_ERROR_MESSAGE&quot;));&#xD;&#xA;String safeErrorMsg = errorMsg.replace(&quot;\\&quot;, &quot;\\\\&quot;).replace(&quot;\&quot;&quot;, &quot;\\\&quot;&quot;).replace(&quot;\n&quot;, &quot;\\n&quot;).replace(&quot;\r&quot;, &quot;&quot;);&#xD;&#xA;&#xD;&#xA;globalMap.put(&quot;errorMsg&quot;, safeErrorMsg);"/>
-    <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
-    <elementParameter field="TEXT" name="LABEL" value="log job failed"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tJava_5">
-      <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="headers" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="HTTPClient" componentVersion="5" offsetLabelX="6" offsetLabelY="14" posX="960" posY="0">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHTTPClient_5" show="false"/>
-    <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="aHR0cC1zdHVkaW8jSFRUUCNDbGllbnQ" show="false"/>
-    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
-    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
-    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
-    <elementParameter field="TEXT" name="LABEL" value="Send Teams error message"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.base" value="context.teams_base_url"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.type" value="NoAuth"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.apiKey.destination" value="HEADERS" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.apiKey.headerName" value="Authorization" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.apiKey.queryName" value="apikey" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.apiKey.prefix" value="Bearer" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.oauth20.flow" value="CLIENT_CREDENTIAL" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.oauth20.authenticationType" value="FORM" show="false"/>
-    <elementParameter field="TABLE" name="configuration.dataset.datastore.authentication.oauth20.params" show="false"/>
-    <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataset.methodType" value="POST"/>
-    <elementParameter field="TEXT" name="configuration.dataset.resource" value="context.teams_path"/>
-    <elementParameter field="CHECK" name="configuration.dataset.hasPathParams" value="false"/>
-    <elementParameter field="TABLE" name="configuration.dataset.pathParams" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.hasQueryParams" value="false"/>
-    <elementParameter field="TABLE" name="configuration.dataset.queryParams" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.hasHeaders" value="false"/>
-    <elementParameter field="TABLE" name="configuration.dataset.headers" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.hasBody" value="true"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataset.body.type" value="JSON"/>
-    <elementParameter field="TACOKIT_TEXT_AREA" name="configuration.dataset.body.textValue" value="{&#xD;&#xA;  &quot;type&quot;: &quot;message&quot;,&#xD;&#xA;  &quot;attachments&quot;: [&#xD;&#xA;    {&#xD;&#xA;      &quot;contentType&quot;: &quot;application/vnd.microsoft.card.adaptive&quot;,&#xD;&#xA;      &quot;content&quot;: {&#xD;&#xA;        &quot;type&quot;: &quot;AdaptiveCard&quot;,&#xD;&#xA;        &quot;$schema&quot;: &quot;http://adaptivecards.io/schemas/adaptive-card.json&quot;,&#xD;&#xA;        &quot;version&quot;: &quot;1.4&quot;,&#xD;&#xA;        &quot;body&quot;: [&#xD;&#xA;          { &quot;type&quot;: &quot;TextBlock&quot;, &quot;text&quot;: &quot;Test message from Postman&quot;, &quot;wrap&quot;: true }&#xD;&#xA;        ]&#xD;&#xA;      }&#xD;&#xA;    }&#xD;&#xA;  ]&#xD;&#xA;}" show="false"/>
-    <elementParameter field="MEMO" name="configuration.dataset.body.jsonValue" value="&quot;{&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;message\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;attachments\&quot;: [{&quot;&#xD;&#xA;+ &quot;\&quot;contentType\&quot;: \&quot;application/vnd.microsoft.card.adaptive\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;content\&quot;: {&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;AdaptiveCard\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;$schema\&quot;: \&quot;http://adaptivecards.io/schemas/adaptive-card.json\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;version\&quot;: \&quot;1.4\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;body\&quot;: [{&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;TextBlock\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;text\&quot;: \&quot;\u274C Dev - Talend job failed\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;weight\&quot;: \&quot;Bolder\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;size\&quot;: \&quot;Medium\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;color\&quot;: \&quot;Attention\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;wrap\&quot;: true&quot;&#xD;&#xA;+ &quot;},{&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;FactSet\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;facts\&quot;: [&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Job:\&quot;, \&quot;value\&quot;: \&quot;Job_3_get_token_and_send_payload\&quot;},&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Component:\&quot;, \&quot;value\&quot;: \&quot;tHTTPClient_1_ERROR_MESSAGE\&quot;},&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Status:\&quot;, \&quot;value\&quot;: \&quot;Failed\&quot;},&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Time:\&quot;, \&quot;value\&quot;: \&quot;&quot; + java.time.ZonedDateTime.now(java.time.ZoneId.of(&quot;Australia/Sydney&quot;)).format(java.time.format.DateTimeFormatter.ofPattern(&quot;yyyy-MM-dd HH:mm:ss z&quot;)) + &quot;\&quot;},&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Error:\&quot;, \&quot;value\&quot;: \&quot;&quot; + (String)globalMap.get(&quot;errorMsg&quot;) + &quot;\&quot;}&quot;&#xD;&#xA;+ &quot;]&quot;&#xD;&#xA;+ &quot;}]&quot;&#xD;&#xA;+ &quot;}&quot;&#xD;&#xA;+ &quot;}]&quot;&#xD;&#xA;+ &quot;}&quot;"/>
-    <elementParameter field="TABLE" name="configuration.dataset.body.params" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataset.format" value="RAW_TEXT"/>
-    <elementParameter field="TEXT" name="configuration.dataset.dssl" value="" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataset.returnedContent" value="STATUS_HEADERS_BODY"/>
-    <elementParameter field="CHECK" name="configuration.dataset.outputKeyValuePairs" value="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.forwardInput" value="false" show="false"/>
-    <elementParameter field="TABLE" name="configuration.dataset.keyValuePairs" show="false"/>
-    <elementParameter field="CHECK" name="configuration.downloadFile" value="false"/>
-    <elementParameter field="CHECK" name="configuration.specifyFileName" value="false" show="false"/>
-    <elementParameter field="CHECK" name="configuration.useCacheToSave" value="false" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.datastore.authentication.oauth20.customizeHeaderName" value="false" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.oauth20.customHeaderName" value="Authorization" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.datastore.authentication.oauth20.customizeTokenPrefix" value="false" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.oauth20.customTokenPrefix" value="Bearer" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.connectionTimeout" value="30000"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.receiveTimeout" value="120000"/>
-    <elementParameter field="CHECK" name="configuration.dataset.datastore.bypassCertificateValidation" value="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.datastore.useProxy" value="false"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.proxyConfiguration.proxyType" value="HTTP" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.proxyConfiguration.proxyPort" value="443" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.datastore.hasRetry" value="false"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.retry.backoff" value="500" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.retry.factor" value="1" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.retry.maxAttempts" value="2" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.acceptRedirections" value="true"/>
-    <elementParameter field="TEXT" name="configuration.dataset.maxRedirectOnSameURL" value="3"/>
-    <elementParameter field="CHECK" name="configuration.dataset.onlySameHost" value="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.hasPagination" value="false"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataset.pagination.strategy" value="OFFSET_LIMIT" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataset.pagination.offsetLimitStrategyConfig.location" value="QUERY_PARAMETERS" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataset.pagination.markerStrategyConfig.location" value="QUERY_PARAMETERS" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataset.pagination.markerStrategyConfig.limitValue" value="100" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.jsonForceDouble" value="true" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.normalizeJson" value="false" show="false"/>
-    <elementParameter field="TABLE" name="configuration.dataset.jsonCastConfigurations" show="false"/>
-    <elementParameter field="TABLE" name="configuration.dataset.jsonFilterConfigurations" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.enforceNumberAsString" value="true" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.useCookies" value="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.saveCookies" value="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.disableChunkedEncoding" value="false"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.httpVersion" value="HTTP_2"/>
-    <elementParameter field="CHECK" name="configuration.uploadFiles" value="false"/>
-    <elementParameter field="TABLE" name="configuration.uploadFileTable" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dieOnError" value="false"/>
-    <elementParameter field="TECHNICAL" name="configuration.dataset.__version" value="5" show="false"/>
-    <elementParameter field="TECHNICAL" name="configuration.dataset.datastore.__version" value="5" show="false"/>
-    <metadata connector="LOOKUP" name="LOOKUP"/>
-    <metadata connector="MERGE" name="MERGE"/>
-    <metadata connector="REJECT" name="REJECT"/>
-    <metadata connector="FLOW" name="tHTTPClient_5">
-      <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="headers" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1160" posY="0">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_4" show="false"/>
-    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
-    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
-    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
-    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
-    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
-    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
-    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
-    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
-    <elementParameter field="TABLE" name="LENGTHS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="body" id="0"/>
-      <elementValue elementRef="LENGTH" value="10" id="1"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="status" id="2"/>
-      <elementValue elementRef="LENGTH" value="10" id="3"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="headers" id="4"/>
-      <elementValue elementRef="LENGTH" value="10" id="5"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
-    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="View result"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tLogRow_4">
-      <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="headers" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1280" posY="0">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_8" show="false"/>
-    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="System.out.println(&quot;Job experienced an error&quot;);&#xD;&#xA;&#xD;&#xA;String errorMsg = String.valueOf(globalMap.get(&quot;tHTTPClient_2_ERROR_MESSAGE&quot;));&#xD;&#xA;String safeErrorMsg = errorMsg.replace(&quot;\\&quot;, &quot;\\\\&quot;).replace(&quot;\&quot;&quot;, &quot;\\\&quot;&quot;).replace(&quot;\n&quot;, &quot;\\n&quot;).replace(&quot;\r&quot;, &quot;&quot;);&#xD;&#xA;&#xD;&#xA;globalMap.put(&quot;errorMsg&quot;, safeErrorMsg);"/>
-    <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
-    <elementParameter field="TEXT" name="LABEL" value="log job failed"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tJava_8">
-      <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="headers" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="HTTPClient" componentVersion="5" offsetLabelX="6" offsetLabelY="14" posX="1520" posY="0">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHTTPClient_6" show="false"/>
-    <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="aHR0cC1zdHVkaW8jSFRUUCNDbGllbnQ" show="false"/>
-    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
-    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
-    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
-    <elementParameter field="TEXT" name="LABEL" value="Send Teams error message"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.base" value="context.teams_base_url"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.type" value="NoAuth"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.apiKey.destination" value="HEADERS" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.apiKey.headerName" value="Authorization" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.apiKey.queryName" value="apikey" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.apiKey.prefix" value="Bearer" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.oauth20.flow" value="CLIENT_CREDENTIAL" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.oauth20.authenticationType" value="FORM" show="false"/>
-    <elementParameter field="TABLE" name="configuration.dataset.datastore.authentication.oauth20.params" show="false"/>
-    <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataset.methodType" value="POST"/>
-    <elementParameter field="TEXT" name="configuration.dataset.resource" value="context.teams_path"/>
-    <elementParameter field="CHECK" name="configuration.dataset.hasPathParams" value="false"/>
-    <elementParameter field="TABLE" name="configuration.dataset.pathParams" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.hasQueryParams" value="false"/>
-    <elementParameter field="TABLE" name="configuration.dataset.queryParams" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.hasHeaders" value="false"/>
-    <elementParameter field="TABLE" name="configuration.dataset.headers" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.hasBody" value="true"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataset.body.type" value="JSON"/>
-    <elementParameter field="TACOKIT_TEXT_AREA" name="configuration.dataset.body.textValue" value="{&#xD;&#xA;  &quot;type&quot;: &quot;message&quot;,&#xD;&#xA;  &quot;attachments&quot;: [&#xD;&#xA;    {&#xD;&#xA;      &quot;contentType&quot;: &quot;application/vnd.microsoft.card.adaptive&quot;,&#xD;&#xA;      &quot;content&quot;: {&#xD;&#xA;        &quot;type&quot;: &quot;AdaptiveCard&quot;,&#xD;&#xA;        &quot;$schema&quot;: &quot;http://adaptivecards.io/schemas/adaptive-card.json&quot;,&#xD;&#xA;        &quot;version&quot;: &quot;1.4&quot;,&#xD;&#xA;        &quot;body&quot;: [&#xD;&#xA;          { &quot;type&quot;: &quot;TextBlock&quot;, &quot;text&quot;: &quot;Test message from Postman&quot;, &quot;wrap&quot;: true }&#xD;&#xA;        ]&#xD;&#xA;      }&#xD;&#xA;    }&#xD;&#xA;  ]&#xD;&#xA;}" show="false"/>
-    <elementParameter field="MEMO" name="configuration.dataset.body.jsonValue" value="&quot;{&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;message\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;attachments\&quot;: [{&quot;&#xD;&#xA;+ &quot;\&quot;contentType\&quot;: \&quot;application/vnd.microsoft.card.adaptive\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;content\&quot;: {&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;AdaptiveCard\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;$schema\&quot;: \&quot;http://adaptivecards.io/schemas/adaptive-card.json\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;version\&quot;: \&quot;1.4\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;body\&quot;: [{&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;TextBlock\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;text\&quot;: \&quot;\u274C Dev - Talend job failed\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;weight\&quot;: \&quot;Bolder\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;size\&quot;: \&quot;Medium\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;color\&quot;: \&quot;Attention\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;wrap\&quot;: true&quot;&#xD;&#xA;+ &quot;},{&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;FactSet\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;facts\&quot;: [&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Job:\&quot;, \&quot;value\&quot;: \&quot;Job_3_get_token_and_send_payload\&quot;},&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Component:\&quot;, \&quot;value\&quot;: \&quot;tHTTPClient_2_ERROR_MESSAGE\&quot;},&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Status:\&quot;, \&quot;value\&quot;: \&quot;Failed\&quot;},&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Time:\&quot;, \&quot;value\&quot;: \&quot;&quot; + java.time.ZonedDateTime.now(java.time.ZoneId.of(&quot;Australia/Sydney&quot;)).format(java.time.format.DateTimeFormatter.ofPattern(&quot;yyyy-MM-dd HH:mm:ss z&quot;)) + &quot;\&quot;},&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Error:\&quot;, \&quot;value\&quot;: \&quot;&quot; + (String)globalMap.get(&quot;errorMsg&quot;) + &quot;\&quot;}&quot;&#xD;&#xA;+ &quot;]&quot;&#xD;&#xA;+ &quot;}]&quot;&#xD;&#xA;+ &quot;}&quot;&#xD;&#xA;+ &quot;}]&quot;&#xD;&#xA;+ &quot;}&quot;"/>
-    <elementParameter field="TABLE" name="configuration.dataset.body.params" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataset.format" value="RAW_TEXT"/>
-    <elementParameter field="TEXT" name="configuration.dataset.dssl" value="" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataset.returnedContent" value="STATUS_HEADERS_BODY"/>
-    <elementParameter field="CHECK" name="configuration.dataset.outputKeyValuePairs" value="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.forwardInput" value="false" show="false"/>
-    <elementParameter field="TABLE" name="configuration.dataset.keyValuePairs" show="false"/>
-    <elementParameter field="CHECK" name="configuration.downloadFile" value="false"/>
-    <elementParameter field="CHECK" name="configuration.specifyFileName" value="false" show="false"/>
-    <elementParameter field="CHECK" name="configuration.useCacheToSave" value="false" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.datastore.authentication.oauth20.customizeHeaderName" value="false" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.oauth20.customHeaderName" value="Authorization" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.datastore.authentication.oauth20.customizeTokenPrefix" value="false" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.oauth20.customTokenPrefix" value="Bearer" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.connectionTimeout" value="30000"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.receiveTimeout" value="120000"/>
-    <elementParameter field="CHECK" name="configuration.dataset.datastore.bypassCertificateValidation" value="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.datastore.useProxy" value="false"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.proxyConfiguration.proxyType" value="HTTP" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.proxyConfiguration.proxyPort" value="443" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.datastore.hasRetry" value="false"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.retry.backoff" value="500" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.retry.factor" value="1" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.retry.maxAttempts" value="2" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.acceptRedirections" value="true"/>
-    <elementParameter field="TEXT" name="configuration.dataset.maxRedirectOnSameURL" value="3"/>
-    <elementParameter field="CHECK" name="configuration.dataset.onlySameHost" value="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.hasPagination" value="false"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataset.pagination.strategy" value="OFFSET_LIMIT" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataset.pagination.offsetLimitStrategyConfig.location" value="QUERY_PARAMETERS" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataset.pagination.markerStrategyConfig.location" value="QUERY_PARAMETERS" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataset.pagination.markerStrategyConfig.limitValue" value="100" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.jsonForceDouble" value="true" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.normalizeJson" value="false" show="false"/>
-    <elementParameter field="TABLE" name="configuration.dataset.jsonCastConfigurations" show="false"/>
-    <elementParameter field="TABLE" name="configuration.dataset.jsonFilterConfigurations" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.enforceNumberAsString" value="true" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.useCookies" value="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.saveCookies" value="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.disableChunkedEncoding" value="false"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.httpVersion" value="HTTP_2"/>
-    <elementParameter field="CHECK" name="configuration.uploadFiles" value="false"/>
-    <elementParameter field="TABLE" name="configuration.uploadFileTable" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dieOnError" value="false"/>
-    <elementParameter field="TECHNICAL" name="configuration.dataset.__version" value="5" show="false"/>
-    <elementParameter field="TECHNICAL" name="configuration.dataset.datastore.__version" value="5" show="false"/>
-    <metadata connector="LOOKUP" name="LOOKUP"/>
-    <metadata connector="MERGE" name="MERGE"/>
-    <metadata connector="REJECT" name="REJECT"/>
-    <metadata connector="FLOW" name="tHTTPClient_6">
-      <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="headers" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1720" posY="0">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_11" show="false"/>
-    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
-    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
-    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
-    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
-    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
-    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
-    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
-    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
-    <elementParameter field="TABLE" name="LENGTHS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="body" id="0"/>
-      <elementValue elementRef="LENGTH" value="10" id="1"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="status" id="2"/>
-      <elementValue elementRef="LENGTH" value="10" id="3"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="headers" id="4"/>
-      <elementValue elementRef="LENGTH" value="10" id="5"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
-    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="View result"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tLogRow_11">
-      <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="headers" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-  </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="880">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_9" show="false"/>
     <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="System.out.println(&quot;Netsuite returned an error when trying to create PO&quot;);&#xD;&#xA;&#xD;&#xA;String errorMsg = &quot;Please check Job 3's logs in TMC for the Netsuite error message&quot;;&#xD;&#xA;String safeErrorMsg = errorMsg.replace(&quot;\\&quot;, &quot;\\\\&quot;).replace(&quot;\&quot;&quot;, &quot;\\\&quot;&quot;).replace(&quot;\n&quot;, &quot;\\n&quot;).replace(&quot;\r&quot;, &quot;&quot;);&#xD;&#xA;&#xD;&#xA;globalMap.put(&quot;errorMsg&quot;, safeErrorMsg);&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;"/>
@@ -2148,132 +1634,6 @@
       <column comment="" key="false" length="-1" name="headers" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="800" posY="1040">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_10" show="false"/>
-    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="System.out.println(&quot;Job experienced an error&quot;);&#xD;&#xA;&#xD;&#xA;String errorMsg = String.valueOf(globalMap.get(&quot;tDBOutput_1_ERROR_MESSAGE&quot;));&#xD;&#xA;String safeErrorMsg = errorMsg.replace(&quot;\\&quot;, &quot;\\\\&quot;).replace(&quot;\&quot;&quot;, &quot;\\\&quot;&quot;).replace(&quot;\n&quot;, &quot;\\n&quot;).replace(&quot;\r&quot;, &quot;&quot;);&#xD;&#xA;&#xD;&#xA;globalMap.put(&quot;errorMsg&quot;, safeErrorMsg);&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;"/>
-    <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
-    <elementParameter field="TEXT" name="LABEL" value="log job failed"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tJava_10">
-      <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="headers" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="HTTPClient" componentVersion="5" offsetLabelX="6" offsetLabelY="14" posX="1080" posY="1040">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHTTPClient_8" show="false"/>
-    <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="aHR0cC1zdHVkaW8jSFRUUCNDbGllbnQ" show="false"/>
-    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
-    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
-    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
-    <elementParameter field="TEXT" name="LABEL" value="Send Teams error message"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.base" value="context.teams_base_url"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.type" value="NoAuth"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.apiKey.destination" value="HEADERS" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.apiKey.headerName" value="Authorization" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.apiKey.queryName" value="apikey" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.apiKey.prefix" value="Bearer" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.oauth20.flow" value="CLIENT_CREDENTIAL" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.authentication.oauth20.authenticationType" value="FORM" show="false"/>
-    <elementParameter field="TABLE" name="configuration.dataset.datastore.authentication.oauth20.params" show="false"/>
-    <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataset.methodType" value="POST"/>
-    <elementParameter field="TEXT" name="configuration.dataset.resource" value="context.teams_path"/>
-    <elementParameter field="CHECK" name="configuration.dataset.hasPathParams" value="false"/>
-    <elementParameter field="TABLE" name="configuration.dataset.pathParams" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.hasQueryParams" value="false"/>
-    <elementParameter field="TABLE" name="configuration.dataset.queryParams" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.hasHeaders" value="false"/>
-    <elementParameter field="TABLE" name="configuration.dataset.headers" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.hasBody" value="true"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataset.body.type" value="JSON"/>
-    <elementParameter field="TACOKIT_TEXT_AREA" name="configuration.dataset.body.textValue" value="{&#xD;&#xA;  &quot;type&quot;: &quot;message&quot;,&#xD;&#xA;  &quot;attachments&quot;: [&#xD;&#xA;    {&#xD;&#xA;      &quot;contentType&quot;: &quot;application/vnd.microsoft.card.adaptive&quot;,&#xD;&#xA;      &quot;content&quot;: {&#xD;&#xA;        &quot;type&quot;: &quot;AdaptiveCard&quot;,&#xD;&#xA;        &quot;$schema&quot;: &quot;http://adaptivecards.io/schemas/adaptive-card.json&quot;,&#xD;&#xA;        &quot;version&quot;: &quot;1.4&quot;,&#xD;&#xA;        &quot;body&quot;: [&#xD;&#xA;          { &quot;type&quot;: &quot;TextBlock&quot;, &quot;text&quot;: &quot;Test message from Postman&quot;, &quot;wrap&quot;: true }&#xD;&#xA;        ]&#xD;&#xA;      }&#xD;&#xA;    }&#xD;&#xA;  ]&#xD;&#xA;}" show="false"/>
-    <elementParameter field="MEMO" name="configuration.dataset.body.jsonValue" value="&quot;{&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;message\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;attachments\&quot;: [{&quot;&#xD;&#xA;+ &quot;\&quot;contentType\&quot;: \&quot;application/vnd.microsoft.card.adaptive\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;content\&quot;: {&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;AdaptiveCard\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;$schema\&quot;: \&quot;http://adaptivecards.io/schemas/adaptive-card.json\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;version\&quot;: \&quot;1.4\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;body\&quot;: [{&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;TextBlock\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;text\&quot;: \&quot;\u274C Dev - Talend job failed\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;weight\&quot;: \&quot;Bolder\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;size\&quot;: \&quot;Medium\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;color\&quot;: \&quot;Attention\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;wrap\&quot;: true&quot;&#xD;&#xA;+ &quot;},{&quot;&#xD;&#xA;+ &quot;\&quot;type\&quot;: \&quot;FactSet\&quot;,&quot;&#xD;&#xA;+ &quot;\&quot;facts\&quot;: [&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Job:\&quot;, \&quot;value\&quot;: \&quot;Job_3_get_token_and_send_payload\&quot;},&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Component:\&quot;, \&quot;value\&quot;: \&quot;tDBOutput_2_ERROR_MESSAGE\&quot;},&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Status:\&quot;, \&quot;value\&quot;: \&quot;Failed\&quot;},&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Time:\&quot;, \&quot;value\&quot;: \&quot;&quot; + java.time.ZonedDateTime.now(java.time.ZoneId.of(&quot;Australia/Sydney&quot;)).format(java.time.format.DateTimeFormatter.ofPattern(&quot;yyyy-MM-dd HH:mm:ss z&quot;)) + &quot;\&quot;},&quot;&#xD;&#xA;+ &quot;{\&quot;title\&quot;: \&quot;Error:\&quot;, \&quot;value\&quot;: \&quot;&quot; + (String)globalMap.get(&quot;errorMsg&quot;) + &quot;\&quot;}&quot;&#xD;&#xA;+ &quot;]&quot;&#xD;&#xA;+ &quot;}]&quot;&#xD;&#xA;+ &quot;}&quot;&#xD;&#xA;+ &quot;}]&quot;&#xD;&#xA;+ &quot;}&quot;"/>
-    <elementParameter field="TABLE" name="configuration.dataset.body.params" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataset.format" value="RAW_TEXT"/>
-    <elementParameter field="TEXT" name="configuration.dataset.dssl" value="" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataset.returnedContent" value="STATUS_HEADERS_BODY"/>
-    <elementParameter field="CHECK" name="configuration.dataset.outputKeyValuePairs" value="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.forwardInput" value="false" show="false"/>
-    <elementParameter field="TABLE" name="configuration.dataset.keyValuePairs" show="false"/>
-    <elementParameter field="CHECK" name="configuration.downloadFile" value="false"/>
-    <elementParameter field="CHECK" name="configuration.specifyFileName" value="false" show="false"/>
-    <elementParameter field="CHECK" name="configuration.useCacheToSave" value="false" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.datastore.authentication.oauth20.customizeHeaderName" value="false" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.oauth20.customHeaderName" value="Authorization" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.datastore.authentication.oauth20.customizeTokenPrefix" value="false" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.authentication.oauth20.customTokenPrefix" value="Bearer" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.connectionTimeout" value="30000"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.receiveTimeout" value="120000"/>
-    <elementParameter field="CHECK" name="configuration.dataset.datastore.bypassCertificateValidation" value="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.datastore.useProxy" value="false"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.proxyConfiguration.proxyType" value="HTTP" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.proxyConfiguration.proxyPort" value="443" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.datastore.hasRetry" value="false"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.retry.backoff" value="500" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.retry.factor" value="1" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataset.datastore.retry.maxAttempts" value="2" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.acceptRedirections" value="true"/>
-    <elementParameter field="TEXT" name="configuration.dataset.maxRedirectOnSameURL" value="3"/>
-    <elementParameter field="CHECK" name="configuration.dataset.onlySameHost" value="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.hasPagination" value="false"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataset.pagination.strategy" value="OFFSET_LIMIT" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataset.pagination.offsetLimitStrategyConfig.location" value="QUERY_PARAMETERS" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataset.pagination.markerStrategyConfig.location" value="QUERY_PARAMETERS" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataset.pagination.markerStrategyConfig.limitValue" value="100" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.jsonForceDouble" value="true" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.normalizeJson" value="false" show="false"/>
-    <elementParameter field="TABLE" name="configuration.dataset.jsonCastConfigurations" show="false"/>
-    <elementParameter field="TABLE" name="configuration.dataset.jsonFilterConfigurations" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.enforceNumberAsString" value="true" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.useCookies" value="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.saveCookies" value="false"/>
-    <elementParameter field="CHECK" name="configuration.dataset.disableChunkedEncoding" value="false"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.httpVersion" value="HTTP_2"/>
-    <elementParameter field="CHECK" name="configuration.uploadFiles" value="false"/>
-    <elementParameter field="TABLE" name="configuration.uploadFileTable" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dieOnError" value="false"/>
-    <elementParameter field="TECHNICAL" name="configuration.dataset.__version" value="5" show="false"/>
-    <elementParameter field="TECHNICAL" name="configuration.dataset.datastore.__version" value="5" show="false"/>
-    <metadata connector="LOOKUP" name="LOOKUP"/>
-    <metadata connector="MERGE" name="MERGE"/>
-    <metadata connector="REJECT" name="REJECT"/>
-    <metadata connector="FLOW" name="tHTTPClient_8">
-      <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="headers" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1280" posY="1040">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_13" show="false"/>
-    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
-    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
-    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
-    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
-    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
-    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
-    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
-    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
-    <elementParameter field="TABLE" name="LENGTHS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="body" id="0"/>
-      <elementValue elementRef="LENGTH" value="10" id="1"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="status" id="2"/>
-      <elementValue elementRef="LENGTH" value="10" id="3"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="headers" id="4"/>
-      <elementValue elementRef="LENGTH" value="10" id="5"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
-    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="View result"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tLogRow_13">
-      <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="headers" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-  </node>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tHTTPClient_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2" show="false"/>
   </connection>
@@ -2286,9 +1646,6 @@
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tHTTPClient_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tHTTPClient_1" target="tDBInput_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk4" show="false"/>
-  </connection>
-  <connection connectorName="COMPONENT_ERROR" label="OnComponentError" lineStyle="5" metaname="tHTTPClient_1" offsetLabelX="0" offsetLabelY="0" source="tHTTPClient_1" target="tJava_5">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentError3" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tHTTPClient_1" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tHTTPClient_1" target="tJava_3">
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
@@ -2304,9 +1661,6 @@
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tJava_4">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk6" show="false"/>
-  </connection>
-  <connection connectorName="COMPONENT_ERROR" label="OnComponentError" lineStyle="5" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tJava_6">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentError2" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tLogRow_5" offsetLabelX="0" offsetLabelY="0" source="tLogRow_5" target="tMap_3">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
@@ -2360,9 +1714,6 @@
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row13" show="false"/>
-  </connection>
-  <connection connectorName="COMPONENT_ERROR" label="OnComponentError" lineStyle="5" metaname="tHTTPClient_2" offsetLabelX="0" offsetLabelY="0" source="tHTTPClient_2" target="tJava_8">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentError4" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tLogRow_1" offsetLabelX="0" offsetLabelY="0" source="tLogRow_1" target="tExtractJSONFields_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
@@ -2429,9 +1780,6 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row9" show="false"/>
   </connection>
-  <connection connectorName="COMPONENT_ERROR" label="OnComponentError" lineStyle="5" metaname="tDBOutput_1" offsetLabelX="0" offsetLabelY="0" source="tDBOutput_1" target="tJava_7">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentError1" show="false"/>
-  </connection>
   <connection connectorName="FLOW" label="row14" lineStyle="0" metaname="tLogRow_8" offsetLabelX="0" offsetLabelY="0" source="tLogRow_8" target="tJavaRow_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row14" show="false"/>
@@ -2471,81 +1819,6 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="send_errors_to_integration_table" show="false"/>
   </connection>
-  <connection connectorName="COMPONENT_ERROR" label="OnComponentError" lineStyle="5" metaname="tDBOutput_2" offsetLabelX="0" offsetLabelY="0" source="tDBOutput_2" target="tJava_10">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentError6" show="false"/>
-  </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_6" offsetLabelX="0" offsetLabelY="0" source="tJava_6" target="tHTTPClient_3">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tHTTPClient_3" offsetLabelX="0" offsetLabelY="0" source="tHTTPClient_3" target="tLogRow_2">
-    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="body" id="0"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
-      <elementValue elementRef="TRACE_COLUMN" value="headers" id="3"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="4"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="5"/>
-      <elementValue elementRef="TRACE_COLUMN" value="status" id="6"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="7"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="8"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
-  </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_7" offsetLabelX="0" offsetLabelY="0" source="tJava_7" target="tHTTPClient_4">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="row15" lineStyle="0" metaname="tHTTPClient_4" offsetLabelX="0" offsetLabelY="0" source="tHTTPClient_4" target="tLogRow_3">
-    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="body" id="0"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
-      <elementValue elementRef="TRACE_COLUMN" value="headers" id="3"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="4"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="5"/>
-      <elementValue elementRef="TRACE_COLUMN" value="status" id="6"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="7"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="8"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row15" show="false"/>
-  </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_5" offsetLabelX="0" offsetLabelY="0" source="tJava_5" target="tHTTPClient_5">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk3" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="row16" lineStyle="0" metaname="tHTTPClient_5" offsetLabelX="0" offsetLabelY="0" source="tHTTPClient_5" target="tLogRow_4">
-    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="body" id="0"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
-      <elementValue elementRef="TRACE_COLUMN" value="headers" id="3"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="4"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="5"/>
-      <elementValue elementRef="TRACE_COLUMN" value="status" id="6"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="7"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="8"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row16" show="false"/>
-  </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_8" offsetLabelX="0" offsetLabelY="0" source="tJava_8" target="tHTTPClient_6">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk5" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="row17" lineStyle="0" metaname="tHTTPClient_6" offsetLabelX="0" offsetLabelY="0" source="tHTTPClient_6" target="tLogRow_11">
-    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="body" id="0"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
-      <elementValue elementRef="TRACE_COLUMN" value="headers" id="3"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="4"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="5"/>
-      <elementValue elementRef="TRACE_COLUMN" value="status" id="6"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="7"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="8"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row17" show="false"/>
-  </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_9" offsetLabelX="0" offsetLabelY="0" source="tJava_9" target="tHTTPClient_7">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk6" show="false"/>
   </connection>
@@ -2563,24 +1836,6 @@
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row18" show="false"/>
-  </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_10" offsetLabelX="0" offsetLabelY="0" source="tJava_10" target="tHTTPClient_8">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk7" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="row20" lineStyle="0" metaname="tHTTPClient_8" offsetLabelX="0" offsetLabelY="0" source="tHTTPClient_8" target="tLogRow_13">
-    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="body" id="0"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
-      <elementValue elementRef="TRACE_COLUMN" value="headers" id="3"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="4"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="5"/>
-      <elementValue elementRef="TRACE_COLUMN" value="status" id="6"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="7"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="8"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row20" show="false"/>
   </connection>
   <note opaque="true" posX="1160" posY="160" sizeHeight="80" sizeWidth="361" text="(String) globalMap.get(&quot;json_dummy&quot;)"/>
   <note opaque="true" posX="1560" posY="520" sizeHeight="80" sizeWidth="361" text="Mark POs as loaded in the integration table"/>
@@ -2602,11 +1857,6 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
   </subjob>
   <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
-  </subjob>
-  <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_3" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
@@ -2622,62 +1872,12 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
   </subjob>
   <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_6" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHTTPClient_3" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_7" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHTTPClient_4" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_5" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHTTPClient_5" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_8" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHTTPClient_6" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
-  </subjob>
-  <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_9" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHTTPClient_7" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_10" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHTTPClient_8" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
   </subjob>
