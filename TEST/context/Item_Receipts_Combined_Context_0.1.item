@@ -8,7 +8,7 @@
     <contextParameter xmi:id="_YWvMsdDsEfGeZdyo0ckLtQ" comment="" name="client_id" prompt="client_id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="e74f0683fa5379e2b725547a322cb11514b0915b7a7efec374a72c4ae3a04531"/>
     <contextParameter xmi:id="_YWvMstDsEfGeZdyo0ckLtQ" comment="" name="certificate_id" prompt="certificate_id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="S_eR_japu9FLYSq2Kzq9pw9OPBfiKkMR2trklvfe4Es"/>
     <contextParameter xmi:id="_YWvMs9DsEfGeZdyo0ckLtQ" comment="" name="scope" prompt="scope?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="restlets rest_webservices"/>
-    <contextParameter xmi:id="_YWvMtNDsEfGeZdyo0ckLtQ" comment="" name="private_key_path" prompt="private_key_path?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="C:\Users\mmisselmany\Downloads\PO_Auth_flow\PO_Auth_flow\private.pem"/>
+    <contextParameter xmi:id="_YWvMtNDsEfGeZdyo0ckLtQ" comment="" name="private_key_path" prompt="private_key_path?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="C:\Talend Foodmach\private.pem"/>
     <contextParameter xmi:id="_YWvMtdDsEfGeZdyo0ckLtQ" comment="" name="JSON_Payload" prompt="JSON_Payload?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
     <contextParameter xmi:id="_YWvMttDsEfGeZdyo0ckLtQ" comment="" name="new_bearer_token" prompt="new_bearer_token?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
     <contextParameter xmi:id="_YWvMt9DsEfGeZdyo0ckLtQ" comment="" name="rejectCount" prompt="rejectCount?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
@@ -34,7 +34,7 @@
     <contextParameter xmi:id="_erIZNdMsEfGRPYW6g8hdOg" comment="" name="client_id" prompt="client_id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="e74f0683fa5379e2b725547a322cb11514b0915b7a7efec374a72c4ae3a04531"/>
     <contextParameter xmi:id="_erIZNtMsEfGRPYW6g8hdOg" comment="" name="certificate_id" prompt="certificate_id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="S_eR_japu9FLYSq2Kzq9pw9OPBfiKkMR2trklvfe4Es"/>
     <contextParameter xmi:id="_erIZN9MsEfGRPYW6g8hdOg" comment="" name="scope" prompt="scope?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="restlets rest_webservices"/>
-    <contextParameter xmi:id="_erIZONMsEfGRPYW6g8hdOg" comment="" name="private_key_path" prompt="private_key_path?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="C:\Users\mmisselmany\Downloads\PO_Auth_flow\PO_Auth_flow\private.pem"/>
+    <contextParameter xmi:id="_erIZONMsEfGRPYW6g8hdOg" comment="" name="private_key_path" prompt="private_key_path?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="C:\Talend Foodmach\private.pem"/>
     <contextParameter xmi:id="_erIZOdMsEfGRPYW6g8hdOg" comment="" name="JSON_Payload" prompt="JSON_Payload?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
     <contextParameter xmi:id="_erIZOtMsEfGRPYW6g8hdOg" comment="" name="new_bearer_token" prompt="new_bearer_token?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
     <contextParameter xmi:id="_erIZO9MsEfGRPYW6g8hdOg" comment="" name="rejectCount" prompt="rejectCount?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
@@ -60,7 +60,7 @@
     <contextParameter xmi:id="_erIZRdMsEfGRPYW6g8hdOg" comment="" name="client_id" prompt="client_id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="e74f0683fa5379e2b725547a322cb11514b0915b7a7efec374a72c4ae3a04531"/>
     <contextParameter xmi:id="_erIZRtMsEfGRPYW6g8hdOg" comment="" name="certificate_id" prompt="certificate_id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="S_eR_japu9FLYSq2Kzq9pw9OPBfiKkMR2trklvfe4Es"/>
     <contextParameter xmi:id="_erIZR9MsEfGRPYW6g8hdOg" comment="" name="scope" prompt="scope?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="restlets rest_webservices"/>
-    <contextParameter xmi:id="_erIZSNMsEfGRPYW6g8hdOg" comment="" name="private_key_path" prompt="private_key_path?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="C:\Users\mmisselmany\Downloads\PO_Auth_flow\PO_Auth_flow\private.pem"/>
+    <contextParameter xmi:id="_erIZSNMsEfGRPYW6g8hdOg" comment="" name="private_key_path" prompt="private_key_path?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="C:\Talend Foodmach\private.pem"/>
     <contextParameter xmi:id="_erIZSdMsEfGRPYW6g8hdOg" comment="" name="JSON_Payload" prompt="JSON_Payload?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
     <contextParameter xmi:id="_erIZStMsEfGRPYW6g8hdOg" comment="" name="new_bearer_token" prompt="new_bearer_token?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
     <contextParameter xmi:id="_erIZS9MsEfGRPYW6g8hdOg" comment="" name="rejectCount" prompt="rejectCount?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
