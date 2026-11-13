@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Foodmach_Dev" jobType="Standard">
+  <context confirmationNeeded="false" hide="false" name="Prod">
+    <contextParameter comment="" name="integration_database_server_ip" prompt="integration_database_server_ip?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="192.168.2.47" internalId="_jnf_oN8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="integration_database_name" prompt="integration_database_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="integration_database" internalId="_jnf_od8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="integration_database_schema_name" prompt="integration_database_schema_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="integration" internalId="_jnf_ot8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="integration_database_port" prompt="integration_database_port?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="1433" internalId="_jnf_o98sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="integration_database_password" prompt="integration_database_password?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Password" value="enc:system.encryption.key.v1:wGRiRlsnxRatJz7OypaVdNuSOqCyOE+HZRGaa0d0hzVDEzDDDd/EX5M=" internalId="_jngmsN8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="integration_database_table_name" prompt="integration_database_table_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="tblCompany_integration" internalId="_jngmsd8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="foodmach_database_server_ip" prompt="foodmach_database_server_ip?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="192.168.2.4" internalId="_jngmst8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="foodmach_database_name" prompt="foodmach_database_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="Foodmach_training" internalId="_jngms98sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="foodmach_database_port" prompt="foodmach_database_port?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="1433" internalId="_jngmtN8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="foodmach_database_password" prompt="foodmach_database_password?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Password" value="" internalId="_jngmtd8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="foodmach_tblCompany_table_name" prompt="foodmach_tblCompany_table_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="tblCompany" internalId="_jngmtt8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="foodmach_tblCompanyTypes_table_name" prompt="foodmach_tblCompanyTypes_table_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="tblCompanyTypes" internalId="_jngmt98sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="foodmach_tblSupplier_table_name" prompt="foodmach_tblSupplier_table_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="tblSupplier" internalId="_jngmuN8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="foodmach_schema_name" prompt="foodmach_schema_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="dbo" internalId="_jngmud8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="row_count" prompt="row_count?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Integer" value="0" internalId="_jngmut8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="error_message_log" prompt="error_message_log?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_jngmu98sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="integration_table_message" prompt="integration_table_message?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_jngmvN8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="teams_base_url" prompt="teams_base_url?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="https://default37f3b1b2de5a4ccf94f5b8c2c7a688.00.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/01/workflows/58eacb3c9e234189b8c22bce15da5a6e/triggers/manual/paths" internalId="_jngmvd8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="teams_path" prompt="teams_path?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="/invoke?api-version=1&amp;sp=%2Ftriggers%2Fmanual%2Frun&amp;sv=1.0&amp;sig=rHGifzi61aUZzyKSQxtkZdj4bf79WU98m4pkJKW_hx4" internalId="_jngmvt8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="for nestuite api. this is the part that comes after the account id" name="netsuite_token_api_url" prompt="netsuite_token_api_url?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value=".suitetalk.api.netsuite.com/services/rest/auth/oauth2/v1/token" internalId="_jngmv98sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="client_id" prompt="client_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="e74f0683fa5379e2b725547a322cb11514b0915b7a7efec374a72c4ae3a04531" internalId="_jngmwN8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="This should be &quot;D:/Talend Job Files/PurchaseOrders/PO_Auth_flow/private.pem&quot; for cloud" name="private_key_path" prompt="private_key_path?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="C:\Talend Foodmach\private.pem" internalId="_jngmwd8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="certificate_id" prompt="certificate_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="S_eR_japu9FLYSq2Kzq9pw9OPBfiKkMR2trklvfe4Es" internalId="_jngmwt8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="account_id" prompt="account_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="847280-sb1" internalId="_jngmw98sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="new_bearer_token" prompt="new_bearer_token?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_jngmxN8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="scope" prompt="scope?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="restlets rest_webservices" internalId="_jngmxd8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="The path suffix for the Netsuite URL to create a PO. Something like /restlet.nl?script=2965&amp;deploy=2" name="netsuite_api_path" prompt="netsuite_api_path?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_jngmxt8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="The netstuite API URL to send vendor data to netsuite" name="netsuite_api_url" prompt="netsuite_api_url?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="https://847280-sb1.restlets.api.netsuite.com/app/site/hosting" internalId="_jngmx98sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="rejectCount" prompt="rejectCount?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Integer" value="0" internalId="_jngmyN8sEfGPY9cDRRj9WQ"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="IBT_Dev">
+    <contextParameter comment="" name="integration_database_server_ip" prompt="integration_database_server_ip?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="192.168.2.65" internalId="_jngmyd8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="integration_database_name" prompt="integration_database_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="client_projects" internalId="_jngmyt8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="integration_database_schema_name" prompt="integration_database_schema_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="foodmach" internalId="_jngmy98sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="integration_database_port" prompt="integration_database_port?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="1433" internalId="_jngmzN8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="integration_database_password" prompt="integration_database_password?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Password" value="enc:system.encryption.key.v1:bmiMpnqh1gXhYgELWkXlnWAoSrF1cgq8ZrNi6bjdBHetphfdUQ==" internalId="_jngmzd8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="integration_database_table_name" prompt="integration_database_table_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="tblCompany_integration" internalId="_jngmzt8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="foodmach_database_server_ip" prompt="foodmach_database_server_ip?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="192.168.2.65" internalId="_jngmz98sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="foodmach_database_name" prompt="foodmach_database_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="client_projects" internalId="_jngm0N8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="foodmach_database_port" prompt="foodmach_database_port?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="1433" internalId="_jngm0d8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="foodmach_database_password" prompt="foodmach_database_password?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Password" value="enc:system.encryption.key.v1:KSi9DhWQcPvYd7bgEAsIl6Q/uk07371/P037xsozemMiApqJ+A==" internalId="_jngm0t8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="foodmach_tblCompany_table_name" prompt="foodmach_tblCompany_table_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="tblCompany" internalId="_jngm098sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="foodmach_tblCompanyTypes_table_name" prompt="foodmach_tblCompanyTypes_table_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="tblCompanyTypes" internalId="_jngm1N8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="foodmach_tblSupplier_table_name" prompt="foodmach_tblSupplier_table_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="tblSupplier" internalId="_jngm1d8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="foodmach_schema_name" prompt="foodmach_schema_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="foodmach_source_dummy" internalId="_jngm1t8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="row_count" prompt="row_count?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Integer" value="0" internalId="_jngm198sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="error_message_log" prompt="error_message_log?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_jngm2N8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="integration_table_message" prompt="integration_table_message?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_jngm2d8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="teams_base_url" prompt="teams_base_url?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="https://default37f3b1b2de5a4ccf94f5b8c2c7a688.00.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/01/workflows/58eacb3c9e234189b8c22bce15da5a6e/triggers/manual/paths" internalId="_jngm2t8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="teams_path" prompt="teams_path?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="/invoke?api-version=1&amp;sp=%2Ftriggers%2Fmanual%2Frun&amp;sv=1.0&amp;sig=rHGifzi61aUZzyKSQxtkZdj4bf79WU98m4pkJKW_hx4" internalId="_jngm298sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="for nestuite api. this is the part that comes after the account id" name="netsuite_token_api_url" prompt="netsuite_token_api_url?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value=".suitetalk.api.netsuite.com/services/rest/auth/oauth2/v1/token" internalId="_jngm3N8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="client_id" prompt="client_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="e74f0683fa5379e2b725547a322cb11514b0915b7a7efec374a72c4ae3a04531" internalId="_jngm3d8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="This should be &quot;D:/Talend Job Files/PurchaseOrders/PO_Auth_flow/private.pem&quot; for cloud" name="private_key_path" prompt="private_key_path?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="C:\Talend Foodmach\private.pem" internalId="_jngm3t8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="certificate_id" prompt="certificate_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="S_eR_japu9FLYSq2Kzq9pw9OPBfiKkMR2trklvfe4Es" internalId="_jngm398sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="account_id" prompt="account_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="847280-sb1" internalId="_jngm4N8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="new_bearer_token" prompt="new_bearer_token?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_jngm4d8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="scope" prompt="scope?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="restlets rest_webservices" internalId="_jngm4t8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="The path suffix for the Netsuite URL to create a PO. Something like /restlet.nl?script=2965&amp;deploy=2" name="netsuite_api_path" prompt="netsuite_api_path?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="/restlet.nl?script=2982&amp;deploy=1" internalId="_jngm498sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="The netstuite API URL to send vendor data to netsuite" name="netsuite_api_url" prompt="netsuite_api_url?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="https://847280-sb1.restlets.api.netsuite.com/app/site/hosting" internalId="_jngm5N8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="rejectCount" prompt="rejectCount?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Integer" value="0" internalId="_jngm5d8sEfGPY9cDRRj9WQ"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="Test">
+    <contextParameter comment="" name="integration_database_server_ip" prompt="integration_database_server_ip?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="192.168.2.46" internalId="_jngm5t8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="integration_database_name" prompt="integration_database_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="integration_database" internalId="_jngm598sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="integration_database_schema_name" prompt="integration_database_schema_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="integration" internalId="_jngm6N8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="integration_database_port" prompt="integration_database_port?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="52015" internalId="_jngm6d8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="integration_database_password" prompt="integration_database_password?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Password" value="enc:system.encryption.key.v1:8RsNrjgMWGqqK9ebTMz3hpty6UHHZRHbnDqSEkP24h+0tNaQZiowpg0=" internalId="_jngm6t8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="integration_database_table_name" prompt="integration_database_table_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="tblCompany_integration" internalId="_jngm698sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="foodmach_database_server_ip" prompt="foodmach_database_server_ip?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="192.168.2.4" internalId="_jngm7N8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="foodmach_database_name" prompt="foodmach_database_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="Foodmach_training" internalId="_jngm7d8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="foodmach_database_port" prompt="foodmach_database_port?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="1433" internalId="_jngm7t8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="foodmach_database_password" prompt="foodmach_database_password?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Password" value="enc:system.encryption.key.v1:MbNIN6bq4M8jSVdFbTVPXv2To09dCdse7Hvaa7dHjLEc9ZVj" internalId="_jngm798sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="foodmach_tblCompany_table_name" prompt="foodmach_tblCompany_table_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="tblCompany" internalId="_jngm8N8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="foodmach_tblCompanyTypes_table_name" prompt="foodmach_tblCompanyTypes_table_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="tblCompanyTypes" internalId="_jngm8d8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="foodmach_tblSupplier_table_name" prompt="foodmach_tblSupplier_table_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="tblSupplier" internalId="_jngm8t8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="foodmach_schema_name" prompt="foodmach_schema_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="dbo" internalId="_jngm898sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="row_count" prompt="row_count?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Integer" value="0" internalId="_jngm9N8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="error_message_log" prompt="error_message_log?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_jngm9d8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="integration_table_message" prompt="integration_table_message?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_jngm9t8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="teams_base_url" prompt="teams_base_url?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="https://default37f3b1b2de5a4ccf94f5b8c2c7a688.00.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/01/workflows/58eacb3c9e234189b8c22bce15da5a6e/triggers/manual/paths" internalId="_jngm998sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="teams_path" prompt="teams_path?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="/invoke?api-version=1&amp;sp=%2Ftriggers%2Fmanual%2Frun&amp;sv=1.0&amp;sig=rHGifzi61aUZzyKSQxtkZdj4bf79WU98m4pkJKW_hx4" internalId="_jngm-N8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="for nestuite api. this is the part that comes after the account id" name="netsuite_token_api_url" prompt="netsuite_token_api_url?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value=".suitetalk.api.netsuite.com/services/rest/auth/oauth2/v1/token" internalId="_jngm-d8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="client_id" prompt="client_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="e74f0683fa5379e2b725547a322cb11514b0915b7a7efec374a72c4ae3a04531" internalId="_jngm-t8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="This should be &quot;D:/Talend Job Files/PurchaseOrders/PO_Auth_flow/private.pem&quot; for cloud" name="private_key_path" prompt="private_key_path?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="C:\Talend Foodmach\private.pem" internalId="_jngm-98sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="certificate_id" prompt="certificate_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="S_eR_japu9FLYSq2Kzq9pw9OPBfiKkMR2trklvfe4Es" internalId="_jngm_N8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="account_id" prompt="account_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="847280-sb1" internalId="_jngm_d8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="new_bearer_token" prompt="new_bearer_token?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_jngm_t8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="scope" prompt="scope?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="restlets rest_webservices" internalId="_jngm_98sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="The path suffix for the Netsuite URL to create a PO. Something like /restlet.nl?script=2965&amp;deploy=2" name="netsuite_api_path" prompt="netsuite_api_path?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_jngnAN8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="The netstuite API URL to send vendor data to netsuite" name="netsuite_api_url" prompt="netsuite_api_url?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="https://847280-sb1.restlets.api.netsuite.com/app/site/hosting" internalId="_jngnAd8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="rejectCount" prompt="rejectCount?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Integer" value="0" internalId="_jngnAt8sEfGPY9cDRRj9WQ"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="Foodmach_Dev_2">
+    <contextParameter comment="" name="integration_database_server_ip" prompt="integration_database_server_ip?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="192.168.2.46" internalId="_jngnA98sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="integration_database_name" prompt="integration_database_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="integration_database" internalId="_jngnBN8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="integration_database_schema_name" prompt="integration_database_schema_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="integration" internalId="_jngnBd8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="integration_database_port" prompt="integration_database_port?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="51980" internalId="_jngnBt8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="integration_database_password" prompt="integration_database_password?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Password" value="enc:system.encryption.key.v1:KhLi07OapRzbgK1atfyyM3ky4m6onfSuUvvjGHA9jypkBJVSeLihg2I=" internalId="_jngnB98sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="integration_database_table_name" prompt="integration_database_table_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="tblCompany_integration" internalId="_jngnCN8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="foodmach_database_server_ip" prompt="foodmach_database_server_ip?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="192.168.2.46" internalId="_jngnCd8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="foodmach_database_name" prompt="foodmach_database_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="Foodmach_training" internalId="_jngnCt8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="foodmach_database_port" prompt="foodmach_database_port?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="51980" internalId="_jngnC98sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="foodmach_database_password" prompt="foodmach_database_password?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Password" value="enc:system.encryption.key.v1:LbmmUnm2LoM6IrOHjvY0kNgpjwN251ndVfhlvbTZKSfr6I6pkamGw08=" internalId="_jngnDN8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="foodmach_tblCompany_table_name" prompt="foodmach_tblCompany_table_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="tblCompany" internalId="_jngnDd8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="foodmach_tblCompanyTypes_table_name" prompt="foodmach_tblCompanyTypes_table_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="tblCompanyTypes" internalId="_jngnDt8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="foodmach_tblSupplier_table_name" prompt="foodmach_tblSupplier_table_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="tblSupplier" internalId="_jngnD98sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="foodmach_schema_name" prompt="foodmach_schema_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="dbo" internalId="_jngnEN8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="row_count" prompt="row_count?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Integer" value="0" internalId="_jngnEd8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="error_message_log" prompt="error_message_log?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_jngnEt8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="integration_table_message" prompt="integration_table_message?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_jngnE98sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="teams_base_url" prompt="teams_base_url?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="https://default37f3b1b2de5a4ccf94f5b8c2c7a688.00.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/01/workflows/58eacb3c9e234189b8c22bce15da5a6e/triggers/manual/paths" internalId="_jngnFN8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="teams_path" prompt="teams_path?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="/invoke?api-version=1&amp;sp=%2Ftriggers%2Fmanual%2Frun&amp;sv=1.0&amp;sig=rHGifzi61aUZzyKSQxtkZdj4bf79WU98m4pkJKW_hx4" internalId="_jngnFd8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="for nestuite api. this is the part that comes after the account id" name="netsuite_token_api_url" prompt="netsuite_token_api_url?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value=".suitetalk.api.netsuite.com/services/rest/auth/oauth2/v1/token" internalId="_jngnFt8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="client_id" prompt="client_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="e74f0683fa5379e2b725547a322cb11514b0915b7a7efec374a72c4ae3a04531" internalId="_jngnF98sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="This should be &quot;D:/Talend Job Files/PurchaseOrders/PO_Auth_flow/private.pem&quot; for cloud" name="private_key_path" prompt="private_key_path?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="C:\Talend Foodmach\private.pem" internalId="_jngnGN8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="certificate_id" prompt="certificate_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="S_eR_japu9FLYSq2Kzq9pw9OPBfiKkMR2trklvfe4Es" internalId="_jngnGd8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="account_id" prompt="account_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="847280-sb1" internalId="_jngnGt8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="new_bearer_token" prompt="new_bearer_token?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_jngnG98sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="scope" prompt="scope?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="restlets rest_webservices" internalId="_jngnHN8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="The path suffix for the Netsuite URL to create a PO. Something like /restlet.nl?script=2965&amp;deploy=2" name="netsuite_api_path" prompt="netsuite_api_path?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="/restlet.nl?script=2982&amp;deploy=1" internalId="_jngnHd8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="The netstuite API URL to send vendor data to netsuite" name="netsuite_api_url" prompt="netsuite_api_url?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="https://847280-sb1.restlets.api.netsuite.com/app/site/hosting" internalId="_jngnHt8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="rejectCount" prompt="rejectCount?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Integer" value="0" internalId="_jngnH98sEfGPY9cDRRj9WQ"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="Default">
+    <contextParameter comment="" name="integration_database_server_ip" prompt="integration_database_server_ip?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_jngnIN8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="integration_database_name" prompt="integration_database_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_jngnId8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="integration_database_schema_name" prompt="integration_database_schema_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_jngnIt8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="integration_database_port" prompt="integration_database_port?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_jngnI98sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="integration_database_password" prompt="integration_database_password?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Password" value="" internalId="_jngnJN8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="integration_database_table_name" prompt="integration_database_table_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_jngnJd8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="foodmach_database_server_ip" prompt="foodmach_database_server_ip?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_jngnJt8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="foodmach_database_name" prompt="foodmach_database_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_jngnJ98sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="foodmach_database_port" prompt="foodmach_database_port?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_jngnKN8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="foodmach_database_password" prompt="foodmach_database_password?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Password" value="" internalId="_jngnKd8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="foodmach_tblCompany_table_name" prompt="foodmach_tblCompany_table_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_jngnKt8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="foodmach_tblCompanyTypes_table_name" prompt="foodmach_tblCompanyTypes_table_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_jngnK98sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="foodmach_tblSupplier_table_name" prompt="foodmach_tblSupplier_table_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_jngnLN8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="foodmach_schema_name" prompt="foodmach_schema_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_jngnLd8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="row_count" prompt="row_count?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Integer" value="0" internalId="_jngnLt8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="error_message_log" prompt="error_message_log?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_jngnL98sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="integration_table_message" prompt="integration_table_message?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_jngnMN8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="teams_base_url" prompt="teams_base_url?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="https://default37f3b1b2de5a4ccf94f5b8c2c7a688.00.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/01/workflows/58eacb3c9e234189b8c22bce15da5a6e/triggers/manual/paths" internalId="_jngnMd8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="teams_path" prompt="teams_path?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="/invoke?api-version=1&amp;sp=%2Ftriggers%2Fmanual%2Frun&amp;sv=1.0&amp;sig=rHGifzi61aUZzyKSQxtkZdj4bf79WU98m4pkJKW_hx4" internalId="_jngnMt8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="for nestuite api. this is the part that comes after the account id" name="netsuite_token_api_url" prompt="netsuite_token_api_url?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value=".suitetalk.api.netsuite.com/services/rest/auth/oauth2/v1/token" internalId="_jngnM98sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="client_id" prompt="client_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="e74f0683fa5379e2b725547a322cb11514b0915b7a7efec374a72c4ae3a04531" internalId="_jngnNN8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="This should be &quot;D:/Talend Job Files/PurchaseOrders/PO_Auth_flow/private.pem&quot; for cloud" name="private_key_path" prompt="private_key_path?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="C:\Talend Foodmach\private.pem" internalId="_jngnNd8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="certificate_id" prompt="certificate_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="S_eR_japu9FLYSq2Kzq9pw9OPBfiKkMR2trklvfe4Es" internalId="_jngnNt8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="account_id" prompt="account_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="847280-sb1" internalId="_jngnN98sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="new_bearer_token" prompt="new_bearer_token?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_jngnON8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="scope" prompt="scope?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="restlets rest_webservices" internalId="_jngnOd8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="The path suffix for the Netsuite URL to create a PO. Something like /restlet.nl?script=2965&amp;deploy=2" name="netsuite_api_path" prompt="netsuite_api_path?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="/restlet.nl?script=2982&amp;deploy=1" internalId="_jngnOt8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="The netstuite API URL to send vendor data to netsuite" name="netsuite_api_url" prompt="netsuite_api_url?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="https://847280-sb1.restlets.api.netsuite.com/app/site/hosting" internalId="_jngnO98sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="rejectCount" prompt="rejectCount?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Integer" value="0" internalId="_jngnPN8sEfGPY9cDRRj9WQ"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="Foodmach_Dev">
+    <contextParameter comment="" name="integration_database_server_ip" prompt="integration_database_server_ip?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="192.168.2.46" internalId="_jngnPd8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="integration_database_name" prompt="integration_database_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="integration_database" internalId="_jngnPt8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="integration_database_schema_name" prompt="integration_database_schema_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="integration" internalId="_jngnP98sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="integration_database_port" prompt="integration_database_port?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="51980" internalId="_jngnQN8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="integration_database_password" prompt="integration_database_password?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Password" value="enc:system.encryption.key.v1:k/zStFu0zxCkKh9RnIZ75hGRV2n/TmavUCoH3P6E+HsNffHxCV9UTIg=" internalId="_jngnQd8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="integration_database_table_name" prompt="integration_database_table_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="tblCompany_integration" internalId="_jngnQt8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="foodmach_database_server_ip" prompt="foodmach_database_server_ip?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="192.168.2.4" internalId="_jngnQ98sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="foodmach_database_name" prompt="foodmach_database_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="Foodmach_training" internalId="_jngnRN8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="foodmach_database_port" prompt="foodmach_database_port?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="1433" internalId="_jngnRd8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="foodmach_database_password" prompt="foodmach_database_password?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Password" value="enc:system.encryption.key.v1:QOgJVTKNpzJFLoSHpjp5933D1hIAMcjepU45rNn8OVdHsbCG" internalId="_jngnRt8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="foodmach_tblCompany_table_name" prompt="foodmach_tblCompany_table_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="tblCompany" internalId="_jngnR98sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="foodmach_tblCompanyTypes_table_name" prompt="foodmach_tblCompanyTypes_table_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="tblCompanyTypes" internalId="_jngnSN8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="foodmach_tblSupplier_table_name" prompt="foodmach_tblSupplier_table_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="tblSupplier" internalId="_jngnSd8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="foodmach_schema_name" prompt="foodmach_schema_name?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="dbo" internalId="_jngnSt8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="row_count" prompt="row_count?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Integer" value="0" internalId="_jngnS98sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="error_message_log" prompt="error_message_log?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_jngnTN8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="integration_table_message" prompt="integration_table_message?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_jngnTd8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="teams_base_url" prompt="teams_base_url?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="https://default37f3b1b2de5a4ccf94f5b8c2c7a688.00.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/01/workflows/58eacb3c9e234189b8c22bce15da5a6e/triggers/manual/paths" internalId="_jngnTt8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="teams_path" prompt="teams_path?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="/invoke?api-version=1&amp;sp=%2Ftriggers%2Fmanual%2Frun&amp;sv=1.0&amp;sig=rHGifzi61aUZzyKSQxtkZdj4bf79WU98m4pkJKW_hx4" internalId="_jngnT98sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="for nestuite api. this is the part that comes after the account id" name="netsuite_token_api_url" prompt="netsuite_token_api_url?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value=".suitetalk.api.netsuite.com/services/rest/auth/oauth2/v1/token" internalId="_jngnUN8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="client_id" prompt="client_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="e74f0683fa5379e2b725547a322cb11514b0915b7a7efec374a72c4ae3a04531" internalId="_jngnUd8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="This should be &quot;D:/Talend Job Files/PurchaseOrders/PO_Auth_flow/private.pem&quot; for cloud" name="private_key_path" prompt="private_key_path?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="C:\Talend Foodmach\private.pem" internalId="_jngnUt8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="certificate_id" prompt="certificate_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="S_eR_japu9FLYSq2Kzq9pw9OPBfiKkMR2trklvfe4Es" internalId="_jngnU98sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="account_id" prompt="account_id?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="847280-sb1" internalId="_jngnVN8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="new_bearer_token" prompt="new_bearer_token?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="" internalId="_jngnVd8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="scope" prompt="scope?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="restlets rest_webservices" internalId="_jngnVt8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="The path suffix for the Netsuite URL to create a PO. Something like /restlet.nl?script=2965&amp;deploy=2" name="netsuite_api_path" prompt="netsuite_api_path?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="/restlet.nl?script=2982&amp;deploy=1" internalId="_jngnV98sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="The netstuite API URL to send vendor data to netsuite" name="netsuite_api_url" prompt="netsuite_api_url?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_String" value="https://847280-sb1.restlets.api.netsuite.com/app/site/hosting" internalId="_jngnWN8sEfGPY9cDRRj9WQ"/>
+    <contextParameter comment="" name="rejectCount" prompt="rejectCount?" promptNeeded="false" repositoryContextId="_XkWa4JngEfGdaILNokaaHA" type="id_Integer" value="0" internalId="_jngnWd8sEfGPY9cDRRj9WQ"/>
+  </context>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:WYNkX0yb9aSJT1L7tzc7XOpWq9UZsom1UcpVH4FS" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Talend-Studio-20260708_1430-V8.0.1/Talend-Studio-20260708_1430-V8.0.1/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="JDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_18" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:JYqqqmJyo1SKRXbU/v0p4WR71YpUg6OUgWlyIq7x" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+  </parameters>
+  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="280">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1" show="false"/>
+    <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
+    <elementParameter field="RADIO" name="USE_SINGLEMODE" value="false"/>
+    <elementParameter field="TABLE" name="VALUES" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="CompanyCustom3" id="0"/>
+      <elementValue elementRef="VALUE" value="533" id="1"/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="USE_INTABLE" value="true"/>
+    <elementParameter field="TABLE" name="INTABLE">
+      <elementValue elementRef="CompanyCustom3" value="533" id="0"/>
+      <elementValue elementRef="CompanyCustom3" value="10103" id="1"/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;" show="false"/>
+    <elementParameter field="MEMO" name="INLINECONTENT" value="" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Send dummy input"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="tblCompany" name="tFixedFlowInput_1">
+      <column comment="" key="false" length="-1" name="CompanyCustom3" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="680" posY="280">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_2" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="CompanyCustom3" id="0"/>
+      <elementValue elementRef="LENGTH" value="10" id="1"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Preview data"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="tblCompany" name="tLogRow_2">
+      <column comment="" key="false" length="-1" name="CompanyCustom3" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="840" posY="280">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBRow_1" show="false"/>
+    <elementParameter field="TEXT" name="COMPONENT_NAME" value="tMSSqlRow" show="false"/>
+    <elementParameter field="TEXT" name="VERSION" value="0.102 (ALPHA)" show="false"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Databases/DB Specifics/MS_SQL_Server" show="false"/>
+    <elementParameter field="CHECK" name="START" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="SUBTREE_START" value="false" show="false"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HELP" value="org.talend.help.tMSSqlRow" show="false"/>
+    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend-Studio-20260708_1430-V8.0.1\Talend-Studio-20260708_1430-V8.0.1\configuration\lib\java" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_gDwS0KJ1EfGq3IYnFJCINg" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;192.168.2.4&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;dbo&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;Foodmach_Training&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:cH4DNxjikxUxhsBj0IlIdGjJhmk9KoaiFXPgVViBiQL0uFw5uPc="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;tblCompany&quot;"/>
+    <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT COUNT(*) AS MatchCount&#xD;&#xA; FROM &quot; + context.foodmach_database_name + &quot;.&quot; + context.foodmach_schema_name + &quot;.tblCompany AS existing_companies&#xD;&#xA; WHERE existing_companies.CompanyCustom3 = ?&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;TrustServerCertificate=true;&quot;"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="ACTIVE_DIR_AUTH_MODE" value="PASSWORD" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_ALWAYS_ENCRYPTED" value="false"/>
+    <elementParameter field="TEXT" name="KEYSTORE_PRINCIPAL_ID" value="" show="false"/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_SECRET" value="" show="false"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="true"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" value="MatchCount"/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="true"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS">
+      <elementValue elementRef="PARAMETER_INDEX" value="1" id="0"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="Int" id="1"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="row2.CompanyCustom3" id="2"/>
+    </elementParameter>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
+    <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" value="30" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="tblCompany" name="tDBRow_1">
+      <column comment="" key="false" length="-1" name="MatchCount" nullable="true" pattern="" precision="-1" sourceType="" type="id_Object" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="-1" name="MatchCount" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tParseRecordSet" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1080" posY="280">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tParseRecordSet_1" show="false"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="RECORDSET_FIELD" value="MatchCount"/>
+    <elementParameter field="TABLE" name="ATTRIBUTE_TABLE">
+      <elementValue elementRef="SCHEMA_COLUMN" value="MatchCount" id="0"/>
+      <elementValue elementRef="VALUE" value="&quot;MatchCount&quot;" id="1"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="parse data"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tParseRecordSet_1">
+      <column comment="" key="false" length="-1" name="MatchCount" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1320" posY="280">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="MatchCount" id="0"/>
+      <elementValue elementRef="LENGTH" value="10" id="1"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Preview result"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="tblCompany" name="tLogRow_1">
+      <column comment="" key="false" length="-1" name="MatchCount" nullable="true" pattern="" precision="-1" sourceType="" type="id_Object" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tLogRow_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tLogRow_2" offsetLabelX="0" offsetLabelY="0" source="tLogRow_2" target="tDBRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBRow_1" offsetLabelX="0" offsetLabelY="0" source="tDBRow_1" target="tParseRecordSet_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tParseRecordSet_1" offsetLabelX="0" offsetLabelY="0" source="tParseRecordSet_1" target="tLogRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+</talendfile:ProcessType>
