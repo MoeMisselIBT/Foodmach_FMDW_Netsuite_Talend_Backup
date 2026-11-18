@@ -328,7 +328,7 @@
       <column comment="" key="false" length="-1" name="row_count" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="680" posY="120">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="440" posY="40">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
     <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="System.out.println(&quot;No rows found. Stopping job.&quot;);"/>
     <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
@@ -336,7 +336,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_1"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="680" posY="-120">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="440" posY="-240">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
     <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="System.out.println(&quot;Rows found. Executing insert.&quot;);"/>
     <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
@@ -7029,7 +7029,7 @@
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1000" posY="960">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_12" show="false"/>
-    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="context.error_message_log = &quot;Failed to insert into integration table&quot;;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="context.error_message_log = &quot;Failed to update integration after tblCompany integration being completed&quot;;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;"/>
     <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="LABEL" value="log job failed"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -7153,7 +7153,7 @@
       <column comment="" key="false" length="-1" name="headers" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tHashInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1880" posY="1280">
+  <node componentName="tHashInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="2040" posY="1280">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashInput_4" show="false"/>
     <elementParameter field="CHECK" name="LINK_WITH" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="LIST" value="tHashOutput_2"/>
@@ -7170,7 +7170,7 @@
       <column comment="" key="false" length="-1" name="CompanyCustom3" nullable="true" pattern="" precision="-1" sourceType="" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="2080" posY="1280">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="2240" posY="1280">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_9" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -7207,7 +7207,7 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="2320" posY="1280">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="2480" posY="1280">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_10" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -7241,7 +7241,7 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="2640" posY="1280">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="2800" posY="1280">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_24" show="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
@@ -7266,7 +7266,7 @@
       <column comment="" key="false" length="-1" name="netsuite_payload" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="HTTPClient" componentVersion="5" offsetLabelX="0" offsetLabelY="0" posX="2920" posY="1280">
+  <node componentName="HTTPClient" componentVersion="5" offsetLabelX="0" offsetLabelY="0" posX="3080" posY="1280">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHTTPClient_12" show="false"/>
     <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="aHR0cC1zdHVkaW8jSFRUUCNDbGllbnQ" show="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
@@ -7376,7 +7376,7 @@
       <column comment="" key="false" length="-1" name="netsuite_payload" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="3280" posY="1280">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="3440" posY="1280">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_25" show="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
@@ -7410,7 +7410,7 @@
       <column comment="" key="false" length="-1" name="netsuite_payload" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tExtractJSONFields" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="2000" posY="1440">
+  <node componentName="tExtractJSONFields" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="2160" posY="1440">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tExtractJSONFields_3" show="false"/>
     <elementParameter field="CLOSED_LIST" name="READ_BY" value="JSONPATH"/>
     <elementParameter field="CLOSED_LIST" name="JSON_PATH_VERSION" value="2_1_0"/>
@@ -7468,7 +7468,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="2280" posY="1440">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="2440" posY="1440">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_23" show="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
@@ -7502,7 +7502,7 @@
       <column comment="" key="false" length="-1" name="CompanyCustom3" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFilterRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="2560" posY="1440">
+  <node componentName="tFilterRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="2720" posY="1440">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFilterRow_57" show="false"/>
     <elementParameter field="CLOSED_LIST" name="LOGICAL_OP" value="&amp;&amp;"/>
     <elementParameter field="TABLE" name="CONDITIONS">
@@ -7535,7 +7535,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="2800" posY="1440">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="2960" posY="1440">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_26" show="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
@@ -7569,7 +7569,7 @@
       <column comment="" key="false" length="-1" name="CompanyCustom3" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="3040" posY="1440">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="3200" posY="1440">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_12" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -7609,7 +7609,7 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="3280" posY="1440">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="3440" posY="1440">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_28" show="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
@@ -7644,7 +7644,7 @@
       <column comment="" key="false" length="-1" name="CompanyCustom3" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="3560" posY="1440">
+  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="3720" posY="1440">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_6" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
@@ -7732,7 +7732,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="2560" posY="1560">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="2720" posY="1560">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_11" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -7771,7 +7771,7 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="2560" posY="1680">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="2720" posY="1680">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_27" show="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
@@ -7805,7 +7805,7 @@
       <column comment="" key="false" length="-1" name="CompanyCustom3" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="2560" posY="1840">
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="2720" posY="1840">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_9" show="false"/>
     <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="//Code generated according to input schema and output schema&#xD;&#xA;//output_row.success = input_row.success;&#xD;&#xA;//output_row.error = input_row.error;&#xD;&#xA;//output_row.body = input_row.body;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;context.rejectCount++;&#xD;&#xA;System.out.println(&quot;==========================================&quot;);&#xD;&#xA;System.out.println(&quot;Checking Filter Reject Status...&quot;);&#xD;&#xA;System.out.println(&quot;Total Rows Rejected: &quot; + context.rejectCount);&#xD;&#xA;System.out.println(&quot;==========================================&quot;);&#xD;&#xA;System.out.println(&quot;Failed to send CompanyCustom3 &quot; + input_row.CompanyCustom3 + &quot;to Netsuite. Netsuite error - &quot; + input_row.error);&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;"/>
     <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
@@ -7973,7 +7973,7 @@
       <column comment="" key="false" length="-1" name="token_type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1680" posY="1280">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1840" posY="1280">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_16" show="false"/>
     <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="System.out.println(&quot;Begin sending CompanyID and CompanyCustom3 to Netsuite&quot;);"/>
     <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
@@ -7981,7 +7981,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_16"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1880" posY="1600">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="2040" posY="1600">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_19" show="false"/>
     <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="//How many rows the tDBOutput updated (change tDBOutput_6 to your component's name)&#xD;&#xA;Integer rowsUpdated = (Integer)globalMap.get(&quot;tDBOutput_6_NB_LINE_UPDATED&quot;);&#xD;&#xA;&#xD;&#xA;if (rowsUpdated != null &amp;&amp; rowsUpdated > 0) {&#xD;&#xA; System.out.println(&quot;Success: &quot; + rowsUpdated + &quot; row(s) updated. Integration table has marked CompanyID as successfully loaded into Netsuite&quot;);&#xD;&#xA;} else {&#xD;&#xA; System.out.println(&quot;Integration table did not record CompanyID as sent to Netsuite&quot;);&#xD;&#xA;}&#xD;&#xA;&#xD;"/>
     <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
@@ -7989,7 +7989,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_19"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="2800" posY="1600">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="2960" posY="1600">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_20" show="false"/>
     <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="System.out.println(&quot;Successfully sent CompanyID to Netsuite. Now updating integration table&quot;);"/>
     <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
@@ -8271,6 +8271,110 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_6"/>
   </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="1040">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_4" show="false"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="/* Current date and time, e.g. 2026-11-18 17:38:05 */&#xD;&#xA;String logTimestamp = TalendDate.getDate(&quot;yyyy-MM-dd HH:mm:ss&quot;);&#xD;&#xA;&#xD;&#xA;System.out.println(logTimestamp + &quot; | &quot; + jobName + &quot; | API request received&quot;);"/>
+    <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Logging component"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_4"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="960" posY="1840">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_5" show="false"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="/* Current date and time, e.g. 2026-11-18 17:38:05 */&#xD;&#xA;String logTimestamp = TalendDate.getDate(&quot;yyyy-MM-dd HH:mm:ss&quot;);&#xD;&#xA;&#xD;&#xA;System.out.println(logTimestamp + &quot; | &quot; + jobName + &quot; | Data successfully saved in integration table. Response sent to client&quot;);"/>
+    <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Logging component"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_5"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="40">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_7" show="false"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="/* Current date and time, e.g. 2026-11-18 17:38:05 */&#xD;&#xA;String logTimestamp = TalendDate.getDate(&quot;yyyy-MM-dd HH:mm:ss&quot;);&#xD;&#xA;&#xD;&#xA;System.out.println(logTimestamp + &quot; | &quot; + jobName + &quot; | Now counting unprocessed records in integration table&quot;);"/>
+    <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Logging component"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_7"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1000" posY="-400">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_8" show="false"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="/* Current date and time, e.g. 2026-11-18 17:38:05 */&#xD;&#xA;String logTimestamp = TalendDate.getDate(&quot;yyyy-MM-dd HH:mm:ss&quot;);&#xD;&#xA;&#xD;&#xA;System.out.println(logTimestamp + &quot; | &quot; + jobName + &quot; | Started loading unprocessed Vendor records into TotalETO&quot;);"/>
+    <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Logging component"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_8"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="2400" posY="0">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_9" show="false"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="/* Current date and time, e.g. 2026-11-18 17:38:05 */&#xD;&#xA;String logTimestamp = TalendDate.getDate(&quot;yyyy-MM-dd HH:mm:ss&quot;);&#xD;&#xA;&#xD;&#xA;System.out.println(logTimestamp + &quot; | &quot; + jobName + &quot; | tblCompany table synchronised with new Vendor&quot;);"/>
+    <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Logging component"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_9"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1960" posY="200">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_10" show="false"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="/* Current date and time, e.g. 2026-11-18 17:38:05 */&#xD;&#xA;String logTimestamp = TalendDate.getDate(&quot;yyyy-MM-dd HH:mm:ss&quot;);&#xD;&#xA;&#xD;&#xA;System.out.println(logTimestamp + &quot; | &quot; + jobName + &quot; | Vendor data stored in memory for processing&quot;);"/>
+    <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Logging component"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_10"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1760" posY="440">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_11" show="false"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="/* Current date and time, e.g. 2026-11-18 17:38:05 */&#xD;&#xA;String logTimestamp = TalendDate.getDate(&quot;yyyy-MM-dd HH:mm:ss&quot;);&#xD;&#xA;&#xD;&#xA;System.out.println(logTimestamp + &quot; | &quot; + jobName + &quot; | Vendor inserted into tblCompanyTypes&quot;);"/>
+    <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Logging component"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_11"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1840" posY="680">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_13" show="false"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="/* Current date and time, e.g. 2026-11-18 17:38:05 */&#xD;&#xA;String logTimestamp = TalendDate.getDate(&quot;yyyy-MM-dd HH:mm:ss&quot;);&#xD;&#xA;&#xD;&#xA;System.out.println(logTimestamp + &quot; | &quot; + jobName + &quot; | tblSupplier updated with the correct currency&quot;);"/>
+    <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Logging component"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_13"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1160" posY="440">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_15" show="false"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="/* Current date and time, e.g. 2026-11-18 17:38:05 */&#xD;&#xA;String logTimestamp = TalendDate.getDate(&quot;yyyy-MM-dd HH:mm:ss&quot;);&#xD;&#xA;&#xD;&#xA;System.out.println(logTimestamp + &quot; | &quot; + jobName + &quot; | Now inserting into tblCompanyTypes&quot;);"/>
+    <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Logging component"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_15"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="680">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_17" show="false"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="/* Current date and time, e.g. 2026-11-18 17:38:05 */&#xD;&#xA;String logTimestamp = TalendDate.getDate(&quot;yyyy-MM-dd HH:mm:ss&quot;);&#xD;&#xA;&#xD;&#xA;System.out.println(logTimestamp + &quot; | &quot; + jobName + &quot; | Now updating tblSupplier with the correct currency&quot;);"/>
+    <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Logging component"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_17"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1560" posY="1120">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_18" show="false"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="/* Current date and time, e.g. 2026-11-18 17:38:05 */&#xD;&#xA;String logTimestamp = TalendDate.getDate(&quot;yyyy-MM-dd HH:mm:ss&quot;);&#xD;&#xA;&#xD;&#xA;System.out.println(logTimestamp + &quot; | &quot; + jobName + &quot; | Vendor data finished sending to TotalETO. Now updating Netsuite with the CompanyID&quot;);"/>
+    <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Logging component"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_18"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="2960" posY="1840">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_21" show="false"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="/* Current date and time, e.g. 2026-11-18 17:38:05 */&#xD;&#xA;String logTimestamp = TalendDate.getDate(&quot;yyyy-MM-dd HH:mm:ss&quot;);&#xD;&#xA;&#xD;&#xA;System.out.println(logTimestamp + &quot; | &quot; + jobName + &quot; | Some rows were rejected by Netsuite. Please run the following job to retry the synchronisation manually: Manually_Send_CompanyID_to_Netsuite &quot;);"/>
+    <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Logging component"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_21"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="3720" posY="1600">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_22" show="false"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="/* Current date and time, e.g. 2026-11-18 17:38:05 */&#xD;&#xA;String logTimestamp = TalendDate.getDate(&quot;yyyy-MM-dd HH:mm:ss&quot;);&#xD;&#xA;&#xD;&#xA;System.out.println(logTimestamp + &quot; | &quot; + jobName + &quot; | Finished sending CompanyID to Netsuite &quot;);"/>
+    <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Logging component"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_22"/>
+  </node>
   <connection connectorName="FLOW" label="row_count" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tJavaRow_1">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
       <elementValue elementRef="TRACE_COLUMN" value="row_count_1" id="0"/>
@@ -8279,6 +8383,9 @@
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row_count" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tJava_7">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk7" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_2" offsetLabelX="0" offsetLabelY="0" source="tJava_2" target="tDBInput_2">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
@@ -8297,6 +8404,9 @@
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tHashInput_2">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tJava_8">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk8" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="formatted_rows" lineStyle="0" metaname="formatted_rows" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tLogRow_1">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
@@ -8359,6 +8469,9 @@
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row8" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBRow_2" offsetLabelX="0" offsetLabelY="0" source="tDBRow_2" target="tJava_9">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk9" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="company_table" lineStyle="0" metaname="tParseRecordSet_2" offsetLabelX="0" offsetLabelY="0" source="tParseRecordSet_2" target="tMap_3">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
@@ -8440,6 +8553,9 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row7" show="false"/>
   </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tHashOutput_2" offsetLabelX="0" offsetLabelY="0" source="tHashOutput_2" target="tJava_10">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk10" show="false"/>
+  </connection>
   <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tJavaRow_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tJavaRow_1" target="tJava_2">
     <elementParameter field="MEMO_JAVA" name="CONDITION" value="context.row_count > 0"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="If2" show="false"/>
@@ -8463,6 +8579,9 @@
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tHashInput_2" offsetLabelX="0" offsetLabelY="0" source="tHashInput_2" target="tHashInput_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk4" show="false"/>
   </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tHashInput_2" offsetLabelX="0" offsetLabelY="0" source="tHashInput_2" target="tJava_15">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk12" show="false"/>
+  </connection>
   <connection connectorName="FLOW" label="row15" lineStyle="0" metaname="tLogRow_3" offsetLabelX="0" offsetLabelY="0" source="tLogRow_3" target="tJavaRow_3">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row15" show="false"/>
@@ -8470,6 +8589,9 @@
   <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tJavaRow_3" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_3" target="tDBOutput_4">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBOutput_4" offsetLabelX="0" offsetLabelY="0" source="tDBOutput_4" target="tJava_11">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk11" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row10" lineStyle="0" metaname="tHashInput_3" offsetLabelX="0" offsetLabelY="0" source="tHashInput_3" target="tJavaRow_6">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
@@ -8509,6 +8631,9 @@
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tHashInput_1" offsetLabelX="0" offsetLabelY="0" source="tHashInput_1" target="tHashInput_3">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk5" show="false"/>
   </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tHashInput_1" offsetLabelX="0" offsetLabelY="0" source="tHashInput_1" target="tJava_17">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk13" show="false"/>
+  </connection>
   <connection connectorName="FLOW" label="row6" lineStyle="0" metaname="tJavaRow_2" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_2" target="tLogRow_11">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
       <elementValue elementRef="TRACE_COLUMN" value="DefaultCurrName" id="0"/>
@@ -8522,6 +8647,9 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row13" show="false"/>
   </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBOutput_1" offsetLabelX="0" offsetLabelY="0" source="tDBOutput_1" target="tJava_13">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk14" show="false"/>
+  </connection>
   <connection connectorName="FLOW" label="ping" lineStyle="0" metaname="ping" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tRESTRequest_1" target="tJavaRow_4">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
       <elementValue elementRef="TRACE_COLUMN" value="body" id="0"/>
@@ -8534,6 +8662,9 @@
   <connection connectorName="FLOW" label="insert" lineStyle="0" metaname="insert" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tRESTRequest_1" target="tExtractJSONFields_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="insert" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRESTRequest_1" offsetLabelX="0" offsetLabelY="0" source="tRESTRequest_1" target="tJava_4">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk12" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="pong_response" lineStyle="0" metaname="tJavaRow_4" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_4" target="tRESTResponse_1">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
@@ -8714,6 +8845,9 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row39" show="false"/>
   </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBOutput_6" offsetLabelX="0" offsetLabelY="0" source="tDBOutput_6" target="tJava_22">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk19" show="false"/>
+  </connection>
   <connection connectorName="FLOW" label="rejected_rows_tbl" lineStyle="0" metaname="rejected_rows_tbl" offsetLabelX="0" offsetLabelY="0" source="tMap_11" target="tLogRow_27">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
       <elementValue elementRef="TRACE_COLUMN" value="CompanyCustom3" id="0"/>
@@ -8727,8 +8861,14 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row38" show="false"/>
   </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJavaRow_9" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_9" target="tJava_21">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk16" show="false"/>
+  </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_14" offsetLabelX="0" offsetLabelY="0" source="tJava_14" target="tHTTPClient_9">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk7" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_14" offsetLabelX="0" offsetLabelY="0" source="tJava_14" target="tJava_18">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk15" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row26" lineStyle="0" metaname="tHTTPClient_9" offsetLabelX="0" offsetLabelY="0" source="tHTTPClient_9" target="tExtractJSONFields_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
@@ -8782,25 +8922,31 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row16" show="false"/>
   </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tRESTResponse_2" offsetLabelX="0" offsetLabelY="0" source="tRESTResponse_2" target="tJava_5">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk6" show="false"/>
+  </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_6" offsetLabelX="0" offsetLabelY="0" source="tJava_6" target="tFixedFlowInput_2">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2" show="false"/>
   </connection>
-  <note opaque="false" posX="760" posY="-400" sizeHeight="121" sizeWidth="201" text="Insert vendor into&#xD;&#xA;tblComany&#xD;&#xA;from integration&#xD;&#xA;table">
-    <elementParameter field="TEXT" name="NOTE_FONT" value="Arial"/>
-  </note>
-  <note opaque="true" posX="1240" posY="160" sizeHeight="120" sizeWidth="201" text="insert vendor into &#xD;&#xA;tblCompanyTypes&#xD;&#xA;"/>
+  <note opaque="true" posX="1840" posY="280" sizeHeight="120" sizeWidth="201" text="6. insert vendor into &#xD;&#xA;tblCompanyTypes&#xD;&#xA;&lt;----------&#xD;&#xA;"/>
   <note opaque="false" posX="-40" posY="-240" sizeHeight="121" sizeWidth="201" text="Count unprocessed&#xD;&#xA;records in integration &#xD;&#xA;table">
     <elementParameter field="TEXT" name="NOTE_FONT" value="Arial"/>
   </note>
-  <note opaque="true" posX="1880" posY="760" sizeHeight="120" sizeWidth="201" text="set flag to loaded in&#xD;&#xA;integration table"/>
+  <note opaque="true" posX="1880" posY="760" sizeHeight="120" sizeWidth="201" text="8. set flag to loaded in&#xD;&#xA;integration table&#xD;&#xA;&lt;-------------------------"/>
   <note opaque="true" posX="1240" posY="-400" sizeHeight="121" sizeWidth="161" text="Could return 2&#xD;&#xA;rows if no filter&#xD;&#xA;to return a vendor"/>
-  <note opaque="false" posX="1920" posY="520" sizeHeight="120" sizeWidth="201" text="set currency names&#xD;&#xA;"/>
-  <note opaque="true" posX="160" posY="960" sizeHeight="161" sizeWidth="241" text="Job starts here.&#xD;&#xA;This API component receives &#xD;&#xA;requests then triggers the subjob"/>
-  <note opaque="false" posX="2600" posY="1040" sizeHeight="161" sizeWidth="201" text="&lt;----&#xD;&#xA;This flow here acquires &#xD;&#xA;a netsuite token to make&#xD;&#xA;api calls possible"/>
-  <note opaque="true" posX="1480" posY="1520" sizeHeight="201" sizeWidth="361" text="------>&#xD;&#xA;This subjob sends the CompanyID back to Netsuite so&#xD;&#xA; it can be recorded. There is a manual version of this &#xD;&#xA;subjob named &#xD;&#xA;Manually_Send_CompanyID_to_Netsuite.&#xD;&#xA;Trigger it when there's an issue with this job&#xD;&#xA;and the CompanyID was not sent to Netsuite&#xD;&#xA;&#xD;&#xA;">
+  <note opaque="true" posX="1920" posY="520" sizeHeight="120" sizeWidth="201" text="7. set currency names&#xD;&#xA;&lt;-------------------------&#xD;&#xA;"/>
+  <note opaque="true" posX="760" posY="1080" sizeHeight="161" sizeWidth="241" text="1. Job starts here.&#xD;&#xA;This API component receives &#xD;&#xA;requests then triggers the subjob&#xD;&#xA;&lt;-------------"/>
+  <note opaque="true" posX="2600" posY="1040" sizeHeight="161" sizeWidth="201" text="10.&#xD;&#xA;&lt;----&#xD;&#xA;This flow here acquires &#xD;&#xA;a netsuite token to make&#xD;&#xA;api calls possible"/>
+  <note opaque="true" posX="1480" posY="1400" sizeHeight="201" sizeWidth="361" text="11.&#xD;&#xA;------>&#xD;&#xA;This subjob sends the CompanyID back to Netsuite so&#xD;&#xA; it can be recorded. There is a manual version of this &#xD;&#xA;subjob named &#xD;&#xA;Manually_Send_CompanyID_to_Netsuite.&#xD;&#xA;Trigger it when there's an issue with this job&#xD;&#xA;and the CompanyID was not sent to Netsuite&#xD;&#xA;&#xD;&#xA;">
     <elementParameter field="RADIO" name="NOTELABEL_CENTER" value="false"/>
     <elementParameter field="RADIO" name="NOTETXT_TOP" value="true"/>
   </note>
+  <note opaque="true" posX="760" posY="1400" sizeHeight="161" sizeWidth="241" text="2. The payload is stored in the &#xD;&#xA;tblCompany_integration &#xD;&#xA;table&#xD;&#xA;&lt;-------------"/>
+  <note opaque="true" posX="520" posY="-160" sizeHeight="161" sizeWidth="321" text="3. This counts the records in the tblCompany&#xD;&#xA;integration table and if there are records to &#xD;&#xA;process, it triggers the next job and begins&#xD;&#xA;to process them.&#xD;&#xA;&lt;-------------"/>
+  <note opaque="true" posX="640" posY="-400" sizeHeight="161" sizeWidth="321" text="4. Grabs unprocessed records&#xD;&#xA;from the tblCompanu integration table. This&#xD;&#xA;contains all the data sent from Netsuite.&#xD;&#xA;It inserts it into tblCompany, and then stores&#xD;&#xA;it in memory as well so it can be inserted&#xD;&#xA;into tblCompanyTypes&#xD;&#xA;&#xD;&#xA;------------------->"/>
+  <note opaque="true" posX="2080" posY="-40" sizeHeight="201" sizeWidth="281" text="5. Store vendor data&#xD;&#xA;in memory so we can &#xD;&#xA;use it to update &#xD;&#xA;tblCompanyTypes&#xD;&#xA;and tblSupplier &#xD;&#xA;later on in the &#xD;&#xA;pipeline&#xD;&#xA;&lt;----------&#xD;&#xA;"/>
+  <note opaque="true" posX="1920" posY="880" sizeHeight="161" sizeWidth="441" text="9. The subjobs below&#xD;&#xA;are resposnible for sending the CompanyID&#xD;&#xA;back to Netsuite for that Vendor. "/>
+  <note opaque="true" posX="1120" posY="1600" sizeHeight="161" sizeWidth="241" text="This sends a response&#xD;&#xA;when the data is successfully&#xD;&#xA;inserted into the integration table&#xD;&#xA;&lt;-------------"/>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
@@ -8913,6 +9059,71 @@
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_6" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_4" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_5" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_7" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_8" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_9" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_10" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_11" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_13" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_15" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_17" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_18" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_21" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_22" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
   </subjob>
