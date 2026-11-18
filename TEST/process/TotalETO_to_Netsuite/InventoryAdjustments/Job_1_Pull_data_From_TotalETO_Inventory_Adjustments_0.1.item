@@ -566,11 +566,38 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_4"/>
   </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="560" posY="200">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_3" show="false"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="/* Current date and time, e.g. 2026-11-18 17:38:05 */&#xD;&#xA;String logTimestamp = TalendDate.getDate(&quot;yyyy-MM-dd HH:mm:ss&quot;);&#xD;&#xA;&#xD;&#xA;System.out.println(logTimestamp + &quot; | &quot; + jobName + &quot; | Inventory Adjustment Job 1: Now moving data into the integration table &quot;);"/>
+    <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Logging component"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_3"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="80" posY="640">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_5" show="false"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="/* Current date and time, e.g. 2026-11-18 17:38:05 */&#xD;&#xA;String logTimestamp = TalendDate.getDate(&quot;yyyy-MM-dd HH:mm:ss&quot;);&#xD;&#xA;&#xD;&#xA;System.out.println(logTimestamp + &quot; | &quot; + jobName + &quot; | Inventory Adjustment Job 1: Data move into integration table complete &quot;);"/>
+    <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Logging component"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_5"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="440">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_6" show="false"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="/* Current date and time, e.g. 2026-11-18 17:38:05 */&#xD;&#xA;String logTimestamp = TalendDate.getDate(&quot;yyyy-MM-dd HH:mm:ss&quot;);&#xD;&#xA;&#xD;&#xA;System.out.println(logTimestamp + &quot; | &quot; + jobName + &quot; | Inventory Adjustment Job 1: Now moving lines from the InventoryAdjustments table to integration table 1&quot;);"/>
+    <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Logging component"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_6"/>
+  </node>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBConnection_1" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_1" target="tJava_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tDBRow_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tJava_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="result_set" lineStyle="0" metaname="tDBRow_1" offsetLabelX="0" offsetLabelY="0" source="tDBRow_1" target="tParseRecordSet_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
@@ -578,6 +605,9 @@
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBRow_1" offsetLabelX="0" offsetLabelY="0" source="tDBRow_1" target="tJava_4">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk4" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBRow_1" offsetLabelX="0" offsetLabelY="0" source="tDBRow_1" target="tJava_6">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk5" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="results" lineStyle="0" metaname="tParseRecordSet_1" offsetLabelX="0" offsetLabelY="0" source="tParseRecordSet_1" target="tLogRow_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
@@ -620,7 +650,11 @@
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_2" offsetLabelX="0" offsetLabelY="0" source="tJava_2" target="tDie_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
   </connection>
-  <note opaque="true" posX="720" posY="400" sizeHeight="201" sizeWidth="361" text="&lt;----------&#xD;&#xA;Performs a SQL statement that moves the data&#xD;&#xA;from the InventoryPullDetails table into the&#xD;&#xA;integration table.&#xD;&#xA;&#xD;&#xA;It does a select from the inventory pulls table&#xD;&#xA;of records that don't exist in the integration table.&#xD;&#xA;It only does inserts, and no updates."/>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_4" offsetLabelX="0" offsetLabelY="0" source="tJava_4" target="tJava_5">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk3" show="false"/>
+  </connection>
+  <note opaque="true" posX="720" posY="400" sizeHeight="201" sizeWidth="361" text="&lt;----------&#xD;&#xA;1. Performs a SQL statement that moves the data&#xD;&#xA;from the InventoryPullDetails table into the&#xD;&#xA;integration table.&#xD;&#xA;&#xD;&#xA;It does a select from the inventory pulls table&#xD;&#xA;of records that don't exist in the integration table.&#xD;&#xA;It only does inserts, and no updates."/>
+  <note opaque="true" posX="1560" posY="760" sizeHeight="201" sizeWidth="361" text="&lt;----------&#xD;&#xA;Error handling and logging components&#xD;&#xA;sends Teams messages"/>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBConnection_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
@@ -653,6 +687,21 @@
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_4" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_3" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_5" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_6" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
   </subjob>
