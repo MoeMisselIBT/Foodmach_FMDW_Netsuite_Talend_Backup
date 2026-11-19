@@ -1,0 +1,31 @@
+-- integration_database.integration.tblInventoryAdjustment_pull_detail_lines_integration definition
+
+-- Drop table
+
+-- DROP TABLE integration_database.integration.tblInventoryAdjustment_pull_detail_lines_integration;
+
+CREATE TABLE integration_database.integration.tblInventoryAdjustment_pull_detail_lines_integration (
+	PullDetailID int NOT NULL,
+	ProjectID int NOT NULL,
+	SpecID float NOT NULL,
+	ItemID int NOT NULL,
+	ItemCompanyID nvarchar(100) COLLATE Latin1_General_CI_AS NULL,
+	ItemCategory nvarchar(50) COLLATE Latin1_General_CI_AS NULL,
+	InventoryLocation int NOT NULL,
+	FulfilledDate datetime NULL,
+	PullQty decimal(20,6) NOT NULL,
+	CostingValue decimal(20,6) NULL,
+	PullPrice decimal(20,6) NULL,
+	EmpFirstName nvarchar(50) COLLATE Latin1_General_CI_AS NULL,
+	EmpLastName nvarchar(50) COLLATE Latin1_General_CI_AS NULL,
+	IntegrationID int IDENTITY(1,1) NOT NULL,
+	DateTimeLoadedIntoIntegrationTableUTC datetime2(3) DEFAULT sysutcdatetime() NULL,
+	LoadedIntoIntegrationTable2 bit DEFAULT 0 NULL,
+	LoadedIntoNetsuite bit DEFAULT 0 NULL,
+	TimeLoadedIntoNetsuiteUTC datetime2(3) NULL,
+	LastErrorTimeUTC datetime2(3) NULL,
+	LastErrorMessage nvarchar(4000) COLLATE Latin1_General_CI_AS NULL,
+	payload_id int NULL,
+	CONSTRAINT PK_tblInventoryAdjustment_pull_detail_lines_integration PRIMARY KEY (IntegrationID),
+	CONSTRAINT UQ_tblInventoryAdjustment_pull_detail_lines_PullDetailID UNIQUE (PullDetailID)
+);

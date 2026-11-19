@@ -1,0 +1,14 @@
+-- integration_database.integration.dimensionvalue definition
+
+-- Drop table
+
+-- DROP TABLE integration_database.integration.dimensionvalue;
+
+CREATE TABLE integration_database.integration.dimensionvalue (
+	DimensionValueId bigint NOT NULL,
+	DimensionId bigint NOT NULL,
+	ValueName nvarchar(255) COLLATE Latin1_General_CI_AS NOT NULL,
+	ExternalId nvarchar(100) COLLATE Latin1_General_CI_AS NULL,
+	LoadedAt datetime2(0) DEFAULT sysdatetime() NOT NULL,
+	CONSTRAINT PK__dimensio__1A18B98BADAF74EA PRIMARY KEY (DimensionValueId)
+);

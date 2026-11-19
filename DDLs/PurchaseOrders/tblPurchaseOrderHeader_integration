@@ -1,0 +1,23 @@
+-- integration_database.integration.tblPurchaseOrderHeader_integration definition
+
+-- Drop table
+
+-- DROP TABLE integration_database.integration.tblPurchaseOrderHeader_integration;
+
+CREATE TABLE integration_database.integration.tblPurchaseOrderHeader_integration (
+	IntegrationID int IDENTITY(1,1) NOT NULL,
+	PurchaseOrderID int NOT NULL,
+	header__timestamp datetime2(6) NULL,
+	header__change_oper varchar(1) COLLATE Latin1_General_CI_AS NULL,
+	DateTimeLoadedIntoIntegrationTableUTC datetime2(3) DEFAULT sysutcdatetime() NULL,
+	LoadedIntoNetsuite bit DEFAULT 0 NULL,
+	TimeLoadedIntoNetsuiteUTC datetime2(3) NULL,
+	Netsuite_PO_Internal_ID varchar(50) COLLATE Latin1_General_CI_AS NULL,
+	Netsuite_tranId varchar(50) COLLATE Latin1_General_CI_AS NULL,
+	Netsuite_Payload nvarchar(MAX) COLLATE Latin1_General_CI_AS NULL,
+	LastErrorTimeUTC datetime2(3) NULL,
+	LastErrorMessage nvarchar(4000) COLLATE Latin1_General_CI_AS NULL,
+	CONSTRAINT PK_tblPurchaseOrderHeader_integration PRIMARY KEY (IntegrationID)
+);
+CREATE NONCLUSTERED INDEX IX_POHeader_Integration_Timestamp ON integration_database.integration.tblPurchaseOrderHeader_integration (header__timestamp);
+CREATE UNIQUE NONCLUSTERED INDEX UX_POHeader_Integration_PurchaseOrderID ON integration_database.integration.tblPurchaseOrderHeader_integration (PurchaseOrderID);

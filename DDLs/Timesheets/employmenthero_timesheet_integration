@@ -1,0 +1,22 @@
+-- integration_database.integration.employmenthero_timesheet_integration definition
+
+-- Drop table
+
+-- DROP TABLE integration_database.integration.employmenthero_timesheet_integration;
+
+CREATE TABLE integration_database.integration.employmenthero_timesheet_integration (
+	RunId int IDENTITY(1,1) NOT NULL,
+	TargetTable nvarchar(256) COLLATE Latin1_General_CI_AS NOT NULL,
+	RunStart datetime2(0) NOT NULL,
+	RunEnd datetime2(0) NULL,
+	Status nvarchar(20) COLLATE Latin1_General_CI_AS NOT NULL,
+	SourceRows int NULL,
+	RowsInserted int NULL,
+	RowsUpdated int NULL,
+	ErrorNumber int NULL,
+	ErrorLine int NULL,
+	ErrorMessage nvarchar(4000) COLLATE Latin1_General_CI_AS NULL,
+	DataFromDate date NULL,
+	DataToDate date NULL,
+	CONSTRAINT PK__employme__A259D4DD3B99A9ED PRIMARY KEY (RunId)
+);

@@ -1,0 +1,46 @@
+-- integration_database.integration.eh_timesheet definition
+
+-- Drop table
+
+-- DROP TABLE integration_database.integration.eh_timesheet;
+
+CREATE TABLE integration_database.integration.eh_timesheet (
+	TimesheetLineId bigint NOT NULL,
+	EmployeeId bigint NOT NULL,
+	EmployeeExternalId nvarchar(100) COLLATE Latin1_General_CI_AS NULL,
+	FirstName nvarchar(100) COLLATE Latin1_General_CI_AS NULL,
+	Surname nvarchar(100) COLLATE Latin1_General_CI_AS NULL,
+	Status nvarchar(30) COLLATE Latin1_General_CI_AS NULL,
+	Location nvarchar(255) COLLATE Latin1_General_CI_AS NULL,
+	WorkType nvarchar(255) COLLATE Latin1_General_CI_AS NULL,
+	Classification nvarchar(255) COLLATE Latin1_General_CI_AS NULL,
+	StartDateTime datetime2(0) NULL,
+	EndDateTime datetime2(0) NULL,
+	ActualStartDateTime datetime2(0) NULL,
+	ActualEndDateTime datetime2(0) NULL,
+	DurationHours decimal(9,4) NULL,
+	DurationExclBreaksHours decimal(9,4) NULL,
+	BreakDurationHours decimal(9,4) NULL,
+	TimeVarianceHours decimal(9,4) NULL,
+	NumberOfBreaks int NULL,
+	Units decimal(18,4) NULL,
+	UnitType nvarchar(30) COLLATE Latin1_General_CI_AS NULL,
+	ShiftConditions nvarchar(500) COLLATE Latin1_General_CI_AS NULL,
+	ShiftConditionShortCodes nvarchar(MAX) COLLATE Latin1_General_CI_AS NULL,
+	BreaksJson nvarchar(MAX) COLLATE Latin1_General_CI_AS NULL,
+	Comments nvarchar(1000) COLLATE Latin1_General_CI_AS NULL,
+	ConsolidatedWithTimesheetLineId bigint NULL,
+	ReviewedBy nvarchar(100) COLLATE Latin1_General_CI_AS NULL,
+	Gross decimal(18,2) NULL,
+	NetEarnings decimal(18,2) NULL,
+	Super decimal(18,2) NULL,
+	Payg decimal(18,2) NULL,
+	EmployerLiabilities decimal(18,2) NULL,
+	TotalCost decimal(18,2) NULL,
+	TotalCostVariance decimal(18,2) NULL,
+	DateCreated datetime2(0) NULL,
+	DateReviewed datetime2(0) NULL,
+	LoadedAt datetime2(0) DEFAULT sysdatetime() NOT NULL,
+	CONSTRAINT PK__eh_times__105DCB8ACC3DE560 PRIMARY KEY (TimesheetLineId)
+);
+CREATE NONCLUSTERED INDEX IX_EH_Timesheet_Emp_Start ON integration_database.integration.eh_timesheet (EmployeeId, StartDateTime);

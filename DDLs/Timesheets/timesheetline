@@ -1,0 +1,30 @@
+-- integration_database.integration.timesheetline definition
+
+-- Drop table
+
+-- DROP TABLE integration_database.integration.timesheetline;
+
+CREATE TABLE integration_database.integration.timesheetline (
+	TimesheetLineId bigint NOT NULL,
+	EmployeeId bigint NOT NULL,
+	StartDateTime datetime2(0) NULL,
+	EndDateTime datetime2(0) NULL,
+	Status nvarchar(30) COLLATE Latin1_General_CI_AS NULL,
+	LocationId bigint NULL,
+	FullyQualifiedLocationName nvarchar(500) COLLATE Latin1_General_CI_AS NULL,
+	WorkTypeId bigint NULL,
+	WorkType nvarchar(255) COLLATE Latin1_General_CI_AS NULL,
+	PayCategoryId bigint NULL,
+	LeaveCategoryId bigint NULL,
+	ClassificationId bigint NULL,
+	Units decimal(18,4) NULL,
+	Rate decimal(18,4) NULL,
+	Comments nvarchar(1000) COLLATE Latin1_General_CI_AS NULL,
+	HiddenComments nvarchar(1000) COLLATE Latin1_General_CI_AS NULL,
+	ExternalId nvarchar(100) COLLATE Latin1_General_CI_AS NULL,
+	[Source] nvarchar(50) COLLATE Latin1_General_CI_AS NULL,
+	SubmittedByUser nvarchar(200) COLLATE Latin1_General_CI_AS NULL,
+	DimensionValueIds nvarchar(500) COLLATE Latin1_General_CI_AS NULL,
+	LoadedAt datetime2(0) DEFAULT sysdatetime() NOT NULL,
+	CONSTRAINT PK__timeshee__105DCB8AAA068D7A PRIMARY KEY (TimesheetLineId)
+);
