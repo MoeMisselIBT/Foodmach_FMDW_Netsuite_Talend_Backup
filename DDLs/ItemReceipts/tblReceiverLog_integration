@@ -1,0 +1,26 @@
+-- integration_database.integration.tblReceiverLog_integration definition
+
+-- Drop table
+
+-- DROP TABLE integration_database.integration.tblReceiverLog_integration;
+
+CREATE TABLE integration_database.integration.tblReceiverLog_integration (
+	IntegrationID int IDENTITY(1,1) NOT NULL,
+	ReceiverLogID int NOT NULL,
+	PurchaseOrderID int NULL,
+	PurchaseDetailID int NULL,
+	[Date] datetime NULL,
+	PurchaseUOM nvarchar(50) COLLATE Latin1_General_CI_AI NULL,
+	RaisedByEmployee nvarchar(102) COLLATE Latin1_General_CI_AI NULL,
+	QtyReceived decimal(20,6) NULL,
+	DateTimeLoadedIntoIntegrationTableUTC datetime2(3) DEFAULT sysutcdatetime() NULL,
+	LoadedIntoNetsuite bit DEFAULT 0 NULL,
+	TimeLoadedIntoNetsuiteUTC datetime2(3) NULL,
+	Netsuite_Payload nvarchar(MAX) COLLATE Latin1_General_CI_AS NULL,
+	header__timestamp datetime2(6) NULL,
+	header__change_oper varchar(1) COLLATE Latin1_General_CI_AS NULL,
+	LastErrorTimeUTC datetime2(3) NULL,
+	LastErrorMessage nvarchar(4000) COLLATE Latin1_General_CI_AS NULL,
+	CONSTRAINT PK_tblReceiverLog_integration PRIMARY KEY (IntegrationID)
+);
+CREATE NONCLUSTERED INDEX IX_ReceiverLog_Integration_Timestamp ON integration_database.integration.tblReceiverLog_integration (header__timestamp);
