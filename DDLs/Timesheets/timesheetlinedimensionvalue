@@ -1,0 +1,12 @@
+-- integration_database.integration.timesheetlinedimensionvalue definition
+
+-- Drop table
+
+-- DROP TABLE integration_database.integration.timesheetlinedimensionvalue;
+
+CREATE TABLE integration_database.integration.timesheetlinedimensionvalue (
+	TimesheetLineId bigint NOT NULL,
+	DimensionValueId bigint NOT NULL,
+	LoadedAt datetime2(0) DEFAULT sysdatetime() NULL,
+	CONSTRAINT PK_EH_TLDV PRIMARY KEY (TimesheetLineId,DimensionValueId)
+);
