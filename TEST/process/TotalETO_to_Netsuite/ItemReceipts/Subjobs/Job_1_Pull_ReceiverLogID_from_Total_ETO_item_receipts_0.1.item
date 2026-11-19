@@ -75,7 +75,7 @@
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="800" show="false"/>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="120" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="160" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
@@ -2073,12 +2073,13 @@
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_8" offsetLabelX="0" offsetLabelY="0" source="tJava_8" target="tDie_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk6" show="false"/>
   </connection>
-  <note opaque="true" posX="2160" posY="480" sizeHeight="161" sizeWidth="161" text="All these rows&#xD;&#xA;will be added to&#xD;&#xA;the integration table&#xD;&#xA;&lt;----------------------------"/>
   <note opaque="true" posX="680" posY="560" sizeHeight="161" sizeWidth="161" text="This join is to grab the &#xD;&#xA;latest purchase order &#xD;&#xA;id data from&#xD;&#xA;the foodmach DB&#xD;&#xA;&lt;----------------------------"/>
   <note opaque="true" posX="-800" posY="40" sizeHeight="161" sizeWidth="241" text="1. Create connections to TotalETO &#xD;&#xA;and the FMDW data warehouse&#xD;&#xA;---------------------------->"/>
   <note opaque="true" posX="240" posY="-120" sizeHeight="161" sizeWidth="241" text="2. Grabs the latest updates from the &#xD;&#xA;change table in FMDW that don't&#xD;&#xA;already exist in the integration table&#xD;&#xA;then stores them in memory for &#xD;&#xA;processing&#xD;&#xA;"/>
   <note opaque="true" posX="1960" posY="120" sizeHeight="161" sizeWidth="321" text="3. The PurchaseDetailIDs corresponding&#xD;&#xA;with each ReceiverLog row are stored in a list&#xD;&#xA;so that we can grab the tblPurchaseDetail&#xD;&#xA;data and do a join in the next steps&#xD;&#xA;&lt;----------------------------&#xD;&#xA;"/>
   <note opaque="true" posX="-80" posY="600" sizeHeight="161" sizeWidth="321" text="4. The PurchaseDetailIDs corresponding&#xD;&#xA;with each ReceiverLog row are stored in a list&#xD;&#xA;so that we can grab the tblPurchaseDetail&#xD;&#xA;data and do a join in the next steps&#xD;&#xA;---------------------------->&#xD;&#xA;"/>
+  <note opaque="true" posX="-520" posY="-160" sizeHeight="201" sizeWidth="481" text="Summary&#xD;&#xA;Pulls rows from the tblReceiverLog__ct table, does a join&#xD;&#xA;on tblPurchaseOrderDetail, then stores that result in the integration table"/>
+  <note opaque="true" posX="1960" posY="480" sizeHeight="161" sizeWidth="321" text="5. The flow finishes here. The rows are&#xD;&#xA;inserted into the integraiton table&#xD;&#xA;&lt;----------------------------&#xD;&#xA;"/>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>

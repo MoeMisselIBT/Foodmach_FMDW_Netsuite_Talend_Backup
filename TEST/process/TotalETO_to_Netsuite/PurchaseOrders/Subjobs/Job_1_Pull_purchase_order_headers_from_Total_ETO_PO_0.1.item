@@ -1585,15 +1585,19 @@
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_3" offsetLabelX="0" offsetLabelY="0" source="tJava_3" target="tDBInput_2">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2" show="false"/>
   </connection>
-  <note opaque="true" posX="160" posY="400" sizeHeight="161" sizeWidth="241" text="2. &#xD;&#xA;Pulls data from the integration&#xD;&#xA;table so that we don't process &#xD;&#xA;purchase orders that already&#xD;&#xA;exist in the integration table&#xD;&#xA;------------------------------------------>">
+  <note opaque="true" posX="160" posY="360" sizeHeight="241" sizeWidth="241" text="2. &#xD;&#xA;Pulls data from the integration&#xD;&#xA;table then it is compared&#xD;&#xA;with the data that is brought in &#xD;&#xA;from Step so that we don't process &#xD;&#xA;purchase orders that already&#xD;&#xA;exist in the integration table&#xD;&#xA;------------------------------------------>">
     <elementParameter field="RADIO" name="NOTELABEL_CENTER" value="false"/>
     <elementParameter field="RADIO" name="NOTETXT_TOP" value="true"/>
   </note>
-  <note opaque="true" posX="-280" posY="0" sizeHeight="201" sizeWidth="241" text="1. &#xD;&#xA;Pull data from the data warehouse&#xD;&#xA;change table for POs with&#xD;&#xA;emailed = 1.&#xD;&#xA;------------------------------------------------->"/>
+  <note opaque="true" posX="-280" posY="0" sizeHeight="201" sizeWidth="241" text="1. &#xD;&#xA;Pull data from the FMDW &#xD;&#xA;data warehouse&#xD;&#xA;landing schema change table.&#xD;&#xA;&#xD;&#xA;It grabs POs where&#xD;&#xA;emailed = 1.&#xD;&#xA;------------------------------------------------->"/>
   <note opaque="true" posX="1080" posY="840" sizeHeight="80" sizeWidth="120" text="text"/>
   <note opaque="true" posX="1320" posY="800" sizeHeight="80" sizeWidth="361" text="&lt;- Error handling/Teams message blocks"/>
   <note opaque="true" posX="720" posY="160" sizeHeight="201" sizeWidth="201" text="3. &#xD;&#xA;If the purchase order has&#xD;&#xA;already been processed, it&#xD;&#xA;gets rejected&#xD;&#xA;------------------------------------------>"/>
   <note opaque="true" posX="1880" posY="0" sizeHeight="201" sizeWidth="201" text="4. &#xD;&#xA;The purchase order header&#xD;&#xA;is inserted into the integration&#xD;&#xA;table for further processing&#xD;&#xA;&lt;-------------------------------------"/>
+  <note opaque="true" posX="1200" posY="400" sizeHeight="241" sizeWidth="321" text="3. &#xD;&#xA;Rejected POs are displayed in the logs&#xD;&#xA;&lt;------------------------------------------">
+    <elementParameter field="RADIO" name="NOTELABEL_CENTER" value="false"/>
+    <elementParameter field="RADIO" name="NOTETXT_TOP" value="true"/>
+  </note>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_2" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>

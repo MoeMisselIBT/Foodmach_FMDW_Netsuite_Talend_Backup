@@ -966,6 +966,30 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDie_1"/>
   </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="440" posY="480">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="/* Current date and time, e.g. 2026-11-18 17:38:05 */&#xD;&#xA;String logTimestamp = TalendDate.getDate(&quot;yyyy-MM-dd HH:mm:ss&quot;);&#xD;&#xA;&#xD;&#xA;System.out.println(logTimestamp + &quot; | &quot; + jobName + &quot; | Item Receipts Job 2: Rows loaded from the tblReceiverLog integration table&quot;);"/>
+    <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Logging component"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_1"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1680" posY="520">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_3" show="false"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="/* Current date and time, e.g. 2026-11-18 17:38:05 */&#xD;&#xA;String logTimestamp = TalendDate.getDate(&quot;yyyy-MM-dd HH:mm:ss&quot;);&#xD;&#xA;&#xD;&#xA;System.out.println(logTimestamp + &quot; | &quot; + jobName + &quot; | Item Receipts Job 2: JSON payload created&quot;);"/>
+    <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Logging component"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_3"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="440" posY="720">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_4" show="false"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="/* Current date and time, e.g. 2026-11-18 17:38:05 */&#xD;&#xA;String logTimestamp = TalendDate.getDate(&quot;yyyy-MM-dd HH:mm:ss&quot;);&#xD;&#xA;&#xD;&#xA;System.out.println(logTimestamp + &quot; | &quot; + jobName + &quot; | Item Receipts Job 2: JSON payload loaded into integration table&quot;);"/>
+    <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Logging component"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_4"/>
+  </node>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tLogRow_12">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
       <elementValue elementRef="TRACE_COLUMN" value="Email" id="0"/>
@@ -977,6 +1001,9 @@
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tJava_2">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tJava_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row15" lineStyle="0" metaname="tLogRow_12" offsetLabelX="0" offsetLabelY="0" source="tLogRow_12" target="tSortRow_1">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
@@ -1063,6 +1090,9 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
   </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tWriteJSONField_1" offsetLabelX="0" offsetLabelY="0" source="tWriteJSONField_1" target="tJava_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk3" show="false"/>
+  </connection>
   <connection connectorName="FLOW" label="row16" lineStyle="0" metaname="tLogRow_1" offsetLabelX="0" offsetLabelY="0" source="tLogRow_1" target="tExtractJSONFields_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row16" show="false"/>
@@ -1103,6 +1133,9 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row19" show="false"/>
   </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBOutput_2" offsetLabelX="0" offsetLabelY="0" source="tDBOutput_2" target="tJava_4">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk4" show="false"/>
+  </connection>
   <connection connectorName="FLOW" label="row27" lineStyle="0" metaname="tLogCatcher_1" offsetLabelX="0" offsetLabelY="0" source="tLogCatcher_1" target="tLogRow_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row27" show="false"/>
@@ -1140,9 +1173,11 @@
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_5" offsetLabelX="0" offsetLabelY="0" source="tJava_5" target="tDie_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk5" show="false"/>
   </connection>
-  <note opaque="true" posX="1800" posY="0" sizeHeight="161" sizeWidth="201" text="Pull the ReceiverLogIDs&#xD;&#xA;from the integration table.&#xD;&#xA;&#xD;&#xA;Stores them in a list so &#xD;&#xA;that the Talend job can&#xD;&#xA;process the required records.&#xD;&#xA;"/>
-  <note opaque="true" posX="0" posY="360" sizeHeight="161" sizeWidth="241" text="Uses the list of ReceiverLogIDs to pull&#xD;&#xA;in the latest data from the source database.&#xD;&#xA;&#xD;&#xA;Processes them into a JSON&#xD;&#xA;Payload for Netsuite consumption"/>
-  <note opaque="false" posX="1440" posY="840" sizeHeight="161" sizeWidth="241" text="Depending on the result , this &#xD;&#xA;either updates TotalETO with&#xD;&#xA;the data or tries again."/>
+  <note opaque="true" posX="80" posY="280" sizeHeight="201" sizeWidth="321" text="1. &#xD;&#xA;------------------>&#xD;&#xA;Loads rows from the integration &#xD;&#xA;table so that the JSON payload can be created"/>
+  <note opaque="true" posX="1440" posY="920" sizeHeight="161" sizeWidth="521" text="&lt;--------------&#xD;&#xA;These subjobs here are for error handling and sending Teams messages&#xD;&#xA;"/>
+  <note opaque="true" posX="1960" posY="440" sizeHeight="201" sizeWidth="321" text="2. &#xD;&#xA;&lt;------------------&#xD;&#xA;This component here builds&#xD;&#xA;the JSON payload in the correct&#xD;&#xA;format"/>
+  <note opaque="true" posX="80" posY="680" sizeHeight="201" sizeWidth="321" text="3. &#xD;&#xA;------------------>&#xD;&#xA;The created payload is sent to &#xD;&#xA;the integration table so the next &#xD;&#xA;job can send it to Netsuite"/>
+  <note opaque="true" posX="280" posY="40" sizeHeight="201" sizeWidth="321" text="Summary&#xD;&#xA;Grabs records from the integration table. &#xD;&#xA;Creates a payload, and stores it back in&#xD;&#xA;the integration table"/>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
@@ -1165,6 +1200,21 @@
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_3" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_4" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
   </subjob>
