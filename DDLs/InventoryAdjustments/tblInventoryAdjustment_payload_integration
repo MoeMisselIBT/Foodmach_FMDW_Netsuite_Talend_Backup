@@ -1,0 +1,17 @@
+-- integration_database.integration.tblInventoryAdjustment_payload_integration definition
+
+-- Drop table
+
+-- DROP TABLE integration_database.integration.tblInventoryAdjustment_payload_integration;
+
+CREATE TABLE integration_database.integration.tblInventoryAdjustment_payload_integration (
+	payload_id int IDENTITY(1,1) NOT NULL,
+	tranDate date NULL,
+	Netsuite_Payload nvarchar(MAX) COLLATE Latin1_General_CI_AS NULL,
+	DateTimeLoadedIntoIntegrationTableUTC datetime2(3) DEFAULT sysutcdatetime() NULL,
+	LoadedIntoNetsuite bit DEFAULT 0 NULL,
+	TimeLoadedIntoNetsuiteUTC datetime2(3) NULL,
+	LastErrorTimeUTC datetime2(3) NULL,
+	LastErrorMessage nvarchar(4000) COLLATE Latin1_General_CI_AS NULL,
+	CONSTRAINT PK_tblInventoryAdjustment_payload_integration PRIMARY KEY (payload_id)
+);
