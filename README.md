@@ -6,6 +6,7 @@
 .
 ├── TEST/
 ├── DDLs/
+├── .gitignore
 └── README.md
 ```
 
