@@ -12,6 +12,7 @@
   <deletedItems id="_7_NhMKA9EfGq3IYnFJCINg" path="FMDW_Dev" type="METADATA_CONNECTIONS"/>
   <deletedItems id="_F3_DYLVWEfGVnY5xgP4JHQ" path="FMDW_Dev" type="METADATA_CONNECTIONS"/>
   <deletedItems id="_Izz3YIZbEfG9C7e242mTTA" path="Netsuite_to_TotalETO/ItemReceipts" type="PROCESS"/>
+  <deletedItems id="_-9BRMN8qEfGPY9cDRRj9WQ" path="Netsuite_to_TotalETO/Vendors" type="PROCESS"/>
   <deletedItems id="_XPr_kJB2EfGuCZ_y0rqpww" path="Netsuite_to_TotalETO/Vendors" type="PROCESS"/>
   <deletedItems id="_8tHV4IZbEfG9C7e242mTTA" path="TotalETO_to_Netsuite" type="PROCESS"/>
   <deletedItems id="_SqvZEMEbEfG0duEbEJJ1_w" path="TotalETO_to_Netsuite/ItemReceipts/Subjobs" type="PROCESS"/>

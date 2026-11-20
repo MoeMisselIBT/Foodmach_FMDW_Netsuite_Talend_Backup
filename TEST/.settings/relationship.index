@@ -13,10 +13,6 @@
     "version" : "Latest",
     "type" : "property"
   }, {
-    "id" : "_gDwS0KJ1EfGq3IYnFJCINg",
-    "version" : "Latest",
-    "type" : "property"
-  }, {
     "id" : "JwtHelper",
     "version" : "Latest",
     "type" : "routine"
@@ -607,6 +603,29 @@
     "id" : "_j9yssJxlEfG0fNycJkJoag",
     "version" : "Latest",
     "type" : "property"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_usIQoOSQEfGmfaMvWWrGwQ",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_XkWa4JngEfGdaILNokaaHA",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "JwtHelper",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "_QQIh8IlvEfG9C7e242mTTA - tblCompany_integration",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_gDwS0KJ1EfGq3IYnFJCINg - tsysCountry",
+    "version" : "Latest",
+    "type" : "schema"
   } ]
 }, {
   "baseItem" : {
