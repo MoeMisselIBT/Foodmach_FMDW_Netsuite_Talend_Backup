@@ -1,5 +1,5 @@
 # Foodmach Integration
-Contains the Talend jobs, integration table DDLs, and landing table DDLs for the Netsuite to TotalETO integration, and the EmploymentHero to FMDW integration.
+Contains the Talend Studio jobs, integration table DDLs, and landing table DDLs for the Netsuite to TotalETO integration, and the EmploymentHero to FMDW integration.
 
 ## Repository Structure
 
